@@ -1,5 +1,5 @@
 # Created by: Yeti <yeti@gwyddion.net>
-# $FreeBSD: head/science/gwyddion/Makefile 480374 2018-09-22 10:15:22Z mandree $
+# $FreeBSD: head/science/gwyddion/Makefile 495553 2019-03-13 05:13:22Z linimon $
 
 PORTNAME=	gwyddion
 PORTVERSION=	2.51
@@ -19,8 +19,9 @@ LIB_DEPENDS=	libminizip.so:archivers/minizip \
 		libfftw3.so:math/fftw3 \
 		libgtkglext-x11-1.0.so:x11-toolkits/gtkglext
 
-USES=		desktop-file-utils gl gmake libtool localbase:ldflags \
-		pathfix pkgconfig shared-mime-info shebangfix tar:xz
+USES=		compiler:c++11-lang desktop-file-utils gl gmake libtool \
+		localbase:ldflags pathfix pkgconfig shared-mime-info \
+		shebangfix tar:xz
 SHEBANG_FILES=	plugins/process/invert_python.py
 USE_GNOME=	cairo gtk20 libxml2 pangox-compat
 USE_GL=		gl glu

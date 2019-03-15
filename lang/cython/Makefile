@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenhping@gmail.com>
-# $FreeBSD: head/lang/cython/Makefile 492015 2019-02-02 21:56:28Z sunpoet $
+# $FreeBSD: head/lang/cython/Makefile 495330 2019-03-11 08:22:36Z wen $
 
 PORTNAME=	cython
 PORTVERSION=	0.29

@@ -1,9 +1,9 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/CJKUnifonts/Makefile 451985 2017-10-13 12:17:30Z bapt $
+# $FreeBSD: head/chinese/CJKUnifonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	CJKUnifonts
 PORTVERSION=	0.2.20080216.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	LOCAL/chinsan/fonts/:uming \
 		LOCAL/chinsan/fonts/:ukai

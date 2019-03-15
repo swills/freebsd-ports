@@ -1,8 +1,8 @@
 # Created by: Alexey Dokuchaev <danfe@regency.nsu.ru>
-# $FreeBSD: head/devel/tpasm/Makefile 412148 2016-03-30 00:53:27Z amdmi3 $
+# $FreeBSD: head/devel/tpasm/Makefile 495144 2019-03-09 14:26:00Z danfe $
 
 PORTNAME=	tpasm
-PORTVERSION=	1.8
+PORTVERSION=	1.11
 CATEGORIES=	devel
 MASTER_SITES=	http://www.sqrt.com/downloads/
 DISTNAME=	${PORTNAME}

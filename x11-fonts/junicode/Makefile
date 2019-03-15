@@ -1,8 +1,9 @@
 # Created by: Guerkan Senguen <gurkan@phys.ethz.ch>
-# $FreeBSD: head/x11-fonts/junicode/Makefile 494794 2019-03-06 12:38:45Z swills $
+# $FreeBSD: head/x11-fonts/junicode/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	junicode
 DISTVERSION=	1.002
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${DISTVERSION} \
 		http://anthesphoria.net/FreeBSD/ports/distfiles/

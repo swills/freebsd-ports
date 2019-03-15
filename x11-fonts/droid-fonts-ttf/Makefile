@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau <duchateau.olivier@gmail.com>
-# $FreeBSD: head/x11-fonts/droid-fonts-ttf/Makefile 491181 2019-01-25 19:58:35Z sunpoet $
+# $FreeBSD: head/x11-fonts/droid-fonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	droid-fonts-ttf
 PORTVERSION=	20131024
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/sunpoet
 

@@ -1,9 +1,9 @@
 # Created by: Björn König <bkoenig@alpha-tierchen.de>
-# $FreeBSD: head/x11-fonts/linuxlibertine/Makefile 419067 2016-07-25 21:10:36Z jbeich $
+# $FreeBSD: head/x11-fonts/linuxlibertine/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	linuxlibertine
 PORTVERSION=	4.7.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF
 DISTNAME=	LinLibertineFont-${PORTVERSION}-2

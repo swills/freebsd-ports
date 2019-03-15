@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/libnumbertext/Makefile 492188 2019-02-05 02:02:55Z lwhsu $
+# $FreeBSD: head/textproc/libnumbertext/Makefile 495747 2019-03-15 00:02:15Z linimon $
 
 PORTNAME=	libnumbertext
 PORTVERSION=	1.0.5
@@ -11,7 +11,7 @@ COMMENT=	Number to number name and money text conversion libraries
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=	gmake libtool tar:xz
+USES=		compiler:c++11-lang gmake libtool tar:xz
 
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes

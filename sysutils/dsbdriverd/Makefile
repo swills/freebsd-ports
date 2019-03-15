@@ -1,8 +1,8 @@
 # Created by: Marcel Kaiser <mk@nic-nac-project.org>
-# $FreeBSD: head/sysutils/dsbdriverd/Makefile 454249 2017-11-15 15:19:16Z swills $
+# $FreeBSD: head/sysutils/dsbdriverd/Makefile 495085 2019-03-08 23:04:55Z tcberner $
 
 PORTNAME=	dsbdriverd
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 

@@ -1,8 +1,9 @@
 # Created by: dchapes@ddm.on.ca
-# $FreeBSD: head/emulators/vice/Makefile 488482 2018-12-26 22:50:47Z dinoex $
+# $FreeBSD: head/emulators/vice/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	vice
 PORTVERSION=	3.3
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/vice-emu/releases
 
@@ -12,7 +13,6 @@ COMMENT=	Emulator for Commodore C64, C128, VIC20, PET, and CBM-II
 LICENSE=	GPLv2
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir \
 		mkfontscale:x11-fonts/mkfontscale \
 		xa65:devel/xa65
 LIB_DEPENDS=	libpng.so:graphics/png \

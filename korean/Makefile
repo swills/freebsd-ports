@@ -1,4 +1,4 @@
-# $FreeBSD: head/korean/Makefile 494165 2019-02-28 17:12:47Z kai $
+# $FreeBSD: head/korean/Makefile 495609 2019-03-13 16:17:25Z kai $
 #
 
     COMMENT = Korean support
@@ -38,6 +38,7 @@
     SUBDIR += qt4-codecs-kr
     SUBDIR += scim-hangul
     SUBDIR += scim-tables
+    SUBDIR += sourcehansans-otf
     SUBDIR += sourcehanserif-otf
     SUBDIR += unfonts-core
     SUBDIR += unfonts-extra

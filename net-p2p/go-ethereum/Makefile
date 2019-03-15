@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/go-ethereum/Makefile 491095 2019-01-24 14:47:36Z joneum $
+# $FreeBSD: head/net-p2p/go-ethereum/Makefile 495094 2019-03-09 02:50:33Z swills $
 
 PORTNAME=	go-ethereum
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.21
+DISTVERSION=	1.8.22
 CATEGORIES=	net-p2p
 
 MAINTAINER=	me@enriquefynn.com

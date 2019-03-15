@@ -1,9 +1,9 @@
 # Created by: dburr@FreeBSD.org
-# $FreeBSD: head/x11-fonts/sharefonts/Makefile 481061 2018-10-01 19:57:09Z tobik $
+# $FreeBSD: head/x11-fonts/sharefonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	sharefonts
 PORTVERSION=	0.10
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://download.gimp.org/pub/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/gnu/%SUBDIR%/   \

@@ -1,9 +1,8 @@
-# $FreeBSD: head/net/eternalterminal/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/net/eternalterminal/Makefile 495095 2019-03-09 03:15:09Z meta $
 
 PORTNAME=	eternalterminal
 DISTVERSIONPREFIX=	et-v
-DISTVERSION=	4.2.1
-PORTREVISION=	2
+DISTVERSION=	5.1.9
 CATEGORIES=	net
 
 MAINTAINER=	trevis@silencedpoet.com
@@ -22,6 +21,10 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	MisterTea
 GH_PROJECT=	EternalTerminal
 
-PLIST_FILES=	bin/et bin/etserver
+PLIST_FILES=	bin/et \
+		bin/etserver \
+		bin/etterminal \
+		bin/htm \
+		bin/htmd
 
 .include <bsd.port.mk>

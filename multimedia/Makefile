@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/Makefile 493173 2019-02-17 17:05:49Z jbeich $
+# $FreeBSD: head/multimedia/Makefile 495231 2019-03-10 07:07:06Z tobik $
 #
 
     COMMENT = Multimedia software
@@ -459,6 +459,7 @@
     SUBDIR += webcamd
     SUBDIR += webcamoid
     SUBDIR += webvfx-qt5
+    SUBDIR += wf-recorder
     SUBDIR += win32-codecs
     SUBDIR += winff
     SUBDIR += x264

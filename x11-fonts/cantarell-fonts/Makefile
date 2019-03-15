@@ -1,8 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/cantarell-fonts/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/x11-fonts/cantarell-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	cantarell-fonts
 PORTVERSION=	0.101
+PORTREVISION=	1
 CATEGORIES=	x11-fonts gnome
 MASTER_SITES=	GNOME
 

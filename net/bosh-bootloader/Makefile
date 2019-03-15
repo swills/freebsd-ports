@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/bosh-bootloader/Makefile 493669 2019-02-23 12:51:34Z dumbbell $
+# $FreeBSD: head/net/bosh-bootloader/Makefile 495040 2019-03-08 13:48:52Z dumbbell $
 
 PORTNAME=	bosh-bootloader
-PORTVERSION=	7.2.12
+PORTVERSION=	7.4.0
 CATEGORIES=	net sysutils
 
 MAINTAINER=	dumbbell@FreeBSD.org

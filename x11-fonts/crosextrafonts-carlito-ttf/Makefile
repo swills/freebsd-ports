@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/crosextrafonts-carlito-ttf/Makefile 382166 2015-03-24 20:11:30Z olgeni $
+# $FreeBSD: head/x11-fonts/crosextrafonts-carlito-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	crosextrafonts-carlito
 PORTVERSION=	20130920
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://gsdview.appspot.com/chromeos-localmirror/distfiles/
 

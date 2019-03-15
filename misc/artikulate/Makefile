@@ -1,14 +1,14 @@
-# $FreeBSD: head/misc/artikulate/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/misc/artikulate/Makefile 495196 2019-03-09 19:16:34Z tcberner $
 
 PORTNAME=	artikulate
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	misc kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Pronunciation trainer for KDE
 
-LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
-		libQt5GStreamer-1.0.so:multimedia/gstreamer1-qt@qt5
+LIB_DEPENDS=	libboost_thread.so:devel/boost-libs
 
 USES=		cmake compiler:c++11-lang gettext kde:5 qt:5 tar:xz
 USE_KDE=	archive attica auth codecs config configwidgets coreaddons \

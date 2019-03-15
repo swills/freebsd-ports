@@ -1,5 +1,5 @@
 # Created by: Brian Buchanan <brian@CSUA.Berkeley.EDU>
-# $FreeBSD: head/games/flightgear/Makefile 494783 2019-03-06 08:21:36Z jbeich $
+# $FreeBSD: head/games/flightgear/Makefile 495201 2019-03-09 21:03:16Z tcberner $
 
 PORTNAME=	flightgear
 PORTVERSION=	2018.3.2
@@ -27,7 +27,8 @@ RUN_DEPENDS=	${LOCALBASE}/lib/libplibsl.a:x11-toolkits/plib \
 		${LOCALBASE}/lib/libSimGearCore.a:devel/simgear \
 		${LOCALBASE}/share/flightgear/version:games/flightgear-data
 
-USES=		alias cmake compiler cpe dos2unix gl jpeg openal:al,alut \
+# Disable ninja, see https://sourceforge.net/p/flightgear/codetickets/2118/
+USES=		alias cmake:noninja compiler cpe dos2unix gl jpeg openal:al,alut \
 		sqlite tar:bzip2
 USE_XORG=	ice sm x11 xext xft xi xinerama xmu xt
 USE_GL=		gl glew glu glut

@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/py-bottle-cork/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-bottle-cork/Makefile 495761 2019-03-15 04:41:34Z tobik $
 
 PORTNAME=	bottle-cork
 PORTVERSION=	0.12.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -24,17 +24,13 @@ PORTEXAMPLES=	*
 
 OPTIONS_DEFINE=		SQLITE MONGODB SQLALCHEMY EXAMPLES
 
-.include <bsd.port.options.mk>
-
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 MONGODB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pymongo>0:databases/pymongo@${PY_FLAVOR}
 SQLALCHEMY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlalchemy10>0:databases/py-sqlalchemy10@${PY_FLAVOR}
 
-.if ${PORT_OPTIONS:MEXAMPLES}
-post-install:
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	(cd ${WRKSRC}/examples && \
 		${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
-.endif
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Manuel Giraud <manuel.giraud@gmail.com>
-# $FreeBSD: head/x11-fonts/profont/Makefile 491083 2019-01-24 09:10:14Z tobik $
+# $FreeBSD: head/x11-fonts/profont/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	profont
 PORTVERSION=	400
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/tobik \
 		http://tobiasjung.name/downloadfile.php?file=profont-x11.zip?dummy/

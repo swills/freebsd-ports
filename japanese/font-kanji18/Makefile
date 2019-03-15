@@ -1,9 +1,9 @@
 # Created by: Yoshiro MIHIRA <sanpei@sanpei.org>
-# $FreeBSD: head/japanese/font-kanji18/Makefile 465520 2018-03-25 14:42:13Z nobutaka $
+# $FreeBSD: head/japanese/font-kanji18/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kanji
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	PORTS_JP/${DISTNAME}
 PKGNAMEPREFIX=	ja-font-

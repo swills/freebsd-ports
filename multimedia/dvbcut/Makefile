@@ -1,5 +1,5 @@
 # Created by: se@FreeBSD.org
-# $FreeBSD: head/multimedia/dvbcut/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/multimedia/dvbcut/Makefile 495420 2019-03-12 04:08:20Z linimon $
 
 PORTNAME=	dvbcut
 PORTVERSION=	0.7.3
@@ -20,11 +20,12 @@ LIB_DEPENDS=	liba52.so:audio/liba52 \
 		libavutil.so:multimedia/ffmpeg
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
+USES=		compiler:c++11-lang desktop-file-utils pkgconfig \
+		qmake:outsource shared-mime-info
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	bernhardu
 GH_PROJECT=	dvbcut-deb
-
-USES=		qmake:outsource pkgconfig desktop-file-utils shared-mime-info
 
 CXXFLAGS+=	-I${LOCALBASE}/include \
 		-I${LOCALBASE}/include/libavcodec \

@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/www/midori/Makefile 494788 2019-03-06 10:58:11Z madpilot $
+# $FreeBSD: head/www/midori/Makefile 495327 2019-03-11 07:57:05Z tobik $
 
 PORTNAME=	midori
 PORTVERSION=	8.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	www xfce
 
 MAINTAINER=	xfce@FreeBSD.org
@@ -39,7 +40,6 @@ PLIST_SUB=	VERSION="${PORTVERSION:R}"
 USE_GITHUB=	yes
 GH_ACCOUNT=	midori-browser
 GH_PROJECT=	core
-GH_TAGNAME=	v${PORTVERSION}
 
 OPTIONS_DEFINE=		ZEITGEIST
 OPTIONS_SUB=		yes

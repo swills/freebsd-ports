@@ -1,5 +1,5 @@
 # Created by: Anton Berezin <tobez@FreeBSD.org>
-# $FreeBSD: head/math/p5-Geo-Distance-XS/Makefile 479647 2018-09-12 22:56:58Z sunpoet $
+# $FreeBSD: head/math/p5-Geo-Distance-XS/Makefile 495126 2019-03-09 12:08:41Z sunpoet $
 
 PORTNAME=	Geo-Distance-XS
 PORTVERSION=	0.13
@@ -7,7 +7,7 @@ CATEGORIES=	math perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Calculate Distances and Closest Locations faster
 
 LICENSE=	ART10 GPLv1+

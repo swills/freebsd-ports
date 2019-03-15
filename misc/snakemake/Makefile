@@ -1,7 +1,7 @@
-# $FreeBSD: head/misc/snakemake/Makefile 493144 2019-02-17 02:26:55Z yuri $
+# $FreeBSD: head/misc/snakemake/Makefile 495687 2019-03-14 05:28:22Z yuri $
 
 PORTNAME=	snakemake
-DISTVERSION=	5.4.2
+DISTVERSION=	5.4.3
 CATEGORIES=	misc
 MASTER_SITES=	CHEESESHOP
 

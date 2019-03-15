@@ -1,8 +1,9 @@
 # Created by: Winston Weinert <winstonw@lavabit.com>
-# $FreeBSD: head/x11-fonts/roboto-fonts-ttf/Makefile 424798 2016-10-28 00:42:27Z cpm $
+# $FreeBSD: head/x11-fonts/roboto-fonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	roboto-fonts-ttf
 PORTVERSION=	2.134
+PORTREVISION=	1
 DISTVERSIONPREFIX=v
 PORTEPOCH=	1
 CATEGORIES=	x11-fonts

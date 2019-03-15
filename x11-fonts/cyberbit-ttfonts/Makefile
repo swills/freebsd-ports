@@ -1,9 +1,9 @@
 # Created by: NAKATA, Maho <maho@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/cyberbit-ttfonts/Makefile 491917 2019-02-02 06:57:27Z tobik $
+# $FreeBSD: head/x11-fonts/cyberbit-ttfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	cyberbit-ttfonts
 PORTVERSION=	2.0.20050220
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://freebsd.nsu.ru/distfiles/cyberbit/
 DISTFILES=	Cyberbit.ZIP 97CyberBase.Doc 97CyberBit.Doc 97CyberCJK.Doc \

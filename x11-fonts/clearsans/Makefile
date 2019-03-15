@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/clearsans/Makefile 443002 2017-06-09 14:54:36Z rakuco $
+# $FreeBSD: head/x11-fonts/clearsans/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	clearsans
 PORTVERSION=	1.00
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://01.org/sites/default/files/downloads/
 

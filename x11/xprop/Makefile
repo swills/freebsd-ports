@@ -1,14 +1,17 @@
-# $FreeBSD: head/x11/xprop/Makefile 469552 2018-05-10 14:36:17Z zeising $
+# $FreeBSD: head/x11/xprop/Makefile 495291 2019-03-10 12:25:56Z zeising $
 
 PORTNAME=	xprop
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Property displayer for X
 
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 XORG_CAT=	app
-USE_XORG=	xmuu x11
+USE_XORG=	x11
 
 PLIST_FILES=	bin/xprop man/man1/xprop.1.gz
 

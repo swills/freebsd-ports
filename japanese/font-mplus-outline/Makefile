@@ -1,8 +1,9 @@
 # Created by: The 244th namelessness at 2ch.net
-# $FreeBSD: head/japanese/font-mplus-outline/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/japanese/font-mplus-outline/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	mplus
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	OSDN/${PORTNAME}-fonts/62344/
 PKGNAMEPREFIX=	ja-font-
@@ -12,7 +13,7 @@ DISTNAME=	${PORTNAME}-TESTFLIGHT-060
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	M+ Outline Fonts
 
-RUN_DEPENDS=	mkfontdir:x11-fonts/mkfontdir \
+RUN_DEPENDS=	mkfontscale>=0:x11-fonts/mkfontscale \
 		mkfontscale:x11-fonts/mkfontscale
 
 USES=		fonts:fc tar:xz

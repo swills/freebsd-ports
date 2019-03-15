@@ -1,9 +1,9 @@
 # Created by: Lowell Gilbert <lgfbsd@be-well.ilk.org>
-# $FreeBSD: head/x11-fonts/isabella/Makefile 463704 2018-03-06 09:33:06Z amdmi3 $
+# $FreeBSD: head/x11-fonts/isabella/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	isabella-ttf
 PORTVERSION=	1.202
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.thibault.org/fonts/isabella/
 DISTNAME=	Isabella-${PORTVERSION}-ttf

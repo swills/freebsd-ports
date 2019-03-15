@@ -1,9 +1,9 @@
 # Created by: Ilya A. Arkhipov <rum1cro@yandex.ru>
-# $FreeBSD: head/x11-fonts/inconsolata-lgc-ttf/Makefile 385665 2015-05-07 20:24:15Z mat $
+# $FreeBSD: head/x11-fonts/inconsolata-lgc-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	Inconsolata-LGC
 PORTVERSION=	20131024
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	rum1cro@yandex.ru

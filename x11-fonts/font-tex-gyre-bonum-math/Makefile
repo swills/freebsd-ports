@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/font-tex-gyre-bonum-math/Makefile 464759 2018-03-17 06:40:18Z yuri $
+# $FreeBSD: head/x11-fonts/font-tex-gyre-bonum-math/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	font-tex-gyre-bonum-math
 DISTVERSION=	1.005
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.gust.org.pl/projects/e-foundry/tg-math/download/
 DISTNAME=	${PORTNAME:S/font-//:S/-//:S/-//}-${DISTVERSION:S/.//}

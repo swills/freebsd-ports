@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-fonts/font-gost/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/x11-fonts/font-gost/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	gost
 PORTVERSION=	0.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://sd.ascon.ru/ftp/Public/Utils/DWG-DXF/ \
 		LOCAL/vg

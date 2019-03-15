@@ -1,8 +1,8 @@
 # Created by: Maurice Castro <maurice@serc.rmit.edu.au>
-# $FreeBSD: head/math/R/Makefile 488163 2018-12-23 02:32:17Z jrm $
+# $FreeBSD: head/math/R/Makefile 495682 2019-03-14 01:35:33Z jrm $
 
 PORTNAME=	R
-DISTVERSION=	3.5.2
+DISTVERSION=	3.5.3
 CATEGORIES=	math lang
 MASTER_SITES=	CRAN/src/base/R-${PORTVERSION:C|\..*||}
 
@@ -71,7 +71,7 @@ ATLAS_USES=		blaslapack:atlas
 ATLAS_CONFIGURE_ON=	--disable-BLAS-shlib
 CAIROPANGO_IMPLIES=	X11
 CAIROPANGO_CONFIGURE_WITH=	cairo
-CAIROPANGO_USES=	gettext jpeg pkgconfig
+CAIROPANGO_USES=	gettext gnome jpeg pkgconfig
 CAIROPANGO_USE=		GNOME=pango,cairo
 FLANG_USES=		fortran:flang
 FLANG_USES_OFF=		fortran

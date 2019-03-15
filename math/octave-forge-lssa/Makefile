@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-lssa/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/octave-forge-lssa/Makefile 495225 2019-03-10 04:56:17Z stephen $
 
 PORTNAME=	octave-forge-lssa
 PORTVERSION=	0.1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

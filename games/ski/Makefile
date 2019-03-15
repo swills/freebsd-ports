@@ -1,5 +1,5 @@
 # Created by: janos.mohacsi@bsd.hu
-# $FreeBSD: head/games/ski/Makefile 480726 2018-09-26 09:54:07Z lme $
+# $FreeBSD: head/games/ski/Makefile 495577 2019-03-13 14:40:48Z mat $
 
 PORTNAME=	ski
 PORTVERSION=	6.12
@@ -11,7 +11,7 @@ COMMENT=	Skiing simulation with curses interface in python
 
 LICENSE=	BSD3CLAUSE
 
-USES=		python:3.2+:run
+USES=		python:3.2+,run
 NO_BUILD=	yes
 
 PLIST_FILES=	bin/${PORTNAME} \

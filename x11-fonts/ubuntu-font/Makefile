@@ -1,8 +1,9 @@
 # Created by: Kevin Lo <kevlo@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/ubuntu-font/Makefile 458818 2018-01-12 11:21:07Z rene $
+# $FreeBSD: head/x11-fonts/ubuntu-font/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	ubuntu-font
 PORTVERSION=	0.83
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://font.ubuntu.com/download/
 

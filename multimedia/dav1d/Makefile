@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/dav1d/Makefile 494637 2019-03-04 19:49:17Z jbeich $
+# $FreeBSD: head/multimedia/dav1d/Makefile 495533 2019-03-12 23:48:22Z jbeich $
 
 PORTNAME=	dav1d
-DISTVERSION=	0.2.0
+DISTVERSION=	0.2.1
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -22,7 +22,7 @@ USE_GITLAB=	yes
 USE_LDCONFIG=	yes
 GL_SITE=	https://code.videolan.org
 GL_ACCOUNT=	videolan
-GL_COMMIT=	8e379f1d64bf09224ce2863b0d8aeb7cbfde92d6
+GL_COMMIT=	408d0486889f4f6d92f73abdeaef250659a10bc7
 CONFIGURE_ENV=	UNAME_m=${ARCH} # XXX cpu_family()
 CFLAGS_aarch64=	-no-integrated-as
 CFLAGS_armv6=	-no-integrated-as -B${LOCALBASE}/bin

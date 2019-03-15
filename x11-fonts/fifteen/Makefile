@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/fifteen/Makefile 406972 2016-01-23 12:59:51Z rakuco $
+# $FreeBSD: head/x11-fonts/fifteen/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fifteen
 PORTVERSION=	20150410
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://fontlibrary.org/assets/downloads/${PORTNAME}/c1556403ec283a1b5a23ad483af659f9/
 DISTNAME=	${PORTNAME}

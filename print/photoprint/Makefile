@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/photoprint/Makefile 459261 2018-01-17 14:35:30Z bsam $
+# $FreeBSD: head/print/photoprint/Makefile 495425 2019-03-12 04:25:55Z linimon $
 
 PORTNAME=	photoprint
 DISTVERSION=	0.4.2-pre2
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libcups.so:print/cups \
 		libtiff.so:graphics/tiff
 
 GNU_CONFIGURE=	yes
-USES=		desktop-file-utils gettext jpeg libtool localbase pkgconfig
+USES=		compiler:c++11-lang desktop-file-utils gettext jpeg libtool localbase pkgconfig
 USE_GNOME=	cairo gdkpixbuf2 gtk20
 USE_XORG=	x11
 USE_CXXSTD=	gnu++98

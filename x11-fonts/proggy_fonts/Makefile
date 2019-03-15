@@ -1,9 +1,9 @@
 # Created by: Leland Wang <llwang@infor.org>
-# $FreeBSD: head/x11-fonts/proggy_fonts/Makefile 404657 2015-12-28 14:52:25Z rakuco $
+# $FreeBSD: head/x11-fonts/proggy_fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	proggy_fonts
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://upperbounds.net/download/
 DISTFILES=	ProggyClean.pcf.zip ProggySquare.pcf.zip \

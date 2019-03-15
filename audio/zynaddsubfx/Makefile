@@ -1,8 +1,8 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/zynaddsubfx/Makefile 494774 2019-03-06 04:56:56Z linimon $
+# $FreeBSD: head/audio/zynaddsubfx/Makefile 495347 2019-03-11 11:14:53Z hselasky $
 
 PORTNAME=	zynaddsubfx
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

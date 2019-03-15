@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/shells/ksh93/Makefile 495520 2019-03-12 19:36:29Z cy $
 
 # Make sure that your configuration DOES NOT set ANY gcc-related
 # variables.  ksh93 will not compile if you set even the seemingly
@@ -24,6 +24,8 @@ COMMENT=	Official AT&T release of KornShell 93
 
 LICENSE=	EPL
 
+BROKEN_aarch64=		Fails to compile: needs sbrk
+
 CONFLICTS=	ksh93-devel-*
 
 OPTIONS_DEFINE=	EXAMPLES STATIC
@@ -37,8 +39,6 @@ INITVERSION=	2013-05-24
 KSHVERSION=	2012-08-01
 
 STATIC_MAKE_ENV=	LDFLAGS+=-static
-
-BROKEN_aarch64=		Fails to compile: needs sbrk
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|SF_FLAGS|SFIO_FLAGS|g' ${WRKSRC}/src/lib/libast/include/sfio*.h ${WRKSRC}/src/lib/libast/sfio/*.c

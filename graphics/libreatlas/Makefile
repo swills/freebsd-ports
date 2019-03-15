@@ -1,5 +1,5 @@
 # Created by: lbartoletti <coder@tuxfamily.org>
-# $FreeBSD: head/graphics/libreatlas/Makefile 443096 2017-06-10 14:54:34Z dbaio $
+# $FreeBSD: head/graphics/libreatlas/Makefile 495548 2019-03-13 04:59:53Z linimon $
 
 PORTNAME=	libreatlas
 PORTVERSION=	1.0.0a
@@ -31,7 +31,7 @@ LIB_DEPENDS=	libmspack.so:archivers/libmspack \
 		libfontconfig.so:x11-fonts/fontconfig
 
 GNU_CONFIGURE=	yes
-USES=		gettext gmake iconv jpeg pathfix pkgconfig
+USES=		compiler:c++11-lang gettext gmake iconv jpeg pathfix pkgconfig
 USE_XORG=	ice pixman sm x11 xau xcb xcomposite xcursor xdamage xdmcp xext \
 		xfixes xi xinerama xrandr xrender xxf86vm
 USE_GNOME=	atk gdkpixbuf2 glib20 gtk20 pango

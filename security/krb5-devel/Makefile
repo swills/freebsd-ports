@@ -1,5 +1,5 @@
 # Created by: nectar@FreeBSD.org
-# $FreeBSD: head/security/krb5-devel/Makefile 495013 2019-03-08 03:21:51Z cy $
+# $FreeBSD: head/security/krb5-devel/Makefile 495758 2019-03-15 03:27:35Z cy $
 
 PORTNAME=		krb5
 PORTVERSION=		1.18.${MIT_COMMIT_DATE}
@@ -7,8 +7,8 @@ CATEGORIES=		security
 .if !defined(MASTERDIR)
 PKGNAMESUFFIX=		-devel
 .endif
-HASH=			9d6847c
-MIT_COMMIT_DATE=	2019.03.07
+HASH=			01319a3
+MIT_COMMIT_DATE=	2019.03.14
 
 PATCH_SITES=		http://web.mit.edu/kerberos/advisories/
 PATCH_DIST_STRIP=	-p2

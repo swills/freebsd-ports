@@ -1,9 +1,9 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/korean/unfonts-core/Makefile 472897 2018-06-20 18:49:52Z jkim $
+# $FreeBSD: head/korean/unfonts-core/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	unfonts
 PORTVERSION=	1.0.2.080608
-PORTREVISION?=	3
+PORTREVISION?=	4
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	https://kldp.net/unfonts/release/
 PKGNAMESUFFIX=	-${FONTCAT}

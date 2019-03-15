@@ -1,8 +1,8 @@
 # Created by: Toni Andjelkovic <toni@soth.at>
-# $FreeBSD: head/devel/pcsc-lite/Makefile 481811 2018-10-11 10:22:46Z 0mp $
+# $FreeBSD: head/devel/pcsc-lite/Makefile 495299 2019-03-10 16:19:51Z mmokhi $
 
 PORTNAME=	pcsc-lite
-PORTVERSION=	1.8.23
+PORTVERSION=	1.8.24
 PORTEPOCH=	2
 CATEGORIES=	devel security
 MASTER_SITES=	https://pcsclite.apdu.fr/files/

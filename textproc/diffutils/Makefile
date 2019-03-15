@@ -1,16 +1,15 @@
 # Created by: Garrett Rooney <rooneg@electricjellyfish.net>
-# $FreeBSD: head/textproc/diffutils/Makefile 484628 2018-11-10 18:12:57Z bapt $
+# $FreeBSD: head/textproc/diffutils/Makefile 495772 2019-03-15 07:07:51Z danfe $
 
 PORTNAME=	diffutils
-PORTVERSION=	3.6
-PORTREVISION=	1
+PORTVERSION=	3.7
 CATEGORIES=	textproc
 MASTER_SITES=	GNU
 
 LICENSE=	GPLv3+
 
 MAINTAINER=	johans@FreeBSD.org
-COMMENT=	The GNU diff utilities
+COMMENT=	GNU differential compare utilities
 
 LIB_DEPENDS=	libsigsegv.so:devel/libsigsegv
 

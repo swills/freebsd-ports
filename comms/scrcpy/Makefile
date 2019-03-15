@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/scrcpy/Makefile 493638 2019-02-23 04:52:47Z tobik $
+# $FreeBSD: head/comms/scrcpy/Makefile 495559 2019-03-13 05:28:06Z linimon $
 
 PORTNAME=	scrcpy
 DISTVERSIONPREFIX=	v
@@ -17,7 +17,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 RUN_DEPENDS=	adb:devel/android-tools-adb
 
-USES=		meson pkgconfig sdl
+USES=		compiler:c++11-lang meson pkgconfig sdl
 USE_SDL=	sdl2
 
 USE_GITHUB=	yes

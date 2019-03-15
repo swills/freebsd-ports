@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/qsstv/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/comms/qsstv/Makefile 495027 2019-03-08 07:57:47Z linimon $
 
 PORTNAME=	qsstv
 PORTVERSION=	9.2.6
@@ -22,7 +22,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libv4l2.so:multimedia/libv4l
 BUILD_DEPENDS=	v4l_compat>=0:multimedia/v4l_compat
 
-USES=		pkgconfig qmake qt:5
+USES=		compiler:c++11-lang pkgconfig qmake qt:5
 USE_QT=		buildtools core gui network widgets xml
 USE_GL+=	gl
 

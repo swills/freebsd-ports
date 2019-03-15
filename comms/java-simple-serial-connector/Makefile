@@ -1,7 +1,8 @@
-# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 451721 2017-10-10 21:31:30Z linimon $
+# $FreeBSD: head/comms/java-simple-serial-connector/Makefile 495537 2019-03-13 03:03:56Z ler $
 
 PORTNAME=	java-simple-serial-connector
 PORTVERSION=	2.8.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	comms java
 

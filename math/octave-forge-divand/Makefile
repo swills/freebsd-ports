@@ -1,9 +1,9 @@
 # Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
-# $FreeBSD: head/math/octave-forge-divand/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/octave-forge-divand/Makefile 495225 2019-03-10 04:56:17Z stephen $
 
 PORTNAME=	octave-forge-divand
 PORTVERSION=	1.1.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org

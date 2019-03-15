@@ -1,8 +1,9 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/alfont/Makefile 475533 2018-07-28 12:07:22Z tobik $
+# $FreeBSD: head/x11-fonts/alfont/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	alfont
 PORTVERSION=	2.0.9
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://opensnc.sourceforge.net/alfont/mirror/

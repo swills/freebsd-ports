@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/alef/Makefile 434692 2017-02-24 01:52:10Z cpm $
+# $FreeBSD: head/x11-fonts/alef/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	alef
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://alef.hagilda.com/
 DISTNAME=	Alef

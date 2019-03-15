@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dlib-cpp/Makefile 493695 2019-02-23 16:19:52Z arrowd $
+# $FreeBSD: head/science/dlib-cpp/Makefile 495552 2019-03-13 05:10:05Z linimon $
 
 PORTNAME=	dlib
 DISTVERSION=	19.16
@@ -12,7 +12,7 @@ COMMENT=	Machine learning framework written in C++
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/dlib/LICENSE.txt
 
-USES=			cmake pkgconfig tar:bzip2
+USES=			cmake compiler:c++11-lang pkgconfig tar:bzip2
 USE_LDCONFIG=		yes
 
 OPTIONS_DEFINE=		X11 JPEG PNG GIF SQLITE BLASLAPACK PYTHON AVX

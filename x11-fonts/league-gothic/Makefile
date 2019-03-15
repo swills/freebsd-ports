@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/x11-fonts/league-gothic/Makefile 491129 2019-01-25 07:25:10Z tobik $
+# $FreeBSD: head/x11-fonts/league-gothic/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	league-gothic
 DISTVERSION=	g20140319
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

@@ -1,11 +1,10 @@
 # Created by: Yinghong.Liu <relaxbsd@gmail.com>
-# $FreeBSD: head/math/speedcrunch/Makefile 491963 2019-02-02 17:23:48Z tobik $
+# $FreeBSD: head/math/speedcrunch/Makefile 495412 2019-03-12 03:17:06Z linimon $
 
 PORTNAME=	speedcrunch
 PORTVERSION=	0.12.0
-PORTRVISION=	1
 DISTVERSIONSUFFIX=	-${BB_COMMIT}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
@@ -14,20 +13,20 @@ COMMENT=	Keyboard-oriented desktop scientific calculator
 
 LICENSE=	GPLv2+
 
-USES=		cmake qt:5
+USES=		cmake compiler:c++11-lang qt:5
 
 BB_ACCOUNT=	heldercorreia
 BB_PROJECT=	${PORTNAME}
-BB_COMMIT=	7f2565d6a0ad
+BB_COMMIT=	c0fc9c68d292
 
 WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
-USE_QT=		buildtools_build qmake_build core gui help widgets
+USE_QT=		buildtools_build qmake_build core gui help sql widgets
 USE_XORG=	x11
 
 post-patch:
-# Remove custom options for compiler warnings
-	@${REINPLACE_CMD} -e 's|-W[-_[:alnum:]]*||g' \
+	@${REINPLACE_CMD} -e 's|-W[-_[:alnum:]]*|| ; s|metainfo|appdata| \
+	    ; s|master|${PORTVERSION}-git-${BB_COMMIT}|' \
 		${CMAKE_SOURCE_PATH}/CMakeLists.txt
 
 .include <bsd.port.mk>

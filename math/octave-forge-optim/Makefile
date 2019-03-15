@@ -1,5 +1,5 @@
 # Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
-# $FreeBSD: head/math/octave-forge-optim/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/octave-forge-optim/Makefile 495225 2019-03-10 04:56:17Z stephen $
 
 PORTNAME=	octave-forge-optim
 PORTVERSION=	1.5.3
@@ -13,6 +13,8 @@ LICENSE=	Parts
 LICENSE_NAME=	See individual files for licenses
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
+
+BROKEN=		depends upon octave-forge-optim which is broken
 
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.

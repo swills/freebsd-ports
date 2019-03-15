@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/sk1/Makefile 487763 2018-12-18 19:06:21Z yuri $
+# $FreeBSD: head/graphics/sk1/Makefile 495574 2019-03-13 13:03:11Z mat $
 
 PORTNAME=	sk1
 DISTVERSION=	2.0
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR} \
 
 USES=		desktop-file-utils gettext gnome python:2.7 shebangfix
 SHEBANG_FILES=	${PYSETUP}
-USE_PYTHON=	distutils noflavor distutils
+USE_PYTHON=	distutils distutils
 PYSETUP=	setup-sk1.py
 PYDISTUTILS_INSTALLARGS=	--root=${STAGEDIR}
 USE_GNOME=	cairo glib20 pango

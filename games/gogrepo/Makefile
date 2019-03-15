@@ -1,9 +1,9 @@
 # Created by: Stefan Esser <se@FreeBSD.org>
-# $FreeBSD: head/games/gogrepo/Makefile 477335 2018-08-16 13:18:54Z se $
+# $FreeBSD: head/games/gogrepo/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	gogrepo
 PORTVERSION=	0.3a
-PORT_REVISION=	2
+PORTREVISION=	2
 CATEGORIES=	games net
 
 MAINTAINER=	se@FreeBSD.org

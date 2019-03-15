@@ -1,8 +1,8 @@
 # Created by: Nikolai Lifanov <lifanov@FreeBSD.org>
-# $FreeBSD: head/sysutils/docker/Makefile 494713 2019-03-05 17:00:04Z antoine $
+# $FreeBSD: head/sysutils/docker/Makefile 495319 2019-03-11 00:53:04Z lifanov $
 
 PORTNAME=		docker
-PORTVERSION=		18.09.1
+PORTVERSION=		18.09.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=		sysutils
 
@@ -10,8 +10,6 @@ MAINTAINER=		lifanov@FreeBSD.org
 COMMENT=		Open-source application container engine
 
 LICENSE=		APACHE20
-
-BROKEN=			fails to build
 
 PLIST_FILES=		bin/docker
 

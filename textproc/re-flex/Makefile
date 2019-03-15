@@ -1,7 +1,7 @@
-# $FreeBSD: head/textproc/re-flex/Makefile 494922 2019-03-07 10:02:02Z gahr $
+# $FreeBSD: head/textproc/re-flex/Makefile 495457 2019-03-12 14:35:24Z gahr $
 
 PORTNAME=	re-flex
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

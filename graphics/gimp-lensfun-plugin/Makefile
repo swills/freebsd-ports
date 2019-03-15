@@ -1,5 +1,5 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-lensfun-plugin/Makefile 468519 2018-04-28 06:14:58Z tcberner $
+# $FreeBSD: head/graphics/gimp-lensfun-plugin/Makefile 495543 2019-03-13 04:44:28Z linimon $
 
 PORTNAME=	lensfun
 DISTVERSION=	0.2.4-dev
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/exiv2.pc:graphics/exiv2 \
 		${LOCALBASE}/libdata/pkgconfig/lensfun.pc:graphics/lensfun
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-USES=		gmake pkgconfig
+USES=		compiler:c++11-lang gmake pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	seebk

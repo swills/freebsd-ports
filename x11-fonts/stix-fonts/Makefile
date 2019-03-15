@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/stix-fonts/Makefile 487471 2018-12-14 23:31:15Z mat $
+# $FreeBSD: head/x11-fonts/stix-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	stixfonts
 PORTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	thierry@FreeBSD.org

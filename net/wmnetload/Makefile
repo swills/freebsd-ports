@@ -1,9 +1,9 @@
 # Created by: Hendrik Scholz <hendrik@scholz.net>
-# $FreeBSD: head/net/wmnetload/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/net/wmnetload/Makefile 495736 2019-03-14 20:53:31Z kai $
 
 PORTNAME=	wmnetload
 PORTVERSION=	1.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net windowmaker afterstep
 MASTER_SITES=	ftp://truffula.com/pub/ \
 		http://dl.fkb.wormulon.net/wmnetload/ \

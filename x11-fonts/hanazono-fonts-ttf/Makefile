@@ -1,8 +1,9 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 465484 2018-03-24 21:12:13Z sunpoet $
+# $FreeBSD: head/x11-fonts/hanazono-fonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	hanazono-fonts-ttf
 PORTVERSION=	20170904
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	OSDN/hanazono-font/68253
 DISTNAME=	${PORTNAME:C/-.*//}-${PORTVERSION}

@@ -1,9 +1,9 @@
 # Created by: Naresh Venkateshappa <nareshov@gmail.com>
-# $FreeBSD: head/x11-fonts/fonts-indic/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/fonts-indic/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fonts-indic
 PORTVERSION=	2.1.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://gentoo.osuosl.org/distfiles/
 

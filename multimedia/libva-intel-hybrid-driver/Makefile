@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/libva-intel-hybrid-driver/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/libva-intel-hybrid-driver/Makefile 495470 2019-03-12 16:53:44Z jbeich $
 
 PORTNAME=	intel-hybrid-driver
 DISTVERSION=	1.0.2
@@ -28,6 +28,15 @@ GH_ACCOUNT=	01org
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 PLIST_FILES=	lib/dri/hybrid_drv_video.so
+
+OPTIONS_DEFINE=	WAYLAND X11
+OPTIONS_DEFAULT=WAYLAND X11
+
+WAYLAND_LIB_DEPENDS=	libva-wayland.so:multimedia/libva
+WAYLAND_CONFIGURE_ENABLE=	wayland
+
+X11_LIB_DEPENDS=	libva-x11.so:multimedia/libva
+X11_CONFIGURE_ENABLE=	x11
 
 post-patch:
 	@${REINPLACE_CMD} -e '/__linux__/d; /LINUX/d' \

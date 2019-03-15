@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 494498 2019-03-03 11:43:52Z rene $
+# $FreeBSD: head/graphics/Makefile 495685 2019-03-14 05:02:59Z yuri $
 #
 
     COMMENT = Graphics tools and libraries
@@ -625,6 +625,7 @@
     SUBDIR += osg
     SUBDIR += osg-devel
     SUBDIR += osgearth
+    SUBDIR += ossim
     SUBDIR += oyranos
     SUBDIR += p5-Acme-Steganography-Image-Png
     SUBDIR += p5-Algorithm-Line-Bresenham
@@ -906,6 +907,7 @@
     SUBDIR += pysvg
     SUBDIR += qcomicbook
     SUBDIR += qgis
+    SUBDIR += qgis-ltr
     SUBDIR += qiv
     SUBDIR += qslim
     SUBDIR += qt4-iconengines

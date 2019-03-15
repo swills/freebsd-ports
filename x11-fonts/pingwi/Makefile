@@ -1,9 +1,9 @@
 # Created by: Gvozdikov Veniamin <g.veniamin@googlemail.com>
-# $FreeBSD: head/x11-fonts/pingwi/Makefile 462745 2018-02-23 21:09:47Z rene $
+# $FreeBSD: head/x11-fonts/pingwi/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	pingwi
 PORTVERSION=	0.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.pingwinsoft.ru/system/uploads/16/original/ \
 		http://fbsd.zlonet.ru/distfiles/

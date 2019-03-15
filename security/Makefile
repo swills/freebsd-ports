@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/security/Makefile 495771 2019-03-15 06:05:43Z yuri $
 #
 
     COMMENT = Security tools
@@ -417,6 +417,7 @@
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += minisign
+    SUBDIR += mkp224o
     SUBDIR += modsecurity3
     SUBDIR += monkeysphere
     SUBDIR += morphis
@@ -1107,6 +1108,7 @@
     SUBDIR += rifiuti2
     SUBDIR += rkhunter
     SUBDIR += rndpassw
+    SUBDIR += ruby-bitwarden
     SUBDIR += ruby-camellia
     SUBDIR += rubygem-aes_key_wrap
     SUBDIR += rubygem-airbrussh

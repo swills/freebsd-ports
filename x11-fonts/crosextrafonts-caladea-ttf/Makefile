@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/crosextrafonts-caladea-ttf/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/crosextrafonts-caladea-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	crosextrafonts
 PORTVERSION=	20130214
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://gsdview.appspot.com/chromeos-localmirror/distfiles/
 PKGNAMESUFFIX=	-caladea

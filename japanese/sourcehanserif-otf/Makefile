@@ -1,7 +1,8 @@
-# $FreeBSD: head/japanese/sourcehanserif-otf/Makefile 494168 2019-02-28 17:30:37Z kai $
+# $FreeBSD: head/japanese/sourcehanserif-otf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=		sourcehanserif
 PORTVERSION=		1.001
+PORTREVISION=		1
 DISTVERSIONSUFFIX=	R
 CATEGORIES=		japanese x11-fonts
 PKGNAMESUFFIX=		-otf

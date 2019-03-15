@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/google-fonts/Makefile 494519 2019-03-03 22:19:30Z sunpoet $
+# $FreeBSD: head/x11-fonts/google-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	google-fonts
 DISTVERSION=	0.0.0.20190118
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	dg@syrec.org

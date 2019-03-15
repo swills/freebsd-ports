@@ -1,4 +1,4 @@
-# $FreeBSD: head/Mk/Uses/qt.mk 493464 2019-02-20 21:24:33Z tobik $
+# $FreeBSD: head/Mk/Uses/qt.mk 495245 2019-03-10 10:02:38Z adridg $
 #
 # There are three Qt related USES files with different access to Qt.
 #   - qmake: The port requires Qt's qmake to build -- creates the configure target
@@ -140,9 +140,12 @@ _QT_MK_POST_INCLUDED=	qt.mk
 _USE_QT_ALL=		assistant dbus declarative designer doc gui help \
 			imageformats l10n linguist linguisttools multimedia \
 			network opengl pixeltool qdbusviewer qmake script \
-			scripttools sql sql-ibase sql-mysql sql-odbc sql-pgsql \
+			scripttools sql sql-mysql sql-odbc sql-pgsql \
 			sql-sqlite2 sql-sqlite3 svg testlib webkit \
 			xml xmlpatterns
+.if ${ARCH} == amd64 || ${ARCH} == i386
+_USE_QT_ALL+=	sql-ibase
+.endif
 
 _USE_QT4_ONLY=		accessible assistant-adp assistantclient clucene codecs-cn codecs-jp \
 			codecs-kr codecs-tw corelib demo graphicssystems-opengl \

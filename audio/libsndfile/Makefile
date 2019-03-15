@@ -1,9 +1,9 @@
 # Created by: ijliao
-# $FreeBSD: head/audio/libsndfile/Makefile 463363 2018-03-02 00:42:07Z jhale $
+# $FreeBSD: head/audio/libsndfile/Makefile 495440 2019-03-12 06:10:24Z riggs $
 
 PORTNAME=	libsndfile
 PORTVERSION=	1.0.28
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mega-nerd.com/libsndfile/files/
 

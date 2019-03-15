@@ -1,8 +1,7 @@
-# $FreeBSD: head/sysutils/dsblogoutmgr/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/dsblogoutmgr/Makefile 495427 2019-03-12 04:33:48Z meta $
 
 PORTNAME=	dsblogoutmgr
-PORTVERSION=	1.3
-PORTREVISION=	1
+PORTVERSION=	1.3.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freeshell.de/~mk/download/
 
@@ -12,7 +11,7 @@ COMMENT=	Graphical logout manager
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gl qmake qt:5 tar:tgz
+USES=		compiler:c++11-lang gl qmake qt:5 tar:tgz
 
 USE_GL=		gl
 USE_QT=		buildtools_build core gui linguisttools_build widgets

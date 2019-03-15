@@ -1,9 +1,9 @@
 # Created by: chris_pressey@yahoo.ca
-# $FreeBSD: head/games/fargoal/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/fargoal/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	fargoal
 PORTVERSION=	20040629
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	SF/squidfighter/${PORTNAME}/20040630
 DISTNAME=	${PORTNAME}${PORTVERSION}

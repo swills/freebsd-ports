@@ -1,8 +1,9 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 494262 2019-03-01 11:18:52Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourceserifpro-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	sourceserifpro
 PORTVERSION=	2.010
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	R-ro/1.010R-it
 CATEGORIES=	x11-fonts
 PKGNAMESUFFIX=	-ttf

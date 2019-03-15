@@ -1,4 +1,4 @@
-# $FreeBSD: head/science/dvc/Makefile 494769 2019-03-06 03:48:42Z yuri $
+# $FreeBSD: head/science/dvc/Makefile 495574 2019-03-13 13:03:11Z mat $
 
 PORTNAME=	dvc
 DISTVERSION=	0.30.1
@@ -30,7 +30,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.3:devel/py-appdirs@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}zclockfile>0:devel/py-zclockfile@${PY_FLAVOR}
 
 USES=		python:2.7 # only because asciimatics is py27-only
-USE_PYTHON=	distutils autoplist noflavor
+USE_PYTHON=	distutils autoplist
 
 NO_ARCH=	yes
 

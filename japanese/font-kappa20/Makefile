@@ -1,9 +1,9 @@
 # Created by: Kawaguti Ginga <ginga@athena.club.ne.jp>
-# $FreeBSD: head/japanese/font-kappa20/Makefile 465526 2018-03-25 16:13:31Z nobutaka $
+# $FreeBSD: head/japanese/font-kappa20/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kappa20
 PORTVERSION=	0.396
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	LOCAL/hrs
 PKGNAMEPREFIX=	ja-font-

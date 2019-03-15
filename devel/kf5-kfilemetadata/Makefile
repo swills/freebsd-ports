@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 495765 2019-03-15 05:10:32Z tcberner $
 
 PORTNAME=	kfilemetadata
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libavutil.so:multimedia/ffmpeg \
 
 USES=		cmake compiler:c++11-lib gettext kde:5 pkgconfig \
 		qt:5 tar:xz
-USE_KDE=	archive ecm i18n
+USE_KDE=	archive coreaddons ecm i18n
 USE_QT=		buildtools_build core qmake_build xml
 
 # Frameworks ports install localization files that conflict with some

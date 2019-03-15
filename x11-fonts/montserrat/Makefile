@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/montserrat/Makefile 454031 2017-11-12 10:15:27Z rakuco $
+# $FreeBSD: head/x11-fonts/montserrat/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	montserrat
 PORTVERSION=	7.200
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	x11-fonts
 

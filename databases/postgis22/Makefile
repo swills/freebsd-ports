@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgis22/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/postgis22/Makefile 495773 2019-03-15 07:22:09Z wen $
 
 PORTNAME=	postgis
 PORTVERSION=	2.2.6
@@ -12,6 +12,9 @@ COMMENT=	Geographic objects support for PostgreSQL databases
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Upstream no longer maintained
+EXPIRATION_DATE=2019-06-15
 
 LIB_DEPENDS=	libproj.so:graphics/proj \
 		libgeos.so:graphics/geos \

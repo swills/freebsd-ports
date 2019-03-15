@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/junction/Makefile 404743 2015-12-29 14:30:46Z mat $
+# $FreeBSD: head/x11-fonts/junction/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	junction
 PORTVERSION=	20140329	# GH_TAGNAME's commit date.
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	rakuco@FreeBSD.org

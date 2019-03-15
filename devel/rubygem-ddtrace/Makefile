@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-ddtrace/Makefile 492454 2019-02-08 20:54:45Z sunpoet $
+# $FreeBSD: head/devel/rubygem-ddtrace/Makefile 495158 2019-03-09 14:37:55Z sunpoet $
 
 PORTNAME=	ddtrace
-PORTVERSION=	0.19.1
+PORTVERSION=	0.20.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

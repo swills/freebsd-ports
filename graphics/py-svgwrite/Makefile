@@ -1,12 +1,12 @@
-# $FreeBSD: head/graphics/py-svgwrite/Makefile 474857 2018-07-18 12:35:47Z lwhsu $
+# $FreeBSD: head/graphics/py-svgwrite/Makefile 495532 2019-03-12 23:21:54Z lwhsu $
 
 PORTNAME=	svgwrite
-PORTVERSION=	1.1.12
+PORTVERSION=	1.2.1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	lwhsu@FreeBSD.org
+MAINTAINER=	george@m5p.com
 COMMENT=	Python library to create SVG drawings
 
 LICENSE=	MIT

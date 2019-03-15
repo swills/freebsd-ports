@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/multimedia/libmatroska/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/multimedia/libmatroska/Makefile 495655 2019-03-13 20:25:24Z riggs $
 
 PORTNAME=	libmatroska
-PORTVERSION=	1.4.9
-PORTREVISION=	2
+PORTVERSION=	1.5.0
 CATEGORIES=	multimedia audio
 MASTER_SITES=	http://dl.matroska.org/downloads/libmatroska/ \
 		http://www.bunkus.org/videotools/mkvtoolnix/sources/

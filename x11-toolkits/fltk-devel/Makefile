@@ -1,5 +1,5 @@
 # Created by: gahr
-# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 490446 2019-01-16 05:04:54Z linimon $
+# $FreeBSD: head/x11-toolkits/fltk-devel/Makefile 495115 2019-03-09 10:19:44Z tcberner $
 
 PORTNAME=	fltk
 DISTVERSION=	1.3.x-r${SNAPSHOT_VERS}
@@ -28,6 +28,9 @@ CMAKE_ARGS=	-DOPTION_BUILD_SHARED_LIBS:BOOL=ON \
 		-DPREFIX_DOC:PATH=${PREFIX}/share/examples/fltk-devel \
 		-DPREFIX_INCLUDE:PATH=${PREFIX}/include/fltk-devel \
 		-DPREFIX_LIB:PATH=${PREFIX}/lib/fltk-devel
+
+DEPRECATED=	Older than x11-toolkits/fltk -- there is no point in having old snapshots
+EXPIRATION_DATE=	2019-03-31
 
 SNAPSHOT_VERS=	10370
 PORTEXAMPLES=	*

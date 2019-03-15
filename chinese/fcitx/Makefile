@@ -1,5 +1,5 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/fcitx/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/chinese/fcitx/Makefile 495766 2019-03-15 05:19:26Z tobik $
 
 PORTNAME=	fcitx
 PORTVERSION=	4.2.9.6
@@ -115,8 +115,6 @@ EXTRA_PATCHES+=	${FILESDIR}/tpunc-data_punc.mb.zh_CN
 .if defined(WITH_DEBUG)
 CMAKE_ARGS+=	-DENABLE_DEBUG=ON
 .endif
-
-DOCS_EXTRA_PATCHES_OFF=	${FILESDIR}/nodocs-doc_CMakeLists.txt
 
 _DICT_VER=	20121020
 _PYSTROKE_VER=	20121124

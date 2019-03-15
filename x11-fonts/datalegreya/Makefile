@@ -1,8 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/datalegreya/Makefile 472595 2018-06-17 08:18:50Z thierry $
+# $FreeBSD: head/x11-fonts/datalegreya/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	datalegreya
 PORTVERSION=	0.2017.03.29
+PORTREVISION=	1
 CATEGORIES=	x11-fonts math textproc
 
 MAINTAINER=	thierry@FreeBSD.org

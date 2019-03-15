@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/cockroach/Makefile 482757 2018-10-22 16:53:40Z riggs $
+# $FreeBSD: head/databases/cockroach/Makefile 495391 2019-03-11 20:22:57Z antoine $
 
 PORTNAME=	cockroach
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,8 @@ COMMENT=	Cloud-native SQL database that survive disasters
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/src/github.com/cockroachdb/cockroach/LICENSE
+
+BROKEN=		fails to build
 
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	"Only supported on amd64"

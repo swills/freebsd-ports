@@ -1,8 +1,8 @@
 # Created by: Sergey Skvortsov <skv@protey.ru>
-# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 492223 2019-02-05 13:49:08Z sunpoet $
+# $FreeBSD: head/www/p5-HTTP-BrowserDetect/Makefile 495139 2019-03-09 12:09:49Z sunpoet $
 
 PORTNAME=	HTTP-BrowserDetect
-PORTVERSION=	3.21
+PORTVERSION=	3.22
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

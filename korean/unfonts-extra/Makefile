@@ -1,7 +1,7 @@
 # Created by: Hye-Shik Chang <perky@FreeBSD.org>
-# $FreeBSD: head/korean/unfonts-extra/Makefile 472897 2018-06-20 18:49:52Z jkim $
+# $FreeBSD: head/korean/unfonts-extra/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
-PORTREVISION=	0
+PORTREVISION=	1
 
 FILEID=		2608
 

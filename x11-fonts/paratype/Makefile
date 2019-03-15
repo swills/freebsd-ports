@@ -1,8 +1,9 @@
 # Created by: Alexey Illarionov <littlesavage@rambler.ru>
-# $FreeBSD: head/x11-fonts/paratype/Makefile 424542 2016-10-24 06:04:57Z ache $
+# $FreeBSD: head/x11-fonts/paratype/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	paratype
 PORTVERSION=	2.005
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.paratype.com/uni/public/
 DISTFILES=	PTSans.zip PTSerif.zip PTMono.zip

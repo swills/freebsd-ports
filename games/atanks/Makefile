@@ -1,9 +1,9 @@
 # Created by: Jesse Smith <jessefrgsmith@yahoo.ca>
-# $FreeBSD: head/games/atanks/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/games/atanks/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	atanks
 PORTVERSION=	6.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}/
 

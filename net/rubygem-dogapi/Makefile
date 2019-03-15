@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-dogapi/Makefile 492953 2019-02-14 22:41:50Z sunpoet $
+# $FreeBSD: head/net/rubygem-dogapi/Makefile 495161 2019-03-09 14:38:11Z sunpoet $
 
 PORTNAME=	dogapi
-PORTVERSION=	1.33.0
+PORTVERSION=	1.34.0
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 

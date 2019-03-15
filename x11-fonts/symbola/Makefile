@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/symbola/Makefile 405874 2016-01-12 14:33:21Z amdmi3 $
+# $FreeBSD: head/x11-fonts/symbola/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	symbola
 PORTVERSION=	7.19
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://users.teilar.gr/~g1951d/
 DISTNAME=	Symbola

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/font-misc-meltho/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/font-misc-meltho/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	font-misc-meltho
 PORTVERSION=	1.0.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	x11@FreeBSD.org

@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 494883 2019-03-07 05:00:01Z acm $
+# $FreeBSD: head/comms/cqrlog/Makefile 495229 2019-03-10 06:25:34Z yuri $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.3.0
@@ -12,6 +12,8 @@ MAINTAINER=	hamradio@FreeBSD.org
 COMMENT=	Amateur Radio logging application
 
 LICENSE=	GPLv2
+
+BROKEN=		Fatal: (10022) Can't find unit GL used by TAOpenGL
 
 LIB_DEPENDS=	libhamlib.so:comms/hamlib
 

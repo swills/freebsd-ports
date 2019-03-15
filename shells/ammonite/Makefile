@@ -1,7 +1,7 @@
-# $FreeBSD: head/shells/ammonite/Makefile 493275 2019-02-18 17:01:53Z pi $
+# $FreeBSD: head/shells/ammonite/Makefile 495241 2019-03-10 09:36:07Z pi $
 
 PORTNAME=	ammonite
-DISTVERSION=	1.6.3
+DISTVERSION=	1.6.4
 CATEGORIES=	shells java
 MASTER_SITES=	https://github.com/lihaoyi/Ammonite/releases/download/${PORTVERSION}/
 DISTNAME=	2.12-${PORTVERSION}

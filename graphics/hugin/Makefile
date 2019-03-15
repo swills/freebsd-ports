@@ -1,9 +1,9 @@
 # Created by: Carlos Eduardo G. Carvalho <cartola@openit.com.br>
-# $FreeBSD: head/graphics/hugin/Makefile 493853 2019-02-25 12:47:20Z bapt $
+# $FreeBSD: head/graphics/hugin/Makefile 495072 2019-03-08 20:46:25Z tcberner $
 
 PORTNAME=	hugin
 PORTVERSION=	2018.0.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION:R}
 

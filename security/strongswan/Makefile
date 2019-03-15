@@ -1,9 +1,9 @@
 # Created by: Riaan Kruger <riaank@gmail.com>
-# $FreeBSD: head/security/strongswan/Makefile 494736 2019-03-05 20:14:17Z swills $
+# $FreeBSD: head/security/strongswan/Makefile 495117 2019-03-09 10:37:13Z pi $
 
 PORTNAME=	strongswan
 PORTVERSION=	5.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://download.strongswan.org/ \
 		http://download2.strongswan.org/
@@ -108,7 +108,9 @@ UNBOUND_LIB_DEPENDS=	libunbound.so:dns/unbound \
 			libldns.so:dns/ldns
 UNITY_CONFIGURE_ON=	--enable-unity
 VICI_CONFIGURE_ON=	--enable-vici
-XAUTH_CONFIGURE_ON=	--enable-xauth-eap --enable-xauth-generic
+XAUTH_CONFIGURE_ON=	--enable-xauth-eap \
+			--enable-xauth-generic \
+			--enable-xauth-pam
 BUILTIN_CONFIGURE_ON=	--with-printf-hooks=builtin
 LIBC_CONFIGURE_ON=	--with-printf-hooks=glibc
 VSTR_CONFIGURE_ON=	--with-printf-hooks=vstr

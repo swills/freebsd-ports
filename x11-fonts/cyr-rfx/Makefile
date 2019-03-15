@@ -1,9 +1,9 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/x11-fonts/cyr-rfx/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/cyr-rfx/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	cyr-rfx-${CYR_RFX_ENCODING}
 PORTVERSION=	1.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts ukrainian russian
 MASTER_SITES=	ftp://ftp.ptc.spbu.ru/mirror/ftp.inp.nsk.su/%SUBDIR%/ \
 		ftp://ftp.inp.nsk.su/%SUBDIR%/
@@ -14,7 +14,7 @@ MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Cyrillic X11 bitmap fonts from CYR-RFX project
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir
+		mkfontscale>=0:x11-fonts/mkfontscale
 
 USES=		fonts
 USE_XORG=	x11

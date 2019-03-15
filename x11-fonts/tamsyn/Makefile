@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/tamsyn/Makefile 486403 2018-12-02 10:10:58Z tobik $
+# $FreeBSD: head/x11-fonts/tamsyn/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	tamsyn-font
 DISTVERSION=	1.11
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.fial.com/~scott/tamsyn-font/download/
 

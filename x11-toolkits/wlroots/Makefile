@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-toolkits/wlroots/Makefile 494112 2019-02-28 00:57:46Z jbeich $
+# $FreeBSD: head/x11-toolkits/wlroots/Makefile 495369 2019-03-11 17:47:10Z jbeich $
 
 PORTNAME=	wlroots
-DISTVERSION=	0.4.1
+DISTVERSION=	0.5.0
 CATEGORIES=	x11-toolkits
 
 MAINTAINER=	jbeich@FreeBSD.org

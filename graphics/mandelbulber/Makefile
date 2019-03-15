@@ -1,9 +1,8 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/graphics/mandelbulber/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/mandelbulber/Makefile 495586 2019-03-13 15:48:12Z amdmi3 $
 
 PORTNAME=	mandelbulber
-PORTVERSION=	2.16
-PORTREVISION=	1
+PORTVERSION=	2.17
 CATEGORIES=	graphics
 
 MAINTAINER=	amdmi3@FreeBSD.org

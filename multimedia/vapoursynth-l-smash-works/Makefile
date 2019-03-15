@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 494758 2019-03-06 02:55:01Z jbeich $
+# $FreeBSD: head/multimedia/vapoursynth-l-smash-works/Makefile 495661 2019-03-13 20:42:21Z jbeich $
 
 PORTNAME=	l-smash-works
 DISTVERSION=	0.0-935 # git rev-list --count HEAD

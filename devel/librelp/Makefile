@@ -1,8 +1,8 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/devel/librelp/Makefile 487293 2018-12-12 13:14:25Z matthew $
+# $FreeBSD: head/devel/librelp/Makefile 495445 2019-03-12 07:41:23Z matthew $
 
 PORTNAME=	librelp
-PORTVERSION=	1.3.0
+PORTVERSION=	1.4.0
 CATEGORIES=	devel
 MASTER_SITES=	http://download.rsyslog.com/librelp/
 
@@ -11,9 +11,9 @@ COMMENT=	Reliable event logging protocol library
 
 LICENSE=	GPLv3
 
-OPTIONS_SINGLE=			SSLLIB
-OPTIONS_SINGLE_SSLLIB=		GNUTLS OPENSSL
-OPTIONS_DEFAULT=		GNUTLS
+OPTIONS_MULTI=			SSLLIB
+OPTIONS_MULTI_SSLLIB=		GNUTLS OPENSSL
+OPTIONS_DEFAULT=		GNUTLS OPENSSL
 
 GNUTLS_LIB_DEPENDS=		libgnutls.so:security/gnutls
 GNUTLS_CONFIGURE_ENABLE=	tls
@@ -31,7 +31,7 @@ INSTALL_TARGET=	install-strip
 PLIST_FILES=	include/${PORTNAME}.h \
 		lib/${PORTNAME}.a \
 		lib/${PORTNAME}.so lib/${PORTNAME}.so.0 \
-		lib/${PORTNAME}.so.0.4.0 \
+		lib/${PORTNAME}.so.0.5.0 \
 		libdata/pkgconfig/relp.pc
 
 PORT_VERBS=	relp

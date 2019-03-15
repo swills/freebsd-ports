@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/x11-fonts/freefont-ttf/Makefile 462871 2018-02-24 22:35:18Z rene $
+# $FreeBSD: head/x11-fonts/freefont-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	freefont-ttf
 PORTVERSION=	20120503
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	GNU/freefont
 

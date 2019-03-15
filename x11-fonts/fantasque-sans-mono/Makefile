@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/fantasque-sans-mono/Makefile 469962 2018-05-14 20:26:49Z rakuco $
+# $FreeBSD: head/x11-fonts/fantasque-sans-mono/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fantasque-sans-mono
 PORTVERSION=	1.7.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/belluzj/fantasque-sans/releases/download/v${PORTVERSION}/
 

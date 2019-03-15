@@ -1,5 +1,5 @@
 # Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/beats/Makefile 494719 2019-03-05 17:08:02Z antoine $
+# $FreeBSD: head/sysutils/beats/Makefile 495472 2019-03-12 17:06:08Z zi $
 
 PORTNAME=	beats
 PORTVERSION=	6.6.0
@@ -11,8 +11,6 @@ MAINTAINER=	elastic@FreeBSD.org
 COMMENT=	Collect logs locally and send to remote logstash
 
 LICENSE=	APACHE20
-
-BROKEN=		fails to build
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	elastic

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/yadifa/Makefile 492924 2019-02-14 15:47:31Z joneum $
+# $FreeBSD: head/dns/yadifa/Makefile 495318 2019-03-10 19:48:01Z pi $
 
 PORTNAME=	yadifa
 DISTVERSION=	2.3.9
@@ -43,19 +43,19 @@ post-configure:
 	${REINPLACE_CMD} -e 's|/usr/local/var|/var|' -e 's|/var/zones|/var/${PORTNAME}|' ${WRKSRC}/etc/yadifad.conf.example
 
 pre-build:
-	@cd ${WRKSRC} && ${MAKE_CMD} features
+	cd ${WRKSRC} && ${MAKE_CMD} features
 
 post-install:
-	${MV} ${STAGEDIR}${PREFIX}/etc/yadifad.conf \
+	${CP} ${WRKSRC}/etc/yadifad.conf \
 		${STAGEDIR}${PREFIX}/etc/yadifad.conf.sample
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
+	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}
-	@${MV} ${STAGEDIR}/var/zones ${STAGEDIR}/var/${PORTNAME}
+	${MV} ${STAGEDIR}/var/zones ${STAGEDIR}/var/${PORTNAME}
 
 post-install-EXAMPLES-on:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/bash_completion.d/
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/bash_completion.d/
 .for f in yadifa yadifad
-	@${LN} -s ../../${EXAMPLESDIR_REL}/$f.bash_completion \
+	${LN} -s ../../${EXAMPLESDIR_REL}/$f.bash_completion \
 		${STAGEDIR}${PREFIX}/etc/bash_completion.d/$f.sh
 .endfor
 

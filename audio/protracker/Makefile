@@ -1,5 +1,5 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/audio/protracker/Makefile 492986 2019-02-15 09:18:41Z ehaupt $
+# $FreeBSD: head/audio/protracker/Makefile 495194 2019-03-09 19:06:15Z ehaupt $
 
 PORTNAME=	protracker
 PORTVERSION=	2.3d.r${SVN_REV}
@@ -17,7 +17,7 @@ USES=		localbase:ldflags sdl
 USE_SDL=	sdl2
 
 SVN_URL=	https://svn.code.sf.net/p/protracker/code/trunk
-SVN_REV=	162
+SVN_REV=	165
 
 LDFLAGS+=	-lSDL2 -lm
 

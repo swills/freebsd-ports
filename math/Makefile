@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/math/Makefile 495782 2019-03-15 10:06:07Z danfe $
 #
 
     COMMENT = Mathematics
@@ -265,6 +265,7 @@
     SUBDIR += gretl
     SUBDIR += gri
     SUBDIR += gringo
+    SUBDIR += grpn
     SUBDIR += gsl
     SUBDIR += hexcalc
     SUBDIR += hipmcl
@@ -382,7 +383,7 @@
     SUBDIR += mtrxmath
     SUBDIR += multichoose
     SUBDIR += mumps
-    SUBDIR += mumps-edf
+    SUBDIR += mumps4
     SUBDIR += muparser
     SUBDIR += nanoflann
     SUBDIR += naturalmath

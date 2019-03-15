@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/linuxlibertine-g/Makefile 381896 2015-03-22 10:09:40Z bapt $
+# $FreeBSD: head/x11-fonts/linuxlibertine-g/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	linuxlibertine-g
 PORTVERSION=	20120116
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.numbertext.org/linux/
 DISTNAME=	e7a384790b13c29113e22e596ade9687-LinLibertineG-${PORTVERSION}

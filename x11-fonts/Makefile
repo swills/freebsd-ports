@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 494524 2019-03-03 22:21:32Z sunpoet $
+# $FreeBSD: head/x11-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -152,7 +152,6 @@
     SUBDIR += mgopen
     SUBDIR += mkbold
     SUBDIR += mkbold-mkitalic
-    SUBDIR += mkfontdir
     SUBDIR += mkfontscale
     SUBDIR += mkitalic
     SUBDIR += mondulkiri

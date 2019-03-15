@@ -1,8 +1,9 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/b612/Makefile 491385 2019-01-27 19:57:25Z sunpoet $
+# $FreeBSD: head/x11-fonts/b612/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	b612
 PORTVERSION=	1.005
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	sunpoet@FreeBSD.org

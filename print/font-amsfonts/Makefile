@@ -1,9 +1,9 @@
 # Created by: hrs
-# $FreeBSD: head/print/font-amsfonts/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/print/font-amsfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	amsfonts
 PORTVERSION=	3.02
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	LOCAL/hrs
 PKGNAMEPREFIX=	font-

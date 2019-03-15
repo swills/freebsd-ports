@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/ansible23/Makefile 484164 2018-11-05 02:07:09Z lifanov $
+# $FreeBSD: head/sysutils/ansible23/Makefile 495320 2019-03-11 01:05:24Z lifanov $
 
 PORTVERSION=	2.3.3.0
 PORTREVISION=	3
@@ -12,6 +12,13 @@ CONFLICTS=	ansible-* \
 
 MASTERDIR=	${.CURDIR}/../ansible
 DISTINFO_FILE=	${.CURDIR}/distinfo
+
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}jmespath>0:devel/py-jmespath@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}netaddr>0:net/py-netaddr@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pycrypto>0:security/py-pycrypto@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 PLIST_FILES=	man/man1/ansible-console.1.gz \
 		man/man1/ansible-doc.1.gz \

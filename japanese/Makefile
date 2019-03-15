@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 494168 2019-02-28 17:30:37Z kai $
+# $FreeBSD: head/japanese/Makefile 495610 2019-03-13 16:22:10Z kai $
 #
 
     COMMENT = Japanese support
@@ -257,6 +257,7 @@
     SUBDIR += skkserv
     SUBDIR += slimeforest
     SUBDIR += slrn
+    SUBDIR += sourcehansans-otf
     SUBDIR += sourcehanserif-otf
     SUBDIR += srd-fpw-package
     SUBDIR += suicavalue

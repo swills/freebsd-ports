@@ -1,8 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-File-Flock-Retry/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-File-Flock-Retry/Makefile 495592 2019-03-13 16:10:37Z sunpoet $
 
 PORTNAME=	File-Flock-Retry
-PORTVERSION=	0.62
+PORTVERSION=	0.631
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -17,8 +17,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 TEST_DEPENDS=	p5-File-Slurper>=0:devel/p5-File-Slurper \
 		p5-File-chdir>=0:devel/p5-File-chdir
 
-NO_ARCH=	yes
-USE_PERL5=	configure
 USES=		perl5
+USE_PERL5=	configure
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

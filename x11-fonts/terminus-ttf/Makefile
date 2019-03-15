@@ -1,8 +1,9 @@
 # Created by: Tobias Kortkamp <t@tobik.me>
-# $FreeBSD: head/x11-fonts/terminus-ttf/Makefile 489497 2019-01-06 14:52:44Z tobik $
+# $FreeBSD: head/x11-fonts/terminus-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	terminus-ttf
 PORTVERSION=	4.47.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://files.ax86.net/terminus-ttf/files/${PORTVERSION}/
 

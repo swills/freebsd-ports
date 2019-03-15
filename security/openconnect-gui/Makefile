@@ -1,10 +1,10 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/security/openconnect-gui/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/security/openconnect-gui/Makefile 495426 2019-03-12 04:30:49Z linimon $
 
 PORTNAME=	openconnect-gui
 PORTVERSION=	1.4.1
-PORTREVISION=	2
 DISTVERSIONPREFIX=v
+PORTREVISION=	2
 CATEGORIES=	security
 
 MAINTAINER=	pkubaj@anongoth.pl
@@ -18,10 +18,10 @@ LIB_DEPENDS=	libgnutls.so:security/gnutls
 RUN_DEPENDS=	openconnect:security/openconnect \
 		vpnc-scripts>=0:sysutils/vpnc-scripts
 
+USES=		cmake:insource compiler:c++11-lang pkgconfig qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	${PORTNAME:C/-gui//}
 
-USES=		cmake:insource pkgconfig qt:5
 USE_QT=		buildtools_build concurrent core gui network qmake_build widgets
 CMAKE_ARGS+=	-DCMAKE_BUILD_TYPE=Release
 PLIST_FILES=	bin/openconnect-gui

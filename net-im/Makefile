@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-im/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/net-im/Makefile 495058 2019-03-08 17:19:15Z adridg $
 #
 
     COMMENT = Instant messaging
@@ -161,6 +161,7 @@
     SUBDIR += sendxmpp
     SUBDIR += skype4
     SUBDIR += slack-term
+    SUBDIR += spectral
     SUBDIR += ssh-chat
     SUBDIR += talkatu
     SUBDIR += teamwords

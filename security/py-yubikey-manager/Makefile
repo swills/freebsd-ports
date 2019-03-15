@@ -1,7 +1,7 @@
-# $FreeBSD: head/security/py-yubikey-manager/Makefile 493130 2019-02-16 22:55:46Z sunpoet $
+# $FreeBSD: head/security/py-yubikey-manager/Makefile 495454 2019-03-12 14:00:58Z egypcio $
 
 PORTNAME=	yubikey-manager
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

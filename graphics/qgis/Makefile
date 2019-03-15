@@ -1,5 +1,5 @@
 # Created by: Laurent Courty
-# $FreeBSD: head/graphics/qgis/Makefile 494422 2019-03-02 17:45:58Z sunpoet $
+# $FreeBSD: head/graphics/qgis/Makefile 495667 2019-03-13 23:40:38Z wen $
 
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
@@ -86,6 +86,8 @@ USE_QT=		3d buildtools_build core concurrent dbus declarative \
 		webengine widgets webkit xml
 USE_PYQT=	core gui network qml qscintilla2 sip sql svg xml webkit_run
 USE_LDCONFIG=	yes
+
+CONFLICTS_INSTALL=	qgis-ltr
 
 USE_GITHUB=	yes
 GH_PROJECT=	${PORTNAME:tu}

@@ -1,9 +1,9 @@
 # Created by: Alban MAIRE <a.maire@s2mi.fr>
-# $FreeBSD: head/net-mgmt/unifi-lts/Makefile 485890 2018-11-25 18:38:21Z feld $
+# $FreeBSD: head/net-mgmt/unifi-lts/Makefile 495184 2019-03-09 18:12:18Z feld $
 
 PORTNAME=	unifi
 PORTVERSION=	5.6.40
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}/
 PKGNAMESUFFIX=	-lts
@@ -17,6 +17,7 @@ COMMENT=	UniFi Controller v5
 RUN_DEPENDS=	mongodb36>0:databases/mongodb36 \
 		snappyjava>0:archivers/snappy-java
 
+SUB_FILES=	mongod
 SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS} JAVASHAREDIR=${JAVASHAREDIR} \
 		JAVA=${JAVA}
 
@@ -54,7 +55,7 @@ post-patch:
 do-install:
 	${MKDIR} ${STAGEDIR}${JAVASHAREDIR}/unifi
 	(cd ${WRKSRC}/usr/lib/unifi && ${COPYTREE_SHARE} \* ${STAGEDIR}${JAVASHAREDIR}/unifi/)
-	${LN} -sf ${PREFIX}/bin/mongod ${STAGEDIR}${JAVASHAREDIR}/unifi/bin/mongod
+	${INSTALL_SCRIPT} ${WRKDIR}/mongod ${STAGEDIR}${JAVASHAREDIR}/unifi/bin/mongod
 # Create directories that will be writable by unifi
 .for i in data logs run work
 	${MKDIR} ${STAGEDIR}/${JAVASHAREDIR}/unifi/${i}

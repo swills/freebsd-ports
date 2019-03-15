@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/jsonrpc-glib/Makefile 488392 2018-12-26 14:33:45Z amdmi3 $
+# $FreeBSD: head/devel/jsonrpc-glib/Makefile 495406 2019-03-12 01:08:07Z linimon $
 
 PORTNAME=	jsonrpc-glib
 PORTVERSION=	3.28.1
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib
 
-USES=		gnome meson pkgconfig tar:xz
+USES=		compiler:c11 gnome meson pkgconfig tar:xz
 USE_GNOME=	glib20 introspection:build
 
 .include <bsd.port.mk>

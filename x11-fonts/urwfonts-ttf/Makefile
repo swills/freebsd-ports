@@ -1,9 +1,9 @@
 # Created by: Maxim Sobolev <sobomax@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/urwfonts-ttf/Makefile 481063 2018-10-01 20:02:03Z tobik $
+# $FreeBSD: head/x11-fonts/urwfonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	urwfonts-ttf
 PORTVERSION=	1.0.7b18
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.izmiran.rssi.ru/pub/fonts/urw/
 DISTNAME=	urw-fonts-${PORTVERSION:S/b/pre/}-ttf

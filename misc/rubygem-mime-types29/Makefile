@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/rubygem-mime-types29/Makefile 427698 2016-12-03 19:33:54Z sunpoet $
+# $FreeBSD: head/misc/rubygem-mime-types29/Makefile 495165 2019-03-09 14:38:30Z sunpoet $
 
 PORTNAME=	mime-types
 PORTVERSION=	2.99.3
@@ -12,10 +12,14 @@ COMMENT=	Ruby gem which provides a mailcap-like MIME Content-Type lookup
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/Licence.rdoc
 
+DEPRECATED=	Use misc/rubygem-mime-types instead
+EXPIRATION_DATE=2019-03-31
+
 RUN_DEPENDS=	rubygem-mime-types-data>=3.2015:misc/rubygem-mime-types-data
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

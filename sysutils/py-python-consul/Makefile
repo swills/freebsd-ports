@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-python-consul/Makefile 491686 2019-01-31 05:03:36Z jhixson $
+# $FreeBSD: head/sysutils/py-python-consul/Makefile 495577 2019-03-13 14:40:48Z mat $
 
 PORTNAME=	python-consul
 PORTVERSION=	1.1.0
@@ -20,7 +20,11 @@ RUN_DEPENDS=	${LOCALBASE}/bin/consul:sysutils/consul \
 				${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${PY_FLAVOR}
 
-USES=	python:2.7-3.6+
+IGNORE=	${IGNORE_${FLAVOR}}
+IGNORE_py35=	Does not work with Python 3.5
+
+# 2.7 or 3.6+, but it cannot be expressed right now.
+USES=	python
 
 USE_PYTHON=	distutils autoplist
 

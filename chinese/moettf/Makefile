@@ -1,9 +1,9 @@
 # Created by: Jing-Tang Keith Jang <keith@FreeBSD.org>
-# $FreeBSD: head/chinese/moettf/Makefile 419236 2016-07-29 10:53:38Z se $
+# $FreeBSD: head/chinese/moettf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	moettf
 PORTVERSION=	2.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	LOCAL/marino/zh-moettf
 DISTFILES=	edustds1.exe edustds2.exe edustd-15.exe \

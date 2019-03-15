@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/twmn/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/twmn/Makefile 495436 2019-03-12 05:16:23Z linimon $
 
 PORTNAME=	twmn
 PORTVERSION=	g20171216
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libboost_system.so:devel/boost-libs
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	sboli
 GH_TAGNAME=	5b92ac5

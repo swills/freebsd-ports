@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/lohit/Makefile 472207 2018-06-11 20:56:24Z feld $
+# $FreeBSD: head/x11-fonts/lohit/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	Lohit
 PORTVERSION=	20140220
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://releases.pagure.org/lohit/
 DISTNAME=	lohit-ttf-${PORTVERSION}

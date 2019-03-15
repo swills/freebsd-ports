@@ -1,9 +1,9 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/ukrainian/monacofonts/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/ukrainian/monacofonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	monaco
 PORTVERSION=	1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	ukrainian x11-fonts
 MASTER_SITES=	http://www.brama.com/compute/unix/
 PKGNAMEPREFIX=	koi8-u-
@@ -14,7 +14,6 @@ MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Collection of 5 "fixed" fonts for X11 from www.brama.com
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir \
 		mkfontscale:x11-fonts/mkfontscale
 
 USES=		fonts zip

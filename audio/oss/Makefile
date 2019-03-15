@@ -1,8 +1,8 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/audio/oss/Makefile 489819 2019-01-09 18:20:49Z fernape $
+# $FreeBSD: head/audio/oss/Makefile 495531 2019-03-12 22:27:36Z jkim $
 
 PORTNAME=	oss
-DISTVERSION=	4.2-build2017
+DISTVERSION=	4.2-build2019
 CATEGORIES=	audio
 MASTER_SITES=	http://www.opensound.com/developer/sources/stable/bsd/
 DISTNAME=	${PORTNAME}-v${DISTVERSION}-src-bsd

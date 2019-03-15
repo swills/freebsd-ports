@@ -1,8 +1,9 @@
 # Created by: Yonatan <onatan@gmail.com>
-# $FreeBSD: head/hebrew/culmus/Makefile 446246 2017-07-20 08:50:49Z cpm $
+# $FreeBSD: head/hebrew/culmus/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	culmus
 PORTVERSION=	0.131
+PORTREVISION=	1
 CATEGORIES=	hebrew
 MASTER_SITES=	SF
 

@@ -1,5 +1,5 @@
 
-# $FreeBSD: head/lang/ghc/bsd.cabal.mk 478531 2018-08-31 08:51:33Z arrowd $
+# $FreeBSD: head/lang/ghc/bsd.cabal.mk 495767 2019-03-15 05:31:48Z arrowd $
 #
 # bsd.cabal.mk -- Support for ports based on Haskell Cabal.
 #
@@ -54,7 +54,7 @@ GHC_LIB_DOCSDIR_REL=	share/doc/ghc-${GHC_VERSION}/html/libraries
 
 CABAL_LIBDIR=		${PREFIX}/lib/cabal/ghc-${GHC_VERSION}
 CABAL_LIBSUBDIR=	${PACKAGE}
-CABAL_ARCH=		${ARCH:S/amd64/x86_64/:C/armv.*/arm/}
+CABAL_ARCH=		${ARCH:S/amd64/x86_64/:C/armv.*/arm/:S/powerpc64/ppc64/}
 CABAL_ARCHSUBDIR=	${CABAL_ARCH}-freebsd-ghc-${GHC_VERSION}
 CABAL_LIBDIR_REL=	${CABAL_LIBDIR:S,^${PREFIX}/,,}
 

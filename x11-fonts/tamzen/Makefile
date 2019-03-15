@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-fonts/tamzen/Makefile 488304 2018-12-25 09:14:06Z tobik $
+# $FreeBSD: head/x11-fonts/tamzen/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	tamzen-font
 DISTVERSIONPREFIX=	Tamzen-
 DISTVERSION=	1.11.4
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	voidanix@420blaze.it

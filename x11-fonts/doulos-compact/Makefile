@@ -1,9 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/doulos-compact/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/x11-fonts/doulos-compact/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	DoulosSILCompact
 PORTVERSION=	4.110
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 #unfortunately, the SIL server embeds timestamps in the distfile, so we use a static local copy
 .if defined(MAINTAINER_MODE)

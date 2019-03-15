@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/ohsnap/Makefile 481464 2018-10-07 17:30:09Z rigoletto $
+# $FreeBSD: head/x11-fonts/ohsnap/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	ohsnap
 PORTVERSION=	1.8.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/osnapfont/
 

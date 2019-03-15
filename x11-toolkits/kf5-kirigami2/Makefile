@@ -1,5 +1,5 @@
 # Created by: tcberner
-# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/x11-toolkits/kf5-kirigami2/Makefile 495768 2019-03-15 05:37:55Z tcberner $
 
 PORTNAME=	kirigami2
 PORTVERSION=	${KDE_FRAMEWORKS_VERSION}
@@ -13,5 +13,8 @@ USE_KDE=	ecm kdeclarative
 USE_QT=		core dbus declarative gui linguisttools network \
 		quickcontrols2 svg testlib widgets \
 		buildtools_build qmake_build
+
+# Respin
+KDE_FRAMEWORKS_VERSION=	5.56.1
 
 .include <bsd.port.mk>

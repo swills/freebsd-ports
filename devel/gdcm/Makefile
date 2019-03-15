@@ -1,5 +1,5 @@
 # Created by: Pietro Cerutti <gahr@FreeBSD.org>
-# $FreeBSD: head/devel/gdcm/Makefile 490143 2019-01-13 15:17:23Z tobik $
+# $FreeBSD: head/devel/gdcm/Makefile 495218 2019-03-10 00:48:01Z stephen $
 
 PORTNAME=	gdcm
 PORTVERSION=	${GDCM_MAJOR}.${GDCM_MINOR}.${GDCM_PATCH}
@@ -28,7 +28,7 @@ VTK6_CMAKE_ON=		-DGDCM_USE_VTK:BOOL=ON \
 # Change this when updating the port
 GDCM_MAJOR=	2
 GDCM_MINOR=	8
-GDCM_PATCH=	8
+GDCM_PATCH=	9
 
 # Change this whenever VTK is updated
 VTK6_VERSION=	6.2

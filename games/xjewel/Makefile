@@ -1,9 +1,9 @@
 # Created by: jmz
-# $FreeBSD: head/games/xjewel/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/games/xjewel/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	xjewel
 PORTVERSION=	1.6
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	XCONTRIB/../R5contrib
 EXTRACT_SUFX=	.tar.z
@@ -12,7 +12,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	X11 dropping jewels game
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir
+		mkfontscale>=0:x11-fonts/mkfontscale
 
 USES=		fonts imake
 USE_XORG=	x11 xext

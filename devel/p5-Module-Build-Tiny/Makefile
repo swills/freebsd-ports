@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Module-Build-Tiny/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/devel/p5-Module-Build-Tiny/Makefile 495122 2019-03-09 12:08:20Z sunpoet $
 #
 # If you have compelling evidence that some ports need at least this version of
 # p5-Module-Build-Tiny to build, be sure to update the BUILD_DEPENDS version in
@@ -23,8 +23,9 @@ RUN_DEPENDS=	p5-ExtUtils-Config>=0.003:devel/p5-ExtUtils-Config \
 		p5-ExtUtils-Helpers>=0.020:devel/p5-ExtUtils-Helpers \
 		p5-ExtUtils-InstallPaths>=0.002:devel/p5-ExtUtils-InstallPaths
 
-NO_ARCH=	yes
-USE_PERL5=	modbuildtiny
 USES=		perl5
+USE_PERL5=	modbuildtiny
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

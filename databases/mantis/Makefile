@@ -1,9 +1,9 @@
 # Created by: Rozhuk Ivan <rozhuk.im@gmail.com>
-# $FreeBSD: head/databases/mantis/Makefile 489441 2019-01-06 08:04:45Z tobik $
+# $FreeBSD: head/databases/mantis/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	mantis
 PORTVERSION=	2.19.0
-PORTREVSION=	1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	databases www
 MASTER_SITES=	SF/mantisbt/mantis-stable/${PORTVERSION}

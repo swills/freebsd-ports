@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/devel/pure-stldict/Makefile 441429 2017-05-21 21:55:08Z linimon $
+# $FreeBSD: head/devel/pure-stldict/Makefile 495539 2019-03-13 04:20:42Z linimon $
 
 PORTNAME=	pure-stldict
 PORTVERSION=	0.8
@@ -13,9 +13,7 @@ COMMENT=	Pure interface to C++ STL map/unordered_map
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-BROKEN_powerpc64=	fails to compile: cc1plus: unrecognized command line option "-std=c++0x"
-
-USES=		pkgconfig pure
+USES=		compiler:c++0x pkgconfig pure
 
 CXXFLAGS+=	-std=c++0x -DHAVE_STD_IS_PERMUTATION
 

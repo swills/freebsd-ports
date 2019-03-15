@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/cde/Makefile 489982 2019-01-11 16:12:13Z amdmi3 $
+# $FreeBSD: head/x11/cde/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	cde
 DISTVERSION=	2.3.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	SF/cdesktopenv/src/
 
@@ -15,7 +16,7 @@ BROKEN_powerpc64=	fails to build: ./config/imake/imake: No such file or director
 
 BUILD_DEPENDS=	ksh93:shells/ksh93			\
 		bdftopcf:x11-fonts/bdftopcf		\
-		mkfontdir:x11-fonts/mkfontdir		\
+		mkfontscale>=0:x11-fonts/mkfontscale	\
 		biconv:converters/iconv			\
 		${LOCALBASE}/libdata/pkgconfig/fontconfig.pc:x11-fonts/fontconfig \
 		${LOCALBASE}/libdata/pkgconfig/freetype2.pc:print/freetype2

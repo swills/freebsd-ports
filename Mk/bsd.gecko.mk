@@ -4,7 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.gecko.mk 494772 2019-03-06 04:07:50Z jbeich $
+# $FreeBSD: head/Mk/bsd.gecko.mk 495403 2019-03-12 00:55:59Z jbeich $
 #
 # 4 column tabs prevent hair loss and tooth decay!
 
@@ -111,7 +111,7 @@ MOZ_EXPORT+=	PYTHON3="${LOCALBASE}/bin/python${PYTHON3_DEFAULT}"
 .endif
 
 .if ${MOZILLA_VER:R:R} >= 63
-BUILD_DEPENDS+=	rust-cbindgen>=0.6.2:devel/rust-cbindgen \
+BUILD_DEPENDS+=	rust-cbindgen>=0.6.8:devel/rust-cbindgen \
 				node:www/node
 .endif
 

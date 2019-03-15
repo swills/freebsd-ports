@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/hermit/Makefile 491959 2019-02-02 13:54:05Z tobik $
+# $FreeBSD: head/x11-fonts/hermit/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	hermit
 DISTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://pcaro.es/d/
 PKGNAMESUFFIX=	-font

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/Makefile 494498 2019-03-03 11:43:52Z rene $
+# $FreeBSD: head/databases/Makefile 495753 2019-03-15 00:47:02Z wen $
 #
 
     COMMENT = Databases and related software
@@ -675,6 +675,7 @@
     SUBDIR += postgis22
     SUBDIR += postgis23
     SUBDIR += postgis24
+    SUBDIR += postgis25
     SUBDIR += postgres-xl
     SUBDIR += postgresql-cstore_fdw
     SUBDIR += postgresql-jdbc
@@ -843,6 +844,7 @@
     SUBDIR += py-sqlalchemy10
     SUBDIR += py-sqlalchemy11
     SUBDIR += py-sqlalchemy12
+    SUBDIR += py-sqlalchemy13
     SUBDIR += py-sqlite3
     SUBDIR += py-sqlite3dbm
     SUBDIR += py-sqlobject

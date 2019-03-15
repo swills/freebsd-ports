@@ -1,8 +1,8 @@
-# $FreeBSD: head/japanese/font-elisa10/Makefile 467394 2018-04-15 13:52:21Z nobutaka $
+# $FreeBSD: head/japanese/font-elisa10/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	elisa10
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www.wheel.gr.jp/~dai/software/
 PKGNAMEPREFIX=	ja-font-

@@ -1,7 +1,7 @@
-# $FreeBSD: head/www/rubygem-gitlab-gollum-rugged_adapter/Makefile 472976 2018-06-21 15:28:59Z mfechner $
+# $FreeBSD: head/www/rubygem-gitlab-gollum-rugged_adapter/Makefile 495035 2019-03-08 11:25:51Z mfechner $
 
 PORTNAME=	gitlab-gollum-rugged_adapter
-PORTVERSION=	0.4.4.1
+PORTVERSION=	0.4.4.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 

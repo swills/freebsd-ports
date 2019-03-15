@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/lato/Makefile 491378 2019-01-27 19:15:31Z swills $
+# $FreeBSD: head/x11-fonts/lato/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	lato
 PORTVERSION=	g20180831
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.latofonts.com/download/
 DISTNAME=	Lato2OFL

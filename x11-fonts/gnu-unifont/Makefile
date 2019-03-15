@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/gnu-unifont/Makefile 463690 2018-03-06 05:51:11Z lwhsu $
+# $FreeBSD: head/x11-fonts/gnu-unifont/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	unifont
 PORTVERSION=	10.0.07
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	GNU/${PORTNAME}/${PORTNAME}-${PORTVERSION}

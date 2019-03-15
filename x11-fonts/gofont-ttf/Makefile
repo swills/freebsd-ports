@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/gofont-ttf/Makefile 469647 2018-05-11 16:03:44Z tobik $
+# $FreeBSD: head/x11-fonts/gofont-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	gofont-ttf
 DISTVERSION=	g20180511
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	tobik@FreeBSD.org

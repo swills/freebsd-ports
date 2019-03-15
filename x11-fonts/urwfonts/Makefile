@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/urwfonts/Makefile 418840 2016-07-20 15:33:20Z mat $
+# $FreeBSD: head/x11-fonts/urwfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	urwfonts
 PORTVERSION=	1.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/fonts/
 DISTNAME=	urw-fonts

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/amath/Makefile 477327 2018-08-16 12:28:15Z swills $
+# $FreeBSD: head/math/amath/Makefile 495220 2019-03-10 03:03:55Z linimon $
 
 PORTNAME=	amath
 PORTVERSION=	1.8.5
@@ -12,6 +12,9 @@ COMMENT=	Simple command line calculator
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe
+NOT_FOR_ARCHS_REASON=	Must define endianness
 
 USES=		gmake
 USE_LDCONFIG=	${PREFIX}/lib/${PORTNAME}

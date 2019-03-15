@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node8/Makefile 494486 2019-03-03 09:16:06Z bhughes $
+# $FreeBSD: head/www/node8/Makefile 495527 2019-03-12 21:08:19Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	8.15.1
@@ -59,7 +59,9 @@ SHEBANG_FILES=	tools/specialize_node_d.py tools/genv8constants.py
 
 PREFIX_RELDEST=	${PREFIX:S,^${DESTDIR},,}
 REINPLACE_ARGS=	-i ''
-MAKE_ENV+=	CC.host=${CC} CXX.host=${CXX} LINK.host=${CXX} LINK.target=${CXX}
+MAKE_ENV+=	CC.host=${CC} CFLAGS.host="${CFLAGS}" \
+		CXX.host=${CXX} CXXFLAGS.host="${CXXFLAGS}" \
+		LINK.host=${CXX} LDFLAGS.host="${LDFLAGS}"
 
 LIB_DEPENDS+=	libcares.so:dns/c-ares\
 		libuv.so:devel/libuv \

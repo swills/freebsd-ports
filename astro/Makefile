@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 491912 2019-02-02 05:55:13Z sunpoet $
+# $FreeBSD: head/astro/Makefile 495590 2019-03-13 16:06:25Z kai $
 #
 
     COMMENT = Astronomical ports
@@ -70,8 +70,10 @@
     SUBDIR += p5-GPS
     SUBDIR += p5-GPS-Babel
     SUBDIR += p5-GPS-OID
+    SUBDIR += p5-GPS-Point
     SUBDIR += p5-Geo-METAR
     SUBDIR += p5-Misc-Quality
+    SUBDIR += p5-Net-GPSD3
     SUBDIR += p5-Starlink-AST
     SUBDIR += p5-Weather-Underground
     SUBDIR += phoon

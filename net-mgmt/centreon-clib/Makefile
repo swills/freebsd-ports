@@ -1,5 +1,5 @@
 # Created by: Muhammad Moinur Rahman <5u623l20@gmail.com>
-# $FreeBSD: head/net-mgmt/centreon-clib/Makefile 489378 2019-01-05 20:29:53Z bofh $
+# $FreeBSD: head/net-mgmt/centreon-clib/Makefile 495564 2019-03-13 05:46:31Z linimon $
 
 PORTNAME=	centreon-clib
 PORTVERSION=	18.10.0
@@ -10,7 +10,7 @@ COMMENT=	Common library of all Centreon projects written in C or C++
 
 LICENSE=	AGPLv3
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	centreon

@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/textproc/Makefile 495355 2019-03-11 15:10:12Z adridg $
 #
 
     COMMENT = Text processing utilities (does not include desktop publishing)
@@ -1731,7 +1731,6 @@
     SUBDIR += smu
     SUBDIR += so-hunspell
     SUBDIR += soothsayer
-    SUBDIR += soprano
     SUBDIR += source-highlight
     SUBDIR += sowing
     SUBDIR += spellutils

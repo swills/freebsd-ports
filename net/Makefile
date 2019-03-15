@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 494930 2019-03-07 12:39:45Z krion $
+# $FreeBSD: head/net/Makefile 495578 2019-03-13 14:58:04Z zi $
 #
 
     COMMENT = Networking tools
@@ -902,6 +902,7 @@
     SUBDIR += p5-XPC
     SUBDIR += p5-ZMQ-FFI
     SUBDIR += p5-ZeroMQ
+    SUBDIR += p5-ip2location-perl
     SUBDIR += p5-ldap2pf
     SUBDIR += p5-ldap2pw
     SUBDIR += p5-perl-ldap

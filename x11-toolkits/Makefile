@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-toolkits/Makefile 493557 2019-02-22 07:48:48Z bapt $
+# $FreeBSD: head/x11-toolkits/Makefile 495042 2019-03-08 14:38:42Z danfe $
 #
 
     COMMENT = X11 toolkits
@@ -43,7 +43,7 @@
     SUBDIR += gtkada
     SUBDIR += gtkada3
     SUBDIR += gtkdatabox
-    SUBDIR += gtkextra2
+    SUBDIR += gtkextra
     SUBDIR += gtkglarea2
     SUBDIR += gtkglext
     SUBDIR += gtkglextmm

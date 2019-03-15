@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 494604 2019-03-04 15:59:12Z kmoore $
+# $FreeBSD: head/sysutils/Makefile 495780 2019-03-15 09:28:56Z 0mp $
 #
 
     COMMENT = System utilities
@@ -273,6 +273,7 @@
     SUBDIR += dsbmc
     SUBDIR += dsbmc-cli
     SUBDIR += dsbmd
+    SUBDIR += dsbsu
     SUBDIR += dsbwrtsysctl
     SUBDIR += dt
     SUBDIR += dtc
@@ -750,6 +751,7 @@
     SUBDIR += npadmin
     SUBDIR += nq
     SUBDIR += nrg2iso
+    SUBDIR += nsysctl
     SUBDIR += ntfy
     SUBDIR += nut
     SUBDIR += nvclock

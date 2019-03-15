@@ -1,4 +1,4 @@
-# $FreeBSD: head/games/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/games/Makefile 495182 2019-03-09 17:59:01Z fernape $
 #
 
     COMMENT = Games and related software
@@ -161,6 +161,7 @@
     SUBDIR += cleanq3
     SUBDIR += cockatrice
     SUBDIR += coffeebreak
+    SUBDIR += colobot
     SUBDIR += colorcode
     SUBDIR += columns
     SUBDIR += concentration

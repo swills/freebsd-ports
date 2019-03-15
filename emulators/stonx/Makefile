@@ -1,9 +1,9 @@
 # Created by: Tobias Reifenberger <tr@freebsd.mayn.de>
-# $FreeBSD: head/emulators/stonx/Makefile 479538 2018-09-11 18:34:27Z zeising $
+# $FreeBSD: head/emulators/stonx/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	stonx
 PORTVERSION=	0.6.7e.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators
 MASTER_SITES=	SF/stonx/stonx/0.6.7.6
 DISTNAME=	STonX-0.6.7.6
@@ -15,7 +15,6 @@ LICENSE=	GPLv2+
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
 		gccmakedep:devel/gccmakedep \
-		mkfontdir:x11-fonts/mkfontdir \
 		mkfontscale:x11-fonts/mkfontscale \
 		${LOCALBASE}/share/fonts/misc/10x20-ISO8859-1.pcf.gz:x11-fonts/font-misc-misc
 

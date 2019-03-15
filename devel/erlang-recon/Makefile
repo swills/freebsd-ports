@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/erlang-recon/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/erlang-recon/Makefile 495170 2019-03-09 15:12:36Z olgeni $
 
 PORTNAME=	recon
-PORTVERSION=	2.3.6
+PORTVERSION=	2.4.0
 CATEGORIES=	devel
 PKGNAMEPREFIX=	erlang-
 

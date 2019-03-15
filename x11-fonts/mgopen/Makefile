@@ -1,8 +1,9 @@
 # Created by: past@ebs.gr
-# $FreeBSD: head/x11-fonts/mgopen/Makefile 411778 2016-03-24 12:47:37Z mat $
+# $FreeBSD: head/x11-fonts/mgopen/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	mgopen
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	DEBIAN/pool/main/f/fonts-mgopen
 DISTNAME=	fonts-mgopen_${PORTVERSION}.orig

@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/x11-fonts/raleway/Makefile 484223 2018-11-05 21:22:54Z tobik $
+# $FreeBSD: head/x11-fonts/raleway/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	raleway
 DISTVERSION=	g20140205
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

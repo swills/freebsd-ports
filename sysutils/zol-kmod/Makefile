@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/zol-kmod/Makefile 494604 2019-03-04 15:59:12Z kmoore $
+# $FreeBSD: head/sysutils/zol-kmod/Makefile 495660 2019-03-13 20:34:45Z kmoore $
 
 PORTNAME=	zol
-PORTVERSION=	2019030100
+PORTVERSION=	2019031300
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-kmod
@@ -15,7 +15,7 @@ USES=		kmod
 USE_GITHUB=	yes
 GH_ACCOUNT=	zfsonfreebsd
 GH_PROJECT=	ZoF
-GH_TAGNAME=	e10a5fb
+GH_TAGNAME=	804ee5
 
 PLIST_FILES=	${KMODDIR}/zfs.ko
 

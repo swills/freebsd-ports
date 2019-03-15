@@ -1,9 +1,9 @@
 # Created by: Giuseppe Pilichi aka Jacula Modyun <jacula@gmail.com>
-# $FreeBSD: head/x11-fonts/indic-ttf/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/indic-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	indic-ttf
 PORTVERSION=	0.5.14
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	DEBIAN/pool/main/t/ttf-indic-fonts
 PKGNAMESUFFIX=	-fonts

@@ -1,5 +1,5 @@
 # Created by: Babak Farrokhi <farrokhi@FreeBSD.org>
-# $FreeBSD: head/databases/py-asyncpg/Makefile 489741 2019-01-08 21:07:52Z farrokhi $
+# $FreeBSD: head/databases/py-asyncpg/Makefile 495574 2019-03-13 13:03:11Z mat $
 
 PORTNAME=	asyncpg
 PORTVERSION=	0.18.3
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 OPTIONS_DEFINE=	DOCS
 
 USES=		pgsql:9.2+ python:3.5+
-USE_PYTHON=	autoplist concurrent distutils setuptools
+USE_PYTHON=	autoplist concurrent distutils
 
 PORTDOCS=	PKG-INFO README.rst
 

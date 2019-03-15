@@ -1,8 +1,8 @@
 # Created by: Frank Gruender <elwood@mc5sys.in-berlin.de>
-# $FreeBSD: head/lang/yabasic/Makefile 494802 2019-03-06 15:10:13Z wen $
+# $FreeBSD: head/lang/yabasic/Makefile 495668 2019-03-14 00:07:05Z wen $
 
 PORTNAME=	yabasic
-PORTVERSION=	2.82.0
+PORTVERSION=	2.82.1
 PORTEPOCH=	1
 CATEGORIES=	lang
 

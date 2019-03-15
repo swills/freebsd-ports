@@ -1,9 +1,9 @@
 # Created by: Babak Farrokhi <babak@farrokhi.net>
-# $FreeBSD: head/x11-fonts/farsifonts/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/farsifonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	farsifonts
 PORTVERSION=	0.4
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/farsi-fonts/
 

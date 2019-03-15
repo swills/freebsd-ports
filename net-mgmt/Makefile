@@ -1,4 +1,4 @@
-# $FreeBSD: head/net-mgmt/Makefile 494690 2019-03-05 10:06:37Z lme $
+# $FreeBSD: head/net-mgmt/Makefile 495219 2019-03-10 01:38:10Z leres $
 #
 
     COMMENT = Network management tools
@@ -320,10 +320,10 @@
     SUBDIR += py-pynxos
     SUBDIR += py-pysmi
     SUBDIR += py-pysnmp
-    SUBDIR += py-pysnmp-apps
     SUBDIR += py-pysnmp-mibs
     SUBDIR += py-pyzabbix
     SUBDIR += py-snmp_passpersist
+    SUBDIR += py-snmpclitools
     SUBDIR += py-yapsnmp
     SUBDIR += qkismet
     SUBDIR += rackmonkey

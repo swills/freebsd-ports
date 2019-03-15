@@ -1,5 +1,5 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/deskutils/znotes/Makefile 491046 2019-01-23 17:05:05Z rigoletto $
+# $FreeBSD: head/deskutils/znotes/Makefile 495751 2019-03-15 00:22:02Z linimon $
 
 PORTNAME=	znotes
 PORTVERSION=	0.4.5.20150825
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 FLAVORS=	qt5 qt4
 FLAVOR?=	${FLAVORS:[1]}
 
-USES=		qmake
+USES=		compiler:c++11-lang gl qmake
 USE_GL=		gl
 
 USE_GITHUB=	yes

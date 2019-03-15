@@ -1,10 +1,10 @@
-# $FreeBSD: head/net/libyang/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/libyang/Makefile 495743 2019-03-14 23:43:34Z olivier $
 
 PORTNAME=	libyang
 PORTVERSION=	0.16
 DISTVERSIONPREFIX=	v
-DISTVERSIONSUFFIX=	-r1
-PORTREVISION=	4
+DISTVERSIONSUFFIX=	-r3
+PORTREVISION=	5
 CATEGORIES=	net
 
 MAINTAINER=	olivier@FreeBSD.org

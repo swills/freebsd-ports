@@ -1,9 +1,9 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/bitstream-vera/Makefile 463290 2018-03-01 09:33:02Z amdmi3 $
+# $FreeBSD: head/x11-fonts/bitstream-vera/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	bitstream-vera
 PORTVERSION=	1.10
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	x11-fonts
 MASTER_SITES=	GNOME/sources/ttf-${PORTNAME}/${PORTVERSION}
 DISTNAME=	ttf-${PORTNAME}-${PORTVERSION}

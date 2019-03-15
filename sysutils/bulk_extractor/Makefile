@@ -1,9 +1,9 @@
 # Created by: MANTANI Nobutaka <nobutaka@FreeBSD.org>
-# $FreeBSD: head/sysutils/bulk_extractor/Makefile 488046 2018-12-22 01:57:32Z linimon $
+# $FreeBSD: head/sysutils/bulk_extractor/Makefile 495107 2019-03-09 08:15:19Z tcberner $
 
 PORTNAME=	bulk_extractor
 PORTVERSION=	1.5.5
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://digitalcorpora.org/downloads/bulk_extractor/
 

@@ -1,9 +1,8 @@
 # Created by: asami
-# $FreeBSD: head/games/nethack36/Makefile 455775 2017-12-08 08:33:45Z mat $
+# $FreeBSD: head/games/nethack36/Makefile 495538 2019-03-13 03:22:29Z glewis $
 
 PORTNAME=	nethack36
-PORTVERSION=	3.6.0
-PORTREVISION=	1
+PORTVERSION=	3.6.1
 CATEGORIES=	games
 MASTER_SITES=	SF/${TRUEPORTNAME}/${TRUEPORTNAME}/${PORTVERSION}
 DISTNAME=	${TRUEPORTNAME}-${PORTVERSION:S/.//g}-src
@@ -36,7 +35,7 @@ DOCSDIR=	${PREFIX}/share/doc/${HACKNAME}
 PKGDEINSTALL=	${WRKDIR}/pkg-deinstall
 
 .if !defined(PKGNAMESUFFIX)
-USE_XORG=	xaw xpm
+USE_XORG=	xaw xpm xmu xext xt x11 sm ice
 CFLAGS+=	-DX11_GRAPHICS -DUSE_TILES
 GRAPHICS=	X11_GRAPHICS
 .else

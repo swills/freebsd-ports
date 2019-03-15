@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 494316 2019-03-01 20:26:11Z antoine $
+# $FreeBSD: head/Mk/Scripts/check_leftovers.sh 495190 2019-03-09 18:38:18Z bdrewery $
 #
 # MAINTAINER: portmgr@FreeBSD.org
 #
@@ -45,7 +45,10 @@ fi
 if [ -z "${CCACHE_DIR}" ]; then
 	CCACHE_DIR=$(make -C ${portdir} -VCCACHE_DIR)
 fi
-homedirs=$(awk -F: -v users="$(make -C ${portdir} -V USERS|sed -e 's, ,|,g;/^$/d;s,^,^(,;s,$,)$,')" 'users && $1 ~ users {print $9}' ${PORTSDIR}/UIDs|sort -u|sed -e "s|/usr/local|${PREFIX}|"|tr "\n" " ")
+if [ -z "${UID_FILES}" ]; then
+	UID_FILES=$(make -C ${portdir} -VUID_FILES)
+fi
+homedirs=$(awk -F: -v users="$(make -C ${portdir} -V USERS|sed -e 's, ,|,g;/^$/d;s,^,^(,;s,$,)$,')" 'users && $1 ~ users {print $9}' ${UID_FILES}|sort -u|sed -e "s|/usr/local|${PREFIX}|"|tr "\n" " ")
 plistsub_sed=$(mktemp -t plistsub_sed)
 trap "rm -f ${plistsub_sed}" EXIT 1
 make -C ${portdir} -VPLIST_SUB_SED | /bin/sh ${PORTSDIR}/Mk/Scripts/plist_sub_sed_sort.sh ${plistsub_sed}

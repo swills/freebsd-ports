@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/consolamono-ttf/Makefile 406973 2016-01-23 13:03:34Z rakuco $
+# $FreeBSD: head/x11-fonts/consolamono-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	consolamono-ttf
 PORTVERSION=	20130127
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://fontlibrary.org/assets/downloads/consolamono/61cc2afcc4eca96efe7c6ebf178d39df/
 DISTNAME=	consolamono

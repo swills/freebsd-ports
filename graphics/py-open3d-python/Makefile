@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/py-open3d-python/Makefile 488363 2018-12-26 09:06:34Z tcberner $
+# $FreeBSD: head/graphics/py-open3d-python/Makefile 495550 2019-03-13 05:04:57Z linimon $
 
 PORTNAME=	open3d-python
 DISTVERSIONPREFIX=	v
@@ -15,7 +15,8 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 LIB_DEPENDS=	libOpen3D.so:graphics/open3d
 
-USES=		cmake eigen:3 fortran localbase:ldflags pkgconfig python
+USES=		cmake compiler:c++11-lang eigen:3 fortran localbase:ldflags \
+		pkgconfig python
 USE_GITHUB=	yes
 GH_ACCOUNT=	IntelVCL
 GH_PROJECT=	Open3D

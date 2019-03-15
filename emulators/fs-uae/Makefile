@@ -1,5 +1,5 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/emulators/fs-uae/Makefile 486969 2018-12-08 18:00:22Z fernape $
+# $FreeBSD: head/emulators/fs-uae/Makefile 495745 2019-03-14 23:53:47Z linimon $
 
 PORTNAME=	fs-uae
 PORTVERSION=	2.8.4
@@ -13,12 +13,11 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	zip:archivers/zip
-
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libopenal.so:audio/openal-soft \
 		libmpeg2.so:multimedia/libmpeg2
 
-USES=		desktop-file-utils gettext gl gmake \
+USES=		compiler:c11 desktop-file-utils gettext gl gmake \
 		gnome localbase pkgconfig shared-mime-info
 
 USE_SDL=	sdl2

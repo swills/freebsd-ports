@@ -1,7 +1,7 @@
-# $FreeBSD: head/net/p5-Net-LDAP-FilterBuilder/Makefile 470092 2018-05-16 00:01:01Z sunpoet $
+# $FreeBSD: head/net/p5-Net-LDAP-FilterBuilder/Makefile 495594 2019-03-13 16:10:48Z sunpoet $
 
 PORTNAME=	Net-LDAP-FilterBuilder
-PORTVERSION=	1.200000
+PORTVERSION=	1.200002
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -15,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		perl5
 USE_PERL5=	configure
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

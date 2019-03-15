@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-toolkits/diorite/Makefile 493423 2019-02-20 14:28:25Z bapt $
+# $FreeBSD: head/x11-toolkits/diorite/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	diorite
 PORTVERSION=	0.2.1
-PORTREVSION=	1
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits devel
 
 MAINTAINER=	ports@FreeBSD.org

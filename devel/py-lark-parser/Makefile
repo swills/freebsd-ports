@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-lark-parser/Makefile 493587 2019-02-22 19:54:01Z sunpoet $
+# $FreeBSD: head/devel/py-lark-parser/Makefile 495256 2019-03-10 10:58:12Z sunpoet $
 
 PORTNAME=	lark-parser
-PORTVERSION=	0.6.6
+PORTVERSION=	0.6.7
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

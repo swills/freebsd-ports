@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/gimp-lqr-plugin/Makefile 423645 2016-10-10 10:30:35Z amdmi3 $
+# $FreeBSD: head/graphics/gimp-lqr-plugin/Makefile 495544 2019-03-13 04:46:22Z linimon $
 
 PORTNAME=	gimp-lqr-plugin
 PORTVERSION=	0.7.2
@@ -16,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libgimp-2.0.so:graphics/gimp-app \
 		liblqr-1.so:graphics/liblqr-1
 
-USES=		tar:bzip2 gettext gmake localbase pkgconfig
+USES=		compiler:c++11-lang gettext gmake localbase pkgconfig \
+		tar:bzip2
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20 intltool
 

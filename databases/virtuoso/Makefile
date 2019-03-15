@@ -1,5 +1,5 @@
 # Created by: Max Khon <fjoe@FreeBSD.org>
-# $FreeBSD: head/databases/virtuoso/Makefile 487355 2018-12-13 07:24:45Z fjoe $
+# $FreeBSD: head/databases/virtuoso/Makefile 495774 2019-03-15 08:33:17Z tobik $
 
 PORTNAME=	virtuoso
 PORTVERSION=	7.2.5
@@ -41,7 +41,7 @@ CONFIGURE_ARGS=	--with-readline\
 		--datadir="${PREFIX}"\
 		--localstatedir="${PREFIX}"
 CONFIGURE_ENV=	ac_cv_header_sys_timeb_h=no
-CPPFLAGS+=	-std=gnu89 ${IODBC_CPPFLAGS}
+CPPFLAGS+=	-std=gnu89
 LDFLAGS+=	-lexecinfo
 MAKE_ENV=	PATH=${LOCALBASE}/bin:${PATH}\
 		ISQL=isql-vt
@@ -79,10 +79,10 @@ PLIST_SUB+=	WITH_IMAGEMAGICK="@comment "
 .if ${PORT_OPTIONS:MIODBC}
 CONFIGURE_ARGS+=--with-iodbc=${LOCALBASE}
 LIB_DEPENDS+=	libiodbc.so:databases/libiodbc
-IODBC_CPPFLAGS=	-I${LOCALBASE}/include/libiodbc
+CPPFLAGS+=	-I${LOCALBASE}/include/libiodbc
 PLIST_SUB+=	WITH_IODBC=""
 .else
-IODBC_CPPFLAGS=	-I../../libsrc/odbcsdk/include
+CPPFLAGS+=	-I../../libsrc/odbcsdk/include
 PLIST_SUB+=	WITH_IODBC="@comment "
 .endif
 

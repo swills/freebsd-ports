@@ -1,9 +1,9 @@
 # Created by: KATO Tsuguru <tkato@prontomail.com>
-# $FreeBSD: head/print/adobe-cmaps/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/print/adobe-cmaps/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	adobe-cmaps
 PORTVERSION=	20051217
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	LOCAL/hrs/adobe
 DISTFILES=	ac15.tar.gz ag15.tar.gz \

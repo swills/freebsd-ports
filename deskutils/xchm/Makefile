@@ -1,5 +1,5 @@
 # Created by: Pav Lucistnik <pav@oook.cz>
-# $FreeBSD: head/deskutils/xchm/Makefile 421837 2016-09-11 16:42:03Z amdmi3 $
+# $FreeBSD: head/deskutils/xchm/Makefile 495562 2019-03-13 05:41:37Z linimon $
 
 PORTNAME=	xchm
 PORTVERSION=	1.23
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libchm.so:misc/chmlib
 
 GNU_CONFIGURE=	yes
-USES=		localbase
+USES=		compiler:c++11-lang localbase
 USE_WX=		2.8
 WX_CONF_ARGS=	absolute
 LDFLAGS+=	-lpthread
