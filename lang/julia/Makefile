@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	julia
-PORTVERSION=	1.0.3
+PORTVERSION=	1.1.0
 DISTVERSIONSUFFIX=	-full
 CATEGORIES=	lang math
 MASTER_SITES=	https://github.com/JuliaLang/julia/releases/download/v${PORTVERSION}/
@@ -27,6 +27,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 BUILD_DEPENDS=	patchelf:sysutils/patchelf \
 		pcre2-config:devel/pcre2 \
 		cmake:devel/cmake
+RUN_DEPENDS=	bash:shells/bash
 
 USES=		gmake compiler:c++11-lib fortran python:2.7,build perl5
 USE_LDCONFIG=	yes
@@ -116,5 +117,10 @@ post-configure:
 	) || ( \
 		echo "USE_BLAS64=0" >> ${WRKSRC}/Make.user \
 	)
+
+post-stage:
+	${REINPLACE_CMD} 's#/bin/bash#${LOCALBASE}/bin/bash#g' \
+		${STAGEDIR}${PREFIX}/share/julia/stdlib/v1.1/Pkg/bin/loop.sh
+	${RM}  ${STAGEDIR}${PREFIX}/share/julia/stdlib/v1.1/Pkg/bin/loop.sh.bak
 
 .include <bsd.port.mk>
