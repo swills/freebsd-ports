@@ -22,13 +22,18 @@ USE_LDCONFIG=	yes
 
 MAKE_JOBS_UNSAFE= yes
 
-BUILD_DEPENDS=	valac:lang/vala \
-		gtkdoc-scan:textproc/gtk-doc
+BUILD_DEPENDS=	valac:lang/vala
 USE_GNOME=	introspection:build glib20 libxml2
 CMAKE_ARGS+=	-DGOBJECT_INTROSPECTION=true \
-		-DICAL_GLIB_VAPI=true \
-		-DICAL_BUILD_DOCS=false
+		-DICAL_GLIB_VAPI=true
 
 PLIST_SUB+=	VERSION=${PORTVERSION}
+
+OPTIONS_DEFINE=	GTKDOC
+OPTIONS_SUB=	yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc
+GTKDOC_CMAKE_BOOL=	ICAL_BUILD_DOCS
 
 .include <bsd.port.mk>
