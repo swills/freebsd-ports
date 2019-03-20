@@ -1,9 +1,8 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/misc/iso-codes/Makefile 487633 2018-12-16 21:41:27Z kwm $
+# $FreeBSD: head/misc/iso-codes/Makefile 495530 2019-03-12 21:25:16Z kwm $
 
 PORTNAME=	iso-codes
-PORTVERSION=	4.1
-PORTREVISION=	1
+PORTVERSION=	4.2
 CATEGORIES=	misc
 
 MAINTAINER=	kwm@FreeBSD.org
@@ -19,7 +18,7 @@ NO_ARCH=	yes
 USE_GITLAB=	yes
 GL_SITE=	https://salsa.debian.org
 GL_ACCOUNT=	iso-codes-team
-GL_COMMIT=	164802d5fd8c7a8167816fd86a62b286680619f0
+GL_COMMIT=	58a4f20f8e6f4d8f9545333f3eae4cfe5678de16
 
 BINARY_ALIAS=	python3=${PYTHON_VERSION}
 

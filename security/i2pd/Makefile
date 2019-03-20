@@ -1,10 +1,13 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/security/i2pd/Makefile 492146 2019-02-04 17:55:30Z amdmi3 $
+# $FreeBSD: head/security/i2pd/Makefile 496120 2019-03-18 04:32:13Z jbeich $
 
 PORTNAME=	i2pd
 PORTVERSION=	2.23.0
 PORTREVISION=	1
 CATEGORIES=	security net-p2p
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES+=	fc84d6c4b728.patch:-p1
 
 MAINTAINER=	amdmi3@FreeBSD.org
 COMMENT=	C++ implementation of I2P client

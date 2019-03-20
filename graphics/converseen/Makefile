@@ -1,9 +1,8 @@
-# $FreeBSD: head/graphics/converseen/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/converseen/Makefile 495305 2019-03-10 17:38:57Z fernape $
 
 PORTNAME=	converseen
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.7
-PORTREVISION=	3
+DISTVERSION=	0.9.7.2
 CATEGORIES=	graphics
 
 MAINTAINER=	fernape@FreeBSD.org

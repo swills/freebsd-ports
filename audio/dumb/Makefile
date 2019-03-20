@@ -1,9 +1,9 @@
 # Created by: Andreas Kohn <andreas@syndrom23.de>
-# $FreeBSD: head/audio/dumb/Makefile 434057 2017-02-13 22:13:34Z tijl $
+# $FreeBSD: head/audio/dumb/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	dumb
 PORTVERSION=	0.9.3
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	SF
 

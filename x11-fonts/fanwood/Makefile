@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/fanwood/Makefile 491377 2019-01-27 19:08:39Z swills $
+# $FreeBSD: head/x11-fonts/fanwood/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fanwood
 DISTVERSION=	g20110526
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

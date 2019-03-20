@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/astro/py-spacetrack/Makefile 488987 2019-01-01 20:35:10Z sunpoet $
+# $FreeBSD: head/astro/py-spacetrack/Makefile 495479 2019-03-12 18:09:37Z sunpoet $
 
 PORTNAME=	spacetrack
-PORTVERSION=	0.13.2
+PORTVERSION=	0.13.3
 CATEGORIES=	astro python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/comic-neue/Makefile 491806 2019-02-01 13:04:31Z swills $
+# $FreeBSD: head/x11-fonts/comic-neue/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	comic-neue
 PORTVERSION=	2.4
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/crozynski/comicneue/archive/v${PORTVERSION}/
 

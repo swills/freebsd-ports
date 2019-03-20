@@ -1,9 +1,9 @@
 # Created by: Michael Ranner
-# $FreeBSD: head/irc/kvirc/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/irc/kvirc/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	KVIrc
 DISTVERSION=	5.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc kde
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,11 +1,10 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/devel/libuv/Makefile 492639 2019-02-10 20:14:08Z thierry $
+# $FreeBSD: head/devel/libuv/Makefile 496042 2019-03-17 10:22:53Z thierry $
 
 PORTNAME=	libuv
-PORTVERSION=	1.26.0
+PORTVERSION=	1.27.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
-#MASTER_SITES=	http://dist.libuv.org/dist/v${PORTVERSION}/
 
 MAINTAINER=	thierry@FreeBSD.org
 COMMENT=	Multi-platform support library with a focus on asynchronous I/O

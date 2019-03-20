@@ -1,7 +1,8 @@
-# $FreeBSD: head/audio/juk/Makefile 492466 2019-02-08 22:50:23Z tcberner $
+# $FreeBSD: head/audio/juk/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	juk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	audio kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

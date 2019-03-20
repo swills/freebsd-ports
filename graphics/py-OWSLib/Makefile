@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/py-OWSLib/Makefile 481473 2018-10-07 18:31:18Z swills $
+# $FreeBSD: head/graphics/py-OWSLib/Makefile 495175 2019-03-09 15:48:47Z kai $
 
 PORTNAME=	OWSLib
-PORTVERSION=	0.17.0
+PORTVERSION=	0.17.1
 CATEGORIES=	graphics geography python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,7 @@ MAINTAINER=	lbartoletti@tuxfamily.org
 COMMENT=	Client programming with OGC web service (hence OWS)
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyproj>0:graphics/py-pyproj@${PY_FLAVOR} \

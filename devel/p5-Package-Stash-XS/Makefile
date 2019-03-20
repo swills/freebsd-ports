@@ -1,14 +1,12 @@
-# $FreeBSD: head/devel/p5-Package-Stash-XS/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/devel/p5-Package-Stash-XS/Makefile 495819 2019-03-15 21:41:08Z sunpoet $
 
 PORTNAME=	Package-Stash-XS
-PORTVERSION=	0.28
-PORTREVISION=	2
+PORTVERSION=	0.29
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
-MASTER_SITE_SUBDIR=	CPAN:DOY
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Faster and more correct implementation of the Package::Stash API
 
 LICENSE=	ART10 GPLv1+

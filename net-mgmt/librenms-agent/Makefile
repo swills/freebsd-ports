@@ -1,5 +1,5 @@
 # Created by: Nicolas Goralski <nicolas@goralski.fr>
-# $FreeBSD: head/net-mgmt/librenms-agent/Makefile 462307 2018-02-19 11:10:43Z antoine $
+# $FreeBSD: head/net-mgmt/librenms-agent/Makefile 495577 2019-03-13 14:40:48Z mat $
 
 PORTNAME=	librenms-agent
 PORTVERSION=	0.3
@@ -11,7 +11,7 @@ COMMENT=	Agents and plugins for librenms
 
 LICENSE=	GPLv2
 
-USES=		shebangfix python:2.7:run php:cli
+USES=		shebangfix python:2.7,run php:cli
 NO_ARCH=	yes
 
 USE_GITHUB=	yes

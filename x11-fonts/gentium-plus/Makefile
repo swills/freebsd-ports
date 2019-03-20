@@ -1,7 +1,8 @@
 # Created by: Matthew Seaman
-# $FreeBSD: head/x11-fonts/gentium-plus/Makefile 463192 2018-02-28 09:33:02Z amdmi3 $
+# $FreeBSD: head/x11-fonts/gentium-plus/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	GentiumPlus
+PORTREVISION=	1
 PORTVERSION=	5.000
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://software.sil.org/downloads/gentium/

@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/x11-fonts/linden-hill/Makefile 491452 2019-01-28 05:55:49Z tobik $
+# $FreeBSD: head/x11-fonts/linden-hill/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	linden-hill
 DISTVERSION=	g20110526
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

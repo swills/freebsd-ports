@@ -1,5 +1,5 @@
 # Created by: Alonso Cardenas Marquez <acm@FreeBSD.org>
-# $FreeBSD: head/devel/dfmt/Makefile 494898 2019-03-07 06:14:12Z acm $
+# $FreeBSD: head/devel/dfmt/Makefile 496024 2019-03-17 07:58:11Z antoine $
 
 PORTNAME=	dfmt
 PORTVERSION=	0.9.0
@@ -10,6 +10,8 @@ MAINTAINER=	acm@FreeBSD.org
 COMMENT=	Formatter for D source code
 
 LICENSE=	BSL
+
+BROKEN=		fails to build
 
 BUILD_DEPENDS=	ldmd2:lang/ldc \
 		dub:devel/dub \

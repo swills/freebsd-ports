@@ -1,5 +1,5 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/x11-wm/ede/Makefile 489807 2019-01-09 15:21:37Z amdmi3 $
+# $FreeBSD: head/x11-wm/ede/Makefile 495348 2019-03-11 11:34:07Z danfe $
 
 PORTNAME=	ede
 PORTVERSION=	2.1
@@ -17,8 +17,6 @@ LICENSE=	GPLv2+ LGPL20+
 LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
 LICENSE_FILE_LGPL20+ =	${EDELIB_WRKSRC}/COPYING
-
-BROKEN=		fails to build
 
 BUILD_DEPENDS=	doxygen:devel/doxygen \
 		jam:devel/jam
@@ -79,6 +77,9 @@ post-patch:
 	@${REINPLACE_CMD} -e \
 		's|"\(panel-applets\)"|"../../lib/ede/\1"|' \
 		${WRKSRC}/ede-panel/Panel.cpp
+	@${REINPLACE_CMD} -e \
+		's| int direction| uint direction|' \
+		${WRKSRC}/pekwm/ActionHandler.??
 
 pre-configure:
 	@(cd ${EDELIB_WRKSRC} \

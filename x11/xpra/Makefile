@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/xpra/Makefile 492305 2019-02-06 13:33:13Z jbeich $
+# $FreeBSD: head/x11/xpra/Makefile 496215 2019-03-18 21:45:10Z jbeich $
 
 PORTNAME=	xpra
 PORTVERSION=	2.4.3
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	http://xpra.org/src/
 

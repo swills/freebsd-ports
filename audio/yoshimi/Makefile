@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/yoshimi/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/audio/yoshimi/Makefile 495858 2019-03-16 08:57:50Z linimon $
 
 PORTNAME=	yoshimi
 DISTVERSION=	1.5.7
@@ -9,6 +9,10 @@ COMMENT=	Sophisticated software synthesizer
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_aarch64=		fails to compile: c++: warning: argument unused during compilation: '-msse'
+BROKEN_armv6=		fails to compile: c++: warning: argument unused during compilation: '-msse'
+BROKEN_armv7=		fails to compile: c++: warning: argument unused during compilation: '-msse'
 
 BUILD_DEPENDS=	lv2>0:audio/lv2 \
 		dssi>0:audio/dssi \
@@ -21,11 +25,7 @@ LIB_DEPENDS=	libargp.so:devel/argp-standalone \
 		libjack.so:audio/jack \
 		libmxml.so:textproc/mxml
 
-BROKEN_aarch64=		fails to compile: c++: warning: argument unused during compilation: '-msse'
-BROKEN_armv6=		fails to compile: c++: warning: argument unused during compilation: '-msse'
-BROKEN_armv7=		fails to compile: c++: warning: argument unused during compilation: '-msse'
-
-USES=		cmake ncurses pkgconfig readline:port
+USES=		cmake compiler:c++11-lang ncurses pkgconfig readline:port
 USE_GITHUB=	yes
 USE_GNOME=	cairo
 USE_GL=		gl glu

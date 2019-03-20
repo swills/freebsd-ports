@@ -1,4 +1,4 @@
-# $FreeBSD: head/multimedia/mswebrtc/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/multimedia/mswebrtc/Makefile 495221 2019-03-10 03:08:14Z linimon $
 
 PORTNAME=	mswebrtc
 PORTVERSION=	1.1.1
@@ -11,6 +11,9 @@ COMMENT=	Mediastreamer plugin with WebRTC codecs
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe
+NOT_FOR_ARCHS_REASON=	Define either WEBRTC_ARCH_LITTLE_ENDIAN or WEBRTC_ARCH_BIG_ENDIAN
 
 LIB_DEPENDS=	libbctoolbox.so:net/bctoolbox \
 		libmediastreamer_base.so:net/mediastreamer \

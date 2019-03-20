@@ -1,7 +1,7 @@
-# $FreeBSD: head/graphics/rubygem-clutter-gtk/Makefile 493291 2019-02-18 18:20:55Z sunpoet $
+# $FreeBSD: head/graphics/rubygem-clutter-gtk/Makefile 495635 2019-03-13 18:41:38Z sunpoet $
 
 PORTNAME=	clutter-gtk
-PORTVERSION=	3.3.2
+PORTVERSION=	3.3.5
 CATEGORIES=	graphics rubygems
 MASTER_SITES=	RG
 

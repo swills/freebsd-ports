@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/textproc/rubygem-elasticsearch-xpack/Makefile 476032 2018-07-31 23:43:11Z sunpoet $
+# $FreeBSD: head/textproc/rubygem-elasticsearch-xpack/Makefile 495713 2019-03-14 15:20:40Z sunpoet $
 
 PORTNAME=	elasticsearch-xpack
-PORTVERSION=	6.1.0
+PORTVERSION=	6.2.0
 CATEGORIES=	textproc rubygems
 MASTER_SITES=	RG
 
@@ -13,8 +13,9 @@ LICENSE=	APACHE20
 
 RUN_DEPENDS=	rubygem-elasticsearch-api>=6:textproc/rubygem-elasticsearch-api
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

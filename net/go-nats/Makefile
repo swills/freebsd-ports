@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/go-nats/Makefile 478459 2018-08-30 14:23:59Z olgeni $
+# $FreeBSD: head/net/go-nats/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go-nats
 DISTVERSIONPREFIX=	v
@@ -9,6 +9,9 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Go client for NATS
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	go-nuid>=0:devel/go-nuid
 

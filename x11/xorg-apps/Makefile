@@ -1,15 +1,14 @@
-# $FreeBSD: head/x11/xorg-apps/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xorg-apps/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	xorg-apps
 PORTVERSION=	7.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	X.org apps meta-port
 
 COMPONENTS=	appres bitmap xf86dga:dga iceauth luit \
-		x11-fonts/mkfontdir:mkfontdir \
 		x11-fonts/mkfontscale:mkfontscale sessreg \
 		setxkbmap smproxy x11perf xauth xbacklight xcalc \
 		xcmsdb xconsole xcursorgen xdpyinfo xdriinfo xev xgamma xgc \

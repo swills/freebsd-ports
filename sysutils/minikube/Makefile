@@ -1,8 +1,8 @@
 # Created by: Danilo Egea Gondolfo <danilo@FreeBSD.org>
-# $FreeBSD: head/sysutils/minikube/Makefile 493677 2019-02-23 14:21:40Z danilo $
+# $FreeBSD: head/sysutils/minikube/Makefile 496057 2019-03-17 12:56:35Z danilo $
 
 PORTNAME=	minikube
-PORTVERSION=	0.34.1
+PORTVERSION=	0.35.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 

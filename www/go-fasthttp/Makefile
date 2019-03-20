@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/go-fasthttp/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/www/go-fasthttp/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	fasthttp
 PORTVERSION=	20160617
@@ -11,6 +11,9 @@ COMMENT=	Fast HTTP package for Go, tuned for high performance
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	go-compress>=0:archivers/go-compress \
 		go-cpuid>=0:devel/go-cpuid \

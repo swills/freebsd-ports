@@ -1,13 +1,14 @@
-# $FreeBSD: head/devel/kf5-knotifications/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/devel/kf5-knotifications/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	knotifications
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KF5 abstraction for system notifications
 
-LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt@qt5
+LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt
 
 USES=		cmake compiler:c++11-lib gettext kde:5 qt:5 tar:xz
 USE_KDE=	codecs config coreaddons ecm windowsystem

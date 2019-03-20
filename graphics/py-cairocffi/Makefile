@@ -1,5 +1,5 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/graphics/py-cairocffi/Makefile 486302 2018-11-30 21:22:52Z ericbsd $
+# $FreeBSD: head/graphics/py-cairocffi/Makefile 495574 2019-03-13 13:03:11Z mat $
 
 PORTNAME=	cairocffi
 PORTVERSION=	0.8.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>0:devel/py-cffi@${PY_FLAVOR} \
 BUILD_DEPENDS=	${RUN_DEPENDS}
 
 USES=		python
-USE_PYTHON=	distutils cffi py3kplist
+USE_PYTHON=	distutils py3kplist
 USE_GNOME=	cairo
 
 .include <bsd.port.mk>

@@ -1,13 +1,13 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/p5-Class-Measure/Makefile 493393 2019-02-19 20:49:13Z sunpoet $
+# $FreeBSD: head/devel/p5-Class-Measure/Makefile 495250 2019-03-10 10:57:42Z sunpoet $
 
 PORTNAME=	Class-Measure
-PORTVERSION=	0.06
+PORTVERSION=	0.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Create, compare, and convert units of measurement
 
 LICENSE=	ART10 GPLv1+

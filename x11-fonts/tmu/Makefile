@@ -1,8 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/tmu/Makefile 400848 2015-11-05 12:36:25Z mat $
+# $FreeBSD: head/x11-fonts/tmu/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	tmu
 DISTVERSION=	1.901b
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/thdltools/TibetanMachineFont/TMU_${DISTVERSION}
 DISTFILES=	TibMachUni-${DISTVERSION}.ttf

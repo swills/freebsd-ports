@@ -1,4 +1,4 @@
-# $FreeBSD: head/misc/Makefile 493778 2019-02-24 17:55:51Z sunpoet $
+# $FreeBSD: head/misc/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Miscellaneous utilities
@@ -396,8 +396,6 @@
     SUBDIR += py-pyprind
     SUBDIR += py-python-geohash
     SUBDIR += py-python-utils
-    SUBDIR += py-qt4-demo
-    SUBDIR += py-qt4-doc
     SUBDIR += py-qt5-demo
     SUBDIR += py-scikit-fusion
     SUBDIR += py-serverfiles
@@ -413,11 +411,6 @@
     SUBDIR += pyobd
     SUBDIR += qbrew
     SUBDIR += qlas
-    SUBDIR += qmetro
-    SUBDIR += qt4-doc
-    SUBDIR += qt4-l10n
-    SUBDIR += qt4-qtconfig
-    SUBDIR += qt4-qtdemo
     SUBDIR += qt5-doc
     SUBDIR += qt5-examples
     SUBDIR += qt5-l10n
@@ -446,7 +439,6 @@
     SUBDIR += rubygem-rabbit
     SUBDIR += rubygem-vpim
     SUBDIR += rump
-    SUBDIR += saaghar
     SUBDIR += sdformat
     SUBDIR += seabios
     SUBDIR += sent

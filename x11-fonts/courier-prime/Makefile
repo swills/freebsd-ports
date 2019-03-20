@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/courier-prime/Makefile 491380 2019-01-27 19:32:27Z swills $
+# $FreeBSD: head/x11-fonts/courier-prime/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	courier-prime
 PORTVERSION=	g20180831
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://quoteunquoteapps.com/downloads/
 DISTNAME=	${PORTNAME}

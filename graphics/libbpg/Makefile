@@ -1,9 +1,9 @@
 # Created by: Matthieu Volat <mazhe@alkumuna.eu>
-# $FreeBSD: head/graphics/libbpg/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/graphics/libbpg/Makefile 495302 2019-03-10 17:10:56Z jbeich $
 
 PORTNAME=	libbpg
 PORTVERSION=	0.9.7
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://bellard.org/bpg/
 

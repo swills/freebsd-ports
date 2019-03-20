@@ -1,8 +1,9 @@
-# $FreeBSD: head/math/cadabra2/Makefile 492523 2019-02-09 21:39:21Z yuri $
+# $FreeBSD: head/math/cadabra2/Makefile 496102 2019-03-17 19:25:57Z yuri $
 
 PORTNAME=	cadabra2
 DISTVERSION=	2.2.5-5
 DISTVERSIONSUFFIX=	-gf10cac6b9a
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -44,6 +45,6 @@ GUI_CMAKE_BOOL=	ENABLE_FRONTEND
 GUI_INSTALLS_ICONS=	yes
 
 post-extract: # unbundle
-	@${RM} -r ${WRKSRC}/client_server/jsoncpp ${WRKSRC}/client_server/websocketpp
+	@${RM} -r ${WRKSRC}/libs/jsoncpp ${WRKSRC}/libs/websocketpp
 
 .include <bsd.port.mk>

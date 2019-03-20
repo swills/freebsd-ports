@@ -1,9 +1,9 @@
 # Created by: Kuan-Chung Chiu <buganini@gmail.com>
-# $FreeBSD: head/x11-fonts/khmeros/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/khmeros/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	khmeros
 PORTVERSION=	5.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/khmer/Fonts%20-%20KhmerOS/KhmerOS%20Fonts%205.0-%20LGPL%20Licence
 DISTNAME=	All_KhmerOS_5.0

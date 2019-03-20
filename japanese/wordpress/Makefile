@@ -1,5 +1,5 @@
 # Created by: Takefu
-# $FreeBSD: head/japanese/wordpress/Makefile 494140 2019-02-28 10:17:17Z joneum $
+# $FreeBSD: head/japanese/wordpress/Makefile 495392 2019-03-11 20:29:12Z antoine $
 
 PORTNAME=	wordpress
 DISTVERSION=	5.1
@@ -14,6 +14,7 @@ LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/license.txt
 
+BROKEN=		unfetchable
 CONFLICTS_INSTALL=	wordpress-[0-9].* de-wordpress-[0-9].* ru-wordpress-[0-9].*
 
 NO_ARCH=	yes

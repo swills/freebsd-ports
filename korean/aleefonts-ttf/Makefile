@@ -1,8 +1,9 @@
 # Created by: Hye-Shik Chang
-# $FreeBSD: head/korean/aleefonts-ttf/Makefile 472889 2018-06-20 17:31:27Z jkim $
+# $FreeBSD: head/korean/aleefonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	aleefonts
 PORTVERSION=	13.3
+PORTREVISION=	1
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	DEBIAN/pool/main/f/fonts-alee
 PKGNAMESUFFIX=	-ttf

@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yubioath-desktop/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/security/yubioath-desktop/Makefile 495429 2019-03-12 04:43:37Z linimon $
 
 PORTNAME=	yubioath-desktop
 DISTVERSIONPREFIX=	yubioath-desktop-
@@ -19,7 +19,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yubikey-manager>=0.7.0:security/py-yubikey-m
 		pcscd:devel/pcsc-lite \
 		swig30>0:devel/swig30
 
-USES=		desktop-file-utils gl python:3.5+ qmake qt:5 shebangfix ssl
+USES=		compiler:c++11-lang desktop-file-utils gl python:3.5+ qmake qt:5 \
+		shebangfix ssl
 USE_GL=		gl
 USE_QT=		core declarative gui network quickcontrols svg widgets buildtools_build
 

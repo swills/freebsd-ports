@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/gsequencer/Makefile 494804 2019-03-06 16:43:51Z yuri $
+# $FreeBSD: head/audio/gsequencer/Makefile 496121 2019-03-18 05:04:07Z yuri $
 
 PORTNAME=	gsequencer
-DISTVERSION=	2.1.65
+DISTVERSION=	2.1.68
 CATEGORIES=	audio
 MASTER_SITES=	SAVANNAH/gsequencer/2.1.x
 

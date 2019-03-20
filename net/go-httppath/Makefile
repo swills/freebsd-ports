@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/go-httppath/Makefile 418245 2016-07-08 21:45:49Z cs $
+# $FreeBSD: head/net/go-httppath/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	httppath
 PORTVERSION=	20140515
@@ -9,6 +9,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Utilities for HTTP Path manipulation
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	dimfeld

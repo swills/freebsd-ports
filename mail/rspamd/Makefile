@@ -1,8 +1,7 @@
-# $FreeBSD: head/mail/rspamd/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/mail/rspamd/Makefile 495871 2019-03-16 12:24:02Z vsevolod $
 
 PORTNAME=	rspamd
-PORTVERSION=	1.8.3
-PORTREVISION=	1
+PORTVERSION=	1.9.0
 CATEGORIES=	mail
 
 MAINTAINER=	vsevolod@FreeBSD.org
@@ -25,6 +24,9 @@ USE_PERL5=	build run
 USE_GNOME=	glib20
 
 CONFLICTS_INSTALL=	rspamd-devel
+
+USERS=		rspamd
+GROUPS=		rspamd
 
 OPTIONS_DEFINE=		GPERF GD CGP TORCH_BLAS
 OPTIONS_DEFINE_amd64=	HYPERSCAN

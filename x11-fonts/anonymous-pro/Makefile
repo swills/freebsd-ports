@@ -1,9 +1,9 @@
 # Created by: Norberto Lopes <nlopes.ml@gmail.com>
-# $FreeBSD: head/x11-fonts/anonymous-pro/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/anonymous-pro/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	anonymous-pro
 PORTVERSION=	1.002
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.marksimonson.com/assets/content/fonts/
 DISTNAME=	AnonymousPro-${PORTVERSION}

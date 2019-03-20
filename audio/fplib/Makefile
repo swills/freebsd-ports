@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/audio/fplib/Makefile 429625 2016-12-27 15:33:33Z amdmi3 $
+# $FreeBSD: head/audio/fplib/Makefile 495989 2019-03-16 23:22:37Z sunpoet $
 
 PORTNAME=	fplib
 PORTVERSION=	20121001
@@ -18,9 +18,10 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libsamplerate.so:audio/libsamplerate \
 		libtag.so:audio/taglib
 
+USES=		cmake compiler:c++11-lang localbase:ldflags
+
 MAKE_JOBS_UNSAFE=	yes
 USE_LDCONFIG=	yes
-USES=		cmake localbase:ldflags
 
 GH_ACCOUNT=	lastfm
 GH_PROJECT=	Fingerprinter

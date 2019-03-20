@@ -1,7 +1,8 @@
-# $FreeBSD: head/korean/d2coding-ttf/Makefile 459894 2018-01-25 00:45:12Z jkim $
+# $FreeBSD: head/korean/d2coding-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	d2coding
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	https://github.com/naver/d2codingfont/releases/download/VER${PORTVERSION}/ \
 		LOCAL/jkim

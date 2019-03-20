@@ -1,9 +1,9 @@
 # Created by: Ming-I Hseh <PA@FreeBSD.Ntu.edu.TW>
-# $FreeBSD: head/chinese/kcfonts/Makefile 412344 2016-04-01 13:29:15Z mat $
+# $FreeBSD: head/chinese/kcfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kcfonts
 PORTVERSION=	1.05
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	GENTOO
 

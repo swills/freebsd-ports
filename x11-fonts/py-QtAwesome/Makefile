@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-fonts/py-QtAwesome/Makefile 489723 2019-01-08 16:07:12Z swills $
+# $FreeBSD: head/x11-fonts/py-QtAwesome/Makefile 496293 2019-03-19 20:29:13Z arved $
 
 PORTNAME=	QtAwesome
-DISTVERSION=	0.5.5
+DISTVERSION=	0.5.7
 CATEGORIES=	x11-fonts graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -17,6 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}QtPy>0:devel/py-QtPy@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils autoplist
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

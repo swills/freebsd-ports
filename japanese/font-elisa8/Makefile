@@ -1,9 +1,9 @@
 # Created by: Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp> & ELISA Font Project
-# $FreeBSD: head/japanese/font-elisa8/Makefile 466800 2018-04-08 13:13:27Z nobutaka $
+# $FreeBSD: head/japanese/font-elisa8/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	elisa8
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www.bsdbbq.org/~toshi/distfiles/
 PKGNAMEPREFIX=	ja-font-

@@ -1,9 +1,9 @@
 # Created by: Kuan-Chung Chiu <buganini@gmail.com>
-# $FreeBSD: head/x11-fonts/mondulkiri/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/mondulkiri/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	mondulkiri
 PORTVERSION=	2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/khmer/Fonts%20-%20Mondulkiri/Mondulkiri%20Unicode%20Fonts%20v2E3s/
 DISTNAME=	Mondulkiri_Unicode_fonts_V2E3s

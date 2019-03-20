@@ -1,8 +1,9 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/x11-fonts/exo/Makefile 420969 2016-08-27 11:13:39Z pawel $
+# $FreeBSD: head/x11-fonts/exo/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	exo
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.ndiscovered.com/downloads/exo2/
 DISTNAME=	EXO_2_OTF

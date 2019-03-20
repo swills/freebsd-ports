@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11/find-cursor/Makefile 494603 2019-03-04 15:39:16Z 0mp $
+# $FreeBSD: head/x11/find-cursor/Makefile 495697 2019-03-14 10:52:49Z 0mp $
 
 PORTNAME=	find-cursor
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1
+DISTVERSION=	1.2
 CATEGORIES=	x11
 
 MAINTAINER=	0mp@FreeBSD.org
@@ -16,17 +16,21 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Carpetsmoker
 USE_XORG=	x11 xdamage xext xfixes xrender
 
-PLIST_FILES=	bin/${PORTNAME}
+MAKE_ARGS=	MANPREFIX=${MANPREFIX}/man
+
+PLIST_FILES=	bin/${PORTNAME} \
+		man/man1/${PORTNAME}.1.gz
 
 PORTDOCS=	README.markdown screenshot.gif
 
 OPTIONS_DEFINE=	DOCS
 
 post-configure:
-	${REINPLACE_CMD} -E 's/(.CC.)/\1 $${LDFLAGS}/' ${WRKSRC}/Makefile
+	${REINPLACE_CMD} 's/`git tag | tail -1 | tr -d v`/${PORTVERSION}/' \
+		${WRKSRC}/Makefile
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

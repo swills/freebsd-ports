@@ -1,10 +1,10 @@
 # Created by: Janos Mohacsi
-# $FreeBSD: head/devel/xmltooling/Makefile 488188 2018-12-23 10:54:35Z girgen $
+# $FreeBSD: head/devel/xmltooling/Makefile 495367 2019-03-11 17:02:37Z girgen $
 
 PORTNAME=	xmltooling
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 CATEGORIES=	devel security
-MASTER_SITES=	http://shibboleth.net/downloads/c++-opensaml/3.0.0/
+MASTER_SITES=	http://shibboleth.net/downloads/c++-opensaml/3.0.1/
 
 MAINTAINER=	girgen@FreeBSD.org
 COMMENT=	Low level XML support for SAML

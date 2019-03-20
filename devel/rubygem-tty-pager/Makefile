@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-tty-pager/Makefile 489028 2019-01-01 20:38:58Z sunpoet $
+# $FreeBSD: head/devel/rubygem-tty-pager/Makefile 496099 2019-03-17 18:58:49Z sunpoet $
 
 PORTNAME=	tty-pager
-PORTVERSION=	0.12.0
+PORTVERSION=	0.12.1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 

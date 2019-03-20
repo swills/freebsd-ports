@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/nucleus/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/nucleus/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	nucleus
 PORTVERSION=	0.77
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/xfonts/OldFiles
 

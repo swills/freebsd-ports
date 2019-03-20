@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
-# $FreeBSD: head/japanese/font-shinonome/Makefile 467394 2018-04-15 13:52:21Z nobutaka $
+# $FreeBSD: head/japanese/font-shinonome/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	shinonome
 PORTVERSION=	0.9.11.p1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://openlab.jp/efont/dist/shinonome/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old

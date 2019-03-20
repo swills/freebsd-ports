@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/shfmt/Makefile 491947 2019-02-02 11:47:32Z tobik $
+# $FreeBSD: head/devel/shfmt/Makefile 495314 2019-03-10 19:11:44Z tobik $
 
 PORTNAME=	shfmt
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.6.3
+DISTVERSION=	2.6.4
 CATEGORIES=	devel
 
 MAINTAINER=	tobik@FreeBSD.org

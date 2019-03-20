@@ -1,8 +1,9 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/devel/kf5-extra-cmake-modules/Makefile 496208 2019-03-18 21:02:41Z rakuco $
 
 PORTNAME=	extra-cmake-modules
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -12,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING-CMAKE-SCRIPTS
 
 USES=		cmake kde:5 qt:5 tar:xz
-USE_QT=		buildtools_build linguisttools_build qmake_build
+USE_QT=		linguisttools buildtools_build qmake_build
 
 HELP_USE=	QT=help_build  # qt5-help is only used to build a .qch file.
 NO_ARCH=	yes

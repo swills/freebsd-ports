@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/soapyremote/Makefile 492507 2019-02-09 19:37:41Z yuri $
+# $FreeBSD: head/comms/soapyremote/Makefile 495560 2019-03-13 05:31:54Z linimon $
 
 PORTNAME=	SoapyRemote
 DISTVERSIONPREFIX=	soapy-remote-
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE_1_0.txt
 LIB_DEPENDS=	libavahi-common.so:net/avahi-app \
 		libSoapySDR.so:misc/soapysdr
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 

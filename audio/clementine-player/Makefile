@@ -1,10 +1,10 @@
 # Created by: Veniamin Gvozdikov <vg@FreeBSD.org>
-# $FreeBSD: head/audio/clementine-player/Makefile 494827 2019-03-06 18:19:51Z linimon $
+# $FreeBSD: head/audio/clementine-player/Makefile 495954 2019-03-16 20:16:24Z tcberner $
 
 PORTNAME=	clementine
 DISTVERSION=	1.3.1-661
 DISTVERSIONSUFFIX=	-g4ff370ce1
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-player
 
@@ -18,8 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/include/boost/shared_ptr.hpp:devel/boost-libs
 LIB_DEPENDS=	libtag.so:audio/taglib \
 		libchromaprint.so:audio/chromaprint \
 		libprotobuf.so:devel/protobuf \
-		libqca-qt5.so:devel/qca@qt5 \
-		libqjson-qt5.so:devel/qjson@qt5 \
+		libqca-qt5.so:devel/qca \
+		libqjson-qt5.so:devel/qjson \
 		libfftw3.so:math/fftw3 \
 		libechonest5.so:audio/libechonest \
 		libcryptopp.so:security/cryptopp

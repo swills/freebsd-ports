@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/websvn/Makefile 494989 2019-03-07 19:27:25Z swills $
+# $FreeBSD: head/devel/websvn/Makefile 496153 2019-03-18 17:27:59Z swills $
 
 PORTNAME=	websvn
-PORTVERSION=	2.4
+PORTVERSION=	2.5
 CATEGORIES=	devel www
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
 

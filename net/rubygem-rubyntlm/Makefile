@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-rubyntlm/Makefile 439398 2017-04-25 14:25:05Z sunpoet $
+# $FreeBSD: head/net/rubygem-rubyntlm/Makefile 495166 2019-03-09 14:38:35Z sunpoet $
 
 PORTNAME=	rubyntlm
 PORTVERSION=	0.6.2
@@ -11,8 +11,9 @@ COMMENT=	Message creator and parser for the NTLM authentication
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

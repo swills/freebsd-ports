@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/dns/py-publicsuffixlist/Makefile 493385 2019-02-19 19:47:28Z sunpoet $
+# $FreeBSD: head/dns/py-publicsuffixlist/Makefile 495483 2019-03-12 18:09:58Z sunpoet $
 
 PORTNAME=	publicsuffixlist
-PORTVERSION=	0.6.4
+PORTVERSION=	0.6.5
 CATEGORIES=	dns python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

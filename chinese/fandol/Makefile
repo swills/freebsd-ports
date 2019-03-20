@@ -1,8 +1,9 @@
 # Created by: <intron@intron.ac>
-# $FreeBSD: head/chinese/fandol/Makefile 434918 2017-02-27 09:01:46Z amdmi3 $
+# $FreeBSD: head/chinese/fandol/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fandol
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	chinese
 MASTER_SITES=	http://mirrors.ctan.org/fonts/
 DISTNAME=	${PORTNAME}

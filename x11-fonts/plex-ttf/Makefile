@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/plex-ttf/Makefile 487329 2018-12-12 22:36:57Z tobik $
+# $FreeBSD: head/x11-fonts/plex-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	plex-ttf
 DISTVERSION=	1.2.2
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/IBM/plex/releases/download/v${DISTVERSION}/TrueType${EXTRACT_SUFX}?dummy=/
 

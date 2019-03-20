@@ -1,5 +1,5 @@
 # Created by: ijliao
-# $FreeBSD: head/cad/gerbv/Makefile 491120 2019-01-24 21:49:48Z fernape $
+# $FreeBSD: head/cad/gerbv/Makefile 495555 2019-03-13 05:22:27Z linimon $
 
 PORTNAME=	gerbv
 PORTVERSION=	2.7.0
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2
 
-USES=		autoreconf desktop-file-utils gmake gnome \
+USES=		autoreconf compiler:c++11-lang desktop-file-utils gmake gnome \
 		libtool localbase pathfix pkgconfig
 USE_GNOME=	cairo gtk20
 USE_LDCONFIG=	yes

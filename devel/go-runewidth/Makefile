@@ -1,5 +1,5 @@
 # Created by: Akinori MUSHA aka knu <knu@FreeBSD.org>
-# $FreeBSD: head/devel/go-runewidth/Makefile 427307 2016-11-28 13:43:11Z amdmi3 $
+# $FreeBSD: head/devel/go-runewidth/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go-runewidth
 PORTVERSION=	0.0.1
@@ -10,6 +10,9 @@ MAINTAINER=	knu@FreeBSD.org
 COMMENT=	Go library to get the fixed width of a character or string
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 USE_GITHUB=	yes

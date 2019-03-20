@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/node6/Makefile 494487 2019-03-03 09:16:54Z bhughes $
+# $FreeBSD: head/www/node6/Makefile 495982 2019-03-16 22:57:25Z bhughes $
 
 PORTNAME=	node
 PORTVERSION=	6.17.0
@@ -15,6 +15,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BROKEN_SSL=		openssl111 libressl libressl-devel
 BROKEN_SSL_REASON=	Node.js 6.x LTS requires OpenSSL 1.0.2 or the BUNDLED_SSL option enabled
+DEPRECATED=		Node.js 6.x LTS reaches end-of-life on 2019-04-30, see https://github.com/nodejs/Release
+EXPIRATION_DATE=	2019-04-30
 ONLY_FOR_ARCHS=		amd64 armv6 armv7 i386 powerpc64
 
 OPTIONS_DEFINE=		BUNDLED_SSL DOCS NLS DTRACE
@@ -59,7 +61,9 @@ SHEBANG_FILES=	tools/specialize_node_d.py tools/genv8constants.py
 
 PREFIX_RELDEST=	${PREFIX:S,^${DESTDIR},,}
 REINPLACE_ARGS=	-i ''
-MAKE_ENV+=	CC.host=${CC} CXX.host=${CXX} LINK.host=${CXX} LINK.target=${CXX}
+MAKE_ENV+=	CC.host=${CC} CFLAGS.host="${CFLAGS}" \
+		CXX.host=${CXX} CXXFLAGS.host="${CXXFLAGS}" \
+		LINK.host=${CXX} LDFLAGS.host="${LDFLAGS}"
 
 LIB_DEPENDS+=	libcares.so:dns/c-ares\
 		libuv.so:devel/libuv

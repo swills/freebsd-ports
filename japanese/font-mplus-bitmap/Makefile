@@ -1,9 +1,9 @@
 # Created by: The 244th namelessness at 2ch.net
-# $FreeBSD: head/japanese/font-mplus-bitmap/Makefile 467393 2018-04-15 13:46:57Z nobutaka $
+# $FreeBSD: head/japanese/font-mplus-bitmap/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	mplus
 PORTVERSION=	2.2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	OSDN/${PORTNAME}-fonts/5030/
 PKGNAMEPREFIX=	ja-font-

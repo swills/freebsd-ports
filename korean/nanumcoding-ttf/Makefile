@@ -1,8 +1,8 @@
-# $FreeBSD: head/korean/nanumcoding-ttf/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/korean/nanumcoding-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	nanumcoding
 PORTVERSION=	2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	korean
 MASTER_SITES=	http://dev.naver.com/frs/download.php/441/ \
 		LOCAL/jkim

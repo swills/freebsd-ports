@@ -1,9 +1,9 @@
 # Created by: Tobias Gion <freebsd@gionet.de>
-# $FreeBSD: head/devel/guichan/Makefile 467602 2018-04-17 13:35:46Z amdmi3 $
+# $FreeBSD: head/devel/guichan/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	guichan
 PORTVERSION=	0.8.2
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	devel games
 MASTER_SITES=	http://pkgs.fedoraproject.org/repo/pkgs/guichan/${DISTFILES}/af535d7f387e774e3197cef8023ea105/
 

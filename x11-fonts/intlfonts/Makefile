@@ -1,9 +1,9 @@
 # Created by: Satoshi TAOKA <taoka@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/intlfonts/Makefile 421564 2016-09-08 16:03:28Z tijl $
+# $FreeBSD: head/x11-fonts/intlfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	intlfonts
 PORTVERSION=	1.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-fonts
 MASTER_SITES=	GNU
 

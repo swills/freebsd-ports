@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/sysadm/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/sysadm/Makefile 495434 2019-03-12 05:12:06Z linimon $
 
 PORTNAME=	sysadm
 PORTVERSION=	1.1
@@ -13,8 +13,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 WRKSRC_SUBDIR=	src
+USES=		compiler:c++11-lang pkgconfig qmake qt:5 ssl tar:xz
 USE_QT=		concurrent core network buildtools qmake gui websockets sql
-USES=		pkgconfig qt:5 tar:xz qmake ssl
 MAKE_ARGS=	PREFIX=${STAGEDIR}${PREFIX}
 
 USE_GITHUB=	yes

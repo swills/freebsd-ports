@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-metrics/Makefile 418244 2016-07-08 21:25:46Z cs $
+# $FreeBSD: head/devel/go-metrics/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go-metrics
 PORTVERSION=	20160521
@@ -8,6 +8,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Golang library for exporting performance and runtime metrics
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	armon

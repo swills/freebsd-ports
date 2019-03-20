@@ -1,9 +1,9 @@
 # Created by: René Ladan <rene@freebsd.org>
-# $FreeBSD: head/databases/py-django-transaction-hooks/Makefile 482046 2018-10-14 15:38:33Z rene $
+# $FreeBSD: head/databases/py-django-transaction-hooks/Makefile 495043 2019-03-08 14:45:50Z antoine $
 
 PORTNAME=	django-transaction-hooks
 PORTVERSION=	0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Django database backends to register transaction-commit hooks
 
 LICENSE=	BSD3CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django>=1.8:www/py-django@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

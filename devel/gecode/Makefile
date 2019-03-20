@@ -1,9 +1,9 @@
 # Created by: Peter Pentchev <roam@FreeBSD.org>
-# $FreeBSD: head/devel/gecode/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/gecode/Makefile 496001 2019-03-16 23:50:14Z tcberner $
 
 PORTNAME=	gecode
 PORTVERSION=	5.1.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.gecode.org/download/
 
@@ -37,26 +37,13 @@ CONFIGURE_ARGS=	--disable-static \
 		--with-gmp-include=${LOCALBASE}/include \
 		--with-gmp-lib=${LOCALBASE}/lib \
 		--with-mpfr-include=${LOCALBASE}/include \
-		--with-mpfr-lib=${LOCALBASE}/lib
+		--with-mpfr-lib=${LOCALBASE}/lib \
+		--disable-gist --disable-qt
 USE_LDCONFIG=	yes
 MAKE_JOBS_UNSAFE=yes
 PLIST_SUB=	SHLIB_VERSION=44
 
-OPTIONS_DEFINE=	GIST
-OPTIONS_SUB=	yes
-
-GIST_DESC=	Interactive Search Tool (requires Qt)
-GIST_USES=	qt:4
-GIST_USE=	QT=corelib,gui,moc_build,qmake_build
-GIST_CONFIGURE_ON=	--enable-gist --enable-qt
-GIST_CONFIGURE_OFF=	--disable-gist --disable-qt
-
 .include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MGIST}
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-.endif
 
 .if ${ARCH} == "amd64"
 CFLAGS+=	-D__USE_ISOC99

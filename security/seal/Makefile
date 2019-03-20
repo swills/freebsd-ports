@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/seal/Makefile 486664 2018-12-05 10:10:40Z lwhsu $
+# $FreeBSD: head/security/seal/Makefile 495565 2019-03-13 05:51:24Z linimon $
 
 PORTNAME=	seal
 PORTVERSION=	3.1.0
@@ -10,7 +10,7 @@ COMMENT=	Microsoft Simple Encrypted Arithmetic Library
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	cmake
+USES=		cmake compiler:c++17-lang
 
 CMAKE_SOURCE_PATH=	${WRKSRC}/src
 

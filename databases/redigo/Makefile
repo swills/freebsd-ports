@@ -1,5 +1,5 @@
 # Created by: Grzegorz Blach <gblach@FreeBSD.org>
-# $FreeBSD: head/databases/redigo/Makefile 418703 2016-07-18 13:39:17Z mat $
+# $FreeBSD: head/databases/redigo/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	redigo
 PORTVERSION=	1.0.0
@@ -11,6 +11,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Go client for the Redis database
 
 LICENSE=	APACHE20
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	garyburd

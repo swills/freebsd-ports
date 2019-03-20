@@ -1,9 +1,9 @@
 # Created by: Andrew Pantyukhin <infofarmer@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/kaputa/Makefile 381751 2015-03-20 16:54:27Z bapt $
+# $FreeBSD: head/x11-fonts/kaputa/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kaputa
 PORTVERSION=	1.000
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.kaputa.com/slword/
 DISTNAME=	${PORTNAME}unicode

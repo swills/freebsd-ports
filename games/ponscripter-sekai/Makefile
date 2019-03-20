@@ -1,10 +1,13 @@
-# $FreeBSD: head/games/ponscripter-sekai/Makefile 494759 2019-03-06 02:55:07Z jbeich $
+# $FreeBSD: head/games/ponscripter-sekai/Makefile 495733 2019-03-14 20:48:03Z jbeich $
 
 PORTNAME=	ponscripter-sekai
 PORTVERSION=	0.0.6
 DISTVERSIONPREFIX=	v
 PORTREVISION=	6
 CATEGORIES=	games
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES+=	101c68e22921.patch:-p1 4fb1180d2b54.patch:-p1 25e752f272d0.patch:-p1
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	NScripter-like novel-game interpreter with Unicode support
@@ -51,7 +54,6 @@ TREMOR_LIB_DEPENDS_OFF=	libvorbisfile.so:audio/libvorbis
 post-patch:
 	@${REINPLACE_CMD} -e '/^ifdef DEBUG/,/^$$/d' \
 		-e 's/$$STRIPFLAG/${STRIP}/' \
-		-e 's/_maltivec/_altivec/g' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e 's/$$(LIBS)/$$(LDFLAGS) &/' \
 		${WRKSRC}/src/Makefile.ponscripter

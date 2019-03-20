@@ -1,10 +1,10 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/textproc/itstool/Makefile 494740 2019-03-05 20:57:22Z antoine $
+# $FreeBSD: head/textproc/itstool/Makefile 495018 2019-03-08 06:46:27Z antoine $
 #   $MCom: ports/trunk/textproc/itstool/Makefile 19804 2014-08-13 14:55:11Z kwm $
 
 PORTNAME=	itstool
 PORTVERSION=	2.0.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://files.itstool.org/itstool/
 

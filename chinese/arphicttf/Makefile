@@ -1,9 +1,9 @@
 # Created by: Jing-Tang Keith Jang <keith@FreeBSD.org>
-# $FreeBSD: head/chinese/arphicttf/Makefile 419236 2016-07-29 10:53:38Z se $
+# $FreeBSD: head/chinese/arphicttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	arphicttf
 PORTVERSION=	2.11
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	LOCAL/rafan/chinese/
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}

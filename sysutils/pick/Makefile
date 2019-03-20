@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/pick/Makefile 476926 2018-08-11 14:37:17Z miwi $
+# $FreeBSD: head/sysutils/pick/Makefile 496211 2019-03-18 21:13:08Z swills $
 
 PORTNAME=	pick
-PORTVERSION=	2.0.2
+PORTVERSION=	3.0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/mptre/pick/releases/download/v${PORTVERSION}/
 

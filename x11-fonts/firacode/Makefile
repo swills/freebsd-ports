@@ -1,8 +1,9 @@
 # Created by: Dave Cottlehuber <dch@skunkwerks.at>
-# $FreeBSD: head/x11-fonts/firacode/Makefile 467029 2018-04-11 07:10:49Z ehaupt $
+# $FreeBSD: head/x11-fonts/firacode/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	firacode
 PORTVERSION=	1.205
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/tonsky/FiraCode/releases/download/${PORTVERSION}/
 DISTNAME=	FiraCode_${PORTVERSION}

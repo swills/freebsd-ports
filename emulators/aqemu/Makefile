@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/aqemu/Makefile 491457 2019-01-28 06:56:31Z araujo $
+# $FreeBSD: head/emulators/aqemu/Makefile 495849 2019-03-16 07:51:28Z linimon $
 
 PORTNAME=	aqemu
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libvncclient.so:net/libvncserver
 
-USES=		cmake:noninja qt:5
+USES=		cmake:noninja compiler:c++11-lang qt:5
 USE_QT=		buildtools_build linguisttools_build qmake_build \
 		core dbus gui network printsupport testlib widgets
 

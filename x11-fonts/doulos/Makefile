@@ -1,9 +1,9 @@
 # Created by: bf <bf@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/doulos/Makefile 417685 2016-06-27 21:30:34Z rene $
+# $FreeBSD: head/x11-fonts/doulos/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	DoulosSIL
 PORTVERSION=	4.112
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://scripts.sil.org/cms/scripts/render_download.php?&format=file&media_id=${MEDIA_ID}&filename=/ \
 		LOCAL/bf

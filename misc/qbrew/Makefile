@@ -1,5 +1,5 @@
 # Created by: David Johnson <david@usermode.org>
-# $FreeBSD: head/misc/qbrew/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/misc/qbrew/Makefile 495417 2019-03-12 03:52:38Z linimon $
 
 PORTNAME=	qbrew
 PORTVERSION=	0.4.1
@@ -13,7 +13,7 @@ COMMENT=	Homebrewer's recipe calculator
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang gl qmake qt:5
 USE_GL=		gl
 USE_QT=		buildtools_build qmake_build \
 		core gui printsupport widgets xml

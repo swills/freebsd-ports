@@ -1,11 +1,11 @@
 # Created by: Jean-Marc Zucconi <jmz@FreeBSD.org>
-# $FreeBSD: head/graphics/netpbm/Makefile 494290 2019-03-01 11:37:25Z tobik $
+# $FreeBSD: head/graphics/netpbm/Makefile 495223 2019-03-10 04:27:38Z tobik $
 
 PORTNAME=	netpbm
-DISTVERSION=	10.85.03
+DISTVERSION=	10.85.04
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/t6/netpbm/releases/download/v${DISTVERSION}/ \
-		https://gitlab.com/tobiask/netpbm/uploads/b3d36b002ae7b3dc7ef42449bb612e12/ \
+		https://gitlab.com/tobiask/netpbm/uploads/fcb7f739c80416c8b3a05dba6626455e/ \
 		LOCAL/tobik
 
 MAINTAINER=	tobik@FreeBSD.org

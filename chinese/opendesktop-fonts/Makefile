@@ -1,9 +1,9 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/opendesktop-fonts/Makefile 483807 2018-11-02 13:32:34Z rene $
+# $FreeBSD: head/chinese/opendesktop-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	opendesktop-fonts
 PORTVERSION=	1.4.2
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES?=	LOCAL/chinsan/fonts
 

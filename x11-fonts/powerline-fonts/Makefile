@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/powerline-fonts/Makefile 446712 2017-07-27 02:18:30Z swills $
+# $FreeBSD: head/x11-fonts/powerline-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	powerline-fonts
 PORTVERSION=	0.0.0.2017.07.26
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	swills@FreeBSD.org

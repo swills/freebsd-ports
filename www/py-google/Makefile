@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/www/py-google/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-google/Makefile 495230 2019-03-10 06:38:52Z yuri $
 
 PORTNAME=	google
-DISTVERSION=	2.0.1
+DISTVERSION=	2.0.2
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

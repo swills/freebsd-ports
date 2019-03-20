@@ -1,8 +1,8 @@
 # Created by: Frederic Han <han@math.jussieu.fr>
-# $FreeBSD: head/math/giacxcas/Makefile 493650 2019-02-23 07:34:33Z yuri $
+# $FreeBSD: head/math/giacxcas/Makefile 495368 2019-03-11 17:44:13Z yuri $
 
 PORTNAME=	giacxcas
-DISTVERSION=	1.5.0-43
+DISTVERSION=	1.5.0-47
 CATEGORIES=	math
 MASTER_SITES=	http://www-fourier.ujf-grenoble.fr/~parisse/debian/dists/stable/main/source/:giac \
 		http://www-fourier.ujf-grenoble.fr/~parisse/giac/freebsd/

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/musicpd/Makefile 494418 2019-03-02 16:55:53Z riggs $
+# $FreeBSD: head/audio/musicpd/Makefile 495349 2019-03-11 11:37:05Z riggs $
 
 PORTNAME=	musicpd
 PORTVERSION=	0.21.5
@@ -124,6 +124,7 @@ WILDMIDI_MESON_ENABLED=	wildmidi
 WILDMIDI_LIB_DEPENDS=	libWildMidi.so:audio/wildmidi
 
 # Encoder plugins
+VORBISENC_IMPLIES=	VORBIS
 VORBISENC_MESON_ENABLED=	vorbisenc
 VORBISENC_LIB_DEPENDS=	libvorbisenc.so:audio/libvorbis
 LAME_MESON_ENABLED=	lame

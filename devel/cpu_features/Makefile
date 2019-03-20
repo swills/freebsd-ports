@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/cpu_features/Makefile 492822 2019-02-13 02:11:17Z skreuzer $
+# $FreeBSD: head/devel/cpu_features/Makefile 496118 2019-03-18 01:35:37Z skreuzer $
 
 PORTNAME=	cpu_features
 PORTVERSION=	0.2.0
@@ -10,6 +10,9 @@ MAINTAINER=	skreuzer@FreeBSD.org
 COMMENT=	Cross platform C99 library to get cpu features at runtime
 
 LICENSE=	APACHE20
+
+NOT_FOR_ARCHS=		aarch64 armv6 armv7 mips mips64
+NOT_FOR_ARCHS_REASON=	assumes android if on ARM or MIPS
 
 USES=	cmake:insource
 USE_GITHUB=	yes

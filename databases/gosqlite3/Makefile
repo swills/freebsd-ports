@@ -1,5 +1,5 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/databases/gosqlite3/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/databases/gosqlite3/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	gosqlite3
 PORTVERSION=	20120330
@@ -9,6 +9,9 @@ MASTER_SITES=	LOCAL/jlaffaye
 
 MAINTAINER=	lichray@gmail.com
 COMMENT=	Go interface for SQLite3
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		compiler go
 

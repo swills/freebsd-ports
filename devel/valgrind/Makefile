@@ -1,5 +1,5 @@
 # Created by: Simon Barner <barner@gmx.de>
-# $FreeBSD: head/devel/valgrind/Makefile 493761 2019-02-24 13:56:44Z novel $
+# $FreeBSD: head/devel/valgrind/Makefile 495284 2019-03-10 11:29:53Z zeising $
 
 PORTNAME=	valgrind
 PORTVERSION=	3.10.1.20160113
@@ -10,7 +10,7 @@ CATEGORIES=	devel
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/ \
 		http://mirror.shatow.net/freebsd/${PORTNAME}/
 
-MAINTAINER=	bdrewery@FreeBSD.org
+MAINTAINER=	zeising@FreeBSD.org
 COMMENT=	Memory debugging and profiling tool
 
 BB_COMMIT=	ce1acb28953f

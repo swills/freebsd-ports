@@ -1,10 +1,10 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/owncloudclient/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/owncloudclient/Makefile 495941 2019-03-16 18:46:13Z tcberner $
 
 PORTNAME=	owncloudclient
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.4.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	deskutils
 
 MAINTAINER=	yonas@fizk.net
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify \
-		libqt5keychain.so:security/qtkeychain@qt5
+		libqt5keychain.so:security/qtkeychain
 
 USES=		cmake:noninja compiler:c++11-lib gmake iconv kde:5 \
 		localbase:ldflags pkgconfig qt:5 sqlite

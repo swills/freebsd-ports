@@ -1,9 +1,9 @@
 # Created by: Junho CHOI <junho.choi@gmail.com>
-# $FreeBSD: head/korean/hanyangfonts/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/korean/hanyangfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	hanyangfonts
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	http://ftp.kaist.ac.kr/hangul/fonts/ \
 		ftp://ftp.kaist.ac.kr/hangul/fonts/ \

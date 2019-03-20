@@ -1,8 +1,8 @@
 # Created by: Roland van Laar <roland@micite.net>
-# $FreeBSD: head/databases/py-sqlparse/Makefile 494194 2019-02-28 21:35:13Z sunpoet $
+# $FreeBSD: head/databases/py-sqlparse/Makefile 495481 2019-03-12 18:09:47Z sunpoet $
 
 PORTNAME=	sqlparse
-PORTVERSION=	0.2.4
+PORTVERSION=	0.3.0
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

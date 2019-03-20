@@ -1,5 +1,5 @@
 # Created by: Elvis Chiang <elvis@sslab.cs.ccu.edu.tw>
-# $FreeBSD: head/french/wordpress/Makefile 494140 2019-02-28 10:17:17Z joneum $
+# $FreeBSD: head/french/wordpress/Makefile 495392 2019-03-11 20:29:12Z antoine $
 
 PORTNAME=	wordpress
 DISTVERSION=	5.1
@@ -13,6 +13,7 @@ COMMENT=	State-of-the-art semantic personal publishing platform
 
 LICENSE=	GPLv2
 
+BROKEN=		unfetchable
 CONFLICTS_INSTALL=	de-wordpress-[0-9].* ja-wordpress-[0-9].* ru-wordpress-[0-9].*
 
 NO_ARCH=	yes

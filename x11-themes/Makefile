@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-themes/Makefile 494652 2019-03-04 21:39:09Z rigoletto $
+# $FreeBSD: head/x11-themes/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = X11 themes
@@ -147,14 +147,10 @@
     SUBDIR += plasma5-kde-gtk-config
     SUBDIR += plasma5-oxygen
     SUBDIR += plasma5-plasma-workspace-wallpapers
-    SUBDIR += qt4-style-float
-    SUBDIR += qt4-style-phase
-    SUBDIR += qt4-style-quantumstyle
     SUBDIR += qt5-style-plugins
     SUBDIR += qtcurve
     SUBDIR += qtcurve-gtk2
     SUBDIR += qtcurve-kf5
-    SUBDIR += qtcurve-qt4
     SUBDIR += qtcurve-qt5
     SUBDIR += qtcurve-utils
     SUBDIR += rezlooks

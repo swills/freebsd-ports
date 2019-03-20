@@ -1,9 +1,9 @@
 # Created by: Oliver Lehmann <lehmann@ans-netz.de>
-# $FreeBSD: head/x11-fonts/tv-fonts/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/tv-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	tv-fonts
 PORTVERSION=	1.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://dl.bytesex.org/releases/${PORTNAME}/
 
@@ -11,7 +11,7 @@ MAINTAINER=	oliver@FreeBSD.org
 COMMENT=	Number of fonts which are useful for TV applications
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir
+		mkfontscale>=0:x11-fonts/mkfontscale
 
 USES=		gmake fonts tar:bzip2
 MAKE_JOBS_UNSAFE=	yes

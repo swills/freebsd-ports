@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-fonts/iosevka/Makefile 492913 2019-02-14 11:45:22Z 0mp $
+# $FreeBSD: head/x11-fonts/iosevka/Makefile 495696 2019-03-14 10:35:25Z 0mp $
 
 PORTNAME=	iosevka
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.0
+DISTVERSION=	2.2.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/be5invis/Iosevka/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/
 DISTFILES=	01-${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \

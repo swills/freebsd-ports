@@ -1,8 +1,8 @@
 # Created by: Stefan Walter <swalter@lettermax.de>
-# $FreeBSD: head/misc/vifm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/misc/vifm/Makefile 495800 2019-03-15 17:43:32Z misha $
 
 PORTNAME=	vifm
-PORTVERSION=	0.9.1
+PORTVERSION=	0.10
 DISTVERSIONPREFIX=	v
 CATEGORIES=	misc
 
@@ -12,9 +12,11 @@ COMMENT=	Ncurses based file manager with vi like keybindings
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		desktop-file-utils gmake ncurses
+USES=		desktop-file-utils gmake ncurses shebangfix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-gtk
+
+SHEBANG_FILES=	data/vifm-media
 
 USE_GITHUB=	yes
 

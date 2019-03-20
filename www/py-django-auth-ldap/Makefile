@@ -1,8 +1,8 @@
 # Created by: Alexander Kriventsov <avk@vl.ru>
-# $FreeBSD: head/www/py-django-auth-ldap/Makefile 470944 2018-05-26 18:40:49Z miwi $
+# $FreeBSD: head/www/py-django-auth-ldap/Makefile 495585 2019-03-13 15:47:00Z kai $
 
 PORTNAME=	django-auth-ldap
-PORTVERSION=	1.5.0
+PORTVERSION=	1.7.0
 CATEGORIES=	www security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,10 +14,11 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django111>=1.11:www/py-django111@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ldap>0:net/py-ldap@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}ldap>=3.1:net/py-ldap@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+
 NO_ARCH=	yes
 PORTDOCS=	*
 

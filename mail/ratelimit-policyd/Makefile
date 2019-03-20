@@ -1,8 +1,8 @@
 # Created by: Miroslav Lachman
-# $FreeBSD: head/mail/ratelimit-policyd/Makefile 489684 2019-01-08 13:20:19Z mat $
+# $FreeBSD: head/mail/ratelimit-policyd/Makefile 496137 2019-03-18 11:44:15Z pi $
 
 PORTNAME=	ratelimit-policyd
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.3
 CATEGORIES=	mail
 
 MAINTAINER=	000.fbsd@quip.cz

@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/sonic-visualiser/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/sonic-visualiser/Makefile 496133 2019-03-18 09:42:12Z linimon $
 
 PORTNAME=	sonic-visualiser
 PORTVERSION=	2.5
@@ -21,7 +21,8 @@ LIB_DEPENDS=	libfftw3.so:math/fftw3 \
 		libsord-0.so:devel/sord \
 		libvamp-hostsdk.so:audio/vamp-plugin-sdk
 
-USES=	autoreconf desktop-file-utils gmake pkgconfig qt:5
+USES=		autoreconf compiler:c++11-lang desktop-file-utils gmake \
+		pkgconfig qt:5
 
 GNU_CONFIGURE=	yes
 USE_QT=		buildtools_build core gui network qmake_build testlib widgets xml

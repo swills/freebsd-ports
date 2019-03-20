@@ -1,10 +1,9 @@
 # Created by: Yuri Victorovich <yuri@FreeBSD.org>
-# $FreeBSD: head/math/libmesh/Makefile 489412 2019-01-05 22:46:53Z sunpoet $
+# $FreeBSD: head/math/libmesh/Makefile 495556 2019-03-13 05:23:09Z yuri $
 
 PORTNAME=	libmesh
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.1
-PORTREVISION=	3
+DISTVERSION=	1.4.0
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -62,8 +61,6 @@ post-install:
 		Make.common \
 		contrib \
 		libdata/pkgconfig/Make.common # https://github.com/libMesh/libmesh/issues/1539
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmesh_opt.so.0.0.0
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libmetaphysicl.so.0.0.0
 
 post-install-EXAMPLES-on:
 	# https://github.com/libMesh/libmesh/issues/1541

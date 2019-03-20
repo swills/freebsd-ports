@@ -1,10 +1,9 @@
 # Created by: trasz <trasz@pin.if.uz.zgora.pl>
-# $FreeBSD: head/audio/qjackctl/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/audio/qjackctl/Makefile 495536 2019-03-13 02:55:10Z yuri $
 
 PORTNAME=	qjackctl
 DISTVERSIONPREFIX=	qjackctl_
-DISTVERSION=	0_5_5
-PORTREVISION=	2
+DISTVERSION=	0_5_6
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -19,7 +18,7 @@ USES=		autoreconf compiler:c++11-lib gl gmake localbase pkgconfig qt:5
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	rncbc
-USE_QT=		core gui widgets x11extras xml buildtools_build linguisttools_build qmake_build
+USE_QT=		core gui network widgets x11extras xml buildtools_build linguisttools_build qmake_build
 USE_GL=		gl
 USE_CXXSTD=	c++11
 

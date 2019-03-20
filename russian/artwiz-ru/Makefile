@@ -1,9 +1,9 @@
 # Created by: Roman Bogorodskiy <bogorodskiy@inbox.ru>
-# $FreeBSD: head/russian/artwiz-ru/Makefile 493757 2019-02-24 12:47:30Z novel $
+# $FreeBSD: head/russian/artwiz-ru/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	artwiz-ru
 PORTVERSION=	20041031
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	russian x11-fonts
 MASTER_SITES=	http://dev.gentoo.org/~sergey/ \
 		LOCAL/novel

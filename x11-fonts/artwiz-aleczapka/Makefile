@@ -1,9 +1,9 @@
 # Created by: Matt Lancereau <matt@rimasec.net>
-# $FreeBSD: head/x11-fonts/artwiz-aleczapka/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/artwiz-aleczapka/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	artwiz-aleczapka-en
 PORTVERSION=	1.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/artwizaleczapka/iso-8859-1/${PORTVERSION}
 

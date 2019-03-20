@@ -1,5 +1,5 @@
 # Created by: Willem Jan Withagen <wjw@digiware.nl>
-# $FreeBSD: head/net/ceph12/Makefile 494078 2019-02-27 18:57:12Z pi $
+# $FreeBSD: head/net/ceph12/Makefile 495859 2019-03-16 09:00:10Z tobik $
 
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
@@ -121,7 +121,7 @@ post-install:
 	${MKDIR} ${STAGEDIR}/var/log/ceph
 	${MKDIR} ${STAGEDIR}/var/run/ceph
 	# Use the Ceph init.d script as the interface to regular
-	# starting and stopping deamons. rc.d work is done thru
+	# starting and stopping daemons. rc.d work is done thru
 	# a separate rc.d/ceph script calling init-ceph again.
 	${MV} ${STAGEDIR}${PREFIX}/etc/init.d/ceph ${STAGEDIR}${PREFIX}/bin/init-ceph
 	# remove files not packaged

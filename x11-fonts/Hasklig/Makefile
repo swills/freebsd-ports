@@ -1,8 +1,9 @@
 # Created by: arrowd <6yearold@gmail.com>
-# $FreeBSD: head/x11-fonts/Hasklig/Makefile 474890 2018-07-18 18:02:06Z arrowd $
+# $FreeBSD: head/x11-fonts/Hasklig/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	Hasklig
 DISTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/i-tu/Hasklig/releases/download/${PORTVERSION}/
 

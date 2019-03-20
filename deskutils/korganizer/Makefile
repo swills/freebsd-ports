@@ -1,7 +1,8 @@
-# $FreeBSD: head/deskutils/korganizer/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/deskutils/korganizer/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	korganizer
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

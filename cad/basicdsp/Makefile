@@ -1,5 +1,5 @@
 # Created by: Diane Bruce <db@db.net>
-# $FreeBSD: head/cad/basicdsp/Makefile 443053 2017-06-10 01:51:02Z sunpoet $
+# $FreeBSD: head/cad/basicdsp/Makefile 495554 2019-03-13 05:19:52Z linimon $
 
 PORTNAME=	basicdsp
 PORTVERSION=	1.01
@@ -13,7 +13,7 @@ COMMENT=	Program for experimenting with simple audio DSP algorithms
 
 LICENSE=	GPLv2
 
-USES=		dos2unix tar:tgz
+USES=		compiler:c++11-lang dos2unix tar:tgz
 USE_WX=		2.8+
 WX_COMPS=	wx wx:build wx:run
 

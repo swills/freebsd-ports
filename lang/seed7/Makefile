@@ -1,8 +1,8 @@
 # Created by: gahr
-# $FreeBSD: head/lang/seed7/Makefile 489776 2019-01-09 12:58:22Z gahr $
+# $FreeBSD: head/lang/seed7/Makefile 495452 2019-03-12 13:38:27Z gahr $
 
 PORTNAME=	seed7
-DISTVERSION=	05_20190107
+DISTVERSION=	05_20190303
 PORTREVISION=	0
 CATEGORIES=	lang
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${DISTNAME}/

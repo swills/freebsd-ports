@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/py-discid/Makefile 432837 2017-01-30 11:51:37Z jhale $
+# $FreeBSD: head/audio/py-discid/Makefile 496243 2019-03-19 03:04:25Z jhale $
 
 PORTNAME=	discid
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2.0
 CATEGORIES=	audio python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

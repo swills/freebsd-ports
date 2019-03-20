@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/rubygem-native-package-installer/Makefile 455717 2017-12-07 16:00:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-native-package-installer/Makefile 495377 2019-03-11 18:07:44Z sunpoet $
 
 PORTNAME=	native-package-installer
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -11,8 +11,9 @@ COMMENT=	Helper to install native packages on "gem install"
 LICENSE=	LGPL3+
 LICENSE_FILE_LGPL3=	${WRKSRC}/doc/text/lgpl-3.txt
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

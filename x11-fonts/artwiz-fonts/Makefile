@@ -1,9 +1,9 @@
 # Created by: Dominic Marks <dominic.marks@btinternet.com>
-# $FreeBSD: head/x11-fonts/artwiz-fonts/Makefile 469132 2018-05-05 17:13:42Z danfe $
+# $FreeBSD: head/x11-fonts/artwiz-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	artwiz-fonts
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://kobyla.info/soft/distfiles/ \
 		LOCAL/garga/artwiz/

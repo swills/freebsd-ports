@@ -1,9 +1,9 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/irc/konversation/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/irc/konversation/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	konversation
 PORTVERSION=	1.7.5
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	irc kde
 MASTER_SITES=	KDE/stable/${PORTNAME}/${DISTVERSION}/src
 
@@ -13,7 +13,7 @@ COMMENT=	User friendly IRC client for KDE
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
+LIB_DEPENDS=	libqca-qt5.so:devel/qca
 
 USES=		cmake compiler:c++11-lang desktop-file-utils gettext kde:5 \
 		python:run qt:5 shebangfix tar:xz

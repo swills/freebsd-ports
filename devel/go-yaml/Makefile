@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-yaml/Makefile 418395 2016-07-11 19:50:28Z cs $
+# $FreeBSD: head/devel/go-yaml/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	yaml
 PORTVERSION=	20160301
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	YAML support for the Go language
 
 LICENSE=	LGPL3
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	go-yaml

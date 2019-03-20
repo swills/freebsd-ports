@@ -1,9 +1,9 @@
 # Created by: Gunter Wambaugh <techgunter@yahoo.com>
-# $FreeBSD: head/emulators/o2em/Makefile 418767 2016-07-19 11:04:13Z mat $
+# $FreeBSD: head/emulators/o2em/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	o2em
 PORTVERSION=	1.17
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	emulators games
 MASTER_SITES=	SF/${PORTNAME}/OldFiles:1 \
 		http://o2em.sourceforge.net/files/:2

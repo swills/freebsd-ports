@@ -1,9 +1,9 @@
 # Created by: Konstantinos Konstantinidis <kkonstan@daemon.gr>
-# $FreeBSD: head/x11-fonts/webfonts/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11-fonts/webfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	webfonts
 PORTVERSION=	0.30
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/corefonts/the%20fonts/final:group1 \
 		ftp://ftp.botik.ru/rented/znamensk/distributions/ftp.vsu.ru/pub/tex/font-packs/mscore/:group1 \

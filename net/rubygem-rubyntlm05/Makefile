@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/rubygem-rubyntlm05/Makefile 431978 2017-01-20 19:37:06Z swills $
+# $FreeBSD: head/net/rubygem-rubyntlm05/Makefile 495167 2019-03-09 14:38:40Z sunpoet $
 
 PORTNAME=	rubyntlm
 PORTVERSION=	0.5.3
@@ -11,10 +11,13 @@ COMMENT=	Message creator and parser for the NTLM authentication
 
 LICENSE=	MIT
 
-NO_ARCH=	yes
+DEPRECATED=	Use net/rubygem-rubyntlm instead
+EXPIRATION_DATE=2019-03-31
 
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PORTSCOUT=	limit:^0\.5\.
 

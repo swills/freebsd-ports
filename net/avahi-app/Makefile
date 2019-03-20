@@ -1,5 +1,5 @@
 # Created by: Joe Marcus Clarke <marcus@FreeBSD.org>
-# $FreeBSD: head/net/avahi-app/Makefile 488134 2018-12-22 21:22:56Z kwm $
+# $FreeBSD: head/net/avahi-app/Makefile 496036 2019-03-17 09:05:03Z tcberner $
 
 PORTNAME=	avahi
 PORTVERSION=	0.7
@@ -37,6 +37,7 @@ CONFIGURE_ARGS?=--with-distro=freebsd \
 		--disable-doxygen-doc \
 		--disable-doxygen-dot \
 		--disable-qt3 \
+		--disable-qt4 \
 		--localstatedir=/var \
 		--enable-compat-howl
 CPPFLAGS+=	-I${LOCALBASE}/include -DHAVE_KQUEUE
@@ -77,13 +78,6 @@ CONFIGURE_ARGS+=--disable-compat-libdns_sd
 CONFIGURE_ARGS+=--enable-python
 .else
 CONFIGURE_ARGS+=--disable-python
-.endif
-.if ${AVAHI_SLAVE} == qt4
-CONFIGURE_ARGS+=--enable-qt4 \
-		--disable-expat \
-		--disable-gdbm
-.else
-CONFIGURE_ARGS+=--disable-qt4
 .endif
 .if ${AVAHI_SLAVE} == qt5
 CONFIGURE_ARGS+=--enable-qt5 \

@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/svt-av1/Makefile 494863 2019-03-07 00:49:28Z jbeich $
+# $FreeBSD: head/multimedia/svt-av1/Makefile 495845 2019-03-16 00:56:02Z jbeich $
 
 PORTNAME=	svt-av1
-PORTVERSION=	s20180304
+PORTVERSION=	s20180315
 CATEGORIES=	multimedia
 
 MAINTAINER=	jbeich@FreeBSD.org
@@ -23,7 +23,7 @@ USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 GH_ACCOUNT=	OpenVisualCloud
 GH_PROJECT=	SVT-AV1
-GH_TAGNAME=	8d75aad
+GH_TAGNAME=	39aad81
 CMAKE_OFF=	BUILD_TESTING # no useful tests yet
 
 post-patch:

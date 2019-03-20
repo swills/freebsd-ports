@@ -1,5 +1,5 @@
 # Created by: jhanna@home.com
-# $FreeBSD: head/devel/spin/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/spin/Makefile 495026 2019-03-08 07:49:02Z antoine $
 
 PORTNAME=	spin
 PORTVERSION=	6.4.8
@@ -14,6 +14,8 @@ COMMENT=	On-the-fly verification system for asynchronous concurrent systems
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN=		depends on the gcc meta port
 
 RUN_DEPENDS=	gcc:lang/gcc
 

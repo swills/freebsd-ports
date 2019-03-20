@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/lean/Makefile 491029 2019-01-23 09:59:54Z yuri $
+# $FreeBSD: head/math/lean/Makefile 495410 2019-03-12 01:23:46Z linimon $
 
 PORTNAME=	lean
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 LIB_DEPENDS=	libgmp.so:math/gmp
 
-USES=		cmake
+USES=		cmake compiler:c++11-lang
 USE_GITHUB=	yes
 GH_ACCOUNT=	leanprover
 USE_LDCONFIG=	yes

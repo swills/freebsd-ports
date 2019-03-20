@@ -1,9 +1,8 @@
 # Created by: Devon H. O'Dell <devon.odell@gmail.com>
-# $FreeBSD: head/lang/go/Makefile 494450 2019-03-02 18:31:44Z jlaffaye $
+# $FreeBSD: head/lang/go/Makefile 495741 2019-03-14 22:54:03Z jlaffaye $
 
 PORTNAME=	go
-PORTVERSION=	1.12
-PORTREVISION=	1
+PORTVERSION=	1.12.1
 PORTEPOCH=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://golang.org/dl/
@@ -61,7 +60,9 @@ do-build:
 		GOBIN= GOARCH=${GOARCH} GOOS=${OPSYS:tl} \
 		GO386=${GO386} \
 		${SH} make.bash -v
-	${RM} -r ${WRKSRC}/pkg/obj
+	${RM} -r ${WRKSRC}/pkg/obj \
+	    ${WRKSRC}/pkg/bootstrap \
+	    ${WRKSRC}/pkg/${OPSYS:tl}_${GOARCH}/cmd
 
 do-install:
 	@${CP} -a ${WRKSRC} ${STAGEDIR}${PREFIX}

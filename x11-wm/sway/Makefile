@@ -1,7 +1,7 @@
-# $FreeBSD: head/x11-wm/sway/Makefile 494628 2019-03-04 18:34:36Z jbeich $
+# $FreeBSD: head/x11-wm/sway/Makefile 495369 2019-03-11 17:47:10Z jbeich $
 
 PORTNAME=	sway
-DISTVERSION=	1.0-rc5
+DISTVERSION=	1.0
 CATEGORIES=	x11-wm
 
 MAINTAINER=	jbeich@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Choe, Cheng-Dae <whitekid@gmail.com>
-# $FreeBSD: head/databases/pgpool/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/pgpool/Makefile 495048 2019-03-08 15:51:22Z tz $
 
 PORTNAME=	pgpool
-PORTVERSION=	3.4.21
-PORTREVISION=	1
+PORTVERSION=	3.4.22
 CATEGORIES=	databases
 MASTER_SITES=	http://www.pgpool.net/mediawiki/images/
 DISTNAME=	${PORTNAME}-II-${PORTVERSION}

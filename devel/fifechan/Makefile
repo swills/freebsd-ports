@@ -1,9 +1,9 @@
 # Created by: Green Dog <fiziologus@gmail.com>
-# $FreeBSD: head/devel/fifechan/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/fifechan/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	fifechan
 PORTVERSION=	0.1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel games
 
 MAINTAINER=	fiziologus@gmail.com

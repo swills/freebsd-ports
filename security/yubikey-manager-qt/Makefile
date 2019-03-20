@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yubikey-manager-qt/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/security/yubikey-manager-qt/Makefile 495428 2019-03-12 04:35:44Z linimon $
 
 PORTNAME=	yubikey-manager-qt
 DISTVERSIONPREFIX=	yubikey-manager-qt-
@@ -14,11 +14,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yubikey-manager>0:security/py-yubikey-manager@${PY_FLAVOR} \
 		pyotherside-qt5>0:devel/pyotherside-qt5
-
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yubikey-manager>0:security/py-yubikey-manager@${PY_FLAVOR} \
 		pyotherside-qt5>0:devel/pyotherside-qt5
 
-USES=		gl pkgconfig python:3.5+ qt:5 qmake shebangfix
+USES=		compiler:c++11-lang gl pkgconfig python:3.5+ qt:5 qmake \
+		shebangfix
 USE_GL=		gl
 USE_QT=		core declarative graphicaleffects gui network quickcontrols \
 		quickcontrols2 svg widgets buildtools_build

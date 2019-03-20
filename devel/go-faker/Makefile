@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-faker/Makefile 418397 2016-07-11 19:54:56Z cs $
+# $FreeBSD: head/devel/go-faker/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	faker
 PORTVERSION=	20160419
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Generate fake data in go
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	manveru

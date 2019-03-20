@@ -1,5 +1,5 @@
 # Created by: Peter Wemm <peter@netplex.com.au>
-# $FreeBSD: head/comms/conserver/Makefile 452001 2017-10-13 14:19:26Z bapt $
+# $FreeBSD: head/comms/conserver/Makefile 496291 2019-03-19 20:19:29Z cy $
 
 PORTNAME=	conserver
 PORTVERSION=	8.5
@@ -11,6 +11,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Manage remote serial consoles via TCP/IP
+
+DEPRECATED=	Superseeded by comms/conserver-com
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	makeme:devel/msrc0 \
 		mkcmd:devel/mkcmd

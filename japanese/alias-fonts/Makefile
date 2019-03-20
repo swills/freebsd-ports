@@ -1,9 +1,9 @@
 # Created by: sada
-# $FreeBSD: head/japanese/alias-fonts/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/alias-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	alias-fonts
 PORTVERSION=	1.0
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	# empty
 DISTFILES=	# empty

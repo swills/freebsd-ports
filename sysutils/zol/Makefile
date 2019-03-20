@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/zol/Makefile 494604 2019-03-04 15:59:12Z kmoore $
+# $FreeBSD: head/sysutils/zol/Makefile 495789 2019-03-15 13:41:29Z kmoore $
 
 PORTNAME=	zol
-PORTVERSION=	2019030100
+PORTVERSION=	2019031300
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -23,12 +23,12 @@ OPTIONS_SUB=    yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	zfsonfreebsd
 GH_PROJECT=	ZoF
-GH_TAGNAME=	e10a5fb
+GH_TAGNAME=	804ee5
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 1300013
-IGNORE=      needs FreeBSD 13 with AES-CCM support
+.if (${OSVERSION} < 1200504) || (${OSVERSION} >= 1300000 && ${OSVERSION} < 1300013)
+IGNORE=      needs FreeBSD 12/13 with AES-CCM support
 .endif
 
 .if ${PORT_OPTIONS:MDEBUG}

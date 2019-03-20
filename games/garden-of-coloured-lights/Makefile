@@ -1,8 +1,9 @@
 # Created by: Dmitry Marakasov <amdmi3@FreeBSD.org>
-# $FreeBSD: head/games/garden-of-coloured-lights/Makefile 422426 2016-09-19 11:24:49Z amdmi3 $
+# $FreeBSD: head/games/garden-of-coloured-lights/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	garden-of-coloured-lights
 PORTVERSION=	1.0.9
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/garden/garden/${PORTVERSION}/
 DISTNAME=	garden-${PORTVERSION}

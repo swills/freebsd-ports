@@ -1,5 +1,5 @@
-# $FreeBSD: head/math/octave/Makefile.version 476952 2018-08-12 02:57:03Z stephen $
+# $FreeBSD: head/math/octave/Makefile.version 495225 2019-03-10 04:56:17Z stephen $
 
 # Version to share with ports depending on octave
-OCTAVE_VERSION=	4.4.1
+OCTAVE_VERSION=	5.1.0
 

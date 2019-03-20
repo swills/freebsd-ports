@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/x11-fonts/league-spartan/Makefile 491131 2019-01-25 07:34:18Z tobik $
+# $FreeBSD: head/x11-fonts/league-spartan/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	league-spartan
 DISTVERSION=	g20140922
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

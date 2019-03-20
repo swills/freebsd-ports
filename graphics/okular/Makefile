@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/okular/Makefile 494980 2019-03-07 18:35:32Z tcberner $
+# $FreeBSD: head/graphics/okular/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	okular
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -19,7 +20,7 @@ LIB_DEPENDS=	libchm.so:misc/chmlib \
 		libqmobipocket.so:graphics/kdegraphics-mobipocket \
 		libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5 \
-		libqca-qt5.so:devel/qca@qt5 \
+		libqca-qt5.so:devel/qca \
 		libspectre.so:print/libspectre \
 		libtiff.so:graphics/tiff \
 		libzip.so:archivers/libzip

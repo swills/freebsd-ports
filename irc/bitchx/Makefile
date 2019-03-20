@@ -1,9 +1,9 @@
 # Created by: Jimbo Bahooli <griffin@blackhole.iceworld.org>
-# $FreeBSD: head/irc/bitchx/Makefile 483384 2018-10-29 10:54:15Z danfe $
+# $FreeBSD: head/irc/bitchx/Makefile 496264 2019-03-19 15:04:33Z swills $
 
 PORTNAME=	bitchx
 PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES+=	irc
 MASTER_SITES=	SF/${PORTNAME}/ircii-pana/${PORTNAME}-${DISTVERSION}
@@ -20,7 +20,6 @@ CONFIGURE_ARGS+=--exec-prefix="${PREFIX}/share" \
 		--bindir="${PREFIX}/bin" \
 		--datadir="${PREFIX}/share" \
 		--libdir="${PREFIX}/share"
-LIBS+=		-L${LOCALBASE}/lib
 
 OPTIONS_SUB=	yes
 
@@ -40,7 +39,7 @@ TOGGLES_DESC=	Disable annoyance toggles
 
 IPV6_CONFIGURE_ENABLE=	ipv6
 
-SSL_CONFIGURE_WITH=	ssl
+SSL_CONFIGURE_WITH=	ssl="${OPENSSLBASE}"
 SSL_USES=		ssl
 
 PLUGINS_CONFIGURE_WITH=	plugins="${PLUGIN_LIST:C/\$$/,/g}"

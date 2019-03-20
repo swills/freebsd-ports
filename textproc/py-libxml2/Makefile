@@ -1,7 +1,7 @@
 # Created by: Alexander Nedotsukov <bland@FreeBSD.org>
-# $FreeBSD: head/textproc/py-libxml2/Makefile 482978 2018-10-25 19:26:44Z kwm $
+# $FreeBSD: head/textproc/py-libxml2/Makefile 495019 2019-03-08 06:47:53Z antoine $
 
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc gnome python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

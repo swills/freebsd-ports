@@ -1,5 +1,5 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/editors/neovim/Makefile 490141 2019-01-13 14:56:33Z adamw $
+# $FreeBSD: head/editors/neovim/Makefile 496272 2019-03-19 16:26:25Z adamw $
 
 PORTNAME=	neovim
 DISTVERSIONPREFIX=	v
@@ -34,10 +34,13 @@ CMAKE_ARGS=	-DLUA_PRG:FILEPATH="${LUA_CMD}" \
 		-DCMAKE_INSTALL_MANDIR:PATH="${MANPREFIX}/man" \
 		-DDEPS_PREFIX:PATH="${LOCALBASE}"
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	NLS PYNVIM
 OPTIONS_SUB=	yes
 NLS_CMAKE_BOOL=	ENABLE_LIBINTL
 NLS_USES=	gettext
+PYNVIM_DESC=	Enable support for plugins written in python
+PYNVIM_USES=	python:run
+PYNVIM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pynvim>=0.3.0:editors/py-pynvim
 
 post-patch:
 	@${REINPLACE_CMD} -e \

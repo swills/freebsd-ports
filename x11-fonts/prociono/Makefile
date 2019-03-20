@@ -1,8 +1,9 @@
 # Created by: Florian Limberger <flo@snakeoilproductions.net>
-# $FreeBSD: head/x11-fonts/prociono/Makefile 491128 2019-01-25 07:21:20Z tobik $
+# $FreeBSD: head/x11-fonts/prociono/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	prociono
 DISTVERSION=	g20110526
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	flo@snakeoilproductions.net

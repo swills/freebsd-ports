@@ -1,9 +1,9 @@
 # Created by: mi@aldan.algebra.com
-# $FreeBSD: head/x11-fonts/geminifonts/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/geminifonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	gemini
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.brama.com/compute/unix/
 PKGNAMEPREFIX=	koi8-u-
@@ -14,7 +14,7 @@ MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Ukrainian KOI8 fonts for X11R6 (koi8-u)
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir
+		mkfontscale>=0:x11-fonts/mkfontscale
 
 USES=		fonts perl5 tar:tgz
 USE_PERL5=	build

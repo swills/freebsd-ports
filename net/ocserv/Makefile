@@ -1,11 +1,10 @@
 # Created by: Carlos J Puga Medina <cpm@fbsd.es>
-# $FreeBSD: head/net/ocserv/Makefile 489983 2019-01-11 16:20:18Z cpm $
+# $FreeBSD: head/net/ocserv/Makefile 495663 2019-03-13 22:06:36Z cpm $
 
 PORTNAME=	ocserv
-PORTVERSION=	0.12.2
+PORTVERSION=	0.12.3
 CATEGORIES=	net security
-MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/ \
-		LOCAL/cpm
+MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/
 
 MAINTAINER=	cpm@FreeBSD.org
 COMMENT=	Server implementing the AnyConnect SSL VPN protocol

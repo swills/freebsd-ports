@@ -1,7 +1,8 @@
-# $FreeBSD: head/korean/nanumfonts-otf/Makefile 411906 2016-03-25 20:54:43Z jkim $
+# $FreeBSD: head/korean/nanumfonts-otf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	nanumfonts
 PORTVERSION=	20160201
+PORTREVISION=	1
 CATEGORIES=	korean
 MASTER_SITES=	http://appdown.naver.com/naver/font/NanumFont/setup/ \
 		LOCAL/jkim

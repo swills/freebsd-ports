@@ -1,8 +1,9 @@
 # Created by: Ashish Shukla <wahjava@gmail.com>
-# $FreeBSD: head/x11-fonts/inconsolata-ttf/Makefile 470584 2018-05-21 23:26:37Z meta $
+# $FreeBSD: head/x11-fonts/inconsolata-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	inconsolata-ttf
 PORTVERSION=	2.001
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	x11-fonts
 

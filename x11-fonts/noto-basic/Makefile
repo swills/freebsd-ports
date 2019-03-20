@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/noto-basic/Makefile 494519 2019-03-03 22:19:30Z sunpoet $
+# $FreeBSD: head/x11-fonts/noto-basic/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	noto
 PORTVERSION=	1.0.5
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://noto-website.storage.googleapis.com/pkgs/ \
 		https://github.com/googlei18n/noto-emoji/raw/master/fonts/:emoji

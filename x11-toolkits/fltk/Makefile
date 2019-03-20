@@ -1,10 +1,10 @@
 # Created by: Dima Sivachenko <dima@Chg.RU>
-# $FreeBSD: head/x11-toolkits/fltk/Makefile 454682 2017-11-22 11:06:43Z danfe $
+# $FreeBSD: head/x11-toolkits/fltk/Makefile 495362 2019-03-11 16:45:26Z danfe $
 
 PORTNAME=	fltk
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://fltk.org/pub/${PORTNAME}/${PORTVERSION}/
+MASTER_SITES=	https://www.fltk.org/pub/${PORTNAME}/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-source
 
 MAINTAINER=	danfe@FreeBSD.org
@@ -13,11 +13,12 @@ COMMENT=	Cross-platform C++ graphical user interface toolkit
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libpng.so:graphics/png
+LIB_DEPENDS=	libpng.so:graphics/png \
+		libfontconfig.so:x11-fonts/fontconfig
 
-USES=		jpeg localbase pkgconfig
-USE_XORG=	x11 xcursor xext xfixes xft xinerama
-USE_GL=		glu
+USES=		gl jpeg localbase pkgconfig tar:bz2
+USE_XORG=	x11 xcursor xext xfixes xft xinerama xrender
+USE_GL=		gl glu
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
@@ -28,6 +29,10 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 PORTEXAMPLES=	*
 
 OPTIONS_DEFINE=	EXAMPLES
+
+post-extract:
+	@${MV} ${WRKSRC}/test/help.cxx ${WRKSRC}/test/help_dialog.cxx
+	@${MV} ${WRKSRC}/test/help-test.html ${WRKSRC}/test/help_dialog.html
 
 post-patch: .SILENT
 	prefix="${PREFIX}" ; plength=$$(($${#prefix}+10)) ; \

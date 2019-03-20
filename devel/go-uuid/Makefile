@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-uuid/Makefile 437328 2017-03-30 21:12:43Z mat $
+# $FreeBSD: head/devel/go-uuid/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	uuid
 PORTVERSION=	0.0.0.20141202
@@ -11,6 +11,9 @@ MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Go library to generates and inspects UUIDs based on RFC 4122
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 REVISION=	35bc42037350

@@ -1,9 +1,9 @@
 # Created by: Junho CHOI <junho.choi@gmail.com>
-# $FreeBSD: head/korean/kaistfonts/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/korean/kaistfonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kaistfonts
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 PKGNAMESUFFIX=	-ksc

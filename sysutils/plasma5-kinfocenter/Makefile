@@ -1,7 +1,8 @@
-# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 492811 2019-02-12 21:40:13Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-kinfocenter/Makefile 496075 2019-03-17 17:27:27Z rakuco $
 
 PORTNAME=	kinfocenter
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/andika/Makefile 489682 2019-01-08 13:16:02Z tobik $
+# $FreeBSD: head/x11-fonts/andika/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	Andika
 PORTVERSION=	5.000
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=${MEDIA_ID}&filename=/
 

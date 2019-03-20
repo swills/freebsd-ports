@@ -1,8 +1,9 @@
 # Created by: Nicolas Embriz <nbari@tequila.io>
-# $FreeBSD: head/devel/gitflow/Makefile 494650 2019-03-04 21:17:00Z swills $
+# $FreeBSD: head/devel/gitflow/Makefile 495524 2019-03-12 20:55:30Z kwm $
 
 PORTNAME=	gitflow
 PORTVERSION=	1.12.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	nbari@tequila.io

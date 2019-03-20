@@ -1,5 +1,5 @@
 # Created by: Dmitry Marakasov <amdmi3@amdmi3.ru>
-# $FreeBSD: head/graphics/gnash/Makefile 488782 2018-12-31 13:24:59Z rene $
+# $FreeBSD: head/graphics/gnash/Makefile 495793 2019-03-15 15:27:31Z jbeich $
 
 PORTNAME=	gnash
 PORTVERSION=	0.8.10
@@ -108,6 +108,9 @@ GNASH_RENDERERS+=	agg
 IGNORE=		support for OpenGL is currently broken, use option AGG
 GNASH_RENDERERS+=	ogl
 LIB_DEPENDS+=		libgdkglext-x11-1.0.so:x11-toolkits/gtkglext
+. if ${PORT_OPTIONS:MVAAPI}
+LIB_DEPENDS+=		libva-glx.so:multimedia/libva-glx
+. endif
 .endif
 
 .if ${PORT_OPTIONS:MCAIRO}

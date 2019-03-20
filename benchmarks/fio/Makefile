@@ -1,5 +1,5 @@
 # Created by: luigi@FreeBSD.org
-# $FreeBSD: head/benchmarks/fio/Makefile 493410 2019-02-20 06:51:49Z bapt $
+# $FreeBSD: head/benchmarks/fio/Makefile 495346 2019-03-11 11:00:12Z 0mp $
 
 PORTNAME=	fio
 PORTVERSION=	3.13
@@ -7,9 +7,10 @@ CATEGORIES=	benchmarks
 MASTER_SITES=	http://brick.kernel.dk/snaps/
 
 MAINTAINER=	bapt@FreeBSD.org
-COMMENT=	FIO - flexible IO tester
+COMMENT=	Flexible IO tester
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake tar:bzip2
 

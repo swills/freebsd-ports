@@ -1,9 +1,9 @@
 # Created by: David O'Brien (obrien@NUXI.com)
-# $FreeBSD: head/vietnamese/unicode-uhoai/Makefile 453718 2017-11-08 06:04:45Z ak $
+# $FreeBSD: head/vietnamese/unicode-uhoai/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	unicode-uhoai
 PORTVERSION=	2.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	vietnamese x11-fonts
 MASTER_SITES=	LOCAL/obrien
 DISTNAME=	uhoaiw21

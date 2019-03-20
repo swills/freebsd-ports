@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nsd_exporter/Makefile 494953 2019-03-07 15:22:07Z zi $
+# $FreeBSD: head/net-mgmt/nsd_exporter/Makefile 496269 2019-03-19 16:07:57Z zi $
 
 PORTNAME=	nsd_exporter
 PORTVERSION=	0.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	zi@FreeBSD.org
@@ -34,6 +34,7 @@ USE_RC_SUBR=	nsd_exporter
 
 post-patch:
 	${REINPLACE_CMD} -e 's|"/etc|"${LOCALBASE}/etc|g' ${WRKSRC_go_nsdctl}/nsdctl.go
+	${REINPLACE_CMD} -e 's|"/etc|"${LOCALBASE}/etc|g' ${WRKSRC}/nsd_exporter.go
 
 pre-build:
 	${MKDIR} ${GO_WRKDIR_SRC}/github.com/prometheus ${GO_WRKDIR_SRC}/gopkg.in \

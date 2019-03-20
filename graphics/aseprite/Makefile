@@ -1,10 +1,10 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/aseprite/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/graphics/aseprite/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=		aseprite
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.2.9
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=		graphics
 
 MAINTAINER=		yuri@FreeBSD.org

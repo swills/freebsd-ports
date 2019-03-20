@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/ktp-approver/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net-im/ktp-approver/Makefile 495946 2019-03-16 19:13:34Z tcberner $
 
 PORTNAME=	ktp-approver
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	KDE instant messaging notifier
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
+LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 RUN_DEPENDS=	${KDE_PREFIX}/bin/ktp-contactlist:net-im/ktp-contact-list
 

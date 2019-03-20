@@ -1,10 +1,10 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/chryzodus/Makefile 412348 2016-04-01 14:16:16Z mat $
+# $FreeBSD: head/math/chryzodus/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	chryzodus
 PORTVERSION=	0.32
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	SF
 

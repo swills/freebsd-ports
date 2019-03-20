@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kbfs/Makefile 490588 2019-01-17 19:21:36Z sunpoet $
+# $FreeBSD: head/security/kbfs/Makefile 496160 2019-03-18 18:21:46Z sunpoet $
 
 PORTNAME=	kbfs
 PORTVERSION=	2.13.1
@@ -10,6 +10,9 @@ COMMENT=	Keybase Filesystem (KBFS)
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=	Merged into security/keybase
+EXPIRATION_DATE=2019-03-31
 
 PORTSCOUT=	skipv:initial-git-on-android
 

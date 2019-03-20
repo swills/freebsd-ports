@@ -1,10 +1,10 @@
-# $FreeBSD: head/japanese/kterm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/japanese/kterm/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kterm
 PORTVERSION=	6.2.0
 DISTVERSIONPREFIX=	v
 DISTVERSIONSUFFIX=	.fb6
-PORTREVISION=	14
+PORTREVISION=	15
 CATEGORIES=	japanese x11
 MASTER_SITES=	LOCAL/hrs:pcemu
 DISTFILES=	pcemu1.01alpha.tar.gz:pcemu
@@ -45,7 +45,6 @@ VGAFONT_DESC=	install VGA font
 VGAFONT_EXTRACT_DEPENDS= \
     ${LOCALBASE}/bin/bdftopcf:x11-fonts/bdftopcf
 VGAFONT_BUILD_DEPENDS= \
-    ${LOCALBASE}/bin/mkfontdir:x11-fonts/mkfontdir \
     ${LOCALBASE}/bin/mkfontscale:x11-fonts/mkfontscale
 
 NKFCMD=		${LOCALBASE}/bin/nkf

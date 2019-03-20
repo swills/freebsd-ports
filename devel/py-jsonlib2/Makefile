@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/py-jsonlib2/Makefile 455210 2017-11-30 15:50:30Z mat $
+# $FreeBSD: head/devel/py-jsonlib2/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	jsonlib2
 PORTVERSION=	1.5.2
-PORTREVSION=	1
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

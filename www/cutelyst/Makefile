@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/cutelyst/Makefile 493359 2019-02-19 10:11:50Z adridg $
+# $FreeBSD: head/www/cutelyst/Makefile 495438 2019-03-12 05:27:47Z linimon $
 
 PORTNAME=	cutelyst
 DISTVERSIONPREFIX=	v
@@ -11,7 +11,7 @@ COMMENT=	C++/Qt web framework
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake localbase qt:5
+USES=		cmake compiler:c++11-lang localbase qt:5
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 USE_QT=		qmake_build buildtools_build \

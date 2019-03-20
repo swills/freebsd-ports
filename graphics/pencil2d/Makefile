@@ -1,10 +1,8 @@
-# $FreeBSD: head/graphics/pencil2d/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/pencil2d/Makefile 496244 2019-03-19 04:44:39Z yuri $
 
 PORTNAME=	pencil2d
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.6.2-63
-DISTVERSIONSUFFIX=	-gd05fbae0
-PORTREVISION=	2
+DISTVERSION=	0.6.3
 CATEGORIES=	graphics math
 
 MAINTAINER=	yuri@FreeBSD.org

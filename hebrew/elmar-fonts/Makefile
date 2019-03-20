@@ -1,9 +1,9 @@
 # Created by: nadav@cs.technion.ac.il
-# $FreeBSD: head/hebrew/elmar-fonts/Makefile 434692 2017-02-24 01:52:10Z cpm $
+# $FreeBSD: head/hebrew/elmar-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	elmar
 PORTVERSION=	3.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	hebrew x11-fonts
 MASTER_SITES=	ftp://ftp.elmar.co.il/Portable/fonts/
 PKGNAMESUFFIX=	-fonts

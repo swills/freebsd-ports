@@ -1,9 +1,9 @@
 # Created by: shigeri <shigeri@m10.alpha-net.ne.jp>
-# $FreeBSD: head/mail/sylpheed/Makefile 464983 2018-03-19 06:03:16Z yuri $
+# $FreeBSD: head/mail/sylpheed/Makefile 495103 2019-03-09 07:59:06Z ehaupt $
 
 PORTNAME=	sylpheed
 PORTVERSION=	3.7.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://sylpheed.sraoss.jp/sylpheed/v${PORTVERSION:C/\.[^\.]*$//}/  \
 		LOCAL/ehaupt
@@ -21,8 +21,9 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 USES=		gettext iconv gmake pkgconfig tar:bzip2 desktop-file-utils \
 		libtool
 USE_GNOME=	gtk20 cairo gdkpixbuf2
-GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
+
+GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
 CPPFLAGS+=	-I${LOCALBASE}/include
@@ -100,7 +101,7 @@ post-patch:
 		${WRKSRC}/src/Makefile.in
 
 .if empty(PORT_OPTIONS:MDOCS)
-	@${REINPLACE_CMD} -e 's|^SUBDIRS = ac libsylph src plugin po manual faq nsis$$|SUBDIRS = ac libsylph src plugin po nsis|g' \
+	@${REINPLACE_CMD} -e '/^SUBDIRS = /s/manual faq//' \
 		${WRKSRC}/Makefile.in
 .else
 .for i in ${MAKEFILES}

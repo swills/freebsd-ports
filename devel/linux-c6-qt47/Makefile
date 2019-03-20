@@ -1,5 +1,5 @@
 # Created by: Artyom Mirgorodskiy <artyom.mirgorodsky@gmail.com>
-# $FreeBSD: head/devel/linux-c6-qt47/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/linux-c6-qt47/Makefile 495971 2019-03-16 22:24:07Z tcberner $
 
 PORTNAME=	qt47
 PORTVERSION=	4.7.2
@@ -12,7 +12,6 @@ DIST_SUBDIR=	atrpms
 MAINTAINER=	emulation@FreeBSD.org
 COMMENT=	Cross-platform application and UI framework (Linux CentOS ${LINUX_DIST_VER})
 
-DESCR=		${.CURDIR}/../qt4/pkg-descr
 RPMVERSION=	1_18.el6
 USES=		linux:c6
 USE_LDCONFIG=	yes

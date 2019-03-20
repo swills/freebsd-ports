@@ -1,9 +1,9 @@
 # Created by: Jonathan Chen <jonc@chen.org.nz>
-# $FreeBSD: head/net-im/psi/Makefile 494586 2019-03-04 11:33:40Z jbeich $
+# $FreeBSD: head/net-im/psi/Makefile 495954 2019-03-16 20:16:24Z tcberner $
 
 PORTNAME=	psi
 DISTVERSION=	1.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im
 MASTER_SITES=	SF/${PORTNAME}/Psi/${PORTVERSION}
 
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 
 LIB_DEPENDS=	libidn.so:dns/libidn \
 		libminizip.so:archivers/minizip \
-		libqca-qt5.so:devel/qca@qt5
+		libqca-qt5.so:devel/qca
 
 USES=		cmake compiler:c++11-lang desktop-file-utils pkgconfig qt:5 \
 		tar:xz

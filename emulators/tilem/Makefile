@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/emulators/tilem/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/emulators/tilem/Makefile 495912 2019-03-16 16:48:36Z danfe $
 
 PORTNAME=	tilem
 PORTVERSION=	2.0
@@ -8,7 +8,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	SF
 
 MAINTAINER=	ports@FreeBSD.org
-COMMENT=	Emulator for the Z80 series of Texas Instruments calculators
+COMMENT=	Texas Instruments Z80 series calculator emulator
 
 LICENSE=	GPLv3
 

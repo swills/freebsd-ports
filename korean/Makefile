@@ -1,4 +1,4 @@
-# $FreeBSD: head/korean/Makefile 494165 2019-02-28 17:12:47Z kai $
+# $FreeBSD: head/korean/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Korean support
@@ -35,9 +35,9 @@
     SUBDIR += nanumfonts-otf
     SUBDIR += nanumfonts-ttf
     SUBDIR += nhpf
-    SUBDIR += qt4-codecs-kr
     SUBDIR += scim-hangul
     SUBDIR += scim-tables
+    SUBDIR += sourcehansans-otf
     SUBDIR += sourcehanserif-otf
     SUBDIR += unfonts-core
     SUBDIR += unfonts-extra

@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/postgis20/Makefile 490508 2019-01-16 20:10:39Z sunpoet $
+# $FreeBSD: head/databases/postgis20/Makefile 495755 2019-03-15 02:57:37Z wen $
 
 PORTNAME=	postgis
 PORTVERSION=	2.0.7
@@ -12,6 +12,9 @@ COMMENT=	Geographic objects support for PostgreSQL databases
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Upstream no longer maintained
+EXPIRATION_DATE=2019-06-15
 
 LIB_DEPENDS=	libgeos.so:graphics/geos \
 		libjson-c.so:devel/json-c \

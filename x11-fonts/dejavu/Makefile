@@ -1,8 +1,9 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/dejavu/Makefile 479854 2018-09-16 00:06:42Z sunpoet $
+# $FreeBSD: head/x11-fonts/dejavu/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	dejavu
 PORTVERSION=	2.37
+PORTREVISION=	1
 DISTVERSIONPREFIX=	fonts-ttf-
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/dejavu-fonts/dejavu-fonts/releases/download/version_${PORTVERSION:R}_${PORTVERSION:E}/

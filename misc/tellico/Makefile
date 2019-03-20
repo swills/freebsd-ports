@@ -1,5 +1,5 @@
 # Created by: Kirill Ponomarew <ponomarew@oberon.net>
-# $FreeBSD: head/misc/tellico/Makefile 492733 2019-02-11 19:44:51Z tcberner $
+# $FreeBSD: head/misc/tellico/Makefile 495418 2019-03-12 03:54:35Z linimon $
 
 PORTNAME=	tellico
 DISTVERSION=	3.1.4
@@ -22,8 +22,8 @@ LIB_DEPENDS=	libbtparse.so:textproc/btparse \
 		libtag.so:audio/taglib \
 		libyaz.so:net/yaz
 
-USES=		cmake desktop-file-utils gettext kde:5 pkgconfig python:run \
-		qt:5 shared-mime-info shebangfix tar:xz
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext kde:5 \
+		pkgconfig python:run qt:5 shared-mime-info shebangfix tar:xz
 USE_GNOME=	libxml2 libxslt
 USE_KDE=	archive attica5 auth bookmarks codecs completion config \
 		configwidgets coreaddons crash ecm filemetadata guiaddons \

@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/averiagwf/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11-fonts/averiagwf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	averiagwf
 PORTVERSION=	1.00
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://iotic.com/averia/font-files/GWF/
 DISTNAME=	AveriaGWF

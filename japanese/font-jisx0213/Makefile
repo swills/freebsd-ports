@@ -1,9 +1,9 @@
 # Created by: Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
-# $FreeBSD: head/japanese/font-jisx0213/Makefile 412347 2016-04-01 14:08:37Z mat $
+# $FreeBSD: head/japanese/font-jisx0213/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	jisx0213
 PORTVERSION=	20040425
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www12.ocn.ne.jp/~imamura/ \
 		LOCAL/hrs:yagi

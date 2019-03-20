@@ -1,9 +1,9 @@
 # Created by: Shen Chuan-Hsing <statue@freebsd.sinica.edu.tw>
-# $FreeBSD: head/chinese/fireflyttf/Makefile 424411 2016-10-21 12:51:40Z mat $
+# $FreeBSD: head/chinese/fireflyttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	fireflyttf
 PORTVERSION=	1.3.0
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES?=	LOCAL/chinsan/fonts
 DISTNAME?=	fireflysung-${PORTVERSION}

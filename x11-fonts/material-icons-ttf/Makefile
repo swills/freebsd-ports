@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/material-icons-ttf/Makefile 494090 2019-02-27 22:09:42Z swills $
+# $FreeBSD: head/x11-fonts/material-icons-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	material-icons
 DISTVERSION=	4.0.5
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 PKGNAMESUFFIX=	-ttf
 

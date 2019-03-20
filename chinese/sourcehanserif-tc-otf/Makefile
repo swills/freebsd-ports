@@ -1,7 +1,8 @@
-# $FreeBSD: head/chinese/sourcehanserif-tc-otf/Makefile 494170 2019-02-28 18:15:22Z kai $
+# $FreeBSD: head/chinese/sourcehanserif-tc-otf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=		sourcehanserif
 PORTVERSION=		1.001
+PORTREVISION=		1
 DISTVERSIONSUFFIX=	R
 CATEGORIES=		chinese x11-fonts
 PKGNAMESUFFIX=		-tc-otf

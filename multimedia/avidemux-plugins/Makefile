@@ -1,9 +1,9 @@
 # Created by: Anish Mistry (with help from mean)
-# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 492305 2019-02-06 13:33:13Z jbeich $
+# $FreeBSD: head/multimedia/avidemux-plugins/Makefile 496215 2019-03-18 21:45:10Z jbeich $
 
 PORTNAME=	avidemux
 PORTVERSION=	${AVIDEMUX_VERSION}
-PORTREVISION=	11
+PORTREVISION=	14
 CATEGORIES=	multimedia
 PKGNAMESUFFIX=	-plugins
 
@@ -26,11 +26,6 @@ CMAKE_ARGS+=	-DPLUGIN_UI=ALL
 .if ${PORT_OPTIONS:MCLI}
 BUILD_DEPENDS+=	${LOCALBASE}/include/avidemux/2.6/cli/config.h:multimedia/avidemux-cli
 RUN_DEPENDS+=	${LOCALBASE}/include/avidemux/2.6/cli/config.h:multimedia/avidemux-cli
-.endif
-
-.if ${PORT_OPTIONS:MQT4}
-BUILD_DEPENDS+=	${LOCALBASE}/include/avidemux/2.6/qt4/config.h:multimedia/avidemux-qt4
-RUN_DEPENDS+=	${LOCALBASE}/include/avidemux/2.6/qt4/config.h:multimedia/avidemux-qt4
 .endif
 
 .if ${PORT_OPTIONS:MGTK3}

@@ -1,9 +1,9 @@
 # Created by: Mark Murray <markm@FreeBSD.org>
-# $FreeBSD: head/graphics/ufraw/Makefile 492491 2019-02-09 11:04:39Z tobik $
+# $FreeBSD: head/graphics/ufraw/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	ufraw
 PORTVERSION=	0.22
-PORTREVISION=	9
+PORTREVISION=	11
 CATEGORIES=	graphics
 
 MAINTAINER=	rodrigo@FreeBSD.org

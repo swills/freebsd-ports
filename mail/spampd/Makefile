@@ -1,8 +1,8 @@
 # Created by: chris
-# $FreeBSD: head/mail/spampd/Makefile 474724 2018-07-16 09:53:15Z grembo $
+# $FreeBSD: head/mail/spampd/Makefile 495572 2019-03-13 09:45:13Z des $
 
 PORTNAME=	spampd
-PORTVERSION=	2.51
+PORTVERSION=	2.53
 CATEGORIES=	mail perl5
 
 MAINTAINER=	des@FreeBSD.org

@@ -1,4 +1,4 @@
-# $FreeBSD: head/cad/verilator/Makefile 491344 2019-01-27 12:34:34Z swills $
+# $FreeBSD: head/cad/verilator/Makefile 495557 2019-03-13 05:24:21Z linimon $
 
 PORTNAME=	verilator
 PORTVERSION=	4.008
@@ -12,7 +12,7 @@ COMMENT=	Synthesizable Verilog to C++ compiler
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		bison gmake pathfix perl5 tar:tgz
+USES=		bison compiler:c++11-lang gmake pathfix perl5 tar:tgz
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	INSTALL_PROGRAM="${INSTALL_SCRIPT}"

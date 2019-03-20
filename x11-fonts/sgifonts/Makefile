@@ -1,9 +1,9 @@
 # Created by: trevor
-# $FreeBSD: head/x11-fonts/sgifonts/Makefile 436105 2017-03-13 18:32:11Z krion $
+# $FreeBSD: head/x11-fonts/sgifonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	sgifonts
 PORTVERSION=	1.0.1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://BSDforge.com/projects/source/x11-fonts/sgifonts/
 DISTNAME=	sgi-fonts-1.0-1.src

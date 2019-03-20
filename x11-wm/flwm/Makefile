@@ -1,8 +1,9 @@
 # Created by: Dima Sivachenko <dima@chg.ru>
-# $FreeBSD: head/x11-wm/flwm/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-wm/flwm/Makefile 495118 2019-03-09 10:49:42Z danfe $
 
 PORTNAME=	flwm
 PORTVERSION=	1.16
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 
 MAINTAINER=	ports@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	The Fast Light Window Manager
 
 LICENSE=	GPLv2+
 
-LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk-devel
+LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 
 USES=		autoreconf gmake
 GNU_CONFIGURE=	yes
@@ -19,13 +20,8 @@ USE_XORG=	x11 xt
 USE_GITHUB=	yes
 GH_ACCOUNT=	bbidulock
 
-CXXFLAGS+=	-DFL_LIBRARY -I${LOCALBASE}/include/fltk-devel
-
 PLIST_FILES=	bin/flwm \
 		man/man1/flwm.1.gz
-
-post-patch:
-	${REINPLACE_CMD} -e 's|^LIBS =.*|LIBS = `${LOCALBASE}/bin/fltk-devel/fltk-config --ldflags`|' ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/flwm ${STAGEDIR}${PREFIX}/bin

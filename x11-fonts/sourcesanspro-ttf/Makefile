@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/x11-fonts/sourcesanspro-ttf/Makefile 494261 2019-03-01 11:18:47Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcesanspro-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	sourcesanspro
 PORTVERSION=	2.045
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	R-ro/1.095R-it
 CATEGORIES=	x11-fonts
 PKGNAMESUFFIX=	-ttf

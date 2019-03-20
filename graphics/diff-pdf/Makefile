@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/diff-pdf/Makefile 492733 2019-02-11 19:44:51Z tcberner $
+# $FreeBSD: head/graphics/diff-pdf/Makefile 495541 2019-03-13 04:39:03Z linimon $
 
 PORTNAME=	diff-pdf
 DISTVERSIONPREFIX=	v
@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libpoppler.so:graphics/poppler \
 		libpoppler-glib.so:graphics/poppler-glib
 
-USES=		autoreconf pkgconfig
+USES=		autoreconf compiler:c++11-lang pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	vslavik
 GNU_CONFIGURE=	yes

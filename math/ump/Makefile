@@ -1,5 +1,5 @@
 # Created by: Nicola Vitale <nivit@email.it>
-# $FreeBSD: head/math/ump/Makefile 441503 2017-05-23 05:03:14Z rezny $
+# $FreeBSD: head/math/ump/Makefile 495413 2019-03-12 03:35:00Z linimon $
 
 PORTNAME=	ump
 PORTVERSION=	0.8.6
@@ -13,7 +13,7 @@ COMMENT=	Graphical, easy to use math program
 
 LICENSE=	GPLv2
 
-USES=		gmake pkgconfig tar:bzip2
+USES=		compiler:c++11-lang gmake pkgconfig tar:bzip2
 USE_GNOME=	gtk20
 USE_GL=		glu
 

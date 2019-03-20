@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/suxus/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/suxus/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	suxus
 PORTVERSION=	1.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://oldhome.schmorp.de/marc/data/ \
 		http://www.atarininja.org/distfiles/

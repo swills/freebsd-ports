@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/xcm/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/x11/xcm/Makefile 496065 2019-03-17 14:20:23Z tcberner $
 
 PORTNAME=	xcm
 PORTVERSION=	0.5.4
+PORTREVISION=	1
 CATEGORIES=	x11
 
 MAINTAINER=	bsam@FreeBSD.org

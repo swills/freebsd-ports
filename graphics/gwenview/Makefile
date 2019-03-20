@@ -1,7 +1,8 @@
-# $FreeBSD: head/graphics/gwenview/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/graphics/gwenview/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	gwenview
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	3
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

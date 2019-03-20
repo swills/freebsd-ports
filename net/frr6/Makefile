@@ -1,8 +1,9 @@
-# $FreeBSD: head/net/frr6/Makefile 489703 2019-01-08 15:21:59Z olivier $
+# $FreeBSD: head/net/frr6/Makefile 495731 2019-03-14 20:17:31Z olivier $
 
 PORTNAME=	frr
 PORTVERSION=	6.0.2
 DISTVERSIONPREFIX=	frr-
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 PKGNAMESUFFIX=	6
 
@@ -15,10 +16,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	gawk:lang/gawk
 LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-CONFLICTS=	openbgpd openospfd zebra quagga frr3 frr4 frr5
-
 USES=		autoreconf bison compiler:c++11-lang gmake pkgconfig libtool \
 		makeinfo python:2.7,build readline
+
+CONFLICTS=	openbgpd openospfd zebra quagga frr3 frr4 frr5
+
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes

@@ -1,9 +1,9 @@
 # Created by: Thierry Thomas <thierry@pompo.net>
-# $FreeBSD: head/x11-fonts/code2000/Makefile 448966 2017-08-30 09:01:37Z amdmi3 $
+# $FreeBSD: head/x11-fonts/code2000/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	code2000
 PORTVERSION=	1.171
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/thierry/${DIST_SUBDIR}
 DISTFILES=	${PORTNAME:tu}${EXTRACT_SUFX:tu}

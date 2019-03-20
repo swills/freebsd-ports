@@ -1,8 +1,8 @@
 # Created by: neuroworker@gmail.com
-# $FreeBSD: head/games/instead/Makefile 492783 2019-02-12 15:19:45Z amdmi3 $
+# $FreeBSD: head/games/instead/Makefile 495393 2019-03-11 20:30:10Z amdmi3 $
 
 PORTNAME=	instead
-PORTVERSION=	3.2.2
+PORTVERSION=	3.3.0
 CATEGORIES=	games
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -13,7 +13,7 @@ COMMENT=	Simple Text Adventure, The Interpreter
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake compiler:c++11-lang iconv lua:51 pkgconfig
+USES=		cmake compiler:c++11-lang iconv lua:51 pkgconfig sdl
 CMAKE_ARGS=	-DMANDIR=man
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

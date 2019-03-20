@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/security/rubygem-omniauth-cas3/Makefile 441015 2017-05-16 18:18:25Z sunpoet $
+# $FreeBSD: head/security/rubygem-omniauth-cas3/Makefile 495163 2019-03-09 14:38:21Z sunpoet $
 
 PORTNAME=	omniauth-cas3
 PORTVERSION=	1.1.4
@@ -16,8 +16,9 @@ RUN_DEPENDS=	rubygem-addressable>=2.3:www/rubygem-addressable \
 		rubygem-nokogiri>=1.7.1:textproc/rubygem-nokogiri \
 		rubygem-omniauth>=1.2:security/rubygem-omniauth
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

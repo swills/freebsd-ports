@@ -1,8 +1,8 @@
 # Created by: Johannes Meixner <johannes@perceivon.net>
-# $FreeBSD: head/www/rubygem-rails5/Makefile 486438 2018-12-02 15:36:42Z sunpoet $
+# $FreeBSD: head/www/rubygem-rails5/Makefile 496177 2019-03-18 18:23:15Z sunpoet $
 
 PORTNAME=	rails
-PORTVERSION=	5.1.6.1
+PORTVERSION=	5.1.6.2
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

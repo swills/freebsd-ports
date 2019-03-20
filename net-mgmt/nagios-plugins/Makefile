@@ -1,5 +1,5 @@
 # Created by: Blaz Zupan <blaz@si.FreeBSD.org>
-# $FreeBSD: head/net-mgmt/nagios-plugins/Makefile 473879 2018-07-04 11:52:25Z rene $
+# $FreeBSD: head/net-mgmt/nagios-plugins/Makefile 495467 2019-03-12 16:11:14Z mat $
 
 PORTNAME=	nagios-plugins
 PORTVERSION=	2.2.1
@@ -20,9 +20,11 @@ CONFLICTS_INSTALL=	monitoring-plugins-*
 USES=		charsetfix gmake perl5 libtool ssl
 USE_SUBMAKE=	yes
 
+BIND_VERS=11 12 14
+
 OPTIONS_DEFINE=	QSTAT FPING NETSNMP RADIUS MYSQL PGSQL LDAP IPV6 NLS DBI EXTRAOPTS SSH_PORTABLE
 OPTIONS_SINGLE=	DNS
-OPTIONS_SINGLE_DNS=	DNS_BASE DNS_BINDTOOLS DNS_BIND911
+OPTIONS_SINGLE_DNS=	DNS_BASE DNS_BINDTOOLS ${BIND_VERS:S/^/DNS_BIND9/}
 OPTIONS_DEFAULT=EXTRAOPTS DNS_BASE
 OPTIONS_SUB=	yes
 
@@ -41,7 +43,9 @@ DNS_DESC=	Configuration of check_dig and check_dns (see help)
 
 DNS_BASE_DESC=	>= 10 means drill for check_dig and no check_dns
 DNS_BINDTOOLS_DESC=	Use dig and nslookup from dns/bind-tools
-DNS_BIND911_DESC=	Use dig and nslookup from dns/bind911
+.for v in ${BIND_VERS}
+DNS_BIND9${v}_DESC=	Use dig and nslookup from dns/bind9${v}
+.endfor
 
 EXTRAOPTS_CONFIGURE_ENABLE=	extra-opts
 
@@ -119,9 +123,11 @@ DBI_CONFIGURE_WITH=	dbi
 DNS_BINDTOOLS_BUILD_DEPENDS=	${LOCALBASE}/bin/dig:dns/bind-tools
 DNS_BINDTOOLS_CONFIGURE_ON=	--with-dig-command=${LOCALBASE}/bin/dig \
 				--with-nslookup-command=${LOCALBASE}/bin/nslookup
-DNS_BIND911_BUILD_DEPENDS=	${LOCALBASE}/bin/dig:dns/bind911
-DNS_BIND911_CONFIGURE_ON=	--with-dig-command=${LOCALBASE}/bin/dig \
+.for v in ${BIND_VERS}
+DNS_BIND9${v}_BUILD_DEPENDS=	${LOCALBASE}/bin/dig:dns/bind9${v}
+DNS_BIND9${v}_CONFIGURE_ON=	--with-dig-command=${LOCALBASE}/bin/dig \
 				--with-nslookup-command=${LOCALBASE}/bin/nslookup
+.endfor
 
 SSH_PORTABLE_BUILD_DEPENDS=	${LOCALBASE}/bin/ssh:security/openssh-portable
 SSH_PORTABLE_RUN_DEPENDS:=	${SSH_PORTABLE_BUILD_DEPENDS}

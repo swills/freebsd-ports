@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/include-what-you-use/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/include-what-you-use/Makefile 495405 2019-03-12 01:05:27Z linimon $
 
 PORTNAME=	include-what-you-use
 PORTVERSION=	0.10
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.TXT
 BUILD_DEPENDS=	clang60:devel/llvm60
 RUN_DEPENDS=	clang60:devel/llvm60
 
-USES=		cmake ncurses python:run shebangfix
+USES=		cmake compiler:c++11-lang ncurses python:run shebangfix
 USE_GITHUB=	yes
 
 SHEBANG_FILES=	fix_includes.py \

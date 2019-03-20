@@ -1,5 +1,5 @@
 # Created by: Stefan Jahn <stefan.jahn@nemesis-sektor.de>
-# $FreeBSD: head/sysutils/kdirstat/Makefile 493686 2019-02-23 15:30:19Z danilo $
+# $FreeBSD: head/sysutils/kdirstat/Makefile 495431 2019-03-12 04:58:09Z linimon $
 
 PORTNAME=	kdirstat
 PORTVERSION=	3.1.4
@@ -13,7 +13,8 @@ COMMENT=	KDE utility that sums up disk usage for directory trees
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake cpe desktop-file-utils gettext-tools kde:5 qt:5 tar:bzip2
+USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext-tools \
+		kde:5 qt:5 tar:bzip2
 
 WRKSRC=		${WRKDIR}/jeromerobert-k4dirstat-0fd87f361645
 

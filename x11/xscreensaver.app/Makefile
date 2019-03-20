@@ -1,9 +1,9 @@
 # Created by: hemi@puresimplicity.net
-# $FreeBSD: head/x11/xscreensaver.app/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11/xscreensaver.app/Makefile 495736 2019-03-14 20:53:31Z kai $
 
 PORTNAME=	XScreenSaver.App
 PORTVERSION=	2.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	SF/xscreensaverapp/${PORTNAME}/${PORTVERSION}
 

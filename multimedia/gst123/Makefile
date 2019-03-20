@@ -1,5 +1,5 @@
 # Created by: Herbert J. Skuhra <h.skuhra@gmail.com>
-# $FreeBSD: head/multimedia/gst123/Makefile 428152 2016-12-08 19:52:19Z tijl $
+# $FreeBSD: head/multimedia/gst123/Makefile 495421 2019-03-12 04:11:55Z linimon $
 
 PORTNAME=	gst123
 PORTVERSION=	0.3.3
@@ -13,7 +13,7 @@ COMMENT=	Command-line tool to play audio and video files
 LICENSE=	LGPL20
 
 GNU_CONFIGURE=	yes
-USES=		gmake ncurses pkgconfig tar:bzip2
+USES=		compiler:c++11-lang gmake ncurses pkgconfig tar:bzip2
 USE_GNOME=	gtk20
 CONFIGURE_ENV=	NCURSES5_CONFIG=/usr/bin/true
 LDFLAGS+=	-lncurses -L${LOCALBASE}/lib

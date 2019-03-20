@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 493964 2019-02-26 13:28:23Z db $
+# $FreeBSD: head/comms/Makefile 495974 2019-03-16 22:34:36Z tcberner $
 #
 
     COMMENT = Communication utilities
@@ -31,7 +31,6 @@
     SUBDIR += cutecom
     SUBDIR += cwdaemon
     SUBDIR += cwstudio
-    SUBDIR += dabstick-radio
     SUBDIR += dcf77pi
     SUBDIR += deforaos-phone
     SUBDIR += dfu-programmer
@@ -64,7 +63,6 @@
     SUBDIR += gstreamer1-plugins-spandsp
     SUBDIR += gtkmmorse
     SUBDIR += hackrf
-    SUBDIR += hamfax
     SUBDIR += hamlib
     SUBDIR += hcidump
     SUBDIR += hidapi
@@ -89,7 +87,6 @@
     SUBDIR += libticables2
     SUBDIR += libticalcs2
     SUBDIR += libusbmuxd
-    SUBDIR += linpsk
     SUBDIR += linrad
     SUBDIR += liquid-dsp
     SUBDIR += lirc
@@ -196,7 +193,6 @@
     SUBDIR += twpsk
     SUBDIR += uarduno
     SUBDIR += uartlirc
-    SUBDIR += ubertooth
     SUBDIR += uhd
     SUBDIR += uird
     SUBDIR += unixcw

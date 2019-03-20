@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/moveable-type-fonts/Makefile 381754 2015-03-20 18:05:49Z bapt $
+# $FreeBSD: head/x11-fonts/moveable-type-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	moveable-type-fonts
 PORTVERSION=	20100801
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://s3.amazonaws.com/theleague-production/fonts/
 DISTFILES=	junction.zip \

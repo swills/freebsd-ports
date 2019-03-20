@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/dina/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/x11-fonts/dina/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	dina
 PORTVERSION=	2.92
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	LOCAL/rakuco
 

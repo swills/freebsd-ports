@@ -1,9 +1,9 @@
 # Created by: heiner Eichmann <h.eichmann@gmx.de>
-# $FreeBSD: head/x11-fonts/manu-gothica/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/x11-fonts/manu-gothica/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	manu-gothica
 DISTVERSION=	0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.bryld.dk/filer/ \
 		http://www.kswla.org/KATG%20Page%20Files/

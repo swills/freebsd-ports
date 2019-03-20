@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/seahub/Makefile 488348 2018-12-25 21:35:10Z ultima $
+# $FreeBSD: head/www/seahub/Makefile 495933 2019-03-16 17:59:42Z ultima $
 
 PORTNAME=	seahub
 DISTVERSIONPREFIX=	v
@@ -67,8 +67,7 @@ USE_RC_SUBR=	${PORTNAME}
 
 SUB_FILES=	pkg-message
 
-do-patch:
-	echo "${WRKSRC}..."
+post-patch:
 	${REINPLACE_CMD} -Ee "s|SEAFILE_VERSION = '[0-9]+\.[0-9]+\.[0-9]+'|SEAFILE_VERSION = '${SEAFILE_VER}'|" \
 			 ${WRKSRC}/seahub/settings.py
 	${REINPLACE_CMD} -e 's|##FIX_WWWDIR##|${PREFIX}/${HAIWENDIR}|' ${WRKSRC}/*.template

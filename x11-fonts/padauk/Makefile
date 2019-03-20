@@ -1,10 +1,10 @@
 # Created by: Kuan-Chung Chiu <buganini@gmail.com>
-# $FreeBSD: head/x11-fonts/padauk/Makefile 397207 2015-09-17 23:56:02Z cs $
+# $FreeBSD: head/x11-fonts/padauk/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	padauk
 PORTVERSION=	2.8
 DISTVERSIONSUFFIX=	0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://scripts.sil.org/cms/scripts/render_download.php?&format=file&media_id=Mh_Padauk_zip&filename=/
 

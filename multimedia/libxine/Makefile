@@ -1,9 +1,9 @@
 # Created by: alex
-# $FreeBSD: head/multimedia/libxine/Makefile 493856 2019-02-25 13:01:06Z bapt $
+# $FreeBSD: head/multimedia/libxine/Makefile 495793 2019-03-15 15:27:31Z jbeich $
 
 PORTNAME=	xine
 PORTVERSION=	1.2.9
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	multimedia ipv6
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-lib/${PORTVERSION}
 PKGNAMEPREFIX=	lib
@@ -110,7 +110,8 @@ SMB_CONFIGURE_ENV=		LIBSMBCLIENT_LIBS="-L${SAMBALIBS} -lsmbclient" \
 SMB_CONFIGURE_ENABLE=		samba
 SNDIO_CONFIGURE_ENABLE=		sndio
 SNDIO_LIB_DEPENDS=		libsndio.so:audio/sndio
-VAAPI_LIB_DEPENDS=		libva.so:multimedia/libva
+VAAPI_LIB_DEPENDS=		libva.so:multimedia/libva \
+				libva-glx.so:multimedia/libva-glx
 VAAPI_CONFIGURE_ENABLE=		vaapi
 W32DLL_CONFIGURE_ENABLE=	w32dll
 W32DLL_PLIST_FILES=		${PLUGINSDIR}/xineplug_decode_qt.so \

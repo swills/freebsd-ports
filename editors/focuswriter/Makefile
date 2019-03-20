@@ -1,10 +1,9 @@
 # Created by: lightside <lightside@gmx.com>
-# $FreeBSD: head/editors/focuswriter/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/editors/focuswriter/Makefile 495192 2019-03-09 18:42:50Z kai $
 
 PORTNAME=	focuswriter
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.1
-PORTREVISION=	2
+DISTVERSION=	1.7.2
 CATEGORIES=	editors
 
 MAINTAINER=	lightside@gmx.com

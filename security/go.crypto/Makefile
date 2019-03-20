@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/go.crypto/Makefile 442443 2017-06-02 18:15:04Z sunpoet $
+# $FreeBSD: head/security/go.crypto/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go.crypto
 PORTVERSION=	20170330
@@ -8,6 +8,9 @@ MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	Additional cryptography packages for Go
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	golang

@@ -1,8 +1,8 @@
 # Created by: Jonathan Weiss (<jw@innerewut.de>)
-# $FreeBSD: head/www/rubygem-actionpack4/Makefile 486461 2018-12-02 15:39:56Z sunpoet $
+# $FreeBSD: head/www/rubygem-actionpack4/Makefile 496194 2019-03-18 18:24:43Z sunpoet $
 
 PORTNAME=	actionpack
-PORTVERSION=	4.2.11
+PORTVERSION=	4.2.11.1
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	4

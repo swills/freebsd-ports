@@ -1,8 +1,8 @@
-# $FreeBSD: head/sysutils/doctl/Makefile 492317 2019-02-06 18:47:57Z jrm $
+# $FreeBSD: head/sysutils/doctl/Makefile 495807 2019-03-15 20:55:05Z jrm $
 
 PORTNAME=	doctl
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.13.0
+DISTVERSION=	1.14.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	jrm@FreeBSD.org

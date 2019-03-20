@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fm/dolphin/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/x11-fm/dolphin/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	dolphin
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11-fm kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

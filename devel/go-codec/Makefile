@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-codec/Makefile 418399 2016-07-11 19:59:54Z cs $
+# $FreeBSD: head/devel/go-codec/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	codec
 PORTVERSION=	20160531
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Idiomatic codec and rpc lib
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ugorji

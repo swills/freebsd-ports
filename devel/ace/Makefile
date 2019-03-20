@@ -1,8 +1,9 @@
 # Created by: Sergey Matveychuk <sem@ciam.ru>
-# $FreeBSD: head/devel/ace/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/devel/ace/Makefile 495884 2019-03-16 15:24:12Z tcberner $
 
 PORTNAME=	ace
 PORTVERSION=	6.5.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://download.dre.vanderbilt.edu/previous_versions/ \
 		http://download.dre.vanderbilt.edu/previous_versions/
@@ -35,18 +36,13 @@ PLIST_SUB=	VERSION="${PORTVERSION}"
 
 CONFLICTS=	ace+tao-5*
 
-OPTIONS_DEFINE=		FLTK QT4 SSL TK TRIO X11
+OPTIONS_DEFINE=		FLTK SSL TK TRIO X11
 OPTIONS_DEFAULT=	SSL
 OPTIONS_SUB=		yes
 
 FLTK_DESC=		FLTK GUI toolkit
 FLTK_LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
 FLTK_MAKE_ENV=		fl=1
-QT4_USES=		qt:4
-QT4_USE=		QT=corelib,gui,moc_build
-QT4_MAKE_ENV=		qt=1 qt4=1 QTDIR="${PREFIX}"
-QT4_CPPFLAGS=		-I${QT_INCDIR}
-QT4_LDFLAGS=		-L${QT_LIBDIR}
 SSL_USES=		ssl
 SSL_MAKE_ENV=		ssl=1
 TK_USES=		tk
@@ -58,12 +54,6 @@ X11_USE=		XORG=xt
 X11_MAKE_ENV=		xt=1
 
 CPPFLAGS+=	-D_WANT_SEMUN
-
-.include <bsd.port.options.mk>
-.if ${PORT_OPTIONS:MQT4}
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-.endif
 
 post-patch:
 	@${REINPLACE_CMD} -e \

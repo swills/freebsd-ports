@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/lsp-plugins-lv2/Makefile 487947 2018-12-21 04:26:04Z yuri $
+# $FreeBSD: head/audio/lsp-plugins-lv2/Makefile 496246 2019-03-19 04:46:28Z yuri $
 
 PORTNAME=	lsp-plugins
 DISTVERSIONPREFIX=	${PORTNAME}-
-DISTVERSION=	1.1.5
+DISTVERSION=	1.1.7
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

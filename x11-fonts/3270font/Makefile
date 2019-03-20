@@ -1,8 +1,9 @@
-# $FreeBSD: head/x11-fonts/3270font/Makefile 492915 2019-02-14 11:51:25Z 0mp $
+# $FreeBSD: head/x11-fonts/3270font/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	3270font
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://s3.amazonaws.com/${PORTNAME}/ \
 		https://github.com/rbanffy/${PORTNAME}/releases/download/${DISTVERSIONPREFIX}${DISTVERSION}/

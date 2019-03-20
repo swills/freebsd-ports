@@ -1,8 +1,8 @@
 # Created by: Jim Riggs <ports@christianserving.org>
-# $FreeBSD: head/www/mod_setenvifplus/Makefile 484689 2018-11-11 11:50:11Z joneum $
+# $FreeBSD: head/www/mod_setenvifplus/Makefile 495781 2019-03-15 09:40:47Z joneum $
 
 PORTNAME=	mod_setenvifplus
-PORTVERSION=	0.37
+PORTVERSION=	0.38
 CATEGORIES=	www
 MASTER_SITES=	SF/modsetenvifplus
 EXTRACT_SUFX=	-src.tar.gz

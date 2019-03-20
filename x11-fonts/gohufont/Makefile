@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/gohufont/Makefile 440617 2017-05-11 06:05:14Z antoine $
+# $FreeBSD: head/x11-fonts/gohufont/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	gohufont
 PORTVERSION=	2.1
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://font.gohu.org/
 

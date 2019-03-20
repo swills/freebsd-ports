@@ -1,5 +1,5 @@
 # Created by: Julien Laffaye <jlaffaye@FreeBSD.org>
-# $FreeBSD: head/net/go.net/Makefile 427023 2016-11-24 15:02:46Z jlaffaye $
+# $FreeBSD: head/net/go.net/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go.net
 PORTVERSION=	20160708
@@ -10,6 +10,9 @@ MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	Additional Net packages for Go
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	${LOCALBASE}/${GO_LIBDIR}/golang.org/x/text/cases.a:textproc/go.text \
 		go.crypto>=20160709:security/go.crypto

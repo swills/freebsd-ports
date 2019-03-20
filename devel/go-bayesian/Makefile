@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-bayesian/Makefile 419546 2016-08-03 19:46:33Z cs $
+# $FreeBSD: head/devel/go-bayesian/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	bayesian
 PORTVERSION=	20160602
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Naive Bayesian classification for Go
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jbrukh

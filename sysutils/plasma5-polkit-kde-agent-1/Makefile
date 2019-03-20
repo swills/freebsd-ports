@@ -1,13 +1,14 @@
-# $FreeBSD: head/sysutils/plasma5-polkit-kde-agent-1/Makefile 492811 2019-02-12 21:40:13Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-polkit-kde-agent-1/Makefile 495875 2019-03-16 14:36:58Z tcberner $
 
 PORTNAME=	polkit-kde-agent-1
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Plasma5 daemon providing a polkit authentication UI
 
-LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt@qt5
+LIB_DEPENDS=	libpolkit-qt5-core-1.so:sysutils/polkit-qt
 
 USES=		cmake compiler:c++11-lib cpe gettext kde:5 qt:5 tar:xz
 USE_KDE=	config coreaddons crash dbusaddons ecm i18n iconthemes \

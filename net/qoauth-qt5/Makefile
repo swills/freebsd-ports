@@ -1,10 +1,10 @@
 # Created by: Dima Panov <fluffy@FreeBSD.org>
-# $FreeBSD: head/net/qoauth-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net/qoauth-qt5/Makefile 495954 2019-03-16 20:16:24Z tcberner $
 
 PORTNAME=	qoauth
 PORTVERSION=	2.0.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net devel security
 PKGNAMESUFFIX=	-qt5
 
@@ -14,7 +14,7 @@ COMMENT=	Qt5 support for OAuth-powered network services
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
+LIB_DEPENDS=	libqca-qt5.so:devel/qca
 
 USES=		compiler:c++11-lang qmake:outsource qt:5
 USE_LDCONFIG=	yes

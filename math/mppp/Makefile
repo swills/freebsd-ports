@@ -1,9 +1,8 @@
-# $FreeBSD: head/math/mppp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/math/mppp/Makefile 495688 2019-03-14 05:44:34Z yuri $
 
 PORTNAME=	mppp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.12
-PORTREVISION=	1
+DISTVERSION=	0.13
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,9 +1,8 @@
 # Created by: Janos Mohacsi
-# $FreeBSD: head/security/opensaml/Makefile 487266 2018-12-12 00:15:49Z jbeich $
+# $FreeBSD: head/security/opensaml/Makefile 495367 2019-03-11 17:02:37Z girgen $
 
 PORTNAME=	opensaml
-PORTVERSION=	3.0.0
-PORTREVISION=	2
+PORTVERSION=	3.0.1
 CATEGORIES=	security
 MASTER_SITES=	http://shibboleth.net/downloads/c++-opensaml/${PORTVERSION}/
 

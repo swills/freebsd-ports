@@ -1,8 +1,9 @@
 # Created by: Nikolai Lifanov <lifanov@mail.lifanov.com>
-# $FreeBSD: head/games/alex4/Makefile 428544 2016-12-14 03:47:18Z lifanov $
+# $FreeBSD: head/games/alex4/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	alex4
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	SF/allegator/Alex4/source%20and%20data/ \
 		SF/lifanov-ports-distfiles/games/${PORTNAME}/:icons

@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/www/linux-c7-qtwebkit/Makefile 432937 2017-01-31 16:54:21Z tijl $
+# $FreeBSD: head/www/linux-c7-qtwebkit/Makefile 495971 2019-03-16 22:24:07Z tcberner $
 
 PORTNAME=	qtwebkit
 PORTVERSION=	2.3.4
@@ -12,7 +12,7 @@ COMMENT=	Qt WebKit implementation (Linux CentOS ${LINUX_DIST_VER})
 
 CONFLICTS=	linux-c6-qt47-webkit-[0-9]*
 
-DESCR=		${.CURDIR}/../../devel/qt4/pkg-descr
+DESCR=		${.CURDIR}/../../devel/linux-c6-qt47/pkg-descr
 ONLY_FOR_ARCHS=	amd64
 RPMVERSION=	6.el7
 USES=		linux:c7

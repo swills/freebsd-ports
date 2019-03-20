@@ -1,8 +1,8 @@
 # Created by: Michael Moll <kvedulv at kvedulv.de>
-# $FreeBSD: head/devel/rubygem-concurrent-ruby-edge/Makefile 484727 2018-11-11 18:20:49Z sunpoet $
+# $FreeBSD: head/devel/rubygem-concurrent-ruby-edge/Makefile 495489 2019-03-12 18:10:29Z sunpoet $
 
 PORTNAME=	concurrent-ruby-edge
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -12,7 +12,7 @@ COMMENT=	Bleeding edge features for concurrent-ruby
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-concurrent-ruby>=1.1.1:devel/rubygem-concurrent-ruby
+RUN_DEPENDS=	rubygem-concurrent-ruby>=1.1.5:devel/rubygem-concurrent-ruby
 
 USES=		gem
 USE_RUBY=	yes

@@ -1,9 +1,9 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/mail/trojita/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/mail/trojita/Makefile 495941 2019-03-16 18:46:13Z tcberner $
 
 PORTNAME=	trojita
 PORTVERSION=	0.7
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	mail
 MASTER_SITES=	SF/${PORTNAME}/src/
 
@@ -13,7 +13,7 @@ COMMENT=	Fast cross-platform IMAP e-mail client using Qt 5 toolkit
 LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 
-LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain@qt5
+LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain
 
 CONFLICTS_INSTALL=	trojita-qt4-[0-9]*
 INSTALLS_ICONS=	yes

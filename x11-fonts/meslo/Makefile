@@ -1,8 +1,9 @@
 # Created by: Johannes Lundberg <johalun0@gmail.com>
-# $FreeBSD: head/x11-fonts/meslo/Makefile 457268 2017-12-26 04:40:27Z tobik $
+# $FreeBSD: head/x11-fonts/meslo/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	meslo
 DISTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/andreberg/Meslo-Font/raw/master/dist/v${DISTVERSION}/
 DISTNAME=	Meslo%20LG%20v${DISTVERSION}

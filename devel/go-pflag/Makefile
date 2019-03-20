@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-pflag/Makefile 418396 2016-07-11 19:53:19Z cs $
+# $FreeBSD: head/devel/go-pflag/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	pflag
 PORTVERSION=	20160610
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Drop-in replacement for Go's flag package
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	spf13

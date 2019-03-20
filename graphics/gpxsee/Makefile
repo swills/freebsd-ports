@@ -1,8 +1,8 @@
 # Created by: Nikolay Korotkiy <sikmir@gmail.com>
-# $FreeBSD: head/graphics/gpxsee/Makefile 494065 2019-02-27 16:01:39Z swills $
+# $FreeBSD: head/graphics/gpxsee/Makefile 496143 2019-03-18 13:17:47Z swills $
 
 PORTNAME=	gpxsee
-DISTVERSION=	7.3
+DISTVERSION=	7.4
 CATEGORIES=	graphics geography
 
 MAINTAINER=	sikmir@gmail.com
@@ -11,7 +11,8 @@ COMMENT=	GPS log file viewer and analyzer
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/licence.txt
 
-USES=		gl qmake:outsource desktop-file-utils qt:5 shared-mime-info
+USES=		compiler:c++11-lang desktop-file-utils gl qmake:outsource \
+		qt:5 shared-mime-info
 USE_QT=		buildtools_build concurrent core gui network opengl printsupport \
 		sql sql-sqlite3_run widgets
 USE_GL=		gl

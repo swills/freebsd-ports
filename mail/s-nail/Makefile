@@ -1,8 +1,7 @@
-# $FreeBSD: head/mail/s-nail/Makefile 492534 2019-02-09 23:25:36Z sunpoet $
+# $FreeBSD: head/mail/s-nail/Makefile 495068 2019-03-08 20:30:59Z swills $
 
 PORTNAME=	s-nail
-PORTVERSION=	14.9.11
-PORTREVISION=	2
+PORTVERSION=	14.9.13
 CATEGORIES=	mail
 MASTER_SITES=	https://www.sdaoden.eu/downloads/
 
@@ -24,7 +23,7 @@ USES=		iconv ssl tar:xz
 
 PLIST_FILES=	bin/s-nail \
 		"@sample etc/s-nail.rc.sample" \
-		libexec/s-nail-privsep \
+		libexec/s-nail-dotlock \
 		man/man1/s-nail.1.gz
 
 MAKEFILE=	makefile

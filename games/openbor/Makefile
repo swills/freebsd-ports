@@ -1,8 +1,8 @@
-# $FreeBSD: head/games/openbor/Makefile 494760 2019-03-06 02:55:13Z jbeich $
+# $FreeBSD: head/games/openbor/Makefile 495817 2019-03-15 21:41:02Z jbeich $
 
 PORTNAME=	openbor
 # Hint: svn revision is git rev-list --count ${GH_TAGNAME}
-PORTVERSION?=	6966
+PORTVERSION?=	6972
 .ifndef PKGNAMESUFFIX
 PORTREVISION=	0
 .endif
@@ -31,7 +31,7 @@ PORTSCOUT=	ignore:1
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	DCurrent
-GH_TAGNAME?=	1caf2797
+GH_TAGNAME?=	ba3df39f
 
 USES+=		gmake pkgconfig
 .if ${PORTVERSION} < 4433
@@ -89,6 +89,8 @@ post-patch:
 		${WRKSRC}/Makefile
 	@${REINPLACE_CMD} -e 's/\.openbor/.${PKGBASE}/' \
 		${WRKSRC}/sdl/sdlport.c
+	@${REINPLACE_CMD} -e 's/__builtin_unreachable/__unreachable/' \
+		${WRKSRC}/source/gamelib/loadimg.c
 	@${GREP} -Flr 'malloc.h' ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} \
 		's,malloc\.h,stdlib.h,'
 	@${REINPLACE_CMD} -e 's/^function \(.*\) {/\1() {/' \

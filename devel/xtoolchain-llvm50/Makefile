@@ -1,6 +1,9 @@
-# $FreeBSD: head/devel/xtoolchain-llvm50/Makefile 450418 2017-09-22 22:03:32Z brooks $
+# $FreeBSD: head/devel/xtoolchain-llvm50/Makefile 495363 2019-03-11 16:51:52Z brooks $
 
 LLVM_SUFFIX=50
+
+DEPRECATED=		No supported release uses this version
+EXPIRATION_DATE=	2019-03-31
 
 MASTERDIR=	${.CURDIR}/../xtoolchain-llvm-devel
 

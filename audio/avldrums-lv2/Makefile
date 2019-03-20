@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/avldrums-lv2/Makefile 491228 2019-01-26 04:07:54Z yuri $
+# $FreeBSD: head/audio/avldrums-lv2/Makefile 495208 2019-03-09 22:20:31Z yuri $
 
 PORTNAME=	avldrums
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.3
+DISTVERSION=	0.3.4
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 
@@ -18,7 +18,7 @@ USES=		gl gmake gnome pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	x42
 GH_PROJECT=	${PORTNAME}.lv2
-GH_TUPLE=	x42:robtk:9b82274:robtk/robtk
+GH_TUPLE=	x42:robtk:bad6354:robtk/robtk
 USE_GL=		gl glu
 USE_GNOME=	glib20 pango cairo
 USE_XORG=	x11

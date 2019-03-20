@@ -1,5 +1,5 @@
 # Created by: Torsten Zuehlsdorff <ports@toco-domains.de>
-# $FreeBSD: head/mail/rubygem-premailer/Makefile 454280 2017-11-15 19:56:30Z sunpoet $
+# $FreeBSD: head/mail/rubygem-premailer/Makefile 495164 2019-03-09 14:38:25Z sunpoet $
 
 PORTNAME=	premailer
 PORTVERSION=	1.11.1
@@ -16,9 +16,10 @@ RUN_DEPENDS=	rubygem-addressable>=0:www/rubygem-addressable \
 		rubygem-css_parser>=1.6.0:textproc/rubygem-css_parser \
 		rubygem-htmlentities>=4.0.0:textproc/rubygem-htmlentities
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
 
 PLIST_FILES=	bin/premailer
 

@@ -1,4 +1,4 @@
-# $FreeBSD: head/dns/bind913/Makefile 494252 2019-03-01 10:10:03Z mat $
+# $FreeBSD: head/dns/bind913/Makefile 496252 2019-03-19 08:38:43Z mat $
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
@@ -184,13 +184,19 @@ TCP_FASTOPEN_CONFIGURE_ENABLE=	tcp-fastopen
 TUNING_LARGE_CONFIGURE_ON=	--with-tuning=large
 TUNING_LARGE_CONFIGURE_OFF=	--with-tuning=default
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if defined(WITH_DEBUG)
-CONFIGURE_ARGS+=	--enable-symtable
+CONFIGURE_ARGS+=	--enable-symtable \
+			--enable-developer
+USES+=	perl5 pkgconfig
+USE_PERL5=	build
+BUILD_DEPENDS+=	cmocka>0:sysutils/cmocka
 .else
 CONFIGURE_ARGS+=	--disable-symtable
 .endif
+
+.include <bsd.port.pre.mk>
 
 .if ${SSL_DEFAULT} == base
 SUB_LIST+=	ENGINES=/usr/lib/engines

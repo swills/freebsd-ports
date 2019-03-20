@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/zegrapher/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/math/zegrapher/Makefile 495414 2019-03-12 03:36:39Z linimon $
 
 PORTNAME=	ZeGrapher
 DISTVERSIONPREFIX=	v
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/math/special_functions/binomial.hpp:devel/boost-libs
 
-USES=		desktop-file-utils qmake qt:5
+USES=		compiler:c++11-lang desktop-file-utils qmake qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	AdelKS
 USE_QT=		core gui network printsupport widgets buildtools_build

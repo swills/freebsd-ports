@@ -1,8 +1,9 @@
 # Created by: Pedro Giffuni
-# $FreeBSD: head/x11-fonts/croscorefonts-fonts-ttf/Makefile 443895 2017-06-19 17:27:06Z sunpoet $
+# $FreeBSD: head/x11-fonts/croscorefonts-fonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	croscorefonts
 PORTVERSION=	1.31.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://gsdview.appspot.com/chromeos-localmirror/distfiles/ \
 		LOCAL/sunpoet

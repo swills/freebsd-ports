@@ -1,9 +1,9 @@
 # Created by: Mita Yoshio <mita@jp.FreeBSD.org>
-# $FreeBSD: head/japanese/font-kaname12/Makefile 465516 2018-03-25 14:07:48Z nobutaka $
+# $FreeBSD: head/japanese/font-kaname12/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	kaname12
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	LOCAL/hrs
 PKGNAMEPREFIX=	ja-font-

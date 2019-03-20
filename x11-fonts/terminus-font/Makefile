@@ -1,8 +1,9 @@
 # Created by: Michael Hsin <mhsin@mhsin.org>
-# $FreeBSD: head/x11-fonts/terminus-font/Makefile 489099 2019-01-02 22:58:59Z zeising $
+# $FreeBSD: head/x11-fonts/terminus-font/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	terminus-font
 PORTVERSION=	4.47
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME}-${PORTVERSION}
 

@@ -1,5 +1,5 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/chinese/pcmanx/Makefile 476861 2018-08-11 08:30:55Z lwhsu $
+# $FreeBSD: head/chinese/pcmanx/Makefile 495558 2019-03-13 05:27:05Z linimon $
 
 PORTNAME=	pcmanx
 PORTVERSION=	1.3
@@ -14,7 +14,7 @@ COMMENT=	BBS client using GTK+ 2.x
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake iconv pkgconfig tar:xz
+USES=		compiler:c++11-lang gmake iconv pkgconfig tar:xz
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	gtk20 intlhack

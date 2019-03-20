@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/science/rubygem-rgeo/Makefile 486281 2018-11-30 20:04:16Z sunpoet $
+# $FreeBSD: head/science/rubygem-rgeo/Makefile 495136 2019-03-09 12:09:33Z sunpoet $
 
 PORTNAME=	rgeo
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	science rubygems
 MASTER_SITES=	RG
 

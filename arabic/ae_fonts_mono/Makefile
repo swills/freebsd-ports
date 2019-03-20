@@ -1,9 +1,9 @@
 # Created by: Samy Al Bahra <samy@kerneled.com>
-# $FreeBSD: head/arabic/ae_fonts_mono/Makefile 381876 2015-03-21 23:05:19Z bapt $
+# $FreeBSD: head/arabic/ae_fonts_mono/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	ae_fonts_mono
 PORTVERSION=	1.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	arabic x11-fonts
 MASTER_SITES=	SF/arabeyes/Fonts/ae_fonts
 DISTNAME=	${PORTNAME}

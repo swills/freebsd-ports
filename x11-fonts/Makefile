@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 494524 2019-03-03 22:21:32Z sunpoet $
+# $FreeBSD: head/x11-fonts/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -98,7 +98,6 @@
     SUBDIR += font-xfree86-type1
     SUBDIR += fontconfig
     SUBDIR += fontconfig-reference
-    SUBDIR += fontmatrix
     SUBDIR += fonts-indic
     SUBDIR += fonttosfnt
     SUBDIR += freefont-ttf
@@ -152,7 +151,6 @@
     SUBDIR += mgopen
     SUBDIR += mkbold
     SUBDIR += mkbold-mkitalic
-    SUBDIR += mkfontdir
     SUBDIR += mkfontscale
     SUBDIR += mkitalic
     SUBDIR += mondulkiri

@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/www/webgo/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/www/webgo/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	webgo
 PORTVERSION=	0.1.0.${SVNVERSION}
@@ -10,6 +10,9 @@ DISTNAME=	${PORTNAME}-${SVNVERSION}
 
 MAINTAINER=	wen@FreeBSD.org
 COMMENT=	Simplest way to write web applications in the Go programming language
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 SVNVERSION=	20120419
 

@@ -1,9 +1,8 @@
-# $FreeBSD: head/multimedia/shotcut/Makefile 493665 2019-02-23 12:24:22Z antoine $
+# $FreeBSD: head/multimedia/shotcut/Makefile 495145 2019-03-09 14:28:28Z tcberner $
 
 PORTNAME=	shotcut
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${FULLVERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org
@@ -19,7 +18,7 @@ RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg \
 USE_GITHUB=	yes
 GH_ACCOUNT=	mltframework
 # Needed to be able to correctly check for updates in-app.
-FULLVERSION=	18.11.18
+FULLVERSION=	19.02.28
 
 USES=		pkgconfig qmake qt:5
 USE_QT=		buildtools_build concurrent_build core declarative \

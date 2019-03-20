@@ -1,7 +1,8 @@
-# $FreeBSD: head/net/krfb/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net/krfb/Makefile 495946 2019-03-16 19:13:34Z tcberner $
 
 PORTNAME=	krfb
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -22,6 +23,6 @@ USE_XORG=	x11 xcb xdamage xext xtst
 OPTIONS_DEFINE=		TELEPATHY DOCS
 OPTIONS_SUB=		yes
 TELEPATHY_DESC=		Support for Telepathy Tubes
-TELEPATHY_LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5
+TELEPATHY_LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt
 
 .include <bsd.port.mk>

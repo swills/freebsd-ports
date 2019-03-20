@@ -1,9 +1,9 @@
 # Created by: janek
-# $FreeBSD: head/x11/x3270/Makefile 436247 2017-03-15 14:45:30Z mat $
+# $FreeBSD: head/x11/x3270/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	x3270
 PORTVERSION=	3.3.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11 net
 MASTER_SITES=	http://x3270.bgp.nu/download/current/
 EXTRACT_SUFX=	ga7-src.tgz
@@ -12,7 +12,6 @@ MAINTAINER=	ecrist@secure-computing.net
 COMMENT=	3270 Terminal emulator
 
 BUILD_DEPENDS=	bdftopcf:x11-fonts/bdftopcf \
-		mkfontdir:x11-fonts/mkfontdir \
 		mkfontscale:x11-fonts/mkfontscale
 
 # Conflict due to x3270if

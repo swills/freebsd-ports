@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/yapet/Makefile 494983 2019-03-07 18:45:57Z swills $
+# $FreeBSD: head/security/yapet/Makefile 496199 2019-03-18 19:39:54Z linimon $
 
 PORTNAME=	yapet
 DISTVERSION=	2.3
@@ -11,9 +11,10 @@ COMMENT=	Curses based password manager
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake ncurses ssl pkgconfig compiler:c++14-lang
 LIB_DEPENDS+=	libargon2.so:security/libargon2 \
 		libcppunit.so:devel/cppunit
+
+USES=		compiler:c++14-lang gmake ncurses ssl pkgconfig
 
 GNU_CONFIGURE=	yes
 

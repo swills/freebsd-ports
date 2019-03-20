@@ -1,5 +1,5 @@
 # Created by: Piotr Kubaj <pkubaj@anongoth.pl>
-# $FreeBSD: head/devel/linux-c7-qt/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/devel/linux-c7-qt/Makefile 495971 2019-03-16 22:24:07Z tcberner $
 
 PORTNAME=	qt
 PORTVERSION=	4.8.5
@@ -12,7 +12,7 @@ COMMENT=	RPM of QT4 (Linux CentOS ${LINUX_DIST_VER})
 CONFLICTS=	linux-c6-${PORTNAME}47-[0-9]*
 
 DATADIR=	${PREFIX}/usr/share/${PORTNAME}4
-DESCR=		${.CURDIR}/../../devel/${PORTNAME}4/pkg-descr
+DESCR=		${.CURDIR}/../../devel/linux-c6-qt47/pkg-descr
 RPMVERSION=	15.el7_4
 USES=		linux:c7
 USE_LDCONFIG=	yes

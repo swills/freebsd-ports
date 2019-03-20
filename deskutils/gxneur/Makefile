@@ -1,10 +1,10 @@
 # Created by: Alexander Logvinov <ports@logvinov.com>
-# $FreeBSD: head/deskutils/gxneur/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/deskutils/gxneur/Makefile 495561 2019-03-13 05:36:03Z linimon $
 
 PORTNAME=	gxneur
 PORTVERSION=	0.17.0
-PORTREVISION=	2
 DISTVERSIONSUFFIX=.orig
+PORTREVISION=	2
 CATEGORIES=	deskutils
 MASTER_SITES=	https://launchpad.net/~andrew-crew-kuznetsov/+archive/xneur-stable/+files/
 DISTNAME=	${PORTNAME}_${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	xneur:deskutils/xneur
 RUN_DEPENDS=	xneur:deskutils/xneur
 
 GNU_CONFIGURE=	yes
-USES=		pkgconfig
+USES=		compiler:c++11-lang pkgconfig
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_GNOME=	gconf2 gtk20 libglade2
 INSTALLS_ICONS=	yes

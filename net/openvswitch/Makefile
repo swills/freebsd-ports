@@ -1,9 +1,8 @@
 # Created by: Edward Tomasz Napierala <trasz@FreeBSD.org>
-# $FreeBSD: head/net/openvswitch/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/net/openvswitch/Makefile 496140 2019-03-18 12:32:49Z swills $
 
 PORTNAME=	openvswitch
-DISTVERSION=	2.10.1
-PORTREVISION=	1
+DISTVERSION=	2.11.0
 CATEGORIES=	net
 MASTER_SITES=	http://openvswitch.org/releases/
 
@@ -31,6 +30,9 @@ CONFIGURE_ARGS=	--enable-shared --disable-static --localstatedir=/var \
 USE_RC_SUBR=	ovs-vswitchd ovsdb-server
 LDFLAGS+=	-lpthread
 INSTALL_TARGET=install-strip
+
+SHLIB_VER=	${DISTVERSION:C/\.[0-9]*$//}
+PLIST_SUB=	SHLIB_VER=${SHLIB_VER}
 
 post-install:
 	@${MKDIR} ${STAGEDIR}/var/run/openvswitch

@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-fonts/proggy_fonts-ttf/Makefile 404657 2015-12-28 14:52:25Z rakuco $
+# $FreeBSD: head/x11-fonts/proggy_fonts-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	proggy_fonts-ttf
 PORTVERSION=	1.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://upperbounds.net/download/
 DISTFILES=	ProggyClean.ttf.zip ProggySquare.ttf.zip \

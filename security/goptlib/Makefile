@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/goptlib/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/security/goptlib/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	goptlib
 PORTVERSION=	0.5
@@ -7,6 +7,9 @@ MASTER_SITES=	http://c-s.li/ports/
 
 MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Go pluggable transports library
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 GO_PKGNAME=	git.torproject.org/pluggable-transports/${PORTNAME}.git

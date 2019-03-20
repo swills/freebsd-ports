@@ -1,8 +1,8 @@
 # Created by: Kevin Bowling <kbowling@freebsd.org>
-# $FreeBSD: head/databases/timescaledb/Makefile 492959 2019-02-14 22:53:52Z kbowling $
+# $FreeBSD: head/databases/timescaledb/Makefile 496309 2019-03-20 05:54:15Z kbowling $
 
 PORTNAME=	timescaledb
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	databases
 
 MAINTAINER=	kbowling@FreeBSD.org

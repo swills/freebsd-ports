@@ -1,5 +1,5 @@
 # Created by: Jose Alonso Cardenas Marquez <acardenas@bsd.org.pe>
-# $FreeBSD: head/www/py-django/Makefile 494913 2019-03-07 07:21:45Z antoine $
+# $FreeBSD: head/www/py-django/Makefile 495043 2019-03-08 14:45:50Z antoine $
 
 PORTNAME=	django
 PORTVERSION=	1.11.20
@@ -10,8 +10,6 @@ MAINTAINER=	python@FreeBSD.org
 COMMENT=	High-level Python Web Framework (meta port)
 
 LICENSE=	BSD3CLAUSE
-
-DEPRECATED=	do not depend on this port
 
 OPTIONS_SINGLE=	DJANGO
 OPTIONS_SINGLE_DJANGO=	DJANGO111 DJANGO20 DJANGO21

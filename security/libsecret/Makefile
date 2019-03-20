@@ -1,9 +1,9 @@
 # Created by: Koop Mast <kwm@FreeBSD.org>
-# $FreeBSD: head/security/libsecret/Makefile 480951 2018-09-30 11:58:29Z kwm $
+# $FreeBSD: head/security/libsecret/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	libsecret
 PORTVERSION=	0.18.6
-POIRTREVISION=	1
+PORTREVISION=	1
 CATEGORIES=	security gnome
 MASTER_SITES=	GNOME
 

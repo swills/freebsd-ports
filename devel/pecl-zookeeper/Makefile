@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-zookeeper/Makefile 494097 2019-02-27 23:47:30Z sunpoet $
+# $FreeBSD: head/devel/pecl-zookeeper/Makefile 495127 2019-03-09 12:08:46Z sunpoet $
 
 PORTNAME=	zookeeper
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.1
 CATEGORIES=	devel
 
 MAINTAINER=	sunpoet@FreeBSD.org

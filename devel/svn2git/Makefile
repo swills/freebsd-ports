@@ -1,5 +1,5 @@
 # Created by: David Naylor <naylor.b.david@gmail.com>
-# $FreeBSD: head/devel/svn2git/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/devel/svn2git/Makefile 495407 2019-03-12 01:12:42Z linimon $
 
 PORTNAME=	svn2git
 PORTVERSION=	1.0.12
@@ -18,7 +18,7 @@ RUN_DEPENDS=	git:devel/git \
 		p5-Term-ReadKey>=0:devel/p5-Term-ReadKey \
 		p5-subversion>=0:devel/p5-subversion
 
-USES=		qmake qt:5
+USES=		compiler:c++11-lang qmake qt:5
 USE_GITHUB=	yes
 USE_QT=		core
 GH_ACCOUNT=	svn-all-fast-export

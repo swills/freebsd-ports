@@ -1,9 +1,9 @@
 # Created by: Stas Timokhin <stast@bsdportal.ru>
-# $FreeBSD: head/graphics/alpng/Makefile 491936 2019-02-02 10:10:15Z tobik $
+# $FreeBSD: head/graphics/alpng/Makefile 495105 2019-03-09 08:07:31Z tobik $
 
 PORTNAME=	alpng
 PORTVERSION=	1.3
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	SF
 DISTNAME=	${PORTNAME}13

@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/relayd/Makefile 483537 2018-10-30 20:51:48Z mm $
+# $FreeBSD: head/net/relayd/Makefile 496220 2019-03-18 22:47:55Z mm $
 
 PORTNAME=	relayd
 PORTVERSION=	5.5.20140810
 PORTREVISION=	3
 CATEGORIES=	net
 
-MAINTAINER=	mm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.or
 COMMENT=	OpenBSD relay daemon
 
 LICENSE=	ISCL

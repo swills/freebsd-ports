@@ -1,8 +1,8 @@
-# $FreeBSD: head/www/py-django-netfields/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/www/py-django-netfields/Makefile 495247 2019-03-10 10:42:03Z danfe $
 
 PORTNAME=	django-netfields
 DISTVERSION=	0.8
-PORTREVSION=	1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

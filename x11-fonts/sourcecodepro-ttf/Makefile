@@ -1,8 +1,9 @@
 # Created by: Masaki TAGAWA <masaki@club.kyutech.ac.jp>
-# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 494260 2019-03-01 11:18:42Z sunpoet $
+# $FreeBSD: head/x11-fonts/sourcecodepro-ttf/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	sourcecodepro
 PORTVERSION=	2.030
+PORTREVISION=	1
 DISTVERSIONSUFFIX=	R-ro/1.050R-it
 CATEGORIES=	x11-fonts
 PKGNAMESUFFIX=	-ttf

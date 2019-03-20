@@ -1,8 +1,8 @@
-# $FreeBSD: head/japanese/font-ayu18/Makefile 467394 2018-04-15 13:52:21Z nobutaka $
+# $FreeBSD: head/japanese/font-ayu18/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	ayu18
 PORTVERSION=	1.3.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	OSDN/x-tt/8535/:goth \
 		OSDN/x-tt/8494/:min

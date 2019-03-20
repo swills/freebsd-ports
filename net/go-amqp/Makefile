@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/go-amqp/Makefile 413776 2016-04-22 12:40:04Z mat $
+# $FreeBSD: head/net/go-amqp/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	amqp
 PORTVERSION=	0.0.0.20140916
@@ -9,6 +9,9 @@ MAINTAINER=	kuriyama@FreeBSD.org
 COMMENT=	Go library for AMQP client with RabbitMQ extensions
 
 LICENSE=	BSD2CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 USE_GITHUB=	yes

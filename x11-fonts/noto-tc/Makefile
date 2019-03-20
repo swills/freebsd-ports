@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11-fonts/noto-tc/Makefile 494524 2019-03-03 22:21:32Z sunpoet $
+# $FreeBSD: head/x11-fonts/noto-tc/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	noto
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://noto-website.storage.googleapis.com/pkgs/
 DISTNAME=	Noto-hinted

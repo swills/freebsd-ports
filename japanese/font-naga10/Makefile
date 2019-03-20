@@ -1,9 +1,9 @@
 # Created by: Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
-# $FreeBSD: head/japanese/font-naga10/Makefile 465518 2018-03-25 14:18:17Z nobutaka $
+# $FreeBSD: head/japanese/font-naga10/Makefile 495395 2019-03-11 21:25:57Z zeising $
 
 PORTNAME=	naga10
 PORTVERSION=	1.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA013391/fonts/
 PKGNAMEPREFIX=	ja-font-
