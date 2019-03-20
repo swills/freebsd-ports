@@ -27,9 +27,11 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc --enable-man
 INSTALL_TARGET=	install-strip
 
-OPTIONS_DEFINE=	DOCS
-DOCS_CONFIGURE_ENABLE=	gtk-doc
-DOCS_BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gtk-doc.pc:textproc/gtk-doc
+OPTIONS_DEFINE=	GTKDOC
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_CONFIGURE_ENABLE=gtk-doc
+GTKDOC_BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/gtk-doc.pc:textproc/gtk-doc
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/docs/Makefile.am
