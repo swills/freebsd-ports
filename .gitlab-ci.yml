@@ -40,7 +40,7 @@ take_bug:
   - REPO_DIR=test-build-pr-patch
   - rm -fr $REPO_DIR
   - git clone $REPO_URL $REPO_DIR
-  - ./test-build-pr-patch/take_bug 236558
+  - ./test-build-pr-patch/take_bug 236656
 
 jfrog-upload:
   tags:
