@@ -12,8 +12,7 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	HTTP web service mocking library for GNOME
 
 BUILD_DEPENDS=	gnome-autogen.sh:devel/gnome-common \
-		vapigen:lang/vala \
-		gtkdoc-rebase:textproc/gtk-doc
+		vapigen:lang/vala
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup
 
 USES=		gettext gmake libtool pathfix pkgconfig tar:xz
@@ -23,5 +22,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--disable-Werror
 
 INSTALL_TARGET=	install-strip
+
+OPTIONS_DEFINE=	DOCS
 
 .include <bsd.port.mk>
