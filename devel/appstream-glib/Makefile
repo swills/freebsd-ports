@@ -14,8 +14,7 @@ COMMENT=	Library to help with AppStream metadata
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc \
-		gcab:archivers/gcab
+BUILD_DEPENDS=	gcab:archivers/gcab
 LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
 		libjson-glib-1.0.so:devel/json-glib \
 		libyaml.so:textproc/libyaml \
@@ -35,9 +34,13 @@ MESON_ARGS=	-Drpm=false \
 		-Dalpm=false \
 		-Dstemmer=false
 
-OPTIONS_DEFINE=	MANPAGES
+OPTIONS_DEFINE=	GTKDOC MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc
+GTKDOC_MESON_TRUE=	gtk-doc
 
 MANPAGES_MESON_TRUE=	man
 MANPAGE_BUILD_DEPENDS=	docbook-xml>=0:textproc/docbook-xml \
