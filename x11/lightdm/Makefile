@@ -39,12 +39,13 @@ GROUPS=		lightdm
 PORTSCOUT=	limitw:1,even
 SUB_FILES=	Xsession
 
-OPTIONS_DEFINE=	DOCS VALA
+OPTIONS_DEFINE=	GTKDOC VALA
 OPTIONS_DEFAULT=VALA
 OPTIONS_SUB=	yes
 
-DOCS_BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc
-DOCS_CONFIGURE_ENABLE=	gtk-doc
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc
+GTKDOC_CONFIGURE_ENABLE=gtk-doc
 
 VALA_BUILD_DEPENDS=	vapigen:lang/vala
 VALA_CONFIGURE_ENABLE=	vala
