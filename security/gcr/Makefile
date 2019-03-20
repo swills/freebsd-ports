@@ -9,8 +9,7 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Library for bits of crypto UI and parsing
 
-BUILD_DEPENDS=	gtk-doc>0:textproc/gtk-doc \
-		vapigen:lang/vala
+BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libgpg-error.so:security/libgpg-error \
 		libp11-kit.so:security/p11-kit \
@@ -29,5 +28,12 @@ INSTALLS_ICONS=	yes
 INSTALL_TARGET=	install-strip
 
 GLIB_SCHEMAS=	org.gnome.crypto.pgp.gschema.xml
+
+OPTIONS_DEFINE=	GTKDOC
+OPTIONS_SUB=	yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtk-doc>0:textproc/gtk-doc
+GTKDOC_CONFIGURE_ENABLE=gtk-doc
 
 .include <bsd.port.mk>
