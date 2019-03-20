@@ -22,10 +22,13 @@ USE_LDCONFIG=	yes
 
 MESON_ARGS=	-Dimage_library=gdk-pixbuf
 
-OPTIONS_DEFINE=	DOCS
-DOCS_BUILD_DEPENDS=	gtk-doc>=0:textproc/gtk-doc
-DOCS_MESON_ON=	-Dwith-docs=yes
-DOCS_MESON_OFF=	-Dwith-docs=no
+OPTIONS_DEFINE=	GTKDOC
+OPTIONS_SUB=		yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtk-doc>=0:textproc/gtk-doc
+GTKDOC_MESON_ON=	-Dwith-docs=yes
+GTKDOC_MESON_OFF=	-Dwith-docs=no
 #option('image_library', type: 'combo', choices: ['auto', 'gdk-pixbuf', 'qt4', 'qt5'],
 #       description: 'Which image processing backend to use')
 #option('with-docs', type : 'combo', choices : ['auto', 'yes', 'no'], value : 'auto')
