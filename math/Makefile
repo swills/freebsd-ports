@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 495782 2019-03-15 10:06:07Z danfe $
+# $FreeBSD: head/math/Makefile 496268 2019-03-19 16:04:10Z swills $
 #
 
     COMMENT = Mathematics
@@ -227,6 +227,7 @@
     SUBDIR += fpc-numlib
     SUBDIR += fplll
     SUBDIR += fricas
+    SUBDIR += frobby
     SUBDIR += fxt
     SUBDIR += g2o
     SUBDIR += galculator
@@ -803,11 +804,8 @@
     SUBDIR += qhull5
     SUBDIR += qposases
     SUBDIR += qrupdate
-    SUBDIR += qtiplot
     SUBDIR += qtiplot-doc
-    SUBDIR += qtoctave
     SUBDIR += qwtplot3d
-    SUBDIR += qwtplot3d-qt4
     SUBDIR += randlib
     SUBDIR += rapid
     SUBDIR += reduce

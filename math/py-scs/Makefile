@@ -1,8 +1,7 @@
-# $FreeBSD: head/math/py-scs/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/math/py-scs/Makefile 495914 2019-03-16 17:07:48Z yuri $
 
 PORTNAME=	scs
-DISTVERSION=	2.0.2
-PORTREVISION=	1
+DISTVERSION=	2.1.0
 CATEGORIES=	math python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -12,7 +11,8 @@ COMMENT=	Splitting conic solver for Python
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYNUMPY}
+BUILD_DEPENDS=	${PYNUMPY} \
+		${PYTHON_PKGNAMEPREFIX}scipy>=0.13.2:science/py-scipy@${PY_FLAVOR}
 RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}scipy>=0.13.2:science/py-scipy@${PY_FLAVOR}
 

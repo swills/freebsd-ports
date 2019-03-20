@@ -1,8 +1,8 @@
-# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 492644 2019-02-10 21:04:35Z tcberner $
+# $FreeBSD: head/deskutils/kdeconnect-kde/Makefile 496075 2019-03-17 17:27:27Z rakuco $
 
 PORTNAME=	kdeconnect-kde
 DISTVERSION=	1.3.3
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	deskutils kde
 MASTER_SITES=	KDE/stable/kdeconnect/${DISTVERSION}/src/
 DIST_SUBDIR=	KDE
@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libfakekey.so:x11/libfakekey \
-		libqca-qt5.so:devel/qca@qt5
+		libqca-qt5.so:devel/qca
 RUN_DEPENDS=	sshpass:security/sshpass \
 		sshfs:sysutils/fusefs-sshfs
 

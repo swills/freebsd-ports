@@ -1,9 +1,9 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/net-im/hotot/Makefile 488920 2019-01-01 17:44:57Z adridg $
+# $FreeBSD: head/net-im/hotot/Makefile 495926 2019-03-16 17:53:54Z tcberner $
 
 PORTNAME=	hotot
 PORTVERSION=	0.9.8.14
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	net-im www
 
 MAINTAINER=	danfe@FreeBSD.org
@@ -22,7 +22,7 @@ INSTALLS_ICONS=	yes
 CFLAGS+=	-I${LOCALBASE}/include		# does not uphold CPPFLAGS
 LDFLAGS+=	-L${LOCALBASE}/lib -lintl
 
-OPTIONS_DEFINE=	GTK2 QT4
+OPTIONS_DEFINE=	GTK2
 OPTIONS_DEFAULT=	GTK2
 
 .include <bsd.port.options.mk>
@@ -36,20 +36,9 @@ CMAKE_ARGS+=	-DWITH_GTK=off
 PLIST_SUB+=	GTK2="@comment "
 .endif
 
-.if ${PORT_OPTIONS:MQT4}
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-USES+=		qt:4
-USE_QT=		moc_build qmake_build rcc_build uic_build \
-		corelib gui sql webkit
-PLIST_SUB+=	QT4=""
-.else
-CMAKE_ARGS+=	-DWITH_QT=off
+CMAKE_ARGS+=	-DWITH_QT=off \
+		-DWITH_KDE=off
 INSTALL_TARGET=	install
-PLIST_SUB+=	QT4="@comment "
-.endif
-
-CMAKE_ARGS+=	-DWITH_KDE=off
 
 post-patch:
 # Fix hardcoded platform name (it is not always Linux)

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-go.uuid/Makefile 418703 2016-07-18 13:39:17Z mat $
+# $FreeBSD: head/devel/go-go.uuid/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go.uuid
 PORTVERSION=	1.1.0
@@ -11,6 +11,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	UUID package for Go
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	satori

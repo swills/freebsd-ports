@@ -1,4 +1,4 @@
-# $FreeBSD: head/shells/ksh93-devel/Makefile 495756 2019-03-15 03:26:12Z cy $
+# $FreeBSD: head/shells/ksh93-devel/Makefile 496308 2019-03-20 02:39:00Z cy $
 
 PORTNAME=	ksh93
 PORTVERSION=	${AST_COMMIT_DATE}
@@ -12,8 +12,8 @@ LICENSE=	EPL
 
 USES=		compiler:c11 meson ninja
 
-HASH=		816c8a5
-AST_COMMIT_DATE=	2019.03.14
+HASH=		6a0a281
+AST_COMMIT_DATE=	2019.03.19
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	att

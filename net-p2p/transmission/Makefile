@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-p2p/transmission/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-p2p/transmission/Makefile 496004 2019-03-17 00:02:34Z tcberner $
 
 PORTNAME=	transmission
 DISTVERSION=	2.94
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	net-p2p
 
 MAINTAINER=	rigoletto@FreeBSD.org
@@ -13,25 +13,20 @@ LICENSE_COMB=	multi
 
 USES=		metaport
 
-OPTIONS_DEFINE=		CLI DAEMON GTK WEB
-
-OPTIONS_RADIO=		QT
-OPTIONS_RADIO_QT=	QT4 QT5
+OPTIONS_DEFINE=		CLI DAEMON GTK WEB QT5
 
 CLI_DESC=		Command line version
 DAEMON_DESC=		Daemon version
 GTK_DESC=		GTK version
-QT4_DESC=		Qt4 version
 QT5_DESC=		Qt5 version
 WEB_DESC=		Web client
 
-OPTIONS_DEFAULT=	CLI DAEMON GTK QT4 WEB
+OPTIONS_DEFAULT=	CLI DAEMON GTK WEB
 
 CLI_RUN_DEPENDS=	transmission-cli:net-p2p/transmission-cli
 DAEMON_RUN_DEPENDS=	transmission-daemon:net-p2p/transmission-daemon
 GTK_RUN_DEPENDS=	transmission-gtk:net-p2p/transmission-gtk
-QT4_RUN_DEPENDS=	transmission-qt:net-p2p/transmission-qt@qt4
-QT5_RUN_DEPENDS=	transmission-qt:net-p2p/transmission-qt@qt5
+QT5_RUN_DEPENDS=	transmission-qt:net-p2p/transmission-qt
 WEB_RUN_DEPENDS=	${DATADIR}/web/index.html:www/transmission-web
 
 .include <bsd.port.mk>

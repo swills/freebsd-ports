@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/levigo/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/levigo/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	levigo
 PORTVERSION=	20150216
@@ -9,6 +9,9 @@ MAINTAINER=	cheffo@freebsd-bg.org
 COMMENT=	Levigo is a Go wrapper for LevelDB
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	go:lang/go
 LIB_DEPENDS=	libleveldb.so:databases/leveldb

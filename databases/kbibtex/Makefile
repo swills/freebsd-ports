@@ -1,9 +1,9 @@
 # Created by: Markus Brueffer <markus@FreeBSD.org>
-# $FreeBSD: head/databases/kbibtex/Makefile 492733 2019-02-11 19:44:51Z tcberner $
+# $FreeBSD: head/databases/kbibtex/Makefile 495954 2019-03-16 20:16:24Z tcberner $
 
 PORTNAME=	kbibtex
 DISTVERSION=	0.8.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases kde
 MASTER_SITES=	KDE/stable/KBibTeX/${DISTVERSION}/
 
@@ -11,7 +11,7 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Bibliography editor for KDE
 
 LIB_DEPENDS=	libicuuc.so:devel/icu \
-		libqca-qt5.so:devel/qca@qt5 \
+		libqca-qt5.so:devel/qca \
 		libpoppler.so:graphics/poppler \
 		libpoppler-qt5.so:graphics/poppler-qt5 \
 		libqoauth-qt5.so:net/qoauth-qt5

@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/graphics/embree/Makefile 485414 2018-11-20 07:15:29Z danfe $
+# $FreeBSD: head/graphics/embree/Makefile 496026 2019-03-17 08:13:31Z antoine $
 
 PORTNAME=	embree
 PORTVERSION=	2.17.6
@@ -10,6 +10,8 @@ MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Collection of high-performance ray tracing kernels
 
 LICENSE=	APACHE20
+
+BROKEN=		fails to link
 
 ONLY_FOR_ARCHS=	i386 amd64
 ONLY_FOR_ARCHS_REASON=	heavy use of SSE instructions

@@ -1,8 +1,7 @@
-# $FreeBSD: head/x11/plasma5-plasma-integration/Makefile 494519 2019-03-03 22:19:30Z sunpoet $
+# $FreeBSD: head/x11/plasma5-plasma-integration/Makefile 495863 2019-03-16 09:32:04Z tcberner $
 
 PORTNAME=	plasma-integration
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	2
 CATEGORIES=	x11 kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

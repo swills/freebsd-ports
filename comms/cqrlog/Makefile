@@ -1,5 +1,5 @@
 # Created by: Stephen Hurd <shurd@FreeBSD.org>
-# $FreeBSD: head/comms/cqrlog/Makefile 495229 2019-03-10 06:25:34Z yuri $
+# $FreeBSD: head/comms/cqrlog/Makefile 496109 2019-03-17 21:31:35Z acm $
 
 PORTNAME=	cqrlog
 PORTVERSION=	2.3.0
@@ -13,8 +13,6 @@ COMMENT=	Amateur Radio logging application
 
 LICENSE=	GPLv2
 
-BROKEN=		Fatal: (10022) Can't find unit GL used by TAOpenGL
-
 LIB_DEPENDS=	libhamlib.so:comms/hamlib
 
 USES=		fpc lazarus:flavors shebangfix ssl:run dos2unix mysql
@@ -25,7 +23,7 @@ LLD_UNSAFE=	yes
 SHEBANG_FILES=	tools/cqrlog-apparmor-fix \
 		voice_keyer/voice_keyer.sh
 USE_FPC=	cairo fcl-base chm fcl-db fcl-image fcl-json fcl-net fcl-web \
-		fcl-registry rtl-extra fcl-xml mysql numlib openssl \
+		fcl-registry rtl-extra fcl-xml mysql numlib opengl openssl \
 		pasjpeg regexpr x11
 
 ALL_TARGET=	${PORTNAME}

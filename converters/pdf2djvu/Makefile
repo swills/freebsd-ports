@@ -1,7 +1,8 @@
-# $FreeBSD: head/converters/pdf2djvu/Makefile 495469 2019-03-12 16:22:59Z meta $
+# $FreeBSD: head/converters/pdf2djvu/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	pdf2djvu
 PORTVERSION=	0.9.12
+PORTREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	https://github.com/jwilk/${PORTNAME}/releases/download/${PORTVERSION}/
 
@@ -9,7 +10,6 @@ MAINTAINER=	samy.mahmoudi@gmail.com
 COMMENT=	Creates DjVu files from PDF files
 
 LICENSE=	GPLv2
-LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/include/pstreams/pstream.h:devel/pstreams
 LIB_DEPENDS=	libdjvulibre.so:graphics/djvulibre \

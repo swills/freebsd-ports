@@ -1,4 +1,4 @@
-# $FreeBSD: head/mail/Makefile 492154 2019-02-04 19:31:35Z rene $
+# $FreeBSD: head/mail/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Electronic mail utilities
@@ -548,7 +548,6 @@
     SUBDIR += pysieved
     SUBDIR += pyzor
     SUBDIR += qconfirm
-    SUBDIR += qgmailnotifier
     SUBDIR += qmail
     SUBDIR += qmail-activedir
     SUBDIR += qmail-auditor

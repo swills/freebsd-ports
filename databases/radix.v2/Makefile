@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/radix.v2/Makefile 418344 2016-07-10 20:42:11Z cs $
+# $FreeBSD: head/databases/radix.v2/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	radix.v2
 PORTVERSION=	20160530
@@ -8,6 +8,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Redis client for Go
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mediocregopher

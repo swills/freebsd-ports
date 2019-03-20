@@ -1,4 +1,4 @@
-# $FreeBSD: head/textproc/go.text/Makefile 442444 2017-06-02 18:15:10Z sunpoet $
+# $FreeBSD: head/textproc/go.text/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	go.text
 PORTVERSION=	20160702
@@ -9,6 +9,9 @@ MAINTAINER=	jlaffaye@FreeBSD.org
 COMMENT=	Additional textproc packages for Go
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	golang

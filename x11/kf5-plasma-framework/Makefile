@@ -1,7 +1,8 @@
-# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/x11/kf5-plasma-framework/Makefile 496074 2019-03-17 17:12:29Z rakuco $
 
 PORTNAME=	plasma-framework
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	x11 kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org
@@ -17,5 +18,8 @@ USE_KDE=	activities archive auth codecs completion config \
 USE_QT=		buildtools_build core dbus declarative gui network qmake_build \
 		script sql svg widgets x11extras xml
 USE_XORG=	ice sm x11 xcb xext xrandr
+
+# Respin
+KDE_FRAMEWORKS_VERSION=	5.56.1
 
 .include <bsd.port.mk>

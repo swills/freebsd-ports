@@ -1,9 +1,10 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/graphics/py-pivy-devel/Makefile 492520 2019-02-09 20:53:33Z cmt $
+# $FreeBSD: head/graphics/py-pivy-devel/Makefile 495837 2019-03-15 23:28:36Z antoine $
 
 PORTNAME=	pivy
 PORTVERSION=	0.6.4
 CATEGORIES=	graphics python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=	pfg@FreeBSD.org
@@ -16,7 +17,7 @@ BUILD_DEPENDS=	cmake:devel/cmake \
 LIB_DEPENDS=	libCoin.so:graphics/Coin \
 		libSoQt.so:x11-toolkits/soqt-devel
 
-USES=		compiler:c11 python:2.7 qt:5
+USES=		compiler:c11 python qt:5
 USE_GITHUB=	yes
 GH_ACCOUNT=	FreeCAD
 USE_PYTHON=	autoplist distutils

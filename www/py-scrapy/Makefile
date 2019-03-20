@@ -1,5 +1,5 @@
 # Created by: Qing Feng <qingfeng@douban.com>
-# $FreeBSD: head/www/py-scrapy/Makefile 495093 2019-03-09 00:55:41Z skreuzer $
+# $FreeBSD: head/www/py-scrapy/Makefile 495872 2019-03-16 12:47:20Z skreuzer $
 
 PORTNAME=	Scrapy
 DISTVERSION=	1.6.0
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=13.1.0:devel/py-twisted@${PY_FLAVOR
 		${PYTHON_PKGNAMEPREFIX}pydispatcher>=2.0.5:devel/py-pydispatcher@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}service_identity>0:security/py-service_identity@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.5.2:devel/py-six@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}parsel>=1.5:textproc/py-parsel@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}parsel>=1.2.0:textproc/py-parsel@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

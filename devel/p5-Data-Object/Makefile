@@ -1,8 +1,8 @@
 # Created by: Adam Weinberger <adamw@FreeBSD.org>
-# $FreeBSD: head/devel/p5-Data-Object/Makefile 495714 2019-03-14 15:20:45Z sunpoet $
+# $FreeBSD: head/devel/p5-Data-Object/Makefile 496167 2019-03-18 18:22:22Z sunpoet $
 
 PORTNAME=	Data-Object
-PORTVERSION=	0.90
+PORTVERSION=	0.92
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -22,6 +22,7 @@ RUN_DEPENDS=	p5-Exporter-Tiny>=1.002001:devel/p5-Exporter-Tiny \
 		p5-Path-Tiny>=0.108:devel/p5-Path-Tiny \
 		p5-Role-Tiny>=2.000006:devel/p5-Role-Tiny \
 		p5-Template-Tiny>=1.12:textproc/p5-Template-Tiny \
+		p5-Try-Tiny>=0.30:lang/p5-Try-Tiny \
 		p5-Type-Tiny>=1.000005:devel/p5-Type-Tiny \
 		p5-YAML-Tiny>=1.73:textproc/p5-YAML-Tiny
 

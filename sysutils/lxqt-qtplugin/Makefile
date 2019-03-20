@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/sysutils/lxqt-qtplugin/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/sysutils/lxqt-qtplugin/Makefile 495956 2019-03-16 20:27:49Z tcberner $
 
 PORTNAME=	lxqt-qtplugin
 PORTVERSION=	0.13.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	LXQT
 
@@ -12,7 +12,7 @@ COMMENT=	LXQt system integration plugin for Qt
 
 LICENSE=	LGPL21+
 
-LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt@qt5 \
+LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt \
 		libfm.so:x11/libfm@gtk2 \
 		libmenu-cache.so:x11/menu-cache \
 		libexif.so:graphics/libexif

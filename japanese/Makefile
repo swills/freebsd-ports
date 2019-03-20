@@ -1,4 +1,4 @@
-# $FreeBSD: head/japanese/Makefile 495610 2019-03-13 16:22:10Z kai $
+# $FreeBSD: head/japanese/Makefile 496079 2019-03-17 17:48:43Z hrs $
 #
 
     COMMENT = Japanese support
@@ -32,6 +32,7 @@
     SUBDIR += chasen-base
     SUBDIR += cmigemo
     SUBDIR += cmigemo-dict
+    SUBDIR += cp5022x-el
     SUBDIR += csrd
     SUBDIR += ctags
     SUBDIR += dbskkd-cdb
@@ -223,7 +224,6 @@
     SUBDIR += py-tegaki-gtk
     SUBDIR += py-zinnia
     SUBDIR += qkc
-    SUBDIR += qt4-codecs-jp
     SUBDIR += quit
     SUBDIR += roget-fpw
     SUBDIR += rogue_s

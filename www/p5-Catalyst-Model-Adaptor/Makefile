@@ -1,5 +1,5 @@
 # Created by: Vladimir Timofeev <vovkasm@gmail.com>
-# $FreeBSD: head/www/p5-Catalyst-Model-Adaptor/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/www/p5-Catalyst-Model-Adaptor/Makefile 495860 2019-03-16 09:01:00Z amdmi3 $
 
 PORTNAME=	Catalyst-Model-Adaptor
 PORTVERSION=	0.10
@@ -10,6 +10,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vovkasm@gmail.com
 COMMENT=	Use a plain class as a Catalyst model
+
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime \

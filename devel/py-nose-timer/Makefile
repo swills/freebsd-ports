@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/py-nose-timer/Makefile 490649 2019-01-18 18:41:05Z sunpoet $
+# $FreeBSD: head/devel/py-nose-timer/Makefile 495821 2019-03-15 21:41:19Z sunpoet $
 
 PORTNAME=	nose-timer
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

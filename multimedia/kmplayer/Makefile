@@ -1,9 +1,9 @@
 # Created by: Kris Moore
-# $FreeBSD: head/multimedia/kmplayer/Makefile 490942 2019-01-22 12:36:06Z linimon $
+# $FreeBSD: head/multimedia/kmplayer/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	kmplayer
 PORTVERSION=	0.12.0b
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	3
 CATEGORIES=	multimedia audio kde
 

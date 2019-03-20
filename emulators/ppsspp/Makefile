@@ -1,4 +1,4 @@
-# $FreeBSD: head/emulators/ppsspp/Makefile 495739 2019-03-14 22:43:19Z jbeich $
+# $FreeBSD: head/emulators/ppsspp/Makefile 495998 2019-03-16 23:39:05Z jbeich $
 
 PORTNAME=	ppsspp
 DISTVERSIONPREFIX=	v
@@ -79,7 +79,7 @@ post-patch:
 		${WRKSRC}/assets/gamecontrollerdb.txt
 	@${REINPLACE_CMD} -e 's,/usr/share,${PREFIX}/share,' \
 		${WRKSRC}/UI/NativeApp.cpp
-	@${REINPLACE_CMD} -e 's/"unknown"/"${GH_TAGNAME}"/' \
+	@${REINPLACE_CMD} -e 's/"unknown"/"${DISTVERSIONFULL}"/' \
 		${WRKSRC}/git-version.cmake
 
 do-install:

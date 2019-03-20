@@ -1,9 +1,9 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/graphics/gimp-lensfun-plugin/Makefile 495543 2019-03-13 04:44:28Z linimon $
+# $FreeBSD: head/graphics/gimp-lensfun-plugin/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	lensfun
 DISTVERSION=	0.2.4-dev
-PORTREVISION=	7
+PORTREVISION=	8
 CATEGORIES=	graphics
 PKGNAMEPREFIX=	gimp-
 PKGNAMESUFFIX=	-plugin

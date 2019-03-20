@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-wm/Makefile 494849 2019-03-06 21:49:00Z rene $
+# $FreeBSD: head/x11-wm/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = X11 window managers
@@ -105,7 +105,6 @@
     SUBDIR += plasma5-kwin
     SUBDIR += plwm
     SUBDIR += pwm
-    SUBDIR += qlwm
     SUBDIR += qtile
     SUBDIR += ratmen
     SUBDIR += ratmenu

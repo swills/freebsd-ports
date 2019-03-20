@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/cad/zcad/Makefile 471478 2018-06-03 08:15:31Z acm $
+# $FreeBSD: head/cad/zcad/Makefile 496037 2019-03-17 09:06:01Z tcberner $
 
 PORTNAME=	zcad
 PORTVERSION=	0.9.8
@@ -43,10 +43,6 @@ OPTIONS_DEFINE=		DOCS
 
 .if ${FLAVOR:Ugtk2:Mgtk2}
 MAKE_ENV+=	GUI=gtk2
-.endif
-
-.if ${FLAVOR:Uqt4:Mqt4}
-MAKE_ENV+=	GUI=qt
 .endif
 
 post-patch:

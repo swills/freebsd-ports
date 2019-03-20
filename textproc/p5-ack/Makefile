@@ -1,8 +1,8 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/p5-ack/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/textproc/p5-ack/Makefile 496286 2019-03-19 17:49:18Z sunpoet $
 
 PORTNAME=	ack
-PORTVERSION=	2.24
+PORTVERSION=	2.26
 CATEGORIES=	textproc sysutils perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PETDANCE
@@ -23,9 +23,11 @@ CONFLICTS_INSTALL=	ja-ack-[0-9]*
 
 PORTSCOUT=	limit:^[0-9\.]*$$
 
-NO_ARCH=	yes
 USES=		cpe perl5
 USE_PERL5=	configure
+
+NO_ARCH=	yes
+
 CPE_VENDOR=	beyondgrep
 
 .include <bsd.port.mk>

@@ -1,8 +1,8 @@
 # Created by: Pedro Giffuni <pfg@FreeBSD.org>
-# $FreeBSD: head/devel/jetbrains-phpstorm/Makefile 494181 2019-02-28 19:24:47Z swills $
+# $FreeBSD: head/devel/jetbrains-phpstorm/Makefile 496228 2019-03-19 00:01:09Z swills $
 
 PORTNAME=	phpstorm
-PORTVERSION=	2018.3.4
+PORTVERSION=	2018.3.5
 CATEGORIES=	devel java
 MASTER_SITES=	https://download.jetbrains.com/webide/ \
 		http://download.jetbrains.com/webide/
@@ -30,7 +30,7 @@ SHEBANG_FILES=	bin/printenv.py bin/restart.py
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}/PhpStorm-183.5429.47
+WRKSRC=		${WRKDIR}/PhpStorm-183.5912.26
 
 SUB_FILES=	phpstorm phpstorm.desktop pkg-message
 SUB_LIST=	DATADIR=${DATADIR}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/dynare/Makefile 495225 2019-03-10 04:56:17Z stephen $
+# $FreeBSD: head/math/dynare/Makefile 496073 2019-03-17 16:46:47Z fernape $
 
 PORTNAME=	dynare
 DISTVERSION=	4.5.7
@@ -39,6 +39,7 @@ OPTIONS_DEFAULT=	OCTAVE
 OPTIONS_SUB=		yes
 
 MATLAB_CONFIGURE_ENABLE=	matlab
+OCTAVE_BROKEN=		Does not build after octave upgrade in r495225
 OCTAVE_CONFIGURE_ENABLE=	octave
 OCTAVE_LIB_DEPENDS=		liboctave.so:math/octave
 OCTAVE_USES=			compiler:c++14-lang

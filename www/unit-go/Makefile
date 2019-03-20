@@ -1,9 +1,12 @@
 # Created by: Li-Wen Hsu <lwhsu@FreeBSD.org>
-# $FreeBSD: head/www/unit-go/Makefile 488339 2018-12-25 20:03:34Z osa $
+# $FreeBSD: head/www/unit-go/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PKGNAMESUFFIX=	-go
 
 COMMENT=	Go module for NGINX Unit
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 
@@ -22,10 +25,10 @@ post-extract:
 	@true # override master's
 
 post-configure:
-	cd ${WRKSRC} && ${SETENV} ${GO_ENV} ./configure go --go-path=${WRKDIR}
+	cd ${WRKSRC} && ${SETENV} ${GO_ENV} GOCACHE=${WRKSRC}/go ./configure go --go-path=${WRKDIR}
 
 pre-build:
-	cd ${WRKSRC} && ${MAKE} && ${MAKE} go-install
+	cd ${WRKSRC} && ${MAKE_CMD} && ${SETENV} ${GO_ENV} GOCACHE=${WRKSRC}/go ${MAKE_CMD} go-install
 
 post-install:
 	@true # override master's

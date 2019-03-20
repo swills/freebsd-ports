@@ -1,13 +1,14 @@
-# $FreeBSD: head/games/ksirk/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/games/ksirk/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	ksirk
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	${${PORTNAME}_DESC}
 
-LIB_DEPENDS=	libqca-qt5.so:devel/qca@qt5
+LIB_DEPENDS=	libqca-qt5.so:devel/qca
 
 USES=		cmake compiler:c++11-lang kde:5 qt:5 tar:xz
 USE_KDE=	attica auth codecs completion config configwidgets \

@@ -1,4 +1,4 @@
-# $FreeBSD: head/german/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/german/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = German support
@@ -22,7 +22,6 @@
     SUBDIR += mythes
     SUBDIR += phone
     SUBDIR += schwobifyer
-    SUBDIR += tipp10
     SUBDIR += trytond28_account_de_skr03
     SUBDIR += unix-connect
     SUBDIR += webalizer2

@@ -1,11 +1,11 @@
 # Created by: Markus Brueffer <brueffer@phoenix-systems.de>
-# $FreeBSD: head/deskutils/basket/Makefile 492667 2019-02-11 05:07:40Z tcberner $
+# $FreeBSD: head/deskutils/basket/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	basket
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.49a-46
 DISTVERSIONSUFFIX=	-g60e38c6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils kde
 
 MAINTAINER=	ports@FreeBSD.org
@@ -18,8 +18,8 @@ LIB_DEPENDS=	libassuan.so:security/libassuan \
 		libgpgme.so:security/gpgme \
 		libgit2.so:devel/libgit2
 
-USES=		cmake desktop-file-utils gettext-tools kde:5 pkgconfig qt:5 \
-		shared-mime-info tar:bzip2
+USES=		cmake compiler:c++11-lang desktop-file-utils gettext-tools \
+		kde:5 pkgconfig qt:5 shared-mime-info tar:bzip2
 USE_KDE=	ecm archive auth codecs completion config configwidgets \
 		coreaddons crash dbusaddons doctools filemetadata globalaccel \
 		guiaddons i18n iconthemes jobwidgets kcmutils kio \

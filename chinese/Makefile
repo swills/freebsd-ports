@@ -1,4 +1,4 @@
-# $FreeBSD: head/chinese/Makefile 495612 2019-03-13 16:31:30Z kai $
+# $FreeBSD: head/chinese/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Chinese support
@@ -45,7 +45,6 @@
     SUBDIR += gb2ps
     SUBDIR += gcin
     SUBDIR += gcin-gtk3
-    SUBDIR += gcin-qt4
     SUBDIR += gcin-qt5
     SUBDIR += gimp-help-zh_CN
     SUBDIR += gydict
@@ -95,9 +94,6 @@
     SUBDIR += pycangjie
     SUBDIR += pyzy
     SUBDIR += qe
-    SUBDIR += qt4-codecs-cn
-    SUBDIR += qt4-codecs-tw
-    SUBDIR += qterm
     SUBDIR += reciteword
     SUBDIR += scim-fcitx
     SUBDIR += scim-pinyin

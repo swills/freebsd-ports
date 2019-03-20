@@ -1,8 +1,9 @@
 # Created by: Jeroen Schot <schot@a-eskwadraat.nl>
-# $FreeBSD: head/x11/dmenu/Makefile 494138 2019-02-28 09:30:27Z 0mp $
+# $FreeBSD: head/x11/dmenu/Makefile 495939 2019-03-16 18:18:19Z 0mp $
 
 PORTNAME=	dmenu
 DISTVERSION=	4.9
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://dl.suckless.org/tools/ \
 		http://schot.a-eskwadraat.nl/files/

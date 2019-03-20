@@ -1,4 +1,4 @@
-# $FreeBSD: head/databases/gomdb/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/databases/gomdb/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	gomdb
 PORTVERSION=	20140824
@@ -9,6 +9,9 @@ MAINTAINER=	cheffo@freebsd-bg.org
 COMMENT=	Go wrapper for LMDB - OpenLDAP Lightning Memory-Mapped Database
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	go:lang/go
 

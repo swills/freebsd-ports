@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-logrus/Makefile 418703 2016-07-18 13:39:17Z mat $
+# $FreeBSD: head/devel/go-logrus/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	logrus
 PORTVERSION=	0.10.0
@@ -11,6 +11,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Structured, pluggable logging for Go
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Sirupsen

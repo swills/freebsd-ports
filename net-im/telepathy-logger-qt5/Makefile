@@ -1,8 +1,8 @@
-# $FreeBSD: head/net-im/telepathy-logger-qt5/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/net-im/telepathy-logger-qt5/Makefile 495946 2019-03-16 19:13:34Z tcberner $
 
 PORTNAME=	telepathy-logger-qt
 DISTVERSION=	17.08.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net-im
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTNAME}/${PORTVERSION:R}/src
@@ -19,7 +19,7 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 		libdbus-glib-1.so:devel/dbus-glib \
 		libtelepathy-glib.so:net-im/telepathy-glib \
 		libtelepathy-logger.so:net-im/telepathy-logger \
-		libtelepathy-qt5.so:net-im/telepathy-qt@qt5
+		libtelepathy-qt5.so:net-im/telepathy-qt
 
 USES=		bison:build cmake compiler:c++11-lang kde:5 \
 		pkgconfig python:2.7,build qt:5 tar:xz

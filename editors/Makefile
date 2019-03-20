@@ -1,4 +1,4 @@
-# $FreeBSD: head/editors/Makefile 494912 2019-03-07 06:41:56Z acm $
+# $FreeBSD: head/editors/Makefile 496144 2019-03-18 13:23:02Z 0mp $
 #
 
     COMMENT = Editors
@@ -76,13 +76,10 @@
     SUBDIR += kile
     SUBDIR += komodo-edit
     SUBDIR += lazarus
-    SUBDIR += lazarus-qt4
     SUBDIR += lazarus-qt5
     SUBDIR += le
     SUBDIR += leafpad
     SUBDIR += led
-    SUBDIR += leo
-    SUBDIR += lfhex
     SUBDIR += libreoffice
     SUBDIR += libreoffice-af
     SUBDIR += libreoffice-am
@@ -213,11 +210,11 @@
     SUBDIR += pico-alpine
     SUBDIR += picpas
     SUBDIR += pluma
-    SUBDIR += plume-creator-devel
     SUBDIR += poedit
     SUBDIR += psgml
     SUBDIR += puff
     SUBDIR += py-editorconfig
+    SUBDIR += py-pynvim
     SUBDIR += py-room
     SUBDIR += rox-edit
     SUBDIR += rubygem-neovim
@@ -236,7 +233,6 @@
     SUBDIR += texmacs
     SUBDIR += texmaker
     SUBDIR += texstudio
-    SUBDIR += textroom
     SUBDIR += texworks
     SUBDIR += the
     SUBDIR += thoteditor
@@ -259,7 +255,6 @@
     SUBDIR += xmlcopyeditor
     SUBDIR += xvile
     SUBDIR += yudit
-    SUBDIR += yzis
     SUBDIR += zile
     SUBDIR += zoinks
 

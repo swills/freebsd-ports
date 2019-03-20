@@ -1,7 +1,8 @@
-# $FreeBSD: head/net-im/ktp-filetransfer-handler/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net-im/ktp-filetransfer-handler/Makefile 495946 2019-03-16 19:13:34Z tcberner $
 
 PORTNAME=	ktp-filetransfer-handler
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -10,7 +11,7 @@ COMMENT=	KDE instant messaging file transfer handler
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
+LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 
 USES=		compiler:c++11-lang cmake gettext kde:5 qt:5 tar:xz

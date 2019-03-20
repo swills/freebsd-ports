@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/Makefile 495732 2019-03-14 20:21:27Z kai $
+# $FreeBSD: head/www/Makefile 496104 2019-03-17 19:45:12Z antoine $
 #
 
     COMMENT = Ports related to the World Wide Web
@@ -31,7 +31,6 @@
     SUBDIR += apt-cacher-ng
     SUBDIR += archiva
     SUBDIR += aria2
-    SUBDIR += aria2fe
     SUBDIR += asql
     SUBDIR += august
     SUBDIR += awffull
@@ -100,7 +99,6 @@
     SUBDIR += csstidy
     SUBDIR += ctemplate
     SUBDIR += cutelyst
-    SUBDIR += cutycapt
     SUBDIR += davical
     SUBDIR += davix
     SUBDIR += dddbl
@@ -957,6 +955,7 @@
     SUBDIR += p5-HTML-WikiConverter-WakkaWiki
     SUBDIR += p5-HTML-WikiConverter-WikkaWiki
     SUBDIR += p5-HTML5-DOM
+    SUBDIR += p5-HTTP-AnyUA
     SUBDIR += p5-HTTP-Async
     SUBDIR += p5-HTTP-Body
     SUBDIR += p5-HTTP-BrowserDetect
@@ -1550,6 +1549,7 @@
     SUBDIR += py-django-cors-headers
     SUBDIR += py-django-countries
     SUBDIR += py-django-crispy-forms
+    SUBDIR += py-django-cron
     SUBDIR += py-django-datetime-widget
     SUBDIR += py-django-debug-toolbar
     SUBDIR += py-django-dpaste
@@ -1704,8 +1704,8 @@
     SUBDIR += py-hyperframe
     SUBDIR += py-hyperlink
     SUBDIR += py-imdbpy
-    SUBDIR += py-internetarchive
     SUBDIR += py-instabot
+    SUBDIR += py-internetarchive
     SUBDIR += py-jonpy
     SUBDIR += py-jsonfield
     SUBDIR += py-jswebkit
@@ -1828,7 +1828,6 @@
     SUBDIR += py-pywikibot
     SUBDIR += py-qp
     SUBDIR += py-qpy
-    SUBDIR += py-qt4-webkit
     SUBDIR += py-qt5-webchannel
     SUBDIR += py-qt5-webengine
     SUBDIR += py-qt5-webkit
@@ -1872,6 +1871,7 @@
     SUBDIR += py-tmdb3
     SUBDIR += py-tornado
     SUBDIR += py-tornado4
+    SUBDIR += py-tornado6
     SUBDIR += py-trello
     SUBDIR += py-treq
     SUBDIR += py-turbogears2
@@ -1910,7 +1910,6 @@
     SUBDIR += qdecoder
     SUBDIR += qhttpengine
     SUBDIR += qooxdoo
-    SUBDIR += qt4-webkit
     SUBDIR += qt5-webchannel
     SUBDIR += qt5-webengine
     SUBDIR += qt5-webkit
@@ -1918,7 +1917,6 @@
     SUBDIR += qt5-websockets-qml
     SUBDIR += qt5-webview
     SUBDIR += quark
-    SUBDIR += qupzilla-qt4
     SUBDIR += qutebrowser
     SUBDIR += radicale
     SUBDIR += radicale2

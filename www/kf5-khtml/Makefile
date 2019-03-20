@@ -1,7 +1,8 @@
-# $FreeBSD: head/www/kf5-khtml/Makefile 492794 2019-02-12 17:48:25Z tcberner $
+# $FreeBSD: head/www/kf5-khtml/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	khtml
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	www kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

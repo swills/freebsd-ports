@@ -1,5 +1,5 @@
 # Created by: ajk@waterspout.com
-# $FreeBSD: head/devel/msrc0/Makefile 397266 2015-09-18 17:31:11Z amdmi3 $
+# $FreeBSD: head/devel/msrc0/Makefile 496291 2019-03-19 20:19:29Z cy $
 
 PORTNAME=	msrc0
 PORTVERSION=	0.7
@@ -10,6 +10,9 @@ MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/ \
 
 MAINTAINER=	cy@FreeBSD.org
 COMMENT=	Meta source fake-out script for building ksb tools
+
+DEPRECATED=	No longer required as comms/conserver is being retired.
+EXPIRATION_DATE=	2019-03-31
 
 USES=		tar:tgz
 NO_BUILD=	yes

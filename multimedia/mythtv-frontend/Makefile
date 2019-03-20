@@ -1,7 +1,7 @@
 # Created by: Bernhard Froehlich <decke@bluelife.at>
-# $FreeBSD: head/multimedia/mythtv-frontend/Makefile 492655 2019-02-10 22:28:16Z tobik $
+# $FreeBSD: head/multimedia/mythtv-frontend/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
-PORTREVISION=	0
+PORTREVISION=	1
 PKGNAMESUFFIX=	-${SLAVEPORT}
 
 MAINTAINER=	ports@FreeBSD.org

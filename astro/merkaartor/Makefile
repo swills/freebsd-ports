@@ -1,9 +1,9 @@
 # Created by: Slaven Rezic <slaven@rezic.de>
-# $FreeBSD: head/astro/merkaartor/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/astro/merkaartor/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	merkaartor
 PORTVERSION=	0.18.2
-PORTREVISION=	13
+PORTREVISION=	15
 CATEGORIES=	astro
 
 MAINTAINER=	dev2@heesakkers.info
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libproj.so:graphics/proj \
-		libquazip5.so:archivers/quazip@qt5
+		libquazip5.so:archivers/quazip
 
 USES=		compiler:c++11-lang pkgconfig qmake qt:5 sqlite:3
 USE_GITHUB=	yes

@@ -1,8 +1,9 @@
 # Created by: arved
-# $FreeBSD: head/multimedia/kaffeine/Makefile 492466 2019-02-08 22:50:23Z tcberner $
+# $FreeBSD: head/multimedia/kaffeine/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	kaffeine
 DISTVERSION=	2.0.16-2
+PORTREVISION=	1
 CATEGORIES=	multimedia kde
 MASTER_SITES=	KDE/stable/${PORTNAME}
 

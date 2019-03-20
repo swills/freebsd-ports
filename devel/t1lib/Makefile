@@ -1,9 +1,9 @@
 # Created by: Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
-# $FreeBSD: head/devel/t1lib/Makefile 431147 2017-01-11 00:28:13Z ler $
+# $FreeBSD: head/devel/t1lib/Makefile 496273 2019-03-19 16:40:05Z ler $
 
 PORTNAME=	t1lib
 PORTVERSION=	5.1.2
-PORTREVISION=	4
+PORTREVISION=	5
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	SUNSITE/libs/graphics/
@@ -15,22 +15,17 @@ LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/LGPL
 
 USES=		cpe gmake libtool
-GNU_CONFIGURE=	yes
-ALL_TARGET=	without_doc
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	X11 DOCS
 OPTIONS_DEFAULT=	X11
 
 OPTIONS_SUB=	yes
-X11_USE=	XORG=xaw
+X11_USE=	XORG=ice,sm,x11,xaw,xext,xmu,xpm,xt
 X11_CONFIGURE_WITH=	x
 
-# Build fails with:
-#  gmake[2]: Entering directory '/wrkdirs/usr/ports/devel/t1lib/work/t1lib-5.1.2/lib'
-#  gmake[2]: *** pselect jobs pipe: Bad file descriptor.  Stop.
-#  gmake[2]: *** Waiting for unfinished jobs....
-MAKE_JOBS_UNSAFE=	YES
+ALL_TARGET=	without_doc
+GNU_CONFIGURE=	yes
 
 post-patch:
 	@${REINPLACE_CMD} -e \

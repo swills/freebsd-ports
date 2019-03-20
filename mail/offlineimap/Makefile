@@ -1,9 +1,9 @@
 # Created by: nbm
-# $FreeBSD: head/mail/offlineimap/Makefile 472606 2018-06-17 14:30:31Z misha $
+# $FreeBSD: head/mail/offlineimap/Makefile 495910 2019-03-16 16:40:11Z misha $
 
 PORTNAME=	offlineimap
 DISTVERSIONPREFIX=	v
-DISTVERSION=	7.2.1
+DISTVERSION=	7.2.3
 CATEGORIES=	mail python
 
 MAINTAINER=	mp39590@gmail.com

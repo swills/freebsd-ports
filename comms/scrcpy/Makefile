@@ -1,8 +1,8 @@
-# $FreeBSD: head/comms/scrcpy/Makefile 495559 2019-03-13 05:28:06Z linimon $
+# $FreeBSD: head/comms/scrcpy/Makefile 496219 2019-03-18 22:44:50Z swills $
 
 PORTNAME=	scrcpy
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7
+DISTVERSION=	1.8
 CATEGORIES=	comms net
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/${GH_TAGNAME}/:jar
 DISTFILES=	${DIST_JARFILE}:jar

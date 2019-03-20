@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: head/audio/picard/Makefile 492903 2019-02-14 07:38:29Z jhale $
+# $FreeBSD: head/audio/picard/Makefile 496237 2019-03-19 02:17:40Z jhale $
 
 PORTNAME=	picard
-PORTVERSION=	2.1.2
-PORTREVISION=	1
+PORTVERSION=	2.1.3
 CATEGORIES=	audio python
 MASTER_SITES=	http://ftp.musicbrainz.org/pub/musicbrainz/picard/ \
 		ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/ \

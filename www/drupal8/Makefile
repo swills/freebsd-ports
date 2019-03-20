@@ -1,8 +1,8 @@
 # Created by: Alonso Cardenas <acmFreeBSD.org>
-# $FreeBSD: head/www/drupal8/Makefile 495729 2019-03-14 19:44:50Z acm $
+# $FreeBSD: head/www/drupal8/Makefile 495808 2019-03-15 21:01:43Z acm $
 
 PORTNAME=	drupal8
-PORTVERSION=	8.6.11
+PORTVERSION=	8.6.12
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.drupal.org/files/projects/
 DISTNAME=	drupal-${PORTVERSION}

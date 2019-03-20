@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-cobra/Makefile 418501 2016-07-13 19:25:41Z cs $
+# $FreeBSD: head/devel/go-cobra/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	cobra
 PORTVERSION=	20160816
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Commander for modern Go CLI interactions
 
 LICENSE=	APACHE20
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	${LOCALBASE}/${GO_LIBDIR}/github.com/spf13/pflag.a:devel/go-pflag
 

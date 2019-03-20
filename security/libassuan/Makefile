@@ -1,8 +1,8 @@
 # Created by: Michael Nottebrock <lofi@FreeBSD.org>
-# $FreeBSD: head/security/libassuan/Makefile 489180 2019-01-03 14:28:11Z jhale $
+# $FreeBSD: head/security/libassuan/Makefile 496240 2019-03-19 02:56:19Z jhale $
 
 PORTNAME=	libassuan
-PORTVERSION=	2.5.2
+PORTVERSION=	2.5.3
 CATEGORIES=	security devel
 MASTER_SITES=	GNUPG
 

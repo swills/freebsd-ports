@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-form/Makefile 418400 2016-07-11 20:01:51Z cs $
+# $FreeBSD: head/devel/go-form/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	form
 PORTVERSION=	20160629
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	Form Encoding & Decoding Package for Go
 
 LICENSE=	BSD3CLAUSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	ajg

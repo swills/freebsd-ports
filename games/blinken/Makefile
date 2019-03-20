@@ -1,7 +1,8 @@
-# $FreeBSD: head/games/blinken/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/games/blinken/Makefile 495961 2019-03-16 21:32:52Z tcberner $
 
 PORTNAME=	blinken
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	games kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

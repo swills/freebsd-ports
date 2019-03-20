@@ -1,4 +1,4 @@
-# $FreeBSD: head/finance/Makefile 495614 2019-03-13 16:40:39Z kai $
+# $FreeBSD: head/finance/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Monetary, financial, and related applications
@@ -21,12 +21,10 @@
     SUBDIR += R-cran-urca
     SUBDIR += R-cran-vars
     SUBDIR += alkimia
-    SUBDIR += alkimia-qt4
     SUBDIR += aqbanking
     SUBDIR += aqmoney
     SUBDIR += beancount
     SUBDIR += beanie
-    SUBDIR += bitcoin-armory
     SUBDIR += cbb
     SUBDIR += cointop
     SUBDIR += electrum
@@ -103,7 +101,6 @@
     SUBDIR += py-ta-lib
     SUBDIR += py-vatnumber
     SUBDIR += py-ystockquote
-    SUBDIR += qhacc
     SUBDIR += qtbitcointrader
     SUBDIR += quantlib
     SUBDIR += quickfix

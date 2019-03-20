@@ -1,4 +1,4 @@
-# $FreeBSD: head/ftp/Makefile 493049 2019-02-16 17:15:35Z rene $
+# $FreeBSD: head/ftp/Makefile 496224 2019-03-18 23:32:45Z mm $
 #
 
     COMMENT = FTP client and server utilities
@@ -70,6 +70,7 @@
     SUBDIR += php73-ftp
     SUBDIR += phpwebftp
     SUBDIR += proftpd
+    SUBDIR += proftpd-mod_vroot
     SUBDIR += profxp
     SUBDIR += puf
     SUBDIR += pure-ftpd
@@ -83,7 +84,6 @@
     SUBDIR += quftp
     SUBDIR += rexx-curl
     SUBDIR += rubygem-curb
-    SUBDIR += scythia
     SUBDIR += smbftpd
     SUBDIR += spegla
     SUBDIR += tftp-hpa

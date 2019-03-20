@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: head/Mk/bsd.ruby.mk 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/Mk/bsd.ruby.mk 495828 2019-03-15 21:41:56Z sunpoet $
 #
 
 .if !defined(Ruby_Include)
@@ -174,8 +174,8 @@ RUBY24=			""	# PLIST_SUB helpers
 #
 # Ruby 2.5
 #
-RUBY_RELVERSION=	2.5.3
-RUBY_PORTREVISION=	1
+RUBY_RELVERSION=	2.5.5
+RUBY_PORTREVISION=	0
 RUBY_PORTEPOCH=		1
 RUBY_PATCHLEVEL=	0
 RUBY25=			""	# PLIST_SUB helpers

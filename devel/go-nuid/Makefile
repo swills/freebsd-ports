@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-nuid/Makefile 422810 2016-09-27 08:58:23Z olgeni $
+# $FreeBSD: head/devel/go-nuid/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	nuid
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,9 @@ MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	NATS unique identifier generator library
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USES=		go
 USE_GITHUB=	yes

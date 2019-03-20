@@ -1,9 +1,9 @@
 # Created by: Mathieu Arnold
-# $FreeBSD: head/deskutils/nextcloudclient/Makefile 492351 2019-02-07 09:07:01Z mr $
+# $FreeBSD: head/deskutils/nextcloudclient/Makefile 495941 2019-03-16 18:46:13Z tcberner $
 
 PORTNAME=	nextcloudclient
 PORTVERSION=	0.0.0.20190207
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	deskutils
 
 MAINTAINER=	mr@FreeBSD.org
@@ -12,7 +12,7 @@ COMMENT=	NextCloud Desktop Syncing Client
 LICENSE=	GPLv2
 
 LIB_DEPENDS=	libinotify.so:devel/libinotify \
-		libqt5keychain.so:security/qtkeychain@qt5
+		libqt5keychain.so:security/qtkeychain
 
 USES=		cmake:noninja compiler:c++11-lib gmake iconv \
 		localbase:ldflags pkgconfig qt:5 sqlite ssl

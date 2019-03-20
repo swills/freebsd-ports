@@ -1,8 +1,9 @@
-# $FreeBSD: head/net-im/quaternion/Makefile 495058 2019-03-08 17:19:15Z adridg $
+# $FreeBSD: head/net-im/quaternion/Makefile 495941 2019-03-16 18:46:13Z tcberner $
 
 PORTNAME=	Quaternion
 DISTVERSION=	0.0.9.4
 DISTVERSIONSUFFIX=	-beta1
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	adridg@FreeBSD.org
@@ -11,7 +12,7 @@ COMMENT=	Matrix IM client based on Qt technologies
 LICENSE=	GPLv3
 LICENSE_FILES=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain@qt5 \
+LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain \
 		libsecret-1.so:security/libsecret
 BUILD_DEPENDS=	libqmatrixclient>=0.5:net-im/libqmatrixclient
 

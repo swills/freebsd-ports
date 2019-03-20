@@ -1,7 +1,7 @@
-# $FreeBSD: head/sysutils/plasma5-systemsettings/Makefile 492811 2019-02-12 21:40:13Z tcberner $
+# $FreeBSD: head/sysutils/plasma5-systemsettings/Makefile 495863 2019-03-16 09:32:04Z tcberner $
 
 PORTNAME=	systemsettings
-DISTVERSION=	${KDE_PLASMA_VERSION}
+DISTVERSION=	${KDE_PLASMA_VERSION}.2
 CATEGORIES=	sysutils kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org

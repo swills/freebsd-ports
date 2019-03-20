@@ -1,4 +1,4 @@
-# $FreeBSD: head/astro/Makefile 495590 2019-03-13 16:06:25Z kai $
+# $FreeBSD: head/astro/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Astronomical ports
@@ -93,7 +93,6 @@
     SUBDIR += py-spacetrack
     SUBDIR += pyephem
     SUBDIR += pyweather
-    SUBDIR += qlandkartegt
     SUBDIR += qmapshack
     SUBDIR += readosm
     SUBDIR += rmap
@@ -108,7 +107,6 @@
     SUBDIR += starplot
     SUBDIR += stars
     SUBDIR += stellarium
-    SUBDIR += stellarium-qt4
     SUBDIR += sunclock
     SUBDIR += sunwait
     SUBDIR += swe
@@ -126,7 +124,6 @@
     SUBDIR += xearth
     SUBDIR += xeartk
     SUBDIR += xephem
-    SUBDIR += xglobe
     SUBDIR += xmoontool
     SUBDIR += xphoon
     SUBDIR += xplanet

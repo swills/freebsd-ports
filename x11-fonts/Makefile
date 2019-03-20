@@ -1,4 +1,4 @@
-# $FreeBSD: head/x11-fonts/Makefile 495395 2019-03-11 21:25:57Z zeising $
+# $FreeBSD: head/x11-fonts/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = X11 fonts and font utilities
@@ -98,7 +98,6 @@
     SUBDIR += font-xfree86-type1
     SUBDIR += fontconfig
     SUBDIR += fontconfig-reference
-    SUBDIR += fontmatrix
     SUBDIR += fonts-indic
     SUBDIR += fonttosfnt
     SUBDIR += freefont-ttf

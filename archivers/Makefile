@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/Makefile 488895 2019-01-01 14:17:46Z rene $
+# $FreeBSD: head/archivers/Makefile 496204 2019-03-18 20:24:57Z tcberner $
 #
 
     COMMENT = Archivers
@@ -148,6 +148,7 @@
     SUBDIR += peazip
     SUBDIR += pecl-lzf
     SUBDIR += pecl-rar
+    SUBDIR += php-brotli
     SUBDIR += php-horde_lz4
     SUBDIR += php-snappy
     SUBDIR += php71-bz2

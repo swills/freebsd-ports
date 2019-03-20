@@ -1,9 +1,9 @@
 # Created by: Klemm <andreas@klemm.gtn.com>
-# $FreeBSD: head/print/lyx/Makefile 490671 2019-01-18 21:14:41Z jbeich $
+# $FreeBSD: head/print/lyx/Makefile 496214 2019-03-18 21:35:10Z yuri $
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print editors
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/${MAJOR_VERSION}.x/ \
 		http://www-ftp.lip6.fr/ftp/pub/lyx/stable/${MAJOR_VERSION}.x/ \
@@ -24,7 +24,8 @@ MINOR_VERSION=	2
 
 USES=		compiler:c++11-lang desktop-file-utils gmake iconv pkgconfig \
 		perl5 python:2.7 qt:5 shebangfix tar:xz
-USE_QT=		core concurrent gui svg widgets buildtools_build qmake_build
+USE_QT=		core concurrent gui svg widgets x11extras buildtools_build qmake_build
+USE_XORG=	xcb
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-included-boost \
 		--without-included-mythes \
@@ -54,5 +55,8 @@ HUNSPELL_CONFIGURE_OFF=	--without-hunspell
 HUNSPELL_LIB_DEPENDS=	libhunspell-1.7.so:textproc/hunspell
 NLS_CONFIGURE_OFF=	--disable-nls
 NLS_USES=		gettext
+
+post-patch:
+	@${GREP} -rl "python -tt" ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -i '' 's|python -tt|${PYTHON_CMD} -tt|'
 
 .include <bsd.port.mk>

@@ -1,9 +1,9 @@
 # Created by: Olivier Duchateau
-# $FreeBSD: head/x11-wm/lxqt-panel/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/x11-wm/lxqt-panel/Makefile 495956 2019-03-16 20:27:49Z tcberner $
 
 PORTNAME=	lxqt-panel
 PORTVERSION=	0.13.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	x11-wm
 MASTER_SITES=	LXQT
 
@@ -12,7 +12,7 @@ COMMENT=	Panel for the LXQt desktop
 
 LICENSE=	LGPL21+
 
-LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt@qt5 \
+LIB_DEPENDS=	libdbusmenu-qt5.so:devel/libdbusmenu-qt \
 		libxkbcommon.so:x11/libxkbcommon \
 		libxcb-util.so:x11/xcb-util \
 		libsysstat-qt5.so:sysutils/libsysstat

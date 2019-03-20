@@ -1,11 +1,11 @@
-# $FreeBSD: head/net/calendarsupport/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net/calendarsupport/Makefile 495855 2019-03-16 08:42:31Z tobik $
 
 PORTNAME=	calendarsupport
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
 CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
-COMMENT=	Calendar support libriares for KDEPim
+COMMENT=	Calendar support libraries for KDEPim
 
 LICENSE=	LGPL21
 

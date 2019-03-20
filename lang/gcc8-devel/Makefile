@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
-# $FreeBSD: head/lang/gcc8-devel/Makefile 495172 2019-03-09 15:20:29Z gerald $
+# $FreeBSD: head/lang/gcc8-devel/Makefile 496295 2019-03-19 22:03:17Z andreast $
 
 PORTNAME=	gcc
-PORTVERSION=	8.3.1.s20190308
+PORTVERSION=	8.3.1.s20190315
 CATEGORIES=	lang
 MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
 PKGNAMESUFFIX=	${SUFFIX}-devel
@@ -51,6 +51,8 @@ BOOTSTRAP_DESC=		Build using a full bootstrap
 GRAPHITE_DESC=		Support for Graphite loop optimizations
 
 .if exists(/usr/lib32/libc.so)
+OPTIONS_DEFINE_amd64+=		MULTILIB
+OPTIONS_DEFAULT_amd64+=	MULTILIB
 OPTIONS_DEFINE_powerpc64+=	MULTILIB
 OPTIONS_DEFAULT_powerpc64+=	MULTILIB
 MULTILIB_DESC=		Build support for 32-bit and 64-bit targets
@@ -145,7 +147,7 @@ post-stage:
 	# Add target libraries and include files to packaging list.
 	${RM} ${WRKDIR}/PLIST.lib
 
-.if ${ARCH} == powerpc64 && ${PORT_OPTIONS:MMULTILIB}
+.if (${ARCH} == amd64 || ${ARCH} == powerpc64) && ${PORT_OPTIONS:MMULTILIB}
 	${MKDIR} ${STAGEDIR}${TARGLIB32}
 	${MV} ${STAGEDIR}${PREFIX}/lib/lib32 ${STAGEDIR}${TARGLIB32}/gcc${SUFFIX}
 .endif

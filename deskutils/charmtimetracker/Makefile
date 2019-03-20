@@ -1,9 +1,9 @@
 # Created by: Andriy Gapon <avg@icyb.net.ua>
-# $FreeBSD: head/deskutils/charmtimetracker/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/deskutils/charmtimetracker/Makefile 495941 2019-03-16 18:46:13Z tcberner $
 
 PORTNAME=	charmtimetracker
 DISTVERSION=	1.12.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	deskutils
 
 # PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
@@ -16,7 +16,7 @@ COMMENT=	Time tracker
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain@qt5
+LIB_DEPENDS=	libqt5keychain.so:security/qtkeychain
 
 USES=		cmake compiler:c++11-lib pkgconfig qt:5
 CMAKE_ARGS=	-DCharm_VERSION:STRING=${PORTVERSION}

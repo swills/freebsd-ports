@@ -1,5 +1,5 @@
 # Created by: Alexey Dokuchaev <danfe@FreeBSD.org>
-# $FreeBSD: head/emulators/almostti/Makefile 439436 2017-04-26 09:10:00Z danfe $
+# $FreeBSD: head/emulators/almostti/Makefile 495912 2019-03-16 16:48:36Z danfe $
 
 PORTNAME=	almostti
 PORTVERSION=	1.3
@@ -8,7 +8,7 @@ MASTER_SITES=	http://fms.komkon.org/ATI85/
 DISTNAME=	AlmostTI13-Unix-DougMelton-051409
 
 MAINTAINER=	danfe@FreeBSD.org
-COMMENT=	Emulator for Z80 series of Texas Instruments calculators
+COMMENT=	Texas Instruments Z80 series calculator emulator
 
 USES=		gmake
 USE_XORG=	x11 xext

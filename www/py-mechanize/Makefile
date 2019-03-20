@@ -1,9 +1,8 @@
 # Created by: ijliao
-# $FreeBSD: head/www/py-mechanize/Makefile 494597 2019-03-04 13:24:55Z lwhsu $
+# $FreeBSD: head/www/py-mechanize/Makefile 496056 2019-03-17 12:53:27Z lwhsu $
 
 PORTNAME=	mechanize
-PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTVERSION=	0.4.1
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

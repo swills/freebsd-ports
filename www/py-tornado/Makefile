@@ -1,5 +1,5 @@
 # Created by: Guixing Bai <khsing.cn@gmail.com>
-# $FreeBSD: head/www/py-tornado/Makefile 480161 2018-09-20 10:02:34Z gblach $
+# $FreeBSD: head/www/py-tornado/Makefile 496103 2019-03-17 19:31:25Z gblach $
 
 PORTNAME=	tornado
 PORTVERSION=	5.1.1
@@ -12,7 +12,7 @@ COMMENT=	Python Web Server from FriendFeed
 
 LICENSE=	APACHE20
 
-CONFLICTS=	py[0-9]*-tornado4-*
+CONFLICTS=	py[0-9]*-tornado[46]-*
 
 USES=		python
 USE_PYTHON=	autoplist distutils

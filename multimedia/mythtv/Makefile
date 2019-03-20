@@ -1,10 +1,10 @@
 # Created by: Stacey Son <mythdev@son.org>, Ari Maniatis <ari@ish.com.au>
-# $FreeBSD: head/multimedia/mythtv/Makefile 492655 2019-02-10 22:28:16Z tobik $
+# $FreeBSD: head/multimedia/mythtv/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	mythtv
 DISTVERSIONPREFIX=	v
 DISTVERSION=	30.0
-PORTREVISION?=	0
+PORTREVISION?=	2
 PORTEPOCH=	1
 CATEGORIES=	multimedia
 
@@ -22,6 +22,7 @@ LIB_DEPENDS=	liblzo2.so:archivers/lzo2 \
 		libtag.so:audio/taglib \
 		libexiv2.so:graphics/exiv2 \
 		libva.so:multimedia/libva \
+		libva-glx.so:multimedia/libva-glx \
 		libbluray.so:multimedia/libbluray \
 		libass.so:multimedia/libass \
 		libfftw3_threads.so:math/fftw3 \

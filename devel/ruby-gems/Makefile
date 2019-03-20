@@ -1,8 +1,8 @@
 # Created by: Alexander Novitsky <alecn2002@yandex.ru>
-# $FreeBSD: head/devel/ruby-gems/Makefile 493610 2019-02-22 19:56:03Z sunpoet $
+# $FreeBSD: head/devel/ruby-gems/Makefile 495827 2019-03-15 21:41:51Z sunpoet $
 
 PORTNAME=	gems
-PORTVERSION=	3.0.2
+PORTVERSION=	3.0.3
 CATEGORIES=	devel ruby
 MASTER_SITES=	https://rubygems.org/rubygems/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}

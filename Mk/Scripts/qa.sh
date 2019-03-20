@@ -1,6 +1,6 @@
 #!/bin/sh
 # MAINTAINER: portmgr@FreeBSD.org
-# $FreeBSD: head/Mk/Scripts/qa.sh 491833 2019-02-01 16:43:37Z tobik $
+# $FreeBSD: head/Mk/Scripts/qa.sh 496150 2019-03-18 15:59:13Z mat $
 
 if [ -z "${STAGEDIR}" -o -z "${PREFIX}" -o -z "${LOCALBASE}" ]; then
 	echo "STAGEDIR, PREFIX, LOCALBASE required in environment." >&2
@@ -925,10 +925,50 @@ license()
 	return 0
 }
 
+# This is to prevent adding dependencies to meta ports that are only there to
+# improve the end user experience.
+depends_blacklist()
+{
+	local dep rc instead
+
+	rc=0
+
+	for dep in ${UNIFIED_DEPENDS}; do
+		origin=$(expr "${dep}" : ".*:\([^@]*\)")
+		instead=""
+
+		case "$origin" in
+			lang/python|lang/python2|lang/python3)
+				# lang/python depends on lang/pythonX, but it's
+				# ok, it is also in the blacklist.
+				if [ ${PKGORIGIN} != lang/python ]; then
+					instead="USES=python:xy with a specific version"
+				fi
+				;;
+			lang/gcc)
+				instead="USE_GCC"
+				;;
+			devel/llvm)
+				instead="a dependency on devel/llvm\${LLVM_DEFAULT}"
+				;;
+			www/py-django)
+				instead="one of the www/py-djangoXYZ port"
+				;;
+		esac
+
+		if [ -n "${instead}" ]; then
+			err "$origin should not be depended upon. Instead, use $instead."
+			rc=1
+		fi
+	done
+
+	return $rc
+}
+
 checks="shebang symlinks paths stripped desktopfileutils sharedmimeinfo"
 checks="$checks suidfiles libtool libperl prefixvar baselibs terminfo"
 checks="$checks proxydeps sonames perlcore no_arch gemdeps gemfiledeps flavors"
-checks="$checks license"
+checks="$checks license depends_blacklist"
 
 ret=0
 cd ${STAGEDIR} || exit 1

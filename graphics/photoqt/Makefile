@@ -1,9 +1,9 @@
-# $FreeBSD: head/graphics/photoqt/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/graphics/photoqt/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	photoqt
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	graphics
 
 MAINTAINER=	melanhit@gmail.com

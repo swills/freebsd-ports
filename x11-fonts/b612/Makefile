@@ -1,9 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/x11-fonts/b612/Makefile 495395 2019-03-11 21:25:57Z zeising $
+# $FreeBSD: head/x11-fonts/b612/Makefile 495815 2019-03-15 21:40:52Z sunpoet $
 
 PORTNAME=	b612
-PORTVERSION=	1.005
-PORTREVISION=	1
+PORTVERSION=	1.008
 CATEGORIES=	x11-fonts
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -13,7 +12,7 @@ LICENSE=	EDL EPL OFL11
 LICENSE_COMB=	dual
 LICENSE_NAME_EDL=	Eclipse Distribution License
 LICENSE_FILE_EDL=	${WRKSRC}/edl-v10.html
-LICENSE_FILE_EPL=	${WRKSRC}/epl-v10.html
+LICENSE_FILE_EPL=	${WRKSRC}/EPL-2.0.html
 LICENSE_PERMS_EDL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		fonts
@@ -24,7 +23,6 @@ NO_BUILD=	yes
 FONTNAME=	b612
 
 GH_ACCOUNT=	polarsys
-GH_TAGNAME=	97aa715
 USE_GITHUB=	yes
 
 do-install:

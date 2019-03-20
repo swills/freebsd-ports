@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/arduino18/Makefile 495537 2019-03-13 03:03:56Z ler $
+# $FreeBSD: head/devel/arduino18/Makefile 495798 2019-03-15 16:52:10Z ler $
 
 PORTNAME=	arduino
 PORTVERSION=	1.8.5
@@ -13,12 +13,14 @@ COMMENT=	Open-source electronics prototyping platform
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../license.txt
 
+JSSC_DEP=		${JAVA_HOME}/jre/lib/ext/jssc-2.8.0.jar:comms/java-simple-serial-connector
+BUILD_DEPENDS+=	${JSSC_DEP}
 LIB_DEPENDS=	liblistSerialsj.so:devel/listserialc \
 		libastylej-arduino.so:devel/libastylej-arduino
 RUN_DEPENDS=	arduino-builder:devel/arduino-builder \
 		arduino-tools>=1.6.12:devel/arduino-tools \
 		bash:shells/bash \
-		${JAVA_HOME}/jre/lib/ext/jssc-2.8.0.jar:comms/java-simple-serial-connector
+		${JSSC_DEP}
 
 CONFLICTS=	arduino-[0-9]*
 

@@ -1,13 +1,14 @@
-# $FreeBSD: head/net-im/ktp-contact-list/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net-im/ktp-contact-list/Makefile 495946 2019-03-16 19:13:34Z tcberner $
 
 PORTNAME=	ktp-contact-list
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	KDE instant messaging contact list application
 
-LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt@qt5 \
+LIB_DEPENDS=	libtelepathy-qt5.so:net-im/telepathy-qt \
 		libtelepathy-logger-qt.so:net-im/telepathy-logger-qt5 \
 		libKTpCommonInternals.so:net-im/ktp-common-internals
 

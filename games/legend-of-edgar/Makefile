@@ -1,8 +1,8 @@
 # Created by: Rusmir Dusko <nemysis@FreeBSD.org>
-# $FreeBSD: head/games/legend-of-edgar/Makefile 477655 2018-08-20 14:18:03Z tobik $
+# $FreeBSD: head/games/legend-of-edgar/Makefile 495940 2019-03-16 18:34:09Z tobik $
 
 PORTNAME=	edgar
-DISTVERSION=	1.29
+DISTVERSION=	1.31
 CATEGORIES=	games
 MASTER_SITES=	https://github.com/riksweeney/edgar/releases/download/${DISTVERSION}/
 PKGNAMEPREFIX=	legend-of-
@@ -16,8 +16,8 @@ LICENSE_FILE=	${WRKSRC}/doc/license
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		gmake
-USE_SDL=	image mixer sdl ttf
+USES=		gmake sdl
+USE_SDL=	image2 mixer2 sdl2 ttf2
 MAKEFILE=	makefile
 MAKE_ARGS=	BIN_DIR=${PREFIX}/bin/ \
 		DATA_DIR=${DATADIR}/ \

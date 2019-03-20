@@ -1,8 +1,8 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/www/py-instabot/Makefile 495596 2019-03-13 16:10:58Z sunpoet $
+# $FreeBSD: head/www/py-instabot/Makefile 496278 2019-03-19 17:48:37Z sunpoet $
 
 PORTNAME=	instabot
-PORTVERSION=	0.27.0
+PORTVERSION=	0.28.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

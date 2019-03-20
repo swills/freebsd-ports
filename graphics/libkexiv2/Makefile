@@ -1,8 +1,8 @@
-# $FreeBSD: head/graphics/libkexiv2/Makefile 495111 2019-03-09 09:08:38Z tcberner $
+# $FreeBSD: head/graphics/libkexiv2/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	libkexiv2
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org

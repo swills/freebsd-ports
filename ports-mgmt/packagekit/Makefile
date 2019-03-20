@@ -1,5 +1,5 @@
 # Created by: Anders F Bjorklund <afb@users.sourceforge.net>
-# $FreeBSD: head/ports-mgmt/packagekit/Makefile 486467 2018-12-02 15:41:47Z rene $
+# $FreeBSD: head/ports-mgmt/packagekit/Makefile 496006 2019-03-17 00:04:52Z tcberner $
 #   $MCom: ports/ports-mgmt/packagekit/Makefile,v 1.26 2010/10/10 15:49:51 marcus Exp $
 
 PORTNAME=	PackageKit
@@ -73,18 +73,6 @@ CONFIGURE_ARGS+=--disable-gtk-module
 PLIST_SUB+=	GTK="@comment "
 
 CONFIGURE_ARGS+=--disable-qt
-
-.elif defined(${SLAVEPORT}) && ${SLAVEPORT}=="qt4"
-DEPRECATED=		Qt4 has been EOL since december 2015
-EXPIRATION_DATE=	2019-03-15
-
-LIB_DEPENDS+=	libpackagekit-glib2.so:ports-mgmt/packagekit
-
-CONFIGURE_ARGS+=--enable-qt
-LIB_DEPENDS+=	libcppunit.so:devel/cppunit
-USES=		qt:4
-USE_QT+=	dbus gui xml sql moc_build
-#.include "${PORTSDIR}/Mk/bsd.qt.mk"
 .endif
 
 post-patch:

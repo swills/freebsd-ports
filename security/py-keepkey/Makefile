@@ -1,8 +1,8 @@
 # Created by: Emanuel Haupt <ehaupt@FreeBSD.org>
-# $FreeBSD: head/security/py-keepkey/Makefile 491952 2019-02-02 11:59:05Z ehaupt $
+# $FreeBSD: head/security/py-keepkey/Makefile 496044 2019-03-17 10:46:05Z ehaupt $
 
 PORTNAME=	keepkey
-PORTVERSION=	6.0.2
+PORTVERSION=	6.0.3
 CATEGORIES=	security
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

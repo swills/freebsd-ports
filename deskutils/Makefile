@@ -1,4 +1,4 @@
-# $FreeBSD: head/deskutils/Makefile 493557 2019-02-22 07:48:48Z bapt $
+# $FreeBSD: head/deskutils/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Things that used to be on the desktop before computers were invented
@@ -27,7 +27,6 @@
     SUBDIR += calcurse
     SUBDIR += calibre
     SUBDIR += cartotheque
-    SUBDIR += cdcat
     SUBDIR += charmtimetracker
     SUBDIR += chart
     SUBDIR += clipit
@@ -139,7 +138,6 @@
     SUBDIR += korganizer
     SUBDIR += kruler
     SUBDIR += latte-dock
-    SUBDIR += launchy
     SUBDIR += libkdepim
     SUBDIR += libopensync-plugin-vformat-devel
     SUBDIR += ljcharm
@@ -211,10 +209,7 @@
     SUBDIR += pybookreader
     SUBDIR += pypanel
     SUBDIR += qlipper
-    SUBDIR += qorganizer
     SUBDIR += qownnotes
-    SUBDIR += qrfcview
-    SUBDIR += qtm
     SUBDIR += recoll
     SUBDIR += rednotebook
     SUBDIR += remind
@@ -253,11 +248,9 @@
     SUBDIR += tpb
     SUBDIR += treeline
     SUBDIR += treesheets
-    SUBDIR += tuxcards
     SUBDIR += virt-manager
     SUBDIR += vit
     SUBDIR += vnc2flv
-    SUBDIR += vym
     SUBDIR += wammu
     SUBDIR += when
     SUBDIR += wmpinboard

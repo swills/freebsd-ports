@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/py-python-consul/Makefile 495577 2019-03-13 14:40:48Z mat $
+# $FreeBSD: head/sysutils/py-python-consul/Makefile 495835 2019-03-15 22:33:14Z antoine $
 
 PORTNAME=	python-consul
 PORTVERSION=	1.1.0
@@ -19,9 +19,6 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/consul:sysutils/consul \
 RUN_DEPENDS=	${LOCALBASE}/bin/consul:sysutils/consul \
 				${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}six>=1.4:devel/py-six@${PY_FLAVOR}
-
-IGNORE=	${IGNORE_${FLAVOR}}
-IGNORE_py35=	Does not work with Python 3.5
 
 # 2.7 or 3.6+, but it cannot be expressed right now.
 USES=	python

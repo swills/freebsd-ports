@@ -1,8 +1,8 @@
 # Created by: Johannes Jost Meixner <xmj@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-activejob5/Makefile 486433 2018-12-02 15:36:00Z sunpoet $
+# $FreeBSD: head/devel/rubygem-activejob5/Makefile 496171 2019-03-18 18:22:43Z sunpoet $
 
 PORTNAME=	activejob
-PORTVERSION=	5.1.6.1
+PORTVERSION=	5.1.6.2
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	5

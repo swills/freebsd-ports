@@ -1,13 +1,14 @@
-# $FreeBSD: head/emulators/rpcs3/Makefile 495674 2019-03-14 00:53:21Z jbeich $
+# $FreeBSD: head/emulators/rpcs3/Makefile 496230 2019-03-19 00:49:45Z jbeich $
 
 PORTNAME=	rpcs3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.0.6-7869 # git rev-list --count HEAD
-DISTVERSIONSUFFIX=	-ge9b6beadf
+DISTVERSION=	0.0.6-7884 # git rev-list --count HEAD
+DISTVERSIONSUFFIX=	-g3eb2bcad3
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES+=	1e28a22860c0.patch:-p1
+PATCHFILES+=	1e28a22860c0.patch:-p1 # Clang 7
+PATCHFILES+=	2379fca03a1b.patch:-p1 # libusb
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	PS3 emulator/debugger

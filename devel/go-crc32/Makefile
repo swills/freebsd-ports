@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/go-crc32/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/devel/go-crc32/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	crc32
 PORTVERSION=	1.1
@@ -11,6 +11,9 @@ COMMENT=	CRC32 hash with x64 optimizations for go
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	klauspost

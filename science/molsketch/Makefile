@@ -1,11 +1,10 @@
-# $FreeBSD: head/science/molsketch/Makefile 490472 2019-01-16 11:13:44Z tijl $
+# $FreeBSD: head/science/molsketch/Makefile 496247 2019-03-19 06:19:42Z yuri $
 
 PORTNAME=	molsketch
-DISTVERSION=	0.5.2
+DISTVERSION=	0.6.0
 DISTVERSIONSUFFIX=	-src
-PORTREVISION=	1
 CATEGORIES=	science
-MASTER_SITES=	SF/${PORTNAME}/Molsketch/Boron-11%20${DISTVERSION}/
+MASTER_SITES=	SF/${PORTNAME}/Molsketch/Nitrogen%20${DISTVERSION}/
 DISTNAME=	Molsketch-${DISTVERSIONFULL}
 
 MAINTAINER=	yuri@FreeBSD.org

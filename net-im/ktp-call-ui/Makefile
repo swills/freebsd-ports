@@ -1,19 +1,20 @@
-# $FreeBSD: head/net-im/ktp-call-ui/Makefile 492409 2019-02-08 05:11:13Z tcberner $
+# $FreeBSD: head/net-im/ktp-call-ui/Makefile 495957 2019-03-16 20:40:49Z tcberner $
 
 PORTNAME=	ktp-call-ui
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
+PORTREVISION=	2
 CATEGORIES=	net-im kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Voice/Video Call UI for Telepathy
 
 LIB_DEPENDS=	libKTpCommonInternals.so:net-im/ktp-common-internals \
-		libQt5GStreamer-1.0.so:multimedia/gstreamer1-qt@qt5 \
+		libQt5GStreamer-1.0.so:multimedia/gstreamer1-qt \
 		libboost_thread.so:devel/boost-libs \
 		libfarstream-0.2.so:net-im/farstream \
 		libtelepathy-farstream.so:net-im/telepathy-farstream \
 		libtelepathy-glib.so:net-im/telepathy-glib \
-		libtelepathy-qt5-farstream.so:net-im/telepathy-qt@qt5
+		libtelepathy-qt5-farstream.so:net-im/telepathy-qt
 
 USES=		cmake compiler:c++11-lang gettext kde:5 pkgconfig \
 		python:2.7 qt:5 tar:xz

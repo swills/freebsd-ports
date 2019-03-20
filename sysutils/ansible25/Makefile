@@ -1,6 +1,7 @@
-# $FreeBSD: head/sysutils/ansible25/Makefile 494543 2019-03-04 03:17:21Z lifanov $
+# $FreeBSD: head/sysutils/ansible25/Makefile 496115 2019-03-18 00:28:57Z lifanov $
 
 PORTVERSION=	2.5.15
+PORTREVISION=	1
 PKGNAMESUFFIX=	25
 
 CONFLICTS=	ansible-* \

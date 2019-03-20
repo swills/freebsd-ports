@@ -1,4 +1,4 @@
-# $FreeBSD: head/archivers/go-compress/Makefile 453284 2017-11-01 13:10:35Z olgeni $
+# $FreeBSD: head/archivers/go-compress/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	compress
 PORTVERSION=	1.2.1
@@ -11,6 +11,9 @@ COMMENT=	Go optimised compression packages
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS=	go-cpuid>=0:devel/go-cpuid \
 		go-crc32>=0:devel/go-crc32

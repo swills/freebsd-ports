@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 495765 2019-03-15 05:10:32Z tcberner $
+# $FreeBSD: head/devel/kf5-kfilemetadata/Makefile 496059 2019-03-17 13:14:52Z tcberner $
 
 PORTNAME=	kfilemetadata
 DISTVERSION=	${KDE_FRAMEWORKS_VERSION}
+PORTREVISION=	1
 CATEGORIES=	devel kde kde-frameworks
 
 MAINTAINER=	kde@FreeBSD.org

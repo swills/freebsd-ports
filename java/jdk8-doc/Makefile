@@ -1,4 +1,4 @@
-# $FreeBSD: head/java/jdk8-doc/Makefile 483180 2018-10-27 23:13:37Z glewis $
+# $FreeBSD: head/java/jdk8-doc/Makefile 496126 2019-03-18 05:58:14Z glewis $
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}.${JDK_UPDATE_VER}
@@ -8,7 +8,7 @@ PKGNAMESUFFIX=	${JDK_VERSION}-doc
 DISTNAME=	jdk-${JDK_VERSION}u${JDK_UPDATE_VER}-docs-all
 
 MAINTAINER=	java@FreeBSD.org
-COMMENT=	Java Development Kit ${JDK_MAJOR_VER} Documentation
+COMMENT=	Java Development Kit ${JDK_VERSION} Documentation
 
 DOCSDIR?=	${PREFIX}/share/doc/jdk${JDK_VERSION}
 RESTRICTED=	This documentation is under license and export control.

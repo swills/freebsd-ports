@@ -1,5 +1,5 @@
 # Created by: Sascha Holzleiter <sascha@root-login.org>
-# $FreeBSD: head/security/gopass/Makefile 494965 2019-03-07 17:28:40Z swills $
+# $FreeBSD: head/security/gopass/Makefile 496225 2019-03-18 23:33:47Z swills $
 
 PORTNAME=	gopass
 DISTVERSIONPREFIX=	v
@@ -18,6 +18,9 @@ RUN_DEPENDS=	git:devel/git \
 USES=		go
 USE_GITHUB=	yes
 GH_ACCOUNT=	gopasspw
+
+ONLY_FOR_ARCHS=	amd64
+ONLY_FOR_ARCHS_REASON=	Upstream only supports amd64
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${PORTNAME}
 

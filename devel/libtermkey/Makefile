@@ -1,8 +1,8 @@
 # Created by: Anton Tornqvist <antont@inbox.lv>
-# $FreeBSD: head/devel/libtermkey/Makefile 494072 2019-02-27 17:14:48Z rodrigo $
+# $FreeBSD: head/devel/libtermkey/Makefile 495788 2019-03-15 13:31:46Z rodrigo $
 
 PORTNAME=	libtermkey
-PORTVERSION=	0.21.1
+PORTVERSION=	0.22
 CATEGORIES=	devel
 MASTER_SITES=	http://www.leonerd.org.uk/code/libtermkey/
 
@@ -19,6 +19,6 @@ USE_LDCONFIG=	yes
 MAKE_ARGS=	MANDIR=${MANPREFIX}/man
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtermkey.so.1.14.1
+	#${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libtermkey.so.1.14.1
 
 .include <bsd.port.mk>

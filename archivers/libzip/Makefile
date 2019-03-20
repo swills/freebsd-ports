@@ -1,8 +1,8 @@
 # Created by: Alexander Zhuravlev <zaa@zaa.pp.ru>
-# $FreeBSD: head/archivers/libzip/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/archivers/libzip/Makefile 495897 2019-03-16 15:59:26Z rakuco $
 
 PORTNAME=	libzip
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 CATEGORIES=	archivers devel
 MASTER_SITES=	https://libzip.org/download/
 
@@ -19,6 +19,6 @@ USE_LDCONFIG=	yes
 USE_PERL5=	test
 TEST_TARGET=	test
 
-CMAKE_OFF=	ENABLE_COMMONCRYPTO ENABLE_GNUTLS
+CMAKE_OFF=	ENABLE_COMMONCRYPTO ENABLE_GNUTLS ENABLE_MBEDTLS
 
 .include <bsd.port.mk>

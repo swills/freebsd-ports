@@ -1,9 +1,9 @@
 # Created by: Ryan Steinmetz <zi@FreeBSD.org>
-# $FreeBSD: head/security/kstart/Makefile 461163 2018-02-07 18:24:16Z zi $
+# $FreeBSD: head/security/kstart/Makefile 496119 2019-03-18 02:28:10Z zi $
 
 PORTNAME=	kstart
 DISTVERSION=	4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://archives.eyrie.org/software/kerberos/ \
 		ZI

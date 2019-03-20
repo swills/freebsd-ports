@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/go-httptreemux/Makefile 423716 2016-10-10 20:49:45Z cs $
+# $FreeBSD: head/net/go-httptreemux/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	httptreemux
 PORTVERSION=	3.4.0
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	High-speed, flexible, tree-based HTTP router for Go
 
 LICENSE=	MIT
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 BUILD_DEPENDS= ${LOCALBASE}/${GO_LIBDIR}/github.com/dimfeld/httppath.a:net/go-httppath
 

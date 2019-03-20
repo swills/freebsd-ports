@@ -1,5 +1,5 @@
 # Created by: Carlo Strub <cs@FreeBSD.org>
-# $FreeBSD: head/devel/go-goregen/Makefile 418401 2016-07-11 20:04:27Z cs $
+# $FreeBSD: head/devel/go-goregen/Makefile 496313 2019-03-20 06:42:08Z tobik $
 
 PORTNAME=	goregen
 PORTVERSION=	20160303
@@ -10,6 +10,9 @@ MAINTAINER=	cs@FreeBSD.org
 COMMENT=	randexp for Go
 
 LICENSE=	APACHE20
+
+DEPRECATED=		Go libraries should not be packaged
+EXPIRATION_DATE=	2019-03-31
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	zach-klippenstein

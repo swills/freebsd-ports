@@ -1,8 +1,8 @@
-# $FreeBSD: head/multimedia/librtmp/Makefile 482967 2018-10-25 11:54:50Z woodsb02 $
+# $FreeBSD: head/multimedia/librtmp/Makefile 496010 2019-03-17 00:54:15Z hrs $
 
 PORTNAME=	librtmp
 PORTVERSION=	2.4.20151223
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	multimedia net
 MASTER_SITES=	LOCAL/hrs
 DISTNAME=	rtmpdump-2.4.fa8646da
@@ -18,6 +18,7 @@ USE_LDCONFIG=	yes
 
 CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
-WRKSRC=		${WRKDIR}/${DISTNAME}/librtmp
+PATCH_WRKSRC=	${WRKDIR}/${DISTNAME}
+WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
 
 .include <bsd.port.mk>

@@ -1,4 +1,4 @@
-# $FreeBSD: head/print/Makefile 488807 2018-12-31 17:55:45Z rene $
+# $FreeBSD: head/print/Makefile 495967 2019-03-16 21:55:51Z tcberner $
 #
 
     COMMENT = Desktop publishing
@@ -92,7 +92,6 @@
     SUBDIR += indexinfo
     SUBDIR += jabref
     SUBDIR += kde_poster
-    SUBDIR += kpdftool
     SUBDIR += latex-beamer
     SUBDIR += latex-biber
     SUBDIR += latex-ltablex
@@ -222,7 +221,6 @@
     SUBDIR += rubygem-rbpdf
     SUBDIR += rubygem-rbpdf-font
     SUBDIR += rubygem-ttfunk
-    SUBDIR += scribus
     SUBDIR += scribus-devel
     SUBDIR += sgf2tex
     SUBDIR += splix
