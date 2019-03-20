@@ -9,7 +9,6 @@ MASTER_SITES=	GNOME
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Convenience library for the geocoding and reverse geocoding
 
-BUILD_DEPENDS=	gtkdoc-scan:textproc/gtk-doc
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib \
 		libsoup-2.4.so:devel/libsoup
 
@@ -20,5 +19,12 @@ USE_GNOME=	glib20 introspection:build
 USE_LDCONFIG=	yes
 MESON_ARGS=	-Denable-installed-tests=false
 #MAKE_ENV=	XDG_CACHE_HOME=${WRKDIR}
+
+OPTIONS_DEFINE=	GTKDOC
+OPTIONS_SUB=	yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtkdoc-scan:textproc/gtk-doc
+GTKDOC_MESON_TRUE=	enable-gtk-doc
 
 .include <bsd.port.mk>
