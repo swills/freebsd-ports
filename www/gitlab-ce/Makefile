@@ -75,9 +75,9 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-mini_magick>=0:graphics/rubygem-mini_magick \
 	rubygem-fog-aws>=3.3:net/rubygem-fog-aws \
 	rubygem-fog-core210>=2.1.0:devel/rubygem-fog-core210 \
-	rubygem-fog-google17>=1.7.1:net/rubygem-fog-google17 \
-	rubygem-fog-local>=0.3:net/rubygem-fog-local \
-	rubygem-fog-openstack02>=0.1:net/rubygem-fog-openstack02 \
+	rubygem-fog-google>=1.8:net/rubygem-fog-google \
+	rubygem-fog-local>=0.6:net/rubygem-fog-local \
+	rubygem-fog-openstack>=1.0:net/rubygem-fog-openstack \
 	rubygem-fog-rackspace>=0.1.1:net/rubygem-fog-rackspace \
 	rubygem-fog-aliyun02>=0.2.0:net/rubygem-fog-aliyun02 \
 	rubygem-google-api-client>=0.23:devel/rubygem-google-api-client \
