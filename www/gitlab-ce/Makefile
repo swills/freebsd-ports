@@ -61,7 +61,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-rubyzip>=1.2.2:archivers/rubygem-rubyzip \
 	rubygem-browser>=2.5:www/rubygem-browser \
 	rubygem-gpgme>=2.0.18:security/rubygem-gpgme \
-	rubygem-gitlab_omniauth-ldap20>=2.0.4:net/rubygem-gitlab_omniauth-ldap20 \
+	rubygem-gitlab_omniauth-ldap>=2.1.1:net/rubygem-gitlab_omniauth-ldap \
 	rubygem-net-ldap>=0.16.0:net/rubygem-net-ldap \
 	rubygem-grape11>=1.1:devel/rubygem-grape11 \
 	rubygem-grape-entity>=0.7.1:devel/rubygem-grape-entity \
