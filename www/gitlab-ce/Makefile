@@ -28,7 +28,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-responders-rails50>=2.0:www/rubygem-responders-rails50 \
 	rubygem-sprockets3>=3.7:devel/rubygem-sprockets3 \
 	rubygem-gitlab-default_value_for>=3.1.1:devel/rubygem-gitlab-default_value_for \
-	rubygem-rugged>=0.27.0:devel/rubygem-rugged \
+	rubygem-rugged>=0.28.0:devel/rubygem-rugged \
 	rubygem-grape-path-helpers>=1.0:devel/rubygem-grape-path-helpers \
 	rubygem-faraday>=0.12.0:www/rubygem-faraday \
 	rubygem-devise-rails50>=4.4:devel/rubygem-devise-rails50 \
