@@ -221,7 +221,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	3f8131133bf6310a7fc05d7a332b4560edb456ef
+GL_COMMIT=	2f25e43662addc546605cb161396a3fad299ecdb
 
 USERS=	git
 GROUPS=	git
