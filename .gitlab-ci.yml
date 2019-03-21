@@ -1,0 +1,32 @@
+head-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  before_script:
+    - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+    - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+    - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only a766eff0560c...origin/MFH/r496263/2019Q1 | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+120-amd64:
+  tags:
+    - FreeBSD
+  before_script:
+    - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+    - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+    - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only a766eff0560c...origin/MFH/r496263/2019Q1 | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 120-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+112-amd64:
+  tags:
+    - FreeBSD
+  before_script:
+    - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+    - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+    - PORT_LIST=$(mktemp) ; git diff --no-prefix --name-only a766eff0560c...origin/MFH/r496263/2019Q1 | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST}
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
