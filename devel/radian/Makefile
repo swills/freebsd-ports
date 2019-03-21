@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/radian/Makefile 495207 2019-03-09 21:47:52Z yuri $
+# $FreeBSD: head/devel/radian/Makefile 496417 2019-03-21 04:40:02Z yuri $
 
 PORTNAME=	radian
-DISTVERSION=	0.3.3
+DISTVERSION=	0.3.4
 CATEGORIES=	devel math python
 MASTER_SITES=	CHEESESHOP
 

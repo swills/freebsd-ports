@@ -1,5 +1,5 @@
 # Created by: Charlie & <root@dev2.rambler.ru>
-# $FreeBSD: head/www/p5-Catalyst-Component-InstancePerContext/Makefile 481365 2018-10-06 13:06:42Z des $
+# $FreeBSD: head/www/p5-Catalyst-Component-InstancePerContext/Makefile 496321 2019-03-20 09:01:03Z amdmi3 $
 
 PORTNAME=	Catalyst-Component-InstancePerContext
 PORTVERSION=	0.001001
@@ -11,11 +11,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	oleg@mamontov.net
 COMMENT=	Return a new instance a component on each request
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-Catalyst-Runtime>=0:www/p5-Catalyst-Runtime	\
 		p5-Moose>=0:devel/p5-Moose
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

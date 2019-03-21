@@ -1,8 +1,8 @@
 # Created by: chinsan <chinsan.tw@gmail.com>
-# $FreeBSD: head/textproc/p5-ack/Makefile 496286 2019-03-19 17:49:18Z sunpoet $
+# $FreeBSD: head/textproc/p5-ack/Makefile 496373 2019-03-20 18:03:39Z sunpoet $
 
 PORTNAME=	ack
-PORTVERSION=	2.26
+PORTVERSION=	2.28
 CATEGORIES=	textproc sysutils perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:PETDANCE

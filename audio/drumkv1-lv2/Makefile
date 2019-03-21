@@ -1,7 +1,7 @@
-# $FreeBSD: head/audio/drumkv1-lv2/Makefile 494764 2019-03-06 03:42:15Z yuri $
+# $FreeBSD: head/audio/drumkv1-lv2/Makefile 496357 2019-03-20 17:59:19Z yuri $
 
 PORTNAME=	drumkv1
-DISTVERSION=	0.9.5
+DISTVERSION=	0.9.6
 CATEGORIES=	audio multimedia
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	-lv2

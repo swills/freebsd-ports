@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/benchmarks/p5-Benchmark-Stopwatch/Makefile 474242 2018-07-09 08:40:17Z mat $
+# $FreeBSD: head/benchmarks/p5-Benchmark-Stopwatch/Makefile 496433 2019-03-21 09:01:03Z amdmi3 $
 
 PORTNAME=	Benchmark-Stopwatch
 PORTVERSION=	0.05
@@ -11,11 +11,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	perl@FreeBSD.org
 COMMENT=	Simple timing of stages of your code
 
+LICENSE=	ART10 GPLv1+
+LICENSE_COMB=	dual
+
 BUILD_DEPENDS=	${RUN_DEPENDS} \
 		p5-Test-LongString>=0:devel/p5-Test-LongString
 RUN_DEPENDS=	p5-Clone>=0:devel/p5-Clone
 
 USES=		perl5
 USE_PERL5=	configure
+NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Kris Moore <kris@pcbsd.org>
-# $FreeBSD: head/devel/qtcreator/Makefile 494451 2019-03-02 19:19:57Z tcberner $
+# $FreeBSD: head/devel/qtcreator/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	qtcreator
 DISTVERSION=	4.8.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	QT/official_releases/qtcreator/${DISTVERSION:R}/${DISTVERSION}
 DISTNAME=	qt-creator-opensource-src-${DISTVERSION}

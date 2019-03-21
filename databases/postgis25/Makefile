@@ -1,5 +1,5 @@
 # Created by: Loïc BARTOLETTI <lbartoletti@tuxfamily.org>
-# $FreeBSD: head/databases/postgis25/Makefile 495753 2019-03-15 00:47:02Z wen $
+# $FreeBSD: head/databases/postgis25/Makefile 496315 2019-03-20 07:02:30Z tobik $
 
 PORTNAME=	postgis
 PORTVERSION=	2.5.2
@@ -41,8 +41,6 @@ LOADERGUI_DESC=	Enable shp2pgsql-gui
 TOPOLOGY_DESC=	Topology support
 SFCGAL_DESC=	Enable sfcgal
 ADDRSTD_DESC=	Enable address standardizer
-
-CONFLICTS_INSTALL=	postgis20  postgis21 postgis22 postgis23 postgis24
 
 LOADERGUI_CONFIGURE_WITH=	gui
 LOADERGUI_USE=			GNOME=gtk20

@@ -1,9 +1,9 @@
 # Created by: Stefan Bethke <stb@lassitu.de>
-# $FreeBSD: head/www/gitea/Makefile 494679 2019-03-05 06:45:11Z joneum $
+# $FreeBSD: head/www/gitea/Makefile 496334 2019-03-20 11:59:23Z joneum $
 
 PORTNAME=	gitea
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.7.3
+DISTVERSION=	1.7.4
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de

@@ -1,8 +1,8 @@
 # Created by: Joe Horn <joehorn@gmail.com>
-# $FreeBSD: head/chinese/wordpress-zh_TW/Makefile 495392 2019-03-11 20:29:12Z antoine $
+# $FreeBSD: head/chinese/wordpress-zh_TW/Makefile 496437 2019-03-21 10:07:03Z joneum $
 
 PORTNAME=	wordpress
-PORTVERSION=	5.1
+PORTVERSION=	5.1.1
 DISTVERSIONSUFFIX=	-zh_TW
 CATEGORIES=	chinese www
 MASTER_SITES=	http://tw.wordpress.org/
@@ -14,7 +14,6 @@ COMMENT=	State-of-the-art semantic personal publishing platform
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-BROKEN=		unfetchable
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USES=		php:web

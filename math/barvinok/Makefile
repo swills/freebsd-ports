@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/barvinok/Makefile 486921 2018-12-08 08:45:33Z yuri $
+# $FreeBSD: head/math/barvinok/Makefile 496429 2019-03-21 07:34:13Z yuri $
 
 PORTNAME=	barvinok
 DISTVERSION=	0.41.1
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libglpk.so:math/glpk \
 		libntl.so:math/ntl \
 		libpolylibgmp.so:math/polylib
 
-USES=		gmake libtool localbase:ldflags pkgconfig
+USES=		compiler:c11 gmake libtool localbase:ldflags pkgconfig
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-static --enable-shared --enable-shared-barvinok \
 		--with-gmp=system --with-polylib=system --with-isl=system

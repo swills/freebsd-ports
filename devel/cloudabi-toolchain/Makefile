@@ -1,8 +1,9 @@
 # Created by: Ed Schouten <ed@FreeBSD.org>
-# $FreeBSD: head/devel/cloudabi-toolchain/Makefile 495721 2019-03-14 15:35:28Z brooks $
+# $FreeBSD: head/devel/cloudabi-toolchain/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	cloudabi-toolchain
 PORTVERSION=	1.11
+PORTREVISION=	1
 PORTREVISON=	1
 CATEGORIES=	devel
 MASTER_SITES=	# None

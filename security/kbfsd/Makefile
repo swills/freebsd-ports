@@ -1,4 +1,4 @@
-# $FreeBSD: head/security/kbfsd/Makefile 477787 2018-08-22 13:42:36Z 0mp $
+# $FreeBSD: head/security/kbfsd/Makefile 496421 2019-03-21 06:39:39Z antoine $
 
 PORTNAME=	kbfsd
 DISTVERSIONPREFIX=	v
@@ -10,6 +10,8 @@ COMMENT=	Service daemon for the Keybase filesystem (KBFS)
 
 # There is no license file in v1.2.0.
 LICENSE=	BSD2CLAUSE
+
+BROKEN=		conflicting dependencies
 
 RUN_DEPENDS=	kbfsfuse:security/kbfs \
 		keybase:security/keybase

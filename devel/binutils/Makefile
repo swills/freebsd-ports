@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/binutils/Makefile 493400 2019-02-20 00:48:36Z jhb $
+# $FreeBSD: head/devel/binutils/Makefile 496318 2019-03-20 08:39:43Z bapt $
 
 PORTNAME=	binutils
 PORTVERSION=	2.32
@@ -89,7 +89,7 @@ STATIC_LDFLAGS+=	-all-static
 .include <bsd.port.pre.mk>
 
 # Actual earliest version may differ slightly
-.if ${ARCH} != mips && ${ARCH} != mips64 && ${ARCH} != powerpc && ${ARCH} != powerpc64 && ${ARCH} != powerpcspe && !defined(PKGNAMEPREFIX)
+.if ${ARCH} != sparc64 && ${ARCH} != mips && ${ARCH} != mips64 && ${ARCH} != powerpc && ${ARCH} != powerpc64 && ${ARCH} != powerpcspe && !defined(PKGNAMEPREFIX)
 CONFIGURE_ARGS+=	--enable-gold --enable-plugins
 CXXFLAGS+=	-Wno-c++11-narrowing
 PLIST_SUB+=	GOLD=""

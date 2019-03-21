@@ -1,4 +1,4 @@
-# $FreeBSD: head/www/hs-webkit/Makefile 489474 2019-01-06 12:18:06Z arrowd $
+# $FreeBSD: head/www/hs-webkit/Makefile 496425 2019-03-21 07:04:43Z antoine $
 
 PORTNAME=	webkit
 PORTVERSION=	0.14.2.1
@@ -9,6 +9,9 @@ MAINTAINER=	haskell@FreeBSD.org
 COMMENT=	Binding to the Webkit library
 
 LICENSE=	LGPL21
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=	2019-03-24
 
 USES=		pkgconfig
 USE_CABAL=	cairo>=0.13.0.0 glib>=0.13.1.0 gtk>=0.13.0.0 mtl \

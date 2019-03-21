@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/editors/gwrite/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/editors/gwrite/Makefile 496427 2019-03-21 07:10:28Z antoine $
 
 PORTNAME=	gwrite
 PORTVERSION=	0.5.1
@@ -13,6 +13,9 @@ COMMENT=	Simple HTML format editor
 
 LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=	2019-03-24
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-distutils-extra>=2.15:devel/py-python-distutils-extra@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jswebkit>=0:www/py-jswebkit@${PY_FLAVOR} \

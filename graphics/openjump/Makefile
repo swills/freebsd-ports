@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/graphics/openjump/Makefile 479406 2018-09-10 13:14:50Z mat $
+# $FreeBSD: head/graphics/openjump/Makefile 496320 2019-03-20 08:55:02Z meta $
 
 PORTNAME=	OpenJUMP
-PORTVERSION=	1.13
+PORTVERSION=	1.14.1
 CATEGORIES=	graphics java geography
 MASTER_SITES=	SF/jump-pilot/OpenJUMP/${PORTVERSION}
 DISTNAME=	${PORTNAME}-Portable-${PORTVERSION}-r${PLUS_REV}-PLUS
@@ -37,16 +37,14 @@ LICENSE_NAME_JYTHON=	The Jython License
 LICENSE_FILE_JYTHON=	${WRKSRC}/licenses/jython_license.txt
 LICENSE_PERMS_JYTHON=	auto-accept
 
-### Desktop Entries ???
-
 USES=		zip
 USE_JAVA=	yes
-JAVA_VERSION=	1.7+
+JAVA_VERSION=	1.8+
 NO_BUILD=	yes
 NO_ARCH=	yes
 TARGET_DIR=	${STAGEDIR}${PREFIX}/${PORTNAME}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-r${PLUS_REV}-PLUS
-PLUS_REV=	5792
+PLUS_REV=	6147
 
 OPTIONS_DEFINE=	DOCS
 

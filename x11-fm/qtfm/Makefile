@@ -1,8 +1,8 @@
 # Created by: Zhihao Yuan <lichray@gmail.com>
-# $FreeBSD: head/x11-fm/qtfm/Makefile 495174 2019-03-09 15:44:27Z tcberner $
+# $FreeBSD: head/x11-fm/qtfm/Makefile 496390 2019-03-20 21:50:23Z fernape $
 
 PORTNAME=	qtfm
-DISTVERSION=	6.1.7
+DISTVERSION=	6.1.8
 CATEGORIES=	x11-fm
 
 MAINTAINER=	ports@FreeBSD.org

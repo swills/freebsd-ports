@@ -1,7 +1,7 @@
-# $FreeBSD: head/multimedia/musikcube/Makefile 496306 2019-03-20 02:29:00Z yuri $
+# $FreeBSD: head/multimedia/musikcube/Makefile 496413 2019-03-21 04:15:34Z yuri $
 
 PORTNAME=	musikcube
-DISTVERSION=	0.64.0
+DISTVERSION=	0.64.1
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	yuri@FreeBSD.org

@@ -1,8 +1,8 @@
-# $FreeBSD: head/misc/nnn/Makefile 493476 2019-02-20 23:23:53Z swills $
+# $FreeBSD: head/misc/nnn/Makefile 496330 2019-03-20 11:03:53Z swills $
 
 PORTNAME=	nnn
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.3
+DISTVERSION=	2.4
 CATEGORIES=	misc shells
 
 MAINTAINER=	dg@syrec.org

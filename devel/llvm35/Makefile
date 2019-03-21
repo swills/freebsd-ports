@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm35/Makefile 487272 2018-12-12 01:35:33Z gerald $
+# $FreeBSD: head/devel/llvm35/Makefile 496395 2019-03-20 23:18:50Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	3.5.2
@@ -10,6 +10,9 @@ PKGNAMESUFFIX=	${LLVM_SUFFIX}
 
 MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	Low Level Virtual Machine
+
+DEPRECATED=	Obsolete and unmaintained
+EXPIRATION_DATE=2019-08-31
 
 BROKEN_aarch64=		fails to build
 BROKEN_armv6=		fails to build: llvm-config.cpp:46:10: 'LibraryDependencies.inc' file not found

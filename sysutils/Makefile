@@ -1,4 +1,4 @@
-# $FreeBSD: head/sysutils/Makefile 495967 2019-03-16 21:55:51Z tcberner $
+# $FreeBSD: head/sysutils/Makefile 496423 2019-03-21 06:42:16Z yuri $
 #
 
     COMMENT = System utilities
@@ -1008,6 +1008,7 @@
     SUBDIR += py-bcfg2
     SUBDIR += py-bitrot
     SUBDIR += py-cdmi
+    SUBDIR += py-cpuinfo
     SUBDIR += py-croniter
     SUBDIR += py-crontab
     SUBDIR += py-diffoscope

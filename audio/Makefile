@@ -1,4 +1,4 @@
-# $FreeBSD: head/audio/Makefile 495973 2019-03-16 22:31:30Z tcberner $
+# $FreeBSD: head/audio/Makefile 496382 2019-03-20 19:06:00Z feld $
 #
 
     COMMENT = Audio tools
@@ -550,6 +550,7 @@
     SUBDIR += mpg321
     SUBDIR += mpiosh
     SUBDIR += mps
+    SUBDIR += murmur
     SUBDIR += musepack
     SUBDIR += musescore
     SUBDIR += musicbox-tag-editor

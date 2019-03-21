@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/Makefile 495974 2019-03-16 22:34:36Z tcberner $
+# $FreeBSD: head/comms/Makefile 496351 2019-03-20 16:31:19Z yuri $
 #
 
     COMMENT = Communication utilities
@@ -93,6 +93,7 @@
     SUBDIR += locator
     SUBDIR += lrzsz
     SUBDIR += lysdr
+    SUBDIR += mbelib
     SUBDIR += mgetty+sendfax
     SUBDIR += minicom
     SUBDIR += mlan3

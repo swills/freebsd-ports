@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/phpunit7/Makefile 494022 2019-02-27 05:52:40Z joneum $
+# $FreeBSD: head/devel/phpunit7/Makefile 496354 2019-03-20 16:51:23Z joneum $
 
 PORTNAME=	phpunit
-DISTVERSION=	7.5.6
+DISTVERSION=	7.5.7
 CATEGORIES=	devel www
 MASTER_SITES=	https://phar.phpunit.de/
 PKGNAMESUFFIX=	7${PHP_PKGNAMESUFFIX}

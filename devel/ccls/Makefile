@@ -1,8 +1,8 @@
-# $FreeBSD: head/devel/ccls/Makefile 494601 2019-03-04 15:20:42Z tobik $
+# $FreeBSD: head/devel/ccls/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	ccls
 DISTVERSION=	0.20190301
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	LOCAL/tobik
 

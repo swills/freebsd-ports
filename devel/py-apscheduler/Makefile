@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/py-apscheduler/Makefile 477259 2018-08-15 19:29:57Z jbeich $
+# $FreeBSD: head/devel/py-apscheduler/Makefile 496397 2019-03-21 00:46:41Z jbeich $
 
 PORTNAME=	apscheduler
-PORTVERSION=	3.5.3
+PORTVERSION=	3.6.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/llvm38/Makefile 490680 2019-01-18 22:57:33Z brooks $
+# $FreeBSD: head/devel/llvm38/Makefile 496394 2019-03-20 23:09:22Z brooks $
 
 PORTNAME=	llvm
 DISTVERSION=	3.8.1
@@ -13,6 +13,7 @@ MAINTAINER=	brooks@FreeBSD.org
 COMMENT=	LLVM and Clang
 
 DEPRECATED=	Obsolete and unmaintained
+EXPIRATION_DATE=	2019-03-30
 
 BROKEN_powerpc64=	fails to compile: internal compiler error: Killed (program cc1plus)
 

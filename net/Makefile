@@ -1,4 +1,4 @@
-# $FreeBSD: head/net/Makefile 496060 2019-03-17 13:28:57Z pi $
+# $FreeBSD: head/net/Makefile 496360 2019-03-20 18:01:54Z sunpoet $
 #
 
     COMMENT = Networking tools
@@ -1233,6 +1233,7 @@
     SUBDIR += rubygem-fog-dynect
     SUBDIR += rubygem-fog-ecloud
     SUBDIR += rubygem-fog-google
+    SUBDIR += rubygem-fog-google17
     SUBDIR += rubygem-fog-internet-archive
     SUBDIR += rubygem-fog-joyent
     SUBDIR += rubygem-fog-local

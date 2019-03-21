@@ -1,21 +1,22 @@
 # Created by: Frederic Culot <culot@FreeBSD.org>
-# $FreeBSD: head/www/p5-LWP-MediaTypes/Makefile 449893 2017-09-15 08:58:46Z mat $
+# $FreeBSD: head/www/p5-LWP-MediaTypes/Makefile 496363 2019-03-20 18:02:09Z sunpoet $
 
 PORTNAME=	LWP-MediaTypes
-PORTVERSION=	6.02
-PORTREVISION=	1
+PORTVERSION=	6.04
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	perl@FreeBSD.org
+MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Guess media type for a file or a URL
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
 
-NO_ARCH=	yes
+TEST_DEPENDS=	p5-Test-Fatal>=0:devel/p5-Test-Fatal
+
 USES=		perl5
 USE_PERL5=	configure
 
+NO_ARCH=	yes
 .include <bsd.port.mk>

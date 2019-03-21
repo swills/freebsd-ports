@@ -1,8 +1,8 @@
-# $FreeBSD: head/science/lammps/Makefile 496076 2019-03-17 17:32:57Z yuri $
+# $FreeBSD: head/science/lammps/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	lammps
 PORTVERSION=	${GH_TAGNAME:C/(stable|patch)_([0-9]{1,2})([A-Z][a-z][a-z])([0-9]{4})/\4.\3.\2/S/Jan/01/S/Feb/02/S/Mar/03/S/Apr/04/S/May/05/S/Jun/06/S/Jul/07/S/Aug/08/S/Sep/09/S/Oct/10/S/Nov/11/S/Dec/12/}
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

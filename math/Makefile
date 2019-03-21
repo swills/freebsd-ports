@@ -1,4 +1,4 @@
-# $FreeBSD: head/math/Makefile 496268 2019-03-19 16:04:10Z swills $
+# $FreeBSD: head/math/Makefile 496352 2019-03-20 16:31:32Z swills $
 #
 
     COMMENT = Mathematics
@@ -172,6 +172,7 @@
     SUBDIR += clrng
     SUBDIR += cminpack
     SUBDIR += cmlib
+    SUBDIR += cocoalib
     SUBDIR += coin-or-data-netlib
     SUBDIR += coin-or-data-sample
     SUBDIR += coin-or-data-stochastic
@@ -333,6 +334,7 @@
     SUBDIR += liblbfgs
     SUBDIR += libmesh
     SUBDIR += libmissing
+    SUBDIR += libnormaliz
     SUBDIR += libocas
     SUBDIR += liborigin
     SUBDIR += libpgmath

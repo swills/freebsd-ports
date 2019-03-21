@@ -1,10 +1,10 @@
 # Created by: Fabian Keil <fk@fabiankeil.de>
-# $FreeBSD: head/security/afl/Makefile 490543 2019-01-17 10:47:48Z tobik $
+# $FreeBSD: head/security/afl/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	afl
 PORTVERSION=	2.52
 DISTVERSIONSUFFIX=	b
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://lcamtuf.coredump.cx/afl/releases/
 

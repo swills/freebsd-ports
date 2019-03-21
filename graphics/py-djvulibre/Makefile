@@ -1,8 +1,8 @@
 # Created by: Yuri Victorovich <yuri@rawbw.com>
-# $FreeBSD: head/graphics/py-djvulibre/Makefile 493718 2019-02-23 17:29:45Z yuri $
+# $FreeBSD: head/graphics/py-djvulibre/Makefile 496381 2019-03-20 19:02:44Z yuri $
 
 PORTNAME=	python-djvulibre
-DISTVERSION=	0.8.3
+DISTVERSION=	0.8.4
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

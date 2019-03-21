@@ -1,8 +1,8 @@
 # Created by: miwi
-# $FreeBSD: head/german/wordpress/Makefile 495392 2019-03-11 20:29:12Z antoine $
+# $FreeBSD: head/german/wordpress/Makefile 496437 2019-03-21 10:07:03Z joneum $
 
 PORTNAME=	wordpress
-DISTVERSION=	5.1
+DISTVERSION=	5.1.1
 DISTVERSIONSUFFIX=	-de_DE
 CATEGORIES=	german www
 MASTER_SITES=	http://de.wordpress.org/
@@ -14,7 +14,6 @@ LICENSE=	GPLv2 GPLv3
 LICENSE_COMB=	dual
 LICENSE_FILE=	${WRKSRC}/license.txt
 
-BROKEN=		unfetchable
 CONFLICTS_INSTALL=	wordpress-[0-9].* ja-wordpress-[0-9].* ru-wordpress-[0-9].*
 
 NO_ARCH=	yes

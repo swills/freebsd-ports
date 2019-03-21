@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gr-osmosdr/Makefile 493800 2019-02-24 19:12:54Z martymac $
+# $FreeBSD: head/comms/gr-osmosdr/Makefile 496422 2019-03-21 06:40:33Z antoine $
 
 PORTNAME=	gr-osmosdr
 DISTVERSIONPREFIX=	v
@@ -12,6 +12,8 @@ MAINTAINER=	martymac@FreeBSD.org
 COMMENT=	GNU Radio OsmoSDR module
 
 LICENSE=	GPLv3
+
+BROKEN=		fails to configure
 
 BUILD_DEPENDS=	swig3.0:devel/swig30 \
 		cheetah:devel/py-cheetah

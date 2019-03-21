@@ -1,9 +1,8 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/net/rubygem-fog-google/Makefile 480518 2018-09-23 18:19:16Z mfechner $
+# $FreeBSD: head/net/rubygem-fog-google/Makefile 496371 2019-03-20 18:03:28Z sunpoet $
 
 PORTNAME=	fog-google
-PORTVERSION=	1.7.1
-PORTREVISION=	1
+PORTVERSION=	1.8.2
 CATEGORIES=	net rubygems
 MASTER_SITES=	RG
 
@@ -13,9 +12,9 @@ COMMENT=	Module for the 'fog' gem to support Google Cloud
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	rubygem-fog-core>=0:devel/rubygem-fog-core \
-		rubygem-fog-json>=0:devel/rubygem-fog-json \
-		rubygem-fog-xml>=0:textproc/rubygem-fog-xml \
+RUN_DEPENDS=	rubygem-fog-core210>=0:devel/rubygem-fog-core210 \
+		rubygem-fog-json>=1.2:devel/rubygem-fog-json \
+		rubygem-fog-xml>=0.1.0:textproc/rubygem-fog-xml \
 		rubygem-google-api-client>=0.23.0:devel/rubygem-google-api-client
 
 USES=		gem

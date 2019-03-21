@@ -1,8 +1,8 @@
-# $FreeBSD: head/audio/synthv1-lv2/Makefile 494767 2019-03-06 03:44:07Z yuri $
+# $FreeBSD: head/audio/synthv1-lv2/Makefile 496412 2019-03-21 04:10:07Z yuri $
 
 PORTNAME=	synthv1
 DISTVERSIONPREFIX=	${PORTNAME}_
-DISTVERSION=	0_9_5
+DISTVERSION=	0_9_6
 CATEGORIES=	audio
 PKGNAMESUFFIX=	-lv2
 

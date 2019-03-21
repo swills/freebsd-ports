@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/gnuradio/Makefile 496021 2019-03-17 07:50:08Z antoine $
+# $FreeBSD: head/comms/gnuradio/Makefile 496344 2019-03-20 14:07:35Z antoine $
 
 PORTNAME=	gnuradio
 #MASTER_SITES=	http://gnuradio.org/releases/gnuradio/
@@ -15,7 +15,7 @@ BROKEN_aarch64=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5:
 BROKEN_armv6=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 BROKEN_armv7=		fails to compile: /usr/lib/clang/5.0.0/include/mmintrin.h:47:5: use of undeclared identifier '__builtin_ia32_emms'; did you mean '__builtin_isless'?
 
-BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/lxml:devel/py-lxml@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_SITELIBDIR}/yaml/__init__.py:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/gi/__init__.py:devel/py-gobject3@${PY_FLAVOR} \

@@ -1,5 +1,5 @@
 # Created by: Hon-Yu Lawrence Cheung (cheunghonyu@gmail.com)
-# $FreeBSD: head/deskutils/rednotebook/Makefile 472884 2018-06-20 17:05:41Z mat $
+# $FreeBSD: head/deskutils/rednotebook/Makefile 496428 2019-03-21 07:12:59Z antoine $
 
 PORTNAME=	rednotebook
 PORTVERSION=	1.9.0
@@ -12,6 +12,9 @@ MAINTAINER=	cheunghonyu@gmail.com
 COMMENT=	Modern journal written in Python
 
 LICENSE=	GPLv2
+
+DEPRECATED=	Uses webkit-gtk2 which has security issues
+EXPIRATION_DATE=	2019-03-24
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}webkitgtk>0:www/py-webkitgtk@${PY_FLAVOR} \

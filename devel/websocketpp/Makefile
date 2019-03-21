@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/websocketpp/Makefile 488341 2018-12-25 20:25:39Z tcberner $
+# $FreeBSD: head/devel/websocketpp/Makefile 496346 2019-03-20 14:53:29Z jbeich $
 
 PORTNAME=	websocketpp
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	arved@FreeBSD.org

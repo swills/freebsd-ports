@@ -1,8 +1,8 @@
-# $FreeBSD: head/x11-themes/materia-gtk-theme/Makefile 494652 2019-03-04 21:39:09Z rigoletto $
+# $FreeBSD: head/x11-themes/materia-gtk-theme/Makefile 496380 2019-03-20 19:00:24Z swills $
 
 PORTNAME=	materia-gtk-theme
 DISTVERSIONPREFIX=	v
-DISTVERSION=	20190201
+DISTVERSION=	20190315
 CATEGORIES=	x11-themes
 
 MAINTAINER=	tagattie@yandex.com

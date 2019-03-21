@@ -1,7 +1,8 @@
-# $FreeBSD: head/devel/shiboken2/Makefile 492770 2019-02-12 10:25:44Z tobik $
+# $FreeBSD: head/devel/shiboken2/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	shiboken2
 DISTVERSION=	5.12.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	QT/official_releases/QtForPython/shiboken2/PySide2-${DISTVERSION}-src
 DISTNAME=	pyside-setup-everywhere-src-${DISTVERSION}

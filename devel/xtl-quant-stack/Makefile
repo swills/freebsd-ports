@@ -1,7 +1,7 @@
-# $FreeBSD: head/devel/xtl-quant-stack/Makefile 492572 2019-02-10 00:08:23Z yuri $
+# $FreeBSD: head/devel/xtl-quant-stack/Makefile 496384 2019-03-20 19:28:08Z yuri $
 
 PORTNAME=	xtl
-DISTVERSION=	0.5.4
+DISTVERSION=	0.6.0
 CATEGORIES=	devel
 PKGNAMESUFFIX=	-quant-stack
 

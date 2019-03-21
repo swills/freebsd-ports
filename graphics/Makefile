@@ -1,4 +1,4 @@
-# $FreeBSD: head/graphics/Makefile 496288 2019-03-19 18:42:59Z danfe $
+# $FreeBSD: head/graphics/Makefile 496325 2019-03-20 09:35:39Z mm $
 #
 
     COMMENT = Graphics tools and libraries
@@ -733,6 +733,7 @@
     SUBDIR += pear-Image_GraphViz
     SUBDIR += pear-Image_Transform
     SUBDIR += pecl-imagick
+    SUBDIR += pecl-imagick-im7
     SUBDIR += pecl-qrencode
     SUBDIR += pecomato
     SUBDIR += pencil2d

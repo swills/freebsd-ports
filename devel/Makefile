@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/Makefile 496089 2019-03-17 18:57:57Z sunpoet $
+# $FreeBSD: head/devel/Makefile 496389 2019-03-20 21:42:59Z pizzamig $
 #
 
     COMMENT = Development utilities
@@ -1588,6 +1588,7 @@
     SUBDIR += libstatgrab0
     SUBDIR += libstrfunc
     SUBDIR += libstroke
+    SUBDIR += libsysctlmibinfo
     SUBDIR += libsysinfo
     SUBDIR += libtai
     SUBDIR += libtap
@@ -5689,6 +5690,7 @@
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core
     SUBDIR += rubygem-fog-core1
+    SUBDIR += rubygem-fog-core210
     SUBDIR += rubygem-fog-json
     SUBDIR += rubygem-fog-json102
     SUBDIR += rubygem-font-awesome-rails

@@ -1,7 +1,7 @@
-# $FreeBSD: head/math/py-spot/Makefile 493545 2019-02-22 05:00:57Z yuri $
+# $FreeBSD: head/math/py-spot/Makefile 496415 2019-03-21 04:37:30Z yuri $
 
 PORTNAME=	spot
-DISTVERSION=	2.7.1
+DISTVERSION=	2.7.2
 CATEGORIES=	math
 MASTER_SITES=	http://www.lrde.epita.fr/dload/${PORTNAME}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

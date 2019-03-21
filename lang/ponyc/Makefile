@@ -1,4 +1,4 @@
-# $FreeBSD: head/lang/ponyc/Makefile 494995 2019-03-07 19:51:21Z swills $
+# $FreeBSD: head/lang/ponyc/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	ponyc
 DISTVERSION=	0.27.0
@@ -18,7 +18,7 @@ RUN_DEPENDS=	llvm-link${LLVM_VERSION}:devel/llvm${LLVM_VERSION}
 
 USES=		gmake ncurses compiler:c++11-lang
 
-LLVM_VERSION?=	${LLVM_DEFAULT}
+LLVM_VERSION?=	70
 
 PLIST_SUB=	VERSION="${DISTVERSION}" PONYARCH="${PONYARCH}"
 OPTIONS_SUB=	yes

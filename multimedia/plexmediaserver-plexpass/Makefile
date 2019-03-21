@@ -1,9 +1,9 @@
 # Created by: KalleDK <plexmaintainer@k-moeller.dk>
-# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 495615 2019-03-13 16:43:20Z feld $
+# $FreeBSD: head/multimedia/plexmediaserver-plexpass/Makefile 496348 2019-03-20 16:05:42Z feld $
 
-PORTVERSION=	1.15.1.791
-DISTVERSIONSUFFIX=8bec0f76c
-PORTREVISION=	1
+PORTVERSION=	1.15.2.793
+DISTVERSIONSUFFIX=782228f99
+PORTREVISION=	0
 MASTER_SITES=	https://downloads.plex.tv/plex-media-server-new/${DISTVERSION}-${DISTVERSIONSUFFIX}/freebsd/
 PKGNAMESUFFIX=	-plexpass
 DISTNAME=	PlexMediaServer-${DISTVERSION}-${DISTVERSIONSUFFIX}-FreeBSD-${ARCH}

@@ -1,8 +1,8 @@
 # Created by: Oliver Eikemeier
-# $FreeBSD: head/shells/bash/Makefile 490726 2019-01-19 17:25:02Z ehaupt $
+# $FreeBSD: head/shells/bash/Makefile 496327 2019-03-20 10:09:57Z ehaupt $
 
 PORTNAME=		bash
-PATCHLEVEL=		2
+PATCHLEVEL=		3
 PORTVERSION=		5.0.${PATCHLEVEL:S/^0//g}
 PORTREVISION?=		0
 CATEGORIES=		shells

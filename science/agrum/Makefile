@@ -1,7 +1,8 @@
-# $FreeBSD: head/science/agrum/Makefile 493042 2019-02-16 13:18:10Z antoine $
+# $FreeBSD: head/science/agrum/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	agrum
 DISTVERSION=	0.14.1
+PORTREVISION=	1
 CATEGORIES=	science math
 
 MAINTAINER=	yuri@FreeBSD.org

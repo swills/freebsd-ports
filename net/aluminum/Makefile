@@ -1,9 +1,10 @@
-# $FreeBSD: head/net/aluminum/Makefile 493654 2019-02-23 07:51:00Z yuri $
+# $FreeBSD: head/net/aluminum/Makefile 496337 2019-03-20 12:23:25Z jbeich $
 
 PORTNAME=	Aluminum
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.2.1-6
 DISTVERSIONSUFFIX=	-g78fa7ea
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	yuri@FreeBSD.org
