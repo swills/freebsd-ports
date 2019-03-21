@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 496432 2019-03-21 08:38:33Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.8.3
+PORTVERSION=	11.9.0-rc10
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -73,8 +73,8 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-hamlit>=2.8.8:www/rubygem-hamlit \
 	rubygem-carrierwave>=1.3.0:www/rubygem-carrierwave \
 	rubygem-mini_magick>=0:graphics/rubygem-mini_magick \
-	rubygem-fog-aws2>=2.0.1:net/rubygem-fog-aws2 \
-	rubygem-fog-core1>=1.44:devel/rubygem-fog-core1 \
+	rubygem-fog-aws>=3.3:net/rubygem-fog-aws \
+	rubygem-fog-core210>=2.1.0:devel/rubygem-fog-core210 \
 	rubygem-fog-google17>=1.7.1:net/rubygem-fog-google17 \
 	rubygem-fog-local>=0.3:net/rubygem-fog-local \
 	rubygem-fog-openstack02>=0.1:net/rubygem-fog-openstack02 \

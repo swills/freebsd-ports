@@ -1,5 +1,5 @@
 # Created by: Sunpoet Po-Chuan Hsieh <sunpoet@FreeBSD.org>
-# $FreeBSD: head/devel/rubygem-fog-core210/Makefile 496359 2019-03-20 18:01:48Z sunpoet $
+# $FreeBSD: head/devel/rubygem-fog-core/Makefile 464313 2018-03-12 21:16:48Z sunpoet $
 
 PORTNAME=	fog-core
 PORTVERSION=	2.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 PKGNAMESUFFIX=	210
 
-MAINTAINER=	sunpoet@FreeBSD.org
+MAINTAINER=	mfechner@FreeBSD.org
 COMMENT=	Shared classes and tests for fog providers and services
 
 LICENSE=	MIT
@@ -22,7 +22,5 @@ USES=		gem
 USE_RUBY=	yes
 
 NO_ARCH=	yes
-
-PORTSCOUT=	limit:^2\.1\.0
 
 .include <bsd.port.mk>
