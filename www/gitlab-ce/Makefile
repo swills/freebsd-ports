@@ -79,7 +79,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-fog-local>=0.6:net/rubygem-fog-local \
 	rubygem-fog-openstack>=1.0:net/rubygem-fog-openstack \
 	rubygem-fog-rackspace>=0.1.1:net/rubygem-fog-rackspace \
-	rubygem-fog-aliyun02>=0.2.0:net/rubygem-fog-aliyun02 \
+	rubygem-fog-aliyun>=0.3:net/rubygem-fog-aliyun \
 	rubygem-google-api-client>=0.23:devel/rubygem-google-api-client \
 	rubygem-unf>=0.1.4:textproc/rubygem-unf \
 	rubygem-seed-fu>=2.3.7:databases/rubygem-seed-fu \
