@@ -2,7 +2,8 @@
 # $FreeBSD: head/www/gitlab-ce/Makefile 496432 2019-03-21 08:38:33Z mfechner $
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	11.9.0-rc10
+#PORTVERSION=	11.9.0-rc10
+DISTVERSION=	11.9.0-rc10
 CATEGORIES=	www devel
 
 MAINTAINER=	mfechner@FreeBSD.org
@@ -104,7 +105,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-rack>=2.0.6:www/rubygem-rack \
 	rubygem-unicorn>=5.4.1:www/rubygem-unicorn \
-	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
+	rubygem-unicorn-worker-killer>=0.4.4:www/rubygem-unicorn-worker-killer \
 	rubygem-puma>=3.12:www/rubygem-puma \
 	rubygem-puma_worker_killer>=0:www/rubygem-puma_worker_killer \
 	rubygem-state_machines-activerecord>=0.5.1:databases/rubygem-state_machines-activerecord \
