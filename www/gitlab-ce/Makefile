@@ -103,7 +103,7 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-icalendar>=0:devel/rubygem-icalendar \
 	rubygem-diffy31>=3.1.0:textproc/rubygem-diffy31 \
 	rubygem-rack>=2.0.6:www/rubygem-rack \
-	rubygem-unicorn51>=5.1.0:www/rubygem-unicorn51 \
+	rubygem-unicorn>=5.4.1:www/rubygem-unicorn \
 	rubygem-unicorn-worker-killer044>=0.4.4:www/rubygem-unicorn-worker-killer044 \
 	rubygem-puma>=3.12:www/rubygem-puma \
 	rubygem-puma_worker_killer>=0:www/rubygem-puma_worker_killer \
@@ -119,14 +119,13 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-ruby-progressbar>=0:devel/rubygem-ruby-progressbar \
 	rubygem-settingslogic>=2.0.9:devel/rubygem-settingslogic \
 	rubygem-re2>=1.1.1:devel/rubygem-re2 \
-	rubygem-version_sorter21>=2.1.0:textproc/rubygem-version_sorter21 \
+	rubygem-version_sorter>=2.2.4:textproc/rubygem-version_sorter \
 	rubygem-js_regex>=3.1.0:textproc/rubygem-js_regex \
 	rubygem-device_detector>=0:devel/rubygem-device_detector \
 	rubygem-redis-rails-rails50>=5.0.1:www/rubygem-redis-rails-rails50 \
 	rubygem-redis3>=3.2:databases/rubygem-redis3 \
 	rubygem-connection_pool>=2.0:net/rubygem-connection_pool \
 	rubygem-discordrb-webhooks-blackst0ne>=3.3.0:net-im/rubygem-discordrb-webhooks-blackst0ne \
-	rubygem-hipchat15>=1.5.0:net-im/rubygem-hipchat15 \
 	rubygem-jira-ruby>=1.4:devel/rubygem-jira-ruby \
 	rubygem-flowdock>=0.7:www/rubygem-flowdock \
 	rubygem-slack-notifier1>=1.5.1:devel/rubygem-slack-notifier1 \
@@ -185,10 +184,10 @@ MY_DEPENDS=	git>=2.16.2:devel/git \
 	rubygem-vmstat>=2.3.0:sysutils/rubygem-vmstat \
 	rubygem-sys-filesystem>=1.1.6:sysutils/rubygem-sys-filesystem \
 	rubygem-net-ssh>=5.0:security/rubygem-net-ssh \
-	rubygem-sshkey1>=1.9.0:security/rubygem-sshkey1 \
+	rubygem-sshkey>=2.0:security/rubygem-sshkey \
 	rubygem-ed25519>=1.2:security/rubygem-ed25519 \
 	rubygem-bcrypt_pbkdf>=1.0:security/rubygem-bcrypt_pbkdf \
-	rubygem-gitaly-proto>=1.10.0:net/rubygem-gitaly-proto \
+	rubygem-gitaly-proto>=1.13.0:net/rubygem-gitaly-proto \
 	rubygem-grpc>=1.15.0:net/rubygem-grpc \
 	rubygem-gitaly>=0.8.0:net/rubygem-gitaly \
 	rubygem-google-protobuf>=3.6:devel/rubygem-google-protobuf \
