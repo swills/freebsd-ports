@@ -1,0 +1,11 @@
+--- src/libs/confscreens/Makefile.orig	2019-03-22 17:15:20 UTC
++++ src/libs/confscreens/Makefile
+@@ -28,7 +28,7 @@ EXPDIR    = include
+ EXPORTS   = driverconfig.h joystickconfig.h mouseconfig.h controlconfig.h graphconfig.h\
+ 			simuconfig.h soundconfig.h openglconfig.h
+ 
+-LIBS      = -lplibjs
++LIBS      = -lplibjs -lusbhid
+ 
+ src_PKGFILES	= $(shell find * -maxdepth 0 -type f -print)
+ 
