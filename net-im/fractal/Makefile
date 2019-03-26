@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	fractal
-DISTVERSION=	3.30.0
-PORTREVISION=	5
+DISTVERSION=	4.0.0
 CATEGORIES=	net-im
 MASTER_SITES=	https://gitlab.gnome.org/World/fractal/uploads/${GL_HASH}/
 
@@ -16,6 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	cargo:lang/${RUST_DEFAULT} \
 		gmake:devel/gmake
 LIB_DEPENDS=	libdbus-1.so:devel/dbus \
+		libhandy-0.0.so:x11-toolkits/libhandy \
 		libgmp.so:math/gmp \
 		libgspell-1.so:textproc/gspell
 
@@ -23,7 +23,7 @@ USES=		gettext gnome meson pkgconfig python:3.5+,build ssl tar:xz
 USE_GNOME=	cairo gtk30 gtksourceview3
 USE_GSTREAMER1=	bad
 
-GL_HASH=	cc46d6b9702ce5d0b1f3073f516a58c3
+GL_HASH=	ad6a483327c3e9ef5bb926b89fb26e2b
 BINARY_ALIAS=		python3=${PYTHON_CMD}
 GLIB_SCHEMAS=		org.gnome.Fractal.gschema.xml
 INSTALLS_ICONS=		yes
