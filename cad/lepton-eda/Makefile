@@ -21,7 +21,7 @@ USES=		autoreconf desktop-file-utils gettext-tools gnome groff:build \
 		libtool localbase makeinfo pathfix perl5 pkgconfig python:run \
 		shared-mime-info shebangfix
 USE_GITHUB=	yes
-USE_GNOME=	cairo gtk20
+USE_GNOME=	cairo gtk20 glib20
 USE_LDCONFIG=	yes
 
 SHEBANG_FILES=	utils/scripts/lepton-tragesym \
