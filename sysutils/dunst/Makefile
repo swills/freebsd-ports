@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	dunst
-PORTVERSION=	1.3.2
+PORTVERSION=	1.4.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
@@ -12,15 +12,14 @@ COMMENT=	Lightweight notification daemon
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libdbus-1.so:devel/dbus \
-		libxdg-basedir.so:x11/libxdg-basedir
+LIB_DEPENDS=	libdbus-1.so:devel/dbus
 
-USES=		gmake perl5 pkgconfig
+USES=		gmake gnome perl5 pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dunst-project
 USE_GNOME=	cairo gdkpixbuf2 pango
 USE_PERL5=	build
-USE_XORG=	x11 xrandr xinerama xscrnsaver
+USE_XORG=	x11 xext xinerama xrandr xscrnsaver
 
 MAKE_ARGS=	MANPREFIX="${PREFIX}/man"
 TEST_TARGET=	test
