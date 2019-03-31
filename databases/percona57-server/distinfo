@@ -1,5 +1,5 @@
-TIMESTAMP = 1519339070
-SHA256 (percona-server-5.7.21-20.tar.gz) = 842785e9b73c606be00ea74f568615d3427362fbeed5c136d8f509f03c9d43a6
-SIZE (percona-server-5.7.21-20.tar.gz) = 82479778
+TIMESTAMP = 1552725993
+SHA256 (percona-server-5.7.25-28.tar.gz) = 382c610803a9d8e3b54d16a9fd0bd70584116a831f4f3208b58f4cd5efa5cae3
+SIZE (percona-server-5.7.25-28.tar.gz) = 82296869
 SHA256 (boost_1_59_0.tar.gz) = 47f11c8844e579d02691a607fbd32540104a9ac7a2534a8ddaef50daf502baac
 SIZE (boost_1_59_0.tar.gz) = 83709983
