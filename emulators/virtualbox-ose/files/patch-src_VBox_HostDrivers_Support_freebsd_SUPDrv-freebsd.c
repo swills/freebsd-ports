@@ -1,4 +1,4 @@
---- src/VBox/HostDrivers/Support/freebsd/SUPDrv-freebsd.c.orig	2018-10-15 14:30:57 UTC
+--- src/VBox/HostDrivers/Support/freebsd/SUPDrv-freebsd.c.orig	2019-01-25 18:19:55 UTC
 +++ src/VBox/HostDrivers/Support/freebsd/SUPDrv-freebsd.c
 @@ -46,6 +46,7 @@
  #include <sys/uio.h>
@@ -47,7 +47,7 @@
              /*
               * Configure character devices. Add symbolic links for compatibility.
               */
-@@ -311,7 +328,21 @@ static int VBoxDrvFreeBSDIOCtl(struct cdev *pDev, u_lo
+@@ -311,11 +328,25 @@ static int VBoxDrvFreeBSDIOCtl(struct cdev *pDev, u_lo
      PSUPDRVSESSION pSession;
      devfs_get_cdevpriv((void **)&pSession);
  
@@ -68,8 +68,13 @@
 +    /*
       * Deal with the fast ioctl path first.
       */
-     if (   (   ulCmd == SUP_IOCTL_FAST_DO_RAW_RUN
-@@ -325,6 +356,45 @@ static int VBoxDrvFreeBSDIOCtl(struct cdev *pDev, u_lo
+     AssertCompile((SUP_IOCTL_FAST_DO_FIRST & 0xff) == (SUP_IOCTL_FLAG | 64));
+-    if (   (uintptr_t)(iCmd - SUP_IOCTL_FAST_DO_FIRST) < (uintptr_t)32
++    if (   (uintptr_t)(ulCmd - SUP_IOCTL_FAST_DO_FIRST) < (uintptr_t)32
+         && pSession->fUnrestricted)
+         return supdrvIOCtlFast(ulCmd - SUP_IOCTL_FAST_DO_FIRST, *(uint32_t *)pvData, &g_VBoxDrvFreeBSDDevExt, pSession);
+ 
+@@ -324,6 +355,45 @@ static int VBoxDrvFreeBSDIOCtl(struct cdev *pDev, u_lo
  
  
  /**
@@ -115,7 +120,7 @@
   * Deal with the 'slow' I/O control requests.
   *
   * @returns 0 on success, appropriate errno on failure.
-@@ -373,11 +443,10 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
+@@ -372,11 +442,10 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
           */
          SUPREQHDR Hdr;
          pvUser = *(void **)pvData;
@@ -130,7 +135,7 @@
          }
          if (RT_UNLIKELY((Hdr.fFlags & SUPREQHDR_FLAGS_MAGIC_MASK) != SUPREQHDR_FLAGS_MAGIC))
          {
-@@ -402,13 +471,12 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
+@@ -401,13 +470,12 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
              OSDBGPRINT(("VBoxDrvFreeBSDIOCtlSlow: failed to allocate buffer of %d bytes; ulCmd=%#lx\n", cbReq, ulCmd));
              return ENOMEM;
          }
@@ -148,7 +153,7 @@
          }
          if (Hdr.cbIn < cbReq)
              RT_BZERO((uint8_t *)pHdr + Hdr.cbIn, cbReq - Hdr.cbIn);
-@@ -436,9 +504,8 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
+@@ -435,9 +503,8 @@ static int VBoxDrvFreeBSDIOCtlSlow(PSUPDRVSESSION pSes
                  OSDBGPRINT(("VBoxDrvFreeBSDIOCtlSlow: too much output! %#x > %#x; uCmd=%#lx!\n", cbOut, cbReq, ulCmd));
                  cbOut = cbReq;
              }
@@ -160,7 +165,7 @@
  
              Log(("VBoxDrvFreeBSDIOCtlSlow: returns %d / %d ulCmd=%lx\n", 0, pHdr->rc, ulCmd));
  
-@@ -541,8 +608,7 @@ bool VBOXCALL  supdrvOSGetForcedAsyncTscMode(PSUPDRVDE
+@@ -540,8 +607,7 @@ bool VBOXCALL  supdrvOSGetForcedAsyncTscMode(PSUPDRVDE
  
  bool VBOXCALL  supdrvOSAreCpusOfflinedOnSuspend(void)
  {
@@ -170,7 +175,7 @@
  }
  
  
-@@ -616,11 +682,25 @@ int VBOXCALL    supdrvOSMsrProberModify(RTCPUID idCpu,
+@@ -624,11 +690,25 @@ int VBOXCALL    supdrvOSMsrProberModify(RTCPUID idCpu,
  #endif /* SUPDRV_WITH_MSR_PROBER */
  
  
@@ -196,7 +201,7 @@
  
      va_start(va, pszFormat);
      cch = RTStrPrintfV(szMsg, sizeof(szMsg), pszFormat, va);
-@@ -628,12 +708,19 @@ SUPR0DECL(int) SUPR0Printf(const char *pszFormat, ...)
+@@ -636,12 +716,19 @@ SUPR0DECL(int) SUPR0Printf(const char *pszFormat, ...)
  
      printf("%s", szMsg);
  

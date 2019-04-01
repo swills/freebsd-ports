@@ -1,0 +1,20 @@
+--- src/VBox/Devices/Makefile.kmk.orig	2019-01-25 18:18:06 UTC
++++ src/VBox/Devices/Makefile.kmk
+@@ -277,7 +277,7 @@ if !defined(VBOX_ONLY_EXTPACKS)         # Goes on almo
+   VBoxDD_SOURCES        += Graphics/DevVGA-SVGA.cpp
+  endif
+  ifdef VBOX_WITH_VMSVGA3D
+-  if1of ($(KBUILD_TARGET), linux win)
++  if1of ($(KBUILD_TARGET), freebsd linux win)
+ # Dynamically load 3D library (opengl32, libGL).
+ # This is a temporary solution. In future the 3D backend will be in a separate library.
+ VBOX_WITH_VMSVGA3D_DYNAMIC_LOAD = 1
+@@ -1484,6 +1484,8 @@ if defined(VBOX_WITH_VMSVGA3D) && !defined(VBOX_ONLY_E
+  VBoxSVGA3D_INCS = $(VBOX_GRAPHICS_INCS)
+  VBoxSVGA3D_INCS.win    := \
+  	Graphics/shaderlib/libWineStub/include
++ VBoxSVGA3D_INCS.freebsd := \
++ 	Graphics/shaderlib/wine/include
+  VBoxSVGA3D_INCS.linux  := \
+  	Graphics/shaderlib/wine/include
+  VBoxSVGA3D_INCS.darwin := \

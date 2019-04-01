@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	virtualbox-ose
-PORTVERSION=	5.2.26
-PORTREVISION=	3
+PORTVERSION=	6.0.4
 CATEGORIES=	emulators
 MASTER_SITES=	https://download.virtualbox.org/virtualbox/${PORTVERSION}/
 DISTFILES=	VirtualBox-${PORTVERSION}${EXTRACT_SUFX} ${GUESTADDITIONS}
@@ -54,7 +53,7 @@ VBOX_PROGS=	VBoxAutostart VBoxBalloonCtrl VBoxBugReport VBoxHeadless \
 VBOX_UTILS=	VBoxExtPackHelperApp VBoxNetAdpCtl VBoxNetDHCP VBoxNetNAT \
 		VBoxSVC VBoxXPCOMIPCD
 
-OPTIONS_DEFINE=	ALSA DBUS DEBUG GUESTADDITIONS MANUAL NLS PULSEAUDIO \
+OPTIONS_DEFINE=	ALSA DBUS DEBUG GUESTADDITIONS MANUAL NLS OPUS PULSEAUDIO \
 		PYTHON QT5 R0LOGGING UDPTUNNEL VDE VNC WEBSERVICE VPX X11
 OPTIONS_DEFAULT=	DBUS QT5 UDPTUNNEL VNC WEBSERVICE X11
 OPTIONS_SUB=	yes
@@ -63,6 +62,7 @@ DEBUG_DESC=	Debug symbols, additional logs and assertions
 GUESTADDITIONS_DESC=	Build with Guest Additions
 MANUAL_DESC=	Build with user manual
 NLS_DESC=	Native language support (requires QT5)
+OPUS_DESC=	Use libvpx for audio recording (requires VPX)
 QT5_DESC=	Build with QT5 frontend (requires X11)
 R0LOGGING_DESC=	Enable R0 logging (requires DEBUG)
 UDPTUNNEL_DESC=	Build with UDP tunnel support
@@ -79,6 +79,9 @@ DEBUG_CONFIGURE_ON=	--build-debug
 MANUAL_BUILD_DEPENDS=	${LOCALBASE}/share/xml/docbook/4.4/docbookx.dtd:textproc/docbook-xml
 MANUAL_CONFIGURE_OFF=	--disable-docs
 NLS_IMPLIES=		QT5
+OPUS_CONFIGURE_OFF=	--disable-libopus
+OPUS_LIB_DEPENDS=	libopus.so:audio/opus
+OPUS_IMPLIES=		VPX
 PULSEAUDIO_CONFIGURE_OFF=	--disable-pulse
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 PYTHON_CONFIGURE_OFF=	--disable-python
@@ -155,7 +158,7 @@ USE_QT=		buildtools_build core dbus gui linguisttools_build opengl
 USE_QT+=	printsupport widgets x11extras
 USE_XORG=	xcb
 INSTALLS_ICONS=	yes
-VBOX_PROGS+=	VirtualBox
+VBOX_PROGS+=	VirtualBox VirtualBoxVM
 VBOX_UTILS+=	VBoxTestOGL
 VBOX_WITH_QT=	1
 .else
@@ -275,6 +278,9 @@ post-patch:
 	    ${WRKSRC}/LocalConfig.kmk
 	@${ECHO} 'VBOX_GCC_PEDANTIC_CXX = -Wshadow $$(VBOX_GCC_WARN) -Wno-long-long' >> \
 	    ${WRKSRC}/LocalConfig.kmk
+.endif
+.if empty(PORT_OPTIONS:MX11)
+	@${ECHO} 'VBOX_WITH_VMSVGA3D =' >> ${WRKSRC}/LocalConfig.kmk
 .endif
 .if ${COMPILER_TYPE} == clang
 	@${REINPLACE_CMD} -e 's| -finline-limit=8000||' \
