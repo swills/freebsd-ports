@@ -62,7 +62,7 @@ include/sodium/version.h
 lib/libsodium.a
 lib/libsodium.so
 lib/libsodium.so.23
-lib/libsodium.so.23.1.0
+lib/libsodium.so.23.2.0
 libdata/pkgconfig/libsodium.pc
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/README.markdown
