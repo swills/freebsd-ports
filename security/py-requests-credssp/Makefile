@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	requests-credssp
-PORTVERSION=	0.1.0
+PORTVERSION=	1.0.2
 CATEGORIES=	security python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,8 @@ LICENSE=	ISCL
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.0.0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}openssl>=16.0.0:security/py-openssl@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ntlm-auth>=0:security/py-ntlm-auth@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}ntlm-auth>=0:security/py-ntlm-auth@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyasn1>=0:devel/py-pyasn1@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python
