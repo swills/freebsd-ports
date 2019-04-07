@@ -1,6 +1,6 @@
 --- rxsupport.c.orig	2003-09-10 21:09:44 UTC
 +++ rxsupport.c
-@@ -612,7 +612,7 @@ int cha_adddummy(chararray *ca, const ch
+@@ -612,7 +612,7 @@ int cha_adddummy(chararray *ca, const char * str, int 
      }
  
      ca->array[ca->count].strlength = len;

@@ -1,6 +1,6 @@
 --- regutil.c.orig	2004-01-16 14:57:12 UTC
 +++ regutil.c
-@@ -52,7 +52,7 @@ static void gettimeofday(struct timeval 
+@@ -52,7 +52,7 @@ static void gettimeofday(struct timeval * tv, struct t
  
  struct {
      char * name;
