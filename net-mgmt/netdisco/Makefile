@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	netdisco
-DISTVERSION=	2.040003
+DISTVERSION=	2.042005
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:OLIVER
@@ -13,6 +13,11 @@ COMMENT=	Network discovery/management tool with web console
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENCE
+
+USES=		perl5 pgsql
+USE_PERL5=	modbuild
+USE_RC_SUBR=	netdisco
+NO_ARCH=	yes
 
 BUILD_DEPENDS=	${RUN_DEPENDS}
 RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
@@ -32,8 +37,10 @@ RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 		p5-Dancer-Plugin-DBIC>=0.2001:databases/p5-Dancer-Plugin-DBIC \
 		p5-Dancer-Plugin-Auth-Extensible>=0.30:security/p5-Dancer-Plugin-Auth-Extensible \
 		p5-Dancer-Plugin-Passphrase>=2.0.1:security/p5-Dancer-Plugin-Passphrase \
+		p5-Dancer-Plugin-Swagger>=0:www/p5-Dancer-Plugin-Swagger \
 		p5-Dancer-Session-Cookie>=0.27:www/p5-Dancer-Session-Cookie \
 		p5-Env-Path>=0:devel/p5-Env-Path \
+		p5-Expect>=0:lang/p5-Expect \
 		p5-File-ShareDir>=1.03:devel/p5-File-ShareDir \
 		p5-File-Slurp>=9999.19:devel/p5-File-Slurp \
 		p5-Guard>=1.022:devel/p5-Guard \
@@ -42,7 +49,7 @@ RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 		p5-HTML-Parser>=3.70:www/p5-HTML-Parser \
 		p5-HTTP-Tiny>=0.029:www/p5-HTTP-Tiny \
 		p5-JSON>=0:converters/p5-JSON \
-		p5-List-MoreUtils>=0.33:lang/p5-List-MoreUtils \
+		p5-List-MoreUtils>=0.428:lang/p5-List-MoreUtils \
 		p5-Log-Message-Simple>=0:devel/p5-Log-Message-Simple \
 		p5-Module-Find>=0.12:devel/p5-Module-Find \
 		p5-Module-Load>=0.32:devel/p5-Module-Load \
@@ -89,11 +96,6 @@ SUB_LIST=	SITE_PERL=${STAGEDIR}${PREFIX}/${SITE_PERL_REL} \
 		ETCDIR=${ETCDIR} \
 		ETCDIR_REL=${ETCDIR_REL}
 PLIST_SUB+=	ETCDIR=${ETCDIR}
-
-USES=		perl5 pgsql
-USE_PERL5=	modbuild
-USE_RC_SUBR=	netdisco
-NO_ARCH=	yes
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${ETCDIR}/perl5/bin
