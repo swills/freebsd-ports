@@ -1,0 +1,11 @@
+--- common/fdlimit/fdlimit_freebsd.go.orig	2019-04-09 09:21:06.466137000 +0000
++++ common/fdlimit/fdlimit_freebsd.go		2019-04-09 09:21:55.119468000 +0000
+@@ -43,7 +43,7 @@
+ 	if err := syscall.Getrlimit(syscall.RLIMIT_NOFILE, &limit); err != nil {
+ 		return 0, err
+ 	}
+-	return limit.Cur, nil
++	return uint64(limit.Cur), nil
+ }
+ 
+ // Current retrieves the number of file descriptors allowed to be opened by this
