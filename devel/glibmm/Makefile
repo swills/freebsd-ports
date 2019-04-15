@@ -29,7 +29,9 @@ USE_GNOME=	glib20 libsigc++20
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--disable-documentation
+.if empty(WITH_DEBUG)
 INSTALL_TARGET=	install-strip
+.endif
 
 post-patch:
 .for d in docs examples tests
