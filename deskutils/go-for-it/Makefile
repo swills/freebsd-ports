@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	go-for-it
-DISTVERSION=	1.7.0
+DISTVERSION=	1.7.1
 CATEGORIES=	deskutils
 
 MAINTAINER=	neel@neelc.org
@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libnotify.so:devel/libnotify
 
-USES=		cmake gettext pkgconfig
+USES=		cmake gnome gettext pkgconfig
 GNU_CONFIGURE=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	JMoerman
