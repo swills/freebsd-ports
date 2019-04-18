@@ -20,7 +20,7 @@ LIB_DEPENDS=	libmenu-cache.so:x11/menu-cache \
 		libfreetype.so:print/freetype2 \
 		libfm-extra.so:x11/libfm-extra
 
-FLAVORS=	gtk2 gtk3
+FLAVORS=	gtk3 gtk2
 FLAVOR?=	${FLAVORS:[1]}
 
 gtk3_PKGNAMESUFFIX=	-gtk3
