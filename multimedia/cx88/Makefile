@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	cx88
-PORTVERSION=	1.5.2
-PORTREVISION=	2
+PORTVERSION=	1.5.3
 CATEGORIES=	multimedia
 MASTER_SITES=	ftp://corona.homeunix.net/ports/cx88/
 
