@@ -39,7 +39,7 @@ LICENSE_PERMS_STRIDE=	dist-mirror pkg-mirror auto-accept
 LICENSE_NAME_STRIDE=	Stride Copyright Notice
 LICENSE_DISTFILES_STRIDE=${STRIDE_DIST}
 
-USES=		gmake perl5 python shebangfix sqlite tcl tk
+USES=		gl gmake perl5 python shebangfix sqlite tcl tk
 
 SHEBANG_FILES=	${WRKDIR}/plugins/topotools/*.tcl
 
