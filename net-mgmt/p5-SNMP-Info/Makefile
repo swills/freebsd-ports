@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	SNMP-Info
-PORTVERSION=	3.64
+PORTVERSION=	3.66
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
@@ -16,10 +16,15 @@ BUILD_DEPENDS=	${RUN_DEPENDS}
 LIB_DEPENDS=	libnetsnmp.so:net-mgmt/net-snmp
 RUN_DEPENDS=	p5-PPI>0:textproc/p5-PPI \
 		p5-Module-Info>0:devel/p5-Module-Info \
-		p5-Class-ISA>0:devel/p5-Class-ISA
+		p5-Class-ISA>0:devel/p5-Class-ISA \
+		p5-NetAddr-IP>0:net-mgmt/p5-NetAddr-IP
+TEST_DEPENDS=	p5-Test-MockObject>0:devel/p5-Test-MockObject \
+		p5-Test-Class-Most>0:devel/p5-Test-Class-Most \
+		p5-Test-Distribution>0:devel/p5-Test-Distribution
 
 USES=		perl5
 USE_PERL5=	modbuild
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
