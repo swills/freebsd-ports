@@ -1,5 +1,5 @@
-TIMESTAMP = 1496570879
-SHA256 (hadoop/spark-2.1.1.tgz) = 4e1afc66dc70dc9b1b8e0f879a566727c8596fa34760256b8b4c7af7db4f4f3e
-SIZE (hadoop/spark-2.1.1.tgz) = 13735016
-SHA256 (hadoop/FreeBSD-spark-2.1.1-maven-repository.tar.gz) = 2bccc9c3e60f2d7f306d7b465aca356707d7d20efc6b484236833637f45d30c4
-SIZE (hadoop/FreeBSD-spark-2.1.1-maven-repository.tar.gz) = 267095671
+TIMESTAMP = 1555988826
+SHA256 (hadoop/spark-2.4.1.tgz) = 52ccda40ce74d0c4665ac42ba01261f37ab029c8f5461291ccb73f7352f6d4ac
+SIZE (hadoop/spark-2.4.1.tgz) = 16185170
+SHA256 (hadoop/FreeBSD-spark-2.4.1-maven-repository.tgz) = 542c2e75ecb1fbc1e3379ebc18a9d2e47ee19d9cb3f17b5c1190dad1416ae8d4
+SIZE (hadoop/FreeBSD-spark-2.4.1-maven-repository.tgz) = 301686495
