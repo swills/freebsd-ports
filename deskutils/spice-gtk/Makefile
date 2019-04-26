@@ -3,7 +3,7 @@
 
 PORTNAME=	spice-gtk
 PORTVERSION=	0.36
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	deskutils gnome
 MASTER_SITES=	http://www.spice-space.org/download/gtk/
 
@@ -16,6 +16,7 @@ NOT_FOR_ARCHS=		powerpc powerpc64 powerpcspe sparc64
 NOT_FOR_ARCHS_REASON=	server only supports little-endian
 
 LIB_DEPENDS=	libepoxy.so:graphics/libepoxy \
+		libgstreamer-1.0.so:multimedia/gstreamer1 \
 		libjson-glib-1.0.so:devel/json-glib \
 		libopus.so:audio/opus \
 		libva-x11.so:multimedia/libva
@@ -43,31 +44,38 @@ MAKE_ARGS=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 
 INSTALL_TARGET=	install-strip
 
-OPTIONS_DEFINE=	LZ4 NLS DOCS SASL
-OPTIONS_DEFAULT=	GSTREAMER LZ4 PULSEAUDIO SASL
-
-OPTIONS_GROUP=		AUDIO
-OPTIONS_GROUP_AUDIO=	GSTREAMER PULSEAUDIO
-
+OPTIONS_DEFINE=	BUILTIN-MJPEG LZ4 DOCS INTROSPECTION NLS PIE POLKIT PULSEAUDIO SASL
+OPTIONS_DEFAULT=	BUILTIN-MJPEG LZ4 INTROSPECTION PIE POLKIT PULSEAUDIO SASL
 OPTIONS_SUB=	yes
 
-LZ4_CONFIGURE_ENABLE=	lz4
+LZ4_CONFIGURE_ON=	--enable-lz4=yes
+LZ4_CONFIGURE_OFF=	--enable-lz4=no
 LZ4_LIB_DEPENDS+=	liblz4.so:archivers/liblz4
 
 NLS_USES=	gettext
 NLS_CONFIGURE_ENABLE=	nls
 
-NOAUDIO_DESC=		Disable audio backend
+BUILTIN-MJPEG_CONFIGURE_ENABLE=	builtin-mjpeg
+BUILTIN-MJPEG_DESC=	Enable the builtin mjpeg video decoder
 
-GSTREAMER_CONFIGURE_ENABLE=	gstaudio
-GSTREAMER_USE=			GSTREAMER1=yes
-GSTREAMER_CONFIGURE_ON=		--enable-gstvideo=yes
-GSTREAMER_CONFIGURE_OFF=	--enable-gstvideo=no
+INTROSPECTION_CONFIGURE_ON=	--enable-introspection=yes
+INTROSPECTION_CONFIGURE_OFF=	--enable-introspection=no
+INTROSPECTION_DESC=	Enable introspection for this build
 
+PIE_CONFIGURE_ON=	--enable-pie=yes
+PIE_CONFIGURE_OFF=	--enable-pie=no
+PIE_DESC=	Enable position-independent-executable support (for usb acl helper)
+
+POLKIT_CONFIGURE_ON=	--enable-polkit=yes
+POLKIT_CONFIGURE_OFF=	--enable-polkit=no
+POLKIT_DESC=	Enable PolicyKit support (for usb acl helper)
+
+PULSEAUDIO_CONFIGURE_ON=	--enable-pulse=yes
+PULSEAUDIO_CONFIGURE_OFF=	--enable-pulse=no
 PULSEAUDIO_LIB_DEPENDS=		libpulse.so:audio/pulseaudio
-PULSEAUDIO_CONFIGURE_ENABLE=	pulse
 
-SASL_CONFIGURE_WITH=		sasl=yes
+SASL_CONFIGURE_ON=		--with-sasl=yes
+SASL_CONFIGURE_OFF=		--with-sasl=no
 SASL_LIB_DEPENDS=		libsasl2.so:security/cyrus-sasl2
 
 .include <bsd.port.mk>
