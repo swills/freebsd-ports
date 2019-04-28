@@ -1,8 +1,8 @@
 # Patch shaped from http://seclists.org/oss-sec/2013/q4/535
 ===================================================================
---- ./DenyHosts/regex.py.orig	2006-12-07 20:47:04.000000000 +0100
-+++ ./DenyHosts/regex.py	2013-12-23 17:17:42.000000000 +0100
-@@ -6,22 +6,22 @@
+--- DenyHosts/regex.py.orig	2006-12-07 19:47:04 UTC
++++ DenyHosts/regex.py
+@@ -6,22 +6,22 @@ import re
  
  #DATE_FORMAT_REGEX = re.compile(r"""(?P<month>[A-z]{3,3})\s*(?P<day>\d+)""")
  
@@ -33,7 +33,7 @@
  
  
  # these are reserved for future versions
-@@ -42,7 +42,7 @@
+@@ -42,7 +42,7 @@ for i in FAILED_ENTRY_REGEX_RANGE:
      FAILED_ENTRY_REGEX_MAP[i] = rx
  
  

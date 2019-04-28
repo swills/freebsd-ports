@@ -1,6 +1,6 @@
---- setup.py.orig
+--- setup.py.orig	2006-04-04 23:53:02 UTC
 +++ setup.py
-@@ -8,7 +8,7 @@
+@@ -8,7 +8,7 @@ import sys
  from glob import glob
  
  
@@ -9,7 +9,7 @@
  scriptspath = "%s/scripts" % libpath
  pluginspath = "%s/plugins" % libpath
  
-@@ -26,11 +26,8 @@
+@@ -26,11 +26,8 @@ setup(name="DenyHosts",
        data_files=[(libpath, glob("denyhosts.cfg-dist")),
                    (libpath, glob("setup.py")),
                    (libpath, glob("daemon-control-dist")),

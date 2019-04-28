@@ -1,4 +1,4 @@
---- denyhosts.cfg-dist.orig
+--- denyhosts.cfg-dist.orig	2006-08-20 14:09:57 UTC
 +++ denyhosts.cfg-dist
 @@ -9,10 +9,10 @@
  # argument
@@ -13,7 +13,7 @@
  #
  # SuSE:
  #SECURE_LOG = /var/log/messages
-@@ -31,7 +31,7 @@
+@@ -31,7 +31,7 @@ SECURE_LOG = /var/log/secure
  # HOSTS_DENY: the file which contains restricted host access information
  #
  # Most operating systems:
@@ -22,7 +22,7 @@
  #
  # Some BSD (FreeBSD) Unixes:
  #HOSTS_DENY = /etc/hosts.allow
-@@ -90,7 +90,7 @@
+@@ -90,7 +90,7 @@ PURGE_DENY = 
  # To block all services for the offending host:
  #BLOCK_SERVICE = ALL
  # To block only sshd:
@@ -31,7 +31,7 @@
  # To only record the offending host and nothing else (if using
  # an auxilary file to list the hosts).  Refer to: 
  # http://denyhosts.sourceforge.net/faq.html#aux
-@@ -150,7 +150,7 @@
+@@ -150,7 +150,7 @@ DENY_THRESHOLD_RESTRICTED = 1
  # Note: it is recommended that you use an absolute pathname
  # for this value (eg. /home/foo/denyhosts/data)
  #
@@ -40,7 +40,7 @@
  #
  #######################################################################
  
-@@ -176,7 +176,7 @@
+@@ -176,7 +176,7 @@ SUSPICIOUS_LOGIN_REPORT_ALLOWED_HOSTS=YES
  # the corresponding hostname will be looked up and reported as well
  # (if available).
  #
@@ -49,7 +49,7 @@
  #
  ######################################################################
  
-@@ -192,10 +192,10 @@
+@@ -192,10 +192,10 @@ HOSTNAME_LOOKUP=YES
  # running at a time.
  #
  # Redhat/Fedora:
@@ -63,7 +63,7 @@
  #
  # Misc
  #LOCK_FILE = /tmp/denyhosts.lock
-@@ -414,7 +414,9 @@
+@@ -414,7 +414,9 @@ AGE_RESET_INVALID=10d
  # See this faq entry for more details:
  #    http://denyhosts.sf.net/faq.html#userdef_regex
  #

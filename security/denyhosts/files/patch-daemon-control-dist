@@ -1,4 +1,4 @@
---- daemon-control-dist.orig
+--- daemon-control-dist.orig	2019-04-12 21:50:37 UTC
 +++ daemon-control-dist
 @@ -11,9 +11,9 @@
  #### Edit these to suit your configuration ####
@@ -11,5 +11,5 @@
 +DENYHOSTS_LOCK  = "/var/run/denyhosts"
 +DENYHOSTS_CFG   = "%%PREFIX%%/share/denyhosts/denyhosts.cfg"
  
+ PYTHON_BIN      = "/usr/bin/env python"
  
- ###############################################
