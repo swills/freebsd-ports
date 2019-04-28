@@ -1,0 +1,90 @@
+--- tuning-primer.sh.orig	2011-09-02 05:49:10.000000000 +0200
++++ tuning-primer.sh	2019-02-23 19:22:30.748493000 +0100
+@@ -57,7 +57,7 @@
+ 
+ cecho ()
+ 
+-## -- Function to easliy print colored text -- ##
++## -- Function to easily print colored text -- ##
+ 	
+ 	# Color-echo.
+ 	# Argument $1 = message
+@@ -115,7 +115,7 @@
+ 
+ cechon ()		
+ 
+-## -- Function to easliy print colored text -- ##
++## -- Function to easily print colored text -- ##
+ 
+ 	# Color-echo.
+ 	# Argument $1 = message
+@@ -407,8 +407,9 @@
+ }
+ 
+ float2int () {
+-        local variable=$(echo "$1 / 1" | bc -l)
+-        export "$2"=$variable
++	## "bc -l" returns float on FreeBSD 11.2, use "bc" alone
++	local variable=$(echo "$1 / 1" | bc)
++	export "$2"=$variable
+ }
+ 
+ divide () {
+@@ -643,7 +644,7 @@
+ 			cecho "See http://dev.mysql.com/doc/refman/$major_version/en/purge-master-logs.html" yellow
+ 		fi
+ 		if [ "$sync_binlog" = 0 ] ; then
+-			cecho "Binlog sync is not enabled, you could loose binlog records during a server crash" red
++			cecho "Binlog sync is not enabled, you could lose binlog records during a server crash" red
+ 		fi
+ 	else
+ 		cechon "The binary update log is "
+@@ -940,7 +941,9 @@
+ 
+ 	mysql_status \'Select_full_join\' select_full_join
+ 	mysql_status \'Select_range_check\' select_range_check
+-	mysql_variable \'join_buffer%\' join_buffer_size
++	## query for "join_buffer%" returned results for join_buffer_size and join_buffer_space_limit
++	## current versions of MySQL uses join_buffer_size, not join_buffer
++	mysql_variable \'join_buffer_size\' join_buffer_size
+ 	
+ 	## Some 4K is dropped from join_buffer_size adding it back to make sane ##
+ 	## handling of human-readable conversion ## 
+@@ -1272,12 +1275,32 @@
+ 		fi
+ 	elif [ "$major_version" = '5.6' ] && [ "$mysql_version_num" -ge 050603 ] ; then
+ 	mysql_variable \'ignore_builtin_innodb\' ignore_builtin_innodb
+-                if [ "$ignore_builtin_innodb" = "ON" ] ; then
+-                innodb_enabled=0
+-                else
+-                innodb_enabled=1
+-                fi
++		if [ "$ignore_builtin_innodb" = "ON" ] ; then
++		innodb_enabled=0
++		else
++		innodb_enabled=1
++		fi
++	elif [ "$major_version" = '5.7' ] && [ "$mysql_version_num" -ge 050701 ] ; then
++	mysql_variable \'ignore_builtin_innodb\' ignore_builtin_innodb
++		if [ "$ignore_builtin_innodb" = "ON" ] ; then
++		innodb_enabled=0
++		else
++		innodb_enabled=1
++		fi
+ 	fi
++	## MariaDB 10.1+
++	case "$major_version" in
++		10.[123])
++		if [ "$mysql_version_num" -ge 100101 ]; then
++			mysql_variable \'ignore_builtin_innodb\' ignore_builtin_innodb
++			if [ "$ignore_builtin_innodb" = "ON" ] ; then
++			innodb_enabled=0
++			else
++			innodb_enabled=1
++			fi
++		fi
++		;;
++	esac
+ 	if [ "$innodb_enabled" = 1 ] ; then
+ 		mysql_variable \'innodb_buffer_pool_size\' innodb_buffer_pool_size
+ 		mysql_variable \'innodb_additional_mem_pool_size\' innodb_additional_mem_pool_size

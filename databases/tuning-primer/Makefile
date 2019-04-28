@@ -3,6 +3,7 @@
 
 PORTNAME=	tuning-primer
 PORTVERSION=	1.6.r1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://launchpad.net/mysql-${PORTNAME}/trunk/1.6-r1/+download/
 DISTNAME=	${PORTNAME}.sh
@@ -17,12 +18,15 @@ LICENSE=	GPLv2
 
 NO_BUILD=	yes
 NO_ARCH=	yes
-USE_MYSQL=	yes
+USES=		mysql
 
 PLIST_FILES=	bin/${PORTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${DISTDIR}/${DIST_SUBDIR}/${PORTNAME}.sh \
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+
+post-install:
+	@${PATCH} ${STAGEDIR}${PREFIX}/bin/${PORTNAME} files/mariadb_support.patch
 
 .include <bsd.port.mk>
