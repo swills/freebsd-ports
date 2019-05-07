@@ -17,8 +17,7 @@ LICENSE_FILE_LGPL3=	${WRKSRC}/COPYING
 LICENSE_FILE_GPLv3=	${WRKSRC}/COPYING-GPL3
 LICENSE_FILE_LGPL21=	${WRKSRC}/COPYING.2.1
 
-BUILD_DEPENDS=	vapigen:lang/vala \
-		gtkdoc-check:textproc/gtk-doc
+BUILD_DEPENDS=	vapigen:lang/vala
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib
 
 GNU_CONFIGURE=	yes
@@ -43,6 +42,12 @@ CONFIGURE_ARGS=	--disable-static \
 	--disable-nls \
 	--enable-vala \
 	--with-gtk=3
+
+OPTIONS_DEFINE=	GTKDOC
+OPTIONS_SUB=	yes
+
+GTKDOC_DESC=		Build API documentation (requires textproc/gtk-doc)
+GTKDOC_BUILD_DEPENDS=	gtkdoc-check:textproc/gtk-doc
 
 .include <bsd.port.pre.mk>
 
