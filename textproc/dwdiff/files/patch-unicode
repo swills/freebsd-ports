@@ -1,0 +1,13 @@
+Fix the compilation for when Unicode (ICU) support is disabled.
+
+	-mi
+
+--- src/option.c	2018-12-10 13:25:15.000000000 -0500
++++ src/option.c	2019-04-24 18:01:23.594665000 -0400
+@@ -469,5 +469,5 @@
+ 
+ 	initOptions();
+-  UErrorCode error = U_ZERO_ERROR;
++	ONLY_UNICODE(UErrorCode error = U_ZERO_ERROR;)
+ 	ONLY_UNICODE(option.decomposition = unorm2_getNFDInstance(&error);)
+ 
