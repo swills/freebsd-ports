@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	newlisp
-PORTVERSION=	10.6.2
-PORTREVISION=	2
+PORTVERSION=	10.7.1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.newlisp.org/downloads/
 

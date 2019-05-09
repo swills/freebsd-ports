@@ -10,7 +10,7 @@ man/man1/newlispdoc.1.gz
 %%PORTDOCS%%%%DOCSDIR%%/ExpressionEvaluation.html
 %%PORTDOCS%%%%DOCSDIR%%/MemoryManagement.html
 %%PORTDOCS%%%%DOCSDIR%%/manual_frame.html
-%%PORTDOCS%%%%DOCSDIR%%/newLISP-10.6.2-Release.html
+%%PORTDOCS%%%%DOCSDIR%%/newLISP-10.7.1-Release.html
 %%PORTDOCS%%%%DOCSDIR%%/newLISPdoc.html
 %%PORTDOCS%%%%DOCSDIR%%/newlisp-man.txt
 %%PORTDOCS%%%%DOCSDIR%%/newlisp_index.html
