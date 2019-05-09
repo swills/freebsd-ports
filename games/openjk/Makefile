@@ -21,10 +21,10 @@ USE_SDL=	sdl2
 USE_XORG=	x11
 
 CXXFLAGS+=	-DNDEBUG
-PLIST_SUB=	ARCH="${ARCH}"
+PLIST_SUB=	ARCH="${ARCH:S/powerpc64/ppc64/}"
 SUB_FILES=	jamp \
 		jasp
-SUB_LIST=	ARCH="${ARCH}"
+SUB_LIST=	ARCH="${ARCH:S/powerpc64/ppc64/}"
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/jamp ${WRKDIR}/jasp ${STAGEDIR}${PREFIX}/bin
