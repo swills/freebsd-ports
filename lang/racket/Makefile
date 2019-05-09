@@ -20,7 +20,6 @@ LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING_LESSER.txt
 
 IGNORE_powerpc64=	./lightning/lightning.h:81:2: GNU lightning does not support the current target
-BROKEN_i386=		segfaults during build
 
 LIB_DEPENDS=	libffi.so:devel/libffi		\
 		libcairo.so:graphics/cairo	\
@@ -44,7 +43,7 @@ OPTIONS_DEFINE=	DOCS
 OPTIONS_DEFINE_amd64=	JIT FUTURES
 OPTIONS_DEFINE_i386=	JIT FUTURES
 OPTIONS_DEFAULT_amd64=	JIT FUTURES
-OPTIONS_DEFAULT_i386=	JIT FUTURES
+FUTURES_IMPLIES=	JIT
 
 FUTURES_DESC=	Enable futures
 JIT_DESC=	Enable JIT compiler
@@ -52,6 +51,12 @@ JIT_CFLAGS=	-msse -msse2 -mfpmath=sse
 
 FUTURES_CONFIGURE_ENABLE=	futures
 JIT_CONFIGURE_ENABLE=	jit
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MJIT}
+BROKEN_i386=		segfaults during build
+.endif
 
 post-install:
 	${FIND} ${STAGEDIR}${PREFIX} -type d -empty -delete
