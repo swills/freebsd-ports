@@ -28,6 +28,16 @@ GH_TAGNAME=	3c8c990
 
 .include <bsd.port.options.mk>
 
+.if ${ARCH} == powerpc64
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-dev_drm2_drm__bufs.c
+.endif
+
+.if ${ARCH} == amd64 || ${ARCH} == i386
+PLIST_SUB+=	X86=""
+.else
+PLIST_SUB+=	X86="@comment "
+.endif
+
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200080
 IGNORE=		only for 12.0 or higher after removal of base components
 .endif

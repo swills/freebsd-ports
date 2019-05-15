@@ -1,0 +1,11 @@
+--- drm/savage/Makefile.orig	2019-04-30 21:45:09 UTC
++++ drm/savage/Makefile
+@@ -3,7 +3,7 @@
+ .PATH:	${.CURDIR:H:H}/src/dev/drm
+ 
+ KMOD= 	savage
+-CFLAGS += -I${SRCTOP}/sys/dev/drm
++CFLAGS += -I${.CURDIR:H}/drm
+ SRCS=	savage_bci.c savage_drv.c savage_state.c
+ SRCS+=	device_if.h bus_if.h pci_if.h opt_drm.h
+ 
