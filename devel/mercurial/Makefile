@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mercurial
-PORTVERSION=	4.9.1
+PORTVERSION=	5.0
 CATEGORIES=	devel python
 MASTER_SITES=	https://www.mercurial-scm.org/release/
 
@@ -12,15 +12,18 @@ COMMENT=	Fast, lightweight source control management system
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
+
 USES=		cpe python:2.7
 USE_PYTHON=	distutils
 
-OPTIONS_DEFINE=	CA_BUNDLE DATA DOCS NLS FREEBSD
-OPTIONS_DEFAULT=CA_BUNDLE DATA
+# Follow, https://www.mercurial-scm.org/wiki/CACertificates
+CERTDIR?=	share/certs
+
+OPTIONS_DEFINE=	DATA DOCS NLS FREEBSD
+OPTIONS_DEFAULT=DATA
 OPTIONS_SUB=	yes
 
-CA_BUNDLE_DESC=		Install CA Certificates
-CA_BUNDLE_RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 DATA_SUB_FILES=		pkg-message
 FREEBSD_DESC=		Patches used internally by the FreeBSD Project
 FREEBSD_EXTRA_PATCHES=	${FILESDIR}/extra-patch-authormapsuffix
@@ -55,6 +58,10 @@ CONTRIB_FILES=	bash_completion \
 PORTDOCS=	CONTRIBUTORS README.rst
 
 post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/mercurial
+	${INSTALL_DATA} ${FILESDIR}/hgrc ${STAGEDIR}${PREFIX}/etc/mercurial
+	${REINPLACE_CMD} -i "" 's|%%PREFIX%%|${PREFIX}| ;\
+		s|%%CERTDIR%%|${CERTDIR}|' ${STAGEDIR}${PREFIX}/etc/mercurial/hgrc
 	${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${STAGEDIR}${PREFIX}/man/man1/
 	${INSTALL_MAN} ${WRKSRC}/doc/*.5 ${STAGEDIR}${PREFIX}/man/man5/
 	${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR}/ -name '*.so' -exec ${STRIP_CMD} {} +
