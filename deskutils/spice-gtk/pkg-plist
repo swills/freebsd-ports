@@ -78,7 +78,7 @@ man/man1/spice-client.1.gz
 %%PORTDOCS%%%%DOCSDIR%%/spice-gtk-SpiceQmpPort.html
 %%PORTDOCS%%%%DOCSDIR%%/spice-gtk-SpiceURI.html
 %%PORTDOCS%%%%DOCSDIR%%/spice-gtk-Utilities.html
-%%PORTDOCS%%%%DOCSDIR%%/spice-gtk-Version-Information.html
+%%PORTDOCS%%%%DOCSDIR%%/spice-gtk-spice-version.html
 %%PORTDOCS%%%%DOCSDIR%%/spice-gtk.devhelp2
 %%PORTDOCS%%%%DOCSDIR%%/style.css
 %%PORTDOCS%%%%DOCSDIR%%/up-insensitive.png
