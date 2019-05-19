@@ -3,7 +3,7 @@
 
 PORTNAME=	hdf5
 PORTVERSION=	1.10.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science archivers graphics
 MASTER_SITES=	https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${PORTVERSION:R}/${DISTNAME}/src/ \
 		LOCAL/sunpoet
@@ -16,14 +16,13 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS_INSTALL=	hdf-4.[0-9]* hdf5-1.6.[0-9]*
 
-OPTIONS_DEFINE=	DEBUG EXAMPLES FORTRAN SZIP
-OPTIONS_DEFAULT=SZIP
+OPTIONS_DEFINE=	CXX DEBUG EXAMPLES FORTRAN PARALLEL SZIP
+OPTIONS_DEFAULT=CXX SZIP
 OPTIONS_SUB=	yes
 
 USES=		compiler:c11 libtool localbase tar:bzip2
 
-CONFIGURE_ARGS=	--enable-cxx \
-		--enable-hl \
+CONFIGURE_ARGS=	--enable-hl \
 		--enable-instrument \
 		--enable-strict-format-checks
 GNU_CONFIGURE=	yes
@@ -34,11 +33,17 @@ USE_LDCONFIG=	yes
 
 PORTEXAMPLES=	*
 
+CXX_CONFIGURE_ENABLE=	cxx
+CXX_PREVENTS=		PARALLEL
 DEBUG_CONFIGURE_OFF=	--enable-build-mode=production
 DEBUG_CONFIGURE_ON=	--enable-build-mode=debug
 FORTRAN_CONFIGURE_ENABLE=	fortran
 FORTRAN_CONFIGURE_ENV=	F9X=${FC}
 FORTRAN_USES=		fortran
+PARALLEL_DESC=		Parallel version
+PARALLEL_CONFIGURE_ENABLE=	parallel
+PARALLEL_LDFLAGS=	${LOCALBASE}/lib/libmpich.so
+PARALLEL_LIB_DEPENDS=	libmpi.so:net/mpich
 SZIP_CONFIGURE_ON=	--with-szlib=${LOCALBASE}
 SZIP_LIB_DEPENDS=	libsz.so:science/szip
 
