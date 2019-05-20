@@ -2,7 +2,6 @@
 
 PORTNAME=	accountmanager
 PORTVERSION=	0.5.${REV}
-PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	www devel python
 MASTER_SITES=	LOCAL/kuriyama \
@@ -19,7 +18,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 RUN_DEPENDS=	tracd:www/trac
 
 FETCH_BEFORE_ARGS=	-o ${DISTFILES}
-REV=			12583
+REV=			17339
 USES=			python:2.7 zip
 USE_PYTHON=		distutils autoplist
 WRKSRC=			${WRKDIR}/accountmanagerplugin/trunk
