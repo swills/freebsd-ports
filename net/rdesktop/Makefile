@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	rdesktop
-PORTVERSION=	1.8.5
+PORTVERSION=	1.8.6
 DISTVERSIONPREFIX=v
 CATEGORIES=	net comms ipv6
 
@@ -13,6 +13,7 @@ LICENSE=	GPLv3
 
 USES=		autoreconf gmake iconv pkgconfig ssl
 USE_XORG=	x11 xrandr
+USE_XORG+=   xrandr
 USE_GITHUB=	yes
 
 CONFIGURE_ARGS+=	${ICONV_CONFIGURE_ARG} --disable-credssp
