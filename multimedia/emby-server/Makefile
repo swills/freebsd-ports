@@ -27,7 +27,8 @@ LICENSE_PERMS=	dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 ONLY_FOR_ARCHS=	amd64
 
 BUILD_DEPENDS=	nasm:devel/nasm
-LIB_DEPENDS=	libass.so:multimedia/libass \
+LIB_DEPENDS=	libasound.so:audio/alsa-lib \
+		libass.so:multimedia/libass \
 		libdrm.so:graphics/libdrm \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
