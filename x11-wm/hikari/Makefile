@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	hikari
-DISTVERSION=	0.1.2
+DISTVERSION=	0.1.3
 PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://acmelabs.space/~raichoo/
