@@ -2,12 +2,11 @@
 # $FreeBSD$
 
 PORTNAME=	recoll
-DISTVERSION=	1.24.5
-PORTREVISION=	1
+DISTVERSION=	1.25.16
 CATEGORIES=	deskutils
 MASTER_SITES=	https://www.lesbonscomptes.com/recoll/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jjuanino@gmail.com
 COMMENT=	Personal full text search package, based on Xapian
 
 LICENSE=	GPLv2+
@@ -20,14 +19,16 @@ RUN_DEPENDS=	unrar:archivers/unrar \
 		wpd2html:textproc/libwpd010 \
 		unrtf:textproc/unrtf
 
-USES=		bison gmake gnome iconv libtool localbase python:2.7 shebangfix
+USES=		bison gmake gnome iconv libtool localbase python:2.7+ shebangfix
 USE_LDCONFIG=	yes
+
 SHEBANG_FILES=	filters/*.py filters/rcl7z filters/rclaudio \
 		filters/rclchm filters/rcldia filters/rclepub \
 		filters/rclepub1 filters/rclics filters/rclimg \
 		filters/rclinfo filters/rclkar filters/rclpython \
 		filters/rclrar filters/rcltar filters/rclwar \
-		filters/rclzip desktop/hotrecoll.py 
+		filters/rclzip desktop/hotrecoll.py
+
 USE_PYTHON=	py3kplist
 USE_GNOME=	libxslt:run
 GNU_CONFIGURE=	yes
@@ -47,7 +48,9 @@ OPTIONS_SUB=		yes
 ASPELL_LIB_DEPENDS=	libaspell.so:textproc/aspell
 ASPELL_CONFIGURE_WITH=	aspell
 CHM_DESC=		CHM via CHMLIB
+CHM_LIB_DEPENDS=	libchm.so:misc/chmlib
 CHM_RUN_DEPENDS=	pychm>0:textproc/pychm
+CHM_CONFIGURE_ENABLE=	python-chm
 DJVU_RUN_DEPENDS=	djvutxt:graphics/djvulibre
 IMAGE_DESC=		Store personal tags or textual descriptions in images
 IMAGE_RUN_DEPENDS=	exiftool:graphics/p5-Image-ExifTool
@@ -71,17 +74,11 @@ X11MON_BROKEN=		does not build: index/rclmonrcv.cpp:(.text+0x1f13): undefined re
 
 post-patch:
 	@${REINPLACE_CMD} -e \
-		's|@QMAKE@|${TRUE}|' \
-		${WRKSRC}/Makefile.in
-	@${REINPLACE_CMD} -e \
 		's|/usr/local/lib|${LOCALBASE}/lib|' \
 		${WRKSRC}/configure
 	@${REINPLACE_CMD} -e \
 		's|python setup.py|${PYTHON_CMD} setup.py|; s|sudo||' \
-		${WRKSRC}/python/recoll/Makefile.in
-	@${REINPLACE_CMD} -e \
-		's|python setup.py|${PYTHON_CMD} setup.py|' \
-		${WRKSRC}/Makefile.in
+		${WRKSRC}/python/recoll/Makefile
 
 pre-build-QT5-on:
 	@cd ${WRKSRC}/qtgui && ${SETENV} ${QMAKE_ENV} ${QMAKE} \
@@ -90,5 +87,8 @@ pre-build-QT5-on:
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/recoll/*.so \
 		${STAGEDIR}${PREFIX}/lib/recoll/*.so
+
+post-install-CHM-on:
+	@${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/recollchm/*.so
 
 .include <bsd.port.mk>
