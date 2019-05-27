@@ -1,0 +1,27 @@
+stages:
+   - build
+
+before_script:
+   - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+   - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+
+head-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-amd64 -p swills-freebsd-ports devel/py-pre-commit@all
+
+120-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 120-amd64 -p swills-freebsd-ports devel/py-pre-commit@all
+
+112-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports devel/py-pre-commit@all
