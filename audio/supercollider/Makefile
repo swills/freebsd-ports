@@ -1,8 +1,8 @@
-# $FreeBSD$
+  # $FreeBSD$
 
 PORTNAME=	supercollider
-DISTVERSION=	3.9.3
-PORTREVISION=	7
+DISTVERSION=	3.10.2
+PORTREVISION=	0
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/supercollider/supercollider/releases/download/Version-${PORTVERSION}/
 DISTNAME=	SuperCollider-${PORTVERSION}-Source-linux
@@ -24,7 +24,7 @@ USES=		cmake compiler:c++11-lang iconv localbase pkgconfig \
 		qt:5 readline shared-mime-info tar:bzip2
 USE_QT=		buildtools_build concurrent core declarative gui linguisttools location \
 		network opengl printsupport qmake_build sensors \
-		sql webkit widgets
+		sql webkit widgets webengine websockets webchannel svg
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 
