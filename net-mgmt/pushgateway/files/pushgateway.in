@@ -1,5 +1,5 @@
 #!/bin/sh
-# 
+#
 # $FreeBSD$
 
 # PROVIDE: pushgateway
@@ -45,7 +45,7 @@ procname="%%PREFIX%%/bin/pushgateway"
 sig_reload=HUP
 extra_commands=reload
 command_args="-p ${pidfile} /usr/bin/env ${procname} \
-				-persistence.file=${pushgateway_persistence_file} \
+				--persistence.file=${pushgateway_persistence_file} \
 				${pushgateway_args} > ${pushgateway_log_file} 2>&1"
 
 start_precmd=pushgateway_startprecmd

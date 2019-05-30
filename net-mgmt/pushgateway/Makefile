@@ -2,15 +2,15 @@
 # $FreeBSD$
 
 PORTNAME=	pushgateway
-PORTVERSION=	0.3.1
-PORTREVISION=	1
-DISTVERSIONPREFIX=v
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.6.0
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	aduitsis@cpan.org
 COMMENT=	Prometheus push acceptor for ephemeral and batch jobs
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		go gmake
 GH_ACCOUNT=	prometheus
@@ -24,10 +24,16 @@ USERS=		prometheus
 GROUPS=		prometheus
 
 do-build:
-	@(cd ${GO_WRKSRC} ; ${SETENV} ${MAKE_ENV} ${GO_ENV} go install)
+	cd ${GO_WRKSRC} && ${SETENV} ${MAKE_ENV} ${GO_ENV} ${GO_CMD} install
 
 do-install:
 	${INSTALL_PROGRAM} ${GO_WRKDIR_BIN}/pushgateway ${STAGEDIR}${PREFIX}/bin
 	${MKDIR} ${STAGEDIR}${DESTDIR}/var/db/${PORTNAME}
+
+pre-test:
+	${LN} -sf ${WRKSRC}/vendor ${WRKSRC}/src
+
+do-test:
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GO_ENV} GOPATH="${WRKDIR}:${WRKSRC}:${LOCAL_GOPATH}" ${GMAKE} test
 
 .include <bsd.port.mk>
