@@ -2,12 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	freeswitch
-PORTVERSION=	1.8.1
-PORTREVISION=	2
+PORTVERSION=	1.8.5
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://files.freeswitch.org/releases/freeswitch/ \
 		http://files.freeswitch.org/releases/sounds/:sounds
-DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	corsmith@gmail.com
 COMMENT=	Multi-protocol soft switch for telephony applications
@@ -29,40 +29,55 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3 \
 		libjbig.so:graphics/jbigkit \
 		libtiff.so:graphics/tiff
 
-USES=		gmake iconv jpeg libedit libtool lua perl5 pkgconfig shebangfix ssl tar:xz
+#Add autoreconf for mod_unimrcp
+USES=		autoreconf gmake iconv jpeg libedit libtool lua perl5 pkgconfig shebangfix ssl tar:xz
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	freeswitch
+
 SHEBANG_FILES=	scripts/fsxs.in
+
+#for mod_signalwire
+#USE_GITHUB=  nodefault
+#GH_TUPLE=  signalwire:libks:1.1.0:libks
 
 CONFLICTS_BUILD=	xmlrpc-c-*
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=	--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig \
 		--enable-zrtp
-CFLAGS+=	-Wno-error
+CFLAGS+=	-Wno-c11-extensions -Wno-deprecated-declarations \
+		-Wno-zero-length-array -Wno-incompatible-pointer-types \
+		-Wno-ignored-optimization-argument -Wno-unknown-warning-option \
+		-Wno-unused-function -Wno-enum-conversion -Wno-reserved-user-defined-literal
 
 USERS=		${PORTNAME}
 GROUPS=		${USERS}
 
 SUB_FILES=	pkg-message
 
-OPTIONS_DEFINE=		ALL_MODULES X11 EXAMPLES
-OPTIONS_DEFAULT=	8K 16K ENGLISH
+OPTIONS_DEFINE=		ALL_MODULES X11 EXAMPLES POSTGRESQL
+OPTIONS_DEFAULT=	8K 16K ENGLISH POSTGRESQL
 OPTIONS_MULTI=		BITRATE LANGUAGE
 OPTIONS_MULTI_BITRATE=	8K 16K 32K 48K
-OPTIONS_MULTI_LANGUAGE=	ENGLISH FRENCH RUSSIAN
+OPTIONS_MULTI_LANGUAGE=	ENGLISH ENGLISH_CA FRENCH_CA RUSSIAN BRAZILIAN SWEDISH CHINESE_SIM CHINESE_HK
 OPTIONS_SUB=		yes
 NO_OPTIONS_SORT=	yes
 
 ALL_MODULES_DESC=	Build all modules
-X11_DESC=	graphics/ImageMagick[-nox11] dependency
-8K_DESC=	8kHz Audio Files
-16K_DESC=	16kHz Audio Files
-32K_DESC=	32kHz Audio Files
-48K_DESC=	48kHz Audio Files
-ENGLISH_DESC=	US English Language Sounds
-FRENCH_DESC=	French Canadian Language Sounds
-RUSSIAN_DESC=	Russian Language Sounds
+X11_DESC=		graphics/ImageMagick[-nox11] dependency
+8K_DESC=		8kHz Audio Files
+16K_DESC=		16kHz Audio Files
+32K_DESC=		32kHz Audio Files
+48K_DESC=		48kHz Audio Files
+ENGLISH_DESC=		US English Language Sounds
+ENGLISH_CA_DESC=	Canadian English Language Sounds
+FRENCH_CA_DESC=		French Canadian Language Sounds
+RUSSIAN_DESC=		Russian Language Sounds
+BRAZILIAN_DESC=		Brazilian Portuguese Language Sounds
+SWEDISH_DESC=		Swedish Language Sounds
+CHINESE_SIM_DESC=	Chinese Simplified Language Sounds
+CHINESE_HK_DESC=	Chinese Traditional Hong Kong
+POSTGRESQL_DESC=	Compile with --enable-core-pgsql-support
 
 ALL_MODULES_BUILD_DEPENDS=	${LOCALBASE}/include/ladspa.h:audio/ladspa \
 				${LOCALBASE}/bin/aclocal:devel/automake
@@ -106,8 +121,16 @@ LIB_DEPENDS+=	libMagickWand-6.so:graphics/ImageMagick6-nox11
 .endif
 .endif
 
-EDPRE=	freeswitch-sounds
-EDPOST=	1.0.51.tar.gz
+.if ${PORT_OPTIONS:MPOSTGRESQL}
+USES+=			pgsql
+CONFIGURE_ARGS+=	--enable-core-pgsql-support
+LIB_DEPENDS+=		libpq.so:databases/postgresql10-server
+.endif
+
+EDPRE=		freeswitch-sounds
+EDPOST=		1.0.51.tar.gz
+#Swedish lang sounds are older/lower version.
+EDPOSTOLD=	1.0.50.tar.gz
 EDPOST_MUSIC=	1.0.52.tar.gz
 
 .for rate in ${BITRATES}
@@ -115,11 +138,26 @@ EXTRADISTFILES+=	${EDPRE}-music-${rate}-${EDPOST_MUSIC}
 .if ${PORT_OPTIONS:MENGLISH}
 EXTRADISTFILES+=	${EDPRE}-en-us-callie-${rate}-${EDPOST}
 .endif
-.if ${PORT_OPTIONS:MFRENCH}
+.if ${PORT_OPTIONS:MENGLISH_CA}
+EXTRADISTFILES+=	${EDPRE}-en-ca-june-${rate}-${EDPOST}
+.endif
+.if ${PORT_OPTIONS:MFRENCH_CA}
 EXTRADISTFILES+=	${EDPRE}-fr-ca-june-${rate}-${EDPOST}
 .endif
 .if ${PORT_OPTIONS:MRUSSIAN}
 EXTRADISTFILES+=	${EDPRE}-ru-RU-elena-${rate}-${EDPOST}
+.endif
+.if ${PORT_OPTIONS:MBRAZILIAN}
+EXTRADISTFILES+=	${EDPRE}-pt-BR-karina-${rate}-${EDPOST}
+.endif
+.if ${PORT_OPTIONS:MSWEDISH}
+EXTRADISTFILES+=	${EDPRE}-sv-se-jakob-${rate}-${EDPOSTOLD}
+.endif
+.if ${PORT_OPTIONS:MCHINESE_SIM}
+EXTRADISTFILES+=	${EDPRE}-zh-cn-sinmei-${rate}-${EDPOST}
+.endif
+.if ${PORT_OPTIONS:MCHINESE_HK}
+EXTRADISTFILES+=	${EDPRE}-zh-hk-sinmei-${rate}-${EDPOST}
 .endif
 .endfor
 
@@ -127,16 +165,20 @@ EXTRADISTFILES+=	${EDPRE}-ru-RU-elena-${rate}-${EDPOST}
 DISTFILES+=	${distfile}:sounds
 .endfor
 
+#mod_signalwire need libks
+post-patch:
+	@${REINPLACE_CMD} -e 's|^applications\/mod_signalwire|#applications\/mod_signalwire|g' ${WRKSRC}/modules.conf
+
 post-install:
-		${MKDIR} ${STAGEDIR}${DATADIR}/sounds
+	${MKDIR} ${STAGEDIR}${DATADIR}/sounds
 .for distfile in ${EXTRADISTFILES}
-		${TAR} --cd ${STAGEDIR}${DATADIR}/sounds -xf ${DISTDIR}/${distfile}
+	${TAR} --cd ${STAGEDIR}${DATADIR}/sounds -xf ${DISTDIR}/${distfile}
 .endfor
-		${FIND} ${STAGEDIR}${DATADIR}/sounds -type f | ${SED} "s,^${STAGEDIR}${DATADIR},${DATADIR}," >> ${TMPPLIST}
-		${RM} -r ${STAGEDIR}${ETCDIR}
-		${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/freeswitch/mod/mod_*.so \
-			${STAGEDIR}${PREFIX}/lib/libfreeswitch.so.1.0.0
-		(cd ${WRKSRC}/conf && \
-		${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
+	${FIND} ${STAGEDIR}${DATADIR}/sounds -type f | ${SED} "s,^${STAGEDIR}${DATADIR},${DATADIR}," >> ${TMPPLIST}
+	${RM} -r ${STAGEDIR}${ETCDIR}
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/freeswitch/mod/mod_*.so \
+	${STAGEDIR}${PREFIX}/lib/libfreeswitch.so.1.0.0
+	(cd ${WRKSRC}/conf && \
+	${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 
 .include <bsd.port.mk>
