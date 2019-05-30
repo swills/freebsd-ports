@@ -1,2 +1,5 @@
-SHA256 (jlatexmath-src-all-1.0.3.zip) = 58b14f0f30250b7cd3d1e5cfae20a8d5f999c01e9ff5e03508cbdb8f922dd7fd
-SIZE (jlatexmath-src-all-1.0.3.zip) = 1203123
+TIMESTAMP = 1545124625
+SHA256 (FreeBSD-jlatexmath-1.0.7-maven-repository.tar.gz) = 7481f2670993b27512a13ae1287e0f588d86ea2390f586278c6ecfb4a8c4fd53
+SIZE (FreeBSD-jlatexmath-1.0.7-maven-repository.tar.gz) = 41164626
+SHA256 (opencollab-jlatexmath-1.0.7_GH0.tar.gz) = 9e691090af94d6421d12744db86829d6f2115a5a4790a46f4815817a46e32436
+SIZE (opencollab-jlatexmath-1.0.7_GH0.tar.gz) = 1787823
