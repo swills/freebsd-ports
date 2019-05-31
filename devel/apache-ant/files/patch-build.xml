@@ -1,0 +1,29 @@
+--- build.xml	2019-05-02 13:09:53.000000000 +0000
++++ build.xml	2019-05-15 00:14:35.259380000 +0000
+@@ -129,5 +129,5 @@
+   -->
+   <path id="classpath">
+-    <fileset dir="lib/optional" includes="*.jar"/>
++    <fileset dir="${system.jars}" includes="*.jar" excludes="*ant*"/>
+   </path>
+ 
+@@ -1065,5 +1065,5 @@
+     </copy>
+ 
+-    <copy todir="${dist.dir}">
++    <copy todir="${dist.manual}">
+       <fileset dir="${basedir}">
+         <include name="CONTRIBUTORS"/>
+@@ -1511,5 +1511,5 @@
+     <javadoc useexternalfile="yes"
+              destdir="${build.javadocs}"
+-             failonerror="true"
++             failonerror="false"
+              author="true"
+              version="true"
+@@ -1536,4 +1536,5 @@
+       <group title="Ant Utilities" packages="org.apache.tools.ant.util*"/>
+       <classpath refid="tests-classpath"/>
++      <classpath refid="classpath"/>
+     </javadoc>
+   </target>
