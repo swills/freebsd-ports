@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	scipy
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	1.3.0
 CATEGORIES=	science python
 MASTER_SITES=	https://docs.scipy.org/doc/scipy/:doc \
 		CHEESESHOP:source \
@@ -22,7 +21,8 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 BUILD_DEPENDS=	${PYNUMPY}
 RUN_DEPENDS=	${PYNUMPY}
 
-USES=		fortran python
+USES=		fortran python shebangfix
+SHEBANG_FILES=	scipy/sparse/linalg/isolve/tests/test_gcrotmk.py
 USE_PYTHON=	autoplist concurrent distutils
 LDFLAGS+=	-shared
 PYDISTUTILS_BUILDARGS=	--fcompiler=gnu95
@@ -44,5 +44,8 @@ post-install:
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${DISTDIR}/scipy-ref-${PORTVERSION}.pdf ${STAGEDIR}${DOCSDIR}
+
+do-test:
+	cd ${TEST_WRKSRC} && ${PYTHON_CMD} runtests.py
 
 .include <bsd.port.mk>
