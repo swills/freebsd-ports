@@ -3,6 +3,7 @@
 
 PORTNAME=	dillo
 PORTVERSION=	3.0.5
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.dillo.org/download/ LOCAL/bf/dillo/ \
 		TEX_CTAN/language/hyph-utf8/tex/generic/hyph-utf8/patterns/txt/:hyphen
@@ -10,42 +11,40 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	phascolarctos@protonmail.ch
 COMMENT=	Fast, small graphical Web browser built upon fltk
 
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk
+LIB_DEPENDS=	libfltk.so:x11-toolkits/fltk \
+		libpng16.so:graphics/png \
+		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	wget:ftp/wget
 
-USES=		gmake iconv pkgconfig tar:bzip2
+USES=		gmake iconv jpeg pkgconfig tar:bzip2
+USE_XORG=	x11 xcursor xext xfixes xft xinerama xrender
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--libdir=${PREFIX}/libexec
-CONFLICTS=	dillo-i18n-[0-9]* \
-		dillo-0*
+
 PORTDOCS=	*
 
-OPTIONS_DEFINE=		COOKIES HYPHENATION IPV6 SSL THREADS DOCS
-OPTIONS_DEFAULT=	COOKIES HYPHENATION SSL THREADS
+OPTIONS_DEFINE=		COOKIES DEBUG HYPHENATION IPV6 THREADS DOCS
+OPTIONS_DEFAULT=	COOKIES HYPHENATION THREADS
 
 COOKIES_DESC=		Cookie support
 HYPHENATION_DESC=	Hyphenation file(s) for HYPHENATION_LANGS
-SSL_DESC=		Experimental HTTPS support
 
-SSL_USES=			ssl
+DEBUG_CONFIGURE_ENABLE=	gprof rtfl
+
 COOKIES_CONFIGURE_ENABLE=	cookies
+
 IPV6_CONFIGURE_ENABLE=		ipv6
-SSL_CONFIGURE_ENABLE=		ssl
+
 THREADS_CONFIGURE_ENABLE=	threaded-dns
 
 .include <bsd.port.pre.mk>
-
-.ifdef(WITH_DEBUG)
-CONFIGURE_ARGS+=	--enable-gprof --enable-rtfl
-.else
-CONFIGURE_ARGS+=	--disable-gprof --disable-rtfl
-.endif
 
 .if ${PORT_OPTIONS:MHYPHENATION}
 ALL_HYPHENATION_LANGS=	af as bg bn ca cop cs cy da de-1901 de-1996 \
