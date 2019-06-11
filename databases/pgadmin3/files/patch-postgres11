@@ -1,0 +1,212 @@
+--- pgadmin/schema/pgFunction.cpp.orig	2019-05-24 16:47:20.205020000 +0300
++++ pgadmin/schema/pgFunction.cpp	2019-05-24 16:56:08.010511000 +0300
+@@ -787,7 +787,18 @@
+ 				function->iSetArgDefValCount(functions->GetLong(wxT("pronargdefaults")));
+ 
+ 				// Check if it is a window function
+-				function->iSetIsWindow(functions->GetBool(wxT("proiswindow")));
++//				function->iSetIsWindow(functions->GetBool(wxT("proiswindow")));
++				bool isWindow = false;
++				if (obj->GetConnection()->BackendMinimumVersion(11, 0))
++				{
++					char* c = functions->GetCharPtr(wxT("prokind"));
++					isWindow = c!=NULL && *c=='w';
++				}
++				else
++				{
++					isWindow = functions->GetBool(wxT("proiswindow"));
++				}
++				function->iSetIsWindow(isWindow);
+ 			}
+ 			else
+ 				function->iSetIsWindow(false);
+@@ -1060,10 +1071,17 @@
+ 
+ pgObject *pgFunctionFactory::CreateObjects(pgCollection *collection, ctlTree *browser, const wxString &restr)
+ {
+-	wxString funcRestriction = wxT(
+-	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
+-	                           + wxT("::oid\n   AND typname NOT IN ('trigger', 'event_trigger') \n");
++//	wxString funcRestriction = wxT(
++//	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
++//	                           + wxT("::oid\n   AND typname NOT IN ('trigger', 'event_trigger') \n");
+ 
++	wxString funcRestriction = wxString::Format( wxT(" WHERE %s AND pronamespace = %lu::oid\n   AND typname NOT IN ('trigger', 'event_trigger') \n"),
++		collection->GetConnection()->BackendMinimumVersion(11, 0) ? wxT(" pr.prokind!='a'") : wxT(" proisagg = FALSE"),
++		collection->GetSchema()->GetOid()
++		);
++
++
++
+ 	if (collection->GetConnection()->EdbMinimumVersion(8, 1))
+ 		funcRestriction += wxT("   AND NOT (lanname = 'edbspl' AND protype = '1')\n");
+ 	else if (collection->GetConnection()->EdbMinimumVersion(8, 0))
+@@ -1081,9 +1099,16 @@
+ 
+ pgObject *pgTriggerFunctionFactory::CreateObjects(pgCollection *collection, ctlTree *browser, const wxString &restr)
+ {
+-	wxString funcRestriction = wxT(
+-	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
+-	                           + wxT("::oid\n");
++//	wxString funcRestriction = wxT(
++//	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
++//	                           + wxT("::oid\n");
++	                           
++	wxString funcRestriction = wxString::Format( wxT(" WHERE %s AND pronamespace = %lu::oid\n"),
++		collection->GetConnection()->BackendMinimumVersion(11, 0) ? wxT(" pr.prokind!='a'") : wxT(" proisagg = FALSE"),
++		collection->GetSchema()->GetOid()
++		);
++	                           
++	                           
+ 	if(collection->GetConnection()->BackendMinimumVersion(9, 3))
+ 	{
+ 		funcRestriction += wxT("AND (typname IN ('trigger', 'event_trigger') \nAND lanname NOT IN ('edbspl', 'sql', 'internal'))");
+@@ -1100,9 +1125,14 @@
+ 
+ pgObject *pgProcedureFactory::CreateObjects(pgCollection *collection, ctlTree *browser, const wxString &restr)
+ {
+-	wxString funcRestriction = wxT(
+-	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
+-	                           + wxT("::oid AND lanname = 'edbspl'\n");
++//	wxString funcRestriction = wxT(
++//	                               " WHERE proisagg = FALSE AND pronamespace = ") + NumToStr(collection->GetSchema()->GetOid())
++//	                           + wxT("::oid AND lanname = 'edbspl'\n");
++
++	wxString funcRestriction = wxString::Format( wxT(" WHERE %s AND pronamespace = %lu::oid AND lanname = 'edbspl'\n"),
++		collection->GetConnection()->BackendMinimumVersion(11, 0) ? wxT(" pr.prokind!='a'") : wxT(" proisagg = FALSE"),
++		collection->GetSchema()->GetOid()
++		);
+ 
+ 	if (collection->GetConnection()->EdbMinimumVersion(8, 1))
+ 		funcRestriction += wxT("   AND protype = '1'\n");
+--- pgadmin/include/pgAdmin3.h.orig	2019-05-24 16:57:48.604781000 +0300
++++ pgadmin/include/pgAdmin3.h	2019-05-24 16:58:19.307701000 +0300
+@@ -58,8 +58,8 @@
+ // Supported server minimum and maximum values.
+ const short SERVER_MIN_VERSION_N = 0x0804;
+ const wxString SERVER_MIN_VERSION_T = wxT("8.4");
+-const short SERVER_MAX_VERSION_N = 0x0906;
+-const wxString SERVER_MAX_VERSION_T = wxT("9.6");
++const short SERVER_MAX_VERSION_N = 0x0B03;
++const wxString SERVER_MAX_VERSION_T = wxT("11.3");
+ 
+ // Supported Greenplum Database and Greenplum HAWQ minimum and maximum values.
+ const short GP_MIN_VERSION_N = 0x0802;
+--- pgadmin/schema/pgServer.cpp.orig	2019-05-24 16:59:24.102130000 +0300
++++ pgadmin/schema/pgServer.cpp	2019-05-24 17:10:41.077826000 +0300
+@@ -886,8 +886,16 @@
+ 
+ 		connected = true;
+ 		bool hasUptime = false;
++		bool is10plus = false;
+ 
+ 		wxString sql = wxT("SELECT usecreatedb, usesuper");
++		
++		if (conn->BackendMinimumVersion(10, 0))
++		{
++			is10plus = true;
++		}
++		
++		
+ 		if (conn->BackendMinimumVersion(8, 1))
+ 		{
+ 			hasUptime = true;
+@@ -905,13 +913,30 @@
+ 		if (conn->BackendMinimumVersion(8, 5))
+ 		{
+ 			sql += wxT(", CASE WHEN usesuper THEN pg_is_in_recovery() ELSE NULL END as inrecovery");
+-			sql += wxT(", CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc");
+-			sql += wxT(", CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc");
++			if (is10plus)
++			{
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_wal_receive_lsn() ELSE NULL END as receiveloc");
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_wal_replay_lsn() ELSE NULL END as replayloc");
++			}
++			else
++			{
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_xlog_receive_location() ELSE NULL END as receiveloc");
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_xlog_replay_location() ELSE NULL END as replayloc");
++			}
+ 		}
+ 		if (conn->BackendMinimumVersion(9, 1))
+ 		{
+-			sql += wxT(", CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp");
+-			sql += wxT(", CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused");
++			if (is10plus)
++			{
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp");
++				sql += wxT(", CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_wal_replay_paused() ELSE NULL END as isreplaypaused");
++			
++			}
++			else
++			{
++				sql += wxT(", CASE WHEN usesuper THEN pg_last_xact_replay_timestamp() ELSE NULL END as replay_timestamp");
++				sql += wxT(", CASE WHEN usesuper AND pg_is_in_recovery() THEN pg_is_xlog_replay_paused() ELSE NULL END as isreplaypaused");
++			}
+ 		}
+ 
+ 		pgSet *set = ExecuteSet(sql + wxT("\n  FROM pg_user WHERE usename=current_user"));
+@@ -1262,8 +1287,8 @@
+ 			if (conn->BackendMinimumVersion(8, 5))
+ 			{
+ 				properties->AppendItem(_("In recovery"), (GetInRecovery() ? _("yes") : _("no")));
+-				properties->AppendItem(_("Last XLOG receive location"), GetReceiveLoc());
+-				properties->AppendItem(_("Last XLOG replay location"), GetReplayLoc());
++				properties->AppendItem(_("Last XLOG/WAL receive location"), GetReceiveLoc());
++				properties->AppendItem(_("Last XLOG/WAL replay location"), GetReplayLoc());
+ 			}
+ 			if (conn->BackendMinimumVersion(9, 1))
+ 			{
+@@ -1355,7 +1380,17 @@
+ 		wxString pidcol = GetConnection()->BackendMinimumVersion(9, 2) ? wxT("pid") : wxT("procpid");
+ 		wxString querycol = GetConnection()->BackendMinimumVersion(9, 2) ? wxT("query") : wxT("current_query");
+ 		wxString sql;
+-		wxString replication_query = wxT("state || ' (' || sent_location || ' sent, ' || write_location || ' written, ' || flush_location || ' flushed, ' || replay_location || ' applied)'");
++		
++		wxString replication_query;
++		if (GetConnection()->BackendMinimumVersion(10, 0))
++		{
++			replication_query = wxT("state || ' (' || sent_lsn || ' sent, ' || write_lsn || ' written, ' || flush_lsn || ' flushed, ' || replay_lsn || ' applied)'");
++		}
++		else
++		{
++			replication_query = wxT("state || ' (' || sent_location || ' sent, ' || write_location || ' written, ' || flush_location || ' flushed, ' || replay_location || ' applied)'");
++		}
++		
+ 		wxLogInfo(wxT("Displaying statistics for server %s"), GetIdentifier().c_str());
+ 
+ 		// Add the statistics view columns
+@@ -1434,7 +1469,15 @@
+ bool pgServer::PauseReplay()
+ {
+ 	SetReplayPaused(true);
+-	wxString sql = wxT("SELECT pg_xlog_replay_pause()");
++	wxString sql;
++	if (conn->BackendMinimumVersion(10, 0))
++	{
++		sql = wxT("SELECT pg_wal_replay_pause()");
++	} 
++	else 
++	{
++		sql = wxT("SELECT pg_xlog_replay_pause()");
++	}
+ 	return conn->ExecuteVoid(sql);
+ }
+ 
+@@ -1442,7 +1485,15 @@
+ bool pgServer::ResumeReplay()
+ {
+ 	SetReplayPaused(false);
+-	wxString sql = wxT("SELECT pg_xlog_replay_resume()");
++	wxString sql;
++	if (conn->BackendMinimumVersion(10, 0))
++	{
++		sql = wxT("SELECT pg_wal_replay_resume()");
++	} 
++	else 
++	{
++		sql = wxT("SELECT pg_xlog_replay_resume()");
++	}
+ 	return conn->ExecuteVoid(sql);
+ }
+ 
