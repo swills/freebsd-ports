@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	intel-pcm
-PORTVERSION=	201812.3
+PORTVERSION=	201902
 CATEGORIES=	sysutils
 
 MAINTAINER=	imp@FreeBSD.org
@@ -18,7 +18,6 @@ USES=		gmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	opcm
 GH_PROJECT=	pcm
-GH_TAGNAME=	201710
 
 CONFLICTS_INSTALL=	intel-pcm-devel
 
