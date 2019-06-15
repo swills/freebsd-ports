@@ -2,18 +2,27 @@
 # $FreeBSD$
 
 PORTNAME=	bs
-PORTVERSION=	2.10
+PORTVERSION=	2.11
 CATEGORIES=	games
-MASTER_SITES=	http://www.catb.org/~esr/bs/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	alfix86@gmail.com
 COMMENT=	Battleships solitaire game with a color interface
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD2CLAUSE
+LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gmake ncurses
+BUILD_DEPENDS=	xmlto:textproc/xmlto
+
+USES=		gmake ncurses gnome
+
 MAKE_ARGS=	CC="${CC}"
 ALL_TARGET=	# empty
+
+USE_GITLAB=	yes
+GL_ACCOUNT=	esr
+GL_COMMIT=	73947294765e163a7b914fd6eb4dd364125b3382
+
+INSTALLS_ICONS=	yes
 
 PLIST_FILES=	bin/${PORTNAME} \
 		man/man6/${PORTNAME}.6.gz \
