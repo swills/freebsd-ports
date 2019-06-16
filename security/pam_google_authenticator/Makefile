@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pam_google_authenticator
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 PORTEPOCH=	1
 CATEGORIES=	security
 
