@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	retro12
-DISTVERSION=	2019.1
+DISTVERSION=	2019.6
 CATEGORIES=	lang
 MASTER_SITES=	https://forthworks.com/retro/r/
 DISTNAME=	${PORTNAME:tu}-${DISTVERSION}
@@ -12,13 +12,7 @@ COMMENT=	Clean, elegant, and pragmatic dialect of Forth
 LICENSE=	ISCL
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-USES=	ncurses shebangfix
-
-SHEBANG_FILES=	example/Atua*
-SHEBANG_LANG=	rre
-
-# Conflicting files: bin/listener bin/repl bin/ri
-CONFLICTS_INSTALL=	audio/listener mail/nmh japanese/mh lang/ruby
+USES=	ncurses
 
 MAKE_ENV=	DATADIR=${DATADIR} \
 		DESTDIR=${DESTDIR} \
@@ -32,14 +26,10 @@ MAKE_JOBS_UNSAFE=	yes
 PLIST_FILES=	bin/retro \
 		bin/retro-embedimage \
 		bin/retro-extend \
-		bin/retro-injectimage-js \
 		bin/retro-muri \
-		bin/retro-repl \
-		bin/retro-ri \
 		bin/retro-unu
 
-PORTDATA=	RETRO12.html \
-		glossary.forth \
+PORTDATA=	glossary.forth \
 		ngaImage \
 		tests \
 		words.tsv
