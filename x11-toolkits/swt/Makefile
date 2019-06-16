@@ -2,9 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	swt
-DISTVERSION=	4.7.3a
+DISTVERSION=	4.11
 CATEGORIES=	x11-toolkits devel java
-MASTER_SITES=	http://archive.eclipse.org/eclipse/downloads/drops4/R-${DISTVERSION}-201803300640/
+MASTER_SITES=	http://archive.eclipse.org/eclipse/downloads/drops4/R-${DISTVERSION}-201903070500/
 DISTNAME=	swt-${DISTVERSION}-${DIST_EXT}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -15,13 +15,13 @@ LICENSE=	EPL
 ONLY_FOR_ARCHS=	amd64 i386
 BROKEN_i386=	missing distinfo
 
-USES=		gl gnome pkgconfig zip:infozip
+USES=		gl gmake gnome pkgconfig zip:infozip
 
-SWT_VERSION=	4763
+SWT_VERSION=	411
 OUTPUT_JAR=	swt.jar
 
 USE_GL=		glu gl
-USE_GNOME=	gtk20
+USE_GNOME=	gtk30
 USE_JAVA=	yes
 USE_XORG=	xtst
 JAVA_VERSION=	1.6+
@@ -36,9 +36,15 @@ PLIST_FILES=	${JAVAJARDIR}/${OUTPUT_JAR} \
 		lib/libswt-awt-gtk-${SWT_VERSION}.so \
 		lib/libswt-gtk-${SWT_VERSION}.so \
 		lib/libswt-glx-gtk-${SWT_VERSION}.so \
-		lib/libswt-pi-gtk-${SWT_VERSION}.so
+		lib/libswt-pi3-gtk-${SWT_VERSION}.so \
+		lib/libswt-webkit-gtk-${SWT_VERSION}.so \
+		lib/libswt-webkit2extension-gtk-${SWT_VERSION}.so
 
 NO_WRKSUBDIR=	yes
+
+LIB_DEPENDS+=	libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libgdk_pixbuf-2.0.so:graphics/gdk-pixbuf2 \
+		libsoup-2.4.so:devel/libsoup
 
 OPTIONS_DEFINE=	CAIRO
 OPTIONS_DEFAULT=	CAIRO
@@ -52,8 +58,8 @@ MAKE_CAIRO=	make_cairo
 .endif
 
 MAKE_ENV+=	MAKE_CAIRO=${MAKE_CAIRO} \
-		MAKE_MOZILLA=${MAKE_MOZILLA} \
-		JAVA_HOME=${JAVA_HOME}
+		JAVA_HOME=${JAVA_HOME} \
+		SWT_VERSION=${SWT_VERSION}
 
 .if (${ARCH} == "amd64")
 DIST_EXT=	gtk-linux-x86_64
@@ -65,10 +71,11 @@ post-extract:
 	@(cd ${WRKSRC} && ${UNZIP_CMD} -qo "*.zip")
 	@${RM} ${WRKSRC}/*.o ${WRKSRC}/*.so ${WRKSRC}/*.jar
 	@${CP} ${FILESDIR}/build.xml ${WRKSRC}/build.xml
+	@${CP} ${WRKSRC}/make_linux.mak ${WRKSRC}/make_freebsd.mak
 
-post-patch:
-	${SED} -e 's|freebsd|dragonfly|g' ${WRKSRC}/make_freebsd.mak \
-		> ${WRKSRC}/make_dragonfly.mak
+#pre-patch:
+#	${SED} -e 's|freebsd|dragonfly|g' ${WRKSRC}/make_freebsd.mak \
+#		> ${WRKSRC}/make_dragonfly.mak
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}
