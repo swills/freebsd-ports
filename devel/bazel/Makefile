@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=		bazel
-DISTVERSION=		0.26.0
+DISTVERSION=		0.27.0
 CATEGORIES=		devel java
 MASTER_SITES=		https://storage.googleapis.com/bazel/${PORTVERSION}/rc${FINALRC}/
 DISTNAME=		bazel-${PORTVERSION}rc${FINALRC}-dist
@@ -24,9 +24,9 @@ BUILD_DEPENDS=		bash:shells/bash \
 # In bazel, a release is always code-wise identical to the final release candidate.
 # Hence we can also download that one and so have a simple way to also test earlier release
 # candidates.
-FINALRC=		16
+FINALRC=		5
 
-USES=			shebangfix zip:infozip python
+USES=			shebangfix zip:infozip python:3.3+
 SHEBANG_REGEX=		.*(sh|txt|_stub|stub_.*|bazel|get_workspace_status|protobuf_support|_so)
 USE_JAVA=		yes
 JAVA_VENDOR=		openjdk
@@ -53,12 +53,11 @@ post-patch:
 	${WRKSRC}/src/main/cpp/blaze_util_posix.cc \
 	${WRKSRC}/src/main/cpp/BUILD
 	@${ECHO_CMD} build --strategy=Javac=standalone >> ${WRKSRC}/scripts/packages/bazel.bazelrc
-	@${ECHO_CMD} build --python_path=${PYTHON_CMD} >> ${WRKSRC}/scripts/packages/bazel.bazelrc
 	@${ECHO_CMD} build --host_javabase=@local_jdk//:jdk >> ${WRKSRC}/scripts/packages/bazel.bazelrc
 	@${ECHO_CMD} build --action_env=PATH=/bin:/usr/bin/:${LOCALBASE}/bin >> ${WRKSRC}/scripts/packages/bazel.bazelrc
 	@${REINPLACE_CMD} \
-	-e 's|\$$command|$$command --python_path=${PYTHON_CMD}|' \
-	${WRKSRC}/scripts/bootstrap/bootstrap.sh
+	-e 's|^\(PYTHON_BIN=.*\)|if [ "%VERSION%" = "3" ] ; then PYTHON_BIN=${PYTHON_CMD}; else \1 ; fi|' \
+	${WRKSRC}/tools/python/pywrapper_template.txt
 	@${REINPLACE_CMD} \
 	-e 's|/usr/bin/env python|${PYTHON_CMD}|' \
 	${WRKSRC}/src/main/java/com/google/devtools/build/lib/bazel/rules/python/BazelPythonSemantics.java
