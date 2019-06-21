@@ -2,11 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	collectd
-PORTVERSION=	5.8.1
-PORTREVISION=	2
+PORTVERSION=	5.9.0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://storage.googleapis.com/collectd-tarballs/
-PKGNAMESUFFIX=	5
 
 MAINTAINER=	ports@bsdserwis.com
 COMMENT=	Systems & network statistics collection daemon
@@ -199,7 +197,7 @@ OPENLDAP_USE=			openldap=yes
 OPENLDAP_CONFIGURE_ENABLE=	openldap
 OPENLDAP_CONFIGURE_WITH=	libldap=${LOCALBASE}
 
-PERL_USES=			perl5
+PERL_USES=			${PERL}
 PERL_CONFIGURE_ENABLE=		perl
 PERL_CONFIGURE_WITH=		perl=${PERL} perl-bindings libperl
 
@@ -219,7 +217,7 @@ PROMETHEUS_LIB_DEPENDS+=	libprotoc.so:devel/protobuf
 PROMETHEUS_LIB_DEPENDS+=	libmicrohttpd.so:www/libmicrohttpd
 PROMETHEUS_CONFIGURE_ENABLE=	write_prometheus
 
-PYTHON_USES=			python
+PYTHON_USES=			${PYTHON_CMD}
 PYTHON_CONFIGURE_ENABLE=	python
 PYTHON_CONFIGURE_WITH=		python=${PYTHON_CMD}
 PYTHON_CONFIGURE_ENV=		PYTHON_CONFIG=${PYTHON_CMD}-config
@@ -339,7 +337,7 @@ SHEBANG_FILES=	contrib/collection.cgi
 
 post-patch:
 	@${REINPLACE_CMD} 's/-Werror//' \
-		${WRKSRC}/configure.ac 
+		${WRKSRC}/configure.ac
 	@${REINPLACE_CMD} \
 		-e 's;@prefix@/var/;/var/;' \
 		-e 's;/var/lib/;/var/db/;' \
