@@ -77,7 +77,7 @@ TLS_CONFIGURE_ON=	--with-security-modules=tsm --with-transports=TLSTCP,DTLSUDP
 
 .include <bsd.port.options.mk>
 
-.if ${OSVERSION} >= 1200085
+.if ${OSVERSION} >= 1200085 && ${SSL_DEFAULT} == base
 EXTRA_PATCHES=	${PATCHDIR}/extra-patch-openssl11
 .endif
 
@@ -96,7 +96,7 @@ PLIST_SUB+=	PYDISTUTILS_PKGVERSION=${PYDISTUTILS_PKGVERSION}
 PLIST_SUB+=	WITH_PYTHON="@comment "
 .endif
 
-CONFIGURE_ARGS+=--with-openssl="/usr"
+CONFIGURE_ARGS+=--with-openssl=${OPENSSLBASE}
 
 .if ${PORT_OPTIONS:MDUMMY}
 CONFIGURE_ARGS+=--with-dummy-values
