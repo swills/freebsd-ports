@@ -1,0 +1,12 @@
+--- CMakeLists.txt.orig	2019-06-22 19:07:48 UTC
++++ CMakeLists.txt
+@@ -309,7 +309,8 @@ if (ENABLE_EDEN_SUPPORT)
+   find_package(rsocket CONFIG REQUIRED)
+ endif()
+ 
+-find_package(PythonInterp REQUIRED)
++# https://github.com/facebook/watchman/issues/714
++#find_package(PythonInterp REQUIRED)
+ message(STATUS "Found python ${PYTHON_VERSION_STRING}")
+ 
+ if(PYTHONINTERP_FOUND)
