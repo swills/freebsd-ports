@@ -41,11 +41,11 @@ INSTALLS_ICONS=	yes
 MAKE_JOBS_UNSAFE=yes
 
 CONFIG=		bundled-celt bundled-rnnoise no-bundled-opus no-bundled-speex no-bundled-speexdsp \
-		no-embed-qt-translations no-g15 no-alsa no-jackaudio no-pulseaudio no-server no-update
+		no-embed-qt-translations no-g15 no-alsa no-jackaudio no-server no-update
 
 QMAKE_ARGS=	"CONFIG+=${CONFIG}"
 
-OPTIONS_DEFINE=	DBUS BONJOUR PORTAUDIO SPEECHD
+OPTIONS_DEFINE=	DBUS BONJOUR PORTAUDIO PULSEAUDIO SPEECHD
 OPTIONS_DEFAULT=	DBUS
 
 DBUS_VARS_OFF=	CONFIG+=no-dbus
@@ -58,6 +58,9 @@ BONJOUR_LIB_DEPENDS=	libdns_sd.so:net/mDNSResponder
 
 PORTAUDIO_VARS_OFF=	CONFIG+=no-portaudio
 PORTAUDIO_LIB_DEPENDS=	libportaudio.so:audio/portaudio
+
+PULSEAUDIO_VARS_OFF=	CONFIG+=no-pulseaudio
+PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 
 SPEECHD_DESC=		Support for Speech Dispatcher
 SPEECHD_VARS_OFF=	CONFIG+=no-speechd
