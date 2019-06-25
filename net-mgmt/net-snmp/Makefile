@@ -20,9 +20,6 @@ BROKEN_SSL=	openssl111
 
 LIB_DEPENDS=	libpkg.so:ports-mgmt/pkg
 
-NOT_FOR_ARCHS=		mips mips64
-NOT_FOR_ARCHS_REASON=	SSP is currently broken on MIPS
-
 OPTIONS_DEFINE=	IPV6 MFD_REWRITES PERL PERL_EMBEDDED PYTHON DUMMY TKMIB \
 		MYSQL AX_SOCKONLY UNPRIVILEGED SMUX DOCS JAIL AX_DISABLE_TRAP \
 		TLS NEWSYSLOG
@@ -64,10 +61,6 @@ CONFIGURE_ARGS+=--enable-shared --enable-internal-md5 \
 		--with-gnu-ld --without-libwrap \
 		--with-ldflags="-lm -lkvm -ldevstat -L${PKG_PREFIX}/lib -L${LOCALBASE}/lib ${LCRYPTO}"
 SUB_FILES=	pkg-message
-
-.if !defined(WITHOUT_SSP)
-CONFIGURE_ARGS+=--with-libs="-lssp_nonshared"
-.endif
 
 .if defined(BATCH)
 CONFIGURE_ARGS+=--with-defaults
@@ -218,6 +211,14 @@ DOC_FILES=	AGENT.txt COPYING FAQ NEWS README \
 CONFLICTS=	ucd-snmp-4.* net-snmp-5.3.*
 
 .include <bsd.port.pre.mk>
+
+.if ${ARCH:Mmips*}
+SSP_UNSAFE=	yes
+.endif
+
+.if !defined(WITHOUT_SSP) && !defined(SSP_UNSAFE)
+CONFIGURE_ARGS+=--with-libs="-lssp_nonshared"
+.endif
 
 .if ${SSL_DEFAULT} != base
 LCRYPTO=	-lcrypto
