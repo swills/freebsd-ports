@@ -17,7 +17,7 @@
 +#define HAS_LIB_USB_HID
 +#endif
 +#if !defined(XPS2_SUPPORT)
-+#define XPS2_SUPPORT
++/* #define XPS2_SUPPORT */
 +#endif
 +
 +#endif /* defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__DragonFly__) */
