@@ -18,7 +18,8 @@ PORTSCOUT=	limitw:1,even
 USES=		cpe gmake libtool localbase pkgconfig python:build shebangfix
 GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-CONFIGURE_ARGS=	--with-test-socket-dir=${WRKDIR} \
+CONFIGURE_ARGS=	--with-session-socket-dir=/tmp \
+		--with-test-socket-dir=${WRKDIR} \
 		--disable-doxygen-docs \
 		--disable-selinux \
 		--disable-apparmor \
