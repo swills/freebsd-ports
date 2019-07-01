@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	busybox
-PORTVERSION=	1.26.2
+PORTVERSION=	1.30.1
 CATEGORIES=	sysutils misc shells
 MASTER_SITES=	https://busybox.net/downloads/
 
@@ -35,6 +35,9 @@ post-patch:
 		${REINPLACE_CMD} -e \
 		's|<alloca.h>|<stdlib.h>| ; \
 		 s|<malloc.h>|<stdlib.h>|'
+	@${FIND} ${WRKSRC} -name "*.[ch]" -print0 | ${XARGS} -0 \
+		${REINPLACE_CMD} -e \
+		's|/proc|/compat/linux/proc|'
 
 do-configure:
 	@${CP} ${FILESDIR}/data-.config ${WRKSRC}/.config
