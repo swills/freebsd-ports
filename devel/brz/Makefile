@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	brz
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.1
 CATEGORIES=	devel
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +22,7 @@ RUN_DEPENDS=	\
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}testtools>=0:devel/py-testtools@${PY_FLAVOR}
 
 USES=		gettext python shebangfix
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	distutils autoplist concurrent
 
 SHEBANG_FILES=	brz
 MAKE_ENV=	BRZ_LOG=/dev/null
