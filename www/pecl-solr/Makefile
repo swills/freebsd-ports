@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	solr
-PORTVERSION=	2.4.0
+PORTVERSION=	2.5.0
 CATEGORIES=	www
 
 MAINTAINER=	gaod@hychen.org
@@ -14,7 +14,6 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libxml2.so:textproc/libxml2
 
 USES=		php:pecl
-USE_PHP=	json:build
-IGNORE_WITH_PHP=	72 73
+USE_PHP=	json
 
 .include <bsd.port.mk>
