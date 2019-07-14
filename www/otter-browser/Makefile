@@ -2,8 +2,8 @@
 
 PORTNAME=	otter-browser
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.01
-PORTREVISION=	2
+DISTVERSION=	1.0.81
+PORTREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	kde@FreeBSD.org
@@ -21,6 +21,7 @@ USE_QT=		concurrent core dbus declarative gui multimedia network printsupport \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	OtterBrowser
+GH_TAGNAME=	d25fedf
 
 OPTIONS_MULTI=		BACKEND
 OPTIONS_MULTI_BACKEND=	QTWEBENGINE QTWEBKIT
