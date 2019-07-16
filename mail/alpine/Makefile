@@ -30,16 +30,17 @@ MAKE_ARGS+=		CC="${CC}" CXX="${CXX}" GCCCFLAGS="${CFLAGS}"
 # When you update please double check that the commit corresponds to
 # the actual version you've set in PORTVERSION.
 GIT_COMMIT=		abeb2c25935ef8c75f1e5deef0f81276754dc975
-GIT_COMMIT_SHORT=	${GIT_COMMIT:C/^(.......).*/\1/}
+GIT_COMMIT_SHORT=	abeb2c2
 WRKSRC=			${WRKDIR}/alpine-${GIT_COMMIT_SHORT}
 
-OPTIONS_DEFINE=		ASPELL CONS25 DOCS IPV6 LDAP MOUSE NLS NTLM PASSFILE THREADS
+OPTIONS_DEFINE=		ASPELL CONS25 DOCS IPV6 LDAP MAILDIR MOUSE NLS NTLM PASSFILE THREADS
 OPTIONS_DEFAULT=	ASPELL MOUSE THREADS
 .if defined(PICO_ALPINE_SLAVE)
 OPTIONS_EXCLUDE=	CONS25 IPV6 LDAP PASSFILE
 .endif
 
 CONS25_DESC=	Add a patch to support color for default console
+MAILDIR_DESC=	Add a patch to support maildir
 NTLM_DESC=	Support for Windows NT Lan Manager authentication
 PASSFILE_DESC=	Support for a stored password file
 
@@ -58,7 +59,12 @@ IPV6_CONFIGURE_WITH=		ipv6
 # Option LDAP
 LDAP_USE=			openldap=yes
 LDAP_CONFIGURE_WITH=		ldap
-LDAP_CONFIGURE_ON=		--with-ldap-dir=${LOCALBASE}
+LDAP_CFLAGS=			-I${LOCALBASE}/include
+LDAP_LDFLAGS=			-L${LOCALBASE}/lib
+
+# Option MAILDIR
+MAILDIR_PATCH_SITES=		http://alpine.x10host.com/alpine/alpha/patches/alpine-2.21.99999/
+MAILDIR_PATCHFILES+=		maildir.patch.gz:-p1
 
 # Option MOUSE
 MOUSE_CONFIGURE_ENABLE=		mouse
