@@ -14,7 +14,6 @@ LICENSE_FILE_GPLv2+ =	${WRKSRC}/COPYING
 LICENSE_FILE_BSD3CLAUSE=${WRKSRC}/COPYING-CMAKE-SCRIPTS
 
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/graph/buffer_concepts.hpp:devel/boost-libs
-LIB_DEPENDS=	libopencv_video.so:graphics/opencv
 
 USES=		cmake compiler:c++11-lang gettext kde:5 pkgconfig \
 		qt:5 tar:xz
