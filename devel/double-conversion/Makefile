@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	double-conversion
-PORTVERSION=	3.0.0
+PORTVERSION=	3.1.5
 DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
