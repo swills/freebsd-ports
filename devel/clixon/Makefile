@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	clixon
-PORTVERSION=	3.9.0
-PORTREVISION=	1
+PORTVERSION=	4.0.0
 CATEGORIES=	devel
 
 MAINTAINER=	dcornejo@netgate.com
@@ -25,6 +24,8 @@ MAKE_ARGS=	wwwdir=${PREFIX}/sbin wwwuser=${WWWOWN}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-cligen=${LOCALBASE} --sysconfdir=${ETCDIR}
+
+SUB_FILES=	pkg-message
 
 MAKE_JOBS_UNSAFE=yes
 
