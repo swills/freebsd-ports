@@ -2,11 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	lwjgl
-DISTVERSION=	2.9.3
+DISTVERSION=	20181208
 CATEGORIES=	games java
-MASTER_SITES=	SF/java-game-lib/Official%20Releases/${PORTNAME:tu}%20${PORTVERSION}/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		${PORTNAME}-source-${DISTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	freebsd@skinc.ru
 COMMENT=	Lightweight Java Game Library
@@ -19,11 +16,13 @@ BUILD_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils \
 		${JAVALIBDIR}/jinput/jinput.jar:games/jinput
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
-EXTRACT_AFTER_ARGS=	-d ${WRKSRC}
+USES=		dos2unix
 
-USES=		dos2unix zip
-DOS2UNIX_REGEX= .*.[^jp][^an][^rg]$
+USE_GITHUB=	yes
+GH_ACCOUNT=	LWJGL
+GH_TAGNAME=	2df01dd
+
+DOS2UNIX_REGEX=	.*.[^jp][^an][^rg]$
 USE_JAVA=	yes
 USE_LDCONFIG=	yes
 JAVA_VERSION=	1.7+
@@ -34,11 +33,11 @@ USE_XORG=	xcursor xrandr xxf86vm
 MAKE_ENV+=	CLASSPATH=${JAVALIBDIR}/jutils/jutils.jar:${JAVALIBDIR}/jinput/jinput.jar:${WRKSRC}/${DISTNAME}/jar/
 ALL_TARGET=	jars compile_native
 
-PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}/${PORTNAME}.jar \
-		%%JAVAJARDIR%%/${PORTNAME}/${PORTNAME}_test.jar \
-		%%JAVAJARDIR%%/${PORTNAME}/${PORTNAME}_util.jar \
-		%%JAVAJARDIR%%/${PORTNAME}/${PORTNAME}_util_applet.jar
-PLIST_DIRS=	%%JAVAJARDIR%%/${PORTNAME} \
+PLIST_FILES=	${JAVAJARDIR}/${PORTNAME}/${PORTNAME}.jar \
+		${JAVAJARDIR}/${PORTNAME}/${PORTNAME}_test.jar \
+		${JAVAJARDIR}/${PORTNAME}/${PORTNAME}_util.jar \
+		${JAVAJARDIR}/${PORTNAME}/${PORTNAME}_util_applet.jar
+PLIST_DIRS=	${JAVAJARDIR}/${PORTNAME} \
 		lib/${PORTNAME}${PORTVERSION}
 
 .include <bsd.port.pre.mk>
