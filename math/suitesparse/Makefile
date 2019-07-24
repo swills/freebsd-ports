@@ -5,7 +5,8 @@ PORTNAME=	suitesparse
 DISTVERSION=	5.2.0
 PORTREVISION=	3
 CATEGORIES=	math
-MASTER_SITES=	http://faculty.cse.tamu.edu/davis/SuiteSparse/
+MASTER_SITES=	http://faculty.cse.tamu.edu/davis/SuiteSparse/ \
+		https://mirror.sobukus.de/files/src/suitesparse/
 DISTNAME=	SuiteSparse-${PORTVERSION}
 
 MAINTAINER=	fortran@FreeBSD.org
