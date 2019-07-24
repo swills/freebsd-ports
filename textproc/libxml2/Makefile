@@ -5,7 +5,8 @@ PORTNAME=	libxml2
 PORTVERSION=	2.9.9
 PORTREVISION?=	0
 CATEGORIES?=	textproc gnome
-MASTER_SITES=	http://xmlsoft.org/sources/
+MASTER_SITES=	http://xmlsoft.org/sources/ \
+		https://ftp.osuosl.org/pub/blfs/conglomeration/libxml2/
 DIST_SUBDIR=	gnome2
 
 MAINTAINER?=	gnome@FreeBSD.org
