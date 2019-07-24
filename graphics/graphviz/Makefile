@@ -5,7 +5,8 @@ PORTNAME=	graphviz
 PORTVERSION=	2.40.1
 PORTREVISION=	11
 CATEGORIES=	graphics tk
-MASTER_SITES=	https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/
+MASTER_SITES=	https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/ \
+		https://ftp.osuosl.org/pub/blfs/conglomeration/graphviz/
 
 MAINTAINER=	dinoex@FreeBSD.org
 COMMENT=	Graph Visualization Software from AT&T and Bell Labs
