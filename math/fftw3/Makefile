@@ -6,6 +6,7 @@ DISTVERSION=	3.3.8
 PORTREVISION?=	3
 CATEGORIES=	math
 MASTER_SITES=	http://www.fftw.org/ \
+		https://ftp.osuosl.org/pub/blfs/conglomeration/fftw/ \
 		ftp://ftp.fftw.org/pub/fftw/
 PKGNAMESUFFIX=	${FFTW3_PKGNAMESUFFIX}
 DISTNAME=	fftw-${DISTVERSION}
