@@ -5,7 +5,10 @@ PORTNAME=	kochi
 PORTVERSION=	20030809
 PORTREVISION=	5
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	OSDN/efont/5411/
+MASTER_SITES=	OSDN/efont/5411/ \
+		https://www.mirrorservice.org/pub/minix/distfiles/backup/ \
+		https://mirror.sobukus.de/files/grimoire/fonts-x11/
+
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	${PORTNAME}-substitute-${PORTVERSION}
 
