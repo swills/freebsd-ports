@@ -4,7 +4,9 @@
 PORTNAME=	libpaper
 PORTVERSION=	1.1.24.4
 CATEGORIES=	print
-MASTER_SITES=	DEBIAN
+MASTER_SITES=	DEBIAN \
+		https://ftp.osuosl.org/pub/blfs/conglomeration/libpaper/
+
 DISTNAME=	${PORTNAME}_${PORTVERSION:C/.([0-9]+)$/+nmu\1/}
 
 MAINTAINER=	hrs@FreeBSD.org
