@@ -6,7 +6,7 @@ PORTVERSION=	1.16.0
 PORTREVISION?=	1
 PORTEPOCH=	2
 CATEGORIES=	www
-MASTER_SITES=	http://nginx.org/download/ \
+MASTER_SITES=	https://nginx.org/download/ \
 		LOCAL/joneum
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
