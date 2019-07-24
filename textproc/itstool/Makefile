@@ -6,7 +6,8 @@ PORTNAME=	itstool
 PORTVERSION=	2.0.5
 PORTREVISION=	2
 CATEGORIES=	textproc
-MASTER_SITES=	http://files.itstool.org/itstool/
+MASTER_SITES=	http://files.itstool.org/itstool/ \
+		https://ftp.osuosl.org/pub/blfs/conglomeration/itstool/
 
 MAINTAINER=	kwm@FreeBSD.org
 COMMENT=	Make XML documents translatable through po files
