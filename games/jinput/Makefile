@@ -2,40 +2,38 @@
 # $FreeBSD$
 
 PORTNAME=	jinput
-DISTVERSION=	20110801.r247
+DISTVERSION=	2.0.9
 CATEGORIES=	games java
-MASTER_SITES=	LOCAL/loader
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	voidanix@420blaze.it
 COMMENT=	Java Game Controller API
 
-BUILD_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils
+BROKEN_armv6=	fails to compile: compilation failed
+BROKEN_armv7=	fails to compile: compilation failed
+
+BUILD_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils \
+		mvn:devel/maven
 RUN_DEPENDS=	${JAVALIBDIR}/jutils/jutils.jar:games/jutils
 
-BROKEN_armv6=		fails to compile: build.xml: compilation failed
-BROKEN_armv7=		fails to compile: build.xml: compilation failed
+USE_GITHUB=	yes
+GH_ACCOUNT=	jinput
 
-USES=		tar:bzip2
 USE_JAVA=	yes
 JAVA_VERSION=	1.6+
-JAVA_OS=	native
-JAVA_VENDOR=	openjdk
-USE_ANT=	yes
-ALL_TARGET=	simple_linux
+
 NO_ARCH=	yes
 
-PLIST_FILES=	%%JAVAJARDIR%%/${PORTNAME}/${PORTNAME}.jar
+MAVEN_ARGS=	-Dmaven.antrun.skip -Dmaven.javadoc.skip -Dmaven.source.skip -Dmaven.test.skip -DskinTests -DskipITs
 
-post-patch:
-	@${LN} -sf ${JAVALIBDIR}/jutils/jutils.jar ${WRKSRC}/lib/
+PLIST_FILES=	${JAVAJARDIR}/${PORTNAME}/${PORTNAME}.jar
 
 do-build:
-	@(cd ${BUILD_WRKSRC}; \
-		${SETENV} ${MAKE_ENV} ${ANT} ${ALL_TARGET})
+	cd ${WRKSRC}; \
+		${SETENV} mvn --offline -B -P windows,linux,osx,wintab ${MAVEN_ARGS} package
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${JAVAJARDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/dist/${PORTNAME}.jar \
-		${STAGEDIR}${JAVAJARDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/uberjar/target/${PORTNAME}-${PORTVERSION}-SNAPSHOT.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PORTNAME}/${PORTNAME}.jar
 
 .include <bsd.port.mk>
