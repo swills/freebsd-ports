@@ -15,7 +15,7 @@ BROKEN_aarch64=		src/dev/drm2/ttm/ttm_bo_util.c:453:2: error: Port me
 
 RUN_DEPENDS=	gpu-firmware-kmod>=g20180319:graphics/gpu-firmware-kmod
 
-USES=		kmod uidfix
+USES=		compiler kmod uidfix
 
 OPTIONS_DEFINE=	DEBUG
 
@@ -29,12 +29,16 @@ GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	drm-legacy
 GH_TAGNAME=	990f64b
 
-.include <bsd.port.options.mk>
+.include <bsd.port.pre.mk>
 
 .if ${ARCH} == amd64 || ${ARCH} == i386
 PLIST_SUB+=	X86=""
 .else
 PLIST_SUB+=	X86="@comment "
+.endif
+
+.if ${CHOSEN_COMPILER_TYPE} == clang && ${COMPILER_VERSION} > 70
+CFLAGS+=	-Wno-error=pointer-sign
 .endif
 
 .if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200080
@@ -44,4 +48,4 @@ IGNORE=		only for 12.0 or higher after removal of base components
 IGNORE=		not supported on anything but FreeBSD
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
