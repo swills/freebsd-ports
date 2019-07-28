@@ -26,7 +26,9 @@ INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=	OPENSSL DEBUG DOCS EXAMPLES
-OPTIONS_DEFAULT=OPENSSL
+# until configure check for SSL_library_init() is fixed (currently 
+# emits ld: error: undefined symbol), don't enable OPENSSL by default
+# OPTIONS_DEFAULT=OPENSSL
 OPTIONS_SUB=	yes
 
 DEBUG_CONFIGURE_ENABLE=	debug
@@ -35,9 +37,11 @@ OPENSSL_USES=		ssl
 
 .include <bsd.port.pre.mk>
 
-.if ${SSL_DEFAULT} == base
-BROKEN_FreeBSD_12=	error: cannot find the ssl library
-BROKEN_FreeBSD_13=	error: cannot find the ssl library
+.if ${SSL_DEFAULT} == base && ${PORT_OPTIONS:MOPENSSL}
+BROKEN_FreeBSD_12=	error: OpenSSL111 needs different SSL auto-check\
+				(SSL_library_init() emits "undefined symbol")
+BROKEN_FreeBSD_13=	error: OpenSSL111 needs different SSL auto-check\
+				(SSL_library_init() emits "undefined symbol")
 .endif
 
 post-install-DOCS-on:
