@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ldns
-PORTVERSION=	1.7.0
-PORTREVISION=	1
+PORTVERSION=	1.7.1
 CATEGORIES=	dns
 MASTER_SITES=	https://www.nlnetlabs.nl/downloads/ldns/ \
 		LOCAL/ehaupt
@@ -123,7 +122,7 @@ post-install:
 		${STAGEDIR}${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/man/man3/ldns_*.3 \
 		${STAGEDIR}${PREFIX}/man/man3
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lib${PORTNAME}.so.2
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/lib${PORTNAME}.so.3
 .if ${PORT_OPTIONS:MDRILL}
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/drill
 .endif
