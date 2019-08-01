@@ -2,9 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	sonarqube
-PORTVERSION=	6.2
+PORTVERSION=	7.9.1
 CATEGORIES=	devel www java
-MASTER_SITES=	http://sonarsource.bintray.com/Distribution/sonarqube/
+MASTER_SITES=	https://binaries.sonarsource.com/Distribution/sonarqube/
 
 MAINTAINER=	freebsd@dussan.org
 COMMENT=	Platform for continuous inspection of code quality
@@ -13,7 +13,9 @@ LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbiconv.so:converters/iconv
-RUN_DEPENDS=	javaservicewrapper:sysutils/javaservicewrapper
+RUN_DEPENDS=	javaservicewrapper:sysutils/javaservicewrapper \
+	bash:${PORTSDIR}/shells/bash \
+	/usr/local/openjdk11/bin/java:${PORTSDIR}/java/openjdk11
 
 NO_ARCH=	yes
 NO_BUILD=	yes
@@ -26,15 +28,13 @@ USES=		cpe dos2unix zip
 CPE_VENDOR=	sonarsource
 DOS2UNIX_GLOB=	*.properties *.conf
 
-USE_JAVA=	yes
-JAVA_VERSION=	1.7+
-
 SQ_FILE=	sonar.sh
 SQ_HOME=	${PREFIX}/share/${PORTNAME}
 SQ_DB_DIR=	/var/db/${PORTNAME}
 SQ_LOG_DIR=	/var/log/${PORTNAME}
 SQ_LOG_FILE=	${PORTNAME}.log
 SQ_JSW=		${PREFIX}/lib/javaservicewrapper
+SQ_JAVA_PATH=   /usr/local/openjdk11/bin/java
 
 SUB_LIST+=	SQ_DB_DIR=${SQ_DB_DIR} \
 			SQ_GROUP=${GROUPS} \
@@ -61,6 +61,7 @@ post-patch:
 		-e 's|%%LOG%%|${SQ_LOG_DIR}/${SQ_LOG_FILE}|' \
 		-e 's|%%LOGDIR%%|${SQ_LOG_DIR}|' \
 		-e 's|%%DBDIR%%|${SQ_DB_DIR}|' \
+		-e 's|%%JAVA_PATH%%|${SQ_JAVA_PATH}|' \
 		-e 's|%%WRAPPER_JAR%%|${SQ_JSW}/lib/wrapper.jar|' \
 		${WRKSRC}/conf/wrapper.conf ${WRKSRC}/conf/sonar.properties
 

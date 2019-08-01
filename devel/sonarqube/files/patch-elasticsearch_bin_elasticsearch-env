@@ -1,0 +1,8 @@
+--- elasticsearch/bin/elasticsearch-env	2019-07-22 11:13:41.313065000 +0000
++++ elasticsearch/bin/elasticsearch-env.orig	2019-07-22 11:12:57.540950000 +0000
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/usr/bin/env bas
+ 
+ set -e -o pipefail
+ 

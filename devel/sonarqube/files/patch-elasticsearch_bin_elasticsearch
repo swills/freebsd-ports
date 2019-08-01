@@ -1,0 +1,8 @@
+--- elasticsearch/bin/elasticsearch	2019-07-22 11:13:28.909223000 +0000
++++ elasticsearch/bin/elasticsearch.orig	2019-07-22 11:12:47.837676000 +0000
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/usr/bin/env bash
+ 
+ # CONTROLLING STARTUP:
+ #
