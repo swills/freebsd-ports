@@ -2,14 +2,16 @@
 # $FreeBSD$
 
 PORTNAME=	yenc
-PORTVERSION=	0.3
+PORTVERSION=	0.4.0
 CATEGORIES=	news python
-MASTER_SITES=	http://sabnzbd.sourceforge.net/
-
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	jlaffaye@FreeBSD.org
-COMMENT=	yenc decoding module for Python in C
+COMMENT=	Decoding module for yenc for Python written in C
+
+LICENSE=	LGPL21+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		python:2.7
 USE_PYTHON=	distutils
