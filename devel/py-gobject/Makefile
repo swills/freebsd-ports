@@ -3,8 +3,7 @@
 #   $MCom: ports/devel/py-gobject/Makefile,v 1.58 2012/12/30 18:15:16 mezz Exp $
 
 PORTNAME=	gobject
-PORTVERSION=	2.28.6
-PORTREVISION=	8
+PORTVERSION=	2.28.7
 CATEGORIES=	devel python
 MASTER_SITES=	GNOME/sources/pygobject/${PORTVERSION:C/^([0-9]+\.[0-9]+).*/\1/}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,14 +19,18 @@ BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo@${PY_
 LIB_DEPENDS+=	libffi.so:devel/libffi
 RUN_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/pycairo.pc:graphics/py-cairo@${PY_FLAVOR}
 
-PORTSCOUT=	ignore:1
-
-USES=		gmake libtool pathfix pkgconfig python:2.7 tar:xz shebangfix
+USES=		gmake gnome libtool pathfix pkgconfig python:2.7 shebangfix \
+		tar:xz
 USE_GNOME=	glib20 introspection:build,run
 USE_PYTHON=	flavors
-GNU_CONFIGURE=	yes
 USE_LDCONFIG=	yes
-CONFIGURE_ARGS=	--disable-docs --disable-introspection --with-ffi
+
+PORTSCOUT=	ignore:1
+
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--disable-docs \
+		--disable-introspection \
+		--with-ffi
 INSTALL_TARGET=	install-strip
 SHEBANG_FILES=	codegen/*.py
 
