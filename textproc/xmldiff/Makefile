@@ -2,32 +2,19 @@
 # $FreeBSD$
 
 PORTNAME=	xmldiff
-PORTVERSION=	0.01
-PORTREVISION=	1
+PORTVERSION=	2.3
+MASTER_SITES=	https://files.pythonhosted.org/packages/e6/1c/3dd86bec66fad3a21ac9d093610f83f6e20ad1d835ebf4079af53e65ed6b/
 CATEGORIES=	textproc
-MASTER_SITES=	http://software.decisionsoft.com/software/ \
-		http://www.it.ca/~paul/src/
-DISTFILES=	xmldiff.pl
+DISTFILES= 	xmldiff-2.3.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Display meaningful differences between XML files
 
-BROKEN=		unfetchable
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR}
 
-RUN_DEPENDS=	xmlprpr:textproc/xmlprpr
-
-USES=		shebangfix perl5
-NO_BUILD=	yes
-
-SHEBANG_FILES=	xmldiff.pl
-
-PLIST_FILES=	bin/xmldiff
-
-do-extract:
-	@${MKDIR} ${WRKSRC}
-	@${CP} -f ${_DISTDIR}/${_DISTFILES} ${WRKSRC}
-
-do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/xmldiff.pl ${STAGEDIR}${PREFIX}/bin/xmldiff
+USES=		python
+USE_PYTHON=     autoplist concurrent distutils
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8@${PY_FLAVOR}
 
 .include <bsd.port.mk>
