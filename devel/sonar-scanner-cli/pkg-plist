@@ -1,13 +1,7 @@
-bin/sonar-runner
-bin/sonar-scanner
-@(,,755) %%SR_HOME%%/bin/sonar-runner
-@(,,755) %%SR_HOME%%/bin/sonar-scanner
-@(,,755) %%SR_HOME%%/bin/sonar-scanner-debug
-%%SR_HOME%%/bin/sonar-runner.bat
-%%SR_HOME%%/bin/sonar-scanner-debug.bat
-%%SR_HOME%%/bin/sonar-scanner.bat
-%%SR_HOME%%/lib/sonar-scanner-cli-2.8.jar
-@sample %%SR_HOME%%/conf/sonar-scanner.properties.sample
-@dir(,,755) %%SR_HOME%%/bin
-@dir(,,755) %%SR_HOME%%/conf
-@dir(,,755) %%SR_HOME%%/lib
+@(,,755) %%SS_HOME%%/bin/sonar-scanner
+@(,,755) %%SS_HOME%%/bin/sonar-scanner-debug
+@sample %%SS_HOME%%/conf/sonar-scanner.properties.sample
+%%SS_HOME%%/lib/sonar-scanner-cli-3.3.0.1492.jar
+@dir(,,755) %%SS_HOME%%/bin/
+@dir(,,755) %%SS_HOME%%/conf/
+@dir(,,755) %%SS_HOME%%/lib/
