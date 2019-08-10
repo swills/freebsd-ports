@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	emby-server
-PORTVERSION=	4.1.1.0
-PORTREVISION=	3
+PORTVERSION=	4.2.1.0
 CATEGORIES=	multimedia
 MASTER_SITES=	https://github.com/MediaBrowser/Emby.Releases/releases/download/${PORTVERSION}/ \
 		https://mediabrowser.github.io/embytools/
@@ -32,14 +31,15 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libfribidi.so:converters/fribidi \
-		libgmp.so:math/gmp \
 		libgnutls.so:security/gnutls \
 		libogg.so:audio/libogg \
 		libopus.so:audio/opus \
 		libpng.so:graphics/png \
+		libraw.so:graphics/libraw \
 		libtheora.so:multimedia/libtheora \
 		libva.so:multimedia/libva \
 		libvorbis.so:audio/libvorbis \
+		libvpx.so:multimedia/libvpx \
 		libwebp.so:graphics/webp \
 		libx264.so:multimedia/libx264 \
 		libx265.so:multimedia/x265 \
@@ -56,14 +56,12 @@ USERS=		emby
 GROUPS=		emby
 
 WRKSRC=		${WRKDIR}/ffmpeg-2019_04_09
-HAS_CONFIGURE=	yes
 
+MAKE_ENV=		V=1
 NOPRECIOUSMAKEVARS=	yes
 
-CONFIGURE_ENV=	COMPILER_PATH=${LOCALBASE}/bin
-MAKE_ENV=	COMPILER_PATH=${LOCALBASE}/bin V=1
-
-CONFIGURE_ARGS=	--cc="${CC}" \
+HAS_CONFIGURE=	yes
+CONFIGURE_ARGS= --cc="${CC}" \
 		--disable-alsa \
 		--disable-doc \
 		--disable-ffplay \
@@ -76,7 +74,6 @@ CONFIGURE_ARGS=	--cc="${CC}" \
 		--disable-vdpau \
 		--disable-xlib \
 		--enable-fontconfig \
-		--enable-gmp \
 		--enable-gnutls \
 		--enable-gpl \
 		--enable-iconv \
@@ -87,10 +84,12 @@ CONFIGURE_ARGS=	--cc="${CC}" \
 		--enable-libopus \
 		--enable-libtheora \
 		--enable-libvorbis \
+		--enable-libvpx \
 		--enable-libwebp \
 		--enable-libx264 \
 		--enable-libx265 \
 		--enable-libzvbi \
+		--enable-optimizations \
 		--enable-static \
 		--enable-vaapi \
 		--enable-version3
@@ -104,6 +103,7 @@ LAME_LIB_DEPENDS=	libmp3lame.so:audio/lame
 SMB_CONFIGURE_ENABLE=	libsmbclient
 SMB_USES=		samba:lib
 
+X11_USE=		xorg=x11
 X11_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
 X11_LIB_DEPENDS_OFF=	libMagickWand-6.so:graphics/ImageMagick6-nox11
 
