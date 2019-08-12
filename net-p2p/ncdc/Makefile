@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	ncdc
-PORTVERSION=	1.20
-PORTREVISION=	2
+PORTVERSION=	1.22.1
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	http://dev.yorhel.nl/download/
 
@@ -28,5 +28,13 @@ PLIST_FILES=	bin/ncdc \
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
+
+OPTIONS_DEFINE= GEOIP
+OPTIONS_DEFAULT= GEOIP
+
+GEOIP_CONFIGURE_WITH=   geoip
+GEOIP_CONFIGURE_ENV=    GEOIP_CFLAGS="-I${LOCALBASE}/include" \
+			GEOIP_LIBS="-L${LOCALBASE}/lib -lmaxminddb"
+GEOIP_LIB_DEPENDS=      libmaxminddb.so:net/libmaxminddb
 
 .include <bsd.port.mk>
