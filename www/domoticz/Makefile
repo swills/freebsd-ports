@@ -5,9 +5,6 @@ PORTVERSION=	4.${DOMOTICZ_REL}
 PORTREVISION=	5
 CATEGORIES=	www
 
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES+=	9d226dab339f.patch:-p1
-
 MAINTAINER=	kiwi@oav.net
 COMMENT=	Home Automation System
 
@@ -36,11 +33,9 @@ USES=		cmake compiler:c++11-lang iconv pkgconfig ssl
 
 # This hack is to get rid of dependency of git while building
 # the package.
-DOMOTICZ_REL=	9700
-DOMOTICZ_TS=	1529904511
+DOMOTICZ_REL=	10717
+DOMOTICZ_TS=	1565707487
 USE_GITHUB=	yes
-GH_ACCOUNT=	domoticz
-GH_PROJECT=	domoticz
 
 USE_RC_SUBR=	domoticz
 
