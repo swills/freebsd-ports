@@ -59,6 +59,7 @@ man/man1/zone2sql.1.gz
 %%PORTEXAMPLES%%@dir %%EXAMPLESDIR%%
 %%MYSQL%%%%PORTDOCS%%%%DOCSDIR%%/3.4.0_to_4.1.0_schema.mysql.sql
 %%PGSQL%%%%PORTDOCS%%%%DOCSDIR%%/3.4.0_to_4.1.0_schema.pgsql.sql
+%%PGSQL%%%%PORTDOCS%%%%DOCSDIR%%/4.1.10_to_4.1.11.schema.pgsql.sql
 %%MYSQL%%%%PORTDOCS%%%%DOCSDIR%%/dnssec-3.x_to_3.4.0_schema.mysql.sql
 %%PGSQL%%%%PORTDOCS%%%%DOCSDIR%%/dnssec-3.x_to_3.4.0_schema.pgsql.sql
 %%SQLITE3%%%%PORTDOCS%%%%DOCSDIR%%/dnssec-3.x_to_3.4.0_schema.sqlite3.sql
