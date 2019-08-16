@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	fspd
-PORTVERSION=	2.8.1.26
+PORTVERSION=	2.8.1.28
 CATEGORIES=	net
-MASTER_SITES=	SF/fsp/fsp/2.8.1b26
-DISTNAME=	fsp-2.8.1b26
+MASTER_SITES=	SF/fsp/fsp/2.8.1b28
+DISTNAME=	fsp-2.8.1b28
 
 MAINTAINER=	hsn@sendmail.cz
 COMMENT=	FSP daemon, clients, and scanner
