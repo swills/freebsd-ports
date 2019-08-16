@@ -1,9 +1,9 @@
 # $FreeBSD$
 
 PORTNAME=	jetty
-PORTVERSION=	9.3.9
+PORTVERSION=	9.4.20
 CATEGORIES=	www java
-MASTER_SITES=	ECLIPSE/jetty/${PORTVERSION}.${JDVDATE}/dist
+MASTER_SITES=	https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-distribution/${PORTVERSION}.${JDVDATE}/
 PKGNAMESUFFIX=	9
 DISTNAME=	jetty-distribution-${PORTVERSION}.${JDVDATE}
 
@@ -18,7 +18,7 @@ RUN_DEPENDS=	bash:shells/bash
 
 CONFLICTS=	jetty-8.*
 
-JDVDATE=	v20160517
+JDVDATE=	v20190813
 USE_JAVA=	yes
 NO_ARCH=	yes
 USES=		shebangfix
@@ -57,8 +57,6 @@ PLIST_SUB=	\
 do-install:
 		${MKDIR} ${STAGEDIR}${APP_HOME}
 		${MKDIR} ${STAGEDIR}${WWWDIR}
-		${RM} ${WRKSRC}/lib/setuid/libsetuid-linux.so
-		${RM} ${WRKSRC}/lib/setuid/libsetuid-osx.so
 		(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/${PORTNAME})
 		${MV} ${STAGEDIR}${PREFIX}/${PORTNAME}/demo-base ${STAGEDIR}${WWWDIR}
 		${MKDIR} ${STAGEDIR}${WWWDIR}/demo-base/logs
