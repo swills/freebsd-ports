@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	s-nail
-PORTVERSION=	14.9.14
+PORTVERSION=	14.9.15
 CATEGORIES=	mail
 MASTER_SITES=	https://www.sdaoden.eu/downloads/
 
