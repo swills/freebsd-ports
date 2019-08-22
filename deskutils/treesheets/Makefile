@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	treesheets
-PORTVERSION=	1.0.1
-PORTREVISION=	3
+PORTVERSION=	1.0.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	deskutils
 
@@ -13,7 +12,7 @@ COMMENT=	Free form data organizer
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/ZLIB_LICENSE.txt
 
-USES=		compiler:c++17-lang desktop-file-utils
+USES=		cmake compiler:c++17-lang desktop-file-utils
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	aardappel
@@ -21,9 +20,8 @@ GH_ACCOUNT=	aardappel
 USE_WX=		3.0+
 INSTALLS_ICONS=	yes
 
-BUILD_WRKSRC=	${WRKSRC}/src
 PACKAGE_VERSION=	\"${PORTVERSION}\"
-MAKE_ENV=	PACKAGE_VERSION=${PACKAGE_VERSION:Q}
+CXXFLAGS+=	-DPACKAGE_VERSION=${PACKAGE_VERSION:Q}
 
 PORTDATA=	images scripts translations/*/*.mo
 PORTDOCS=	docs *.html
@@ -38,16 +36,16 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 
 post-patch: .SILENT
 	${REINPLACE_CMD} -e 's|sys->frame->GetPath(L"|(L"${DOCSDIR}/|' \
-		${BUILD_WRKSRC}/document.h
+		${WRKSRC}/src/document.h
 	${REINPLACE_CMD} -e 's|wxFileName(exename).GetPath()|L"${DATADIR}"|' \
-		${BUILD_WRKSRC}/myframe.h
+		${WRKSRC}/src/myframe.h
 	${REINPLACE_CMD} -e 's|frame->GetPath(L"examples|(L"${EXAMPLESDIR}|' \
-		${BUILD_WRKSRC}/system.h
+		${WRKSRC}/src/system.h
 	${REINPLACE_CMD} -e 's|^\(Icon=\).*|\1${PORTNAME}|' \
 		${WRKSRC}/TS/treesheets.desktop
 
 do-install:
-	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${CONFIGURE_WRKSRC}/TS/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
 	(cd ${WRKSRC}/TS && ${COPYTREE_SHARE} "${PORTDATA}" ${STAGEDIR}${DATADIR})
 	${INSTALL_DATA} ${WRKSRC}/TS/treesheets.desktop \
 		${STAGEDIR}${PREFIX}/share/applications
