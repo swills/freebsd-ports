@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	unifi
-PORTVERSION=	5.10.21
-PORTREVISION=	0
+PORTVERSION=	5.11.39
 CATEGORIES=	net-mgmt java
-MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}-${UNIFI_BUILD}/
+#MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}-${UNIFI_BUILD}/
+MASTER_SITES=	http://dl.ubnt.com/unifi/${PORTVERSION}/
 PKGNAMESUFFIX=	-devel
 DISTNAME=	unifi_sysvinit_all
 EXTRACT_SUFX=	.deb
@@ -48,7 +48,7 @@ GROUPS=		unifi
 SUB_LIST=	USERS=${USERS} GROUPS=${GROUPS} JAVASHAREDIR=${JAVASHAREDIR} \
 		JAVA=${JAVA}
 
-CONFLICTS=	unifi5-*
+CONFLICTS_INSTALL=	unifi5-*
 
 UNIFI_BUILD=	77f3252525
 DIR_LIST=	conf data logs run work
