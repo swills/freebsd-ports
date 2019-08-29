@@ -2,7 +2,7 @@
 
 PORTNAME=	go14
 PORTVERSION=	1.4.3
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	lang
 MASTER_SITES=	https://dl.google.com/go/
 DISTNAME=	go1.4-bootstrap-20171003
@@ -51,8 +51,9 @@ do-build:
 		CGO_ENABLED=0 \
 		${SH} make.bash
 	${RM} ${WRKSRC}/.[a-z]* ${WRKSRC}/favicon.ico ${WRKSRC}/robots.txt
-	${RM} -r ${WRKSRC}/lib/codereview ${WRKSRC}/misc \
-		${WRKSRC}/pkg/obj ${WRKSRC}/pkg/${OPSYS:tl}_${GOARCH}/cmd
+	${RM} -r ${WRKSRC}/doc ${WRKSRC}/lib/codereview ${WRKSRC}/misc \
+		${WRKSRC}/pkg/obj ${WRKSRC}/pkg/${OPSYS:tl}_${GOARCH}/cmd \
+		${WRKSRC}/test
 
 do-install:
 	@${CP} -a ${WRKSRC} ${STAGEDIR}${PREFIX}/go14
