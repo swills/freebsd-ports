@@ -1,2 +1,5 @@
-SHA256 (bzr-2.7.0.tar.gz) = c9f6bbe0a50201dadc5fddadd94ba50174193c6cf6e39e16f6dd0ad98a1df338
-SIZE (bzr-2.7.0.tar.gz) = 11526191
+TIMESTAMP = 1565813679
+SHA256 (bzr_2.7.0+bzr6622.orig.tar.gz) = 08bba3e76cba9beb6b686e71253045beeab9db94753ddbcafa0f8ed1cba377ff
+SIZE (bzr_2.7.0+bzr6622.orig.tar.gz) = 10948360
+SHA256 (bzr_2.7.0+bzr6622-15.debian.tar.xz) = d2198b93059cc9d37c551f7bfda19a199c18f4c9c6104a8c40ccd6d0c65e6fd3
+SIZE (bzr_2.7.0+bzr6622-15.debian.tar.xz) = 92936
