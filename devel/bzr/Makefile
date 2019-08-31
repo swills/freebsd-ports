@@ -2,10 +2,11 @@
 # $FreeBSD$
 
 PORTNAME=	bzr
-PORTVERSION=	2.7.0
-PORTREVISION=	2
+PORTVERSION=	2.7.0.${BZR_REV}
 CATEGORIES=	devel
-MASTER_SITES=	CHEESESHOP
+MASTER_SITES=	https://bazaar.launchpad.net/~bzr-pqm/bzr/2.7/tarball/
+DISTFILES=	${BZR_REV}
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	fullermd@over-yonder.net
 COMMENT=	Distributed version control system by Canonical
@@ -28,6 +29,9 @@ SHEBANG_FILES=	bzr
 USE_PYTHON=	distutils cython
 PYDISTUTILS_PKGNAME=	bzr
 MAKE_ENV=	BZR_LOG=/dev/null
+
+BZR_REV=	6622
+WRKSRC=		${WRKDIR}/~bzr-pqm/bzr/2.7
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/bzr.1 ${STAGEDIR}${MAN1PREFIX}/man/man1
