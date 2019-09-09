@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	sysctlview
-PORTVERSION=	1.4
-PORTREVISION=	1
+PORTVERSION=	1.5
 CATEGORIES=	deskutils
 
 MAINTAINER=	alfix86@gmail.com
@@ -12,6 +11,8 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsysctlmibinfo.so:devel/libsysctlmibinfo
+BUILD_DEPENDS=	${LOCALBASE}/include/sysctlinfo.h:sysutils/sysctlinfo
+RUN_DEPENDS=	${KMODDIR}/sysctlinfo.ko:sysutils/sysctlinfo
 
 USES=		compiler:c++11-lang gettext-runtime gnome pkgconfig
 USE_GNOME=	atk atkmm cairo cairomm gdkpixbuf2 glib20 glib20 glibmm glibmm \
@@ -19,7 +20,7 @@ USE_GNOME=	atk atkmm cairo cairomm gdkpixbuf2 glib20 glib20 glibmm glibmm \
 
 USE_GITLAB=	yes
 GL_ACCOUNT=	alfix
-GL_COMMIT=	98f202bc1b6922e3b9011d56d7715cb4c3b098a9
+GL_COMMIT=	360ea178b2b6029206316dbe3cc9e6a24abc5f8d
 
 INSTALLS_ICONS=	yes
 
