@@ -1,3 +1,4 @@
+etc/rc.d/sockd
 bin/mkbl4
 bin/socksify
 @sample etc/socksrc/system.sample
