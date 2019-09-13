@@ -3,7 +3,6 @@
 
 PORTNAME=	lyx
 PORTVERSION=	${MAJOR_VERSION}.${MINOR_VERSION}
-PORTREVISION=	6
 CATEGORIES=	print editors
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/${MAJOR_VERSION}.x/ \
 		http://www-ftp.lip6.fr/ftp/pub/lyx/stable/${MAJOR_VERSION}.x/ \
@@ -20,7 +19,7 @@ LIB_DEPENDS=	libboost_regex.so:devel/boost-libs \
 		libmythes-1.2.so:textproc/mythes
 
 MAJOR_VERSION=	2.3
-MINOR_VERSION=	2
+MINOR_VERSION=	3
 
 USES=		compiler:c++11-lang desktop-file-utils gmake iconv pkgconfig \
 		perl5 python:2.7 qt:5 shebangfix tar:xz
@@ -33,6 +32,11 @@ CONFIGURE_ARGS=	--without-included-boost \
 		--with-qt-dir=${LOCALBASE}/lib/qt5 \
 		${ICONV_CONFIGURE_ARG} \
 		--with-extra-prefix=${LOCALBASE}
+EXTRACT_AFTER_ARGS=	--no-same-owner --no-same-permissions	\
+		--exclude 3rdparty	\
+		--exclude cygwin	\
+		--exclude MacOSX	\
+		--exclude Win32
 SHEBANG_FILES=	lib/configure.py \
 		lib/lyx2lyx/lyx2lyx \
 		lib/scripts/listerrors \
@@ -58,5 +62,7 @@ NLS_USES=		gettext
 
 post-patch:
 	@${GREP} -rl "python -tt" ${WRKSRC} | ${XARGS} ${REINPLACE_CMD} -i '' 's|python -tt|${PYTHON_CMD} -tt|'
+	@${REINPLACE_CMD} -E '/^ac_config_files=/s,(3rdparty|development)/[^ ]* ,,g' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -E 's,(3rdparty|development) ,,g' ${WRKSRC}/Makefile.*
 
 .include <bsd.port.mk>
