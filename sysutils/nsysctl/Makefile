@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	nsysctl
-DISTVERSION=	1.1
+DISTVERSION=	1.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	alfix86@gmail.com
@@ -11,11 +11,13 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libsysctlmibinfo.so:devel/libsysctlmibinfo
+BUILD_DEPENDS=	${LOCALBASE}/include/sysctlinfo.h:sysutils/sysctlinfo
+RUN_DEPENDS=	${KMODDIR}/sysctlinfo.ko:sysutils/sysctlinfo
 
 USE_GITLAB=	yes
 
 GL_ACCOUNT=	alfix
-GL_COMMIT=	e251dcf345c37e83d39f6fe93f0af2adf62da282
+GL_COMMIT=	5d7875fbeca8d5ae31dffac6ec1f12346e380e5a
 
 PLIST_FILES=	man/man8/${PORTNAME}.8.gz \
 		sbin/${PORTNAME}
