@@ -2,13 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	mplus
-PORTVERSION=	0.6.0
-PORTREVISION=	1
+PORTVERSION=	0.6.3a
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	OSDN/${PORTNAME}-fonts/62344/
 PKGNAMEPREFIX=	ja-font-
 PKGNAMESUFFIX=	-outline
-DISTNAME=	${PORTNAME}-TESTFLIGHT-060
+DISTNAME=	${PORTNAME}-TESTFLIGHT-063a
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	M+ Outline Fonts
@@ -17,8 +16,10 @@ RUN_DEPENDS=	mkfontscale>=0:x11-fonts/mkfontscale \
 		mkfontscale:x11-fonts/mkfontscale
 
 USES=		fonts:fc tar:xz
+
 NO_BUILD=	yes
 NO_ARCH=	yes
+
 PKGINSTALL=	${WRKDIR}/pkg-install
 PKGDEINSTALL=	${WRKDIR}/pkg-install
 SUB_FILES=	pkg-install
