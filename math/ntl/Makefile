@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ntl
-PORTVERSION=	11.3.2
-PORTREVISION=	3
+DISTVERSION=	11.3.3
 CATEGORIES=	math
 MASTER_SITES=	http://www.shoup.net/ntl/
 
@@ -36,6 +35,8 @@ OPTIONS_DEFAULT=	GMP
 GMP_DESC=		Arbitrary precision arithmetic(Faster)
 GMP_LIB_DEPENDS=	libgmp.so:math/gmp
 GMP_CONFIGURE_OFF=	NTL_GMP_LIP=off
+
+PORTDOCS=	*
 
 do-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
