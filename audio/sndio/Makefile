@@ -3,6 +3,7 @@
 
 PORTNAME=	sndio
 PORTVERSION=	1.6.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.sndio.org/
 
@@ -13,6 +14,8 @@ LICENSE=	ISCL
 
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	sndiod
+SUB_FILES=	sndio.pc
+SUB_LIST=	NAME="${PORTNAME}" DESC="${COMMENT}" VERSION="${PORTVERSION}"
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--mandir=${PREFIX}/man \
@@ -31,6 +34,7 @@ post-patch:
 		${WRKSRC}/sndiod/sndiod.c
 
 post-install:
+	${INSTALL_DATA} ${WRKDIR}/sndio.pc ${STAGEDIR}${PREFIX}/libdata/pkgconfig/
 	@${STRIP_CMD} \
 		${STAGEDIR}${PREFIX}/lib/libsndio.so.6.1 \
 		${STAGEDIR}${PREFIX}/bin/sndiod \
