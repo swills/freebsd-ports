@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=		varnish_exporter
-PORTVERSION=		1.4.1
+PORTVERSION=		1.5.1
 CATEGORIES=		www
 
 MAINTAINER=		ports@zx23.net
@@ -14,13 +14,13 @@ USE_GITHUB=		yes
 
 GH_ACCOUNT=		jonnenauha
 GH_PROJECT=		prometheus_varnish_exporter
-GH_TUPLE=		prometheus:client_golang:v0.8.0:client_golang \
-			beorn7:perks:3a771d9:perks \
-			golang:protobuf:70b3af3:protobuf \
-			matttproud:golang_protobuf_extensions:c12348c:golang_protobuf_extensions \
-			prometheus:client_model:5c3871d:client_model \
-			prometheus:common:7600349:common \
-			prometheus:procfs:ae68e2d:procfs
+GH_TUPLE=		prometheus:client_golang:20428fa:client_golang \
+			beorn7:perks:37c8de3:perks \
+			golang:protobuf:1680a47:protobuf \
+			matttproud:golang_protobuf_extensions:c182aff:golang_protobuf_extensions \
+			prometheus:client_model:14fe0d1:client_model \
+			prometheus:common:287d3e6:common \
+			prometheus:procfs:de25ac3:procfs
 
 GO_PKGNAME=		github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
