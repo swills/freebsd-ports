@@ -160,7 +160,7 @@ my @varlist =  qw(
 	ALLFILES CHECKSUM_ALGORITHMS INSTALLS_ICONS GNU_CONFIGURE
 	CONFIGURE_ARGS MASTER_SITE_SUBDIR LICENSE LICENSE_COMB NO_STAGE
 	DEVELOPER SUB_FILES SHEBANG_LANG MASTER_SITES_SUBDIRS FLAVORS
-	USE_PYTHON LICENSE_PERMS
+	USE_PYTHON LICENSE_PERMS USE_PYQT
 );
 
 my %makevar;
@@ -2332,7 +2332,7 @@ xargs xmkmf
 	#
 	# whole file: USES=pyqt:5
 	#
-	if ($makevar{USES} =~ /\bpyqt:5/ && $whole !~ /^USE_PYQT[?:]?=\s(.*)$/m) {
+	if ($makevar{USES} =~ /\bpyqt:5/ && $whole !~ /^USE_PYQT[?:]?=\s(.*)$/m && $makevar{USE_PYQT} eq '') {
 		&perror("WARN", $file, -1, "When USES=pyqt:5 is defined, you must also define ".
 			"USE_PYQT=xxxx");
 	}
