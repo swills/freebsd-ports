@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	webkit
-PORTVERSION=	2.24.4
+PORTVERSION=	2.26.0
 CATEGORIES=	www
 MASTER_SITES=	https://webkitgtk.org/releases/
 PKGNAMESUFFIX=	2-gtk3
@@ -37,7 +37,7 @@ PORTSCOUT=	limitw:1,even
 
 USES=		bison cmake compiler:c++14-lang gettext gl gnome gperf \
 		jpeg localbase:ldflags perl5 pkgconfig python:2.7,build \
-		sqlite tar:xz
+		sqlite tar:xz xorg
 USE_GNOME=	cairo gdkpixbuf2 gtk30 introspection:build libxml2 libxslt
 USE_GL=		gl egl glesv2
 USE_GSTREAMER1=	bad gl
@@ -54,7 +54,8 @@ CXXFLAGS_powerpc64=	-DENABLE_YARR_JIT=0
 CMAKE_ARGS=		-DPORT=GTK
 CMAKE_OFF=		USE_LD_GOLD ${CMAKE_OFF_${ARCH}:U} \
 			ENABLE_GLES2 \
-			USE_SYSTEM_MALLOC
+			USE_SYSTEM_MALLOC \
+			USE_WPE_RENDERER
 CMAKE_ON=		ENABLE_MINIBROWSER
 CMAKE_OFF_armv6=	ENABLE_JIT
 CMAKE_OFF_armv7=	ENABLE_JIT
