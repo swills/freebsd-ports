@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	argyllcms
-PORTVERSION=	1.9.2
-PORTREVISION=	5
+PORTVERSION=	2.1.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.argyllcms.com/
 DISTNAME=	Argyll_V${PORTVERSION}_src
@@ -17,10 +16,11 @@ BUILD_DEPENDS=	jam:devel/jam
 LIB_DEPENDS=	libtiff.so:graphics/tiff \
 		libpng.so:graphics/png
 
-WRKSRC=		${WRKDIR}/Argyll_V${PORTVERSION}
-
 USES=		compiler:c11 cpe jpeg ssl zip
 USE_XORG=	x11 xau xdmcp xext xinerama xrandr xscrnsaver xxf86vm
+USE_GCC=	yes
+
+WRKSRC=		${WRKDIR}/Argyll_V${PORTVERSION}
 
 post-patch:
 	@${REINPLACE_CMD} 's:711:755:g' ${WRKSRC}/Jambase
