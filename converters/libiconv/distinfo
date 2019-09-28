@@ -1,4 +1,5 @@
+TIMESTAMP = 1568371138
 SHA256 (libiconv-1.14.tar.gz) = 72b24ded17d687193c3366d0ebe7cde1e6b18f0df8c55438ac95be39e8a30613
 SIZE (libiconv-1.14.tar.gz) = 4984397
-SHA256 (libiconv-1.14-ja-1.patch.gz) = c9474ee420b971029073dabf5e599b049945fbb040f353dce4db32191401bfee
-SIZE (libiconv-1.14-ja-1.patch.gz) = 291963
+SHA256 (libiconv-1.14-ja-1.patch) = f110d55d2c41c923d7f5fd3694b1c0ebc5b9acd22b725a30f3818b10afa68cda
+SIZE (libiconv-1.14-ja-1.patch) = 1463786

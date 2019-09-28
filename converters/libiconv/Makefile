@@ -3,7 +3,7 @@
 
 PORTNAME=	libiconv
 PORTVERSION=	1.14
-PORTREVISION=	11
+PORTREVISION=	12
 CATEGORIES=	converters devel
 MASTER_SITES=	GNU
 
@@ -33,7 +33,7 @@ ENCODINGS_CONFIGURE_ENABLE=	extra-encodings
 
 PATCHES_PATCH_SITES=	http://apolloron.org/software/libiconv-1.14-ja/ \
 			LOCAL/kwm
-PATCHES_PATCHFILES=	${DISTNAME}-ja-1.patch.gz:-p1
+PATCHES_PATCHFILES=	${DISTNAME}-ja-1.patch:-p1
 
 post-patch:
 	@${REINPLACE_CMD} -e 's:ei_ksc5601:ei_euc_kr:g' ${WRKSRC}/lib/aliases.h
