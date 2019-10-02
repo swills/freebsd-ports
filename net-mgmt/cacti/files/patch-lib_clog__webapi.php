@@ -1,6 +1,6 @@
---- lib/clog_webapi.php.orig	2019-01-03 02:14:26 UTC
+--- lib/clog_webapi.php.orig	2019-10-02 05:42:03 UTC
 +++ lib/clog_webapi.php
-@@ -56,7 +56,7 @@ function clog_validate_filename(&$file, &$filepath, &$
+@@ -58,7 +58,7 @@ function clog_validate_filename(&$file, &$filepath, &$
  	$logbase = basename($logfile);
  
  	if ($logfile == '') {

@@ -1,6 +1,6 @@
---- utilities.php.orig	2017-08-13 04:06:37 UTC
+--- utilities.php.orig	2019-10-02 05:43:04 UTC
 +++ utilities.php
-@@ -877,7 +877,7 @@ function utilities_view_logfile() {
+@@ -918,7 +918,7 @@ function utilities_view_logfile() {
  	}
  
  	if ($logfile == '') {
@@ -8,8 +8,8 @@
 +		$logfile = '/var/log/cacti/log';
  	}
  
- 	/* ================= input validation and session storage ================= */
-@@ -1199,7 +1199,7 @@ function utilities_clear_logfile() {
+ 	if (get_nfilter_request_var('filename') != '') {
+@@ -1244,7 +1244,7 @@ function utilities_clear_logfile() {
  	$logfile = read_config_option('path_cactilog');
  
  	if ($logfile == '') {

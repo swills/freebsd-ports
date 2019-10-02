@@ -1,4 +1,4 @@
---- include/global_settings.php.orig	2019-01-03 02:14:26 UTC
+--- include/global_settings.php.orig	2019-10-02 05:40:09 UTC
 +++ include/global_settings.php
 @@ -160,10 +160,10 @@ $settings = array(
  			),
@@ -11,5 +11,5 @@
 -			'default' => $config['base_path'] . '/log/cacti.log',
 +			'default' => '/var/log/cacti/log',
  			'max_length' => '255',
- 			'install_check' => 'writable'
- 			),
+ 			'install_check' => 'writable',
+ 			'install_blank' => true
