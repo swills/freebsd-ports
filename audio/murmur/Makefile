@@ -78,12 +78,9 @@ CONFIG+=	no-pch
 
 post-patch:
 	@${ECHO_CMD} 'QMAKE_LFLAGS += -fstack-protector' >> ${WRKSRC}/src/murmur/murmur.pro
-
-pre-install:
-	${SED} -i '' -e 's|database=.*|database=/var/db/murmur/murmur.sqlite|' ${WRKSRC}/scripts/murmur.ini
-	${SED} -i '' -e 's|#pidfile=.*|pidfile=/var/run/murmur/murmur.pid|' ${WRKSRC}/scripts/murmur.ini
-	${SED} -i '' -e 's|#logfile=.*|logfile=/var/log/murmur/murmur.log|' ${WRKSRC}/scripts/murmur.ini
-	${SED} -i '' -e 's|#host=.*|host=0.0.0.0|' ${WRKSRC}/scripts/murmur.ini
+	@${SED} -i '' -e 's|database=.*|database=/var/db/murmur/murmur.sqlite|' ${WRKSRC}/scripts/murmur.ini
+	@${SED} -i '' -e 's|;pidfile=.*|pidfile=/var/run/murmur/murmur.pid|' ${WRKSRC}/scripts/murmur.ini
+	@${SED} -i '' -e 's|;logfile=.*|logfile=/var/log/murmur/murmur.log|' ${WRKSRC}/scripts/murmur.ini
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/release/murmurd ${STAGEDIR}${PREFIX}/sbin
@@ -96,5 +93,10 @@ do-install-DOCS-on:
 .for f in CHANGES INSTALL README README.Linux
 	${INSTALL_DATA} ${WRKSRC}/${f} ${STAGEDIR}${DOCSDIR}
 .endfor
+
+post-install:
+	${MKDIR} ${STAGEDIR}/var/db/murmur
+	${MKDIR} ${STAGEDIR}/var/log/murmur
+	${MKDIR} ${STAGEDIR}/var/run/murmur
 
 .include <bsd.port.post.mk>
