@@ -48,7 +48,7 @@ CXXFLAGS_i386=	-march=i586
 # version without trailing update letters
 VERDIR=		${DISTVERSION:C/[abcdef]//g}
 PLIST_SUB+=	VER=${VERDIR}
-LLVM_VER=	60
+LLVM_VER=	80
 OPTIONS_SUB=	yes
 
 .include "${.CURDIR}/Makefile.options"
