@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	xtrabackup
-DISTVERSION=	2.4.12
-PORTREVISION=	1
+DISTVERSION=	2.4.15
 CATEGORIES=	databases
 MASTER_SITES=	https://www.percona.com/downloads/XtraBackup/Percona-XtraBackup-${PORTVERSION}/source/tarball/:xtrabackup \
 		SF/boost/boost/1.59.0/:boost
@@ -34,7 +33,7 @@ USES=		alias autoreconf:build bison cmake:noninja compiler:c++11-lang \
 		cpe gettext libtool perl5 shebangfix
 CPE_VENDOR=	percona
 SHEBANG_FILES=	storage/innobase/xtrabackup/xbcloud_osenv.sh
-CMAKE_ARGS=	-DWITH_BOOST=${WRKDIR}/boost_1_59_0
+CMAKE_ARGS=	-DWITH_BOOST=${WRKDIR}/boost_1_59_0 -DWITH_VERSION_CHECK=OFF
 
 WRKSRC=		${WRKDIR}/percona-${PORTNAME}-${PORTVERSION}
 
