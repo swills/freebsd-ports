@@ -12,8 +12,6 @@ COMMENT=	Traps spammers with a very slow smtp-login and return 4xx error
 
 LICENSE=	BSD2CLAUSE
 
-BROKEN_SSL=	openssl111
-
 USE_RC_SUBR?=	obspamd obspamlogd
 USES=		ssl
 
@@ -57,11 +55,6 @@ CFLAGS+=	-I${OPENSSLINC}
 LDFLAGS+=	-L${OPENSSLLIB}
 
 .include <bsd.port.pre.mk>
-
-.if ${SSL_DEFAULT} == base
-BROKEN_FreeBSD_12=	error: variable has incomplete type 'HMAC_CTX' (aka 'struct hmac_ctx_st')
-BROKEN_FreeBSD_13=	error: variable has incomplete type 'HMAC_CTX' (aka 'struct hmac_ctx_st')
-.endif
 
 do-install:
 .if !defined(CPANEL)
