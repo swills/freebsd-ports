@@ -4,6 +4,7 @@
 PORTNAME=	qgis
 DISTVERSIONPREFIX=	final-
 DISTVERSION=	3_8_2
+PORTREVISION=	1
 CATEGORIES=	graphics geography
 
 MAINTAINER=	rhurlin@gwdg.de
@@ -85,7 +86,7 @@ LIB_DEPENDS=	libexiv2.so:graphics/exiv2 \
 ### Fortran is needed by numpy, GRASS, etc.
 USES=		bison cmake compiler:features cpe desktop-file-utils \
 		fortran gmake gnome pgsql pyqt:5 python:3.6+ qt:5 \
-		shebangfix sqlite:3
+		sqlite:3
 USE_GNOME=	libxml2
 USE_QT=		3d buildtools_build core concurrent dbus declarative \
 		designer doc gamepad gui linguist_build location \
@@ -117,8 +118,6 @@ CMAKE_ARGS+=	-Wno-dev
 CMAKE_OFF+=	SUPPRESS_QT_WARNINGS
 .endif
 
-SHEBANG_FILES=	src/plugins/grass/scripts/*.py
-
 OPTIONS_DEFINE=		GRASS SERVER
 OPTIONS_DEFAULT=	GRASS SERVER
 NO_OPTIONS_SORT=	yes
@@ -129,7 +128,6 @@ SERVER_DESC=		Enable QGIS server
 GRASS_BUILD_DEPENDS=	grass7:databases/grass7
 GRASS_RUN_DEPENDS=	${GRASS_BUILD_DEPENDS}
 GRASS_CMAKE_BOOL=	WITH_GRASS7
-GRASS_FORCE_MAKE_JOBS=	NO
 
 SERVER_LIB_DEPENDS=	libfcgi.so:www/fcgi
 SERVER_CMAKE_BOOL=	WITH_SERVER
@@ -138,9 +136,15 @@ PLIST_SUB=	DISTVERSION=${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 
-# make describe needs them here, after bsd.port.pre.mk
-# clang 7.x and 8.x do not build properly
+# make describe needs them located here, after bsd.port.pre.mk
+# amd64: clang 7.x and 8.x do not build properly
+# i386:  only clang 6.x does not core dump with the very long list
+#        of src/core/qgscoordinatereferencesystem_legacy.h
+.if ${ARCH} == i386
+LLVM_VER=	60
+.else
 LLVM_VER=	90
+.endif
 CPP=		clang-cpp${LLVM_VER}
 CC=		clang${LLVM_VER}
 CXX=		clang++${LLVM_VER}
