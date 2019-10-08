@@ -1,0 +1,43 @@
+stages:
+   - build
+   - assign
+   - upload
+
+before_script:
+   - sudo rm -rf /usr/local/etc/poudriere.d/ports/swills-freebsd-ports
+   - sudo poudriere ports -c -m null -p swills-freebsd-ports -f none -M ${CI_PROJECT_DIR}
+   - PORT_LIST=$(mktemp) ; git diff --name-only $(git merge-base origin/${CI_COMMIT_REF_NAME} origin/master) origin/${CI_COMMIT_REF_NAME} | egrep '('$(env PORTSDIR=${CI_PROJECT_DIR} make -V SUBDIR | sed -e 's/ /|/g')')' | cut -d/ -f 1,2 | sort -u | sed -e 's/$/@all/' > ${PORT_LIST} ; cat ${PORT_LIST}
+
+head-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j head-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+120-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 120-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+112-amd64:
+  tags:
+    - FreeBSD
+  stage: build
+  script:
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+
+take_bug:
+  tags:
+    - FreeBSD
+  allow_failure: true
+  stage: assign
+  script:
+  - BASE_URL=`echo $CI_REPOSITORY_URL | sed "s;\/*$CI_PROJECT_PATH.*;;"`
+  - REPO_URL="$BASE_URL/swills/test-build-pr-patch.git"
+  - REPO_DIR=test-build-pr-patch
+  - rm -fr $REPO_DIR
+  - git clone $REPO_URL $REPO_DIR
+  - ./test-build-pr-patch/take_bug 241129
