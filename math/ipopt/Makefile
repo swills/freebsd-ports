@@ -3,13 +3,13 @@
 
 PORTNAME=	Ipopt
 DISTVERSION=	3.12.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	https://www.coin-or.org/download/source/Ipopt/ \
-		http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/OLD/:metis \
+		http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/:metis \
 		http://mumps.enseeiht.fr/:mumps
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		metis-4.0.3.tar.gz:metis MUMPS_4.10.0.tar.gz:mumps
+		metis-5.1.0.tar.gz:metis MUMPS_5.2.1.tar.gz:mumps
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	yuri@FreeBSD.org
