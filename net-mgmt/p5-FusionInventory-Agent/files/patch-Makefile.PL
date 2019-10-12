@@ -4,13 +4,16 @@ Fix some locations specific to the ports tree i.e.
 - Set LOCALSTATEDIR to /var/run as done in this ports tree
 - Install agent.cfg as agent.cfg.sample
 
---- Makefile.PL.orig	2018-02-22 21:27:09 UTC
+--- Makefile.PL.orig	2019-07-01 15:37:06 UTC
 +++ Makefile.PL
-@@ -157,22 +157,12 @@ sub constants {
+@@ -162,25 +162,15 @@
  
      # for some reason, initialising variables from the global scope doesn't work
      %variables = (
 -        PREFIX               => '/usr/local',
+         VERSION              => '',
+         COMMENTS             => "Platform  : $Config{myuname},Build date: ".gmtime()." (GMT)",
+         RAWCOMMENTS          => '',
 -        INSTALLSCRIPT        => '$(PREFIX)/bin',
 -        INSTALLSITESCRIPT    => '$(PREFIX)/bin',
 -        INSTALLVENDORSCRIPT  => '$(PREFIX)/bin',
@@ -30,16 +33,22 @@ Fix some locations specific to the ports tree i.e.
      );
  
      # allow variables defined on command line to override defaults
-@@ -220,11 +210,7 @@ sub install {
- 
- config_install :
- 	install -d -m 755 $(DESTDIR)$(SYSCONFDIR)
--	if [ -f $(DESTDIR)/$(SYSCONFDIR)/agent.cfg ]; then \
--	    install -m 644 etc/agent.cfg $(DESTDIR)$(SYSCONFDIR)/agent.cfg.new; \
--	else \
--	    install -m 644 etc/agent.cfg $(DESTDIR)$(SYSCONFDIR)/agent.cfg; \
--	fi
-+	install -m 644 etc/agent.cfg $(DESTDIR)$(SYSCONFDIR)/agent.cfg.sample
+@@ -242,14 +232,11 @@
+ 	$(NOECHO) $(CHMOD) $(PERM_DIR) $(DESTDIR)$(SYSCONFDIR)
+ 	for config in agent.cfg inventory-server-plugin.cfg server-test-plugin.cfg ssl-server-plugin.cfg ; \
+ 	do \
+-	  if $(TEST_F) $(DESTDIR)/$(SYSCONFDIR)/$$config; then \
+-	    $(RM_F) $(DESTDIR)$(SYSCONFDIR)/$$config.new; \
+-	    $(CP) etc/$$config $(DESTDIR)$(SYSCONFDIR)/$$config.new; \
+-	    $(CHMOD) $(PERM_RW) $(DESTDIR)$(SYSCONFDIR)/$$config.new; \
+-	  else \
+-	    $(CP) etc/$$config $(DESTDIR)$(SYSCONFDIR)/$$config; \
+-	    $(CHMOD) $(PERM_RW) $(DESTDIR)$(SYSCONFDIR)/$$config; \
++	  if $(TEST_F) $(DESTDIR)/$(SYSCONFDIR)/$$config.sample; then \
++	    $(RM_F) $(DESTDIR)$(SYSCONFDIR)/$$config.sample; \
+ 	  fi; \
++	  $(CP) etc/$$config $(DESTDIR)$(SYSCONFDIR)/$$config.sample; \
++	  $(CHMOD) $(PERM_RW) $(DESTDIR)$(SYSCONFDIR)/$$config.sample; \
+ 	done
  	$(ABSPERLRUN) -pi \
  	    -e "s|=> undef, # SYSCONFDIR.*|=> '$(SYSCONFDIR)',|;" \
- 	        $(DESTDIR)$(DATADIR)/lib/FusionInventory/Agent/Config.pm
