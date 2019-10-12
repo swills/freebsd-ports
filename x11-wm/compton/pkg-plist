@@ -1,4 +1,5 @@
 bin/compton
+bin/compton-convgen.py
 bin/compton-trans
 @sample etc/xdg/compton.conf.sample
 share/applications/compton.desktop

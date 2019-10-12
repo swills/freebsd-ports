@@ -1,68 +1,75 @@
 # $FreeBSD$
 
 PORTNAME=	compton
-PORTVERSION=	20160907
-PORTREVISION=	4
+DISTVERSIONPREFIX=	v
+DISTVERSION=	7.4
+PORTEPOCH=	1
 CATEGORIES=	x11-wm
 
-MAINTAINER=	femc7488@gmail.com
+MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Feature-rich compositing window manager for X11
 
-LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE
+LICENSE=	MIT MPL20
+LICENSE_COMB=	multi
+LICENSE_FILE_MIT=	${WRKSRC}/LICENSES/MIT
 
+BUILD_DEPENDS=	${LOCALBASE}/include/uthash.h:devel/uthash
+LIB_DEPENDS=	libev.so:devel/libev \
+		libxcb-image.so:x11/xcb-util-image \
+		libxcb-render-util.so:x11/xcb-util-renderutil
 RUN_DEPENDS=	xprop:x11/xprop \
 		xwininfo:x11/xwininfo
 
+USES=		compiler:c11 meson localbase pkgconfig python:3.4+,run shebangfix
 USE_GITHUB=	yes
-GH_ACCOUNT=	chjj
-GH_TAGNAME=	b7f43ee
+USE_XORG=	x11 xcb xext pixman
+GH_ACCOUNT=	yshui
+SHEBANG_FILES=	bin/compton-convgen.py
 
-USES=		gmake pkgconfig
-USE_XORG=	x11 xcomposite xdamage xext xfixes xrandr xrender
+OPTIONS_DEFINE=	CONFIG DBUS DOCS DRM OPENGL PCRE TEST
+OPTIONS_DEFAULT=CONFIG DBUS DRM OPENGL PCRE
 
-MAKE_ARGS=	COMPTON_VERSION=git-${PORTVERSION}-${GH_TAGNAME} \
-		XDGDIR=${LOCALBASE}/etc/xdg
-ALL_TARGET=	${PORTNAME}
-
-OPTIONS_DEFINE=	CONFIG PCRE DRM OPENGL DBUS XINERAMA DOCS
-OPTIONS_DEFAULT=	CONFIG PCRE DRM OPENGL DBUS XINERAMA
-
-CONFIG_DESC=	Configuration file parsing support
-PCRE_DESC=	Blacklist support (via libpcre)
-DRM_DESC=	DRM VSync method support
-OPENGL_DESC=	GLX backend, OpenGL VSync method, etc.
-DOCS_DESC=	Build manpages (requires AsciiDoc/DocBook)
-
-CONFIG_LIB_DEPENDS=	libconfig.so:devel/libconfig
-CONFIG_MAKE_ARGS_OFF=	NO_LIBCONFIG=yes
+CONFIG_DESC=		Configuration file parsing support
+CONFIG_LIB_DEPENDS=	libconfig.so:devel/libconfig \
+			libxdg-basedir.so:x11/libxdg-basedir
+CONFIG_MESON_TRUE=	config_file
 
 PCRE_LIB_DEPENDS=	libpcre.so:devel/pcre
-PCRE_MAKE_ARGS_OFF=	NO_REGEX_PCRE=yes
+PCRE_MESON_TRUE=	regex
 
+DRM_DESC=		DRM VSync method support
 DRM_LIB_DEPENDS=	libdrm.so:graphics/libdrm
-DRM_MAKE_ARGS_OFF=	NO_VSYNC_DRM=yes
+DRM_MESON_TRUE=		vsync_drm
 
 OPENGL_USE=		GL=gl
-OPENGL_MAKE_ARGS_OFF=	NO_VSYNC_OPENGL=yes
+OPENGL_MESON_TRUE=	opengl
 
 DBUS_LIB_DEPENDS=	libdbus-1.so:devel/dbus
-DBUS_MAKE_ARGS_OFF=	NO_DBUS=yes
+DBUS_MESON_TRUE=	dbus
 
-XINERAMA_USE=		XORG=xinerama
-XINERAMA_MAKE_ARGS_OFF=	NO_XINERAMA=yes
+DOCS_BUILD_DEPENDS=	a2x:textproc/asciidoc
+DOCS_MESON_TRUE=	build_docs
+DOCS_PLIST_FILES=	man/man1/${PORTNAME}.1.gz \
+			man/man1/${PORTNAME}-trans.1.gz
 
-DOCS_BUILD_DEPENDS=	a2x:textproc/asciidoc \
-			xsltproc:textproc/libxslt \
-			docbook-xml>0:textproc/docbook-xml \
-			${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
-DOCS_MAKE_ARGS=		DOCDIR=${DOCSDIR} MANDIR=${MANPREFIX}/man/man1
-DOCS_ALL_TARGET=	docs
-DOCS_PLIST_FILES=	man/man1/compton.1.gz man/man1/compton-trans.1.gz
-DOCS_PORTDOCS=		README.md cdbus-driver.sh
+TEST_MESON_TRUE=	unittest
+TEST_TEST_TARGET=	test
 
 post-patch:
-	@${REINPLACE_CMD} -e '/config_system_dir/s|/etc|${LOCALBASE}&|' \
-		${WRKSRC}/src/compton.c
+	@${REINPLACE_CMD} -e '/install_dir/s,share/man,man,' \
+		${WRKSRC}/man/meson.build
+	@${REINPLACE_CMD} -e '/config_system_dir/s,/etc,${PREFIX}&,' \
+		${WRKSRC}/src/config_libconfig.c
+# Extract (snapshot) version from the port instead of meson.build
+	@${REINPLACE_CMD} -i .nogit -e 's/git.found()/false/' \
+		-e "/project_version/s/=.*/= '${DISTVERSIONFULL}'/" \
+		${WRKSRC}/meson.build
+
+post-install:
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/xdg
+	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.sample.conf \
+		${STAGEDIR}${PREFIX}/etc/xdg/${PORTNAME}.conf.sample
+
+pre-install-TEST-on:	do-test
 
 .include <bsd.port.mk>
