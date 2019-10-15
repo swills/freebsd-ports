@@ -3,11 +3,12 @@
 
 PORTNAME=	filerunner
 PORTVERSION=	19.07.08.17
+PORTREVISION=	1
 CATEGORIES=	x11-fm tk
 MASTER_SITES=	SF/${PORTNAME}/release-${PORTVERSION}
 DISTNAME=	fr-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Tcl/Tk-based filemanager with FTP capabilities
 
 LICENSE=	GPLv2
