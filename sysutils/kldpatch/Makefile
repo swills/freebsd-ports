@@ -3,17 +3,14 @@
 
 PORTNAME=	kldpatch
 PORTVERSION=	20090116
+PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://info.iet.unipi.it/~luigi/FreeBSD/
+MASTER_SITES=	https://BSDforge.com/projects/source/sysutils/kldpatch/
 DISTNAME=	${PORTVERSION}-${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Utility to patch modules and kernel
-
-BROKEN=		unfetchable
-DEPRECATED=	Unfetchable, unmaintained
-EXPIRATION_DATE=	2019-10-16
 
 PLIST_FILES=	man/man8/${PORTNAME}.8.gz sbin/kldpatch
 
