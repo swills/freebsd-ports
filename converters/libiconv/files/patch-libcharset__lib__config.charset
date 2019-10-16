@@ -1,5 +1,5 @@
---- libcharset/lib/config.charset.orig	2010-04-05 02:25:38.000000000 +0200
-+++ libcharset/lib/config.charset	2011-10-23 22:05:50.000000000 +0200
+--- libcharset/lib/config.charset.orig	2010-04-05 00:25:38 UTC
++++ libcharset/lib/config.charset
 @@ -348,7 +348,7 @@ case "$os" in
      #echo "sun_eu_greek ?" # what is this?
      echo "UTF-8 UTF-8"
