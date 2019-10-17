@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	petiga
-DISTVERSION=	g20180518
-PORTREVISION=	7
+DISTVERSION=	g20190820
 CATEGORIES=	math python
 MASTER_SITES=	https://bitbucket.org/${BB_ACCOUNT}/${BB_PROJECT}/get/${BB_COMMIT}.tar.gz?dummy=/
 
@@ -17,13 +16,13 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libmpich.so:net/mpich \
 		libpetsc.so:science/PETSc
 
+USES=		cmake compiler:c++14-lang fortran xorg
+
 BB_ACCOUNT=	dalcinl
 BB_PROJECT=	${PORTNAME}
-BB_COMMIT=	e2a59b1ba054
+BB_COMMIT=	2a48dea69533
 
 WRKSRC=		${WRKDIR}/${BB_ACCOUNT}-${BB_PROJECT}-${BB_COMMIT}
-
-USES=		cmake compiler:c++14-lang fortran
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 
