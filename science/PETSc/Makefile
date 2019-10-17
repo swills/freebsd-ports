@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	PETSc
-DISTVERSION=	3.10.2
-PORTREVISION=	3
+DISTVERSION=	3.12.0
 CATEGORIES=	science devel
 MASTER_SITES=	http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/
 DISTNAME=	${PORTNAME:tl}-${DISTVERSION}
@@ -16,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libmpich.so:net/mpich
 
-USES=		blaslapack fortran gmake python:2.7 shebangfix
+USES=		blaslapack fortran gmake python:2.7 shebangfix xorg
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-shared-libraries=1 \
 		--with-mpi-dir=${LOCALBASE} \
@@ -26,7 +25,9 @@ CONFIGURE_ARGS_amd64=	CFLAGS="${CFLAGS} -msse2" CXXFLAGS="${CXXFLAGS} -msse2"
 CONFIGURE_ARGS_i386=	CFLAGS="${CFLAGS} -msse2" CXXFLAGS="${CXXFLAGS} -msse2"
 USE_XORG=	x11
 MAKEFILE=	makefile
-SHEBANG_FILES=	lib/petsc/bin/*.py lib/petsc/bin/saws/SAWs.py lib/petsc/bin/saws/*.bash config/*.py
+SHEBANG_FILES=	lib/petsc/bin/*.py lib/petsc/bin/saws/SAWs.py\
+		lib/petsc/bin/saws/*.bash config/*.py\
+		lib/petsc/bin/petsc-performance-view lib/petsc/bin/petscnagfor
 USE_LDCONFIG=	yes
 TEST_TARGET=	test
 BINARY_ALIAS=	python=${PYTHON_CMD}
