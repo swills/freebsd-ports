@@ -1,0 +1,4 @@
+The Python curlify package allows you to convert python requests request object
+to cURL command
+
+WWW: https://github.com/ofw/curlify
