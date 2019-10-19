@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	sssd
-PORTVERSION=	1.11.7
-PORTREVISION=	19
+PORTVERSION=	1.16.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	https://releases.pagure.org/SSSD/${PORTNAME}/
 
@@ -35,17 +35,22 @@ BUILD_DEPENDS=	xmlcatalog:textproc/libxml2 \
 		nsupdate:dns/bind-tools
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-selinux=no --with-semanage=no \
+CONFIGURE_ARGS=	--without-selinux --without-semanage \
+		--without-libnl --without-nfsv4-idmapd-plugin \
+		--without-autofs --without-secrets --without-kcm \
+		--without-python2-bindings \
+		--with-init-dir=no \
+		--disable-cifs-idmap-plugin \
+		--with-unicode-lib=libunistring \
 		--with-ldb-lib-dir=${LOCALBASE}/lib/shared-modules/ldb \
 		--with-xml-catalog-path=${LOCALBASE}/share/xml/catalog \
-		--with-libnl=no --with-init-dir=no --datadir=${DATADIR} \
-		--docdir=${DOCSDIR} --with-pid-path=/var/run \
-		--localstatedir=/var --enable-pammoddir=${PREFIX}/lib \
-		--with-db-path=/var/db/sss --with-pipe-path=/var/run/sss \
-		--with-pubconf-path=/var/run/sss --with-mcache-path=/var/db/sss_mc \
-		--with-unicode-lib=libunistring --with-autofs=no \
-		--disable-cifs-idmap-plugin --disable-config-lib \
-		--with-krb5-conf=/etc/krb5.conf
+		--datadir=${DATADIR} --docdir=${DOCSDIR} --localstatedir=/var \
+		--with-db-path=/var/db/sss/db --with-mcache-path=/var/db/sss/mc \
+		--with-pubconf-path=/var/db/sss/pubconf  \
+		--with-gpo-cache-path=/var/db/sss/gpo_cache  \
+		--with-pid-path=/var/run --with-pipe-path=/var/run/sss/pipes \
+		--with-krb5-conf=/etc/krb5.conf \
+		--enable-pammoddir=${PREFIX}/lib
 CFLAGS+=	-fstack-protector-all
 PLIST_SUB=	PYTHON_VER=${PYTHON_VER}
 #DEBUG_FLAGS=	-g
@@ -55,7 +60,7 @@ SUB_FILES=	pkg-message
 USE_LDCONFIG=	yes
 USE_OPENLDAP=	yes
 USES=		autoreconf cpe gettext gmake iconv libtool pathfix pkgconfig \
-		python:2.7 shebangfix gssapi:mit
+		python:3.6 shebangfix gssapi:mit
 INSTALL_TARGET=	install-strip
 CPE_VENDOR=	fedoraproject
 
@@ -69,8 +74,14 @@ OPTIONS_DEFINE=	DOCS SMB
 OPTIONS_SUB=	yes
 
 SMB_DESC=		Install IPA and AD providers (requires Samba4)
-SMB_USES=		samba:lib # libndr-krb5pac libndr-nbt libndr libsamba-util
-SMB_CONFIGURE_WITH=	samba
+SMB_USES=		samba:lib
+SMB_CONFIGURE_WITH=	samba smb-idmap-interface-version=6
+SMB_LIB_DEPENDS=	libndr-nbt.so.0:net/samba410 \
+			libndr-krb5pac.so.0:net/samba410 \
+			libndr-standard.so.0:net/samba410 \
+			libndr.so.0:net/samba410 \
+			libsamba-util.so.0:net/samba410 \
+			libsmbclient.so.0:net/samba410
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|SIGCLD|SIGCHLD|g' ${WRKSRC}/src/util/signal.c
@@ -97,12 +108,9 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/src/examples/sssd-example.conf \
 		${STAGEDIR}${ETCDIR}/sssd.conf.sample
 	${LN} -sf nss_sss.so ${STAGEDIR}${PREFIX}/lib/nss_sss.so.1
-# clean these up from the install; we create them in rc script start_precmd
-.for d in db/sss db/sss_mc log/sssd run/sss/krb5.include.d run/sss/private run/sss
-	@${RMDIR} ${STAGEDIR}/var/${d}
-.endfor
+
 # clean unused man dirs
-.for i in nl/man1 nl/man5 pt/man1 pt/man5
+.for i in es/man1 nl/man1 nl/man5 pt/man1 pt/man5 sv/man1
 	@${RMDIR} ${STAGEDIR}${PREFIX}/man/${i}
 .endfor
 
