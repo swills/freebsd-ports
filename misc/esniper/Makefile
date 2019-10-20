@@ -7,6 +7,7 @@ CATEGORIES=	misc net
 MASTER_SITES=	https://sourceforge.net/code-snapshots/git/e/es/esniper/git.git/
 DISTNAME=       ${PORTNAME}-git-91d2665539beaeac21fb4c0cc2fd39c44e771ed7
 PORTREVISION= 	2
+BROKEN= Incompatible with eBay website changes
 
 MAINTAINER=	ag-freebsd@muc.de
 COMMENT=	Lightweight console application for sniping ebay auctions
