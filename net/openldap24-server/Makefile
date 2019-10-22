@@ -5,13 +5,13 @@ PORTNAME=		openldap
 DISTVERSION=		2.4.48
 PORTREVISION=		${OPENLDAP_PORTREVISION}
 CATEGORIES=		net databases
-MASTER_SITES=		ftp://ftp.OpenLDAP.org/pub/OpenLDAP/%SUBDIR%/ \
-			ftp://gd.tuwien.ac.at/infosys/network/OpenLDAP/%SUBDIR%/ \
-			ftp://ftp.ntua.gr/mirror/OpenLDAP/%SUBDIR%/ \
-			ftp://ftp.u-aizu.ac.jp/pub/net/openldap/%SUBDIR%/ \
-			ftp://ftp.nl.uu.net/pub/unix/db/openldap/%SUBDIR%/ \
-			ftp://sunsite.cnlab-switch.ch/mirror/OpenLDAP/%SUBDIR%/ \
-			http://www.openldap.org/software/download/OpenLDAP/%SUBDIR%/
+MASTER_SITES=		https://www.openldap.org/software/download/OpenLDAP/%SUBDIR%/ \
+			https://gpl.savoirfairelinux.net/pub/mirrors/openldap/%SUBDIR%/ \
+			https://mirror.eu.oneandone.net/software/openldap/%SUBDIR%/ \
+			https://mirror.math.princeton.edu/pub/openldap/%SUBDIR%/ \
+			http://repository.linagora.org/OpenLDAP/%SUBDIR%/ \
+			ftp://ftp.OpenLDAP.org/pub/OpenLDAP/%SUBDIR%/ \
+			ftp://ftp.ntua.gr/mirror/OpenLDAP/%SUBDIR%/
 MASTER_SITE_SUBDIR=	openldap-release
 .if defined(CLIENT_ONLY)
 .if ${CLIENT_ONLY} == sasl
