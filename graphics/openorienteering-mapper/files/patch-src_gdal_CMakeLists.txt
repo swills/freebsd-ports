@@ -1,6 +1,6 @@
---- src/gdal/CMakeLists.txt.orig	2018-12-23 20:55:50 UTC
-+++ src/gdal/CMakeLists.txt
-@@ -35,7 +35,9 @@ set(MAPPER_GDAL_SOURCES
+--- src/gdal/CMakeLists.txt.orig	2019-10-23 12:39:36.209721000 +0300
++++ src/gdal/CMakeLists.txt	2019-10-23 12:41:20.718991000 +0300
+@@ -36,7 +36,9 @@
    mapper-osmconf.ini
  )
  	

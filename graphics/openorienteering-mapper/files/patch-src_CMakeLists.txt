@@ -1,8 +1,8 @@
---- src/CMakeLists.txt.orig	2018-12-23 20:55:50 UTC
-+++ src/CMakeLists.txt
-@@ -286,7 +286,9 @@ target_compile_definitions(Mapper_Common PRIVATE
-   # MAPPER_ENABLE_COMPATIBILITY
+--- src/CMakeLists.txt.orig	2019-10-23 12:38:24.214617000 +0300
++++ src/CMakeLists.txt	2019-10-23 12:39:21.586364000 +0300
+@@ -286,7 +286,9 @@
  )
+ 
  
 -mapper_translations_sources(${Mapper_Common_SRCS} ${Mapper_Common_HEADERS})
 +if(Mapper_WITH_NLS)

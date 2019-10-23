@@ -1,5 +1,5 @@
---- src/mapper_config.h.in.orig	2018-12-23 20:55:50 UTC
-+++ src/mapper_config.h.in
+--- src/mapper_config.h.in.orig	2019-10-23 12:37:31.240935000 +0300
++++ src/mapper_config.h.in	2019-10-23 12:37:57.634746000 +0300
 @@ -30,6 +30,7 @@
  
  #cmakedefine Mapper_DEBUG_TRANSLATIONS

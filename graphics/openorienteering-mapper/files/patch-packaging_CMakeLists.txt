@@ -1,6 +1,6 @@
---- packaging/CMakeLists.txt.orig	2018-12-23 20:55:50 UTC
-+++ packaging/CMakeLists.txt
-@@ -437,7 +437,7 @@ endforeach(_qt_plugin)
+--- packaging/CMakeLists.txt.orig	2019-10-23 12:41:49.989056000 +0300
++++ packaging/CMakeLists.txt	2019-10-23 12:42:30.620447000 +0300
+@@ -427,7 +427,7 @@
  if(UNIX AND NOT APPLE AND NOT ANDROID)
  	install(
  	  FILES "${PROJECT_SOURCE_DIR}/doc/man/Mapper.1"
