@@ -2,16 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	unoconv
-PORTVERSION=	0.6
-PORTREVISION=	1
+PORTVERSION=	0.8.2
 CATEGORIES=	textproc python
-MASTER_SITES=	http://dag.wieers.com/home-made/${PORTNAME}/ \
-		SF/nemysisfreebsdp/textproc/:icons
-DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
-		${PORTNAME}.png:icons
-DIST_SUBDIR=	python
-EXTRACT_ONLY=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
-
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convert any document from and to any LibreOffice supported format
 
@@ -20,17 +12,18 @@ LICENSE=	GPLv2
 RUN_DEPENDS=	xsltproc:textproc/libxslt
 
 USES=		python
+USE_GITHUB=	yes
 NO_BUILD=	yes
 
 PORTDOCS=	*
 
 DOCSRCDIR1=	${WRKSRC}
-DOC_FILES1=	AUTHORS ChangeLog README.asciidoc WISHLIST
+DOC_FILES1=	AUTHORS ChangeLog README.adoc
 
 DOCSRCDIR2=	${WRKSRC}/doc
 DOCSDIR2=	${DOCSDIR}/doc
-DOC_FILES2=	errcode.txt filters.txt formats.txt office-installations.txt \
-		selinux.txt unoconv.1.txt
+DOC_FILES2=	errcode.adoc filters.adoc formats.adoc office-installations.adoc \
+		selinux.adoc unoconv.1.adoc
 
 OPTIONS_DEFINE=	DOCS
 
@@ -50,8 +43,6 @@ do-install:
 	@(cd ${WRKSRC}/tests && ${INSTALL_DATA} ${f} ${STAGEDIR}${DATADIR}/tests)
 .endfor
 
-	${INSTALL_DATA} ${_DISTDIR}/${PORTNAME}.png \
-		${STAGEDIR}${PREFIX}/share/pixmaps/
 	${INSTALL_MAN} ${WRKSRC}/doc/${PORTNAME}.1 \
 		${STAGEDIR}${MAN1PREFIX}/man/man1/
 
