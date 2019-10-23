@@ -3,9 +3,9 @@
 
 PORTNAME=	b2
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.3.8
-PORTREVISION=	1
-CATEGORIES=	devel
+DISTVERSION=	1.4.2
+CATEGORIES=	devel python
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	robak@FreeBSD.org
 COMMENT=	Command Line Interface for Backblaze's B2 storage service
@@ -19,10 +19,11 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}arrow>=0.8.0:devel/py-arrow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.9.1:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.10:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}tqdm>=4.5.0:misc/py-tqdm@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}tqdm>=4.5.0:misc/py-tqdm@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}b2sdk>=0.1.8:devel/py-b2sdk@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	distutils autoplist concurrent optsuffix
+USE_PYTHON=	distutils autoplist concurrent
 
 NO_ARCH=	yes
 
