@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	froxlor
-PORTVERSION=	0.9.38.7
-PORTREVISION=	4
+PORTVERSION=	0.10.3
 CATEGORIES=	sysutils www
 MASTER_SITES=	http://files.froxlor.org/releases/
 
