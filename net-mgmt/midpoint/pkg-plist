@@ -746,6 +746,8 @@
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-arbitrary-code-close-campaign.xml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-async-execution.xml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-delay-for-testing-thread-dumps.xml
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-disable-tracing.xml
+%%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-enable-tracing.xml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-objects-delay.xml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-orgs.xml
 %%PORTEXAMPLES%%%%EXAMPLESDIR%%/tasks/bulk-actions/script-users-distinct.xml
