@@ -27,7 +27,7 @@ GH_ACCOUNT=	profanity-im
 GH_PROJECT=	profanity
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-otr --enable-python-plugins --enable-c-plugins \
+CONFIGURE_ARGS=	--enable-otr --enable-omemo --enable-python-plugins --enable-c-plugins \
 		--enable-pgp --enable-icons=no --with-xscreensaver=no
 CONFIGURE_ENV=	LIBS="${CFLAGS} -lcrypto"
 INSTALL_TARGET=	install-strip
