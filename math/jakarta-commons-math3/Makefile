@@ -1,13 +1,13 @@
 # Created by: Muhammad Moinur Rahmanh <5u623l20@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	commons-math3
-PORTVERSION=	3.3
+PORTNAME=	commons-math
+PORTVERSION=	3.6.1
 CATEGORIES=	math java
 MASTER_SITES=	APACHE_COMMONS_SOURCE \
 		http://repo1.maven.org/maven2/junit/junit/4.8.2/:source2
-PKGNAMEPREFIX=	jakarta-
-DISTNAME=	${PORTNAME}-${PORTVERSION}-src
+PKGNAMEPREFIX=	apache-
+DISTNAME=	${PORTNAME}3-${PORTVERSION}-src
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		junit-4.8.2.jar:source2
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
@@ -28,7 +28,7 @@ USE_LOCALE=	en_US.ISO8859-1
 ALL_TARGET=	jar
 MAKE_ARGS=	-Dlibdir=${WRKDIR} -Dnoget=true
 
-JARFILE=	${PORTNAME:S,3,,}-${PORTVERSION}-SNAPSHOT.jar
+JARFILE=	${PORTNAME:S,3,,}-3.6.jar
 DESTJARFILE=	${PORTNAME}.jar
 PLIST_FILES+=	%%JAVAJARDIR%%/${DESTJARFILE}
 
