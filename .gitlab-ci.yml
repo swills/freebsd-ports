@@ -21,12 +21,12 @@ head-amd64:
   script:
   - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 120-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
 
-112-amd64:
+113-amd64:
   tags:
     - FreeBSD
   stage: build
   script:
-  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 112-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
+  - sudo nice -n 18 /usr/sbin/idprio 29 poudriere bulk -C -t -B ${CI_PIPELINE_ID} -j 113-amd64 -p swills-freebsd-ports -f ${PORT_LIST}
 
 add-keyword:
   tags:
