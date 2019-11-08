@@ -58,12 +58,12 @@ command_args="-c -f %%PREFIX%%/bin/mysqld_safe ${mysql_extra} --basedir=%%PREFIX
 procname="%%PREFIX%%/libexec/mysqld"
 start_precmd="${name}_prestart"
 start_postcmd="${name}_poststart"
-mysql_install_db="%%PREFIX%%/bin/mysql_install_db"
-mysql_install_db_args="${mysql_extra} --basedir=%%PREFIX%% --datadir=${mysql_dbdir} --mysqld-file=${procname} --user=${mysql_user}"
+mysqld_init="${procname}"
+mysqld_init_args="${mysql_extra} --initialize-insecure --basedir=%%PREFIX%% --datadir=${mysql_dbdir} --user=${mysql_user}"
 
 mysql_create_auth_tables()
 {
-	eval $mysql_install_db $mysql_install_db_args >/dev/null 2>/dev/null
+	eval $mysqld_init $mysqld_init_args >/dev/null 2>/dev/null
 }
 
 mysql_prestart()
