@@ -3,6 +3,7 @@
 
 PORTNAME=	redmine
 PORTVERSION=	3.4.11
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://www.redmine.org/releases/
 
@@ -73,6 +74,7 @@ post-patch:
 
 pre-install:
 	${MKDIR} ${WRKSRC}/public/plugin_assets
+	${CHOWN} ${WWWOWN}:${WWWGRP} ${WRKSRC}/public/plugin_assets
 
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}
