@@ -363,7 +363,6 @@ share/applications/idea.desktop
 %%DATADIR%%/plugins/CSS/lib/css.jar
 %%DATADIR%%/plugins/CSS/lib/resources_en.jar
 %%DATADIR%%/plugins/DatabaseTools/lib/database-impl.jar
-%%DATADIR%%/plugins/DatabaseTools/lib/database-minicat.jar
 %%DATADIR%%/plugins/DatabaseTools/lib/database-openapi.jar
 %%DATADIR%%/plugins/DatabaseTools/lib/dekaf-single-2.0.0.390.jar
 %%DATADIR%%/plugins/DatabaseTools/lib/jdbc-console.jar
@@ -10221,11 +10220,13 @@ share/applications/idea.desktop
 %%DATADIR%%/plugins/java/lib/rt/debugger-agent-storage.jar
 %%DATADIR%%/plugins/java/lib/rt/debugger-agent.jar
 %%DATADIR%%/plugins/java/lib/wadl-core.jar
-%%DATADIR%%/plugins/javaFX/lib/SceneBuilderKit-8.2.0.jar
 %%DATADIR%%/plugins/javaFX/lib/common-javaFX-plugin.jar
 %%DATADIR%%/plugins/javaFX/lib/javaFX-jps-plugin.jar
 %%DATADIR%%/plugins/javaFX/lib/javaFX.jar
 %%DATADIR%%/plugins/javaFX/lib/resources_en.jar
+%%DATADIR%%/plugins/javaFX/lib/rt/java11/scenebuilderkit-11.0.2.jar
+%%DATADIR%%/plugins/javaFX/lib/rt/java8/SceneBuilderKit-8.2.0.jar
+%%DATADIR%%/plugins/javaFX/lib/rt/sceneBuilderBridge.jar
 %%DATADIR%%/plugins/jboss-core/lib/jboss-core.jar
 %%DATADIR%%/plugins/jsp/lib/jsp-impl.jar
 %%DATADIR%%/plugins/jsp/lib/resources_en.jar
