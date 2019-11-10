@@ -1,0 +1,33 @@
+--- CMakeLists.txt.orig	2019-10-26 15:54:10 UTC
++++ CMakeLists.txt
+@@ -50,7 +50,7 @@ endif()
+ # run make to extract compiler options, linker options and list of source files
+ execute_process(
+   COMMAND
+-    make
++    gmake
+         ${ABC_READLINE_FLAGS}
+         ${ABC_USE_NAMESPACE_FLAGS}
+         ARCHFLAGS_EXE=${CMAKE_CURRENT_BINARY_DIR}/abc_arch_flags_program.exe
+@@ -91,7 +91,8 @@ endfunction()
+ set(ABC_MAIN_SRC src/base/main/main.c)
+ list(REMOVE_ITEM ABC_SRC ${ABC_MAIN_SRC})
+ 
+-add_library(libabc EXCLUDE_FROM_ALL ${ABC_SRC})
++add_library(libabc EXCLUDE_FROM_ALL SHARED ${ABC_SRC})
++set_property(TARGET libabc PROPERTY POSITION_INDEPENDENT_CODE ON) # see also https://github.com/berkeley-abc/abc/issues/56
+ abc_properties(libabc PUBLIC)
+ set_property(TARGET libabc PROPERTY OUTPUT_NAME abc)
+ 
+@@ -99,7 +100,7 @@ add_executable(abc ${ABC_MAIN_SRC})
+ target_link_libraries(abc PRIVATE libabc)
+ abc_properties(abc PRIVATE)
+ 
+-add_library(libabc-pic EXCLUDE_FROM_ALL ${ABC_SRC})
+-abc_properties(libabc-pic PUBLIC)
+-set_property(TARGET libabc-pic PROPERTY POSITION_INDEPENDENT_CODE ON)
+-set_property(TARGET libabc-pic PROPERTY OUTPUT_NAME abc-pic)
++#add_library(libabc-pic EXCLUDE_FROM_ALL ${ABC_SRC})
++#abc_properties(libabc-pic PUBLIC)
++#set_property(TARGET libabc-pic PROPERTY POSITION_INDEPENDENT_CODE ON)
++#set_property(TARGET libabc-pic PROPERTY OUTPUT_NAME abc-pic)

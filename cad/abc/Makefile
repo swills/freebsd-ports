@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	abc
-DISTVERSION=	g20180420
-PORTREVISION=	1
+DISTVERSION=	g20191026
 CATEGORIES=	cad
 
 MAINTAINER=	uddka@student.kit.edu
@@ -11,19 +10,15 @@ COMMENT=	System for sequential synthesis and verification
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/copyright.txt
 
-USES=		gmake localbase:ldflags
+USES=		cmake
 USE_GITHUB=	yes
 GH_ACCOUNT=	berkeley-abc
-GH_TAGNAME=	0e15e4d
+GH_TAGNAME=	f9309ce
 USE_LDCONFIG=	yes
 
 MAKE_ENV=	ABC_USE_STDINT_H=1 ABC_MAKE_VERBOSE=1
-CFLAGS+=	-fPIC
-CXXFLAGS+=	-fPIC
 
-PLIST_FILES=	bin/${PORTNAME} lib/lib${PORTNAME}.so
-
-OPTIONS_DEFINE=	DEBUG DOCS READLINE THREADS
+OPTIONS_DEFINE=	DEBUG READLINE THREADS
 OPTIONS_DEFAULT=	READLINE THREADS
 
 READLINE_USES=	readline
@@ -32,18 +27,13 @@ READLINE_MAKE_ENV_OFF=	ABC_USE_NO_READLINE=1
 
 THREADS_MAKE_ENV_OFF=	ABC_USE_NO_PTHREADS=1
 
-PORTDOCS=	README.md readmeaig
-
-post-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_CMD} ${MAKE_ARGS} ABC_USE_PIC=1 lib${PORTNAME}.so
-
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/lib${PORTNAME}.so ${STAGEDIR}${PREFIX}/lib
-
-do-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${WRKSRC}/readmeaig ${STAGEDIR}${DOCSDIR}
+	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${BUILD_WRKSRC}/lib${PORTNAME}.so ${STAGEDIR}${PREFIX}/lib
+	@${MKDIR} ${STAGEDIR}${PREFIX}/include/abc
+.for i in aig base bdd bool generic.h  map misc opt phys proof sat
+	@cd ${WRKSRC}/src && ${COPYTREE_SHARE} ${i} ${STAGEDIR}${PREFIX}/include/abc/
+.endfor
+	@${FIND} ${STAGEDIR}${PREFIX}/include/abc -name "*.c" | ${XARGS} ${RM}
 
 .include <bsd.port.mk>
