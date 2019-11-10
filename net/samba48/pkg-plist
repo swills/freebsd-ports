@@ -19,7 +19,7 @@ bin/regpatch
 bin/regshell
 bin/regtree
 bin/rpcclient
-bin/samba-regedit
+%%REGEDIT%%bin/samba-regedit
 %%AD_DC%%bin/samba-tool
 bin/sharesec
 bin/smbcacls
@@ -38,7 +38,7 @@ bin/vfstest
 bin/wbinfo
 sbin/nmbd
 sbin/smbd
-sbin/winbindd
+%%WINBIND%%sbin/winbindd
 %%AD_DC%%sbin/samba
 %%AD_DC%%sbin/samba_dnsupdate
 %%AD_DC%%sbin/samba_gpoupdate
@@ -178,9 +178,9 @@ lib/samba4/libtevent-util.so
 lib/samba4/libtevent-util.so.0
 lib/samba4/libwbclient.so
 lib/samba4/libwbclient.so.0
-lib/nss_winbind.so.1
+%%WINBIND%%lib/nss_winbind.so.1
 lib/nss_wins.so.1
-lib/pam_winbind.so
+%%WINBIND%%lib/pam_winbind.so
 %%CUPS%%libexec/samba/smbspool_krb5_wrapper
 %%AD_DC%%lib/samba4/private/libdlz-bind9-for-torture-samba4.so
 %%AD_DC%%lib/samba4/private/libposix-eadb-samba4.so
@@ -290,7 +290,7 @@ lib/samba4/private/libutil-cmdline-samba4.so
 lib/samba4/private/libutil-reg-samba4.so
 lib/samba4/private/libutil-setid-samba4.so
 lib/samba4/private/libutil-tdb-samba4.so
-lib/samba4/private/libwinbind-client-samba4.so
+%%WINBIND%%lib/samba4/private/libwinbind-client-samba4.so
 %%GSSAPI_BUILTIN%%lib/samba4/private/libwind-samba4.so.0
 lib/samba4/private/libxattr-tdb-samba4.so
 %%AD_DC%%lib/shared-modules/bind9/dlz_bind9_10.so
@@ -402,7 +402,7 @@ lib/shared-modules/vfs/unityed_media.so
 lib/shared-modules/vfs/virusfilter.so
 lib/shared-modules/vfs/worm.so
 lib/shared-modules/vfs/xattr_tdb.so
-lib/shared-modules/vfs/zfsacl.so
+%%ACL%%lib/shared-modules/vfs/zfsacl.so
 @dir lib/shared-modules/vfs
 %%AD_DC%%@dir lib/shared-modules/service
 %%AD_DC%%@dir lib/shared-modules/process_model
@@ -479,7 +479,7 @@ lib/shared-modules/vfs/zfsacl.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/srvsvc.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/svcctl.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/unixinfo.so
-%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/winbind.so
+%%WINBIND%%%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/winbind.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/winreg.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/wkssvc.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/dcerpc/xattr.so
@@ -636,8 +636,8 @@ lib/shared-modules/vfs/zfsacl.so
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/netlogonsvc.py
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/ntacls.py
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/ntlmdisabled.py
-%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/pam_winbind_warn_pwd_expire.py
-%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/pam_winbind.py
+%%WINBIND%%%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/pam_winbind_warn_pwd_expire.py
+%%WINBIND%%%%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/pam_winbind.py
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/param.py
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/password_hash_fl2003.py
 %%SAMBA4_PYTHON2%%%%PYTHON_SITELIBDIR%%/samba/tests/password_hash_fl2008.py
@@ -881,7 +881,7 @@ man/man3/Parse::Pidl::Util.3.gz
 man/man3/Parse::Pidl::Wireshark::Conformance.3.gz
 man/man3/Parse::Pidl::Wireshark::NDR.3.gz
 man/man5/lmhosts.5.gz
-man/man5/pam_winbind.conf.5.gz
+%%WINBIND%%man/man5/pam_winbind.conf.5.gz
 man/man5/smb.conf.5.gz
 man/man5/smb4.conf.5.gz
 man/man5/smbgetrc.5.gz
@@ -904,10 +904,10 @@ man/man8/idmap_tdb.8.gz
 man/man8/idmap_tdb2.8.gz
 man/man8/net.8.gz
 man/man8/nmbd.8.gz
-man/man8/pam_winbind.8.gz
+%%WINBIND%%man/man8/pam_winbind.8.gz
 man/man8/pdbedit.8.gz
 man/man8/samba_gpoupdate.8.gz
-man/man8/samba-regedit.8.gz
+%%REGEDIT%%man/man8/samba-regedit.8.gz
 man/man8/samba-tool.8.gz
 man/man8/samba.8.gz
 man/man8/smbd.8.gz
@@ -956,9 +956,9 @@ man/man8/vfs_unityed_media.8.gz
 man/man8/vfs_virusfilter.8.gz
 man/man8/vfs_worm.8.gz
 man/man8/vfs_xattr_tdb.8.gz
-man/man8/vfs_zfsacl.8.gz
-man/man8/winbind_krb5_locator.8.gz
-man/man8/winbindd.8.gz
+%%ACL%%man/man8/vfs_zfsacl.8.gz
+%%WINBIND%%man/man8/winbind_krb5_locator.8.gz
+%%WINBIND%%man/man8/winbindd.8.gz
 @dir %%SAMBA4_RUNDIR%%
 @dir %%SAMBA4_LOGDIR%%
 @dir %%SAMBA4_LOCKDIR%%
@@ -988,7 +988,7 @@ man/man8/winbindd.8.gz
 %%CLUSTER%%etc/ctdb/events.d/31.clamd
 %%CLUSTER%%etc/ctdb/events.d/40.vsftpd
 %%CLUSTER%%etc/ctdb/events.d/41.httpd
-%%CLUSTER%%etc/ctdb/events.d/49.winbind
+%%WINBIND%%%%CLUSTER%%etc/ctdb/events.d/49.winbind
 %%CLUSTER%%etc/ctdb/events.d/50.samba
 %%CLUSTER%%etc/ctdb/events.d/60.nfs
 %%CLUSTER%%etc/ctdb/events.d/70.iscsi
@@ -1054,6 +1054,7 @@ man/man8/winbindd.8.gz
 %%SAMBA4_BUNDLED_LDB%%%%SAMBA4_PYTHON2%%lib/samba4/private/libpyldb-util.so.1
 %%SAMBA4_BUNDLED_TALLOC%%%%SAMBA4_PYTHON2%%lib/samba4/private/libpytalloc-util.so.2
 %%SAMBA4_BUNDLED_CMOCKA%%lib/samba4/private/libcmocka-samba4.so
+%%SAMBA4_BUNDLED_POPT%%lib/samba4/private/libpopt-samba4.so
 %%SAMBA4_BUNDLED_LDB%%lib/samba4/private/libldb-cmdline-samba4.so
 %%SAMBA4_BUNDLED_LDB%%lib/shared-modules/ldb/asq.so
 %%SAMBA4_BUNDLED_LDB%%lib/shared-modules/ldb/paged_results.so

@@ -88,7 +88,9 @@ SUB_LIST+=			PKGCONFIGDIR=${PKGCONFIGDIR_REL}
 OPTIONS_SUB=			yes
 
 OPTIONS_DEFINE=			AD_DC ADS DEBUG DOCS FAM LDAP \
-				QUOTAS SYSLOG UTMP PROFILE
+				QUOTAS SYSLOG UTMP PROFILE \
+				PYTHON WINBIND LIBINOTIFY JANSSON \
+				REGEDIT LIBARCHIVE GNUTLS ACL
 # Make those default options
 OPTIONS_DEFAULT:=		${OPTIONS_DEFINE} GSSAPI_BUILTIN
 # This shouldn't be default in the release
@@ -126,6 +128,14 @@ PICKY_DEVELOPER_DESC=		Treat compiler warnings as errors(implies DEVELOPER)
 PROFILE_DESC=			Profiling data
 QUOTAS_DESC=			Disk quota
 UTMP_DESC=			UTMP accounting
+PYTHON_DESC=			Build Python modules and support
+WINBIND_DESC=			Build winbind
+LIBINOTIFY_DESC=		inotify support
+JANSSON_DESC=			Add support for JSON-formatted logs
+REGEDIT_DESC=			Build regedit
+LIBARCHIVE_DESC=		libarchive support
+GNUTLS_DESC=			GnuTLS support
+ACL_DESC=			NFS/ZFS ACL support
 
 GSSAPI_BUILTIN_DESC=		GSSAPI support via bundled Heimdal
 
@@ -139,26 +149,13 @@ NSUPDATE_DESC=			Use samba NSUPDATE utility for AD DC
 # Readline(sponsored by Python)
 # XXX: USES=readline pollutes CPPFLAGS, so we explicitly put dependency
 LIB_DEPENDS+=			libreadline.so.8:devel/readline
-# popt
-LIB_DEPENDS+=			libpopt.so:devel/popt
-# inotify
-LIB_DEPENDS+=			libinotify.so:devel/libinotify
-# GNUTLS
-LIB_DEPENDS+=			libgnutls.so:security/gnutls
-# NFS4 ACL glue
-LIB_DEPENDS+=			libsunacl.so:sysutils/libsunacl
-# Jansson
-BUILD_DEPENDS+=			jansson>=2.10:devel/jansson
-RUN_DEPENDS+=			jansson>=2.10:devel/jansson
 # External Samba dependencies
 # Needed for IDL compiler
 BUILD_DEPENDS+=			p5-Parse-Yapp>=0:devel/p5-Parse-Yapp
-# Libarchive
-SAMBA4_BUNDLED_LIBS+=		!libarchive
-BUILD_DEPENDS+=			libarchive>=3.1.2:archivers/libarchive
-RUN_DEPENDS+=			libarchive>=3.1.2:archivers/libarchive
+SAMBA4_BUNDLED_LIBS+=		!parse_yapp_driver
 ### Bundled libraries
 SAMBA4_BUNDLED_CMOCKA?=		no
+SAMBA4_BUNDLED_POPT?=		no
 SAMBA4_BUNDLED_TALLOC?=		yes
 SAMBA4_BUNDLED_TEVENT?=		yes
 SAMBA4_BUNDLED_TDB?=		yes
@@ -176,6 +173,18 @@ BUILD_DEPENDS+=			cmocka>=1.1.1:sysutils/cmocka
 RUN_DEPENDS+=			cmocka>=1.1.1:sysutils/cmocka
 PLIST_SUB+=			SAMBA4_BUNDLED_CMOCKA="@comment "
 SUB_LIST+=			SAMBA4_BUNDLED_CMOCKA="@comment "
+.endif
+# popt
+.if defined(SAMBA4_BUNDLED_POPT) && ${SAMBA4_BUNDLED_POPT} == yes
+SAMBA4_BUNDLED_LIBS+=		popt
+PLIST_SUB+=			SAMBA4_BUNDLED_POPT=""
+SUB_LIST+=			SAMBA4_BUNDLED_POPT=""
+.else
+SAMBA4_BUNDLED_LIBS+=		!popt
+BUILD_DEPENDS+=			popt>=1.16:devel/popt
+RUN_DEPENDS+=			popt>=1.16:devel/popt
+PLIST_SUB+=			SAMBA4_BUNDLED_POPT="@comment "
+SUB_LIST+=			SAMBA4_BUNDLED_POPT="@comment "
 .endif
 # talloc
 .if defined(SAMBA4_BUNDLED_TALLOC) && ${SAMBA4_BUNDLED_TALLOC} == yes
@@ -256,17 +265,12 @@ TEST_DEPENDS+=			bash:shells/bash \
 CONFIGURE_ARGS+=		\
 				--with-pam \
 				--with-iconv \
-				--with-winbind \
-				--with-regedit \
 				--disable-rpath \
 				--without-lttng \
 				--without-gettext \
 				--enable-pthreadpool \
 				--without-fake-kaserver \
 				--without-systemd \
-				--enable-gnutls \
-				--with-libarchive \
-				--with-acl-support \
 				--with-sendfile-support \
 				--disable-ctdb-tests \
 				${ICONV_CONFIGURE_BASE}
@@ -358,6 +362,20 @@ LIBZFS_VARS=			SAMBA4_MODULES+=vfs_zfs_space
 MANDOC_BUILD_DEPENDS=		${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl \
 				xsltproc:textproc/libxslt
 MANDOC_CONFIGURE_ENV_OFF=	XSLTPROC="true"
+
+WINBIND_CONFIGURE_WITH=		winbind
+REGEDIT_CONFIGURE_WITH=		regedit
+
+LIBARCHIVE_CONFIGURE_WITH=	libarchive
+LIBARCHIVE_BUILD_DEPENDS=	libarchive>=3.1.2:archivers/libarchive
+LIBARCHIVE_RUN_DEPENDS=		libarchive>=3.1.2:archivers/libarchive
+
+GNUTLS_CONFIGURE_ENABLE=	gnutls
+GNUTLS_LIB_DEPENDS=		libgnutls.so:security/gnutls
+
+ACL_CONFIGURE_WITH=		acl-support
+ACL_LIB_DEPENDS=		libsunacl.so:sysutils/libsunacl
+
 # !SAMBA4_SUBPORT
 .endif
 
@@ -392,7 +410,10 @@ SAMBA4_MODULES+=		auth_skel pdb_test gpext_security gpext_registry gpext_scripts
 				vfs_nfs4acl_xattr vfs_error_inject vfs_delay_inject
 .endif
 # Python bindings
-.if defined(NO_PYTHON)
+.if defined(NO_PYTHON) || !${PORT_OPTIONS:MPYTHON}
+SAMBA_NO_PYTHON=	YES
+.endif
+.if defined(SAMBA_NO_PYTHON)
 USES+=				python:2.7,build,test
 CONFIGURE_ARGS+=		--disable-python
 PLIST_SUB+=			SAMBA4_PYTHON2="@comment "
@@ -431,6 +452,19 @@ RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.15.0:dns/py-dnspython@${PY_F
 
 BUILD_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601@${PY_FLAVOR}
 RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}iso8601>=0.1.11:devel/py-iso8601@${PY_FLAVOR}
+.endif
+
+.if ${PORT_OPTIONS:MLIBINOTIFY}
+LIB_DEPENDS=		libinotify.so:devel/libinotify
+.else
+EXTRA_PATCHES+=		${PATCHDIR}/detach-inotify-detection
+.endif
+
+.if ${PORT_OPTIONS:MJANSSON}
+BUILD_DEPENDS=		jansson>=2.10:devel/jansson
+RUN_DEPENDS=		jansson>=2.10:devel/jansson
+.else
+EXTRA_PATCHES+=		${PATCHDIR}/detach-jansson-detection
 .endif
 
 .if defined(WANT_EXP_MODULES) && !empty(WANT_EXP_MODULES)
@@ -507,9 +541,6 @@ USE_RC_SUBR=			samba_server
 SUB_FILES=			pkg-message README.FreeBSD
 
 PORTDOCS=			README.FreeBSD
-
-post-extract:
-				@${RM} -r ${WRKSRC}/pidl/lib/Parse/Yapp
 
 post-patch:
 				@${REINPLACE_CMD} -e 's|$${PKGCONFIGDIR}|${PKGCONFIGDIR}|g' \

@@ -1,0 +1,9 @@
+--- auth/wscript_configure~	2018-01-14 23:41:58.000000000 +0300
++++ auth/wscript_configure	2019-01-19 23:22:11.642478000 +0300
+@@ -2,6 +2,3 @@
+ 
+ conf.SET_TARGET_TYPE('jansson', 'EMPTY')
+ 
+-if conf.CHECK_CFG(package='jansson', args='--cflags --libs',
+-		  msg='Checking for jansson'):
+-    conf.CHECK_FUNCS_IN('json_object', 'jansson')
