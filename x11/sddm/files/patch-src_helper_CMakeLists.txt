@@ -1,0 +1,12 @@
+--- ./src/helper/CMakeLists.txt.ORIG	2017-12-05 17:00:16.000000000 +0100
++++ ./src/helper/CMakeLists.txt	2019-10-26 13:31:46.619098000 +0200
+@@ -37,6 +37,9 @@
+ else()
+     target_link_libraries(sddm-helper crypt)
+ endif()
++if("${CMAKE_SYSTEM_NAME}" STREQUAL "FreeBSD")
++    target_link_libraries(sddm-helper util)
++endif()
+ 
+ if(JOURNALD_FOUND)
+     target_link_libraries(sddm-helper ${JOURNALD_LIBRARIES})
