@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	grass
-PORTVERSION=	7.6.1
-PORTREVISION=	7
+PORTVERSION=	7.8.1
 CATEGORIES=	databases geography
 MASTER_SITES=	https://grass.osgeo.org/%SUBDIR%/ \
 		http://grass.cict.fr/%SUBDIR%/ \
@@ -36,11 +35,12 @@ LIB_DEPENDS=	libgdal.so:graphics/gdal \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libgeos.so:graphics/geos
-RUN_DEPENDS=	bash:shells/bash
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wxPython40>=0:x11-toolkits/py-wxPython40@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}six>=1.12.0:devel/py-six@${PY_FLAVOR}
 
-USES=		blaslapack fortran gmake gl gnome \
-		iconv jpeg perl5 pkgconfig python:2.7 \
-		readline shebangfix tk xorg
+USES=		blaslapack fortran gmake gl gnome iconv \
+		jpeg perl5 pkgconfig python:3.6 readline \
+		shebangfix tk xorg
 SHEBANG_LANG=	nviz
 nviz_OLD_CMD=	nviz
 nviz_CMD=	${PREFIX}/${GRASS_INST_DIR}/bin/nviz
@@ -48,8 +48,7 @@ USE_XORG=	sm ice x11 xext xi xmu xrender xt
 USE_GL=		gl glu
 USE_GNOME=	cairo
 USE_WX=		3.0
-WX_COMPS=	wx:build python:run
-USE_GCC=	yes
+WX_COMPS=	wx:build # python:run
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--with-includes=${LOCALBASE}/include \
@@ -68,7 +67,7 @@ CONFIGURE_ARGS=	--with-includes=${LOCALBASE}/include \
 		--with-geos=${LOCALBASE}/bin/geos-config \
 		--with-gdal=${LOCALBASE}/bin/gdal-config \
 		--with-pthread=yes
-		#--with-openmp
+		# --with-openmp
 
 ALL_TARGET=	default
 USE_LDCONFIG=	${PREFIX}/${GRASS_INST_DIR}/lib
@@ -87,18 +86,15 @@ OPTIONS_MULTI_DB=	MYSQL ODBC PGSQL SQLITE
 OPTIONS_DEFAULT=	LAS NETCDF NLS PDAL PGSQL SQLITE ZSTD
 OPTIONS_SUB=		yes
 
-# BLAS/LAPACK: Only netlib compile the maxmimum number of modules
 #BLAS_DESC=		BLAS/LAPACK support
 #GOTOBLAS_DESC=		GotoBLAS implementationS
+LAS_DESC=		Enable LiDAR modules
+PDAL_DESC=		Enable points cloud data modules
 #ATLAS_USES=		blaslapack:atlas
 #NETLIB_USES=		blaslapack
 #GOTOBLAS_USES=		blaslapack:gotoblas
 #OPENBLAS_USES=		blaslapack:openblas
-LAS_DESC=		Enable LiDAR modules
-PDAL_DESC=		Enable points cloud data modules
 DB_DESC=		Database support
-NLS_CONFIGURE_WITH=	nls
-NLS_USES=		gettext	
 LAS_CONFIGURE_ON=	--with-liblas=yes
 LAS_LIB_DEPENDS=	liblas.so:devel/liblas \
 			libboost_program_options.so:devel/boost-libs \
@@ -110,14 +106,16 @@ MYSQL_CONFIGURE_ON=	--with-mysql \
 			--with-mysql-libs=${LOCALBASE}/lib/mysql
 NETCDF_CONFIGURE_ON=	--with-netcdf=${LOCALBASE}/bin/nc-config
 NETCDF_LIB_DEPENDS=	libnetcdf.so:science/netcdf
+NLS_CONFIGURE_WITH=	nls
+NLS_USES=		gettext
 ODBC_LIB_DEPENDS=	libodbc.so:databases/unixODBC
-ODBC_CONFIGURE_ON=	--with-odbc
+ODBC_CONFIGURE_WITH=	odbc
 PDAL_CONFIGURE_ON=	--with-pdal=${LOCALBASE}/bin/pdal-config
 PDAL_LIB_DEPENDS=	libpdal_base.so:math/pdal
 PGSQL_USES=		pgsql
-PGSQL_CONFIGURE_ON=	--with-postgres
+PGSQL_CONFIGURE_WITH=	postgres
 SQLITE_USES=		sqlite
-SQLITE_CONFIGURE_ON=	--with-sqlite
+SQLITE_CONFIGURE_WITH=	sqlite
 SQLITE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 ZSTD_CONFIGURE_WITH=	zstd
 ZSTD_LIB_DEPENDS=	libzstd.so:archivers/zstd
@@ -147,7 +145,7 @@ post-patch:
 		 /^$$(INST_DIR)\//s|$$(INST_DIR)|$${DESTDIR}$${INST_DIR}|g ; \
 		 s|> $$(INST_DIR)|> $${DESTDIR}$${INST_DIR}|' ${WRKSRC}/include/Make/Install.make
 	${REINPLACE_CMD} \
-		's|= python|= ${PYTHON_CMD:T}|' ${WRKSRC}/include/Make/Platform.make.in
+		's|= python3|= ${PYTHON_CMD:T}|' ${WRKSRC}/include/Make/Platform.make.in
 	${REINPLACE_CMD} \
 		"s|'make'|'gmake'|g" ${WRKSRC}/scripts/g.extension/g.extension.py
 	${REINPLACE_CMD} \
@@ -158,31 +156,22 @@ post-patch:
 	${REINPLACE_CMD} 's|GRASS_PYTHON=python|GRASS_PYTHON=${PYTHON_CMD}|g' \
 		${WRKSRC}/lib/init/grass.sh
 	${REINPLACE_CMD} \
-		"s|environ\['GRASS_PYTHON'\] = "'"python"'"|environ['GRASS_PYTHON'] = "'"${PYTHON_CMD}"'"|g" \
+		"s|environ\['GRASS_PYTHON'\] = "'"python3"'"|environ['GRASS_PYTHON'] = "'"${PYTHON_CMD}"'"|g" \
 		${WRKSRC}/lib/python/script/setup.py
 	cd ${WRKSRC}; \
 	for i in `${FIND} . -type f -print`; do \
 		${REINPLACE_CMD} \
-		's|#!/usr/bin/env python|#!/usr/bin/env ${PYTHON_CMD}|' $$i; \
+		's|#!/usr/bin/env python3|#!/usr/bin/env ${PYTHON_CMD}|' $$i; \
 	done
 
 post-install:
 	${RM} -rf ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/demolocation/PERMANENT/.tmp/
+	${RM} -rf ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/etc/db.test/
 	${RM} -rf ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/docs/html/colortables/*bak.png
+	${FIND} ${STAGEDIR}${LOCALBASE} -name "__pycache__" | ${XARGS} ${RM} -rf
 	${MKDIR} ${STAGEDIR}${LOCALBASE}/${PORTNAME}${VER}/docs/html/
-.for file in i_atcorr_B02_atcorr.png \
-		i_ortho_photo_step1.png \
-		i_ortho_photo_step5.png \
-		i_ortho_photo_step6.png \
-		i_ortho_photo_step7.png \
-		i_ortho_photo_step8.png \
-		r.viewshed.png \
-		rterraflow_accumulation.png \
-		rterraflow_dir2.png \
-		rterraflow_dir3.png \
-		sweep1.png \
-		sweep2.png
-	${TOUCH} ${STAGEDIR}${LOCALBASE}/${PORTNAME}${VER}/docs/html/${file}
+.for file in wms_base.py wms_drv.py wms_gdal_drv.py wms_cap_parsers.py srs.py
+	${INSTALL_SCRIPT} ${WRKSRC}/scripts/r.in.wms/${file} ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/etc/r.in.wms/${file}
 .endfor
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/bin/*
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${GRASS_INST_DIR}/driver/db/*
@@ -196,4 +185,5 @@ post-install:
 		${STAGEDIR}${PREFIX}/bin/${PORTNAME}${PKGNAMESUFFIX}
 	${LN} -s ${PORTNAME}${VER} \
 		${STAGEDIR}${PREFIX}/${PORTNAME}-${PORTVERSION}
+
 .include <bsd.port.mk>
