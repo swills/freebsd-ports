@@ -1,0 +1,11 @@
+--- gtk/src/Makefile.am.orig	2019-11-11 14:30:34 UTC
++++ gtk/src/Makefile.am
+@@ -50,6 +50,8 @@ EXTRA_DIST = \
+ DISTCLEANFILES = \
+ 	$(appdata_files)
+ 
++DATADIRNAME = share
++
+ AM_CPPFLAGS = \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
