@@ -2,6 +2,7 @@
 
 PORTNAME=	rdoc
 PORTVERSION=	6.1.2
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -17,7 +18,13 @@ USE_RUBY=	yes
 
 NO_ARCH=	yes
 
+.include <bsd.port.pre.mk>
+
+.if ${RUBY_VER} >= 2.6
+PLIST_FILES=	bin/rdoc bin/ri
+.else
 post-install:
 	${RM} ${STAGEDIR}${PREFIX}/bin/rdoc ${STAGEDIR}${PREFIX}/bin/ri
+.endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
