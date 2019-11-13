@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	dpdk
-PORTVERSION=	18.05.1
+PORTVERSION=	18.11.4
 CATEGORIES=	net
 MASTER_SITES=	http://fast.dpdk.org/rel/
 
