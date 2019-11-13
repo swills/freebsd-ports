@@ -2,6 +2,7 @@
 
 PORTNAME=	irb
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
@@ -16,8 +17,12 @@ USE_RUBY=	yes
 
 NO_ARCH=	yes
 
-# irb executable is installed by ruby port
-post-install:
-	${RM} ${STAGEDIR}${PREFIX}/bin/irb
+PLIST_FILES=	bin/irb
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${RUBY_VER} < 2.6
+IGNORE=		irb is included in ruby port
+.endif
+
+.include <bsd.port.post.mk>
