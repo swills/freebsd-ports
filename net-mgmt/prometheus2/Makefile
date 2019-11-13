@@ -3,6 +3,7 @@
 PORTNAME=	prometheus
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.14.0
+PORTREVISION=	1
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	dor.bsd@xm0.uk
@@ -14,6 +15,11 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USES=		go:modules gmake
 USE_GITHUB=	yes
 USE_RC_SUBR=	prometheus
+
+PROMETHEUS_TAG=	${DISTVERSIONPREFIX}${DISTVERSION}
+
+GH_TUPLE=	prometheus:${PORTNAME}:${PROMETHEUS_TAG}:DEFAULT \
+		ports-assets:net-mgmt_prometheus2:${PROMETHEUS_TAG}:assets
 
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 
@@ -57,12 +63,17 @@ LD_FLAG_STRING=		-s \
 		${LD_FLAG_X_PREFIX}.Branch=release-${PORTVERSION:R} \
 		${LD_FLAG_X_PREFIX}.BuildUser=${BUILD_USER}
 
-GO_BUILDFLAGS=	-v -ldflags "${LD_FLAG_STRING}"
+GO_BUILDFLAGS=	-v -ldflags "${LD_FLAG_STRING}" -tags netgo,builtinassets
+
 # A tsdb binary already exists in databases/opentsdb. Rename ours to
 # avoid issues.
 GO_TARGET=	./cmd/prometheus \
 		./cmd/promtool \
 		./tsdb/cmd/tsdb:promtsdb
+
+post-patch:
+	@${CP} ${WRKDIR}/net-mgmt_prometheus2-${PORTVERSION}/web/ui/assets_vfsdata.go \
+		${WRKDIR}/prometheus-${PORTVERSION}/web/ui/assets_vfadata.go
 
 post-install:
 	${INSTALL_DATA} \
