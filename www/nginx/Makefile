@@ -356,6 +356,11 @@ do-install-NAXSI-on:
 	${WRKDIR}/naxsi-${NAXSI_NGINX_VER}/naxsi_config/naxsi_core.rules \
 	${STAGEDIR}${ETCDIR}
 
+do-install-MODSECURITY-on:
+	${INSTALL_DATA} \
+  ${WRKDIR}/modsecurity-${MODSECURITY_VERSION}/unicode.mapping \
+	${STAGEDIR}${ETCDIR}
+
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/vim/vimfiles
 	cd ${WRKSRC}/contrib/vim && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/share/vim/vimfiles
