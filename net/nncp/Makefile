@@ -1,18 +1,17 @@
 # $FreeBSD$
 
 PORTNAME=	nncp
-DISTVERSION=	4.0
+DISTVERSION=	5.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.nncpgo.org/download/
 
 MAINTAINER=	stargrave@stargrave.org
 COMMENT=	Utilities for secure store-and-forward files, mail, command exchanging
 
-LICENSE=	GPLv3+
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		go:no_targets tar:xz
-MAKEFILE=	BSDmakefile
 USE_RC_SUBR=	nncp-caller nncp-daemon nncp-toss
 INSTALL_TARGET=	install-strip
 
