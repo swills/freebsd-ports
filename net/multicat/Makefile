@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	multicat
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	net multimedia
 MASTER_SITES=	https://get.videolan.org/multicat/${PORTVERSION}/
 
