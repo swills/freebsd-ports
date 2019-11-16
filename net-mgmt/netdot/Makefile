@@ -5,12 +5,9 @@ PORTNAME=	netdot
 PORTVERSION=	1.0.7
 PORTREVISION=	4
 CATEGORIES=	net-mgmt
-MASTER_SITES=	http://netdot.uoregon.edu/pub/dists/
 
 MAINTAINER=	nick@foobar.org
 COMMENT=	Open source tool to organize and maintain network information
-
-BROKEN=		unfetchable
 
 LICENSE=	GPLv2
 
@@ -44,6 +41,12 @@ RUN_DEPENDS=	p5-libapreq2>=0:www/p5-libapreq2 \
 		netdisco-mibs>=0:net-mgmt/netdisco-mibs
 
 USES=		gmake mysql perl5 shebangfix
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	cvicente
+GH_PROJECT=	Netdot
+GH_TAGNAME=	${PORTNAME}-${PORTVERSION}
+
 NO_BUILD=	yes
 
 SUB_FILES=	pkg-message pkg-install
