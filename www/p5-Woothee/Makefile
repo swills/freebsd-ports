@@ -1,11 +1,12 @@
 # $FreeBSD$
 
 PORTNAME=	Woothee
-PORTVERSION=	1.8.0
+PORTVERSION=	1.10.0
 CATEGORIES=	www perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR= CPAN:TAGOMORIS
 PKGNAMEPREFIX=	p5-
+DISTVERSIONPREFIX= v
 
 MAINTAINER=	bokutin@bokut.in
 COMMENT=	Multi-language user-agent strings parsers (perl implementation)
