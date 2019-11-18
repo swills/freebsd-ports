@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	pynvim
-PORTVERSION=	0.3.2
+PORTVERSION=	0.4.0
 CATEGORIES=	editors python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -11,7 +11,7 @@ COMMENT=	Python client and plugin host for Neovim
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.5.0:devel/py-msgpack@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack05>=0.5.0:devel/py-msgpack05@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}greenlet>=0:devel/py-greenlet@${PY_FLAVOR}
 py27_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}trollius>=0:devel/py-trollius@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=3.4.0:devel/py-pytest@${PY_FLAVOR}
