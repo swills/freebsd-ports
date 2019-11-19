@@ -1,13 +1,11 @@
-# $FreeBSD$
-
 PORTNAME=	fossmixer
-PORTVERSION=	0.0.2
+PORTVERSION=	0.0.3
 CATEGORIES=	audio
 MASTER_SITES=	https://downloads.sourceforge.net/project/detroit/
-DISTNAME=	detroit-0.2.1
+DISTNAME=	detroit-0.2.2
 EXTRACT_SUFX=	.tar.xz
 
-MAINTAINER=	jani@lasipalatsi.fi
+MAINTAINER=	salojan@goto10.co
 COMMENT=	Graphical mixer application for OSS
 
 LICENSE=	BSD3CLAUSE
@@ -21,7 +19,7 @@ LIB_DEPENDS=	libao.so:audio/libao \
 		libltdl.so:devel/libltdl \
 		libfreetype.so:print/freetype2
 
-USES=		gettext-runtime gl perl5 xorg
+USES=		gettext-runtime gl perl5 pkgconfig:build xorg
 USE_GL=		gl
 USE_PERL5=	patch build
 USE_XORG=	x11 xext xrandr
