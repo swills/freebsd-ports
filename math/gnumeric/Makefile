@@ -14,7 +14,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	itstool:textproc/itstool
-LIB_DEPENDS=	libgoffice-0.10.so:devel/goffice010 \
+LIB_DEPENDS=	libgoffice-${GOFFICE_API_VER}.so:devel/goffice010 \
 		libfribidi.so:converters/fribidi \
 		libpsiconv.so:converters/psiconv
 
@@ -25,6 +25,10 @@ USE_LDCONFIG=	yes
 INSTALLS_ICONS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	\
+		--with-gi-overrides-dir=${PYTHONPREFIX_SITELIBDIR}/gi/overrides \
+		--with-goffice-plugins-dir=${PREFIX}/goffice/${GOFFICE_API_VER}/plugins \
+		--with-gir-dir=${PREFIX}/share/gir-1.0 \
+		--with-typelib-dir=${PREFIX}/lib/girepository-1.0 \
 		--without-paradox \
 		--enable-introspection
 INSTALL_TARGET=	install-strip
@@ -39,8 +43,9 @@ SHEBANG_FILES=	plugins/perl-func/perl_func.pl
 
 BINARY_ALIAS=	python=${PYTHON_CMD}
 
+GOFFICE_API_VER=	0.10
 PLIST_SUB=	VERSION=${PORTVERSION} \
-		GOFFICE=0.10 \
+		GOFFICE=${GOFFICE_API_VER} \
 		SHORT_VER=${PORTVERSION:R}
 
 OPTIONS_SUB=	yes
