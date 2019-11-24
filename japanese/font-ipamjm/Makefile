@@ -1,21 +1,19 @@
 # $FreeBSD$
 
 PORTNAME=	ipamjm
-PORTVERSION=	00301
-PORTREVISION=	2
+PORTVERSION=	00601
+PORTREVISION=	0
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	http://dl.mojikiban.ipa.go.jp/IPAmjMincho/
+MASTER_SITES=	https://mojikiban.ipa.go.jp/OSCDL/IPAmjMincho/
 PKGNAMEPREFIX=	ja-font-
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	hrs@FreeBSD.org
 COMMENT=	IPAmj Mincho Japanese fonts
 
-BROKEN=		unfetchable
-
 LICENSE=	IPAFLAv1
 LICENSE_NAME=	IPA Font License Agreement v1.0
-LICENSE_FILE=	${WRKSRC}/IPA_Font_License_Agreement_v1.0.txt
+LICENSE_FILE=	${WRKDIR}/IPA_Font_License_Agreement_v1.0.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		fonts:fc zip
@@ -26,13 +24,13 @@ PKGINSTALL=	${WRKDIR}/pkg-install
 PKGDEINSTALL=	${WRKDIR}/pkg-install
 SUB_FILES=	pkg-install
 DATADIR=	${PREFIX}/share/font-${PORTNAME}
-PORTDOCS=	Readme_${PORTNAME}003.01.txt
+PORTDOCS=	Readme_${PORTNAME}006.01.txt
 
 OPTIONS_DEFINE=	DOCS
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}
-	${INSTALL_DATA} ${WRKSRC}/ipamjm.ttf ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKDIR}/ipamjm.ttf ${STAGEDIR}${DATADIR}
 	${MKDIR} ${STAGEDIR}${FONTSDIR}
 	cd ${STAGEDIR}${FONTSDIR} && ${LN} -s -f \
 	    ../../../${DATADIR_REL}/ipamjm.ttf .
@@ -48,6 +46,6 @@ do-install:
 
 post-install-DOCS-on:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
+	cd ${WRKDIR} && ${INSTALL_DATA} ${WRKDIR}/Readme.txt ${STAGEDIR}${DOCSDIR}/${PORTDOCS}
 
 .include <bsd.port.mk>
