@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	phpmustache
-PORTVERSION=	2.12.0
+PORTVERSION=	2.13.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
@@ -12,11 +12,11 @@ COMMENT=	PHP5 code for Mustache
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=		php:build
 USE_GITHUB=	yes
 GH_ACCOUNT=	bobthecow
 GH_PROJECT=	mustache.php
 
-USES=		php:build
 NO_ARCH=	yes
 
 SUB_FILES=	pkg-message
