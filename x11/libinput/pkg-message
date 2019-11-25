@@ -1,0 +1,12 @@
+[
+{ type: install
+  message: <<EOM
+libinput only supports evdev(4) devices, so
+
+- If mouse/keyboard events are wanted build kernel with EVDEV_SUPPORT
+- Make sure /dev/input/* are accessible by user or "video" group
+- For arrow keys to work export XKB_DEFAULT_RULES=evdev via environ(7)
+- For non-multiplexed events set sysctl kern.evdev.rcpt_mask=12
+EOM
+}
+]
