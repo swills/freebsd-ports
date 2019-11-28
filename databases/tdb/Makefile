@@ -107,12 +107,14 @@ pre-build-MANPAGES-off:
 			${INSTALL_MAN} ${FILESDIR}/`basename ${man} .gz` ${BUILD_WRKSRC}/bin/default/man
 .endfor
 
+.if ! ${PORT_OPTIONS:MDEBUG}
 post-install:
 .for lib in ${TDB_BINS} lib/libtdb.so
 			${STRIP_CMD} ${STAGEDIR}${PREFIX}/${lib}
 .endfor
 .if !defined(NO_PYTHON)
 			${STRIP_CMD} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/tdb.so
+.endif
 .endif
 
 .include <bsd.port.post.mk>
