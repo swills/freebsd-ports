@@ -27,6 +27,11 @@ MIMEDIRS=	${LOCALBASE}/share/mime \
 MIMESUBDIRS=	application audio image inode message model multipart \
 		packages text video x-epoc x-content
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	yes
+
+NLS_CONFIGURE_ENABLE=	nls
+
 post-patch:
 	@${REINPLACE_CMD} -e 's|/usr/local|${LOCALBASE}|g' \
 		${WRKSRC}/update-mime-database.c
