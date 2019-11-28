@@ -1,7 +1,9 @@
 # $FreeBSD$
 
 PORTNAME=	ufetch
-DISTVERSION=	0.1-1
+DISTVERSION=	g20191028
+PORTREVISION=	1
+PORTEPOCH=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	vulcan@wired.sh
@@ -13,15 +15,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITLAB=	yes
 
 GL_ACCOUNT=	jschx
-GL_COMMIT=	544c670443be515b07512afccb1adf22d9a3825f
+GL_COMMIT=	877f675c990d087247630bd956e3ba8beae92654
 
 NO_ARCH=	yes
 NO_BUILD=	yes
 
-PLIST_FILES=	bin/ufetch
+PLIST_FILES=	bin/${PORTNAME}
 
 post-patch:
-	${REINPLACE_CMD} -e 's/-freebsd//g' ${WRKSRC}/ufetch-freebsd
+	${REINPLACE_CMD} -e 's|-freebsd||g' ${WRKSRC}/${PORTNAME}-freebsd
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}-freebsd \
