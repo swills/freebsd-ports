@@ -1,5 +1,7 @@
-TIMESTAMP = 1544828761
-SHA256 (Logitech-slimserver-7.9.2.g2018.12.10-d3dc895_GH0.tar.gz) = 461d2cc86791e66db10dc0c3c89d67094cd79f6e5bbcadda352874f931a0599b
-SIZE (Logitech-slimserver-7.9.2.g2018.12.10-d3dc895_GH0.tar.gz) = 249414931
-SHA256 (Logitech-slimserver-vendor-21f307f_GH0.tar.gz) = e4a831077e040485b2df938c0dec37d8660fdda3c9dabb5a8eafcd5a9120f424
-SIZE (Logitech-slimserver-vendor-21f307f_GH0.tar.gz) = 139203047
+TIMESTAMP = 1575209290
+SHA256 (Logitech-slimserver-7.9.2.g2019.11.28-cae4414_GH0.tar.gz) = 1a01a1ebc6af9625768d73caddeffcc08414c112980329701e28a9ca0dfaaede
+SIZE (Logitech-slimserver-7.9.2.g2019.11.28-cae4414_GH0.tar.gz) = 261647102
+SHA256 (Logitech-slimserver-vendor-6265ea5_GH0.tar.gz) = 95ee8e2ee8174e968af2d6b41d478bc22f539001dc8c43779e58b9c32c4d4533
+SIZE (Logitech-slimserver-vendor-6265ea5_GH0.tar.gz) = 148782707
+SHA256 (ralph-irving-faad2-4c01c9a_GH0.tar.gz) = 6ef5a927c510ec3a2bac2dcf81fca82fa2b27618dc208c22628f0b352144164c
+SIZE (ralph-irving-faad2-4c01c9a_GH0.tar.gz) = 1170368
