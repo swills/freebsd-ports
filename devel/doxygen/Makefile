@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	doxygen
-PORTVERSION=	1.8.15
-PORTREVISION=	2
+PORTVERSION=	1.8.16
 PORTEPOCH=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://doxygen.nl/files/
@@ -48,7 +47,7 @@ LATEX_USE=	TEX=base,dvipsk,pdftex
 
 QT5_USES=	qt:5
 QT5_USE=	QT=core,widgets,gui,xml,qmake_build,buildtools_build
-QT5_CMAKE_ON=	-Dbuild_wizard:BOOLEAN=true
+QT5_CMAKE_BOOL=	build_wizard
 QT5_PLIST_FILES=	bin/doxywizard
 
 SEARCH_CMAKE_BOOL=	build_search
