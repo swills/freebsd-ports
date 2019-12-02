@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	scid
-PORTVERSION=	4.6.4
-PORTREVISION=	1
+PORTVERSION=	4.7.0
+DISTVERSIONPREFIX=	code-
 CATEGORIES=	games databases
-MASTER_SITES=	SF/${PORTNAME}/Scid/Scid%204.6/
+MASTER_SITES=	SF/${PORTNAME}/Scid/Scid%204.7/
 
 MAINTAINER=	bsd@volki.at
 COMMENT=	Free chess database application
@@ -13,7 +13,6 @@ COMMENT=	Free chess database application
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-HAS_CONFIGURE=	yes
 USES=		gmake python shebangfix tk zip
 SHEBANG_FILES=	tcl/lang/checklangs.tcl \
 		tcl/lang/propagatelang.tcl \
@@ -24,6 +23,7 @@ SHEBANG_FILES=	tcl/lang/checklangs.tcl \
 
 TCL_LIBRARY=	-L${LOCALBASE}/lib -ltcl${TCL_SHLIB_VER}
 
+HAS_CONFIGURE=	yes
 CONFIGURE_CMD=	${TCLSH} ${CONFIGURE_SCRIPT}
 CONFIGURE_ARGS=	\
     BINDIR="${PREFIX}/bin" \
@@ -36,10 +36,11 @@ CONFIGURE_ARGS=	\
     OPTIMIZE="${CXXFLAGS} -fno-rtti -fno-exceptions" \
     WARNINGS=""
 
+WRKSRC=	${WRKDIR}/${PORTNAME}
+
 post-configure:
 	@${REINPLACE_CMD} -e 's|g++|${CXX}|g; s|gcc|${CC}|g' \
 		${WRKSRC}/Makefile \
-		${WRKSRC}/engines/phalanx-scid/makefile \
-		${WRKSRC}/engines/togaII1.2.1a/src/Makefile
+		${WRKSRC}/engines/phalanx-scid/makefile
 
 .include <bsd.port.mk>
