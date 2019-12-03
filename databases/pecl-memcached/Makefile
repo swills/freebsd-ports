@@ -16,7 +16,6 @@ LIB_DEPENDS=	libmemcached.so:databases/libmemcached
 
 USES=		php:pecl pkgconfig
 USE_PHP=	json:build session:build
-IGNORE_WITH_PHP=	74
 
 CONFIGURE_ARGS=	--with-libmemcached-dir=${LOCALBASE}
 
