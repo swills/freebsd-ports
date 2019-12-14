@@ -2,11 +2,11 @@
 # $FreeBSD$
 
 PORTNAME=	pam_google_authenticator
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 PORTEPOCH=	1
 CATEGORIES=	security
 
-MAINTAINER=	jnlin@freebsd.cs.nctu.edu.tw
+MAINTAINER=	driesm.michiels@gmail.com
 COMMENT=	PAM module for two-step authentication from Google
 
 LICENSE=	APACHE20
