@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	otrs
-PORTVERSION=	6.0.19
-PORTREVISION=	1
+PORTVERSION=	6.0.24
 CATEGORIES=	www
 
 MAINTAINER=	m.tsatsenko@gmail.com
