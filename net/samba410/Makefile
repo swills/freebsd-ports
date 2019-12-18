@@ -3,7 +3,7 @@
 
 PORTNAME=			${SAMBA4_BASENAME}410
 PORTVERSION=			${SAMBA4_VERSION}
-PORTREVISION=			0
+PORTREVISION=			1
 CATEGORIES?=			net
 MASTER_SITES=			SAMBA/samba/stable SAMBA/samba/rc
 DISTNAME=			${SAMBA4_DISTNAME}
@@ -19,8 +19,9 @@ CONFLICTS_INSTALL?=		samba4-4.0.* samba4[1-9]-4.* p5-Parse-Pidl-4.*
 
 USES=				cpe
 
-EXTRA_PATCHES+=			${PATCHDIR}/0001-Zfs-provision-1.patch:-p1
-EXTRA_PATCHES+=			${PATCHDIR}/0001-provision-use-ASCII-quotes.patch:-p1
+EXTRA_PATCHES+=			${PATCHDIR}/0001-Zfs-provision-1.patch:-p1\
+				${PATCHDIR}/0001-provision-use-ASCII-quotes.patch:-p1\
+				${PATCHDIR}/0001-initialize-messaging-before-getting-the-ctdb-connection.patch:-p1
 
 SAMBA4_BASENAME=		samba
 SAMBA4_PORTNAME=		${SAMBA4_BASENAME}4
