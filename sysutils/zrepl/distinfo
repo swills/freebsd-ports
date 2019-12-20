@@ -1,4 +1,4 @@
-TIMESTAMP = 1555701482
+TIMESTAMP = 1575297575
 SHA256 (zrepl-zrepl-v0.1.1_GH0.tar.gz) = 0c16554e4527d14a390d78cf95bce759da425019a83ec63acfed5b4c50d68c9c
 SIZE (zrepl-zrepl-v0.1.1_GH0.tar.gz) = 212913
 SHA256 (beorn7-perks-3a771d9_GH0.tar.gz) = b7a0faebca98ebd5e7546403b4cdea9dc77f865f0623d04efbad33e984297cc9
@@ -19,8 +19,8 @@ SHA256 (golang-protobuf-v1.3.1_GH0.tar.gz) = 3f3a6123054a9847093c119895f1660612f
 SIZE (golang-protobuf-v1.3.1_GH0.tar.gz) = 310884
 SHA256 (golang-sync-e225da7_GH0.tar.gz) = 0ca7d229725c37038f50bdd2fc5065eb3fbc7de47a96e8ecfbf2c3da04e671e4
 SIZE (golang-sync-e225da7_GH0.tar.gz) = 16285
-SHA256 (golang-sys-4ed8d59_GH0.tar.gz) = 82a85133e63e18c493fbd2cf4237163364229df2582e85174d683c92a7b72ef3
-SIZE (golang-sys-4ed8d59_GH0.tar.gz) = 1117271
+SHA256 (golang-sys-33540a1f6037_GH0.tar.gz) = 09ebdf007413c2eaddce123137443d08d1848be410c58896e772f0481ec385d5
+SIZE (golang-sys-33540a1f6037_GH0.tar.gz) = 1497659
 SHA256 (golang-text-v0.3.0_GH0.tar.gz) = 8f4c9a048345befc7beccd09267737ee1f55c7b35e5ff80f344ec9e0aa90febb
 SIZE (golang-text-v0.3.0_GH0.tar.gz) = 6102619
 SHA256 (google-go-genproto-bd91e49_GH0.tar.gz) = a9106ed5286baa7a9062ebc1f3e5a9a0903e243d765737f762d0c0c12268c13e

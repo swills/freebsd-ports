@@ -4,7 +4,7 @@
 PORTNAME=	zrepl
 PORTVERSION=	0.1.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	woodsb02@FreeBSD.org
@@ -29,7 +29,7 @@ GH_TUPLE=	beorn7:perks:3a771d9:perks/vendor/github.com/beorn7/perks \
 		golang:net:351d144:net/vendor/golang.org/x/net \
 		golang:protobuf:v1.3.1:protobuf/vendor/github.com/golang/protobuf \
 		golang:sync:e225da7:sync/vendor/golang.org/x/sync \
-		golang:sys:4ed8d59:sys/vendor/golang.org/x/sys \
+		golang:sys:33540a1f6037:sys/vendor/golang.org/x/sys \
 		golang:text:v0.3.0:go_text/vendor/golang.org/x/text \
 		google:go-genproto:bd91e49:genproto/vendor/google.golang.org/genproto \
 		google:uuid:v1.1.1:uuid/vendor/github.com/google/uuid \
