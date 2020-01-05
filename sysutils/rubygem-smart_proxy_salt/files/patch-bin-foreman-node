@@ -4,8 +4,8 @@
  
  require 'yaml'
  
--$settings_file = '/etc/salt/foreman.yaml'
-+$settings_file = '%%LOCALBASE%%/etc/salt/foreman.yaml'
- SETTINGS = YAML.load_file($settings_file)
+-settings_file = '/etc/salt/foreman.yaml'
++settings_file = '%%LOCALBASE%%/etc/salt/foreman.yaml'
+ SETTINGS = YAML.load_file(settings_file)
  
  require 'net/http'
