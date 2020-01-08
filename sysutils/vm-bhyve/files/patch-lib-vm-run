@@ -1,0 +1,13 @@
+# https://github.com/churchers/vm-bhyve/pull/337
+# Fixes: https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=240178
+--- lib/vm-run.orig
++++ lib/vm-run
+@@ -272,7 +272,7 @@ vm::run(){
+               ${_devices} \
+               ${_iso_dev} \
+               ${_comstring} \
+-              ${_name} >>"${_logpath}" 2>&1
++              ${_name} 2> "${_logpath}"
+ 
+         # get bhyve exit code
+         _exit=$?
