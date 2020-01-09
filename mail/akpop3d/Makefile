@@ -4,7 +4,7 @@
 PORTNAME=	akpop3d
 PORTVERSION=	0.7.7
 CATEGORIES=	mail
-MASTER_SITES=	http://www.synflood.at/akpop3d/
+MASTER_SITES=	https://synflood.at/akpop3d/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	POP3 daemon aimed to be small and secure
@@ -25,6 +25,11 @@ SSL_USES=	ssl
 SSL_CONFIGURE_WITH=	openssl=${OPENSSLBASE}
 SSL_CPPFLAGS=	-I${OPENSSLBASE}/include
 SSL_LDFLAGS=	-L${OPENSSLBASE}/lib
+
+USE_RC_SUBR=	akpop3d
+
+pre-patch:
+	@${REINPLACE_CMD} -e "s,STRLCPY_h,STRLCPY_H," ${WRKSRC}/strlcpy.h
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/akpop3d ${STAGEDIR}${PREFIX}/bin
