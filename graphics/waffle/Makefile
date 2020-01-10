@@ -2,33 +2,60 @@
 # $FreeBSD$
 
 PORTNAME=	waffle
-PORTVERSION=	1.5.2
-PORTREVISION=	9
+DISTVERSION=	1.6.0-7
+DISTVERSIONPREFIX=	v
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.waffle-gl.org/files/release/waffle-${PORTVERSION}/
+
+# Wayland xdg-shell support (to run on sway/wayfire/etc. that have removed wl-shell)
+PATCH_SITES=	https://gitlab.freedesktop.org/oreaus/${PORTNAME}/commit/
+PATCHFILES=	3cdce7b38cbd91cd7288e21940b279bf7ddc5757.patch:-p1
 
 MAINTAINER=	x11@FreeBSD.org
 COMMENT=	Library that allows to defer selection of an OpenGL API until runtime
 
 LICENSE=	BSD2CLAUSE
 
-USES=		cmake compiler:c11 gl localbase pathfix pkgconfig tar:xz xorg
+USE_GITLAB=	yes
+GL_SITE=	https://gitlab.freedesktop.org
+GL_ACCOUNT=	mesa
+GL_COMMIT=	b71cfa674db5828a2be04a42ce9996d6677629ee
+
+USES=		compiler:c11 gl localbase meson pkgconfig tar:xz
 USE_GL=		egl gl
 USE_LDCONFIG=	yes
-USE_XORG=	x11 xcb
 
 DOCSDIR=	${PREFIX}/share/doc/waffle1
 
-CMAKE_ARGS+=	-Dwaffle_has_glx=ON \
-		-Dwaffle_has_x11_egl=ON
-#CMAKE_ARGS+=	-Dwaffle_has_gbm=ON # FIXME: Required udev
+OPTIONS_DEFINE=		DOCS GBM MANPAGES SURFACELESS WAYLAND X11
+OPTIONS_DEFAULT=	GBM MANPAGES SURFACELESS WAYLAND X11
 
-PLIST_SUB+=	PORTVERSION=${PORTVERSION}
+MANPAGES_MESON_TRUE=	build-manpages
 
-OPTIONS_DEFINE=	DOCS WAYLAND
-OPTIONS_DEFAULT=WAYLAND
+GBM_DESC=		GBM/DRM/KMS direct-on-hardware support
+GBM_MESON_ENABLED=	gbm
+GBM_USE=		GL=gbm
+GBM_LIB_DEPENDS=	libudev.so:devel/libudev-devd
+
+SURFACELESS_DESC=		Surfaceless EGL support
+SURFACELESS_MESON_ENABLED=	surfaceless_egl
 
 WAYLAND_LIB_DEPENDS=	libwayland-egl.so:graphics/wayland
-WAYLAND_CMAKE_BOOL=	waffle_has_wayland
+WAYLAND_BUILD_DEPENDS=	wayland-scanner:graphics/wayland
+WAYLAND_MESON_ENABLED=	wayland
+
+X11_MESON_ENABLED=	glx x11_egl
+X11_USES=		xorg
+X11_USE=		XORG=x11,xcb
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MMANPAGES}
+BUILD_DEPENDS=	${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl:textproc/docbook-xsl
+USES+=		gnome
+USE_GNOME+=	libxslt:build
+PLIST_SUB+=	MANPAGES=""
+.else
+PLIST_SUB+=	MANPAGES="@comment "
+.endif
 
 .include <bsd.port.mk>
