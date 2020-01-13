@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	newlib
-PORTVERSION=	2.4.0
-PORTREVISION=	1
+PORTVERSION=	3.1.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sources.redhat.com/pub/${PORTNAME}/ \
 		SOURCEWARE/${PORTNAME}
@@ -16,14 +15,13 @@ BUILD_DEPENDS+=	${NEWLIB_TARGET}-ar:devel/binutils@${NEWLIB_TARGET:C/-/_/g} \
 		${NEWLIB_TARGET}-ld:devel/binutils@${NEWLIB_TARGET:C/-/_/g} \
 		${LOCALBASE}/bin/${NEWLIB_TARGET}-gcc:devel/${NEWLIB_TARGET}-gcc
 
-NEWLIB_TARGET?=	arm-none-eabi
-
 USES=		gmake makeinfo
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX} --target="${NEWLIB_TARGET}" --disable-newlib-supplied-syscalls
+CONFIGURE_ARGS+=	--prefix=${PREFIX} --target="${NEWLIB_TARGET}" \
+		--disable-newlib-supplied-syscalls
+NEWLIB_TARGET?=	arm-none-eabi
 
-# Disable installation of .info files and fix includedir reference.
-post-patch:
-	@${REINPLACE_CMD} -E 's/^(install.*:.*)install-info(.*)/\1\2/' ${WRKSRC}/etc/Makefile.in
+post-install:
+	${RM} -r ${STAGEDIR}${PREFIX}/${NEWLIB_TARGET}/include
 
 .include <bsd.port.mk>
