@@ -3,7 +3,7 @@
 
 PORTNAME=	argus-clients
 PORTVERSION=	3.0.8.2
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net-mgmt security
 MASTER_SITES=	http://qosient.com/argus/src/ \
 		ftp://qosient.com/pub/argus/src/
@@ -13,6 +13,7 @@ COMMENT=	Client programs for the argus IP network transaction auditing tool
 
 LICENSE=	GPLv3
 
+USES=		bison ncurses perl5 readline dos2unix
 CONFLICTS=	argus-clients-2* argus-clients-sasl-2*
 
 OPTIONS_DEFINE=	MYSQL SASL DOCS EXAMPLES
@@ -22,15 +23,26 @@ SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 SASL_CONFIGURE_ON=	--with-sasl=${LOCALBASE}
 MYSQL_USES=	mysql
 
-USES=		bison ncurses perl5 readline
 USE_CSTD=	gnu89
 GNU_CONFIGURE=	yes
+DOS2UNIX_FILES=	\
+				examples/rapolicy/rapolicy.c \
+				include/rapolicy.h
 
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MSASL}
 PKGNAMESUFFIX+=	-sasl
 .endif
+
+pre-configure:
+	${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' \
+		${WRKSRC}/clients/radium.c \
+		${WRKSRC}/common/argus_auth.c \
+		${WRKSRC}/common/argus_auth.c \
+		${WRKSRC}/common/argus_util.c \
+		${WRKSRC}/examples/ramysql/rasql.c \
+		${WRKSRC}/examples/rapolicy/rapolicy.c
 
 do-install:
 .for i in radark ragraph rahosts raips raplot raports
