@@ -1,10 +1,11 @@
 # $FreeBSD$
 
 PORTNAME=	dMagnetic
-PORTVERSION=	0.18
+PORTVERSION=	0.20
 CATEGORIES=	games
 MASTER_SITES=	https://www.dettus.net/dMagnetic/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
+EXTRACT_SUFX =	.tar.bz2
 
 MAINTAINER=	dettus@dettus.net
 COMMENT=	Magnetic Scrolls Interpreter
