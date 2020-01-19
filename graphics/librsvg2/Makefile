@@ -3,6 +3,7 @@
 
 PORTNAME=	librsvg
 PORTVERSION=	2.40.20
+PORTREVISION=	1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME
 PKGNAMESUFFIX=	2
@@ -16,7 +17,6 @@ CONFLICTS_INSTALL=	librsvg2-rust
 # FreeBSD archs. So limit pure C version 2.40.x.
 PORTSCOUT=	limit:^2\.40\.
 
-BUILD_DEPENDS=	valac:lang/vala
 LIB_DEPENDS=	libfreetype.so:print/freetype2 \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libpng.so:graphics/png \
@@ -28,8 +28,21 @@ USE_GNOME=	cairo gnomeprefix libgsf gdkpixbuf2 introspection:build \
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
-CONFIGURE_ARGS=	--enable-vala \
-		--disable-Bsymbolic
+CONFIGURE_ARGS=	--disable-Bsymbolic
+
+DOCSDIR=	${PREFIX}/share/doc/rsvg-2.0
+
+OPTIONS_DEFINE=		DOCS VAPI
+OPTIONS_DEFAULT=	DOCS VAPI
+OPTIONS_SUB=		yes
+
+DOCS_CONFIGURE_ENABLE=	gtk-doc-html
+
+VAPI_BUILD_DEPENDS=	valac:lang/vala
+VAPI_CONFIGURE_ON=	--enable-vala=yes
+VAPI_CONFIGURE_OFF=	--enable-vala=no
+
+.include <bsd.port.options.mk>
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
