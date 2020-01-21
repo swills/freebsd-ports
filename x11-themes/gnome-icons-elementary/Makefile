@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	elementary
-PORTVERSION=	4.3.1
+PORTVERSION=	5.2.0
 CATEGORIES=	x11-themes gnome
 PKGNAMEPREFIX=	gnome-icons-
 
@@ -12,19 +12,16 @@ COMMENT=	Elementary icon set
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gnome
-USE_GITHUB=	yes
-GH_PROJECT=	icons
+BUILD_DEPENDS=	xcursorgen:x11/xcursorgen
 
-NO_BUILD=	yes
-NO_ARCH=	yes
+USES=		gnome meson python:3.5+,build
+USE_GNOME=	librsvg2
 INSTALLS_ICONS=	yes
 
-do-install:
-	cd ${WRKSRC} && \
-		${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/share/icons/elementary \
-		"! -name *\.VolumeIcon* ! -name pre-commit ! -name CMakeLists.txt"
-	${FIND} ${STAGEDIR}${PREFIX}/share/icons/elementary/ \
-		-type d -empty | ${XARGS} ${RMDIR}
+MESON_ARGS=	-Dpalettes=false \
+		-Dvolume_icons=false
+
+USE_GITHUB=	yes
+GH_PROJECT=	icons
 
 .include <bsd.port.mk>
