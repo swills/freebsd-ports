@@ -17,4 +17,10 @@ USES=		gmake xorg xorg-cat:lib
 USE_XORG=	x11 xau xext xmu xpm xorgproto xt
 CONFIGURE_ARGS=	--without-xmlto
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=	yes
+
+DOCS_CONFIGURE_ENABLE=	specs
+
+.include <bsd.port.options.mk>
 .include <bsd.port.mk>
