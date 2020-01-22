@@ -31,5 +31,5 @@ lib/libXmuu.so.1
 lib/libXmuu.so.1.0.0
 libdata/pkgconfig/xmu.pc
 libdata/pkgconfig/xmuu.pc
-%%DOCSDIR%%/Xmu.xml
-%%DOCSDIR%%/xlogo.svg
+%%PORTDOCS%%%%DOCSDIR%%/Xmu.xml
+%%PORTDOCS%%%%DOCSDIR%%/xlogo.svg
