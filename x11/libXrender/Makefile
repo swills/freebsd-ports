@@ -14,4 +14,10 @@ LICENSE=	MIT
 USES=		xorg xorg-cat:lib
 USE_XORG=	x11 xorgproto
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=	yes
+
+DOCS_CONFIGURE_ENABLE=	docs
+
+.include <bsd.port.options.mk>
 .include <bsd.port.mk>
