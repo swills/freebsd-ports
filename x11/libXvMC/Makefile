@@ -18,4 +18,10 @@ CPE_PRODUCT=	libxvmc
 
 INSTALL_TARGET=	install-strip
 
+OPTIONS_DEFINE=	DOCS
+OPTIONS_SUB=	yes
+
+DOCS_CONFIGURE_ENABLE= docs
+
+.include <bsd.port.options.mk>
 .include <bsd.port.mk>

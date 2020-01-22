@@ -10,4 +10,4 @@ lib/libXvMCW.so.1
 lib/libXvMCW.so.1.0.0
 libdata/pkgconfig/xvmc.pc
 libdata/pkgconfig/xvmc-wrapper.pc
-%%DOCSDIR%%/XvMC_API.txt
+%%PORTDOCS%%%%DOCSDIR%%/XvMC_API.txt
