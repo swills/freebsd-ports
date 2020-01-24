@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pinta
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/PintaProject/Pinta/releases/download/${PORTVERSION}/
 

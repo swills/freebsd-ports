@@ -1,0 +1,28 @@
+--- Pinta.Tools/Pinta.Tools.csproj.orig	2015-03-01 23:14:37.000000000 +0100
++++ Pinta.Tools/Pinta.Tools.csproj	2016-05-03 14:55:10.539317126 +0200
+@@ -1,6 +1,6 @@
+ ﻿<?xml version="1.0" encoding="utf-8"?>
+ <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+-  <PropertyGroup>
++  <PropertyGroup><TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+     <ProductVersion>9.0.30729</ProductVersion>
+@@ -10,7 +10,7 @@
+     <AppDesignerFolder>Properties</AppDesignerFolder>
+     <RootNamespace>Pinta.Tools</RootNamespace>
+     <AssemblyName>Pinta.Tools</AssemblyName>
+-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
++    
+     <FileAlignment>512</FileAlignment>
+     <FileUpgradeFlags>
+     </FileUpgradeFlags>
+@@ -54,7 +54,7 @@
+     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+   </PropertyGroup>
+   <ItemGroup>
+-    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL" />
++    <Reference Include="Mono.Posix" />
+     <Reference Include="System" />
+     <Reference Include="System.Core" />
+     <Reference Include="System.Xml" />
