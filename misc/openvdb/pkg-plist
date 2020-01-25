@@ -1,4 +1,4 @@
-bin/vdb_print
+%%TOOLS%%bin/vdb_print
 %%TOOLS%%bin/vdb_lod
 %%TOOLS%%bin/vdb_render
 %%TOOLS%%bin/vdb_view
