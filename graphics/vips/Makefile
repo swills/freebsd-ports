@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	vips
-PORTVERSION=	8.8.3
-PORTREVISION=	3
+PORTVERSION=	8.9.0
 CATEGORIES=	graphics
 MASTER_SITES=	https://github.com/libvips/libvips/releases/download/v${PORTVERSION}/
 
