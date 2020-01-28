@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gtk-youtube-viewer
-PORTVERSION=	3.5.9
+PORTVERSION=	3.7.2
 CATEGORIES=	multimedia perl5
 
 MAINTAINER=	neel@neelc.org
