@@ -1,0 +1,3 @@
+The include files cscout needs in its installation directory (e.g. ~/.cscout/) can be found in /usr/local/include/cscout/.
+For an example, go to /usr/local/share/examples/cscout/ and try "cscout awk.cs".
+
