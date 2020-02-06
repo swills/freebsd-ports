@@ -1,14 +1,14 @@
 # $FreeBSD$
 
 PORTNAME=	raylib
-DISTVERSION=	2.5.0
+DISTVERSION=	2.6.0
 CATEGORIES=	devel
 
 MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Library to learn videogames programming
 
 LICENSE=	ZLIB
-LICENSE_FILE=	${WRKSRC}/LICENSE.md
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	glfw>=3.3:graphics/glfw
 LIB_DEPENDS=	libglfw.so:graphics/glfw
