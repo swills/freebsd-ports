@@ -1,5 +1,5 @@
-TIMESTAMP = 1558825174
-SHA256 (majn-telegram-purple-v1.4.1_GH0.tar.gz) = 2f5238f119bda71be2413854cd1f0242377d029b94a34456427a1cb7b37c6d24
-SIZE (majn-telegram-purple-v1.4.1_GH0.tar.gz) = 213171
-SHA256 (majn-tgl-bec2e6d_GH0.tar.gz) = 490559e80a6299b2ffc3da190e5af1cbcf08824c68e26c18f349654f04727d95
-SIZE (majn-tgl-bec2e6d_GH0.tar.gz) = 270087
+TIMESTAMP = 1581182397
+SHA256 (majn-telegram-purple-v1.4.2_GH0.tar.gz) = cee8f226522cfc5391b2b13065d21665f3a83aaaa705bb12d9df2e4bd0525785
+SIZE (majn-telegram-purple-v1.4.2_GH0.tar.gz) = 216190
+SHA256 (majn-tgl-05f3409_GH0.tar.gz) = 230c32c6db093eb18fe7c1102cdc908dc5beaf02ab4201c36318a2e3c8b9676f
+SIZE (majn-tgl-05f3409_GH0.tar.gz) = 271629
