@@ -13,8 +13,10 @@ COMMENT=	German-English dictionary program for X windows/Unix
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	wish8.5:x11-toolkits/tk85 \
-		agrep:textproc/agrep
+RUN_DEPENDS=	wish8.6:x11-toolkits/tk86 \
+		agrep:textproc/agrep \
+		dict_lookup:textproc/dict \
+		hunspell:textproc/hunspell
 
 USES=		perl5
 
@@ -22,7 +24,7 @@ DICTFILE=	de-en.txt
 SWISSDICT=	de_ch-en.txt
 
 do-build:
-	${SED} -E -e '1,/^exec/ s!wish!wish8.5!' \
+	${SED} -E -e '1,/^exec/ s!wish!wish8.6!' \
 	  -e 's!/usr/share/dict/de-en.txt!${PREFIX}/share/ding/de-en.txt!' \
 	  ${WRKSRC}/ding > ${WRKSRC}/dingX
 	${SED} -E -e 's!/usr/share/bin/!${PREFIX}/bin/!' \
