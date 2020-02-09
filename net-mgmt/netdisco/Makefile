@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	netdisco
-DISTVERSION=	2.044004
+DISTVERSION=	2.044014
 CATEGORIES=	net-mgmt perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:OLIVER
@@ -25,6 +25,7 @@ RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 		p5-App-cpanminus>=1.6108:devel/p5-App-cpanminus \
 		p5-App-local-lib-helper>=0.07:devel/p5-App-local-lib-helper \
 		p5-Archive-Extract>=0:archivers/p5-Archive-Extract \
+		p5-Authen-TacacsPlus>=0:security/p5-Authen-TacacsPlus \
 		p5-CGI-Expand>=2.05:www/p5-CGI-Expand \
 		p5-Data-Printer>=0:devel/p5-Data-Printer \
 		p5-DBIx-Class-Helpers>=2.033004:databases/p5-DBIx-Class-Helpers \
@@ -70,6 +71,7 @@ RUN_DEPENDS=	p5-DBD-Pg>=0:databases/p5-DBD-Pg \
 		p5-SNMP-Info>=3.64:net-mgmt/p5-SNMP-Info \
 		p5-SQL-Translator>=0.11018:databases/p5-SQL-Translator \
 		p5-Template-Toolkit>=2.24:www/p5-Template-Toolkit \
+		p5-Template-AutoFilter>=0:textproc/p5-Template-AutoFilter \
 		p5-Template-Plugin-CSV>=0.04:textproc/p5-Template-Plugin-CSV \
 		p5-Template-Plugin-Number-Format>=1.02:www/p5-Template-Plugin-Number-Format \
 		p5-Term-UI>=0:devel/p5-Term-UI \
@@ -107,5 +109,6 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${ETCDIR}/environments
 	${INSTALL_DATA} ${STAGEDIR}${PREFIX}/${SITE_PERL_REL}/auto/share/dist/App-Netdisco/environments/deployment.yml \
 		${STAGEDIR}${ETCDIR}/environments/deployment.yml.sample
+	${CHOWN} -R netdisco ${STAGEDIR}${ETCDIR}/perl5
 
 .include <bsd.port.mk>
