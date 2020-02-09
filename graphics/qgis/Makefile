@@ -156,6 +156,18 @@ post-patch:
 # Build failure with txt2tags > 3 (dropped --css-sugar & --css-inside)
 # https://github.com/qgis/QGIS/issues/33516
 	@${REINPLACE_CMD} -e 's|--css-sugar --css-inside||' ${WRKSRC}/doc/INSTALL.t2t ${WRKSRC}/doc/news.t2t
+# Workaround, until QGIS project removes --encoding for txt2tags versions > 3.4
+	@${REINPLACE_CMD} -e 's|ARGS --encoding=utf-8|ARGS|g' \
+		${WRKSRC}/cmake/Txt2Tags.cmake
+	@${REINPLACE_CMD} -e 's|txt2tags -\\-encoding=utf-8|txt2tags|' \
+		${WRKSRC}/doc/INSTALL.html \
+		${WRKSRC}/doc/news.html
+	@${REINPLACE_CMD} -e 's|encoding: iso-8859-1|encoding: utf-8|g' \
+		${WRKSRC}/doc/INSTALL.t2t \
+		${WRKSRC}/doc/news.t2t
+	@${REINPLACE_CMD} -e 's|txt2tags --encoding=utf-8|txt2tags|g' \
+		${WRKSRC}/scripts/release.pl \
+		${WRKSRC}/scripts/update-news.pl
 
 pre-configure:
 	${MKDIR} ${CONFIGURE_WRKSRC}/bin && ${LN} -s ${PYTHON_CMD} ${CONFIGURE_WRKSRC}/bin/python3
