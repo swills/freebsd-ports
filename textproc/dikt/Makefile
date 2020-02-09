@@ -2,13 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	dikt
-PORTVERSION=	2s1
-PORTREVISION=	2
+PORTVERSION=	2s4
 PORTEPOCH=	1
 CATEGORIES=	textproc net kde
 MASTER_SITES=	https://bitbucket.org/dikt/code/downloads/
 
-MAINTAINER=	goran.tal@gmail.com
+MAINTAINER=	info@dikt.tv
 COMMENT=	Dictionary for KDE
 
 LICENSE=	BSD2CLAUSE
