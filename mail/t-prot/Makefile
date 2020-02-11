@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	t-prot
-PORTVERSION=	2.101
+PORTVERSION=	3.4
 PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.escape.de/~tolot/mutt/t-prot/downloads/ \
@@ -11,7 +11,7 @@ MASTER_SITES=	http://www.escape.de/~tolot/mutt/t-prot/downloads/ \
 MAINTAINER=	torres.g.alex@gmail.com
 COMMENT=	TOFU Protection - Display Filter for RFC822 messages
 
-BROKEN=		unfetchable
+LICENSE=	BSD4CLAUSE
 
 RUN_DEPENDS=	p5-Locale-gettext>=0:devel/p5-Locale-gettext
 
