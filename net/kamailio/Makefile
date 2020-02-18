@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	kamailio
-PORTVERSION=	5.3.1
+PORTVERSION=	5.3.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.kamailio.org/pub/kamailio/${PORTVERSION}/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}_src
@@ -125,7 +125,7 @@ CFG_ARGS+=	include_modules="${EXTRA_MODULES}"
 .endif
 
 post-patch:
-	${REINPLACE_CMD} '551s|$$(run_prefix)/$$(run_dir)|${KAMAILIO_RUNDIR}|' \
+	${REINPLACE_CMD} '554s|$$(run_prefix)/$$(run_dir)|${KAMAILIO_RUNDIR}|' \
 		${WRKSRC}/src/Makefile.defs
 
 post-patch-DOCS-off:
