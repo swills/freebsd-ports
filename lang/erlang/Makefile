@@ -99,7 +99,7 @@ SCTP_CONFIGURE_ENABLE=	sctp
 THREADS_CONFIGURE_ENABLE=	threads
 WX_CONFIGURE_WITH=	wx-config=${WX_CONFIG}
 WX_USES=		gl
-WX_VARS=		USE_WX=2.8+ WX_COMPS="wx contrib" USE_GL="gl glu"
+WX_VARS=		USE_WX=3.1+ WX_COMPS="wx" USE_GL="gl glu"
 
 .include <bsd.port.pre.mk>
 
