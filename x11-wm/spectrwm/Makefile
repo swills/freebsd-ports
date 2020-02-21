@@ -3,7 +3,7 @@
 
 PORTNAME=	spectrwm
 DISTVERSIONPREFIX=	SPECTRWM_
-DISTVERSION=	3_2_0
+DISTVERSION=	3_3_0
 CATEGORIES=	x11-wm
 
 MAINTAINER=	zeising@FreeBSD.org
@@ -41,6 +41,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/|${PREFIX}/etc/|g' ${WRKSRC}/spectrwm.*
 
 do-build:
+	ln -sf ${WRKSRC}/linux/pledge.h ${WRKSRC}/pledge.h
 	${CC} ${CFLAGS} -Wall -Wextra -Wshadow -Werror -I${LOCALBASE}/include \
 		-I${LOCALBASE}/include/freetype2 -I${WRKSRC}/freebsd \
 		-lutil -L${LOCALBASE}/lib -lX11 -lX11-xcb -lxcb -lxcb-icccm \
