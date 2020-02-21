@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	hikari
-DISTVERSION=	1.0.0-alpha3
+DISTVERSION=	1.0.0-alpha4
 CATEGORIES=	x11-wm
 MASTER_SITES=	https://acmelabs.space/~raichoo/
 
@@ -21,7 +21,7 @@ LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim \
 		libwlroots.so:x11-toolkits/wlroots \
 		libxkbcommon.so:x11/libxkbcommon
 
-USES=		compiler:c11 gnome pkgconfig xorg
+USES=		gnome pkgconfig xorg
 USE_GNOME=	cairo glib20 pango
 USE_XORG=	pixman
 ALL_TARGET=	${WITH_DEBUG:Ddebug}
@@ -30,7 +30,7 @@ PLIST_FILES=	"${MAYBE_SUID}bin/${PORTNAME}" \
 PORTEXAMPLES=	${PORTNAME}.conf
 
 OPTIONS_DEFINE=		EXAMPLES SUID X11
-OPTIONS_DEFAULT=	SUID
+OPTIONS_DEFAULT=	SUID X11
 
 SUID_DESC=	setuid bit on binaries (required for DRM and PAM)
 
