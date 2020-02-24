@@ -1,38 +1,38 @@
 # $FreeBSD$
 
 PORTNAME=	jna
-PORTVERSION=	4.5.2
+PORTVERSION=	5.5.0
 CATEGORIES=	devel java
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Java access to native shared libraries
 
-LICENSE=	LGPL21+ APACHE20
+LICENSE=	APACHE20 LGPL21+
 LICENSE_COMB=	dual
+LICENSE_FILE_APACHE20=	${WRKSRC}/AL2.0
+LICENSE_FILE_LGPL21+ =	${WRKSRC}/LGPL2.1
 LICENSE_FILE=	${WRKSRC}/LICENSE
-LICENSE_FILE_LGPL21+ =	${WRKSRC}/LICENSE.LGPL
-LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.AL
 
-BROKEN_armv6=		fails to compile: build.xml: compilation failed
-BROKEN_armv7=		fails to compile: build.xml: compilation failed
+BROKEN_armv6=	fails to compile: build.xml: compilation failed
+BROKEN_armv7=	fails to compile: build.xml: compilation failed
 
 USES=		autoreconf:build gmake libtool xorg
 USE_ANT=	yes
-USE_JAVA=	yes
-JAVA_VERSION=	8
-USE_XORG=	x11 xt
-MAKE_ARGS=	-DCC="${CC}" -DLD="${LD}"
-MAKE_ENV=	ANT_OPTS=-Drelease -DARCH=${ANT_ARCH}
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	java-native-access
-
-PORTDOCS=	javadoc platform-${PORTVERSION}-javadoc.jar
-PLIST_FILES=	%%JAVAJARDIR%%/jna-platform.jar \
-		%%JAVAJARDIR%%/jna.jar
-
+USE_JAVA=	yes
+JAVA_VERSION=	8+
+USE_XORG=	x11 xt
+MAKE_ARGS=	-DCC="${CC}" \
+		-DLD="${LD}"
+MAKE_ENV=	-DARCH=${ANT_ARCH} \
+		ANT_OPTS=-Drelease
 ALL_TARGET=	native jar
 TEST_TARGET=	test
+
+PLIST_FILES=	%%JAVAJARDIR%%/jna-platform.jar \
+		%%JAVAJARDIR%%/jna.jar
+PORTDOCS=	javadoc platform-${PORTVERSION}-javadoc.jar
 
 OPTIONS_DEFINE=	DOCS
 
