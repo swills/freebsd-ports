@@ -131,8 +131,6 @@ include/dnsdb/dnsrdata.h
 include/dnsdb/dnssec-keystore.h
 include/dnsdb/dnssec.h
 include/dnsdb/dnssec_config.h
-include/dnsdb/dynupdate.h
-include/dnsdb/dynupdate-diff.h
 include/dnsdb/hash.h
 include/dnsdb/htable.h
 include/dnsdb/htbt.h
