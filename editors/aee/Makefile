@@ -5,12 +5,10 @@ PORTNAME=	aee
 PORTVERSION=	2.2.21
 PORTREVISION=	2
 CATEGORIES=	editors
-MASTER_SITES=	http://www.users.uswest.net/~hmahon/sources/
+MASTER_SITES=	https://BSDforge.com/projects/source/editors/aee/
 
 MAINTAINER=	portmaster@BSDforge.com
 COMMENT=	Easy editor with both curses and X11 interfaces
-
-BROKEN=		unfetchable
 
 LICENSE=	ART10
 
