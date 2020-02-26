@@ -5,7 +5,7 @@ PORTVERSION=	1.0.1
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.barfooze.de/pub/sabotage/tarballs/
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multithreaded, small, efficient SOCKS5 server
 
 LICENSE=	MIT
