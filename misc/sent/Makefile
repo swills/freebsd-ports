@@ -5,7 +5,7 @@ PORTVERSION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://dl.suckless.org/tools/
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple plaintext presentation tool
 
 LICENSE=	ISCL
