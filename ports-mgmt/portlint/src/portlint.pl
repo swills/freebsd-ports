@@ -3855,10 +3855,8 @@ sub urlcheck {
 	}
 }
 
-# GNOME wants INSTALL_ICONS, but Qt-based applications, including KDE, don't.
-# Be pessimistic: everything needs it unless we know it doesn't.
 sub needs_installs_icons {
-	return $makevar{USE_QT5} eq '' && $makevar{USE_QT} eq ''
+	return $makevar{USES} =~ /gnome/
 }
 
 sub TRUE {1;}
