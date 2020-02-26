@@ -5,7 +5,7 @@ PORTVERSION=	0.11
 DISTVERSIONPREFIX=	v
 CATEGORIES=	lang
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Tool to compile and run C programs like a shell script
 
 LICENSE=	MIT
