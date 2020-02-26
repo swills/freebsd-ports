@@ -5,7 +5,7 @@ PORTVERSION=	0.2.1
 CATEGORIES=	converters
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Simple up-to-date bencode decoder-encoder library on pure Python
 
 LICENSE=	GPLv1
