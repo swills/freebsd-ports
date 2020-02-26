@@ -6,7 +6,7 @@ CATEGORIES=	converters devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Bencoding and bdecoding implementation
 
 LICENSE=	BSD3CLAUSE
