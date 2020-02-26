@@ -12,8 +12,7 @@ COMMENT=	Simple PostreSQL GUI front end
 
 LICENSE=	GPLv2
 
-DEPRECATED=	Old, uses EOLed python27
-EXPIRATION_DATE=	2020-03-01
+# remove DEPRECATED -- With hat: maintainer, portmgr
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/pyPgSQL/libpq/__init__.py:databases/py-pyPgSQL@${PY_FLAVOR}
 
