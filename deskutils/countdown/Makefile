@@ -6,7 +6,7 @@ CATEGORIES=	deskutils
 MASTER_SITES=	http://acme.com/software/countdown/
 DISTNAME=	${PORTNAME}_06jun2015
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Counts down a specified time interval, beeps, then exits
 
 LICENSE=	BSD2CLAUSE
