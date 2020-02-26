@@ -6,7 +6,7 @@ CATEGORIES=	converters
 MASTER_SITES=	http://acme.com/software/xml2c/
 DISTNAME=	${PORTNAME}_19Oct2015
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Reads in an XML file and produces equivalent C source code
 
 LICENSE=	BSD2CLAUSE
