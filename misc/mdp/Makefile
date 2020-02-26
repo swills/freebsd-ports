@@ -4,7 +4,7 @@ PORTNAME=	mdp
 PORTVERSION=	1.0.15
 CATEGORIES=	misc
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Command-line based markdown presentation tool
 
 LICENSE=	GPLv3+
