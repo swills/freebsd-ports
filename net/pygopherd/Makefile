@@ -6,7 +6,7 @@ PORTVERSION=	2.0.18.4
 CATEGORIES=	net python
 DISTVERSIONPREFIX=	debian/
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Multiprotocol Information Server
 
 LICENSE=	GPLv2
