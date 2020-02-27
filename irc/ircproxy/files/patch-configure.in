@@ -1,0 +1,27 @@
+--- configure.in.orig	2009-03-21 17:29:58.000000000 -0700
++++ configure.in	2020-02-26 22:39:03.499134000 -0800
+@@ -230,12 +230,12 @@
+ if test "x$ssl_support" = "xyes" ; then
+ 
+   if test "x$with_gnutls" = "xno" -a "x$with_openssl" = "xno" ; then
+-    AC_CHECK_LIB(ssl, SSL_library_init, [with_openssl=yes], [with_openssl=no], [])
+-    AC_CHECK_LIB(gnutls-openssl, SSL_library_init, [with_gnutls=yes], [with_gnutls=no], [])
++    AC_CHECK_LIB(ssl, OPENSSL_init_ssl, [with_openssl=yes], [with_openssl=no], [])
++    AC_CHECK_LIB(gnutls-openssl, OPENSSL_init_ssl, [with_gnutls=yes], [with_gnutls=no], [])
+   fi
+ 
+   if test "x$with_openssl" != "xno" ; then
+-    AC_SEARCH_LIBS(SSL_library_init, [ssl], [have_openssl=yes], [have_openssl=no], [])
++    AC_SEARCH_LIBS(OPENSSL_init_ssl, [ssl], [have_openssl=yes], [have_openssl=no], [])
+     if test "x$have_openssl" = "xyes" ; then
+       AC_DEFINE([HAVE_OPENSSL], [], [OpenSSL Library])
+       have_ssl=yes
+@@ -244,7 +244,7 @@
+       exit 1
+     fi
+   else
+-    AC_SEARCH_LIBS(SSL_library_init, [gnutls-openssl], [have_gnutls=yes], [have_gnutls=no], [])
++    AC_SEARCH_LIBS(OPENSSL_init_ssl, [gnutls-openssl], [have_gnutls=yes], [have_gnutls=no], [])
+     if test "x$have_gnutls" = "xyes" ; then
+       AC_DEFINE([HAVE_GNUTLS], [], [GNUTLS Library])
+       have_ssl=yes
