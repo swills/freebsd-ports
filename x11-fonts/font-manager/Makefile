@@ -2,19 +2,18 @@
 # $FreeBSD$
 
 PORTNAME=	font-manager
-PORTVERSION=	0.5.7
-PORTREVISION=	7
+PORTVERSION=	0.6.0
 CATEGORIES=	x11-fonts gnome
+MASTER_SITES= https://BSDforge.com/projects/source/x11-fonts/font-manager/
 
 MAINTAINER=	portmaster@bsdforge.com
 COMMENT=	Font management application for the GNOME desktop
-PORTSCOUT=	limit:^0\.5\.7
+PORTSCOUT=	limit:^0\.6\.0
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-DEPRECATED=	Old, uses EOLed python27
-EXPIRATION_DATE=	2020-03-01
+BUILD_DEPENDS=	xml2po:textproc/gnome-doc-utils
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
@@ -22,12 +21,9 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/libxml2.py:textproc/py-libxml2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	FontManager
-
 USE_GNOME=	pygtk2
 GNU_CONFIGURE=	yes
-USES=		gmake gnome pkgconfig python:2.7 tar:bzip2
+USES=		gmake gnome pkgconfig python:3.5+ tar:txz
 
 PORTDATA=	*
 
