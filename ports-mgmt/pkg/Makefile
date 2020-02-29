@@ -81,6 +81,11 @@ PKG_DEPENDS=
 PKG_BIN=	${WRKSRC}/src/pkg-static
 .endif
 
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/libpkg.so.4
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/pkg-static
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/sbin/pkg
+
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/NEWS ${STAGEDIR}${DOCSDIR}/NEWS
