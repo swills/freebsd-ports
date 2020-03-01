@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 USERS=		chronyd
 GROUPS=		chronyd
 
-USES=		cpe gmake libedit
+USES=		cpe gmake libedit pkgconfig
 CPE_VENDOR=	tuxfamily
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
@@ -46,7 +46,6 @@ NETTLE_LIB_DEPENDS=	libnettle.so:security/nettle
 NSS_BROKEN=		Crashes on startup with NSS. See https://bugs.freebsd.org/223840
 NSS_CONFIGURE_OFF=	--without-nss
 NSS_LIB_DEPENDS=	libfreebl3.so:security/nss
-NSS_USES=		pkgconfig
 
 post-patch:
 	@cd ${WRKSRC}/examples && \
