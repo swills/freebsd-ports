@@ -1,10 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	prosody-modules
-PORTVERSION=	20191017
+PORTVERSION=	20200302
 CATEGORIES=	net-im
 MASTER_SITES=	https://hg.prosody.im/${PORTNAME}/archive/
-DISTNAME=	a6db99c1420a
+DISTNAME=	7e7ac4af6e0c
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
