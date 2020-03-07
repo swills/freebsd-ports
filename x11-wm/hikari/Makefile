@@ -1,9 +1,9 @@
 # $FreeBSD$
 
 PORTNAME=	hikari
-DISTVERSION=	1.0.0-beta2
+DISTVERSION=	1.0.0-beta4
 CATEGORIES=	x11-wm
-MASTER_SITES=	https://acmelabs.space/~raichoo/
+MASTER_SITES=	https://acmelabs.space/~raichoo/hikari/releases/
 
 MAINTAINER=	ports@xanderio.de
 COMMENT=	Stacking Wayland compositor with tiling capabilities
@@ -24,9 +24,11 @@ LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim \
 USES=		compiler:c11 gnome pkgconfig xorg
 USE_GNOME=	cairo glib20 pango
 USE_XORG=	pixman
-ALL_TARGET=	${WITH_DEBUG:Ddebug}
+MAKE_ARGS=	${WITH_DEBUG:DEBUG=YES}
 PLIST_FILES=	"${MAYBE_SUID}bin/${PORTNAME}" \
-		"${MAYBE_SUID}bin/${PORTNAME}-unlocker"
+		"${MAYBE_SUID}bin/${PORTNAME}-unlocker" \
+		etc/pam.d/hikari-unlocker \
+		man/man1/hikari.1.gz
 PORTEXAMPLES=	${PORTNAME}.conf
 
 OPTIONS_DEFINE=		EXAMPLES SUID X11
@@ -40,7 +42,9 @@ X11_MAKE_ARGS=	WITH_XWAYLAND=yes
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hikari ${STAGEDIR}${PREFIX}/bin/
 	${INSTALL_PROGRAM} ${WRKSRC}/hikari-unlocker ${STAGEDIR}${PREFIX}/bin/
+	${INSTALL_DATA} ${WRKSRC}/pam.d/hikari-unlocker.freebsd ${STAGEDIR}${PREFIX}/etc/pam.d/hikari-unlocker
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	${INSTALL_MAN} ${WRKSRC}/doc/example_hikari.conf ${STAGEDIR}${EXAMPLESDIR}/hikari.conf
+	${INSTALL_MAN} ${WRKSRC}/share/examples/hikari.conf ${STAGEDIR}${EXAMPLESDIR}/hikari.conf
+	${INSTALL_MAN} ${WRKSRC}/share/man/man1/hikari.1 ${STAGEDIR}${MAN1PREFIX}/man/man1/
 
 .include <bsd.port.mk>
