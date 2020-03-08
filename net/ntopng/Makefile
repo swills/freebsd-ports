@@ -50,7 +50,8 @@ USE_RC_SUBR=	ntopng
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%LOCALBASE%%|${LOCALBASE}|' \
-		${WRKSRC}/configure.seed
+		${WRKSRC}/configure.seed \
+		${WRKSRC}/httpdocs/misc/ntopng-add-user.sh
 	cd ${WRKSRC} && ${SH} autogen.sh
 
 post-install:
