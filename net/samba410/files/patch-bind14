@@ -4,22 +4,22 @@
                    deps='samba-hostconfig samdb-common gensec popt dnsserver_common',
                    enabled=bld.AD_DC_BUILD_IS_ENABLED())
  
-+bld.SAMBA_LIBRARY('dlz_bind9_13',
-+                  source='dlz_bind9.c',
-+                  cflags='-DBIND_VERSION_9_13',
-+                  private_library=True,
-+                  link_name='modules/bind9/dlz_bind9_13.so',
-+                  realname='dlz_bind9_13.so',
-+                  install_path='${MODULESDIR}/bind9',
-+                  deps='samba-hostconfig samdb-common gensec popt dnsserver_common',
-+                  enabled=bld.AD_DC_BUILD_IS_ENABLED())
-+
 +bld.SAMBA_LIBRARY('dlz_bind9_14',
 +                  source='dlz_bind9.c',
 +                  cflags='-DBIND_VERSION_9_14',
 +                  private_library=True,
 +                  link_name='modules/bind9/dlz_bind9_14.so',
 +                  realname='dlz_bind9_14.so',
++                  install_path='${MODULESDIR}/bind9',
++                  deps='samba-hostconfig samdb-common gensec popt dnsserver_common',
++                  enabled=bld.AD_DC_BUILD_IS_ENABLED())
++
++bld.SAMBA_LIBRARY('dlz_bind9_16',
++                  source='dlz_bind9.c',
++                  cflags='-DBIND_VERSION_9_16',
++                  private_library=True,
++                  link_name='modules/bind9/dlz_bind9_16.so',
++                  realname='dlz_bind9_16.so',
 +                  install_path='${MODULESDIR}/bind9',
 +                  deps='samba-hostconfig samdb-common gensec popt dnsserver_common',
 +                  enabled=bld.AD_DC_BUILD_IS_ENABLED())
@@ -37,7 +37,7 @@
 -# define DLZ_DLOPEN_VERSION 3
 -# define DNS_CLIENTINFO_VERSION 2
 -#elif defined (BIND_VERSION_9_12)
-+#elif defined (BIND_VERSION_9_11) || defined (BIND_VERSION_9_12) || defined (BIND_VERSION_9_13) || defined (BIND_VERSION_9_14)
++#elif defined (BIND_VERSION_9_11) || defined (BIND_VERSION_9_12) || defined (BIND_VERSION_9_14) || defined (BIND_VERSION_9_16)
  # define DLZ_DLOPEN_VERSION 3
  # define DNS_CLIENTINFO_VERSION 2
  #else
@@ -48,11 +48,11 @@
      # For BIND 9.12.x
      ${BIND9_12} database "dlopen ${MODULESDIR}/bind9/dlz_bind9_12.so";
 +
-+    # For BIND 9.13.x
-+    ${BIND9_13} database "dlopen ${MODULESDIR}/bind9/dlz_bind9_13.so";
-+
 +    # For BIND 9.14.x
 +    ${BIND9_14} database "dlopen ${MODULESDIR}/bind9/dlz_bind9_14.so";
++
++    # For BIND 9.16.x
++    ${BIND9_16} database "dlopen ${MODULESDIR}/bind9/dlz_bind9_16.so";
  };
  
 --- python/samba/provision/sambadns.py.orig	2019-01-15 10:07:00 UTC
@@ -61,8 +61,8 @@
          bind9_10 = '#'
          bind9_11 = '#'
          bind9_12 = '#'
-+        bind9_13 = '#'
 +        bind9_14 = '#'
++        bind9_16 = '#'
          if bind_info.upper().find('BIND 9.8') != -1:
              bind9_8 = ''
          elif bind_info.upper().find('BIND 9.9') != -1:
@@ -70,10 +70,10 @@
              bind9_11 = ''
          elif bind_info.upper().find('BIND 9.12') != -1:
              bind9_12 = ''
-+        elif bind_info.upper().find('BIND 9.13') != -1:
-+            bind9_13 = ''
 +        elif bind_info.upper().find('BIND 9.14') != -1:
 +            bind9_14 = ''
++        elif bind_info.upper().find('BIND 9.16') != -1:
++            bind9_16 = ''
          elif bind_info.upper().find('BIND 9.7') != -1:
              raise ProvisioningError("DLZ option incompatible with BIND 9.7.")
          else:
@@ -84,8 +84,8 @@
 -                    "BIND9_12": bind9_12
 -
 +                    "BIND9_12" : bind9_12,
-+                    "BIND9_13" : bind9_13,
-+                    "BIND9_14" : bind9_14
++                    "BIND9_14" : bind9_14,
++                    "BIND9_16" : bind9_16
                      })
  
  
