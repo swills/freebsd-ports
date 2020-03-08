@@ -1,6 +1,8 @@
+/you/have/to/check/what/makeplist/gives/you
 bin/ceph
 bin/ceph-authtool
 bin/ceph-bluestore-tool
+bin/ceph-client-debug
 bin/ceph-clsinfo
 bin/ceph-conf
 bin/ceph-coverage
@@ -16,12 +18,13 @@ bin/ceph-monstore-tool
 bin/ceph-objectstore-tool
 bin/ceph-osd
 bin/ceph-osdomap-tool
-bin/ceph_kvstorebench
 bin/ceph-post-file
 bin/ceph-rbdnamer
 bin/ceph-run
+bin/ceph-syn
 bin/ceph_erasure_code
 bin/ceph_erasure_code_benchmark
+bin/ceph_kvstorebench
 bin/ceph_objectstore_bench
 bin/ceph_omapbench
 bin/ceph_radosacl
@@ -29,6 +32,9 @@ bin/ceph_rgw_jsonparser
 bin/ceph_rgw_multiparser
 bin/ceph_scratchtool
 bin/cephdeduptool
+bin/cephfs-data-scan
+bin/cephfs-journal-tool
+bin/cephfs-table-tool
 bin/crushtool
 bin/init-ceph
 bin/librados-config
@@ -53,6 +59,8 @@ etc/bash_completion.d/radosgw-admin
 etc/bash_completion.d/rbd
 %%ETCDIR%%/ceph.conf.sample
 etc/newsyslog.conf.d/file-newsyslog_ceph-log.conf
+include/cephfs/ceph_statx.h
+include/cephfs/libcephfs.h
 include/rados/buffer.h
 include/rados/buffer_fwd.h
 include/rados/crc32c.h
@@ -101,6 +109,9 @@ lib/ceph/erasure-code/libec_shec_generic.so
 lib/ceph/erasure-code/libec_shec_sse3.so
 lib/ceph/erasure-code/libec_shec_sse4.so
 lib/ceph/libceph-common.so.0
+lib/libcephfs.so
+lib/libcephfs.so.2
+lib/libcephfs.so.2.0.0
 lib/librados.so
 lib/librados.so.2
 lib/librados.so.2.0.0
@@ -259,6 +270,11 @@ lib/librgw_admin_user.so.1.0.0
 %%PYTHON_SITELIBDIR%%/ceph_volume/util/system.py
 %%PYTHON_SITELIBDIR%%/ceph_volume/util/templates.py
 %%PYTHON_SITELIBDIR%%/ceph_volume_client.py
+%%PYTHON_SITELIBDIR%%/cephfs-2.0.0-py%%PYTHON_VER%%.egg-info/PKG-INFO
+%%PYTHON_SITELIBDIR%%/cephfs-2.0.0-py%%PYTHON_VER%%.egg-info/SOURCES.txt
+%%PYTHON_SITELIBDIR%%/cephfs-2.0.0-py%%PYTHON_VER%%.egg-info/dependency_links.txt
+%%PYTHON_SITELIBDIR%%/cephfs-2.0.0-py%%PYTHON_VER%%.egg-info/top_level.txt
+%%PYTHON_SITELIBDIR%%/cephfs.so
 %%PYTHON_SITELIBDIR%%/rados-2.0.0-py%%PYTHON_VER%%.egg-info/PKG-INFO
 %%PYTHON_SITELIBDIR%%/rados-2.0.0-py%%PYTHON_VER%%.egg-info/SOURCES.txt
 %%PYTHON_SITELIBDIR%%/rados-2.0.0-py%%PYTHON_VER%%.egg-info/dependency_links.txt
@@ -277,6 +293,9 @@ lib/librgw_admin_user.so.1.0.0
 lib/rados-classes/libcls_cas.so
 lib/rados-classes/libcls_cas.so.1
 lib/rados-classes/libcls_cas.so.1.0.0
+lib/rados-classes/libcls_cephfs.so
+lib/rados-classes/libcls_cephfs.so.1
+lib/rados-classes/libcls_cephfs.so.1.0.0
 lib/rados-classes/libcls_hello.so
 lib/rados-classes/libcls_hello.so.1
 lib/rados-classes/libcls_hello.so.1.0.0

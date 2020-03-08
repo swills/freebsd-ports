@@ -4,7 +4,7 @@
 PORTNAME=	ceph
 DISTVERSIONPREFIX=	v
 DISTVERSION=	14.2.7
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 PKGNAMESUFFIX=	14
 
@@ -44,15 +44,14 @@ RUN_DEPENDS=	\
 	bash:shells/bash \
 	flock:sysutils/flock \
 	jq:textproc/jq \
+	smartctl:sysutils/smartmontools \
 	xml:textproc/xmlstarlet \
 	${LOCALBASE}/bin/getopt:misc/getopt \
-	${LOCALBASE}/sbin/smartctl:sysutils/smartmontools \
 	${PYTHON_PKGNAMEPREFIX}grpcio>=0:devel/py-grpcio@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}prettytable>=0:devel/py-prettytable@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}virtualenv>=0:devel/py-virtualenv@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}protobuf>=0:devel/py-protobuf@${PY_FLAVOR} \
-	${PYTHON_PKGNAMEPREFIX}scipy>=0:science/py-scipy@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}bcrypt>=0:security/py-bcrypt@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}openssl>=0:security/py-openssl@${PY_FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}pyjwt>=0:www/py-pyjwt@${PY_FLAVOR} \
@@ -64,7 +63,7 @@ RUN_DEPENDS=	\
 
 USES=		cmake:noninja dos2unix fuse gettext-runtime gmake ncurses \
 		pkgconfig python:3.7+ shebangfix ssl
-USE_PYTHON=	cython
+USE_PYTHON=	cython py3kplist
 USE_OPENLDAP=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	ceph:DEFAULT
@@ -91,9 +90,7 @@ GH_TUPLE+=	facebook:zstd:f4340f4:zstd/src/zstd
 CMAKE_BUILD_TYPE=	Release
 CMAKE_ON=	WITH_SYSTEM_BOOST WITH_BOOST_CONTEXT WITH_FUSE WITH_PYTHON3
 CMAKE_OFF=	WITH_LTTNG WITH_BABELTRACE WITH_KRBD WITH_XFS \
-		WITH_SPDK WITH_RDMA WITH_RADOSGW_BEAST_FRONTEND \
-		WITH_MGR_DASHBOARD_FRONTEND WITH_SYSTEM_NPM \
-		WITH_LIBCEPHFS WITH_CEPHFS WITH_PYTHON2
+		WITH_SPDK WITH_RDMA WITH_MGR_DASHBOARD_FRONTEND WITH_PYTHON2
 CMAKE_ARGS=	-D MGR_PYTHON_VERSION=${PYTHON_VER} \
 		-D CEPH_MAN_DIR:STRING=man
 
@@ -124,6 +121,8 @@ ASM=		clang80
 pre-configure:
 	[ -e ${WRKSRC}/build ] || ${LN} -s ${CONFIGURE_WRKSRC} ${WRKSRC}/build
 	${CP} files/file-git_version ${WRKSRC}/src/.git_version
+	# Use the module finders that come with Cmake for Boost and Python
+	${RM} ${WRKSRC}/cmake/modules/FindBoost.cmake || true
 
 post-install:
 	# To install a ceph.conf sample
