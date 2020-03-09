@@ -1,6 +1,6 @@
---- eeprom/decode-dimms.1.orig	2014-02-20 04:59:56.488360000 -0500
-+++ eeprom/decode-dimms.1	2014-06-19 16:20:15.000000000 -0400
-@@ -21,7 +21,7 @@
+--- eeprom/decode-dimms.1.orig	2018-11-30 14:15:21 UTC
++++ eeprom/decode-dimms.1
+@@ -22,7 +22,7 @@
  decode-dimms \- decode the information found in memory module SPD EEPROMs
  .SH SYNOPSIS
  .B decode-dimms
@@ -9,13 +9,13 @@
  .br
  .B decode-dimms
  -h
-@@ -53,6 +53,9 @@
+@@ -53,6 +53,9 @@ Don't merge neighbour cells with identical values (sid
+ .TP
  .B \-c, --checksum
  Decode completely even if checksum fails
- .TP
++.TP
 +.B \-d
 +Read data from the device
-+.TP
+ .TP
  .B \-x
  Read data from hexdump files
- .TP

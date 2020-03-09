@@ -1,6 +1,6 @@
---- eeprom/decode-dimms.orig	2014-06-19 15:50:29.000000000 -0400
-+++ eeprom/decode-dimms	2014-06-19 16:18:34.000000000 -0400
-@@ -42,7 +42,7 @@
+--- eeprom/decode-dimms.orig	2020-03-09 13:44:20 UTC
++++ eeprom/decode-dimms
+@@ -42,7 +42,7 @@ use POSIX qw(ceil);
  use Fcntl qw(:DEFAULT :seek);
  use File::Basename;
  use vars qw($opt_html $opt_bodyonly $opt_side_by_side $opt_merge
@@ -9,8 +9,8 @@
  	    @vendors %decode_callback $revision @dimm $current %hexdump_cache);
  
  use constant LITTLEENDIAN	=> "little-endian";
-@@ -305,7 +305,7 @@
-  "Silicon Space Technology"]
+@@ -418,7 +418,7 @@ $revision =~ s/ \([^()]*\)//;
+  "Thermaltake Technology Co Ltd", "Shenzhen O'Yang Maile Technology Ltd", "UPMEM"]
  );
  
 -$use_sysfs = -d '/sys/bus';
@@ -18,7 +18,7 @@
  
  # We consider that no data was written to this area of the SPD EEPROM if
  # all bytes read 0x00 or all bytes read 0xff
-@@ -1079,6 +1079,9 @@
+@@ -1329,6 +1329,9 @@ sub decode_ddr2_sdram($)
  	printl("Module Configuration Type",
  	       sdram_module_configuration_type($bytes->[11]));
  
@@ -28,19 +28,7 @@
  	printl("Refresh Rate", ddr2_refresh_rate($bytes->[12]));
  
  	my @burst;
-@@ -1289,8 +1292,9 @@
- 	printl("DLL-Off Mode supported?", ($bytes->[30] & 128) ? "Yes" : "No");
- 	printl("Operating temperature range", sprintf "0-%d degrees C",
- 		($bytes->[31] & 1) ? 95 : 85);
--	printl("Refresh Rate in extended temp range",
--		($bytes->[31] & 2) ? "2X" : "1X");
-+	printl_cond($bytes->[31] & 1,
-+		    "Refresh Rate in extended temp range",
-+		    ($bytes->[31] & 2) ? "1X" : "2X");
- 	printl("Auto Self-Refresh?", ($bytes->[31] & 4) ? "Yes" : "No");
- 	printl("On-Die Thermal Sensor readout?",
- 		($bytes->[31] & 8) ? "Yes" : "No");
-@@ -1624,6 +1628,28 @@
+@@ -2330,6 +2333,28 @@ sub spd_sizes($)
  	}
  }
  
@@ -69,7 +57,7 @@
  # Read bytes from SPD-EEPROM
  # Note: offset must be a multiple of 16!
  sub readspd($$$)
-@@ -1633,22 +1659,14 @@
+@@ -2339,22 +2364,14 @@ sub readspd($$$)
  	if ($use_hexdump) {
  		@bytes = read_hexdump($dimm_i);
  		return @bytes[$offset..($offset + $size - 1)];
@@ -99,7 +87,7 @@
  		}
  	}
  	return @bytes;
-@@ -1702,7 +1720,7 @@
+@@ -2415,7 +2432,7 @@ sub check_crc($)
  # Parse command-line
  foreach (@ARGV) {
  	if ($_ eq '-h' || $_ eq '--help') {
@@ -108,15 +96,15 @@
  			"       $0 -h\n\n",
  			"  -f, --format            Print nice html output\n",
  			"  -b, --bodyonly          Don't print html header\n",
-@@ -1711,6 +1729,7 @@
- 			"      --merge-cells       Merge neighbour cells with identical values\n",
+@@ -2426,6 +2443,7 @@ foreach (@ARGV) {
+ 			"      --no-merge-cells    Don't merge neighbour cells with identical values\n",
  			"                          (side-by-side output only)\n",
  			"  -c, --checksum          Decode completely even if checksum fails\n",
 +			"  -d,                     Read data from the device\n",
  			"  -x,                     Read data from hexdump files\n",
  			"  -X,                     Same as -x except treat multibyte hex\n",
  			"                          data as little endian\n",
-@@ -1746,6 +1765,10 @@
+@@ -2465,6 +2483,10 @@ EOF
  		$opt_igncheck = 1;
  		next;
  	}
@@ -127,30 +115,27 @@
  	if ($_ eq '-x') {
  		$use_hexdump = BIGENDIAN;
  		next;
-@@ -1760,7 +1783,11 @@
+@@ -2479,7 +2501,11 @@ EOF
  		exit;
  	}
  
--	push @dimm, { eeprom => basename($_), file => $_ } if $use_hexdump;
 +	if ($opt_smbdev) {
 +		$use_smbdev = $_;
 +	} else {
-+		push @dimm, { eeprom => basename($_), file => $_ } if $use_hexdump;
+ 	push @dimm, { eeprom => basename($_), file => $_ } if $use_hexdump;
 +	}
  }
  
- if ($opt_html && !$opt_bodyonly) {
-@@ -1777,61 +1804,20 @@
- Jean Delvare, Trent Piepho and others');
+ # Default values
+@@ -2487,63 +2513,21 @@ $opt_merge = 1 unless defined $opt_merge;
  
- 
--# From a sysfs device path and an attribute name, return the attribute
--# value, or undef (stolen from sensors-detect)
+ # From a sysfs device path and an attribute name, return the attribute
+ # value, or undef (stolen from sensors-detect)
 -sub sysfs_device_attribute
 -{
 -	my ($device, $attr) = @_;
 -	my $value;
--
+ 
 -	open(local *FILE, "$device/$attr") or return "";
 -	$value = <FILE>;
 -	close(FILE);
@@ -165,7 +150,9 @@
 -	my (@dirs, $dir, $opened, $file, @files);
 -
 -	if ($use_sysfs) {
--		@dirs = ('/sys/bus/i2c/drivers/eeprom', '/sys/bus/i2c/drivers/at24');
+-		@dirs = ('/sys/bus/i2c/drivers/eeprom',
+-			 '/sys/bus/i2c/drivers/at24',
+-			 '/sys/bus/i2c/drivers/ee1004');	# DDR4
 -	} else {
 -		@dirs = ('/proc/sys/dev/sensors');
 -	}
@@ -183,7 +170,9 @@
 -				# or spd (driver at24)
 -				my $attr = sysfs_device_attribute("$dir/$file", "name");
 -				next unless defined $attr &&
--					    ($attr eq "eeprom" || $attr eq "spd");
+-					    ($attr eq "eeprom" ||
+-					     $attr eq "spd" ||
+-					     $attr eq "ee1004");	# DDR4
 -			} else {
 -				next unless $file =~ /^eeprom-/;
 -			}
@@ -195,30 +184,20 @@
 -
 -	if (!$opened) {
 -		print STDERR "No EEPROM found, try loading the eeprom or at24 module\n";
--		exit;
 +	my @dimms;
 +	if (! -c $use_smbdev) {
 +        	print "SMBus device not found\n";
-+	        exit;
-+	}
+ 		exit;
+ 	}
+-
+-	return sort { $a->{file} cmp $b->{file} } @files;
 +	for my $spd (0xA0 .. 0xAE) {
 +		next if ($spd % 2 != 0);
 +		my @test_bytes = readspd(0, 4, $spd);
 +		next unless spd_written(@test_bytes);
 +		push @dimms, { eeprom => sprintf('0x%02X', $spd), file => $spd };
- 	}
--
--	return sort { $a->{file} cmp $b->{file} } @files;
++	}
 +	return @dimms;
  }
  
  # @dimm is a list of hashes. There's one hash for each EEPROM we found.
-@@ -2022,7 +2008,7 @@
- 		print "\n\n";
- 	} else {
- 		print "<b><u>" if $opt_html;
--		printl2("\n\nDecoding EEPROM", $dimm[$current]->{file});
-+		printl2("\n\nDecoding EEPROM", $dimm[$current]->{eeprom});
- 		print "</u></b>" if $opt_html;
- 	}
- 	print "<table border=1>\n" if $opt_html;
