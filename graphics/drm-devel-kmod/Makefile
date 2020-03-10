@@ -21,7 +21,7 @@ CONFLICTS_INSTALL=	drm-current-kmod \
 			drm-fbsd12.0-kmod \
 			drm-legacy-kmod
 
-OPTIONS_DEFINE=	DEBUG
+OPTIONS_DEFINE=	DEBUG STABLE
 
 USES=		kmod uidfix compiler:c++11-lang
 
@@ -29,6 +29,13 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	FreeBSDDesktop
 GH_PROJECT=	kms-drm
 GH_TAGNAME=	54164ff
+
+STABLE_DESC=		Apply bugfixes from stable Linux branches (5.0.y and 4.19.y)
+STABLE_PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/pull/
+STABLE_PATCHFILES=	221.diff:-p1
+.if make(makesum)
+.MAKEFLAGS:		WITH+=STABLE
+.endif
 
 .include <bsd.port.options.mk>
 
