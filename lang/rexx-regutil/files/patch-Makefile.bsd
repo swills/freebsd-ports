@@ -1,8 +1,11 @@
---- Makefile.bsd.orig	2019-04-07 21:58:45 UTC
+--- Makefile.bsd.orig	2003-04-01 19:32:34 UTC
 +++ Makefile.bsd
-@@ -23,7 +23,7 @@ POPT=-O2 -fomit-frame-pointer
+@@ -21,9 +21,9 @@
+ 
+ POPT=-O2 -fomit-frame-pointer
  PCDEFS=-D_SEMUN_DEFINED -DUSE_STATFS -DINCL_MOUNT -DHAS_F_MNTFROMNAME -DMMAP\
-  -DUSE_TERMCAP_DB -DHAS_GETBOOTFILE -DHAS_WCHAR
+- -DUSE_TERMCAP_DB -DHAS_GETBOOTFILE -DHAS_WCHAR
++ -DUSE_TERMCAP_DB -DHAS_GETBOOTFILE -DHAS_WCHAR -D_WANT_SEMUN
  PCFLAGS=-fpic -pipe
 -PLDFLAGS=-Bdynamic -Bshareable
 +PLDFLAGS=-Bdynamic -Bshareable -L/usr/lib

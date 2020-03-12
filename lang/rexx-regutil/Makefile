@@ -3,7 +3,7 @@
 
 PORTNAME=	regutil
 PORTVERSION=	1.26
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	http://home.interlog.com/~ptjm/ \
 		http://www.ancientgeek.org.uk/distfiles/
