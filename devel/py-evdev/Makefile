@@ -13,13 +13,12 @@ COMMENT=	Bindings to the Linux input handling subsystem
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
+BUILD_DEPENDS=	${EVDEVPROTOPREFIX}/include/linux/input.h:devel/evdev-proto
 
 USES=		python
 USE_PYTHON=	autoplist distutils
-CPPFLAGS+=	-I${LOCALBASE}/include # v4l_compat
 
-EVDEV_INCLUDES=	${LOCALBASE}/include
+EVDEV_INCLUDES=	${EVDEVPROTOPREFIX}/include
 
 PYDISTUTILS_BUILD_TARGET=	build_ecodes
 PYDISTUTILS_BUILDARGS+=		--evdev-headers ${EVDEV_INCLUDES}/linux/input.h:${EVDEV_INCLUDES}/linux/input-event-codes.h
@@ -35,3 +34,6 @@ post-install:
 		-name '*.so' -exec ${STRIP_CMD} {} +
 
 .include <bsd.port.mk>
+
+EVDEVPROTOPREFIX?= ${LOCALBASE}
+V4L_COMPATPREFIX?= ${LOCALBASE}
