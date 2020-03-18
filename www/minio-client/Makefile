@@ -26,8 +26,8 @@ MC=	${PORTNAME}
 .endif
 
 USE_GITHUB=	yes
-GHTAG=		RELEASE.2020-02-20T23-49-54Z
-COMMIT_ID=	415271412666c03c51748f6cb8e73ecbf97dc30b
+GHTAG=		RELEASE.2020-02-25T18-10-03Z
+COMMIT_ID=	67e90b8fcbc9781fa3bf2d183cd457c2e5267f81
 GH_TUPLE=	minio:mc:${GHTAG}:DEFAULT \
 		StackExchange:wmi:cbe66965904d:stackexchange_wmi/vendor/github.com/StackExchange/wmi \
 		cheggaaa:pb:v1.0.28:cheggaaa_pb/vendor/github.com/cheggaaa/pb \
