@@ -1,4 +1,4 @@
---- cpp/build/Makefile.orig	2019-08-26 02:51:02 UTC
+--- cpp/build/Makefile.orig	2019-10-08 02:43:56 UTC
 +++ cpp/build/Makefile
 @@ -280,8 +280,8 @@ install: $(LIBDIR)/$(SHARED_LIB_NAME) doc $(top_buildd
  	@cp -r $(top_srcdir)/docs/* $(DESTDIR)/$(docdir)
