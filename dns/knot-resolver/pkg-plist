@@ -1,7 +1,6 @@
+%%PORTEXAMPLES%%@sample %%EXAMPLESDIR%%/config.personal %%ETCDIR%%/%%USER%%.conf
 %%ETCDIR%%/icann-ca.pem
-%%ETCDIR%%/kresd.conf
 %%ETCDIR%%/root.hints
-%%ETCDIR%%/root.keys
 include/libkres/api.h
 include/libkres/array.h
 include/libkres/cdb_api.h
@@ -93,10 +92,6 @@ man/man8/kresd.8.gz
 sbin/kres-cache-gc
 sbin/kresc
 sbin/kresd
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.cluster
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.docker
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.internal
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.isp
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.personal
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.privacy
-%%PORTDOCS%%%%DOCSDIR%%/examples/config.splitview
+@dir(%%USER%%,%%GROUP%%,0750) %%RUNDIR%%
+%%RUNDIR%%/root.keys
+@postexec chown -R %%USER%%:%%GROUP%% %%RUNDIR%%

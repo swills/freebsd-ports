@@ -1,0 +1,11 @@
+--- meson.build.orig	2020-02-05 10:35:04.000000000 -0500
++++ meson.build	2020-02-05 10:35:04.000000000 -0500
+@@ -45,7 +45,7 @@
+ prefix = get_option('prefix')
+ data_dir = join_paths(prefix, get_option('datadir'), 'knot-resolver')
+ doc_dir = join_paths(prefix, get_option('datadir'), 'doc', 'knot-resolver')
+-examples_dir = join_paths(doc_dir, 'examples')
++examples_dir = join_paths(prefix, get_option('datadir'), 'examples', 'knot-resolver')
+ etc_dir = join_paths(prefix, get_option('sysconfdir'), 'knot-resolver')
+ lib_dir = join_paths(prefix, get_option('libdir'), 'knot-resolver')
+ modules_dir = join_paths(lib_dir, 'kres_modules')

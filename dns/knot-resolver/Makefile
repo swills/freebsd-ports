@@ -2,7 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	knot-resolver
-DISTVERSION=	5.0.1
+PORTVERSION=	5.0.1
+PORTREVISION=	1
 CATEGORIES=	dns
 MASTER_SITES=	https://secure.nic.cz/files/knot-resolver/ \
 		https://dns.company/downloads/knot-resolver/
@@ -19,7 +20,7 @@ BUILD_DEPENDS=	bash:shells/bash \
 		luacheck:devel/lua-luacheck
 
 LIB_DEPENDS=	libgnutls.so:security/gnutls \
-		libknot.so:dns/knot2-lib \
+		libknot.so:dns/knot2 \
 		liblmdb.so:databases/lmdb \
 		libluajit-5.1.so:lang/luajit-openresty \
 		libuv.so:devel/libuv
@@ -30,7 +31,11 @@ USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 LDFLAGS+=	-L${LOCALBASE}/lib
 
+USE_RC_SUBR=	${USERS} krescachegc
 SUB_FILES=	pkg-message
+SUB_LIST=	RUNDIR=${RUNDIR} USER=${USERS}
+PLIST_SUB=	RUNDIR=${RUNDIR} USER=${USERS} GROUP=${GROUPS}
+RUNDIR=		/var/db/${USERS}
 
 SHEBANG_FILES=	scripts/bench.sh \
 		scripts/build-in-obs.sh \
@@ -57,11 +62,11 @@ MESON_ARGS=	--buildtype=release \
 		--prefix=${LOCALBASE} \
 		-Duser=${USERS} \
 		-Dgroup=${GROUPS} \
-		-Dinstall_kresd_conf=enabled \
+		-Dinstall_kresd_conf=disabled \
 		-Dclient=enabled \
 		-Dutils=enabled \
 		-Dinstall_root_keys=enabled \
-		-Dkeyfile_default=${ETCDIR}/root.keys \
+		-Dkeyfile_default=${RUNDIR}/root.keys \
 		-Dmanaged_ta=enabled \
 		-Droot_hints=${ETCDIR}/root.hints \
 		-Dunit_tests=enabled
@@ -74,8 +79,8 @@ MESON_ARGS=	--buildtype=release \
 #		-Dconfig_tests=enabled \		# complains about missing cqueues lua package
 #		-Dextra_tests=enabled \			# also requires -Dsendmmsg=disabled
 
-OPTIONS_DEFINE=		DOCS DNSTAP DOXYGEN TRUSTANCHOR
-OPTIONS_DEFAULT=	DOCS DNSTAP DOXYGEN
+OPTIONS_DEFINE=		DOCS EXAMPLES DNSTAP DOXYGEN TRUSTANCHOR
+OPTIONS_DEFAULT=	DOCS EXAMPLES DNSTAP DOXYGEN
 
 # docs/meson.build wants python2 or python3 - not -for example- python3.7
 # So this currently is partially broken:
@@ -105,6 +110,8 @@ USERS=		kresd
 GROUPS=		${USERS}
 
 PORTDOCS=	AUTHORS COPYING CodingStyle NEWS README.md
+PORTEXAMPLES=	config.cluster config.docker config.internal \
+		config.isp config.privacy config.splitview
 
 STRIP_TARGETS=	sbin/kresd \
 		sbin/kresc \
@@ -119,8 +126,10 @@ STRIP_TARGETS=	sbin/kresd \
 
 pre-install-TEST-on: do-test
 
+pre-install:
+	@${MKDIR} ${STAGEDIR}${RUNDIR} ${STAGEDIR}${DOCSDIR}
+
 post-install:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${PORTDOCS:S,^,${WRKSRC}/,} ${STAGEDIR}${DOCSDIR}/
 .for STRIP_TGT in ${STRIP_TARGETS}
 	if [ -f ${STAGEDIR}${PREFIX}/${STRIP_TGT} ]; then \
