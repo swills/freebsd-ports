@@ -1,0 +1,48 @@
+--- Makefile.orig	2020-03-15 09:57:07 UTC
++++ Makefile
+@@ -26,10 +26,9 @@ else ifeq ($(detected_OS),Windows)  # Windows
+ 	#CXXFLAGS+= -s -Wa,-mbig-obj -static-libgcc -static-libstdc++ -Wno-cast-function-type -Wno-error=cast-function-type
+ 	LINK+= -L. -llua51
+ else                                # *nix
+-	CXXFLAGS+= -s
+ 	#flags to use when compiling for Netlify & Releases
+ 	#CXXFLAGS+= -s -static-libgcc -static-libstdc++
+-	LINK+= -ldl -LLuaJIT/src -lluajit
++	LINK+= -ldl -L/usr/local/lib -lluajit-5.1
+ endif
+ 
+ #ifeq ($(detected_OS),Linux)              # Linux
+@@ -43,7 +42,7 @@ endif
+ 
+ ###
+ 
+-all: make-luajit nsm
++all: nsm
+ 
+ ###
+ 
+@@ -55,7 +54,7 @@ else ifeq ($(detected_OS),Windows)  # Windows
+ 	cd LuaJIT && make
+ 	copy LuaJIT\src\lua51.dll .
+ else                                # *nix
+-	cd LuaJIT && make
++	cd LuaJIT && gmake
+ endif
+ 
+ ###
+@@ -180,7 +179,7 @@ else ifeq ($(detected_OS),Windows)  # Windows
+ 	#cd LuaJIT && make clean #this doesn't work for some reason
+ else                                # *nix
+ 	rm -f $(objects)
+-	cd LuaJIT && make clean
++	cd LuaJIT && gmake clean
+ endif 
+ 
+ clean-all:
+@@ -192,5 +191,5 @@ else ifeq ($(detected_OS),Windows)  # Windows
+ 	#cd LuaJIT && make clean #see same line for clean
+ else                                # *nix
+ 	rm -f $(objects) nsm nift
+-	cd LuaJIT && make clean
++	cd LuaJIT && gmake clean
+ endif 
