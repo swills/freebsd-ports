@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=		mapcache
-DISTVERSION=		1.4.0-94
-DISTVERSIONSUFFIX=	-g732b3fd
-PORTREVISION=		4
+DISTVERSION=		1.10.0
+MASTER_SITES=		http://download.osgeo.org/mapserver/
 CATEGORIES=		graphics
 
 MAINTAINER=		gf-admins@iteris.com
@@ -18,9 +17,6 @@ LIB_DEPENDS=		libpng.so:graphics/png \
 			libaprutil-1.so:devel/apr1 \
 			libpixman-1.so:x11/pixman
 
-USE_GITHUB=		yes
-GH_ACCOUNT=		mapserver
-
 USES=			cmake jpeg localbase
 USE_LDCONFIG=		yes
 CMAKE_ARGS+=		-DWITH_OGR=1 -DWITH_PIXMAN=1 -DWITH_BERKELEY_DB=0
@@ -31,7 +27,7 @@ OPTIONS_DEFAULT=	APACHE FASTCGI SQLITE GEOS GDAL
 OPTIONS_SUB=		yes
 
 APACHE_DESC=		Native apache module
-APACHE_USES=		apache:2.2+
+APACHE_USES=		apache
 APACHE_CMAKE_ON=	-DWITH_APACHE=1 \
 			-DAPACHE_INCLUDE_DIR=${LOCALBASE}/${APACHEINCLUDEDIR} \
 			-DAPACHE_MODULE_DIR=${LOCALBASE}/${APACHEMODDIR}
