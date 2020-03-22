@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	saga
-PORTVERSION=	7.5.0
-PORTREVISION=	2
+PORTVERSION=	7.6.2
 CATEGORIES=	math
 MASTER_SITES=	SF/saga-gis/SAGA%20-%20${PORTVERSION:C/\.[[:digit:]]\.[[:digit:]]*$//}/SAGA%20-%20${PORTVERSION}
 
@@ -24,6 +23,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libodbc.so:databases/unixODBC \
 		libopencv_core.so:graphics/opencv-core \
 		libopencv_ml.so:graphics/opencv \
+		libpdal_base.so:math/pdal \
 		libproj.so:graphics/proj \
 		libsvm.so:science/libsvm \
 		libtbb.so:devel/tbb \
@@ -56,7 +56,7 @@ OPENMP_DESC=	Enable Multiprocessing (only amd64 and i386)
 VIGRA_DESC=	Enable 'Vision with Generic Algorithms' Library
 
 OPENMP_CONFIGURE_ENABLE=	openmp
-PGSQL_CONFIGURE_WITH=	pg
+PGSQL_CONFIGURE_WITH=	postgresql
 PGSQL_USES=		pgsql
 VIGRA_BUILD_DEPENDS=	${LOCALBASE}/lib/libvigraimpex.so:graphics/vigra
 VIGRA_RUN_DEPENDS=	${LOCALBASE}/lib/libvigraimpex.so:graphics/vigra
@@ -84,6 +84,7 @@ post-extract:
 		${WRKSRC}/src/tools/io/io_grid_image/Makefile.am \
 		${WRKSRC}/src/tools/io/io_shapes/Makefile.am \
 		${WRKSRC}/src/tools/io/io_virtual/Makefile.am \
+		${WRKSRC}/src/tools/io/io_webservices/Makefile.am \
 		${WRKSRC}/src/tools/pointcloud/pointcloud_tools/Makefile.am \
 		${WRKSRC}/src/tools/pointcloud/pointcloud_viewer/Makefile.am \
 		${WRKSRC}/src/tools/statistics/statistics_kriging/Makefile.am \
