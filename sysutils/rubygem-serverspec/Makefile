@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	serverspec
-PORTVERSION=	2.41.4
+PORTVERSION=	2.41.5
 CATEGORIES=	sysutils rubygems
 MASTER_SITES=	RG
 
