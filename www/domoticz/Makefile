@@ -1,23 +1,27 @@
 # $FreeBSD$
 
 PORTNAME=	domoticz
-PORTVERSION=	4.${DOMOTICZ_REL}
-PORTREVISION=	1
+PORTVERSION=	${DOMOTICZ_REL}
 CATEGORIES=	www
 
 MAINTAINER=	kiwi@oav.net
-COMMENT=	Home Automation System
+COMMENT=	Home Automation System (Development Branch)
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/License.txt
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
-		libexpat.so:textproc/expat2
+		libopenzwave.so:comms/openzwave-devel \
+		libjsoncpp.so:devel/jsoncpp
+BUILD_DEPENDS=	cereal>=1.2.2:devel/cereal
 
-CONFLICTS_INSTALL?=	domoticz-[23]* domoticz-devel-*
+USES=		cmake pkgconfig ssl
+
+CONFLICTS_INSTALL?=	domoticz-[234]*
 
 OPTIONS_SUB=	YES
-OPTIONS_DEFINE=	PYTHON SBOOST SLUA SMINIZIP SMQTT SSQLITE SSSL TELLDUS
+OPTIONS_DEFINE=	SSSL SBOOST SLUA SMQTT SSQLITE SMINIZIP PYTHON TELLDUS PRECOMP
+OPTIONS_DEFAULT=	PYTHON
 SBOOST_DESC=	Use static Boost instead of dynamic linking
 SSSL_DESC=	Use static OpenSSL library instead of dynamic linking
 SLUA_DESC=	Use domoticz provided LUA instead of ports one
@@ -26,15 +30,13 @@ SSQLITE_DESC=	Use domoticz SQLLite instead of ports one
 SMINIZIP_DESC=	Use domoticz minizip instead of ports one
 PYTHON_DESC=	Enable support for Python Plugins
 TELLDUS_DESC=	Enable support for Telldus
+PRECOMP_DESC=	Enable usage of precompiled header to speed build time
 
 .include <bsd.port.options.mk>
 
-USES=		cmake compiler:c++11-lang iconv pkgconfig ssl
-
 # This hack is to get rid of dependency of git while building
 # the package.
-DOMOTICZ_REL=	10717
-DOMOTICZ_TS=	1565707487
+DOMOTICZ_REL=	2020.1
 USE_GITHUB=	yes
 
 USE_RC_SUBR=	domoticz
@@ -44,7 +46,9 @@ GROUPS=		domoticz
 
 CMAKE_ARGS+=	-DCMAKE_INSTALL_PREFIX=${PREFIX}/domoticz \
 		-DUSE_BUILTIN_ZLIB="NO" \
-		-DUSE_STATIC_OPENZWAVE="NO"
+		-DUSE_STATIC_OPENZWAVE="NO" \
+		-DUSE_BUILTIN_JSONCPP="NO" \
+		-DUSE_BUILTIN_CEREAL="NO"
 
 .if ${PORT_OPTIONS:MSSSL}
 CMAKE_ARGS+=	-DUSE_OPENSSL_STATIC="YES"
@@ -64,7 +68,7 @@ LIB_DEPENDS+=	libboost_system.so:devel/boost-libs
 CMAKE_ARGS+=	-DUSE_BUILTIN_LUA="YES"
 .else
 CMAKE_ARGS+=	-DUSE_BUILTIN_LUA="NO"
-USES+=		lua:52
+USES+=		lua:53
 .endif
 
 .if ${PORT_OPTIONS:MSMQTT}
@@ -90,7 +94,7 @@ LIB_DEPENDS+=	libminizip.so:archivers/minizip
 
 .if ${PORT_OPTIONS:MPYTHON}
 CMAKE_ARGS+=	-DUSE_PYTHON="YES"
-USES+=		python:3.6
+USES+=		python:3.7
 .else
 CMAKE_ARGS+=	-DUSE_PYTHON="NO"
 .endif
@@ -99,15 +103,21 @@ CMAKE_ARGS+=	-DUSE_PYTHON="NO"
 LIB_DEPENDS+=	libtelldus-core.so:comms/telldus-core
 .endif
 
+.if ${PORT_OPTIONS:MPRECOMP}
+CMAKE_ARGS+=	-DUSE_PRECOMPILED_HEADER="YES"
+.else
+CMAKE_ARGS+=	-DUSE_PRECOMPILED_HEADER="NO"
+.endif
+
 post-patch:
 	@${REINPLACE_CMD} -e "s,\/opt,${PREFIX},g" ${WRKSRC}/CMakeLists.txt
-	@${REINPLACE_CMD} -e "s,%%PREFIX%%,${PREFIX},g" ${WRKSRC}/CMakeLists.txt
+	@${REINPLACE_CMD} -e "s,XXXPREFIXXXX,${PREFIX}/domoticz,g" ${WRKSRC}/CMakeLists.txt
 	@${REINPLACE_CMD} -e "/^ADD_PRECOMPILED_HEADER/ d" ${WRKSRC}/CMakeLists.txt
-	@${REINPLACE_CMD} -e "s/\(#define APPVERSION\)\(.*\)/\1 ${DOMOTICZ_REL}/" ${WRKSRC}/appversion.default
-	@${REINPLACE_CMD} -e "s/\(#define APPHASH\)\(.*\)/\1 \"be79a17\"/" ${WRKSRC}/appversion.default
-	@${REINPLACE_CMD} -e "s/\(#define APPDATE\)\(.*\)/\1 ${DOMOTICZ_TS}/" ${WRKSRC}/appversion.default
+#	@${REINPLACE_CMD} -e "s/\(#define APPVERSION\)\(.*\)/\1 ${DOMOTICZ_REL}/" ${WRKSRC}/appversion.h
+#	@${REINPLACE_CMD} -e "s/\(#define APPHASH\)\(.*\)/\1 \"${GH_TAGNAME}\"/" ${WRKSRC}/appversion.h
+#	@${REINPLACE_CMD} -e "s/\(#define APPDATE\)\(.*\)/\1 ${DOMOTICZ_TS}/" ${WRKSRC}/appversion.h
 
 post-install:
-	@${MKDIR} ${STAGEDIR}/var/db/domoticz ${STAGEDIR}/var/run/domoticz
+	${MKDIR} ${STAGEDIR}/var/db/domoticz ${STAGEDIR}/var/run/domoticz
 
 .include <bsd.port.mk>
