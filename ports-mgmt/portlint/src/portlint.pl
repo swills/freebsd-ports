@@ -160,7 +160,7 @@ my @varlist =  qw(
 	ALLFILES CHECKSUM_ALGORITHMS INSTALLS_ICONS GNU_CONFIGURE
 	CONFIGURE_ARGS MASTER_SITE_SUBDIR LICENSE LICENSE_COMB NO_STAGE
 	DEVELOPER SUB_FILES SHEBANG_LANG MASTER_SITES_SUBDIRS FLAVORS
-	USE_PYTHON LICENSE_PERMS USE_PYQT
+	USE_PYTHON LICENSE_PERMS USE_PYQT USE_GITHUB USE_GITLAB
 );
 
 my %makevar;
@@ -3029,31 +3029,34 @@ DIST_SUBDIR EXTRACT_ONLY
 	}
 
 	# if DISTFILES have only single item, it is better to avoid DISTFILES
-	# and to use combination of DISTNAME and EXTRACT_SUFX.
+	# and to use combination of DISTNAME and EXTRACT_SUFX (unless USE_GITHUB
+    # or USE_GITLAB is set to nodefault in which case it is fine).
 	# example:
 	#	DISTFILES=package-1.0.tgz
 	# should be
 	#	DISTNAME=     package-1.0
 	#	EXTRACT_SUFX= .tgz
-	if ($distfiles =~ /^\S+$/ && $distfiles !~ /:[^\/:]+$/) {
-		$bogusdistfiles++;
-		print "OK: seen DISTFILES with single item, checking value.\n"
-			if ($verbose);
-		&perror("WARN", $file, -1, "use of DISTFILES with single file ".
-			"discouraged. distribution filename should be set by ".
-			"DISTNAME and EXTRACT_SUFX.");
-		if ($distfiles eq (($distname ne '') ? $distname : "$portname-$portversion") . $extractsufx) {
-			&perror("WARN", $file, -1, "definition of DISTFILES not necessary. ".
-				"DISTFILES is \${DISTNAME}/\${EXTRACT_SUFX} ".
-				"by default.");
-		}
+	if ($makevar{USE_GITHUB} ne 'nodefault' && $makevar{USE_GITLUB} ne 'nodefault') {
+		if ($distfiles =~ /^\S+$/ && $distfiles !~ /:[^\/:]+$/) {
+			$bogusdistfiles++;
+			print "OK: seen DISTFILES with single item, checking value.\n"
+				if ($verbose);
+			&perror("WARN", $file, -1, "use of DISTFILES with single file ".
+				"discouraged. distribution filename should be set by ".
+				"DISTNAME and EXTRACT_SUFX.");
+			if ($distfiles eq (($distname ne '') ? $distname : "$portname-$portversion") . $extractsufx) {
+				&perror("WARN", $file, -1, "definition of DISTFILES not necessary. ".
+					"DISTFILES is \${DISTNAME}/\${EXTRACT_SUFX} ".
+					"by default.");
+			}
 
-		# display advice only in certain cases.
+			# display advice only in certain cases.
 #MICHAEL: will this work with multiple distfiles in this list?  what about
 #         doing the same sort of thing for DISTNAME, is it needed?
-		if ($distfiles =~ /^\Q$i\E([\-.].+)$/) {
-			&perror("WARN", $file, -1, "how about \"EXTRACT_SUFX=$1\"".
-				", instead of DISTFILES?");
+			if ($distfiles =~ /^\Q$i\E([\-.].+)$/) {
+				&perror("WARN", $file, -1, "how about \"EXTRACT_SUFX=$1\"".
+					", instead of DISTFILES?");
+			}
 		}
 	}
 
