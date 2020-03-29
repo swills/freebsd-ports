@@ -2757,8 +2757,8 @@
 %%WWWDIR%%/plugins/language_switch/pem_metadata.txt
 %%WWWDIR%%/plugins/language_switch/style.css
 @mode
-@owner root
-@group wheel
+@owner
+@group
 %%WWWDIR%%/popuphelp.php
 %%WWWDIR%%/profile.php
 %%WWWDIR%%/qsearch.php
@@ -2776,6 +2776,9 @@
 %%WWWDIR%%/template-extension/yoga/index.php
 %%WWWDIR%%/template-extension/yoga/local/README
 %%WWWDIR%%/template-extension/yoga/local/index.php
+@mode 750
+@owner %%WWWOWN%%
+@group %%WWWGRP%%
 %%WWWDIR%%/themes/default/fix-ie5-ie6.css
 %%WWWDIR%%/themes/default/fix-ie7.css
 %%WWWDIR%%/themes/default/fix-khtml.css
@@ -3729,6 +3732,9 @@
 %%WWWDIR%%/themes/smartpocket/template/thumbnails.tpl
 %%WWWDIR%%/themes/smartpocket/theme.css
 %%WWWDIR%%/themes/smartpocket/themeconf.inc.php
+@mode
+@owner
+@group
 %%WWWDIR%%/upgrade.php
 %%WWWDIR%%/upgrade_feed.php
 %%WWWDIR%%/ws.php
