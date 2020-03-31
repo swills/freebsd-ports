@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	openxpki
-PORTVERSION=	3.2.0
+PORTVERSION=	3.2.1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-
 
@@ -94,6 +93,8 @@ USE_RC_SUBR=	openxpki
 SUB_FILES=	pkg-message
 PORTDOCS=	*
 PORTEXAMPLES=	*
+
+PORTSCOUT=	limitw:1,even # stay with stable versions only
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 WRKSRC_SUBDIR=	core/server/
