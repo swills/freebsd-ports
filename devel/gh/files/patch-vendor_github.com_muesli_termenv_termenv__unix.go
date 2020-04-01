@@ -1,4 +1,4 @@
---- vendor/github.com/muesli/termenv/termenv_unix.go.orig	2020-01-30 12:25:39 UTC
+--- vendor/github.com/muesli/termenv/termenv_unix.go.orig	2020-04-01 16:18:25 UTC
 +++ vendor/github.com/muesli/termenv/termenv_unix.go
 @@ -99,7 +99,7 @@ func termStatusReport(sequence int) (string, error) {
  func readWithTimeout(f *os.File) (string, bool) {
