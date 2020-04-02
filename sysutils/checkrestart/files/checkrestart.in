@@ -12,7 +12,7 @@ fi
 : "${daily_checkrestart_jails:=}"           # Jail names or IDs to check
 : "${daily_checkrestart_procs:=}"           # Process names or IDs to check
 
-checkrestartcmd=/usr/local/bin/checkrestart
+checkrestartcmd=%%PREFIX%%/bin/checkrestart
 hflag=""
 rc=0
 
