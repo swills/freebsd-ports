@@ -2,9 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	openxpki
-PORTVERSION=	3.2.0
+PORTVERSION=	3.4.0
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
 CATEGORIES=	security perl5
 PKGNAMEPREFIX=	p5-
 
@@ -86,7 +85,7 @@ CONFLICTS=	p5-openxpki-client-[0-9]* \
 USES=		gmake perl5 ssl
 USE_GITHUB=	yes
 GH_PROJECT=	openxpki-config:conf
-conf_VERSION=	3.2
+conf_VERSION=	3.4
 GH_TAGNAME=	${DISTVERSIONPREFIX}${conf_VERSION}:conf
 
 USE_PERL5=	configure
@@ -94,6 +93,8 @@ USE_RC_SUBR=	openxpki
 SUB_FILES=	pkg-message
 PORTDOCS=	*
 PORTEXAMPLES=	*
+
+PORTSCOUT=	limitw:1,even # stay with stable versions only
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 WRKSRC_SUBDIR=	core/server/

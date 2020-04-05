@@ -1,5 +1,5 @@
-TIMESTAMP = 1582032441
-SHA256 (openxpki-openxpki-v3.2.0_GH0.tar.gz) = 2511536c5553f34bf3f50e95f431ab890f040afba3b0f125352356e6a09bbc7a
-SIZE (openxpki-openxpki-v3.2.0_GH0.tar.gz) = 34316630
-SHA256 (openxpki-openxpki-config-v3.2_GH0.tar.gz) = 9e850ed09389753a6a63a60023e132eafad95225b1c364eb6a500c9a2c12941f
-SIZE (openxpki-openxpki-config-v3.2_GH0.tar.gz) = 126933
+TIMESTAMP = 1586096054
+SHA256 (openxpki-openxpki-v3.4.0_GH0.tar.gz) = a6fb62301cd24ad139646629db511bd475648ab209815937bc9e525a837a5015
+SIZE (openxpki-openxpki-v3.4.0_GH0.tar.gz) = 34343181
+SHA256 (openxpki-openxpki-config-v3.4_GH0.tar.gz) = 240a040eb93d2780e8dad8eec4f84504017ba4a871941f56115ee5778e89d072
+SIZE (openxpki-openxpki-config-v3.4_GH0.tar.gz) = 128631
