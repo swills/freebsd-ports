@@ -34,7 +34,8 @@ BUILD_DEPENDS=	cereal>=1.2.2:devel/cereal \
 
 USES=		cmake gettext
 
-CMAKE_ARGS+=	-DwxWidgets_CONFIG_EXECUTABLE=${LOCALBASE}/bin/wxgtk3u-3.1-config
+CMAKE_ARGS+=	-DwxWidgets_CONFIG_EXECUTABLE=${LOCALBASE}/bin/wxgtk3u-3.1-config \
+		-DCGAL_DIR=${WRKSRC}/CGAL/lib/cmake/CGAL
 CMAKE_INSTALL_PREFIX=	${PREFIX}/${PORTNAME}
 
 USE_GITHUB=	yes
@@ -45,7 +46,7 @@ post-patch:
 	${REINPLACE_CMD} -e 's,%%WRKSRC%%,${WRKSRC},' \
 		${WRKSRC}/CMakeLists.txt
 
-pre-build:
+pre-configure:
 	cd ${WRKDIR}/cgal-releases-CGAL-5.0.2 && \
 	${CMAKE_BIN} -E remove CGALConfig-installation-dirs.cmake && \
 	${MKDIR} build && cd build && \
