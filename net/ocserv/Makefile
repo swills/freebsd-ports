@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ocserv
-PORTVERSION=	0.12.4
-PORTREVISION=	2
+PORTVERSION=	1.0.0
 CATEGORIES=	net net-vpn security
 MASTER_SITES=	ftp://ftp.infradead.org/pub/ocserv/
 
@@ -54,11 +53,12 @@ RADIUS_LIB_DEPENDS=	libradcli.so:net/radcli
 RADIUS_CONFIGURE_OFF=	--without-radius
 
 post-patch:
-	@${REINPLACE_CMD} 's|/usr/bin/ocserv-fw|${LOCALBASE}/bin/ocserv-fw|g' \
+	@${REINPLACE_CMD} 's|/usr/bin/ocserv-fw|${PREFIX}/bin/ocserv-fw|g' \
 		${WRKSRC}/src/main-user.c \
 		${WRKSRC}/doc/sample.config
-	@${REINPLACE_CMD} 's|/usr/bin/ocserv\\-fw|${LOCALBASE}/bin/ocserv\\-fw|g' \
+	@${REINPLACE_CMD} 's|/usr/bin/ocserv\\-fw|${PREFIX}/bin/ocserv\\-fw|g' \
 		${WRKSRC}/doc/ocserv.8
+	@${REINPLACE_CMD} 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/src/config.c
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/ocserv

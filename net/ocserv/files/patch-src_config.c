@@ -5,7 +5,7 @@
  
  #define OLD_DEFAULT_CFG_FILE "/etc/ocserv.conf"
 -#define DEFAULT_CFG_FILE "/etc/ocserv/ocserv.conf"
-+#define DEFAULT_CFG_FILE "/usr/local/etc/ocserv/conf"
++#define DEFAULT_CFG_FILE "%%PREFIX%%/etc/ocserv/conf"
  
  static void print_version(void);
  
