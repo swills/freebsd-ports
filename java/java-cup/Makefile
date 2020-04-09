@@ -2,36 +2,34 @@
 # $FreeBSD$
 
 PORTNAME=	cup
-PORTVERSION=	11.a
-PORTREVISION=	2
+PORTVERSION=	11b.20160615
 CATEGORIES=	java devel
-MASTER_SITES=	http://www2.cs.tum.edu/projects/cup/ \
-		http://mirrors.mcdermottroe.com/www2.cs.tum.edu/projects/cup/
 PKGNAMEPREFIX=	java-
-DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-v${PORTVERSION:S|.||}-20050516-sources
+
+MASTER_SITES=	http://www2.cs.tum.edu/projects/cup/releases/
+DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-bin-${PORTVERSION:S|.|-|}
+#LICENSE=	HPND
 
 MAINTAINER=	eg@fbsd.lt
 COMMENT=	LALR parser generator in Java
 
-BROKEN=		unfetchable
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2020-05-05
-
-BROKEN_armv6=		fails to build: build.xml: Java returned: 1
-BROKEN_armv7=		fails to build: build.xml: Java returned: 1
-
 USE_JAVA=	yes
-USE_ANT=	yes
-WRKSRC=		${WRKDIR}/cup-tum
+NO_BUILD=	yes
+SUB_FILES=	java-cup.sh
 
-# Silly hack because the naming in CUP is all over the place
-DISTJARNAME=	${PKGNAMEPREFIX}${PORTNAME}-10k-TUM
-
-PLIST_FILES=	%%JAVAJARDIR%%/${DISTJARNAME}.jar \
-		%%JAVAJARDIR%%/${DISTJARNAME}-runtime.jar
+CUP_VERSION=	${PORTVERSION:R}
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/dist/${DISTJARNAME}.jar ${STAGEDIR}${JAVAJARDIR}
-	${INSTALL_DATA} ${WRKSRC}/dist/${DISTJARNAME}-runtime.jar ${STAGEDIR}${JAVAJARDIR}
+	${INSTALL_SCRIPT} ${WRKDIR}/java-cup.sh ${STAGEDIR}${PREFIX}/bin/java-cup
+
+	${INSTALL_DATA} ${WRKDIR}/${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}.jar
+	${LN} -s ${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PKGNAMEPREFIX}${PORTNAME}.jar
+
+	${INSTALL_DATA} ${WRKDIR}/${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}-runtime.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}-runtime.jar
+	${LN} -s ${PKGNAMEPREFIX}${PORTNAME}-${CUP_VERSION}-runtime.jar \
+		${STAGEDIR}${JAVAJARDIR}/${PKGNAMEPREFIX}${PORTNAME}-runtime.jar
 
 .include <bsd.port.mk>
