@@ -29,9 +29,9 @@ PYTHON_VER=		${PYTHON_PORTVERSION:R}
 PYTHON_VERSION=		python${PYTHON_VER}
 PYTHON_SUFFIX=		${PYTHON_VER:S/.//g}
 
-DISABLED_EXTENSIONS=	_sqlite3 _tkinter _gdbm
 CONFIGURE_ARGS+=	--enable-shared --without-ensurepip
-CONFIGURE_ENV+=		OPT="" DISABLED_EXTENSIONS="${DISABLED_EXTENSIONS}"	# Null out OPT to respect user CFLAGS and remove optimizations
+CONFIGURE_ENV+=		OPT="" # Null out OPT to respect user CFLAGS and remove optimizations
+DISABLED_EXTENSIONS=	_sqlite3 _tkinter _gdbm
 
 INSTALL_TARGET=		altinstall						# Don't want cloberring of unprefixed files
 
@@ -115,6 +115,7 @@ PLIST_SUB+=	NO_NIS=""
 .endif
 
 post-patch:
+	${PRINTF} '*disabled*\n${DISABLED_EXTENSIONS}\n' > ${WRKSRC}/Modules/Setup.local
 # disable the detection of includes and library from e2fsprogs-libuuid,
 # which introduces hidden dependency and breaks build
 	@${REINPLACE_CMD} -e 's|uuid/uuid.h|ignore_&|' ${WRKSRC}/configure
