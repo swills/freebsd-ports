@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	telegram-purple
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-im
 
@@ -33,7 +33,7 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 USE_GITHUB=	yes
 GH_ACCOUNT=	majn
 GH_PROJECT=	tgl:tgl
-GH_TAGNAME?=	bec2e6d:tgl
+GH_TAGNAME?=	05f3409:tgl
 GH_SUBDIR=	tgl:tgl
 
 post-install:
