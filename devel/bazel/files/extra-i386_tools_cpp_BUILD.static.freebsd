@@ -1,5 +1,5 @@
---- tools/cpp/BUILD.static.freebsd.orig	2019-07-10 15:47:44.533177000 +0000
-+++ tools/cpp/BUILD.static.freebsd	2019-07-10 15:48:07.637126000 +0000
+--- tools/cpp/BUILD.static.bsd.orig	2019-07-10 15:47:44.533177000 +0000
++++ tools/cpp/BUILD.static.bsd	2019-07-10 15:48:07.637126000 +0000
 @@ -62,11 +62,11 @@
  toolchain(
      name = "cc-toolchain-freebsd",
