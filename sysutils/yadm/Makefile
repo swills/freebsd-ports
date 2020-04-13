@@ -2,6 +2,7 @@
 
 PORTNAME=	yadm
 PORTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	vendion@gmail.com
@@ -18,6 +19,11 @@ GH_ACCOUNT=	TheLocehiliosan
 
 PLIST_FILES=	bin/yadm \
 		man/man1/yadm.1.gz
+
+OPTIONS_DEFINE=	J2CTL
+J2CTL_DESC=	Enable Jinja2 powered template files
+J2CTL_USES=	python
+J2CTL_RUN_DEPENDS=	jinja2:textproc/py-jinja2-cli@${PY_FLAVOR}
 
 do-install:
 	@${MKDIR} ${STAGEDIR}
