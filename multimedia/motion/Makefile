@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	motion
-PORTVERSION=	4.3.0
-DISTVERSIONPREFIX=	Release-
+PORTVERSION=	4.3.1
+DISTVERSIONPREFIX=	release-
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@blievers.net
@@ -13,6 +13,9 @@ LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
 LIB_DEPENDS=	libmicrohttpd.so:www/libmicrohttpd
+LIB_DEPENDS+=	libwebpmux.so:graphics/webp
+LIB_DEPENDS+=	libwebp.so:graphics/webp
+
 
 USES=		autoreconf gmake jpeg localbase pkgconfig gettext
 
