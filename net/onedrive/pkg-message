@@ -1,0 +1,9 @@
+[
+{ type: install
+  message: <<EOM
+When upgraded from older version, the onedrive client should fail to
+synchronize. In this case, execute onedrive --logout to logout and
+re-authenticate. For more detail, see USAGE.md.
+EOM
+}
+]
