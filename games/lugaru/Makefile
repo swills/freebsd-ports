@@ -2,11 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	lugaru
-PORTVERSION=	269
-PORTREVISION=	11
+DISTVERSION=	1.3
+PORTEPOCH=	1
 CATEGORIES=	games
-MASTER_SITES=	https://bitbucket.org/oss${PORTNAME}/${PORTNAME}/downloads/
-DISTNAME=	${PORTNAME}-rev${DISTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	3D arcade with unique fighting system and anthropomorphic characters
@@ -16,35 +14,30 @@ LICENSE_FILE=	${WRKSRC}/COPYING.txt
 
 LIB_DEPENDS=	libpng.so:graphics/png \
 		libvorbis.so:audio/libvorbis \
-		libogg.so:audio/libogg
+		libogg.so:audio/libogg \
+		libjsoncpp.so:devel/jsoncpp
 
-USES=		cmake compiler:c++11-lang gl jpeg openal:soft pkgconfig sdl tar:bzip2 xorg
+USES=		cmake compiler:c++11-lang gl jpeg openal:soft pkgconfig sdl
 USE_GL=		gl glu
-USE_SDL=	sdl
-USE_XORG=	sm
+USE_SDL=	sdl2
 
 LDFLAGS_i386=	-Wl,-znotext
 
-PORTDOCS=	README
+USE_GITHUB=	yes
+GH_ACCOUNT=	shamazmazum
+GH_PROJECT=	lugaru
+
 OPTIONS_DEFINE=	DOCS
 
-SUB_FILES=	${PORTNAME}
-
-DESKTOP_ENTRIES="Lugaru" "" "${PORTNAME}" \
-		"${PORTNAME}" "Game;ActionGame;" ""
+CMAKE_ON=	SYSTEM_INSTALL
 
 post-patch:
-	@${REINPLACE_CMD} -e 's|/usr/local/lugaru|${DATADIR}|' \
-		${WRKSRC}/CMakeLists.txt
+	${REINPLACE_CMD} -e 's|%%DATA_DIR%%|${DATADIR}|' \
+		${WRKSRC}/Source/Utils/Folders.cpp
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${DATADIR}/${PORTNAME}
-	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin/
-	${RLN} ${STAGEDIR}${DATADIR}/Data/Textures/Lugaru.png \
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
+	${RLN} ${STAGEDIR}${DATADIR}/Textures/Lugaru.png \
 		${STAGEDIR}${PREFIX}/share/pixmaps/${PORTNAME}.png
-
-post-install-DOCS-on:
-	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDOCS} ${STAGEDIR}${DOCSDIR}
 
 .include <bsd.port.mk>
