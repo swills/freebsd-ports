@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	wmmoonclock
-PORTVERSION=	1.29
+PORTVERSION=	1.30
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	https://www.dockapps.net/download/
 
