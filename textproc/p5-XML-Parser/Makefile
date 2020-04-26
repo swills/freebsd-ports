@@ -1,17 +1,20 @@
 # $FreeBSD$
 
 PORTNAME=	XML-Parser
-PORTVERSION=	2.44
+PORTVERSION=	2.46
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	kuriyama@FreeBSD.org
+MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Perl extension interface to James Clark's XML parser, expat
 
 LICENSE=	ART10 GPLv1+
 LICENSE_COMB=	dual
+LICENSE_FILE=	${WRKSRC}/Parser.pm
 
+BUILD_DEPENDS=  ${RUN_DEPENDS}
+RUN_DEPENDS=    p5-libwww>=6.43:www/p5-libwww
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 USES=		perl5
