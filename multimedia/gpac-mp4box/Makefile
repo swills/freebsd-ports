@@ -2,27 +2,26 @@
 # $FreeBSD$
 
 PORTNAME=	mp4box
-DISTVERSION=	0.5.0
+DISTVERSION=	0.8.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
-MASTER_SITES=	SF/gpac/GPAC/GPAC%20${PORTVERSION}
 PKGNAMEPREFIX=	gpac-
-DISTNAME=	gpac-${DISTVERSION}
 
 MAINTAINER=	pvizeli@yahoo.de
 COMMENT=	Tool for merge mpg4 from Gpac
-
-BROKEN=		unfetchable
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2020-05-05
 
 LICENSE=	LGPL21
 
 LIB_DEPENDS=	libgpac.so:multimedia/gpac-libgpac
 
+USE_GITHUB= yes
+GH_ACCOUNT= gpac
+GH_PROJECT= gpac
+
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib -lgpac
 
-WRKSRC=		${WRKDIR}/gpac/applications/mp4box
+WRKSRC_SUBDIR=	applications/mp4box
 PLIST_FILES=	bin/mp4box man/man1/mp4box.1.gz
 
 do-build:
