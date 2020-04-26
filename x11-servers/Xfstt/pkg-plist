@@ -1,4 +1,5 @@
 bin/xfstt
+etc/rc.d/xfstt
 man/man1/xfstt.1x.gz
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/THANKS

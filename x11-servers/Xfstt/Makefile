@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	xfstt
-PORTVERSION=	1.9.3
+PORTVERSION=	1.10
 CATEGORIES=	x11-servers
 MASTER_SITES=	http://archive.hadrons.org/software/xfstt/
 
