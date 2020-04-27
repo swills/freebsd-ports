@@ -2,4 +2,5 @@ bin/install_compass
 bin/mongo
 bin/mongod
 bin/mongos
+etc/rc.d/mongod
 @sample etc/mongodb.conf.sample
