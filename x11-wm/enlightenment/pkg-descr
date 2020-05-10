@@ -1,4 +1,15 @@
-A very artistic X window manager.  Among other attributes,
-Enlightenment makes for quite impressive screen shots.
+Enlightenment is classed as a "desktop shell" as it provides everything you
+need to operate your desktop or laptop, but it is not a full application
+suite. This covers functionality including launching applications, managing
+their windows and performing system tasks like suspending, rebooting,
+managing files and so on.
+The Enlightenment Project is moving towards using Wayland as the base display
+system, while Enlightenment itself is to become a full Wayland compositor
+in its own right. This takes time, and there have been some bumps along the
+road, but the goal is that support for X11 will be eventually be discontinued.
+Enlightenment is built on top of the Enlightenment Foundation Libraries (EFL),
+using the libraries written for the user interface as well as those for the
+Compositor itself. This means that any improvements made to EFL are included
+in the Enlightenment Compositor.
 
 WWW: https://www.enlightenment.org/

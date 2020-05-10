@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	enlightenment
-PORTVERSION=	0.22.4
-PORTREVISION=	1
+PORTVERSION=	0.23.1
+PORTREVISION=	0
 PORTEPOCH=	2
 CATEGORIES=	x11-wm enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/apps/${PORTNAME}/
@@ -19,17 +19,17 @@ LIB_DEPENDS=	libefl.so:devel/efl \
 
 BROKEN_sparc64=		Does not install on sparc64: signal 10
 
-GNU_CONFIGURE=	yes
-USES=		alias autoreconf compiler:c11 desktop-file-utils gettext-tools \
-		gmake iconv libtool pathfix pkgconfig tar:xz xorg
+USES=		alias compiler:c11 desktop-file-utils gettext-tools \
+		iconv libtool meson pathfix pkgconfig tar:xz xorg
 USE_XORG=	xcb
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 SUB_FILES=	pkg-message
 
-CONFIGURE_ARGS=	--with-profile=MEDIUM_PC \
-		--disable-connman --disable-bluez4 \
-		--disable-device-udev --disable-mount-udisks
+MESON_ARGS=	-Dsystemd=false -Dbluez5=false -Dbluez4=false \
+		-Dmount-eeze=false -Deeze=false \
+		-Ddevice-udev=false -Dlibmount=false
+LDFLAGS+=	-L${LOCALBASE}/lib -lintl
 
 .include "Makefile.plist"
 
@@ -40,7 +40,6 @@ OPTIONS_DEFAULT=	ALSA
 OPTIONS_SUB=		yes
 
 NLS_USES=		gettext-runtime
-NLS_CONFIGURE_ENABLE=	nls
 
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
