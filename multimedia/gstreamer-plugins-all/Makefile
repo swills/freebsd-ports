@@ -26,8 +26,8 @@ DEF_PLUGINS:=	${_GSTREAMER_PLUGINS}
 .endif
 
 .for all in ${ALL_PLUGINS}
-${all:tu}_DESC=	${all} plugin
-${all:tu}_USE=	GSTREAMER=${all}
+${all:tu}_DESC!=	${MAKE} -C ../../${${all}_DEPENDS} -V COMMENT
+${all:tu}_USE=		GSTREAMER=${all}
 .endfor
 
 # Pull out i386-only plugins, add back conditionally
