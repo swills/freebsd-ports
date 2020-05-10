@@ -8,10 +8,16 @@
 #
 # weekly_certbot_enable (bool):	Set to "NO" by default
 # weekly_certbot_service (str):	If defined, certbot will try to
-#					shutdown this this service before
+#					shutdown this service before
 #					renewing the certificate, and restart
 #					it afterwards.  For example, set to
 #					"nginx" or "apache24"
+# weekly_certbot_restart_service (str):	If defined, certbot will try to
+#					restart this service after renewing the
+#					certificate.  For example, set to "nginx"
+# weekly_certbot_reload_service (str):	If defined, certbot will try to
+#					reload this service after renewing the
+#					certificate.  For example, set to "nginx"
 
 # If there is a global system configuration file, suck it in.
 #
@@ -28,12 +34,21 @@ case "$weekly_certbot_enable" in
 
 	PRE_HOOK=""
 	POST_HOOK=""
-	if [ -n "$weekly_certbot_service" ]
-	then
+	if [ -n "$weekly_certbot_service" ]; then
 	    if service "$weekly_certbot_service" onestatus
 	    then
 		PRE_HOOK="service $weekly_certbot_service onestop"
 		POST_HOOK="service $weekly_certbot_service onestart"
+	    fi
+	elif [ -n "$weekly_certbot_restart_service" ]; then
+	    if service "$weekly_certbot_restart_service" onestatus
+	    then
+		POST_HOOK="service $weekly_certbot_restart_service onerestart"
+	    fi
+	elif [ -n "$weekly_certbot_reload_service" ]; then
+	    if service "$weekly_certbot_reload_service" onestatus
+	    then
+		POST_HOOK="service $weekly_certbot_reload_service onereload"
 	    fi
 	fi
 
