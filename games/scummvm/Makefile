@@ -29,7 +29,6 @@ INSTALLS_ICONS=	yes
 CONFIGURE_ARGS=	--disable-alsa \
 		--disable-debug \
 		--disable-nasm \
-		--disable-tremor \
 		--enable-verbose-build \
 		--with-jpeg-prefix=${LOCALBASE} \
 		--with-sdl-prefix=${LOCALBASE} \
@@ -37,12 +36,29 @@ CONFIGURE_ARGS=	--disable-alsa \
 
 LDFLAGS+=	-lpthread
 
-OPTIONS_DEFINE=		DOCS FLAC FLUIDSYNTH MP3 MT32EMU PNG SNDIO VORBIS
-OPTIONS_DEFAULT=	MP3 MT32EMU PNG VORBIS
+OPTIONS_DEFINE=		CURL DOCS FLAC FLUIDSYNTH LIBA52 MP3 MT32EMU PNG SNDIO TREMOR VORBIS
+OPTIONS_DEFAULT=	LIBA52 MP3 MT32EMU PNG VORBIS
 OPTIONS_SUB=		yes
 
+LIBA52_DESC=	a52 audio codec support
 MT32EMU_DESC=	MT-32 emulator
 
+# curl
+CURL_LIB_DEPENDS=	libcurl.so:ftp/curl
+CURL_CONFIGURE_ON=	--with-libcurl-prefix=${LOCALBASE}
+CURL_CONFIGURE_OFF=	--disable-libcurl
+
+# liba52
+LIBA52_LIB_DEPENDS=	liba52.so:audio/liba52
+LIBA52_CONFIGURE_ON=	--with-a52-prefix=${LOCALBASE}
+LIBA52_CONFIGURE_OFF=	--disable-a52
+
+# tremor
+TREMOR_LIB_DEPENDS=	libvorbisidec.so:audio/libtremor
+TREMOR_CONFIGURE_ON=	--with-tremor-prefix=${LOCALBASE}
+TREMOR_CONFIGURE_OFF=	--disable-tremor
+
+# vorbis
 VORBIS_LIB_DEPENDS=	libogg.so:audio/libogg \
 			libvorbis.so:audio/libvorbis
 VORBIS_CONFIGURE_ON=	--with-ogg-prefix=${LOCALBASE} \
@@ -50,24 +66,30 @@ VORBIS_CONFIGURE_ON=	--with-ogg-prefix=${LOCALBASE} \
 VORBIS_CONFIGURE_OFF=	--disable-vorbis \
 			--disable-ogg
 
+# mp3
 MP3_LIB_DEPENDS=	libmad.so:audio/libmad
 MP3_CONFIGURE_ON=	--with-mad-prefix=${LOCALBASE}
 MP3_CONFIGURE_OFF=	--disable-mad
 
+# png
 PNG_LIB_DEPENDS=	libpng.so:graphics/png
 PNG_CONFIGURE_ON=	--with-png-prefix=${LOCALBASE}
 PNG_CONFIGURE_OFF=	--disable-png
 
+# flac
 FLAC_LIB_DEPENDS=	libFLAC.so:audio/flac
 FLAC_CONFIGURE_ON=	--with-flac-prefix=${LOCALBASE}
 FLAC_CONFIGURE_OFF=	--disable-flac
 
+# fluidsynth
 FLUIDSYNTH_LIB_DEPENDS=		libfluidsynth.so:audio/fluidsynth
 FLUIDSYNTH_CONFIGURE_ON=	--with-fluidsynth-prefix=${LOCALBASE}
 FLUIDSYNTH_CONFIGURE_OFF=	--disable-fluidsynth
 
+# mt32emu
 MT32EMU_CONFIGURE_OFF=	--disable-mt32emu
 
+# sndio
 SNDIO_LIB_DEPENDS=	libsndio.so:audio/sndio
 SNDIO_CONFIGURE_ON=	--with-sndio-prefix=${LOCALBASE}
 SNDIO_CONFIGURE_OFF=	--disable-sndio
