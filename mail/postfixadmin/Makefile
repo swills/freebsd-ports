@@ -2,10 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	postfixadmin
-PORTVERSION=	3.2
-PORTREVISION=	3
+PORTVERSION=	3.2.4
 CATEGORIES=	mail www
-MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports.maintainer@evilphi.com
 COMMENT=	PHP web-based management tool for Postfix virtual domains and users
@@ -26,6 +24,9 @@ CPE_PRODUCT=	postfix_admin
 
 NO_ARCH=	yes
 NO_BUILD=	yes
+
+USE_GITHUB=	yes
+GH_TAGNAME=	f770852
 
 SUB_FILES+=	pkg-message
 PLIST_SUB=	WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
