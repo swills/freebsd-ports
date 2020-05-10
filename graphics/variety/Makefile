@@ -2,14 +2,14 @@
 # $FreeBSD$
 
 PORTNAME=	variety
-PORTVERSION=	0.7.1
+PORTVERSION=	0.8.3
 CATEGORIES=	graphics
 
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Wallpaper changer
 
 LICENSE=	GPLv3
-LICENSE_FILE=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-distutils-extra>=2.38:devel/py-python-distutils-extra@${PY_FLAVOR}
 LIB_DEPENDS=	libgexiv2.so:graphics/gexiv2 \
@@ -30,7 +30,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.3.2:www/py-beautifulsoup@${
 
 USES=		desktop-file-utils gettext-tools gnome python:3.5+ shebangfix
 USE_GNOME=	gdkpixbuf2 gtk30 intltool pygobject3:run
-USE_PYTHON=	distutils noflavors
+USE_PYTHON=	autoplist distutils noflavors
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	varietywalls
