@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	phplist
-PORTVERSION=	3.5.1
+PORTVERSION=	3.5.3
 CATEGORIES=	mail www
 MASTER_SITES=	SF
 PKGNAMESUFFIX=	${PHP_PKGNAMESUFFIX}
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${PEARDIR}/HTTP/Request.php:www/pear-HTTP_Request@${PHP_FLAVOR}
 
-USES=		cpe tar:tgz gettext php:web,flavors
+USES=		cpe tar:tgz php:web,flavors
 USE_PHP=	curl gd hash iconv imap json mbstring mysqli pcre session xml zlib
 
 NO_BUILD=	yes
@@ -25,8 +25,11 @@ PEARDIR?=	${LOCALBASE}/share/pear
 
 PORTDOCS=	CONTRIBUTING.md COPYING INSTALL PEOPLE README.md TODO UPGRADE VERSION
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS NLS
 SUB_FILES=	phplist
+
+NLS_USES=	gettext
+NLS_USE=	PHP=gettext
 
 PLIST_SUB=	WWWOWN=${WWWOWN} \
 		WWWGRP=${WWWGRP}
