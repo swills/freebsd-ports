@@ -25,7 +25,15 @@ USES=	metaport
 .for comp in ${COMPONENTS}
 OPTIONS_DEFINE+=	${comp:C/:.*//:C/.*\///:tu}
 OPTIONS_DEFAULT+=	${comp:C/:.*//:C/.*\///:tu}
-${comp:C/:.*//:C/.*\///:tu}_DESC=	Install ${comp:C/:.*//:C/.*\///} application
+. if ${comp:M*\:*}==""
+port=${comp}
+. else
+port=${comp:C/:.*//}
+. endif
+. if ${port:M*/*}!=""
+port:=../${port}
+. endif
+${comp:C/:.*//:C/.*\///:tu}_DESC!=	${MAKE} -C ../${port} -V COMMENT
 .endfor
 
 .include <bsd.port.options.mk>
