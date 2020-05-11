@@ -2,11 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	gpac
-PORTVERSION=	0.5.0
-PORTREVISION=	2
 PORTEPOCH=	1
+DISTVERSION=	0.8.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	multimedia
-MASTER_SITES=	SF/${PORTNAME}/GPAC/GPAC%20${PORTVERSION}
 PKGNAMESUFFIX=	-libgpac
 
 MAINTAINER=	multimedia@FreeBSD.org
@@ -14,10 +13,16 @@ COMMENT=	Gpac MPEG-4 Systems library and headers
 
 LICENSE=	LGPL21
 
-WRKSRC=		${WRKDIR}/gpac
+BUILD_DEPENDS=  bash:shells/bash
+
 ALL_TARGET=	lib
 INSTALL_TARGET=	install-lib
-USES=		gmake dos2unix
+USES=		gmake dos2unix shebangfix
+SHEBANG_FILES=	check_revision.sh
+bash_OLD_CMD+=	/bin/sh
+USE_GITHUB=	yes
+GH_ACCOUNT=	gpac
+GH_PROJECT= gpac
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 DOS2UNIX_FILES=	src/utils/os_config_init.c
