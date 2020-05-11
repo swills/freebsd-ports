@@ -1,22 +1,24 @@
 # $FreeBSD$
 
 PORTNAME=	ccl
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 PORTREVISION=	1
 CATEGORIES=	lang lisp
-MASTER_SITES=	ftp://ftp.clozure.com/pub/release/${PORTVERSION}/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-freebsdx86
+
+USE_GITHUB=	nodefault
+GH_ACCOUNT=	Clozure
+GH_TAGNAME=	v${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX}:DEFAULT freebsdx86.tar.gz:bootstrap
+DIST_SUBDIR=	${PORTNAME}/v${PORTVERSION}
+MASTER_SITES+=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/v${PORTVERSION}/:bootstrap
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	olgeni@FreeBSD.org
 COMMENT=	Clozure CL is a free Common Lisp implementation
 
 LICENSE=	LGPL21
 
-WRKSRC=		${WRKDIR}/ccl
-
-BROKEN_FreeBSD_12=	SHF_MERGE section size must be a multiple of sh_entsize
-BROKEN_FreeBSD_13=	SHF_MERGE section size must be a multiple of sh_entsize
-ONLY_FOR_ARCHS=	i386 amd64
+ONLY_FOR_ARCHS=	amd64
 
 CCL_DIRECTORY=	${PREFIX}/lib/ccl
 CCL_PLIST=	${WRKDIR}/pkg-plist
@@ -42,8 +44,12 @@ EXCLUDE+=	fx86cl fx86cl.image
 SUB_LIST+=	FX86CL="${FX86CL}" CCL_DIRECTORY="${CCL_DIRECTORY}"
 SUB_FILES=	ccl.sh
 
+post-extract: .EXEC
+	@cd ${WRKSRC} && ${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${_DISTDIR}/freebsdx86.tar.gz
+
 post-patch:
 	@${SED}	-i '' -e 's|%%LOCALBASE%%|${LOCALBASE}|' ${WRKSRC}/tools/asdf.lisp
+	@${SED}	-i '' -e 's|%%TAG%%|v${PORTVERSION}|' ${WRKSRC}/lisp-kernel/freebsdx86*/Makefile
 	@${FIND} ${WRKSRC} -name .svn -or -name .cvsignore -or -name "*.orig" \
 		| ${XARGS} ${RM} -r
 
