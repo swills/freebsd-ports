@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	webhook
-PORTVERSION=	2.6.9
-PORTREVISION=	2
+PORTVERSION=	2.7.0
 CATEGORIES=	www
 
 MAINTAINER=	stb@lassitu.de
