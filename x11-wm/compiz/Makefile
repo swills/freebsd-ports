@@ -4,7 +4,7 @@ PORTNAME=	compiz
 PORTVERSION=	0.8.8
 PORTREVISION=	9
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://releases.compiz.org/${PORTVERSION}/
+MASTER_SITES=	https://BSDforge.com/projects/source/x11-wm/compiz/compiz-0.8.8.tar.bz2
 
 MAINTAINER=	freebsd-ports@dan.me.uk
 COMMENT=	Compiz Composite/Window Manager
