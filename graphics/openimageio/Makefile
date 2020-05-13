@@ -3,8 +3,8 @@
 
 PORTNAME=	openimageio
 DISTVERSIONPREFIX=	Release-
-DISTVERSION=	2.1.11.2
-PORTREVISION=	5
+DISTVERSION=	2.1.15.0
+PORTREVISION=	0
 CATEGORIES?=	graphics multimedia
 
 MAINTAINER?=	FreeBSD@Shaneware.biz
@@ -12,8 +12,10 @@ COMMENT?=	OpenImageIO graphics library
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${LOCALBASE}/include/tsl/robin_map.h:devel/robin-map
+BUILD_DEPENDS=	${LOCALBASE}/include/tsl/robin_map.h:devel/robin-map \
+		git:devel/git
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
+		libfmt.so:devel/libfmt \
 		libheif.so:graphics/libheif \
 		libImath.so:graphics/ilmbase \
 		libIlmImf.so:graphics/openexr \
@@ -111,7 +113,7 @@ CMAKE_ARGS+=	-DPYTHON_VERSION:STRING=${PYTHON_VER} \
 do-install:
 	${MKDIR} ${STAGEDIR}${PYTHON_SITELIBDIR}
 	${INSTALL_LIB} ${BUILD_WRKSRC}/lib/python/site-packages/OpenImageIO.so ${STAGEDIR}${PYTHON_SITELIBDIR}
-.else # SLAVE_PORT == no
+.else # SLAVE_PORT != yes
 USE_LDCONFIG=	yes
 CMAKE_OFF+=	USE_PYTHON
 
@@ -123,6 +125,6 @@ post-install:
 
 do-test-TEST-on:
 	@cd ${BUILD_WRKSRC} && ${MAKE_CMD} ARGS=-V test
-.endif
+.endif # SLAVE_PORT
 
 .include <bsd.port.mk>
