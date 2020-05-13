@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	bzflag
-PORTVERSION=	2.4.10
-PORTREVISION=	4
+PORTVERSION=	2.4.20
 CATEGORIES=	games
 MASTER_SITES=	https://download.bzflag.org/bzflag/source/${PORTVERSION}/
 
