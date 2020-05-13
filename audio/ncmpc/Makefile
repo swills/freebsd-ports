@@ -2,12 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	ncmpc
-PORTVERSION=	0.34
-PORTREVISION=	4
+PORTVERSION=	0.38
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.musicpd.org/download/ncmpc/0/
 
-MAINTAINER=	laurent@nuxi.ca
+MAINTAINER=	laurent@nilio.ca
 COMMENT=	Ncurses client for the musicpd
 
 LICENSE=	GPLv2+
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libboost_system.so:devel/boost-libs \
 		libmpdclient.so:audio/libmpdclient \
 		libpcre.so:devel/pcre
 
-USES=		compiler:c++14-lang iconv localbase:ldflags meson ncurses \
+USES=		compiler:c++17-lang iconv localbase:ldflags meson ncurses \
 		pkgconfig tar:xz
 
 OPTIONS_DEFINE=		COLORS DOCS LYRICS MANPAGES NLS
