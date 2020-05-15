@@ -1,12 +1,11 @@
---- lives-plugins/weed-plugins/Makefile.am.orig	2019-04-14 20:00:14 UTC
-+++ lives-plugins/weed-plugins/Makefile.am
-@@ -85,7 +85,8 @@ endif
+--- lives-plugins/weed-plugins/Makefile.am.orig	2020-05-15 18:41:00.714625000 +0200
++++ lives-plugins/weed-plugins/Makefile.am	2020-05-15 18:43:44.335839000 +0200
+@@ -81,7 +81,7 @@
  
  if HAVE_OPENCV
  farneback_analyser_libs = farneback_analyser.la
--farneback_analyser_la_LDFLAGS = $(AM_LDFLAGS) $(OPENCV_LIBS_ONLY_L) -lopencv_core -lopencv_video
-+farneback_analyser_la_LDFLAGS = $(AM_LDFLAGS) $(OPENCV_LIBS_ONLY_L) $(OPENCV_LIBS_ONLY_OTHER) -lopencv_core -lopencv_video
-+farneback_analyser_la_CXXFLAGS = $(OPENCV_CFLAGS)
+-farneback_analyser_la_LDFLAGS = $(AM_LDFLAGS) $(OPENCV_LIBS_ONLY_L) -lopencv_core -lopencv_video -lopencv_imgproc
++farneback_analyser_la_LDFLAGS = $(AM_LDFLAGS) $(OPENCV_LIBS_ONLY_L) $(OPENCV_LIBS_ONLY_OTHER) -lopencv_video -lopencv_imgproc
  farneback_analyser_la_CPPFLAGS = $(AM_CPPFLAGS)
  farneback_analyser_la_SOURCES = farneback_analyser.cpp
  

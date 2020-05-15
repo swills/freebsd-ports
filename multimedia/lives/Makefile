@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	lives
-PORTVERSION=	2.10.2
-PORTREVISION=	6
+PORTVERSION=	3.0.2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://lives-video.com/releases/
 DISTNAME=	LiVES-${PORTVERSION}
@@ -33,7 +32,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/analyseplugin:audio/ladspa \
 		mpg123:audio/mpg123 \
 		sox:audio/sox \
 		ogg123:audio/vorbis-tools \
-		convert:graphics/ImageMagick6 \
+		convert:graphics/ImageMagick7 \
 		sswf:graphics/sswf \
 		mencoder:multimedia/mencoder \
 		mplayer:multimedia/mplayer \
@@ -56,14 +55,14 @@ SHEBANG_FILES=	build-lives-rfx-plugin build-lives-rfx-plugin-multi \
 GNU_CONFIGURE=	yes
 USE_XORG=	x11 xrender
 USE_GL=		gl glu
-USE_SDL=	sdl
+USE_SDL=	sdl sdl2
 USE_GNOME=	cairo gdkpixbuf2 gtk30 intltool
 USE_LDCONFIG=	yes
 
 CONFIGURE_ARGS=	--disable-ldvgrab
 INSTALL_TARGET=	install-strip
 
-DOC_FILES=	AUTHORS BUGS ChangeLog FEATURES GETTING.STARTED README \
+DOC_FILES=	AUTHORS ChangeLog FEATURES GETTING.STARTED README \
 		OMC/lives-OMC.txt RFX/LiVES-Perl.odt RFX/rfxbuilder.odt \
 		RFX/RFX.spec docs/clip_format.txt \
 		lives-plugins/marcos-encoders/README.multi_encoder \
