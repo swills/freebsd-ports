@@ -13,6 +13,9 @@ COMMENT=	Django REST framework
 
 LICENSE=	BSD2CLAUSE
 
+DEPRECATED=	Not compatible with Django 2.0+
+EXPIRATION_DATE=	2020-06-01
+
 USES=		python
 USE_PYTHON=	distutils autoplist
 
