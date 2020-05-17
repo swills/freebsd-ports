@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	zathura-pdf-poppler
-PORTVERSION=	0.2.9
+PORTVERSION=	0.3.0
 PORTREVISION=	14
 CATEGORIES=	graphics
-MASTER_SITES=	https://pwmt.org/projects/zathura/plugins/download/ \
+MASTER_SITES=	https://pwmt.org/projects/zathura-pdf-poppler/download/ \
 		http://www.madpilot.net/~mad/pwmt.org/
 
 MAINTAINER=	ports@FreeBSD.org
@@ -14,7 +14,8 @@ COMMENT=	Poppler render PDF plugin for Zathura PDF viewer
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib
+LIB_DEPENDS=	libpoppler-glib.so:graphics/poppler-glib \
+							libgirara-gtk3.so:x11-toolkits/girara
 BUILD_DEPENDS=	zathura:graphics/zathura
 RUN_DEPENDS=	zathura:graphics/zathura
 
@@ -27,6 +28,8 @@ CONFLICTS=	zathura-pdf-mupdf-[0-9]*
 PLIST_FILES=	lib/zathura/libpdf-poppler.so \
 		share/appdata/org.pwmt.zathura-pdf-poppler.metainfo.xml \
 		share/applications/org.pwmt.zathura-pdf-poppler.desktop
+
+CONFLICTS_INSTALL=  zathura-pdf-poppler-[0-9]*
 
 pre-configure:
 	@${REINPLACE_CMD} "s:join_paths(datadir, 'metainfo'):join_paths(datadir, 'appdata'):" ${WRKSRC}/meson.build
