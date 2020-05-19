@@ -2,13 +2,13 @@
 # $FreeBSD$
 
 PORTNAME=	Capture-Tiny
-PORTVERSION=	0.46
+PORTVERSION=	0.48
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:DAGOLDEN
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	bill.brinzer@gmail.com
+MAINTAINER=	svysh.fbsd@gmail.com
 COMMENT=	Capture STDOUT and STDERR from Perl, XS, or external programs
 
 LICENSE=	APACHE20
