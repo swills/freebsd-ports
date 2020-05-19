@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	get_iplayer
-PORTVERSION=	3.24
+PORTVERSION=	3.25
 DISTVERSIONPREFIX=v
 CATEGORIES=	net multimedia
 
