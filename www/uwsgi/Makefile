@@ -34,10 +34,15 @@ OPTIONS_DEFINE=		DEBUG JSON PCRE XML SSL
 OPTIONS_DEFAULT=	SSL
 
 OPTIONS_GROUP=		PLG
-OPTIONS_GROUP_PLG=	PSGI
+OPTIONS_GROUP_PLG=	COROAE LOGPIPE PSGI
 
 PLG_DESC=		Enable plugins
+COROAE_DESC=		Enable Coro::AnyEvent support
+LOGPIPE_DESC=		pipe logger support
 PSGI_DESC=		PSGI embedded plugin
+
+COROAE_BUILD_DEPENDS=	p5-Coro>=0:devel/p5-Coro
+COROAE_IMPLIES=		PSGI
 
 DEBUG_VARS=		PYDISTUTILS_BUILDARGS+=--debug
 
@@ -61,6 +66,12 @@ post-patch:
 .for var in JSON PCRE XML SSL
 	@${REINPLACE_CMD} -e '/^${var:tl} =/ s|= .*|= ${BUILDCONF_${var}:Ufalse}|' ${WRKSRC}/buildconf/base.ini
 .endfor
+
+post-patch-COROAE-on:
+	@${REINPLACE_CMD} -e 's/%(main_plugin)s,/%(main_plugin)s, coroae,/' ${WRKSRC}/buildconf/base.ini
+
+post-patch-LOGPIPE-on:
+	@${REINPLACE_CMD} -e 's/%(main_plugin)s,/%(main_plugin)s, logpipe,/' ${WRKSRC}/buildconf/base.ini
 
 post-patch-PSGI-on:
 	@${REINPLACE_CMD} -e 's/%(main_plugin)s,/%(main_plugin)s, psgi,/' ${WRKSRC}/buildconf/base.ini
