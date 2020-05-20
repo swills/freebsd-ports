@@ -37,6 +37,7 @@ OPTIONS_SUB=	yes
 
 # disable sse on non-x86 archs
 .if ${ARCH} != amd64 && ${ARCH} != i386
+CFLAGS+=		-D__SIMD_NO_SIMD__
 EXTRA_PATCHES+=		${PATCHDIR}/extra-patch-CMakeLists.txt
 .endif
 
