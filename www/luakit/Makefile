@@ -47,6 +47,7 @@ post-extract:
 		${WRKSRC}/build-utils/gentokens.lua
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/luakit
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/luakit \
+	${STAGEDIR}${PREFIX}/lib/luakit/luakit.so
 
 .include <bsd.port.mk>
