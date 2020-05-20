@@ -32,7 +32,7 @@ LIB_DEPENDS=	libsqlite3.so:databases/sqlite3 \
 		libtiff.so:graphics/tiff \
 		libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		gmake iconv jpeg libedit libtool lua:51-52 perl5 \
+USES=		gmake iconv jpeg libedit libtool lua perl5 \
 		pkgconfig shebangfix ssl
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	freeswitch
@@ -48,7 +48,7 @@ CONFLICTS_BUILD=	xmlrpc-c-*
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=	--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig \
 		--enable-zrtp
-CFLAGS+=	-Wno-error
+CFLAGS+=	-Wno-error -I${LUA_INCDIR}
 
 USERS=		${PORTNAME}
 GROUPS=		${USERS}
