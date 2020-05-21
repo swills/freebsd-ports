@@ -1,0 +1,62 @@
+#!/bin/sh
+
+# $FreeBSD$
+#
+# PROVIDE: caddy
+# REQUIRE: LOGIN DAEMON NETWORKING
+# KEYWORD: shutdown
+#
+# Add the following lines to /etc/rc.conf.local or /etc/rc.conf
+# to enable this service:
+#
+# caddy_enable (bool):   Set to NO by default. Set it to YES to enable caddy.
+#
+# caddy_config (string): Optional full path for caddy config file
+#
+# caddy_flags (string):  Optional extra flafs for running caddy
+
+. /etc/rc.subr
+
+name=caddy
+rcvar=caddy_enable
+desc="Caddy 2 is a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go"
+
+load_rc_config $name
+
+#Defaults
+: ${caddy_enable:=NO}
+: ${caddy_config=%%PREFIX%%/etc/Caddyfile}
+: ${caddy_flags=""}
+
+# Command definitions
+start_cmd="${name}_start"
+stop_cmd="${name}_stop"
+extra_commands="validate reload"
+validate_cmd="caddy_validate"
+reload_cmd="caddy_reload"
+
+command="%%PREFIX%%/bin/${name}"
+command_args="${caddy_flags} -config ${caddy_config}"
+
+# Functions
+caddy_start()
+{
+	${command} start ${commands_args}
+}
+
+caddy_validate()
+{
+	${command} validate ${command_args}
+}
+
+caddy_reload()
+{
+	${command} reload ${command_args}
+}
+
+caddy_stop()
+{
+	${command} stop ${commands_args}
+}
+
+run_rc_command "$1"
