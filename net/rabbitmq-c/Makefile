@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	rabbitmq-c
-PORTVERSION=	0.8.0
+PORTVERSION=	0.10.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net
 
@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}simplejson>=2.0:devel/py-simplejson@${PY_F
 
 CONFLICTS=	rabbitmq-c-devel-[0-9]*
 
-USES=		cmake pathfix python tar:bzip2
+USES=		cmake pathfix python ssl tar:bzip2
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 GH_ACCOUNT=	alanxz
