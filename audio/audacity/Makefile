@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	audacity
-PORTVERSION=	2.3.3
-PORTREVISION=	2
+PORTVERSION=	2.4.1
 DISTVERSIONPREFIX=	Audacity-
 CATEGORIES=	audio
 
@@ -22,11 +21,10 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libsndfile.so:audio/libsndfile \
 		libsoxr.so:audio/libsoxr
 
-USES=		autoreconf compiler:c++11-lib cpe desktop-file-utils dos2unix \
-		gettext-tools gmake gnome iconv libtool localbase pkgconfig \
+USES=		autoreconf cmake compiler:c++14-lang cpe desktop-file-utils dos2unix \
+		gettext-tools gnome iconv libtool localbase pkgconfig \
 		shared-mime-info shebangfix
 
-GNU_CONFIGURE=		yes
 NLS_USES=		gettext-runtime
 NLS_CONFIGURE_ENABLE=	nls
 NLS_CONFIGURE_WITH=	libintl-prefix="${LOCALBASE}"
@@ -36,7 +34,7 @@ WX_COMPS=		wx
 INSTALLS_ICONS=		yes
 PORTDOCS=		README.txt
 DOS2UNIX_GLOB=		*.c* *.h Makefile.*
-SHEBANG_FILES=		lib-src/lv2/build
+SHEBANG_FILES=		lib-src/lv2/configure
 USE_GITHUB=		yes
 
 OPTIONS_DEFINE=		DEBUG DOCS DYNLOAD FFMPEG FLAC ID3TAG LADSPA LAME LV2 \
@@ -110,15 +108,18 @@ LAME_LIB_DEPENDS=	libmp3lame.so:audio/lame
 
 LV2_CONFIGURE_WITH=	lv2=system
 LV2_LIB_DEPENDS=	liblilv-0.so:audio/lilv \
+			libserd-0.so:devel/serd \
+			libsord-0.so:devel/sord \
+			libsratom-0.so:audio/sratom \
 			libsuil-0.so:audio/suil
 
 MAD_CONFIGURE_WITH=	libmad=system
 MAD_LIB_DEPENDS=	libmad.so:audio/libmad
 
 MOD_SCRIPT_PIPE_CONFIGURE_WITH=	mod-script-pipe
-MOD_SCRIPT_PIPE_USES=		python:3.6+
+MOD_SCRIPT_PIPE_USES=		python:3.7+
 MOD_NYQ_BENCH_CONFIGURE_WITH=	mod-nyq-bench
-MOD_NYQ_BENCH_USES=		python:3.6+
+MOD_NYQ_BENCH_USES=		python:3.7+
 
 SBSMS_CONFIGURE_WITH=	sbsms
 
