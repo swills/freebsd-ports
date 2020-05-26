@@ -42,11 +42,9 @@ LICENSE_PERMS=		dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 .if defined(CLIENT_ONLY)
 .if ${CLIENT_ONLY} == sasl
-CONFLICTS=		${PKGNAMEPREFIX}${PORTNAME}-client-2.* \
-			${PKGNAMEPREFIX}${PORTNAME}-sasl-client-2.[0-3].*
+CONFLICTS=		${PORTNAME}-client-2.*
 .else
-CONFLICTS=		${PKGNAMEPREFIX}${PORTNAME}-client-2.[0-3].* \
-			${PKGNAMEPREFIX}${PORTNAME}-sasl-client-2.*
+CONFLICTS=		${PORTNAME}-sasl-client-2.*
 .endif
 .endif
 
@@ -65,7 +63,7 @@ WANT_OPENLDAP_VER?=	24
 BROKEN=			incompatible OpenLDAP version: ${WANT_OPENLDAP_VER}
 .endif
 
-PORTREVISION_CLIENT=	0
+PORTREVISION_CLIENT=	1
 PORTREVISION_SERVER=	0
 OPENLDAP_SHLIB_MAJOR=	2
 OPENLDAP_SHLIB_MINOR=	10.13
@@ -157,9 +155,11 @@ PORTDOCS=		CHANGES drafts rfc
 .if ${CLIENT_ONLY} == sasl
 PORT_OPTIONS+=	SASL
 .endif
+
 .if defined(USE_OPENLDAP)
 BROKEN=			you have USE_OPENLDAP variable defined either in environment or in make(1) arguments; please undefine and try again
 .endif
+
 .else
 USE_OPENLDAP=		yes
 WANT_OPENLDAP_VER=	24
@@ -172,13 +172,12 @@ PORT_OPTIONS+=	SASL
 
 .if ${PORT_OPTIONS:MSASL}
 WANT_OPENLDAP_SASL=	yes
-CONFLICTS=		${PKGNAMEPREFIX}${PORTNAME}-client-2.*
-PKGNAMESUFFIX=		-sasl-server
+CONFLICTS=		${PORTNAME}-client-2.*
 .if ${PORT_OPTIONS:MGSSAPI}
 RUN_DEPENDS+=		cyrus-sasl-gssapi>0:security/cyrus-sasl2-gssapi
 .endif
 .else
-CONFLICTS=		${PKGNAMEPREFIX}${PORTNAME}-sasl-client-2.*
+CONFLICTS=		${PORTNAME}-sasl-client-2.*
 .endif
 
 .endif
