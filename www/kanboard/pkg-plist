@@ -483,6 +483,8 @@
 %%WWWDIR%%/app/Locale/de_DE/translations.php
 %%WWWDIR%%/app/Locale/el_GR/translations.php
 %%WWWDIR%%/app/Locale/es_ES/translations.php
+%%WWWDIR%%/app/Locale/es_VE/translations.php
+%%WWWDIR%%/app/Locale/fa_IR/translations.php
 %%WWWDIR%%/app/Locale/fi_FI/translations.php
 %%WWWDIR%%/app/Locale/fr_FR/translations.php
 %%WWWDIR%%/app/Locale/hr_HR/translations.php
@@ -850,6 +852,7 @@
 %%WWWDIR%%/app/Template/project_tag/create.php
 %%WWWDIR%%/app/Template/project_tag/edit.php
 %%WWWDIR%%/app/Template/project_tag/index.php
+%%WWWDIR%%/app/Template/project_tag/make_global.php
 %%WWWDIR%%/app/Template/project_tag/remove.php
 %%WWWDIR%%/app/Template/project_user_overview/layout.php
 %%WWWDIR%%/app/Template/project_user_overview/roles.php
@@ -1569,11 +1572,9 @@
 %%WWWDIR%%/libs/picodb/phpunit.xml
 %%WWWDIR%%/robots.txt
 %%WWWDIR%%/vendor/autoload.php
-%%WWWDIR%%/vendor/christian-riesen/base32/.scrutinizer.yml
 %%WWWDIR%%/vendor/christian-riesen/base32/LICENSE
-%%WWWDIR%%/vendor/christian-riesen/base32/build.xml
-%%WWWDIR%%/vendor/christian-riesen/base32/phpunit.xml.dist
 %%WWWDIR%%/vendor/christian-riesen/base32/src/Base32.php
+%%WWWDIR%%/vendor/christian-riesen/otp/.travis.yml
 %%WWWDIR%%/vendor/christian-riesen/otp/LICENSE
 %%WWWDIR%%/vendor/christian-riesen/otp/example/index.php
 %%WWWDIR%%/vendor/christian-riesen/otp/phpunit.xml.dist
@@ -1591,6 +1592,7 @@
 %%WWWDIR%%/vendor/composer/installed.json
 %%WWWDIR%%/vendor/eluceo/ical/.php_cs
 %%WWWDIR%%/vendor/eluceo/ical/.scrutinizer.yml
+%%WWWDIR%%/vendor/eluceo/ical/.travis.yml
 %%WWWDIR%%/vendor/eluceo/ical/CHANGELOG.md
 %%WWWDIR%%/vendor/eluceo/ical/LICENSE
 %%WWWDIR%%/vendor/eluceo/ical/UPGRADE.md
@@ -1626,6 +1628,7 @@
 %%WWWDIR%%/vendor/eluceo/ical/src/Eluceo/iCal/Util/PropertyValueUtil.php
 %%WWWDIR%%/vendor/erusev/parsedown/LICENSE.txt
 %%WWWDIR%%/vendor/erusev/parsedown/Parsedown.php
+%%WWWDIR%%/vendor/gregwar/captcha/.travis.yml
 %%WWWDIR%%/vendor/gregwar/captcha/LICENSE
 %%WWWDIR%%/vendor/gregwar/captcha/demo/demo.php
 %%WWWDIR%%/vendor/gregwar/captcha/demo/fingerprint.php
@@ -1661,6 +1664,7 @@
 %%WWWDIR%%/vendor/paragonie/random_compat/other/build_phar.php
 %%WWWDIR%%/vendor/paragonie/random_compat/psalm-autoload.php
 %%WWWDIR%%/vendor/paragonie/random_compat/psalm.xml
+%%WWWDIR%%/vendor/pimple/pimple/.travis.yml
 %%WWWDIR%%/vendor/pimple/pimple/CHANGELOG
 %%WWWDIR%%/vendor/pimple/pimple/LICENSE
 %%WWWDIR%%/vendor/pimple/pimple/README.rst
@@ -1702,7 +1706,9 @@
 %%WWWDIR%%/vendor/psr/log/Psr/Log/LoggerTrait.php
 %%WWWDIR%%/vendor/psr/log/Psr/Log/NullLogger.php
 %%WWWDIR%%/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php
+%%WWWDIR%%/vendor/psr/log/Psr/Log/Test/TestLogger.php
 %%WWWDIR%%/vendor/swiftmailer/swiftmailer/.php_cs.dist
+%%WWWDIR%%/vendor/swiftmailer/swiftmailer/.travis.yml
 %%WWWDIR%%/vendor/swiftmailer/swiftmailer/CHANGES
 %%WWWDIR%%/vendor/swiftmailer/swiftmailer/LICENSE
 %%WWWDIR%%/vendor/swiftmailer/swiftmailer/README
@@ -2341,6 +2347,7 @@
 %%WWWDIR%%/vendor/symfony/polyfill-mbstring/LICENSE
 %%WWWDIR%%/vendor/symfony/polyfill-mbstring/Mbstring.php
 %%WWWDIR%%/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php
+%%WWWDIR%%/vendor/symfony/polyfill-mbstring/Resources/unidata/titleCaseRegexp.php
 %%WWWDIR%%/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php
 %%WWWDIR%%/vendor/symfony/polyfill-mbstring/bootstrap.php
 %%WWWDIR%%/web.config
