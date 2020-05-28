@@ -1,13 +1,15 @@
 # $FreeBSD$
 
 PORTNAME=	libretro-uae
-PORTVERSION=	0.20200504
+PORTVERSION=	0.20200527
 CATEGORIES=	games
 
 MAINTAINER=	menelkir@itroll.org
 COMMENT=	Libretro port of UAE
 
 LICENSE=	GPLv2
+
+ONLY_FOR_ARCHS= aarch64 amd64 arm armv6 armv7
 
 USES=		compiler:c++11-lib gmake gl
 USE_LDCONFIG=	yes
@@ -25,5 +27,5 @@ post-patch:
 do-install:
 	${MKDIR} ${STAGEDIR}/${PREFIX}/lib/libretro;
 	${INSTALL_LIB} ${WRKSRC}/puae_libretro.so ${STAGEDIR}/${PREFIX}/lib/libretro;
-	
+
 .include <bsd.port.mk>
