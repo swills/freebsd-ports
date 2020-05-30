@@ -1,6 +1,6 @@
 Index: src/CMakeLists.txt
 ===================================================================
---- src/CMakeLists.txt.orig
+--- src/CMakeLists.txt.orig	2019-11-28 17:15:13 UTC
 +++ src/CMakeLists.txt
 @@ -126,6 +126,7 @@ if (WIN32 OR CYGWIN)
  endif (WIN32 OR CYGWIN)

@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mosquitto
-PORTVERSION=	1.6.7
+PORTVERSION=	1.6.8
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
 
@@ -23,7 +23,7 @@ USERS=		nobody
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-OPTIONS_DEFINE=	CARES WS
+OPTIONS_DEFINE=	CARES WS NETDATA
 OPTIONS_DEFAULT=	CARES
 
 CARES_LIB_DEPENDS=	libcares.so:dns/c-ares
@@ -32,6 +32,9 @@ CARES_CMAKE_ON=	-DWITH_SRV:BOOL=ON
 WS_DESC=	MQTT over Websockets support
 WS_LIB_DEPENDS=	libwebsockets.so:net/libwebsockets
 WS_CMAKE_ON=	-DWITH_WEBSOCKETS:BOOL=ON
+
+NETDATA_DESC=	Apply netdata compatibility patches
+NETDATA_EXTRA_PATCHES=	${FILESDIR}/extra-patch-netdata
 
 post-patch:
 	@${REINPLACE_CMD} -e '/ldconfig/d' ${WRKSRC}/src/CMakeLists.txt \

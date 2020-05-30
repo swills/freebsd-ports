@@ -1,0 +1,96 @@
+--- lib/mosquitto.c
++++ lib/mosquitto.c
+@@ -75,6 +75,14 @@ int mosquitto_lib_cleanup(void)
+ 	return MOSQ_ERR_SUCCESS;
+ }
+ 
++int mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count))
++{
++	if(mosq) {
++		mosq->external_read_fnc = external_read_fnc;
++		mosq->external_write_fnc = external_write_fnc;
++	}
++}
++
+ struct mosquitto *mosquitto_new(const char *id, bool clean_start, void *userdata)
+ {
+ 	struct mosquitto *mosq = NULL;
+--- lib/mosquitto.h
++++ lib/mosquitto.h
+@@ -222,6 +222,7 @@ libmosq_EXPORT int mosquitto_lib_init(void);
+  */
+ libmosq_EXPORT int mosquitto_lib_cleanup(void);
+ 
++libmosq_EXPORT int mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count));
+ 
+ /* ======================================================================
+  *
+--- lib/mosquitto_internal.h
++++ lib/mosquitto_internal.h
+@@ -346,6 +346,8 @@ struct mosquitto {
+ #ifdef WITH_EPOLL
+ 	uint32_t events;
+ #endif
++	size_t (*external_read_fnc)(void *buf, size_t count);
++	size_t (*external_write_fnc)(void *buf, size_t count);
+ };
+ 
+ #define STREMPTY(str) (str[0] == '\0')
+--- lib/net_mosq.c
++++ lib/net_mosq.c
+@@ -824,6 +824,11 @@ int net__socket_connect_step3(struct mosquitto *mosq, const char *host)
+ /* Create a socket and connect it to 'ip' on port 'port'.  */
+ int net__socket_connect(struct mosquitto *mosq, const char *host, uint16_t port, const char *bind_address, bool blocking)
+ {
++	if(mosq->external_write_fnc) {
++		mosq->sock = 777;
++		return MOSQ_ERR_SUCCESS;
++	}
++
+ 	mosq_sock_t sock = INVALID_SOCKET;
+ 	int rc, rc2;
+ 
+@@ -853,6 +858,10 @@ ssize_t net__read(struct mosquitto *mosq, void *buf, size_t count)
+ 	int err;
+ #endif
+ 	assert(mosq);
++
++	if(mosq->external_read_fnc)
++		return mosq->external_read_fnc(buf, count);
++
+ 	errno = 0;
+ #ifdef WITH_TLS
+ 	if(mosq->ssl){
+@@ -900,6 +909,9 @@ ssize_t net__write(struct mosquitto *mosq, void *buf, size_t count)
+ #endif
+ 	assert(mosq);
+ 
++	if(mosq->external_write_fnc)
++		return mosq->external_write_fnc(buf, count);
++
+ 	errno = 0;
+ #ifdef WITH_TLS
+ 	if(mosq->ssl){
+
+--- lib/mosquitto.c
++++ lib/mosquitto.c
+@@ -75,7 +75,7 @@ int mosquitto_lib_cleanup(void)
+ 	return MOSQ_ERR_SUCCESS;
+ }
+ 
+-int mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count))
++void mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count))
+ {
+ 	if(mosq) {
+ 		mosq->external_read_fnc = external_read_fnc;
+--- lib/mosquitto.h
++++ lib/mosquitto.h
+@@ -222,7 +222,7 @@ libmosq_EXPORT int mosquitto_lib_init(void);
+  */
+ libmosq_EXPORT int mosquitto_lib_cleanup(void);
+ 
+-libmosq_EXPORT int mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count));
++libmosq_EXPORT void mosquitto_external_callbacks_set(struct mosquitto *mosq, size_t (*external_write_fnc)(void *buf, size_t count), size_t (*external_read_fnc)(void *buf, size_t count));
+ 
+ /* ======================================================================
+  *
