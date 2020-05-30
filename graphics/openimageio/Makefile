@@ -15,29 +15,26 @@ LICENSE=	BSD3CLAUSE
 BUILD_DEPENDS=	${LOCALBASE}/include/tsl/robin_map.h:devel/robin-map
 LIB_DEPENDS=	libboost_thread.so:devel/boost-libs \
 		libfmt.so:devel/libfmt \
+		libhdf5.so:science/hdf5 \
 		libheif.so:graphics/libheif \
 		libImath.so:graphics/ilmbase \
 		libIlmImf.so:graphics/openexr \
 		libpng.so:graphics/png \
 		libsquish.so:graphics/squish \
 		libtiff.so:graphics/tiff \
-		libwebp.so:graphics/webp \
-		libhdf5.so:science/hdf5
+		libwebp.so:graphics/webp
 
 USES=		cmake jpeg compiler:c++11-lib iconv:wchar_t
 USE_GITHUB=	yes
 GH_ACCOUNT=	OpenImageIO
 GH_PROJECT=	oiio
 
-# fbm also installs bin/idiff
-CONFLICTS=	fbm-[0-9]*
-
 CMAKE_OFF=	BUILDSTATIC INSTALL_FONTS LINKSTATIC NOTHREADS \
 		STOP_ON_WARNING USE_OPENSSL
 
 OPTIONS_DEFINE=		DICOM DOCS FFMPEG FREETYPE GIF IMAGEVIEWER OCIO \
-			OPENCV OPENJPEG RAW TBB TEST TOOLS VDB
-OPTIONS_DEFAULT=	DICOM FREETYPE GIF OCIO OPENJPEG TOOLS
+			OPENCV OPENJPEG PTEX RAW TBB TEST TOOLS VDB
+OPTIONS_DEFAULT=	DICOM FREETYPE GIF OCIO OPENJPEG PTEX TOOLS
 OPTIONS_SUB=		yes
 
 DOCS_CMAKE_BOOL=	INSTALL_DOCS
@@ -76,6 +73,9 @@ OPENCV_LIB_DEPENDS=	libopencv_highgui.so:graphics/opencv \
 
 OPENJPEG_CMAKE_BOOL=	USE_OPENJPEG
 OPENJPEG_LIB_DEPENDS=	libopenjp2.so:graphics/openjpeg
+
+PTEX_DESC=		ptex support
+PTEX_LIB_DEPENDS=	libPtex.so:graphics/ptex
 
 RAW_CMAKE_BOOL=		USE_LIBRAW
 RAW_LIB_DEPENDS=	libraw_r.so:graphics/libraw
