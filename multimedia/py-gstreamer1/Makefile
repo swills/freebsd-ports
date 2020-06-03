@@ -9,6 +9,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 PKGNAMESUFFIX=	1
 DISTNAME=	gst-python-${PORTVERSION}
 
+PATCH_SITES=	https://gitlab.freedesktop.org/${PORTNAME}/gst-python/commit/
+PATCHFILES+=	22f28155.diff:-p1 # https://gitlab.freedesktop.org/gstreamer/gst-python/merge_requests/30
+
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT=	GStreamer python bindings
 
@@ -17,12 +20,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 PORTSCOUT=	limitw:1,even
 
-USES=		gmake gnome libtool localbase pathfix pkgconfig python tar:xz
+USES=		gnome meson pkgconfig python tar:xz
 USE_GNOME=	pygobject3
 USE_PYTHON=	flavors py3kplist
 USE_GSTREAMER1=	yes
-GNU_CONFIGURE=	yes
 PLIST_SUB=	VERSION="${GST_VERSION}"
-INSTALL_TARGET=	install-strip
+BINARY_ALIAS=	python3=${PYTHON_VERSION}
 
 .include <bsd.port.mk>
