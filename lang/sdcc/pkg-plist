@@ -140,9 +140,6 @@ bin/sdranlib
 %%MCS51%%%%DATADIR%%/include/mcs51/uPSD32xx.h
 %%MCS51%%%%DATADIR%%/include/mcs51/uPSD33xx.h
 %%MCS51%%%%DATADIR%%/include/mcs51/w7100.h
-%%PIC%%%%DATADIR%%/include/pic14/errno.h
-%%PIC%%%%DATADIR%%/include/pic14/float.h
-%%PIC%%%%DATADIR%%/include/pic14/limits.h
 %%PIC%%%%DATADIR%%/include/pic14/math.h
 %%PIC%%%%DATADIR%%/include/pic14/p16f_common.inc
 %%PIC%%%%DATADIR%%/include/pic14/pic14devices.txt

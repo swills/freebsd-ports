@@ -1,9 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	sdcc
-PORTVERSION=	3.9.0
+PORTVERSION=	4.0.0
 DISTVERSIONPREFIX=src-
-PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	SF
 
@@ -15,14 +14,12 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_GPLv3=	${WRKSRC}/sdas/COPYING3
 
-BROKEN_aarch64=		Fails to configure: BFD does not support target aarch64-portbld-freebsd11.0
-
 BUILD_DEPENDS=	${LOCALBASE}/include/boost/graph/adjacency_list.hpp:devel/boost-libs
 
 CONFLICTS_INSTALL=	sdcc-[0-9]* sdcc-devel-[0-9]*
 GNU_CONFIGURE=	yes
-USES=		bison compiler:c++11-lang gmake readline:port python shebangfix \
-		tar:bzip2
+USES=		autoreconf:build bison compiler:c++11-lang gmake libtool:build \
+		readline:port python shebangfix tar:bzip2
 SHEBANG_FILES=	support/scripts/as2gbmap.py
 
 OPTIONS_DEFINE=		SDCCLIB DEVLIB DOCS UCSIM
@@ -97,11 +94,6 @@ post-patch:
 		${WRKSRC}/device/non-free/lib/pic16/Makefile.in \
 		${WRKSRC}/device/non-free/lib/pic16/configure \
 		${WRKSRC}/device/non-free/lib/pic16/libdev/Makefile.in
-# Upstream forgot to run some autotools in this release so make tries to run
-# them.  Change a timestamp so aclocal.m4 and Makefile.in no longer appear
-# out-of-date.
-	@${TOUCH} -r ${WRKSRC}/device/non-free/lib/pic16/configure.ac \
-		${WRKSRC}/device/non-free/lib/pic16/supported-devices.ac
 
 post-patch-DOCS-off:
 	@${REINPLACE_CMD} 's, [a-z-]*doc,,' \
