@@ -2,14 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	x265
-PORTVERSION=	3.2.1
-PORTREVISION=	2
+PORTVERSION=	3.4
 CATEGORIES=	multimedia
-MASTER_SITES=	https://bitbucket.org/multicoreware/x265/downloads/ \
-		https://downloads.videolan.org/pub/videolan/x265/ \
-		https://mirror.leaseweb.com/videolan/x265/ \
-		http://downloads.videolan.org/pub/videolan/x265/ \
-		http://mirror.leaseweb.com/videolan/x265/
+MASTER_SITES=	https://bitbucket.org/multicoreware/x265/downloads/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	mi@aldan.algebra.com
@@ -18,15 +13,14 @@ COMMENT=	H.265/High Efficiency Video Coding (HEVC) format
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC:H}/COPYING
 
-BUILD_DEPENDS=	${BUILD_DEPENDS_${ARCH}}
-BUILD_DEPENDS_amd64=	nasm:devel/nasm
-BUILD_DEPENDS_i386=	nasm:devel/nasm
-
 USES=		cmake compiler:c++14-lang pathfix
 
 OPTIONS_DEFINE=		DEBUG OPTIMIZED_FLAGS VMAF
 OPTIONS_DEFAULT=	OPTIMIZED_FLAGS HI8P HI10P HI12P
-OPTIONS_DEFINE_amd64=	SVTHEVC
+OPTIONS_DEFINE_aarch64=	ASM
+OPTIONS_DEFINE_amd64=	ASM SVTHEVC
+OPTIONS_DEFINE_i386=	ASM
+OPTIONS_DEFAULT_amd64=	ASM
 
 OPTIONS_MULTI=		PixelWidth
 OPTIONS_MULTI_PixelWidth=HI8P HI10P HI12P
@@ -44,14 +38,13 @@ VMAF_USES=		localbase:ldflags
 VMAF_CMAKE_BOOL=	ENABLE_LIBVMAF
 
 DEBUG_DESC=	Enable debugging
-HI8P_DESC=	Enable 8-bit pixel-width (you, probably, want this)
+HI8P_DESC=	Enable 8-bit pixel-width (you probably want this)
 HI10P_DESC=	Enable 10-bit pixels (may break on i386)
 HI12P_DESC=	Enable 12-bit pixels (may break on i386)
 OPTIMIZED_FLAGS_DESC=	Enable O3 optimization
 SVTHEVC_DESC=	HEVC encoding via SVT-HEVC
 VMAF_DESC=	Per frame and aggregate VMAF score
 
-OPTIONS_SUB=	yes
 USE_LDCONFIG=	yes
 CMAKE_ARGS=	-DENABLE_TESTS=on -DENABLE_HDR10_PLUS:BOOL=true
 LDFLAGS_i386=	-Wl,-znotext
@@ -61,6 +54,17 @@ WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION}/source
 
 .include <bsd.port.options.mk>
 
+.if ${ARCH} == aarch64 && ${PORT_OPTIONS:MASM}
+BUILD_DEPENDS=	as:devel/binutils
+USE_GCC=	yes
+ASM_PREVENTS=	HI10P HI12P
+ASM_PREVENTS_MSG=	Currently HI10P and HI12P doesn't build with assembly
+.endif
+
+.if ${ARCH} != aarch64 && ${PORT_OPTIONS:MASM}
+BUILD_DEPENDS=	nasm:devel/nasm
+.endif
+
 DEFAULT_DEPTH=	${PORT_OPTIONS:MHI*P:O:ts/:T}
 OTHER_DEPTHS=	${PORT_OPTIONS:MHI*P:N${DEFAULT_DEPTH}}
 
@@ -69,7 +73,7 @@ CMAKE_ARGS+=	-DMAIN12:BOOL=true
 .endif
 
 .if "${DEFAULT_DEPTH}" != "HI8P"
-CMAKE_ARGS+=   -DHIGH_BIT_DEPTH:BOOL=true
+CMAKE_ARGS+=	-DHIGH_BIT_DEPTH:BOOL=true
 .endif
 
 CMAKE_OTHER_ARGS=${CMAKE_ARGS:C/.*-D_END_CUSTOM_OPTIONS=1 +//W}
@@ -81,7 +85,7 @@ CFLAGS:=	${CFLAGS:N-O*} -O0 -g
 .for b in ${OTHER_DEPTHS:C/HI([0-9]+)P/\1/}
 EXTRA_LINK_FLAGS+=-L${WRKSRC:H}/$bbit
 
-.if ${ARCH} == i386 && $b != 8 || ! ${BUILD_DEPENDS:Mnasm*}
+.if ${ARCH} == i386 && $b != 8 || ! ${PORT_OPTIONS:MASM}
 ASSEMBLY=false
 .else
 ASSEMBLY=true
@@ -107,10 +111,11 @@ CMAKE_ARGS+=	${OTHER_DEPTHS:C/HI([0-9]+)P/-DLINKED_\1BIT:BOOL=true/}
 
 CMAKE_ARGS+=	-DENABLE_SHARED:BOOL=true
 
-.if ${ARCH} == i386 && ${DEFAULT_DEPTH} != "HI8P" || ! ${BUILD_DEPENDS:Mnasm*}
+.if ${ARCH} == i386 && ${DEFAULT_DEPTH} != "HI8P" || ! ${PORT_OPTIONS:MASM}
 CMAKE_ARGS+=	-DENABLE_ASSEMBLY:BOOL=false
 .else
 CMAKE_ARGS+=	-DENABLE_ASSEMBLY:BOOL=true
+
 do-test:
 	${WRKDIR}/.build/test/TestBench
 .endif
