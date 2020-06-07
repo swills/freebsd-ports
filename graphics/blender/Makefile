@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	blender
-DISTVERSION=	2.82
-PORTREVISION=	5
+DISTVERSION=	2.83.0
+PORTREVISION=	0
 CATEGORIES=	graphics multimedia
 MASTER_SITES=	http://download.blender.org/source/ \
 		http://mirror.cs.umn.edu/blender.org/source/ \
@@ -48,7 +48,7 @@ LDFLAGS+=	-fuse-ld=lld
 .endif
 
 # version without trailing update letters
-VERDIR=		${DISTVERSION:C/[abcdef]//g}
+VERDIR=		${DISTVERSION:C/[abcdef]//g:R}
 PLIST_SUB+=	VER=${VERDIR}
 LLVM_VER=	90
 OPTIONS_SUB=	yes
@@ -159,6 +159,12 @@ XF86VMODE_USE=			XORG=xi,xxf86vm
 
 .if defined(WITH_DEBUG)
 CMAKE_ARGS+=		-DWITH_GHOST_DEBUG:BOOL=ON
+.endif
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MCYCLESOSL}
+BROKEN=			does not compile: /usr/ports/graphics/blender/work/blender-2.83.0/intern/cycles/kernel/shaders/stdcycles.h:31:10: fatal error: 'stdosl.h' file not found
 .endif
 
 post-patch-OPENCOLORIO-on:
