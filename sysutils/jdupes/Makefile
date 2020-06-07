@@ -3,7 +3,7 @@
 
 PORTNAME=	jdupes
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.12
+DISTVERSION=	1.16.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	tom@hur.st
@@ -12,10 +12,10 @@ COMMENT=	Powerful duplicate file finder and an enhanced fork of 'fdupes'
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+USES=	gmake
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	jbruchon
-
-USES=	gmake
 
 PLIST_FILES=	bin/jdupes man/man1/jdupes.1.gz
 
