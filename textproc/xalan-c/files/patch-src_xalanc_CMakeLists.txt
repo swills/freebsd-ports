@@ -1,0 +1,14 @@
+index eee478e03..a5d9131c4 100644
+--- src/xalanc/CMakeLists.txt.orig
++++ src/xalanc/CMakeLists.txt
+@@ -832,6 +832,7 @@ set(xalantransformer_sources
+   XalanTransformer/XercesDOMWrapperParsedSource.cpp)
+ 
+ set(xalantransformer_headers
++  XalanTransformer/XalanCAPI.h
+   XalanTransformer/XalanCompiledStylesheetDefault.hpp
+   XalanTransformer/XalanCompiledStylesheet.hpp
+   XalanTransformer/XalanDefaultDocumentBuilder.hpp
+-- 
+2.26.2
+
