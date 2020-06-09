@@ -1,5 +1,26 @@
 # $FreeBSD$
 
+PORTNAME=	rubocop-ast
+PORTVERSION=	0.0.3
+CATEGORIES=	devel ruby
+MASTER_SITES=	RG
+
+MAINTAINER=	ruby@FreeBSD.org
+COMMENT=	RuboCop's Node and NodePattern classes
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+RUN_DEPENDS=	rubygem-parser>=2.7.0<3:devel/rubygem-parser
+
+USES=		gem
+USE_RUBY=	yes
+
+NO_ARCH=	yes
+
+.include <bsd.port.mk>
+# $FreeBSD$
+
 PORTNAME=	rubocop
 PORTVERSION=	0.61.1
 PORTREVISION=	1

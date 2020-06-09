@@ -1,3 +1,8 @@
+Contains the classes needed by RuboCop to deal with Ruby's AST, in particular:
+* RuboCop::AST::Node
+* RuboCop::AST::NodePattern
+
+WWW: https://www.rubocop.org/
 RuboCop is a Ruby static code analyzer. Out of the box it will enforce many of
 the guidelines outlined in the community Ruby Style Guide, but most aspects of
 its behavior can be tweaked via various configuration options.
