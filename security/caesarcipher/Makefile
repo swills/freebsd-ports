@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	caesarcipher
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.olivermahmoudi.com/files/
 
@@ -12,7 +12,7 @@ LICENSE=	BSD2CLAUSE
 
 PLIST_FILES=	bin/caesarcipher \
 		man/man1/caesarcipher.1.gz
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 do-build:
 	cd ${WRKSRC} && ${CC} ${CFLAGS} ${LDFLAGS} -o ${PORTNAME} ${PORTNAME}.c
