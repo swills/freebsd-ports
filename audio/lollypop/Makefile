@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	lollypop
-DISTVERSION=	1.0.12
+DISTVERSION=	1.3.1
 CATEGORIES=	audio
 
 MAINTAINER=	greg@unrelenting.technology
@@ -26,14 +26,14 @@ USES=		python:3.5+ pkgconfig gnome gettext meson shebangfix sqlite desktop-file-
 USE_GITLAB=	yes
 GL_SITE=	https://gitlab.gnome.org
 GL_ACCOUNT=	World
-GL_COMMIT=	fdcb83e6a3dbd7afa9c479490d124d6603dbc7df
-GL_TUPLE=	gnumdk:lollypop-po:7dd29b33dbd6f976f4d376a32851fe8abbda2949:po/subprojects/po
+GL_COMMIT=	523bd2fe072689ae7361b01e170915cc0db4064b
+GL_TUPLE=	gnumdk:lollypop-po:f849b9c55dd0ae119f505a4c2719709041e2e905:po/subprojects/po
 USE_GNOME=	glib20 gtk30 pygobject3 introspection:build intltool intlhack
 USE_GSTREAMER1=	yes mpg123 ogg flac opus libav faad good speex
 USE_PYTHON=	py3kplist
 INSTALLS_ICONS=	yes
 
-SHEBANG_FILES=	lollypop/*.py meson_post_install.py
+SHEBANG_FILES=	lollypop.in search-provider/lollypop-sp.in meson_post_install.py
 
 GLIB_SCHEMAS=	org.gnome.Lollypop.gschema.xml
 
