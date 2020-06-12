@@ -1,11 +1,11 @@
---- WindowMaker/Defaults/Makefile.in.orig	2015-10-06 04:12:10 UTC
-+++ WindowMaker/Defaults/Makefile.in
-@@ -542,7 +542,9 @@ WMWindowAttributes: $(srcdir)/WMWindowAt
- 	chmod 644 WMWindowAttributes
+--- WindowMaker/Defaults/Makefile.in.orig	2020-04-09 16:31:45.097263000 +0200
++++ WindowMaker/Defaults/Makefile.in		2020-04-09 17:04:35.279521000 +0200
+@@ -562,7 +562,9 @@
  
  WindowMaker: $(srcdir)/WindowMaker.in
--	$(AM_V_GEN)sed -e "s:#pkgdatadir#:$(pkgdatadir):" $(srcdir)/WindowMaker.in \
-+	$(AM_V_GEN)sed -e "s:#pkgdatadir#:$(pkgdatadir):" \
+ 	$(AM_V_GEN)sed -e "s:#pkgdatadir#:$(pkgdatadir):" \
+-		-e "s:#pixmapdir#:$(pixmapdir):" $(srcdir)/WindowMaker.in \
++		-e "s:#pixmapdir#:$(pixmapdir):" \
 +		-e "s:#prefix#:$(prefix):" \
 +		$(srcdir)/WindowMaker.in \
  		> WindowMaker ; \
