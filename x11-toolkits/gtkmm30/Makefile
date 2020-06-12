@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gtkmm
-PORTVERSION=	3.22.2
+PORTVERSION=	3.24.2 # please keep in sync with first two digits of x11-toolkits/gtk30, they share GTK_MINOR_VERSION
 PORTREVISION?=	0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	GNOME
