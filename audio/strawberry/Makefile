@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	strawberry
-DISTVERSION=	0.6.11
-PORTREVISION=	1
+DISTVERSION=	0.6.12
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/strawberrymusicplayer/${PORTNAME}/releases/download/${DISTVERSION}/ \
 		https://files.jkvinge.net/packages/strawberry/
@@ -44,7 +43,7 @@ TEST_TARGET=	strawberry_test
 # error: member initializer 'transcode_dialog_' does not name a non-static data member or base class
 # transcode_dialog_([=]() {
 
-OPTIONS_DEFINE=		APPLEDEV AUDIOCD IPOD MOODBAR MTPDEV MUSICBRAINZ \
+OPTIONS_DEFINE=		APPLEDEV AUDIOCD IPOD MTPDEV MOODBAR MUSICBRAINZ \
 			SUBSONIC TIDAL VLC
 APPLEDEV_IMPLIES=	IPOD
 OPTIONS_DEFAULT=	PULSEAUDIO
