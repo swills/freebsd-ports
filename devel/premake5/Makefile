@@ -4,7 +4,7 @@ PORTNAME=	premake
 DISTVERSIONPREFIX=	v
 DISTVERSION=	5.0.0
 CATEGORIES=	devel
-PKGNAMESUFFIX=	5
+PKGNAMESUFFIX=	15
 
 MAINTAINER=	freebsd@sysctl.cz
 COMMENT=	Build script creation tool
