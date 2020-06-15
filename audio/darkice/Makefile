@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	darkice
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 PORTREVISION=	2
 CATEGORIES=	audio net
-MASTER_SITES=	SF
+MASTER_SITES=	https://github.com/rafael2k/darkice/releases/download/v${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	IceCast, IceCast2, and ShoutCast live audio streamer
