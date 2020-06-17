@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	coreutils
-PORTVERSION=	8.31
+PORTVERSION=	8.32
 CATEGORIES=	sysutils textproc
 MASTER_SITES=	GNU
 
