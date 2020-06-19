@@ -2,11 +2,10 @@
 
 PORTNAME=	mongodb
 DISTVERSIONPREFIX=	r
-DISTVERSION=	4.0.18
+DISTVERSION=	4.0.19
 CATEGORIES=	databases net
 MASTER_SITES=	https://fastdl.mongodb.org/src/ \
-		http://fastdl.mongodb.org/src/ \
-		http://download.mongodb.org/src/
+		http://fastdl.mongodb.org/src/
 PKGNAMESUFFIX=	${PORTVERSION:R:S/.//}
 DISTNAME=	mongodb-src-${DISTVERSIONPREFIX}${DISTVERSION}
 
@@ -34,7 +33,7 @@ USES=		compiler:c++14-lang cpe python:2.7,build scons:python2 shebangfix
 USE_RC_SUBR=	mongod
 
 CONFLICTS_BUILD=	mongo-cxx-driver
-CONFLICTS_INSTALL=	mongodb3[46] mongodb42
+CONFLICTS_INSTALL=	mongodb36 mongodb42
 
 SHEBANG_FILES=	src/mongo/installer/compass/install_compass.in
 python_OLD_CMD=	@python_interpreter@
