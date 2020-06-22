@@ -1,9 +1,11 @@
 # $FreeBSD$
 
 PORTNAME=	speech-dispatcher
-DISTVERSION=	0.8.8
+DISTVERSION=	0.9.1
 CATEGORIES?=	accessibility audio
-MASTER_SITES=	http://devel.freebsoft.org/pub/projects/speechd/
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES=	15053e914acfd56851348d2f247bfe3257d607c5.patch:-p1
 
 MAINTAINER=	multimedia@FreeBSD.org
 COMMENT?=	Common interface to speech synthesis
@@ -15,10 +17,16 @@ LIB_DEPENDS=	libdotconf.so:devel/dotconf \
 		libltdl.so:devel/libltdl \
 		libsndfile.so:audio/libsndfile
 
-USES=		alias gettext gmake gnome libtool pathfix pkgconfig
+USES=		alias autoreconf gettext gmake gnome libtool pathfix pkgconfig
+USE_GITHUB=	yes
+GH_ACCOUNT=	brailcom
+GH_PROJECT=	speechd
 USE_GNOME=	glib20 intltool
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--without-espeak-ng
+CONFIGURE_ARGS=	--with-espeak-ng=no \
+		--with-baratinoo=no \
+		--with-kali=no \
+		--with-ibmtts=no
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 USE_LDCONFIG=	yes
@@ -33,8 +41,8 @@ ETCFILES=	clients/emacs.conf modules/cicero.conf modules/dtk-generic.conf \
 		modules/espeak-mbrola-generic.conf modules/espeak-ng.conf \
 		modules/espeak.conf modules/festival.conf modules/flite.conf \
 		modules/ibmtts.conf modules/ivona.conf \
-		modules/llia_phon-generic.conf modules/pico-generic.conf \
-		modules/swift-generic.conf speechd.conf
+		modules/llia_phon-generic.conf modules/mary-generic.conf \
+		modules/pico-generic.conf modules/swift-generic.conf speechd.conf
 
 PORTDOCS=	ANNOUNCE AUTHORS FAQ NEWS README TODO
 

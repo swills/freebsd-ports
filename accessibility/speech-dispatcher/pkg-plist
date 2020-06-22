@@ -14,6 +14,7 @@ bin/speech-dispatcher
 @sample %%ETCDIR%%/modules/ibmtts.conf.sample
 @sample %%ETCDIR%%/modules/ivona.conf.sample
 @sample %%ETCDIR%%/modules/llia_phon-generic.conf.sample
+@sample %%ETCDIR%%/modules/mary-generic.conf.sample
 @sample %%ETCDIR%%/modules/pico-generic.conf.sample
 @sample %%ETCDIR%%/modules/swift-generic.conf.sample
 @sample %%ETCDIR%%/speechd.conf.sample
@@ -43,7 +44,59 @@ lib/speech-dispatcher/spd_oss.so
 %%PULSEAUDIO%%lib/speech-dispatcher/spd_pulse.a
 %%PULSEAUDIO%%lib/speech-dispatcher/spd_pulse.so
 libdata/pkgconfig/speech-dispatcher.pc
+man/man1/spd-say.1.gz
+man/man1/speech-dispatcher.1.gz
 share/locale/cs/LC_MESSAGES/speech-dispatcher.mo
 share/locale/de/LC_MESSAGES/speech-dispatcher.mo
 share/locale/hu/LC_MESSAGES/speech-dispatcher.mo
 share/sounds/speech-dispatcher/dummy-message.wav
+%%DATADIR%%/locale/an/symbols.dic
+%%DATADIR%%/locale/ar/symbols.dic
+%%DATADIR%%/locale/bg/symbols.dic
+%%DATADIR%%/locale/ca/symbols.dic
+%%DATADIR%%/locale/cs/symbols.dic
+%%DATADIR%%/locale/da/symbols.dic
+%%DATADIR%%/locale/de/symbols.dic
+%%DATADIR%%/locale/el/symbols.dic
+%%DATADIR%%/locale/en/symbols.dic
+%%DATADIR%%/locale/es/symbols.dic
+%%DATADIR%%/locale/es_CO/symbols.dic
+%%DATADIR%%/locale/fa/symbols.dic
+%%DATADIR%%/locale/fi/symbols.dic
+%%DATADIR%%/locale/fr/symbols.dic
+%%DATADIR%%/locale/ga/symbols.dic
+%%DATADIR%%/locale/gl/symbols.dic
+%%DATADIR%%/locale/he/symbols.dic
+%%DATADIR%%/locale/hi/symbols.dic
+%%DATADIR%%/locale/hr/symbols.dic
+%%DATADIR%%/locale/hu/symbols.dic
+%%DATADIR%%/locale/is/symbols.dic
+%%DATADIR%%/locale/it/symbols.dic
+%%DATADIR%%/locale/ja/symbols.dic
+%%DATADIR%%/locale/ka/symbols.dic
+%%DATADIR%%/locale/kn/symbols.dic
+%%DATADIR%%/locale/ko/symbols.dic
+%%DATADIR%%/locale/lt/symbols.dic
+%%DATADIR%%/locale/my/symbols.dic
+%%DATADIR%%/locale/nb_NO/symbols.dic
+%%DATADIR%%/locale/nl/symbols.dic
+%%DATADIR%%/locale/nn_NO/symbols.dic
+%%DATADIR%%/locale/pa/symbols.dic
+%%DATADIR%%/locale/pl/symbols.dic
+%%DATADIR%%/locale/pt_BR/symbols.dic
+%%DATADIR%%/locale/pt_PT/symbols.dic
+%%DATADIR%%/locale/ro/symbols.dic
+%%DATADIR%%/locale/ru/symbols.dic
+%%DATADIR%%/locale/sk/symbols.dic
+%%DATADIR%%/locale/sl/symbols.dic
+%%DATADIR%%/locale/sq/symbols.dic
+%%DATADIR%%/locale/sr/symbols.dic
+%%DATADIR%%/locale/sv/symbols.dic
+%%DATADIR%%/locale/ta/symbols.dic
+%%DATADIR%%/locale/tr/symbols.dic
+%%DATADIR%%/locale/uk/symbols.dic
+%%DATADIR%%/locale/vi/symbols.dic
+%%DATADIR%%/locale/zh/symbols.dic
+%%DATADIR%%/locale/zh_CN/symbols.dic
+%%DATADIR%%/locale/zh_HK/symbols.dic
+%%DATADIR%%/locale/zh_TW/symbols.dic
