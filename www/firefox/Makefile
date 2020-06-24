@@ -13,6 +13,8 @@ DISTFILES=	${DISTNAME}.source${EXTRACT_SUFX}
 MAINTAINER=	gecko@FreeBSD.org
 COMMENT=	Web browser based on the browser portion of Mozilla
 
+BROKEN_FreeBSD_12_powerpc64=	fails to configure: checking for libclang for bindgen... not found
+
 BUILD_DEPENDS=	nspr>=4.25:devel/nspr \
 		nss>=3.52.1:security/nss \
 		icu>=64.1,1:devel/icu \
