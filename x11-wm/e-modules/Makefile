@@ -21,7 +21,8 @@ MODULES=	alarm cpu deskshow everything-places \
 .for M in ${MODULES}
 OPTIONS_DEFINE+=	${M:tu:S,-,_,g}
 OPTIONS_DEFAULT+=	${M:tu:S,-,_,g}
-${M:tu:S,-,_,g}_DESC=	Install ${M} module
+#${M:tu:S,-,_,g}_DESC=	Install ${M} module
+${M:tu:S,-,_,g}_DESC!=	${MAKE} -C ../e-module-${M} -V COMMENT
 .endfor
 
 .include <bsd.port.options.mk>
