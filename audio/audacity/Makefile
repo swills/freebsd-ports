@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	audacity
-PORTVERSION=	2.4.1
+PORTVERSION=	2.4.2
 DISTVERSIONPREFIX=	Audacity-
 CATEGORIES=	audio
 
@@ -16,6 +16,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libexpat.so:textproc/expat2 \
 		libportaudio.so:audio/portaudio \
 		libsndfile.so:audio/libsndfile \
+		libsndio.so:audio/sndio \
 		libsoxr.so:audio/libsoxr
 
 USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext \
