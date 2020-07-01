@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ccid
-PORTVERSION=	1.4.30
+PORTVERSION=	1.4.32
 CATEGORIES=	devel
 MASTER_SITES=	https://ccid.apdu.fr/files/
 
@@ -29,5 +29,6 @@ post-install:
 		${STAGEDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/contrib/RSA_SecurID/RSA_SecurID_getpasswd.1 \
 		${STAGEDIR}${MANPREFIX}/man/man1
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/pcsc/drivers/ifd-ccid.bundle/Contents/FreeBSD/libccid.so
 
 .include <bsd.port.mk>
