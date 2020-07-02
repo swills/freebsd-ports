@@ -13,6 +13,7 @@
 #
 # PROVIDE: unbound
 # REQUIRE: SERVERS cleanvar
+# BEFORE: DAEMON
 # KEYWORD: shutdown
 #
 # Add the following line to /etc/rc.conf to enable unbound:
