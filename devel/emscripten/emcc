@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+PREFIX="$(cd "$(dirname "$(which "$0")")" && cd .. && pwd)"
+EM_PREFIX="$PREFIX/lib/emscripten"
+BASENAME="$(basename "$0")"
+TARGET="$EM_PREFIX/$BASENAME"
+
+exec "$TARGET" "$@"
+

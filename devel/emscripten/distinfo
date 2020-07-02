@@ -1,3 +1,10 @@
+TIMESTAMP = 1592266292
+SHA256 (emscripten-core-emscripten-1.39.18-d9b71c8_GH0.tar.gz) = 7db4798a19256604e5aeb36cdffe5c45e9b137627aefcbc129e0830157875b65
+SIZE (emscripten-core-emscripten-1.39.18-d9b71c8_GH0.tar.gz) = 33253578
+SHA256 (WebAssembly-binaryen-d26f90b_GH0.tar.gz) = ff49db0bb29675079f0ac98a32543e73fe555bf418825571318b2468f5ae759e
+SIZE (WebAssembly-binaryen-d26f90b_GH0.tar.gz) = 4210114
+SHA256 (llvm-llvm-project-f8170d8_GH0.tar.gz) = b4c0f69e865c8c90df96ae809a6e977a1d2b21349b2b7632e7427a4da8e3c9fa
+SIZE (llvm-llvm-project-f8170d8_GH0.tar.gz) = 120047897
 TIMESTAMP = 1592189632
 SHA256 (emscripten-core-emscripten-1.39.18_GH0.tar.gz) = aa0df2828096d161636467d4fc062bbeea31e372c122a05c9685bb6cb2d4064e
 SIZE (emscripten-core-emscripten-1.39.18_GH0.tar.gz) = 33254022
