@@ -3,7 +3,7 @@
 PORTNAME=	shotcut
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${FULLVERSION}
-PORTREVISION=	1
+PORTREVISION=	0
 CATEGORIES=	multimedia
 
 MAINTAINER=	ports@FreeBSD.org
@@ -24,7 +24,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	mltframework
 
 # Needed to be able to correctly check for updates in-app.
-FULLVERSION=	20.04.12
+FULLVERSION=	20.06.28
 
 USE_GL+=	gl
 USE_QT=		buildtools_build concurrent_build core declarative \
