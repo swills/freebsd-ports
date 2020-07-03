@@ -420,7 +420,7 @@ lib/swipl/lib/%%ARCH%%-%%OS%%/json.so
 lib/swipl/lib/%%ARCH%%-%%OS%%/libedit4pl.so
 lib/swipl/lib/%%ARCH%%-%%OS%%/libswipl.so
 lib/swipl/lib/%%ARCH%%-%%OS%%/libswipl.so.8
-lib/swipl/lib/%%ARCH%%-%%OS%%/libswipl.so.8.2.0
+lib/swipl/lib/%%ARCH%%-%%OS%%/libswipl.so.8.2.1
 lib/swipl/lib/%%ARCH%%-%%OS%%/md54pl.so
 lib/swipl/lib/%%ARCH%%-%%OS%%/memfile.so
 lib/swipl/lib/%%ARCH%%-%%OS%%/ntriples.so
