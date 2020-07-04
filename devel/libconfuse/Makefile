@@ -3,11 +3,10 @@
 
 PORTNAME=	libconfuse
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.2.1
-PORTREVISION=	1
+DISTVERSION=	3.3
 CATEGORIES=	devel
 
-MAINTAINER=	otis@freebsd.sk
+MAINTAINER=	juraj@lutter.sk
 COMMENT=	Configuration file parsing library
 
 LICENSE=	ISCL
