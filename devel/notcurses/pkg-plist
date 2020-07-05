@@ -109,9 +109,9 @@ libdata/pkgconfig/notcurses.pc
 %%DATADIR%%/dsscaw-purp.png
 %%DATADIR%%/eagles.png
 %%DATADIR%%/fm6.mkv
-%%DATADIR%%/fractalheight.png
 %%DATADIR%%/lamepatents.jpg
 %%DATADIR%%/megaman2.bmp
+%%DATADIR%%/normal.png
 %%DATADIR%%/notcursesI.avi
 %%DATADIR%%/samoa.avi
 %%DATADIR%%/tetris-background.jpg
