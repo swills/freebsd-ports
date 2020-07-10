@@ -3,7 +3,7 @@
 
 PORTNAME=	ccache
 #PORTVERSION must be set later due to depending on PORT_OPTIONS.
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://github.com/ccache/ccache/releases/download/v${DISTVERSION}/ \
 		LOCAL/bdrewery
@@ -20,7 +20,8 @@ GNU_CONFIGURE=	yes
 
 HOWTO=		ccache-howto-freebsd.txt
 CCLINKDIR=	libexec/ccache
-SUB_FILES=	${HOWTO} world-ccache pkg-message ccache-update-links.sh
+SUB_FILES=	${HOWTO} world-ccache pkg-message ccache-update-links.sh \
+		ccache_clean
 
 PORTDOCS=	ccache-howto-freebsd.txt MANUAL.html MANUAL.adoc NEWS.adoc \
 		NEWS.html
@@ -145,6 +146,9 @@ do-install:
 		${STAGEDIR}${PREFIX}/${CCLINKDIR}/world/ccache
 	${INSTALL_SCRIPT} ${WRKDIR}/ccache-update-links.sh \
 		${STAGEDIR}${PREFIX}/bin/ccache-update-links
+	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/periodic/daily
+	${INSTALL_SCRIPT} ${WRKDIR}/ccache_clean \
+		${STAGEDIR}${PREFIX}/etc/periodic/daily
 
 do-install-TINDERBOX-on:
 	${MKDIR} ${STAGEDIR}${DATADIR}

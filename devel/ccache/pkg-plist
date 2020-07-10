@@ -1,3 +1,4 @@
+etc/periodic/daily/ccache_clean
 bin/ccache
 bin/ccache-update-links
 %%NO_MEMCACHED%%man/man1/ccache.1.gz
