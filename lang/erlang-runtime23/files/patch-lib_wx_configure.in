@@ -1,0 +1,14 @@
+--- lib/wx/configure.in.orig   2020-06-26 23:02:59.261250000 +0000
++++ lib/wx/configure.in        2020-06-26 23:03:05.565263000 +0000
+@@ -512,7 +512,11 @@
+   #if wxMAJOR_VERSION > 2 && WXWIN_COMPATIBILITY_2_8 == 1
+   ;
+   #else
++  #if wxMAJOR_VERSION == 2 && wxMINOR_VERSION == 8
++  ;
++  #else
+   #error barf
++  #endif
+   #endif
+   ]])],
+   HAVE_COMPAT28_SUPPORT=yes, HAVE_COMPAT28_SUPPORT=no)
