@@ -2,20 +2,20 @@
 # $FreeBSD$
 
 PORTNAME=	isbg
-PORTVERSION=	1.00
-PORTREVISION=	1
+PORTVERSION=	2.2.1
 CATEGORIES=	mail
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scan an IMAP inbox for spam using SpamAssassin
 
-# any OSI approved open source license
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	spamassassin:mail/spamassassin \
 		${PYTHON_PKGNAMEPREFIX}docopt>=0.6.1:devel/py-docopt@${PY_FLAVOR}
 
-USE_GITHUB=	yes
+USE_GITLAB=	yes
+GL_ACCOUNT=	isbg
+GL_COMMIT=	e626d8d0628f691c041032c53f20d764b11d0079
 
 NO_ARCH=	yes
 NO_BUILD=	yes
