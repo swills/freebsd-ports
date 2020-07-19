@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	cooledit
-DISTVERSION=	3.17.28
-PORTREVISION=	3
+DISTVERSION=	4.0.0
 CATEGORIES=	editors
 MASTER_SITES=	SUNSITE/apps/editors/X/cooledit
 
@@ -13,7 +12,7 @@ COMMENT=	Suite of utilities, including a GUI editor
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		gettext gmake libtool python xorg # gettext is linked to despite .mo files having been deleted
+USES=		gettext-runtime gmake libtool pkgconfig python xorg
 GNU_CONFIGURE=	yes
 USE_XORG=	x11 xt
 USE_LDCONFIG=	yes
@@ -24,11 +23,10 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-lpthread -L${LOCALBASE}/lib
 CFLAGS+=	-DHAVE_MBRTOWC
 
+LIB_DEPENDS=	libfreetype.so:print/freetype2
+
 OPTIONS_DEFINE=	NEXT_LOOK
 NEXT_LOOK_DESC=	Enable NeXT look
 NEXT_LOOK_CONFIGURE_ENABLE=	NeXT-look
-
-post-patch:
-	@${REINPLACE_CMD} -e 's|po pixmap man|po man|g' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>
