@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	fdb
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	databases python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,9 +14,10 @@ LICENSE=	ISCL
 
 py27_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>0:devel/py-future@${PY_FLAVOR}
 
-NO_ARCH=	yes
 USES=		firebird python
 USE_PYTHON=	autoplist distutils
+
+NO_ARCH=	yes
 
 .include <bsd.port.pre.mk>
 
