@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	rdesktop
-PORTVERSION=	1.8.6
+PORTVERSION=	1.9.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net comms
 
@@ -11,9 +11,13 @@ COMMENT=	RDP client for Windows NT/2000/2003 Terminal Server
 
 LICENSE=	GPLv3
 
+LIB_DEPENDS=	libgmp.so:math/gmp
+
 USES=		autoreconf gmake iconv pkgconfig ssl xorg
-USE_XORG=	x11 xrandr
+USE_XORG=	x11 xrandr xcursor
 USE_GITHUB=	yes
+
+LDFLAGS+=	-L${LOCALBASE}/lib -lgmp
 
 CONFIGURE_ARGS+=	${ICONV_CONFIGURE_ARG} \
 			--disable-credssp
