@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	dMagnetic
-PORTVERSION=	0.24
+PORTVERSION=	0.25
 CATEGORIES=	games
 MASTER_SITES=	https://www.dettus.net/dMagnetic/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		tar:bz2
 
-TEST_TARGET=	do-test
+TEST_TARGET=	check
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
