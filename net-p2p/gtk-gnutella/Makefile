@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gtk-gnutella
-PORTVERSION=	1.1.15
+PORTVERSION=	1.2.0
 DISTVERSIONPREFIX=v
 CATEGORIES=	net-p2p
 
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64 i386
 
-USES=		gnome iconv localbase:ldflags pkgconfig tar:xz
+USES=		gmake gnome iconv localbase:ldflags pkgconfig tar:xz
 USE_GITHUB=	yes
 USE_GNOME=	glib20 libxml2
 
