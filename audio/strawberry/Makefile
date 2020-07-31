@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	strawberry
-DISTVERSION=	0.6.12
+DISTVERSION=	0.6.13
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/strawberrymusicplayer/${PORTNAME}/releases/download/${DISTVERSION}/ \
 		https://files.jkvinge.net/packages/strawberry/
