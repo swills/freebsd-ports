@@ -292,10 +292,6 @@ post-install: strip-files install-config-files install-doc-files
 	@(cd ${STAGEDIR}${PREFIX}/lib && ${LN} -sf libnetsnmphelpers.so.${SHLIB_VERSION} libnetsnmphelpers.so)
 	@(cd ${STAGEDIR}${PREFIX}/lib && ${LN} -sf libnetsnmpmibs.so.${SHLIB_VERSION} libnetsnmpmibs.so)
 	@(cd ${STAGEDIR}${PREFIX}/lib && ${LN} -sf libnetsnmptrapd.so.${SHLIB_VERSION} libnetsnmptrapd.so)
-.if ${PORT_OPTIONS:MNEWSYSLOG}
-	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/newsyslog.conf.d
-	${INSTALL_DATA} ${FILESDIR}/net-snmp.conf ${STAGEDIR}${PREFIX}/etc/newsyslog.conf.d/
-.endif
 
 strip-files:
 	(cd ${STAGEDIR}${PREFIX}/bin; ${STRIP_CMD} ${BIN_FILES})
@@ -304,6 +300,10 @@ strip-files:
 
 install-config-files:
 	${INSTALL_DATA} ${WRKSRC}/EXAMPLE.conf ${STAGEDIR}${DATADIR}/snmpd.conf.example
+.if ${PORT_OPTIONS:MNEWSYSLOG}
+	@${MKDIR} ${STAGEDIR}/etc/newsyslog.conf.d
+	${INSTALL_DATA} ${FILESDIR}/net-snmp.conf ${STAGEDIR}${DATADIR}/newsyslog.conf.sample
+.endif
 
 install-doc-files:
 .if ${PORT_OPTIONS:MDOCS}

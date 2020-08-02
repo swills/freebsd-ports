@@ -30,7 +30,8 @@ bin/snmpvacm
 bin/snmpwalk
 %%WITH_TKMIB%%bin/tkmib
 bin/traptoemail
-%%NEWSYSLOG%%etc/newsyslog.conf.d/net-snmp.conf
+%%NEWSYSLOG%%@dir etc/newsyslog.conf.d
+%%NEWSYSLOG%%@sample %%DATADIR%%/newsyslog.conf.sample etc/newsyslog.conf.d/net-snmp.conf
 include/net-snmp/agent/agent_callbacks.h
 include/net-snmp/agent/agent_handler.h
 include/net-snmp/agent/agent_index.h
