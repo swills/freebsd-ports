@@ -14,11 +14,10 @@ LICENSE=	ISCL
 USES=		autoreconf gettext-tools iconv pathfix pkgconfig libtool
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
-GH_ACCOUNT=	martinh
+GH_ACCOUNT=	libconfuse
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls --enable-shared
 INSTALL_TARGET=	install-strip
-TEST_TARGET=	check
 
 .include <bsd.port.mk>
