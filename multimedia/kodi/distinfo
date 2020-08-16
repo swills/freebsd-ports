@@ -1,6 +1,6 @@
-TIMESTAMP = 1591045842
-SHA256 (xbmc-xbmc-18.7.1-18.7.1-Leia_GH0.tar.gz) = 5cfec391bcd168bbd4f9d38a6c8ec93e42e040cf82cf6ebf23db5e86753816fb
-SIZE (xbmc-xbmc-18.7.1-18.7.1-Leia_GH0.tar.gz) = 51052174
+TIMESTAMP = 1597591786
+SHA256 (xbmc-xbmc-18.8-18.8-Leia_GH0.tar.gz) = 6deb28f725880b1ab6c5920b55ef1190a79b0684ffb30b6e13b199d23a0af296
+SIZE (xbmc-xbmc-18.8-18.8-Leia_GH0.tar.gz) = 51052219
 SHA256 (xbmc-libdvdcss-1.4.2-Leia-Beta-5_GH0.tar.gz) = 38816f8373e243bc5950449b4f3b18938c4e1c59348e3411e23f31db4072e40d
 SIZE (xbmc-libdvdcss-1.4.2-Leia-Beta-5_GH0.tar.gz) = 101068
 SHA256 (xbmc-libdvdnav-6.0.0-Leia-Alpha-3_GH0.tar.gz) = 071e414e61b795f2ff9015b21a85fc009dde967f27780d23092643916538a57a

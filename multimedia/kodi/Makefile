@@ -1,11 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	kodi
-DISTVERSION=	18.7.1
-PORTREVISION=	2
+DISTVERSION=	18.8
 CATEGORIES=	multimedia java
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	james@french.id.au
 COMMENT=	Award winning media center application
 
 LICENSE=	GPLv2+
