@@ -2,8 +2,8 @@
 
 PORTNAME=	step-certificates
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.14.6
-PORTREVISION=	1
+DISTVERSION=	0.15.0
+#PORTREVISION=	1
 CATEGORIES=	security
 
 MAINTAINER=	mw@wipp.bayern
@@ -36,8 +36,8 @@ GH_TUPLE=	\
 		AndreasBriese:bbloom:e2d15f34fcf9:andreasbriese_bbloom/vendor/github.com/AndreasBriese/bbloom \
 		DataDog:zstd:v1.4.1:datadog_zstd/vendor/github.com/DataDog/zstd \
 		Masterminds:goutils:v1.1.0:masterminds_goutils/vendor/github.com/Masterminds/goutils \
-		Masterminds:semver:v3.0.1:masterminds_semver/vendor/github.com/Masterminds/semver/v3 \
-		Masterminds:sprig:v3.0.0:masterminds_sprig/vendor/github.com/Masterminds/sprig/v3 \
+		Masterminds:semver:v3.1.0:masterminds_semver/vendor/github.com/Masterminds/semver/v3 \
+		Masterminds:sprig:v3.1.0:masterminds_sprig/vendor/github.com/Masterminds/sprig/v3 \
 		aws:aws-sdk-go:v1.30.29:aws_aws_sdk_go/vendor/github.com/aws/aws-sdk-go \
 		census-instrumentation:opencensus-go:v0.22.2:census_instrumentation_opencensus_go/vendor/go.opencensus.io \
 		cespare:xxhash:v1.1.0:cespare_xxhash/vendor/github.com/cespare/xxhash \
@@ -50,10 +50,10 @@ GH_TUPLE=	\
 		dustin:go-humanize:v1.0.0:dustin_go_humanize/vendor/github.com/dustin/go-humanize \
 		etcd-io:bbolt:v1.3.2:etcd_io_bbolt/vendor/go.etcd.io/bbolt \
 		go-chi:chi:v4.0.2:go_chi_chi/vendor/github.com/go-chi/chi \
-		go-piv:piv-go:a3e5767:go_piv_piv_go/vendor/github.com/go-piv/piv-go \
+		go-piv:piv-go:cd2ae48:go_piv_piv_go/vendor/github.com/go-piv/piv-go \
 		go-sql-driver:mysql:v1.5.0:go_sql_driver_mysql/vendor/github.com/go-sql-driver/mysql \
 		golang:appengine:v1.6.5:golang_appengine/vendor/google.golang.org/appengine \
-		golang:crypto:0ec3e9974c59:golang_crypto/vendor/golang.org/x/crypto \
+		golang:crypto:948cd5f35899:golang_crypto/vendor/golang.org/x/crypto \
 		golang:groupcache:215e87163ea7:golang_groupcache/vendor/github.com/golang/groupcache \
 		golang:net:16171245cfb2:golang_net/vendor/golang.org/x/net \
 		golang:oauth2:858c2ad4c8b6:golang_oauth2/vendor/golang.org/x/oauth2 \
@@ -68,8 +68,8 @@ GH_TUPLE=	\
 		googleapis:google-api-go-client:v0.15.0:googleapis_google_api_go_client/vendor/google.golang.org/api \
 		googleapis:google-cloud-go:v0.51.0:googleapis_google_cloud_go/vendor/cloud.google.com/go \
 		grpc:grpc-go:v1.26.0:grpc_grpc_go/vendor/google.golang.org/grpc \
-		huandu:xstrings:v1.2.0:huandu_xstrings/vendor/github.com/huandu/xstrings \
-		imdario:mergo:v0.3.7:imdario_mergo/vendor/github.com/imdario/mergo \
+		huandu:xstrings:v1.3.1:huandu_xstrings/vendor/github.com/huandu/xstrings \
+		imdario:mergo:v0.3.8:imdario_mergo/vendor/github.com/imdario/mergo \
 		jmespath:go-jmespath:v0.3.0:jmespath_go_jmespath/vendor/github.com/jmespath/go-jmespath \
 		juju:ansiterm:720a0952cc2a:juju_ansiterm/vendor/github.com/juju/ansiterm \
 		konsorten:go-windows-terminal-sequences:v1.0.2:konsorten_go_windows_terminal_sequences/vendor/github.com/konsorten/go-windows-terminal-sequences \
@@ -86,12 +86,16 @@ GH_TUPLE=	\
 		samfoo:ansi:b6bd2ded7189:samfoo_ansi/vendor/github.com/samfoo/ansi \
 		shurcooL:sanitized_anchor_name:v1.0.0:shurcool_sanitized_anchor_name/vendor/github.com/shurcooL/sanitized_anchor_name \
 		sirupsen:logrus:v1.4.2:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
-		smallstep:assert:b99dc1097b15:smallstep_assert/vendor/github.com/smallstep/assert \
-		smallstep:cli:v0.14.6:smallstep_cli/vendor/github.com/smallstep/cli \
+		smallstep:assert:82e2b9b3b262:smallstep_assert/vendor/github.com/smallstep/assert \
+		smallstep:cli:v0.15.0:smallstep_cli/vendor/github.com/smallstep/cli \
 		smallstep:nosql:v0.3.0:smallstep_nosql/vendor/github.com/smallstep/nosql \
+		smallstep:crypto:v0.1.1:smallstep_crypto/vendor/github.com/smallstep/crypto \
 		spf13:cast:v1.3.1:spf13_cast/vendor/github.com/spf13/cast \
 		square:go-jose:v2.4.0:square_go_jose/vendor/gopkg.in/square/go-jose.v2 \
 		urfave:cli:v1.22.2:urfave_cli/vendor/github.com/urfave/cli
+
+		# Mirrors for the following packages are not currently known, please look them up and handle these tuples manually:
+		#	::v0.1.1:group_name/vendor/go.step.sm/crypto
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/step
