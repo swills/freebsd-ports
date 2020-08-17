@@ -2,7 +2,7 @@
 
 PORTNAME=	elvish
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.14.0
+DISTVERSION=	0.14.1
 CATEGORIES=	shells
 
 MAINTAINER=	vendion@gmail.com
@@ -11,7 +11,7 @@ COMMENT=	Friendly Interactive Shell and Expressive Programming Language
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	go:modules
+USES=		go:modules
 USE_GITHUB=	yes
 GH_ACCOUNT=	elves
 
@@ -29,4 +29,10 @@ GH_TUPLE=	\
 		kr:pty:v1.1.4:kr_pty/vendor/github.com/kr/pty \
 		mattn:go-isatty:v0.0.12:mattn_go_isatty/vendor/github.com/mattn/go-isatty \
 		xiaq:persistent:a1d9ac4077fc:xiaq_persistent/vendor/github.com/xiaq/persistent
+
+do-tests:
+	@(cd ${WRKSRC}) ; \
+		 ${GO_ENV} ${GO_CMD} test -race ${GO_TESTTARGET} ; \
+		)
+
 .include <bsd.port.mk>
