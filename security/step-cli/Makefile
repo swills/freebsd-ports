@@ -2,7 +2,7 @@
 
 PORTNAME=	step-cli
 DISTVERSIONPREFIX=v
-DISTVERSION=	0.14.6
+DISTVERSION=	0.15.0
 CATEGORIES=	security
 
 MAINTAINER=	mw@wipp.bayern
@@ -31,8 +31,8 @@ GH_TUPLE=	\
 		BurntSushi:toml:v0.3.1:burntsushi_toml/vendor/github.com/BurntSushi/toml \
 		DataDog:zstd:v1.4.1:datadog_zstd/vendor/github.com/DataDog/zstd \
 		Masterminds:goutils:v1.1.0:masterminds_goutils/vendor/github.com/Masterminds/goutils \
-		Masterminds:semver:v3.0.1:masterminds_semver/vendor/github.com/Masterminds/semver/v3 \
-		Masterminds:sprig:v3.0.0:masterminds_sprig/vendor/github.com/Masterminds/sprig/v3 \
+		Masterminds:semver:v3.1.0:masterminds_semver/vendor/github.com/Masterminds/semver/v3 \
+		Masterminds:sprig:v3.1.0:masterminds_sprig/vendor/github.com/Masterminds/sprig/v3 \
 		Microsoft:go-winio:v0.4.14:microsoft_go_winio/vendor/github.com/Microsoft/go-winio \
 		OpenPeeDeeP:depguard:v1.0.1:openpeedeep_depguard/vendor/github.com/OpenPeeDeeP/depguard \
 		ThomasRooney:gexpect:5482f0350944:thomasrooney_gexpect/vendor/github.com/ThomasRooney/gexpect \
@@ -81,7 +81,7 @@ GH_TUPLE=	\
 		gobwas:glob:v0.2.3:gobwas_glob/vendor/github.com/gobwas/glob \
 		gofrs:flock:5135e617513b:gofrs_flock/vendor/github.com/gofrs/flock \
 		gogo:protobuf:v1.3.1:gogo_protobuf/vendor/github.com/gogo/protobuf \
-		golang:crypto:0ec3e9974c59:golang_crypto/vendor/golang.org/x/crypto \
+		golang:crypto:948cd5f35899:golang_crypto/vendor/golang.org/x/crypto \
 		golang:glog:23def4e6c14b:golang_glog/vendor/github.com/golang/glog \
 		golang:groupcache:215e87163ea7:golang_groupcache/vendor/github.com/golang/groupcache \
 		golang:lint:fdd1cda4f05f:golang_lint/vendor/golang.org/x/lint \
@@ -120,9 +120,9 @@ GH_TUPLE=	\
 		grpc-ecosystem:grpc-gateway:v1.12.1:grpc_ecosystem_grpc_gateway/vendor/github.com/grpc-ecosystem/grpc-gateway \
 		grpc:grpc-go:v1.26.0:grpc_grpc_go/vendor/google.golang.org/grpc \
 		hashicorp:hcl:v1.0.0:hashicorp_hcl/vendor/github.com/hashicorp/hcl \
-		huandu:xstrings:v1.2.0:huandu_xstrings/vendor/github.com/huandu/xstrings \
+		huandu:xstrings:v1.3.1:huandu_xstrings/vendor/github.com/huandu/xstrings \
 		icrowley:fake:4178557ae428:icrowley_fake/vendor/github.com/icrowley/fake \
-		imdario:mergo:v0.3.7:imdario_mergo/vendor/github.com/imdario/mergo \
+		imdario:mergo:v0.3.8:imdario_mergo/vendor/github.com/imdario/mergo \
 		inconshreveable:mousetrap:v1.0.0:inconshreveable_mousetrap/vendor/github.com/inconshreveable/mousetrap \
 		jonboulle:clockwork:v0.1.0:jonboulle_clockwork/vendor/github.com/jonboulle/clockwork \
 		json-iterator:go:v1.1.9:json_iterator_go/vendor/github.com/json-iterator/go \
@@ -166,12 +166,13 @@ GH_TUPLE=	\
 		securego:gosec:9cb83e10afad:securego_gosec/vendor/github.com/securego/gosec \
 		shurcooL:sanitized_anchor_name:v1.0.0:shurcool_sanitized_anchor_name/vendor/github.com/shurcooL/sanitized_anchor_name \
 		sirupsen:logrus:v1.4.2:sirupsen_logrus/vendor/github.com/sirupsen/logrus \
-		smallstep:assert:b99dc1097b15:smallstep_assert/vendor/github.com/smallstep/assert \
-		smallstep:certificates:v0.14.5:smallstep_certificates/vendor/github.com/smallstep/certificates \
+		smallstep:assert:82e2b9b3b262:smallstep_assert/vendor/github.com/smallstep/assert \
+		smallstep:certificates:v0.15.0:smallstep_certificates/vendor/github.com/smallstep/certificates \
 		smallstep:certinfo:v1.3.0:smallstep_certinfo/vendor/github.com/smallstep/certinfo \
 		smallstep:nosql:v0.3.0:smallstep_nosql/vendor/github.com/smallstep/nosql \
-		smallstep:truststore:v0.9.3:smallstep_truststore/vendor/github.com/smallstep/truststore \
+		smallstep:truststore:v0.9.6:smallstep_truststore/vendor/github.com/smallstep/truststore \
 		smallstep:zcrypto:fbc32cf76bce:smallstep_zcrypto/vendor/github.com/smallstep/zcrypto \
+		smallstep:crypto:v0.1.1:smallstep_crypto/vendor/github.com/smallstep/crypto \
 		smallstep:zlint:d84eaafe274f:smallstep_zlint/vendor/github.com/smallstep/zlint \
 		soheilhy:cmux:v0.1.4:soheilhy_cmux/vendor/github.com/soheilhy/cmux \
 		sourcegraph:go-diff:v0.5.1:sourcegraph_go_diff/vendor/github.com/sourcegraph/go-diff \
@@ -199,9 +200,10 @@ GH_TUPLE=	\
 		weppos:publicsuffix-go:v0.4.0:weppos_publicsuffix_go/vendor/github.com/weppos/publicsuffix-go \
 		xiang90:probing:43a291ad63a2:xiang90_probing/vendor/github.com/xiang90/probing
 
-GL_TUPLE=	https://gitlab.howett.net:go:plist:3b63eb3a43b59c776909681ed1fcb412b47d3c9a:go_plist/vendor/howett.net/plist
+GL_TUPLE=	https://gitlab.howett.net:go:plist:591f970eefbbeb04d7b37f334a0c4c3256e32876:go_plist/vendor/howett.net/plist
 
 		# Mirrors for the following packages are not currently known, please look them up and handle these tuples manually:
+		#	::v0.1.1:group_name/vendor/go.step.sm/crypto
 		#	::v1.0.0:group_name/vendor/sourcegraph.com/sqs/pbtypes
 
 post-install:
