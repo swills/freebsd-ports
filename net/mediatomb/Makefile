@@ -13,6 +13,9 @@ COMMENT=	UPnP AV MediaServer
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+DEPRECATED=	Upstream is dead, last release 10 years ago, use gerbera instead
+EXPIRATION_DATE=	2020-09-28
+
 LIB_DEPENDS=	libexpat.so:textproc/expat2
 
 GNU_CONFIGURE=	yes
