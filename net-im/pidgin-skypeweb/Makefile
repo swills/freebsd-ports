@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	pidgin-skypeweb
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 PORTEPOCH=	1
 CATEGORIES=	net-im
 
