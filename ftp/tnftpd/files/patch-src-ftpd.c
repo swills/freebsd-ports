@@ -1,9 +1,9 @@
 Rewrite utmpx support.
 
---- src/ftpd.c.orig	2009-11-07 04:26:48.000000000 +0100
-+++ src/ftpd.c	2009-11-07 04:26:48.000000000 +0100
-@@ -504,9 +504,6 @@
- 		confdir = _DEFAULT_CONFDIR;
+--- src/ftpd.c.orig	2020-08-20 14:20:47.994787000 +0200
++++ src/ftpd.c	2020-08-20 14:26:20.778476000 +0200
+@@ -514,9 +514,6 @@
+ 	pfilter_open();
  
  	if (dowtmp) {
 -#ifdef SUPPORT_UTMPX
@@ -12,7 +12,7 @@ Rewrite utmpx support.
  #ifdef SUPPORT_UTMP
  		ftpd_initwtmp();
  #endif
-@@ -1320,23 +1317,18 @@
+@@ -1336,23 +1333,18 @@
  	(void)gettimeofday(&tv, NULL);
  #endif
  #ifdef SUPPORT_UTMPX
@@ -41,7 +41,7 @@ Rewrite utmpx support.
  #endif
  #ifdef SUPPORT_UTMP
  	if (doutmp) {
-@@ -1356,17 +1348,23 @@
+@@ -1372,17 +1364,23 @@
  logout_utmp(void)
  {
  #ifdef SUPPORT_UTMPX
