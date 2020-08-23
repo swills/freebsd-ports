@@ -7,6 +7,9 @@ CATEGORIES=	sysutils
 MAINTAINER=	swills@FreeBSD.org
 COMMENT=	Instant terminal sharing
 
+LICENSE=	ISCL
+LICENSE_FILE=	${WRKSRC}/COPYING
+
 LIB_DEPENDS=	libevent.so:devel/libevent \
 		libmsgpackc.so:devel/msgpack \
 		libssh.so:security/libssh
@@ -20,5 +23,10 @@ USE_LDCONFIG=	yes
 LDFLAGS+=	-lexecinfo
 
 PLIST_FILES=	bin/tmate man/man1/tmate.1.gz
+
+OPTIONS_DEFINE=	BACKSPACE
+
+BACKSPACE_DESC=	Build with tty/keys patch
+BACKSPACE_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-tty-keys.c
 
 .include <bsd.port.mk>
