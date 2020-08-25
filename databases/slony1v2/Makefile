@@ -9,6 +9,8 @@ DISTNAME=	slony1-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME}-docs${EXTRACT_SUFX}
 
+LICENCE=	Postgresql
+
 MAINTAINER=	dgilbert@eicat.ca
 COMMENT=	PostgreSQL master to multiple replicas replication system
 
