@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	diff
-PORTVERSION=	2.11
+PORTVERSION=	2.11.1
 PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://www.tuhs.org/Archive/Distributions/UCB/2.11BSD/ \
