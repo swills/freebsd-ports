@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	foxtrotgps
-PORTVERSION=	1.2.0
-PORTREVISION=	6
+PORTVERSION=	1.2.2
 CATEGORIES=	astro geography
 MASTER_SITES=	http://www.foxtrotgps.org/releases/
 
@@ -33,9 +32,9 @@ SHEBANG_FILES=	contrib/convert2gpx \
 		contrib/poi2osm \
 		contrib/osb2foxtrot \
 
-USE_GNOME=	gtk20 gconf2 libxml2 intltool libglade2
+USE_GNOME=	gtk20 gconf2 libxml2 intltool libglade2 cairo
 INSTALLS_ICONS=	yes
 
-GCONF_SCHEMAS=	apps_foxtrotgps.schemas
+GLIB_SCHEMAS=	org.foxtrotgps.gschema.xml
 
 .include <bsd.port.mk>
