@@ -1,6 +1,24 @@
 --- dictionary.c.orig	2010-09-12 15:14:52 UTC
 +++ dictionary.c
-@@ -662,7 +662,7 @@ void ficlDictionarySee(ficlDictionary *d
+@@ -199,7 +199,7 @@ char *ficlDictionaryAppendString(ficlDictionary *dicti
+     if (length > FICL_NAME_LENGTH)
+         length = FICL_NAME_LENGTH;
+     
+-	return ficlDictionaryAppendData(dictionary, data, length);
++    return ficlDictionaryAppendData(dictionary, data, length);
+ }
+ 
+ 
+@@ -542,7 +542,7 @@ int ficlDictionaryIsAWord(ficlDictionary *dictionary, 
+     if (!ficlDictionaryIncludes(dictionary, word->name))
+         return 0;
+ 
+-	if ((word->link != NULL) && !ficlDictionaryIncludes(dictionary, word->link))
++    if ((word->link != NULL) && !ficlDictionaryIncludes(dictionary, word->link))
+ 		return 0;
+ 
+     if ((word->length <= 0) || (word->name[word->length] != '\0'))
+@@ -662,7 +662,7 @@ void ficlDictionarySee(ficlDictionary *dictionary, fic
              *trace++ = '>';
          else
              *trace++ = ' ';
@@ -9,7 +27,7 @@
          
          if (ficlDictionaryIsAWord(dictionary, word))
          {
-@@ -676,7 +676,7 @@ void ficlDictionarySee(ficlDictionary *d
+@@ -676,7 +676,7 @@ void ficlDictionarySee(ficlDictionary *dictionary, fic
                  break;
              case FICL_WORDKIND_INSTRUCTION_WITH_ARGUMENT:
                  c = *++cell;
@@ -18,7 +36,7 @@
                  break;
              case FICL_WORDKIND_INSTRUCTION_WORD:
                  sprintf(trace, "%s :: executes %s (instruction word %ld)", word->name, ficlDictionaryInstructionNames[(long)word->code], (long)word->code);
-@@ -687,20 +687,20 @@ void ficlDictionarySee(ficlDictionary *d
+@@ -687,20 +687,20 @@ void ficlDictionarySee(ficlDictionary *dictionary, fic
                  {
                      ficlWord *word = (ficlWord *)c.p;
                      sprintf(trace, "%.*s ( %#lx literal )", 
@@ -43,7 +61,7 @@
                  break;
  #endif /* FICL_WANT_FLOAT */
              case FICL_WORDKIND_STRING_LITERAL:
-@@ -719,32 +719,32 @@ void ficlDictionarySee(ficlDictionary *d
+@@ -719,32 +719,32 @@ void ficlDictionarySee(ficlDictionary *dictionary, fic
                  break;
              case FICL_WORDKIND_BRANCH0:
                  c = *++cell;
@@ -83,7 +101,7 @@
                  break;
              default:
                  sprintf(trace, "%.*s", word->length, word->name);
-@@ -754,7 +754,7 @@ void ficlDictionarySee(ficlDictionary *d
+@@ -754,7 +754,7 @@ void ficlDictionarySee(ficlDictionary *dictionary, fic
          }
          else /* probably not a word - punt and print value */
          {
