@@ -1,0 +1,70 @@
+--- src/server.c.orig	2020-06-29 10:28:20.530624000 +0200
++++ src/server.c	2020-06-29 10:28:20.558990000 +0200
+@@ -1245,17 +1245,34 @@
+ 		return;
+ 	}
+ 
+-	oldname = strtok(cp, " ");
+-	if (oldname == NULL) {
+-		error("hardlink: oldname name not delimited");
+-		return;
+-	}
++{ unsigned int len;
+ 
+-	newname = strtok((char *)NULL, " ");
+-	if (newname == NULL) {
+-		error("hardlink: new name not specified");
+-		return;
+-	}
++  if( *( cp += strspn( cp, " " ) ) == '\0' ) {
++    error("hardlink: oldnamelen name not found");
++    return;
++  }
++
++  len = strtoul( cp, &cp, 10 );
++
++  if( *( cp += strspn( cp, " " ) ) == '\0' ) {
++    error("hardlink: oldname not found");
++    return;
++  }
++  oldname = cp;
++  if( strlen( cp ) < len + 2 ) {
++    error("hardlink: oldname too short or nothing following found");
++    return;
++  }
++  cp += len;
++  *cp++ = '\0';
++
++  if( *( cp += strspn( cp, " " ) ) == '\0' ) {
++    error("hardlink: newname not found");
++    return;
++  }
++
++  newname = cp;
++}
+ 
+ 	if (exptilde(expbuf, oldname) == NULL) {
+ 		error("hardlink: tilde expansion failed");
+--- src/client.c.orig	2020-06-29 10:28:20.531414000 +0200
++++ src/client.c	2020-06-29 10:28:20.559180000 +0200
+@@ -356,16 +356,16 @@
+ 		 rname, lp->pathname, lp->src, lp->target);
+ 		 
+ 	if (*lp->target == CNULL)
+-		(void) sendcmd(C_RECVHARDLINK, "%o %s %s", 
+-			       opts, lp->pathname, rname);
++		(void) sendcmd(C_RECVHARDLINK, "%o %d %s %s", 
++			       opts, strlen(lp->pathname), lp->pathname, rname);
+ 	else {
+ 		lname = buff;
+ 		strcpy(lname, remfilename(lp->src, lp->target, 
+ 					  lp->pathname, rname, 
+ 					  destdir));
+ 		debugmsg(DM_MISC, "sendhardlink: lname=%s\n", lname);
+-		(void) sendcmd(C_RECVHARDLINK, "%o %s %s", 
+-			       opts, lname, rname);
++		(void) sendcmd(C_RECVHARDLINK, "%o %d %s %s", 
++			       opts, strlen(lname), lname, rname);
+ 	}
+ 
+ 	return(response());
