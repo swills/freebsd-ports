@@ -40,8 +40,8 @@ GLIB_SCHEMAS=	io.elementary.code.gschema.xml \
 INSTALLS_ICONS=	yes
 USE_LDCONFIG=	yes
 USE_XORG=	x11
-
 BINARY_ALIAS=	python3=${PYTHON_CMD}
+SUB_FILES=	pkg-message
 
 do-test:
 	cd ${WRKSRC}/${MESON_BUILD_DIR} && ninja test

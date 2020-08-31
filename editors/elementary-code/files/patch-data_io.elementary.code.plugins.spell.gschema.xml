@@ -1,0 +1,11 @@
+--- data/io.elementary.code.plugins.spell.gschema.xml.orig	2020-02-29 20:15:24 UTC
++++ data/io.elementary.code.plugins.spell.gschema.xml
+@@ -2,7 +2,7 @@
+ <schemalist>
+   <schema path="/io/elementary/code/plugins/spell/" id="io.elementary.code.plugins.spell">
+     <key name="language" type="s">
+-      <default>'en_US'</default>
++      <default>''</default>
+       <summary>Selected Spellcheck Language</summary>
+       <description>Selected Spellcheck Language to be used by spell plugin</description>
+     </key>

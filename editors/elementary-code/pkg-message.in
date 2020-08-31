@@ -1,0 +1,12 @@
+[
+{
+	type: install
+	message: <<EOM
+Install dictionaries for your prefered language:
+  pkg search hunspell
+
+Then configure the Spellcheck plugin (e.g. for French users):
+  gsettings set io.elementary.code.plugins.spell language 'fr_FR'
+EOM
+}
+]
