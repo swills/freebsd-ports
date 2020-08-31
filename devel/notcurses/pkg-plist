@@ -34,11 +34,10 @@ include/ncpp/_helpers.hh
 include/ncpp/internal/Helpers.hh
 include/ncpp/ncpp.hh
 include/notcurses/direct.h
-include/notcurses/ncerrs.h
 include/notcurses/nckeys.h
 include/notcurses/notcurses.h
-lib/cmake/notcurses/notcursesConfig.cmake
-lib/cmake/notcurses/notcursesConfigVersion.cmake
+lib/cmake/Notcurses/NotcursesConfig.cmake
+lib/cmake/Notcurses/NotcursesConfigVersion.cmake
 lib/libnotcurses++.a
 lib/libnotcurses++.so
 lib/libnotcurses++.so.%%ABI_VER%%
@@ -60,7 +59,6 @@ man/man3/notcurses.3.gz
 man/man3/notcurses_cell.3.gz
 man/man3/notcurses_channels.3.gz
 man/man3/notcurses_directmode.3.gz
-man/man3/notcurses_error.3.gz
 man/man3/notcurses_fade.3.gz
 man/man3/notcurses_fds.3.gz
 man/man3/notcurses_init.3.gz
