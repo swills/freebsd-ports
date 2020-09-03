@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	sshout
-DISTVERSION=	1.1.1
+DISTVERSION=	1.2.0
 CATEGORIES=	net-im
 MASTER_SITES=	SF/sshout/${PORTNAME}/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -30,10 +30,29 @@ GROUPS=		sshout
 
 PLIST_FILES=	libexec/sshoutd \
 		man/man8/sshoutcfg.8.gz \
-		sbin/sshoutcfg
+		sbin/sshoutcfg \
+		%%NLS%%share/locale/zh_CN/LC_MESSAGES/sshout.mo \
+		%%NLS%%share/locale/zh_TW/LC_MESSAGES/sshout.mo
 
-OPTIONS_DEFINE=	IRC
-IRC_DESC=	Enable the experimental IRC over SSH frontend
-IRC_CPPFLAGS=	-DENABLE_IRC_FRONTEND
+OPTIONS_DEFINE=		NLS IRC
+OPTIONS_DEFAULT=	NLS
+OPTIONS_GROUP=		SUGGESTED
+OPTIONS_GROUP_SUGGESTED=XCLIP
+
+SUGGESTED_DESC=		Suggested ports
+XCLIP_DESC=		Add dependency to xclip(1) for CLI pasteimage support
+NLS_USES=		gettext
+NLS_MAKE_ENV=		NLS_LIBS="-l intl"
+NLS_MAKE_ENV_OFF=	NO_NLS=1
+IRC_DESC=		Experimental IRC over SSH frontend
+IRC_CPPFLAGS=		-D ENABLE_IRC_FRONTEND=1
+
+OPTIONS_SUB=		yes
+
+.include <bsd.port.pre.mk>
+
+.if ${PORT_OPTIONS:MXCLIP}
+RUN_DEPENDS+=	${LOCALBASE}/bin/xclip:x11/xclip
+.endif
 
 .include <bsd.port.mk>
