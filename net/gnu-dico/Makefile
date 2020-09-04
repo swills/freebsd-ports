@@ -2,13 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	dico
-PORTVERSION=	2.7
-PORTREVISION=	3
+PORTVERSION=	2.10
 CATEGORIES=	net textproc
 MASTER_SITES=	GNU
 PKGNAMEPREFIX=	gnu-
 
-MAINTAINER=	goran.tal@gmail.com
+MAINTAINER=	info@dikt.tv
 COMMENT=	Flexible modular implementation of DICT server
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl
@@ -53,14 +52,10 @@ NLS_CONFIGURE_ENABLE=	nls
 post-patch:
 	@${REINPLACE_CMD} 's/@bindir@/@sbindir@/' ${WRKSRC}/dicod/Makefile.in
 	@${REINPLACE_CMD} 's/(bindir)..dir/&\/gdico/' ${WRKSRC}/dico/Makefile.in
-	@${REINPLACE_CMD} '/INSTALL.*charset/d' ${WRKSRC}/gnu/Makefile.in
 	@${REINPLACE_CMD} \
 		-e 's/mu_check_lib_save_LIBS/LIBS/' \
 		-e 's/python-config/$${PYTHON_CONFIG}/' \
 		${WRKSRC}/configure
-	@${REINPLACE_CMD} 's/mergesort/xmergesort/' ${WRKSRC}/lib/mergesort.c
-	@${REINPLACE_CMD} -E '/(dico_markup_list|text_udb_def);/s,^,extern ,' \
-		${WRKSRC}/include/dico/markup.h ${WRKSRC}/dicod/dicod.h
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/dicod.conf ${STAGEDIR}${PREFIX}/etc/dicod.conf.sample
