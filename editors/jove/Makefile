@@ -2,10 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	jove
-PORTVERSION=	4.16
-PORTREVISION=	2
+PORTVERSION=	4.17.0.5
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/jove/ARCHIVE/4.16/ \
+MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/jove/ \
 		LOCAL/simon
 
 MAINTAINER=	ports@FreeBSD.org
@@ -16,9 +15,9 @@ LICENSE_NAME=	JOVE License
 LICENSE_FILE=	${WRKSRC}/README
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-USES=		ncurses
+USES=		ncurses tar:tgz
 MAKE_ARGS=	LIBS="${LDFLAGS} -lncurses"
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 OPTIONS_DEFINE=	EXTRADOCS
 EXTRADOCS_DESC=	Build and install cmds.doc
