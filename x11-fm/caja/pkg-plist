@@ -239,4 +239,6 @@ share/pixmaps/caja/emblems.png
 share/pixmaps/caja/erase.png
 share/pixmaps/caja/knob.png
 share/pixmaps/caja/thumbnail_frame.png
+share/mime/application/x-mate-saved-search.xml
+share/mime/packages/caja.xml
 @dir lib/caja/extensions-2.0
