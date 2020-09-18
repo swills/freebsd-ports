@@ -165,6 +165,7 @@ sbin/timelimit
 @dir(,bareos,750) %%ETCDIR%%/bareos-dir.d/profile
 @dir(,bareos,750) %%ETCDIR%%/bareos-dir.d/schedule
 @dir(,bareos,750) %%ETCDIR%%/bareos-dir.d/storage
+@dir(,bareos,750) %%ETCDIR%%/bareos-dir.d/user
 @dir(,bareos,750) %%ETCDIR%%/bareos-dir-export
 @dir(,bareos,750) %%ETCDIR%%/bareos-dir-export/client
 @dir(,bareos,750) %%ETCDIR%%/bareos-sd.d
