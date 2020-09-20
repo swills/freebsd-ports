@@ -3,7 +3,7 @@
 
 PORTNAME=	playerctl
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.1.1
+DISTVERSION=	2.2.1
 CATEGORIES=	multimedia audio
 
 MAINTAINER=	aly@aaronly.me
@@ -21,15 +21,17 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	altdesktop
 
+PLIST_SUB=	VERSION=${DISTVERSION}
+
 OPTIONS_DEFINE=	DOC INTROSPECTION
 OPTIONS_SUB=	yes
 
-DOC_DESC=	Build GTK documentation
-DOC_BUILD_DEPENDS=	gtkdoc-scan:textproc/gtk-doc
-DOC_MESON_TRUE=	gtk-doc
+DOC_DESC=			Build GTK documentation
+DOC_BUILD_DEPENDS=		gtkdoc-scan:textproc/gtk-doc
+DOC_MESON_TRUE=			gtk-doc
 
-INTROSPECTION_DESC=	Build GObject Introspection
-INTROSPECTION_USE=	gnome=introspection:build
+INTROSPECTION_DESC=		Build GObject Introspection
+INTROSPECTION_USE=		gnome=introspection:build
 INTROSPECTION_MESON_TRUE=	introspection
 
 .include <bsd.port.mk>

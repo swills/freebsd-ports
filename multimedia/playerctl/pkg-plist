@@ -10,7 +10,7 @@ include/playerctl/playerctl.h
 lib/libplayerctl.a
 lib/libplayerctl.so
 lib/libplayerctl.so.2
-lib/libplayerctl.so.2.1.1
+lib/libplayerctl.so.%%VERSION%%
 libdata/pkgconfig/playerctl.pc
 man/man1/playerctl.1.gz
 share/dbus-1/services/org.mpris.MediaPlayer2.playerctld.service
