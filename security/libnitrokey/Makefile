@@ -3,7 +3,7 @@
 
 PORTNAME=	libnitrokey
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.6-RC1
+DISTVERSION=	3.6
 CATEGORIES=	security
 
 MAINTAINER=	monwarez@mailoo.org
