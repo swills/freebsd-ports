@@ -20,6 +20,8 @@ LICENSE_PERMS_WXWINDOWS=	dist-mirror pkg-mirror auto-accept
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pathlib2>0:devel/py-pathlib2@${PY_FLAVOR}
 
+RUN_DEPENDS= ${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
+
 USES=		compiler:c++11-lib gl localbase pkgconfig python
 USE_GL=		glu
 USE_WX=		3.0
