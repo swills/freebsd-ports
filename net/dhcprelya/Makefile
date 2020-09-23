@@ -24,9 +24,14 @@ PLIST_FILES=	sbin/${PORTNAME} lib/${PORTNAME}_log_plugin.so \
 
 OPTIONS_DEFINE=	DOCS
 
+.include <bsd.port.pre.mk>
+.if (${OSVERSION} >= 1200000)
+LDFLAGS+=	-Wl,-E
+.endif
+
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}/${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${STAGEDIR}/${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${STAGEDIR}/${DOCSDIR}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
