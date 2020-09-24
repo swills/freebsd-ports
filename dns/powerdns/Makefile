@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	powerdns
-DISTVERSION=	4.3.0
-PORTREVISION=	3
+DISTVERSION=	4.3.1
 CATEGORIES=	dns
 MASTER_SITES=	https://downloads.powerdns.com/releases/
 DISTNAME=	pdns-${DISTVERSION}
