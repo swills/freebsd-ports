@@ -1,11 +1,12 @@
 # $FreeBSD$
 
 PORTNAME=	irssi
-PORTVERSION=	1.2.2
+#PORTVERSION=	1.2.2
+DISTVERSION=	1.3.20200911
 PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES?=	irc
-MASTER_SITES=	https://github.com/irssi/irssi/releases/download/${PORTVERSION}/
+#MASTER_SITES=	https://github.com/irssi/irssi/releases/download/${PORTVERSION}/
 
 MAINTAINER=	dor.bsd@xm0.uk
 COMMENT=	Modular IRC client with many features
@@ -13,56 +14,58 @@ COMMENT=	Modular IRC client with many features
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		autoreconf cpe gettext-runtime gmake gnome libtool localbase \
-		ncurses pkgconfig tar:xz
+# Until upstream makes a new release disable cpe
+USES=		gettext-runtime gnome meson localbase:ldflags ncurses \
+		pkgconfig ssl
 USE_GNOME=	glib20
+USE_LDCONFIG=	yes
 
-GNU_CONFIGURE=	yes
-INSTALL_TARGET=	install-strip
+USE_GITHUB=	yes
+GH_TAGNAME=	561619f
 
-OPTIONS_DEFINE=	BOT CAPSICUM DOCS OTR PERL PROXY SOCKS TRUECOLOR UTF8PROC
-OPTIONS_DEFAULT=	BOT CAPSICUM PERL PROXY SOCKS TRUECOLOR
+# Force OpenSSL from base
+CPPFLAGS+=	-I${OPENSSLINC}
+LDFLAGS+=	-L${OPENSSLLIB} -lcrypto -lssl
 
-OPTIONS_SUB=	yes
-BOT_DESC=	Bot support
-BOT_CONFIGURE_WITH=	bot
-CAPSICUM_DESC=	Capsicum support
-CAPSICUM_CONFIGURE_WITH=	capsicum
-OTR_DESC=	OTR (off-the-record) support
-OTR_CONFIGURE_ON=	--with-otr \
-			--with-libotr-inc-prefix=${PREFIX}/include
-OTR_CONFIGURE_OFF=	--with-otr=no
-OTR_CONFIGURE_WITH=	otr
+MESON_ARGS=	-Dinstall-glib=no -Ddisable-gregex=no -Dstatic-dependency=no \
+		-Dwith-fuzzer=no -Dwithout-textui=no
+
+OPTIONS_DEFINE=		BOT CAPSICUM DOCS OTR PERL PROXY TRUECOLOR UTF8PROC
+OPTIONS_DEFAULT=	BOT CAPSICUM PERL PROXY TRUECOLOR
+OPTIONS_SUB=		yes
+
+BOT_DESC=		Bot support
+CAPSICUM_DESC=		Capsicum support
+OTR_DESC=		OTR (off-the-record) support
+TRUECOLOR_DESC=		True color support
+UTF8PROC_DESC=		utf8proc support
+
+BOT_MESON_ON=		-Dwith-bot=yes
+BOT_MESON_OFF=		-Dwith-bot=no
+
+CAPSICUM_MESON_ON=	-Dwith-capsicum=yes
+CAPSICUM_MESON_OFF=	-Dwith-capsicum=no
+
 OTR_LIB_DEPENDS=	libgcrypt.so:security/libgcrypt \
-			libgpg-error.so:security/libgpg-error \
 			libotr.so:security/libotr
-PERL_USES=	perl5
-PERL_CONFIGURE_ON=	--with-perl-lib=site
-PERL_CONFIGURE_OFF=	--with-perl=no
-PROXY_CONFIGURE_WITH=	proxy
-SOCKS_DESC=	Socks proxy support
-SOCKS_CONFIGURE_WITH=	socks
-TRUECOLOR_DESC=	Truecolor (24bit) support
-TRUECOLOR_CONFIGURE_ENABLE=	true-color
-UTF8PROC_DESC=	utf8proc support
-UTF8PROC_LIB_DEPENDS=	libutf8proc.so:textproc/utf8proc
-UTF8PROC_CONFIGURE_ENABLE=	utf8proc
+OTR_MESON_ON=		-Dwith-otr=yes
+OTR_MESON_OFF=		-Dwith-otr=no
 
-.if defined(WITHOUT_SSL)
-CONFIGURE_ARGS+=	--disable-ssl
-.else
-USES+=		ssl
-.endif
+PERL_USES=		perl5
+PERL_MESON_ON=		-Dwith-perl=yes
+PERL_MESON_OFF=		-Dwith-perl=no
+
+PROXY_MESON_ON=		-Dwith-proxy=yes
+PROXY_MESON_OFF=	-Dwith-proxy=no
+
+TRUECOLOR_MESON_ON=	-Denable-true-color=yes
+TRUECOLOR_MESON_OFF=	-Denable-true-color=no
+
+UTF8PROC_LIB_DEPENDS=	libutf8proc.so:textproc/utf8proc
+UTF8PROC_MESON_ON=	-Ddisable-utf8proc=no
+UTF8PROC_MESON_OFF=	-Ddisable-utf8proc=yes
 
 post-install:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/irssi/modules
-	@${MV} ${STAGEDIR}${PREFIX}/etc/irssi.conf \
-		${STAGEDIR}${PREFIX}/etc/irssi.conf.sample
-
-post-install-PERL-on:
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Irssi/Irssi.so
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Irssi/Irc/Irc.so
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Irssi/TextUI/TextUI.so
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Irssi/UI/UI.so
+	@${MV} ${WRKSRC}/irssi.conf ${STAGEDIR}${PREFIX}/etc/irssi.conf.sample
 
 .include <bsd.port.mk>
