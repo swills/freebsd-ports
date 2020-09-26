@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	emby-server
-PORTVERSION=	4.4.3.0
-PORTREVISION=	2
+PORTVERSION=	4.5.0.50
 CATEGORIES=	multimedia
 MASTER_SITES=	https://github.com/MediaBrowser/Emby.Releases/releases/download/${PORTVERSION}/ \
 		https://mediabrowser.github.io/embytools/
@@ -50,7 +49,7 @@ LIB_DEPENDS=	libass.so:multimedia/libass \
 USES=		compiler:c11 gmake iconv localbase:ldflags mono pkgconfig sqlite
 USE_RC_SUBR=	${PORTNAME}
 
-FFVERSION=	2020_02_24
+FFVERSION=	2020_05_23
 
 SUB_FILES=	ImageMagickSharp.dll.config \
 		SQLitePCLRaw.provider.sqlite3.dll.config
