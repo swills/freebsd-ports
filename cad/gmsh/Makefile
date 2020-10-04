@@ -3,6 +3,7 @@
 
 PORTNAME=	gmsh
 DISTVERSION=	4.6.0
+PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	LOCAL/wen \
 		LOCAL/zeising \
@@ -32,7 +33,7 @@ USE_XORG=	x11 xcursor xext xinerama xfixes xft xrender
 
 CMAKE_ARGS=	-DCMAKE_SKIP_RPATH:BOOL=YES
 
-OPTIONS_DEFINE=	CGNS DOCS MED OCC SHARED STATIC
+OPTIONS_DEFINE=	CGNS DOCS MED OCC SHARED STATIC PYMOD
 OPTIONS_DEFAULT=	CGNS MED OCC
 OPTIONS_SUB=	yes
 
@@ -41,6 +42,7 @@ MED_DESC=	Enable MED mesh and post file formats
 OCC_DESC=	Enable OpenCASCADE geometrical models
 SHARED_DESC=	Build shared library and install header files
 STATIC_DESC=	Build static library
+PYMOD_DESC=		Install Python module (implies SHARED).
 
 PLIST_SUB=	VER=${PORTVERSION} VE=${PORTVERSION:R}
 
@@ -62,8 +64,23 @@ OCC_USE=		gnome=cairo
 SHARED_CMAKE_BOOL=	ENABLE_BUILD_SHARED
 SHARED_USE=		LDCONFIG=yes
 STATIC_CMAKE_BOOL=	ENABLE_BUILD_LIB
+PYMOD_USES=			python
+PYMOD_IMPLIES=		SHARED
+
+post-patch-PYMOD-on:
+	@${REINPLACE_CMD} -e "s|PREFIX|${LOCALBASE}|" -e "s|DISTVERSION|${DISTVERSION}|" \
+		${WRKSRC}/api/gmsh.py
+
+post-install-PYMOD-on:
+	@${MKDIR} ${STAGEDIR}${PYTHON_SITELIBDIR}
+	${INSTALL_DATA} ${WRKSRC}/api/gmsh.py ${STAGEDIR}${PYTHON_SITELIBDIR}/
 
 post-install-SHARED-on:
-	${RM} -r ${STAGEDIR}/wrkdirs
+	@${RM} -r ${STAGEDIR}/wrkdirs
+	@${RM} ${STAGEDIR}${PREFIX}/include/gmsh.h_cwrap
+
+post-install:
+	@${RMDIR} ${STAGEDIR}${PREFIX}/lib/debug
+	@${RM} ${STAGEDIR}${PREFIX}/lib/gmsh.jl
 
 .include <bsd.port.mk>

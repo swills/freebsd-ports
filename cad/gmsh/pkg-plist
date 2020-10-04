@@ -256,3 +256,9 @@ man/man1/gmsh.1.gz
 %%PORTDOCS%%%%DOCSDIR%%/tutorial/view3.pos
 %%PORTDOCS%%%%DOCSDIR%%/tutorial/view4.pos
 %%PORTDOCS%%%%DOCSDIR%%/tutorial/view5.msh
+%%PYMOD%%%%PYTHON_SITELIBDIR%%/gmsh.py
+%%SHARED%%include/gmsh.h
+%%SHARED%%include/gmshc.h
+%%SHARED%%lib/libgmsh.so
+%%SHARED%%lib/libgmsh.so.%%VE%%
+%%SHARED%%lib/libgmsh.so.%%VER%%
