@@ -82,7 +82,6 @@
     SUBDIR += gnome-shell-extensions
     SUBDIR += gnome-terminal
     SUBDIR += gnome3
-    SUBDIR += gnome3-lite
     SUBDIR += gnustep-app
     SUBDIR += grabc
     SUBDIR += grim
@@ -263,6 +262,7 @@
     SUBDIR += plasma5-plasma-desktop
     SUBDIR += plasma5-plasma-integration
     SUBDIR += plasma5-plasma-workspace
+    SUBDIR += pmenu
     SUBDIR += polybar
     SUBDIR += printscreen
     SUBDIR += py-caffeine-ng
@@ -389,6 +389,7 @@
     SUBDIR += xcb-util-wm
     SUBDIR += xcb-util-xrm
     SUBDIR += xcbautolock
+    SUBDIR += xclickroot
     SUBDIR += xclip
     SUBDIR += xclipboard
     SUBDIR += xcm

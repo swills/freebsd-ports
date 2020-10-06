@@ -112,12 +112,12 @@
     SUBDIR += qemu-cheri
     SUBDIR += qemu-devel
     SUBDIR += qemu-powernv
-    SUBDIR += qemu-sbruno
     SUBDIR += qemu-user-static
     SUBDIR += qemu-user-static-devel
     SUBDIR += qemu-utils
     SUBDIR += qemu31
     SUBDIR += qemu41
+    SUBDIR += qemu42
     SUBDIR += qemu50
     SUBDIR += qmc2
     SUBDIR += quasi88

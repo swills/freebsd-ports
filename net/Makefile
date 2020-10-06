@@ -378,7 +378,6 @@
     SUBDIR += libpcap
     SUBDIR += libpcapnav
     SUBDIR += libproxy
-    SUBDIR += libproxy-gnome2
     SUBDIR += libproxy-gnome3
     SUBDIR += libproxy-kde
     SUBDIR += libproxy-mozjs
@@ -1072,11 +1071,13 @@
     SUBDIR += py-python-novaclient
     SUBDIR += py-python-novaclient16
     SUBDIR += py-python-openstackclient
+    SUBDIR += py-python-socks
     SUBDIR += py-python-twitter
     SUBDIR += py-pytradfri
     SUBDIR += py-pyvmomi
     SUBDIR += py-pyzmq
     SUBDIR += py-qt5-network
+    SUBDIR += py-qt5-networkauth
     SUBDIR += py-rabbitpy
     SUBDIR += py-radix
     SUBDIR += py-raet
@@ -1340,6 +1341,7 @@
     SUBDIR += samba410
     SUBDIR += samba411
     SUBDIR += samba412
+    SUBDIR += samba413
     SUBDIR += samplicator
     SUBDIR += savvycan
     SUBDIR += sbd
