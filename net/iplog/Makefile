@@ -19,8 +19,8 @@ USE_RC_SUBR=	iplog
 
 .include <bsd.port.options.mk>
 
-.if ${OSVERSION} >= 1300000
-IGNORE = The iplog port is broken for FreeBSD 13.x and above
+.if ${OSVERSION} >= 1300000 || ( ${OSVERSION} >= 1140000 && ${OSVERSION} < 1200000 ) || ( ${OSVERSION} >= 1201000 && ${OSVERSION} < 1300000 )
+IGNORE = The iplog port is broken for FreeBSD 11.4, 12.1, 13.0 and above
 .endif
 
 post-patch:
