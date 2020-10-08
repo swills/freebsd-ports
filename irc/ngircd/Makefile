@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ngircd
-PORTVERSION=	25
-PORTREVISION=	1
+PORTVERSION=	26
 PORTEPOCH=	1
 CATEGORIES=	irc
 MASTER_SITES=	http://arthur.barton.de/pub/${PORTNAME}/ \
