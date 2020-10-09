@@ -12,6 +12,9 @@ COMMENT=	Backport of recent additions to the 'collections.abc' module
 
 LICENSE=	PSFL
 
+DEPRECATED=	Python 2 is EOL upstream
+EXPIRATION_DATE=	2020-12-31
+
 USES=		python:2.7
 USE_PYTHON=	autoplist distutils
 
