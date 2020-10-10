@@ -53,14 +53,14 @@ CONFIGURE_ARGS+=	--disable-sse3
 
 MAKE_ENV=	V=1
 
-OPTIONS_DEFINE=		ALSA ASM DLOPEN HIDAPI JACK NAS OSS	\
+OPTIONS_DEFINE=		ALSA ASM DLOPEN EVDEV HIDAPI JACK NAS OSS	\
 			PULSEAUDIO SAMPLERATE SNDIO PTHREADS		\
 			SDL_ATOMIC SDL_AUDIO SDL_CPUINFO SDL_EVENTS	\
 			SDL_FILE SDL_HAPTIC SDL_JOYSTICK SDL_LOADSO	\
 			SDL_POWER SDL_RENDER SDL_THREADS SDL_TIMERS	\
 			SDL_VIDEO UDEV VIDEO_KMSDRM VIDEO_OPENGL	\
 			VIDEO_OPENGLES2 VIDEO_WAYLAND VIDEO_X11
-OPTIONS_DEFAULT=	ASM DLOPEN OSS PTHREADS SDL_ATOMIC SDL_AUDIO	\
+OPTIONS_DEFAULT=	ASM DLOPEN EVDEV OSS PTHREADS SDL_ATOMIC SDL_AUDIO \
 			SDL_CPUINFO SDL_EVENTS SDL_FILE SDL_HAPTIC	\
 			SDL_JOYSTICK SDL_LOADSO SDL_POWER SDL_RENDER	\
 			SDL_THREADS SDL_TIMERS SDL_VIDEO VIDEO_KMSDRM	\
@@ -73,6 +73,7 @@ OPTIONS_DEFAULT_powerpc64=	ALTIVEC
 
 ALSA_DESC=		Audio output via the ALSA audio architecture
 DLOPEN_DESC=		Use dlopen for loading 3rd party libraries
+EVDEV_DESC=		Use evdev for gamepad/joystick input
 HIDAPI_DESC=		Use HIDAPI for low level joystick drivers
 JACK_DESC=		Audio output via the JackD sound server
 NAS_DESC=		Audio output via the Network Audio System
@@ -104,6 +105,7 @@ ALTIVEC_CONFIGURE_ENABLE=	altivec
 ASM_CONFIGURE_ENABLE=		assembly
 DLOPEN_CONFIGURE_ENABLE=	sdl-dlopen
 DLOPEN_CONFIGURE_OFF=		--disable-video-vulkan
+EVDEV_BUILD_DEPENDS=		${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 HIDAPI_CONFIGURE_ENABLE=	hidapi
 HIDAPI_IMPLIES=			SDL_JOYSTICK
 PTHREADS_CONFIGURE_ENABLE=	pthreads pthread-sem
@@ -142,6 +144,13 @@ CONFIGURE_ARGS+=	--enable-alsa --enable-alsa-shared
 LIB_DEPENDS+=		libasound.so:audio/alsa-lib
 .else
 CONFIGURE_ARGS+=	--disable-alsa --disable-alsa-shared
+.endif
+
+.if ${PORT_OPTIONS:MEVDEV}
+.if !${PORT_OPTIONS:MSDL_JOYSTICK}
+IGNORE=	option EVDEV requires SDL_JOYSTICK
+.endif
+EXTRA_PATCHES+=		${FILESDIR}/extra-patch-evdev-joystick
 .endif
 
 .if ${PORT_OPTIONS:MJACK}
@@ -279,8 +288,8 @@ CONFIGURE_ARGS+=	ac_cv_lib_iconv_iconv_open=yes ac_cv_func_iconv=yes
 .endif
 
 post-patch:
-	@${REINPLACE_CMD} -e '/ CheckInputEvents$$/d' \
-		-e 's/-liconv/${ICONV_LIB}/g' ${WRKSRC}/configure
+	@${MV} ${WRKSRC}/src/joystick/bsd/SDL_sysjoystick.c ${WRKSRC}/src/joystick/bsd/bsd_SDL_sysjoystick.c
+	@${REINPLACE_CMD} -e 's/-liconv/${ICONV_LIB}/g' ${WRKSRC}/configure
 # Clang does not provide _m_prefetch
 	@${REINPLACE_CMD} 's/_m_prefetch/__builtin_prefetch/' \
 		${WRKSRC}/configure ${WRKSRC}/src/video/SDL_blit_A.c

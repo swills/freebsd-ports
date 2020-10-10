@@ -1,0 +1,20 @@
+--- configure.orig	2020-03-20 05:38:47.438439000 +0300
++++ configure	2020-03-20 05:39:48.991686000 +0300
+@@ -24526,7 +24526,7 @@
+         # Set up files for the joystick library
+         if test x$enable_joystick = xyes; then
+           case $ARCH in
+-            linux)
++            linux|freebsd)
+ 
+ $as_echo "#define SDL_JOYSTICK_LINUX 1" >>confdefs.h
+ 
+@@ -24547,7 +24547,7 @@
+         # Set up files for the haptic library
+         if test x$enable_haptic = xyes; then
+           case $ARCH in
+-            linux)
++            linux|freebsd)
+                 if test x$use_input_events = xyes; then
+ 
+ $as_echo "#define SDL_HAPTIC_LINUX 1" >>confdefs.h
