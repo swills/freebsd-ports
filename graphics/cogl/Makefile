@@ -3,6 +3,7 @@
 
 PORTNAME=	cogl
 PORTVERSION=	1.22.8
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 
@@ -14,6 +15,9 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 CONFLICTS=	clutter-1.6.[0-9]*
 
+LIB_DEPENDS=	libwayland-egl.so:graphics/wayland \
+		libharfbuzz.so:print/harfbuzz
+
 USES=		gettext gl gmake gnome libtool localbase pathfix pkgconfig \
 		tar:xz xorg
 GNU_CONFIGURE=	yes
@@ -22,7 +26,9 @@ USE_GL=		egl
 USE_XORG=	x11 xcomposite xext xdamage xfixes xrandr
 USE_LDCONFIG=	yes
 CONFIGURE_ARGS=	--with-x \
-		 --enable-xlib-egl-platform=yes
+		--enable-xlib-egl-platform=yes \
+		--enable-wayland-egl-platform=yes \
+		--enable-wayland-egl-server=yes
 INSTALL_TARGET=	install-strip
 
 PLIST_SUB=	LIBVER=20 LIBVERSION=20.4.3
