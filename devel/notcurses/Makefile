@@ -2,7 +2,7 @@
 
 PORTNAME=	notcurses
 DISTVERSIONPREFIX=	v
-DISTVERSION=	${ABIVERSION}.7.0
+DISTVERSION=	${ABIVERSION}.7.6
 CATEGORIES=	devel
 
 MAINTAINER=	nickblack@linux.com
@@ -19,6 +19,8 @@ USES=		cmake:noninja compiler:c++17-lang localbase ncurses:port pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dankamongmen
 USE_LDCONFIG=	yes
+
+MAKE_JOBS_SAFE=yes
 
 ABIVERSION=	1
 
