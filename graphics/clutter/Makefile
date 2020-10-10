@@ -2,9 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	clutter
-PORTVERSION=	1.26.2
+PORTVERSION=	1.26.4
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
+DIST_SUBDIR=	gnome
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	OpenGL based interactive canvas library
@@ -15,23 +16,22 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libjson-glib-1.0.so:devel/json-glib \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
-		libcogl.so:graphics/cogl
+		libcogl.so:graphics/cogl \
+		libinput.so:x11/libinput \
+		libudev.so:devel/libudev-devd \
+		libwayland-client.so:graphics/wayland \
+		libxkbcommon.so:x11/libxkbcommon
 
 PORTSCOUT=	limit:1,even
 
-USES=		gettext gl gmake gnome libtool localbase pathfix pkgconfig \
-		tar:xz xorg
-USE_GNOME=	atk cairo gdkpixbuf2 pango introspection:build
+USES=		gettext gl gnome meson localbase pkgconfig \
+		python:3.6+,build tar:xz xorg
+USE_GNOME=	atk cairo gdkpixbuf2 gtk30 pango introspection:build
 USE_GL=		egl
-USE_XORG=	x11 xcomposite xdamage xext xfixes xi xrandr
-GNU_CONFIGURE=	yes
+USE_XORG=	x11 xcomposite xdamage xext xi
 USE_LDCONFIG=	yes
-CONFIGURE_ARGS=	--with-x --enable-conformance=no \
-		--disable-evdev-input \
-		--enable-egl-backend=yes \
-		--enable-x11-backend=yes \
-		--enable-gdk-backend=no \
-		--enable-wayland-compositor=no
-INSTALL_TARGET=	install-strip
+MESON_ARGS=	-Dbuild_examples=false \
+		-Dbackends=x11,gdk,wayland,eglnative \
+		-Ddocumentation=false
 
 .include <bsd.port.mk>
