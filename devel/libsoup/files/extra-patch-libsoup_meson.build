@@ -1,0 +1,47 @@
+--- libsoup/meson.build.orig	2020-03-07 02:43:34 UTC
++++ libsoup/meson.build
+@@ -203,7 +203,7 @@ endif
+ 
+ 
+ includedir = join_paths(libsoup_api_name, meson.project_name())
+-install_headers(soup_installed_headers, subdir : includedir)
++#install_headers(soup_installed_headers, subdir : includedir)
+ 
+ version_cdata = configuration_data()
+ version_cdata.set('SOUP_MAJOR_VERSION', soup_version_major)
+@@ -223,7 +223,7 @@ soup_enums = gnome.mkenums('soup-enum-types',
+   ],
+   h_template : enum_types + '.h.template',
+   c_template : enum_types + '.c.template',
+-  install_header : true,
++  install_header : false,
+   install_dir : join_paths(get_option('includedir'), includedir))
+ 
+ soup_enum_h = soup_enums[1]
+@@ -253,7 +253,7 @@ libsoup = library('soup-@0@'.format(apiversion),
+   darwin_versions: darwin_versions,
+   c_args : libsoup_c_args + hidden_visibility_flag,
+   include_directories : configinc,
+-  install : true,
++  install : false,
+   dependencies : deps)
+ 
+ pkg.generate(libsoup,
+@@ -319,7 +319,7 @@ if enable_introspection or enable_vapi
+     export_packages : libsoup_api_name,
+     extra_args : soup_gir_args,
+     includes : 'Gio-2.0',
+-    install : true,
++    install : false,
+     header: join_paths(meson.project_name(), 'soup.h'),
+   )
+ 
+@@ -336,7 +336,7 @@ if enable_introspection or enable_vapi
+         soup_ns_version + '-custom.vala'
+       ],
+       packages : 'gio-2.0',
+-      install : true,
++      install : false,
+     )
+   endif
+ 

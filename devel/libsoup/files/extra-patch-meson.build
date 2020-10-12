@@ -1,0 +1,14 @@
+--- meson.build.orig	2020-03-07 02:43:35 UTC
++++ meson.build
+@@ -369,9 +369,9 @@ configure_file(output : 'config.h', configuration : cd
+ subdir('libsoup')
+ # xgettext is optional (on Windows for instance)
+ if find_program('xgettext', required : false).found()
+-  subdir('po')
++  #subdir('po')
+ endif
+-subdir('examples')
++#subdir('examples')
+ 
+ if get_option('tests')
+   subdir('tests')
