@@ -3,7 +3,7 @@
 
 PORTNAME=	firacode
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4
+DISTVERSION=	5.2
 PORTREVISION=	1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	https://github.com/tonsky/FiraCode/releases/download/${DISTVERSION}/
@@ -14,15 +14,14 @@ COMMENT=	Monospaced font with programming ligatures derived from Fira
 
 LICENSE=	OFL11
 
-USES=		fonts xorg zip
-USE_XORG=	x11
+USES=		fonts zip
 NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 
 do-install:
 	@${MKDIR} ${STAGEDIR}${FONTSDIR}
-	${INSTALL_DATA} ${WRKSRC}/otf/*.otf \
+	${INSTALL_DATA} ${WRKSRC}/ttf/*.ttf \
 		${STAGEDIR}${FONTSDIR}
 
 .include <bsd.port.mk>
