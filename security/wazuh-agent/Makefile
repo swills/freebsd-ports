@@ -2,10 +2,9 @@
 
 PORTNAME=	wazuh
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.13.1
-PORTREVISION=	1
+DISTVERSION=	4.0.0
 CATEGORIES=	security
-MASTER_SITES=	https://packages.wazuh.com/deps/3.13/
+MASTER_SITES=	https://packages.wazuh.com/deps/4.0/
 PKGNAMESUFFIX=	-agent
 DISTFILES=	cJSON.tar.gz src_cpython.tar.gz curl.tar.gz libdb.tar.gz libffi.tar.gz \
 		libyaml.tar.gz openssl.tar.gz procps.tar.gz sqlite.tar.gz  zlib.tar.gz \
@@ -47,8 +46,8 @@ WAZUHMOD750=	/ /logs/ossec /bin /lib /queue /queue/diff /ruleset /ruleset/sca /w
 		/active-response /active-response/bin /agentless /var /backup /queue/rids \
 		/wodles/oscap /wodles/oscap/content
 
-WAZUHMOD770=	/logs /queue/alerts /queue/ossec /etc /etc/shared /.ssh /var/run /var/upgrade \
-		/var/wodles /var/incoming
+WAZUHMOD770=	/logs /queue/alerts /queue/fim /queue/fim/db /queue/ossec /etc /etc/shared \
+		/.ssh /var/run /var/upgrade /var/wodles /var/incoming
 
 # extract all extra distfiles in src/external
 post-extract:
