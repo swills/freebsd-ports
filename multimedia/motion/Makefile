@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	motion
-PORTVERSION=	4.3.1
+PORTVERSION=	4.3.2
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	multimedia
 
