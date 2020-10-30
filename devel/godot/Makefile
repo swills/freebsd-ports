@@ -2,12 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	godot
-DISTVERSION=	3.2.2
+DISTVERSION=	3.2.3
 DISTVERSIONSUFFIX=	-stable
 CATEGORIES=	devel games
 
 MAINTAINER=	FreeBSD@Shaneware.biz
-COMMENT?=	Game runtime engine
+COMMENT=	Game runtime engine
 
 LICENSE=		MIT CC-BY-3.0
 LICENSE_COMB=		multi
@@ -29,24 +29,30 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	godotengine
 
 MAKE_ARGS+=		platform=x11 builtin_libpng=False \
-			builtin_openssl=False verbose=True
+			verbose=True
 MAKE_ARGS+=		${MAKE_ARGS_${CHOSEN_COMPILER_TYPE}}
-MAKE_ARGS_clang=	use_llvm=True
+MAKE_ARGS_clang=	use_llvm=True use_lld=True
 CXXFLAGS_i386=		${CXXFLAGS_i386_${CHOSEN_COMPILER_TYPE}}
 CXXFLAGS_i386_gcc=	-march=i586
 
 # option MONO doesn't build (needs 5.12+) so for now leave it out as an option
-OPTIONS_DEFINE=		EXAMPLES TOOLS
+OPTIONS_DEFINE=		EXAMPLES TOOLS ALSA PULSEAUDIO UDEV
 OPTIONS_DEFAULT=	ALSA
 # Moved to devel/godot-tools
 OPTIONS_EXCLUDE?=	EXAMPLES TOOLS
 OPTIONS_GROUP=		AUDIO
 OPTIONS_GROUP_AUDIO=	ALSA PULSEAUDIO
+OPTIONS_GROUP=		UDEV
+OPTIONS_GROUP=		LIBUDEV
 
 AUDIO_DESC=		Audio support
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 ALSA_MAKE_ARGS=		alsa=True
 ALSA_MAKE_ARGS_OFF=	alsa=False
+UDEV_DESC=		Libudev support (Joystick)
+UDEV_LIB_DEPENDS=	libudev.so:devel/libudev-devd
+UDEV_MAKE_ARGS=		udev=True
+UDEV_MAKE_ARGS_OFF=	udev=False
 # master at 2/4 tagged for 3.2
 EXAMPLES_GH_TUPLE=	godotengine:godot-demo-projects:57baf0a1b5d1:DEMOS
 EXAMPLES_PORTEXAMPLES=	*
