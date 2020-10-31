@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	contrib
-DISTVERSION=	git.2019-06-28
-PORTREVISION=	1
+DISTVERSION=	git.2020-10-16
 CATEGORIES=	sysutils
 PKGNAMEPREFIX=	munin-
 
@@ -17,7 +16,7 @@ USES=		python:env shebangfix uniquefiles:dirs
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	munin-monitoring
-GH_TAGNAME=	33270dd
+GH_TAGNAME=	b410946
 GH_TUPLE=	shuque:bind9stats:a920ded:bind9stats
 
 SHEBANG_REGEX=	./(${EXAMPLES_DIRS:ts|})/.*
