@@ -3,13 +3,13 @@
 
 PORTNAME=	libwebsockets
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.2.2
+DISTVERSION=	4.0.21
 CATEGORIES=	net devel
 
 MAINTAINER=	iblis@hs.ntnu.edu.tw
 COMMENT=	C library for lightweight websocket clients and servers
 
-LICENSE=	LGPL21
+LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		cmake pkgconfig ssl
