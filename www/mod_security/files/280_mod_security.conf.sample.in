@@ -8,18 +8,25 @@
 
 ##
 ## To enable ModSecurity in Apache, enable the modules
-##  mod_unique_id (in httpd.conf) and
-##  mod_security2 in this config file
+##  mod_unique_id
+##  mod_security2
+## e.g. by uncommenting the LoadModule lines of this config file.
 ##
 ## Additionally, load configuration and rules with an Include line from
 ##  %%ETCDIR%%/*.conf
-##
-## Most users will use the signatures from the OWASP Core Rule Set (CRS).
-## For configuration instructions, see %%DOCSDIR%%/README.
+## e.g. by uncommenting the following Inlude line.
 ##
 
-## apache modules for mod_security
+## Apache modules and Include line for mod_security
 #LoadModule unique_id_module %%APACHEMODDIR%%/mod_unique_id.so
 #LoadModule security2_module %%APACHEMODDIR%%/mod_security2.so
 #Include %%ETCDIR%%/*.conf
 
+##
+## Most users will use the signatures from the OWASP Core Rule Set (CRS).
+## For configuration instructions, see %%DOCSDIR%%/README (second paragraph)
+## before uncommenting the following Include line.
+##
+
+## Include line for signatures from the OWASP Core Rule Set (CRS)
+#Include %%ETCDIR%%/owasp-modsecurity-crs/rules/*.conf

@@ -3,12 +3,12 @@ Configuring ModSecurity on FreeBSD
 
 To enable ModSecurity in Apache, follow the instructions in
 
- %%PREFIX%%/%%APACHEETCDIR%%/modules.d/%%APMOD_FILE%%
+  %%PREFIX%%/%%APACHEETCDIR%%/modules.d/%%APMOD_FILE%%
 
 ModSecurity has various configuration options.
 To change them, edit the following file:
 
- %%ETCDIR%%/modsecurity.conf
+  %%ETCDIR%%/modsecurity.conf
 
 Getting the Core Rule Set
 -------------------------
@@ -22,14 +22,17 @@ under it.
   pkg install git
   cd %%ETCDIR%%
   git clone https://github.com/SpiderLabs/owasp-modsecurity-crs
-  cp owasp-modsecurity-crs/modsecurity_crs_10_setup.conf.example \
-    crs.conf
+  ln -s owasp-modsecurity-crs/crs-setup.conf.example crs-setup.conf
 
-The CRS has various config options. To change them, edit crs.conf.
+The CRS has various config options. To change them, edit crs-setup.conf.
 
-To activate the CRS base rules, add the following to your httpd.conf:
+To activate the CRS base rules, either add the following line to your httpd.conf
 
-  Include etc/modsecurity/owasp-modsecurity-crs/base_rules/*.conf
+  Include %%ETCDIR%%/owasp-modsecurity-crs/rules/*.conf
+
+or uncomment the same line in:
+
+  %%PREFIX%%/%%APACHEETCDIR%%/modules.d/%%APMOD_FILE%%
 
 You can also add custom configuration and CRS exceptions here.
 For instance, you might want to disable rules that generate false
@@ -85,5 +88,9 @@ You probably want to keep the CRS updated from time to time. You can
 do this with Git:
 
   cd %%ETCDIR%%/owasp-modsecurity-crs
-  git pull
+  git stash push && git pull && git stash pop
+
+Resolve conflicts in crs-setup.conf.example, if any. Then execute:
+
+  git reset && git stash drop
   apachectl restart
