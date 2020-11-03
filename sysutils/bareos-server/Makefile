@@ -2,7 +2,7 @@
 
 PORTNAME=	bareos
 DISTVERSIONPREFIX=	Release/
-DISTVERSION=	19.2.7
+DISTVERSION=	19.2.8
 PORTREVISION?=	0
 CATEGORIES?=	sysutils
 PKGNAMEPREFIX?=	#
@@ -20,7 +20,7 @@ LIB_DEPENDS+=	liblzo2.so:archivers/lzo2 \
 		libjansson.so:devel/jansson
 
 USES+=		cmake compiler:c++11-lang localbase pkgconfig readline:port \
-		shebangfix
+		shebangfix perl5
 USE_GITHUB=	yes
 
 USERS=		bareos
