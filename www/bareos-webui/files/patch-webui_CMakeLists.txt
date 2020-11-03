@@ -1,0 +1,43 @@
+--- webui/CMakeLists.txt.orig	2020-07-09 17:39:20 UTC
++++ webui/CMakeLists.txt
+@@ -109,7 +109,7 @@ configure_file(
+   ${CMAKE_CURRENT_SOURCE_DIR}/module/Application/view/layout/login.phtml @ONLY
+ )
+ 
+-set(WEBUI_DIR ${SHARE_INSTALL_PREFIX}/bareos-webui)
++set(WEBUI_DIR ${SHARE_INSTALL_PREFIX}/bareos)
+ set(WEBUI_TESTS_DIR ${WEBUI_DIR}/tests/regress)
+ if(PHP)
+   configure_file(
+@@ -132,25 +132,28 @@ endif()
+ 
+ if(NOT client-only)
+   install(FILES version.php init_autoloader.php
+-          DESTINATION ${SHARE_INSTALL_PREFIX}/bareos-webui
++          DESTINATION ${SHARE_INSTALL_PREFIX}/bareos
+   )
+   install(DIRECTORY tests config data module public vendor
+-          DESTINATION ${SHARE_INSTALL_PREFIX}/bareos-webui
++          DESTINATION ${SHARE_INSTALL_PREFIX}/bareos
+   )
+ 
+   install(FILES install/bareos/bareos-dir.d/console/admin.conf.example
+           DESTINATION ${confdir}/bareos-dir.d/console/
++	  RENAME admin.conf.sample
+   )
+   install(FILES install/bareos/bareos-dir.d/profile/webui-admin.conf
+           DESTINATION ${confdir}/bareos-dir.d/profile/
++	  RENAME webui-admin.conf.sample
+   )
+   install(FILES install/bareos/bareos-dir.d/profile/webui-limited.conf.example
+           DESTINATION ${confdir}/bareos-dir.d/profile/
++	  RENAME webui-limited.conf.sample
+   )
+   install(FILES install/bareos/bareos-dir.d/profile/webui-readonly.conf
+           DESTINATION ${confdir}/bareos-dir.d/profile/
++	  RENAME webui-readonly.conf.sample
+   )
+-  install(FILES install/apache/bareos-webui.conf DESTINATION ${HTTPD_CONF}/)
+ 
+   install(FILES install/directors.ini DESTINATION ${webuiconfdir})
+   install(FILES install/configuration.ini DESTINATION ${webuiconfdir})

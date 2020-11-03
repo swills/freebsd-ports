@@ -1,15 +1,12 @@
 [
 { type: install
   message: <<EOM
-bareos webui was installed
+The Bareos web UI has been installed in %%BAREOSWEBUIDIR%%. You can find
+configuration instructions at:
 
-Please note that everything has been installed in %%BAREOSWEBUIDIR%%. You can
-look bareos-webui installation/configuration instructions at:
+https://docs.bareos.org/IntroductionAndTutorial/InstallingBareosWebui.html
 
-https://github.com/bareos/bareos-webui/blob/master/doc/INSTALL.md
-
-1) Configuration files are stored at %%ETCDIR%%
-2) Bacula-webgui needs www/zend-framework port with PGSQL or MYSQL support.
+The configuration files are stored in %%ETCDIR%%.
 EOM
 }
 ]

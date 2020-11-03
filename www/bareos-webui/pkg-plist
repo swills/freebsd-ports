@@ -1,8 +1,10 @@
 @owner %%WWWOWN%%
 @group %%WWWGRP%%
 %%ETCDIR%%/apache-bareos-webui.conf
-@sample(,www,640) %%ETCDIR%%/bareos-dir.d/console/admin.conf.sample
-@sample(,www,640) %%ETCDIR%%/bareos-dir.d/profile/webui-admin.conf.sample
+@sample(bareos,bareos,640) %%ETCDIR%%/bareos-dir.d/console/admin.conf.sample
+@sample(bareos,bareos,640) %%ETCDIR%%/bareos-dir.d/profile/webui-admin.conf.sample
+@sample(bareos,bareos,640) %%ETCDIR%%/bareos-dir.d/profile/webui-limited.conf.sample
+@sample(bareos,bareos,640) %%ETCDIR%%/bareos-dir.d/profile/webui-readonly.conf.sample
 %%ETCDIR%%/configuration.ini
 %%ETCDIR%%/directors.ini
 %%ETCDIR%%/nginx-bareos-webui.conf
@@ -10,7 +12,6 @@
 %%WWWDIR%%/config/application.config.php
 %%WWWDIR%%/config/autoload/README.md
 %%WWWDIR%%/config/autoload/global.php
-%%WWWDIR%%/config/autoload/global.php.bak
 %%WWWDIR%%/init_autoloader.php
 %%WWWDIR%%/module/Application/Module.php
 %%WWWDIR%%/module/Application/autoload_classmap.php
@@ -286,6 +287,13 @@
 %%WWWDIR%%/public/js/respond.min.js
 %%WWWDIR%%/public/js/responsive.bootstrap.js
 %%WWWDIR%%/public/js/responsive.bootstrap.min.js
+%%WWWDIR%%/tests/phpunit/Bootstrap.php
+%%WWWDIR%%/tests/regress/webui-bsock-connection-test
+%%WWWDIR%%/tests/regress/webui-bsock-connection-test-tls
+%%WWWDIR%%/tests/regress/webui-bsock-connection-test-tls.php
+%%WWWDIR%%/tests/regress/webui-bsock-connection-test.php
+%%WWWDIR%%/tests/selenium/README.md
+%%WWWDIR%%/tests/selenium/webui-selenium-test.py
 %%WWWDIR%%/vendor/Bareos/library/Bareos/BSock/BareosBSock.php
 %%WWWDIR%%/vendor/Bareos/library/Bareos/BSock/BareosBSockAbstractServiceFactory.php
 %%WWWDIR%%/vendor/Bareos/library/Bareos/BSock/BareosBSockInterface.php
