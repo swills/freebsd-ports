@@ -3,8 +3,11 @@
 
 PORTNAME=	nim
 PORTVERSION=	1.4.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	https://nim-lang.org/download/
+
+CONFLICTS_INSTALL=	nimble
 
 MAINTAINER=	ports@nicandneal.net
 COMMENT=	Nim programming language
@@ -21,7 +24,7 @@ TEST_DEPENDS=	node>=0:www/node
 USES=		compiler:c11 tar:xz
 USE_LDCONFIG=	yes
 
-TOOLS_DESC=	Build and install nim tools
+TOOLS_DESC=	Build and install nim tools, including nimble
 
 OPTIONS_DEFINE=	DOCS TOOLS
 OPTIONS_DEFAULT=	DOCS TOOLS
@@ -34,7 +37,7 @@ MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 
-TLIST=	nimfind nimgrep nimpretty nimsuggest testament
+TLIST=	nimble nimfind nimgrep nimpretty nimsuggest testament
 
 .if ${CHOSEN_COMPILER_TYPE} == "gcc"
 EXTRA_PATCHES=	${PATCHDIR}/elfv1-patch-build.sh
@@ -66,7 +69,7 @@ do-build-DOCS-on:
 		-d:release --nimcache=${WRKDIR}/nimcache --docCmd=skip
 
 do-build-TOOLS-on:
-	cd ${WRKSRC} && ./koch toolsNoNimble --parallelBuild=${MAKE_JOBS_NUMBER} \
+	cd ${WRKSRC} && ./koch tools --parallelBuild=${MAKE_JOBS_NUMBER} \
 		-d:release --nimcache=${WRKSRC}/nimcache
 
 
