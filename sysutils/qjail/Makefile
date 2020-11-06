@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	qjail
-PORTVERSION=	5.5
+PORTVERSION=	5.6
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -23,6 +23,9 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 USES=		tar:bzip2
 NO_BUILD=	yes
 NO_ARCH=	yes
+
+CONFLICTS=	qjail54-*
+IGNORE_FreeBSD_11=	Requires Freebsd 12 or newer
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/qjail                      \
