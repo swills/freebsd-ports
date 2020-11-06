@@ -3,7 +3,11 @@
 
 PORTNAME=	memcached
 PORTVERSION=	3.1.5
+PORTREVISION=	1
 CATEGORIES=	databases
+
+PATCH_SITES=	https://github.com/php-memcached-dev/php-memcached/commit/
+PATCHFILES+=	c94e014da53cc8a3d0510402f36bc6e5e17bf608.diff:-p1
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	PHP extension for interfacing with memcached via libmemcached library
