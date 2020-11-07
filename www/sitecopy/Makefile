@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=	--with-ssl
 post-patch:
 	@${REINPLACE_CMD} -e 's|;;|;|g' \
 		${WRKSRC}/src/sitestore.c
-	@${REINPLACE_CMD} -e 's|25 26 27 28|& 29 30|g' \
+	@${REINPLACE_CMD} -e 's|25 26 27 28|& 29 30 31|g' \
 		${WRKSRC}/configure
 .if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1200072
 	@${REINPLACE_CMD} -e '/#define ksize_t /d' \
