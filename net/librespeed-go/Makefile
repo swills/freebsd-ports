@@ -2,7 +2,7 @@
 
 PORTNAME=	librespeed-go
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.1.1
+DISTVERSION=	1.1.2
 CATEGORIES=	net www
 
 MAINTAINER=	driesm.michiels@gmail.com
@@ -16,7 +16,8 @@ USE_RC_SUBR=	librespeed-go
 USE_GITHUB=	YES
 GH_ACCOUNT=	librespeed
 GH_PROJECT=	speedtest-go
-GH_TUPLE=	etcd-io:bbolt:v1.3.5:etcd_io_bbolt/vendor/go.etcd.io/bbolt \
+GH_TUPLE=	\
+		etcd-io:bbolt:v1.3.5:etcd_io_bbolt/vendor/go.etcd.io/bbolt \
 		fsnotify:fsnotify:v1.4.9:fsnotify_fsnotify/vendor/github.com/fsnotify/fsnotify \
 		go-chi:chi:v4.1.2:go_chi_chi/vendor/github.com/go-chi/chi \
 		go-chi:cors:v1.1.1:go_chi_cors/vendor/github.com/go-chi/cors \
