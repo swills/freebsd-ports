@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	nullmailer
-PORTVERSION=	1.13
-PORTREVISION=	4
+PORTVERSION=	2.2
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/nullmailer/ \
@@ -15,7 +15,9 @@ COMMENT=	MTA for hosts which relay to a fixed set of smart relays
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-LOCALSTATEDIR=	/var/spool
+USES=		gmake
+
+LOCALSTATEDIR=	/var
 
 USERS=		nullmail
 GROUPS=		nullmail
