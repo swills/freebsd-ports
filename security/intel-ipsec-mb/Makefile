@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	intel-ipsec-mb
-DISTVERSION=	0.54.3
-DISTVERSIONSUFFIX=	-dev
+DISTVERSION=	0.55.0
 CATEGORIES=	security
 
 MAINTAINER=	freebsd@sysctl.cz
@@ -19,7 +18,7 @@ USES=		gmake compiler:c11 localbase:ldflags
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	intel
-GH_TAGNAME=	76949db
+GH_TAGNAME=	55179f0
 
 USE_LDCONFIG=	yes
 PLIST_FILES=	include/intel-ipsec-mb.h \
