@@ -1,7 +1,7 @@
 --- setup.py.orig	2020-10-01 17:52:08 UTC
 +++ setup.py
 @@ -31,8 +31,8 @@ with open_relative("README.rst") as f:
-
+ 
  requires = [
      "certifi",
 -    "configparser==4.0.2",
