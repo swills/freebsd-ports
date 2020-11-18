@@ -7,7 +7,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	LOCAL/ohauer
 DISTNAME=	spread-src-${PORTVERSION}
 
-MAINTAINER=	portmaster@bsdforge.com
+MAINTAINER=	ports@freebsd.org
 COMMENT=	Spread Group Communication System, a network toolkit
 
 GNU_CONFIGURE=	yes
