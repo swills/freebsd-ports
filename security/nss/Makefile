@@ -68,6 +68,10 @@ MAKE_ENV+=	NSS_DISABLE_ALTIVEC=1
 .endif
 .endif
 
+.if ${ARCH} == armv6
+MAKE_ENV+=      NSS_DISABLE_ARM32_NEON=1
+.endif
+
 .if ${OPSYS} == FreeBSD && ${ARCH} == amd64
 USE_BINUTILS=	# intel-gcm.s
 CC+=	-B${LOCALBASE}/bin
