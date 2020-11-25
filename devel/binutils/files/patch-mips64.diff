@@ -1,41 +1,27 @@
---- bfd/config.bfd.orig	2015-07-17 20:05:04.921108109 +0000
-+++ bfd/config.bfd	2015-07-17 20:42:54.567978553 +0000
-@@ -1084,15 +1084,15 @@
+--- bfd/config.bfd.orig	2020-11-25 16:03:32 UTC
++++ bfd/config.bfd
+@@ -1188,6 +1188,11 @@ case "${targ}" in
+     want64=true
      ;;
-   mips64*el-*-freebsd* | mips64*el-*-kfreebsd*-gnu)
-     # FreeBSD vectors
--    targ_defvec=mips_elf32_ntradfbsd_le_vec
--    targ_selvecs="mips_elf32_ntradfbsd_be_vec mips_elf32_tradfbsd_le_vec mips_elf32_tradfbsd_be_vec mips_elf64_tradfbsd_le_vec mips_elf64_tradfbsd_be_vec"
-+    targ_defvec=mips_elf64_tradfbsd_le_vec
-+    targ_selvecs="mips_elf64_tradfbsd_le_vec mips_elf32_ntradfbsd_le_vec mips_elf32_ntradfbsd_be_vec mips_elf32_tradfbsd_le_vec mips_elf32_tradfbsd_be_vec mips_elf64_tradfbsd_be_vec"
-     # Generic vectors
-     targ_selvecs="${targ_selvecs} mips_elf32_ntrad_le_vec mips_elf32_ntrad_be_vec mips_elf32_trad_le_vec mips_elf32_trad_be_vec mips_elf64_trad_le_vec mips_elf64_trad_be_vec"
-     ;;
-   mips64*-*-freebsd* | mips64*-*-kfreebsd*-gnu)
-     # FreeBSD vectors
--    targ_defvec=mips_elf32_ntradfbsd_be_vec
--    targ_selvecs="mips_elf32_ntradfbsd_le_vec mips_elf32_tradfbsd_be_vec mips_elf32_tradfbsd_le_vec mips_elf64_tradfbsd_be_vec mips_elf64_tradfbsd_le_vec"
-+    targ_defvec=mips_elf64_tradfbsd_be_vec
-+    targ_selvecs="mips_elf64_tradfbsd_be_vec mips_elf32_ntradfbsd_be_vec mips_elf32_ntradfbsd_le_vec mips_elf32_tradfbsd_be_vec mips_elf32_tradfbsd_le_vec mips_elf64_tradfbsd_le_vec"
-     # Generic vectors
-     targ_selvecs="${targ_selvecs} mips_elf32_ntrad_be_vec mips_elf32_ntrad_le_vec mips_elf32_trad_be_vec mips_elf32_trad_le_vec mips_elf64_trad_be_vec mips_elf64_trad_le_vec"
-     ;;
---- ld/configure.tgt.orig	2015-07-17 20:52:58.728911150 +0000
-+++ ld/configure.tgt	2015-07-17 21:03:29.559869219 +0000
-@@ -491,12 +491,12 @@
- 			targ_extra_emuls="elf32ltsmip elf32btsmipn32 elf64btsmip elf32ltsmipn32 elf64ltsmip"
- 			targ_extra_libpath=$targ_extra_emuls ;;
- mips64*el-*-freebsd* | mips64*el-*-kfreebsd*-gnu)
--			targ_emul=elf32ltsmipn32_fbsd
--			targ_extra_emuls="elf32ltsmip elf32btsmip elf32ltsmipn32 elf32btsmipn32 elf64ltsmip elf64btsmip elf32ltsmip_fbsd elf32btsmip_fbsd elf32btsmipn32_fbsd elf64ltsmip_fbsd elf64btsmip_fbsd"
-+			targ_emul=elf64ltsmip_fbsd
-+			targ_extra_emuls="elf32ltsmip_fbsd elf32btsmip_fbsd elf32ltsmipn32_fbsd elf32btsmipn32_fbsd elf64ltsmip_fbsd elf64btsmip_fbsd elf32ltsmip elf32btsmip elf32ltsmipn32 elf32btsmipn32 elf64ltsmip elf64btsmip"
- 			targ_extra_libpath=$targ_extra_emuls ;;
- mips64*-*-freebsd* | mips64*-*-kfreebsd*-gnu)
--			targ_emul=elf32btsmipn32_fbsd
--			targ_extra_emuls="elf32ltsmip elf32btsmip elf32ltsmipn32 elf32btsmipn32 elf64ltsmip elf64btsmip elf32ltsmip_fbsd elf32btsmip_fbsd elf32ltsmipn32_fbsd elf64ltsmip_fbsd elf64btsmip_fbsd"
-+			targ_emul=elf64btsmip_fbsd
-+			targ_extra_emuls="elf32btsmip_fbsd elf32ltsmip_fbsd elf32btsmipn32_fbsd elf32ltsmipn32_fbsd elf64btsmip_fbsd elf64ltsmip_fbsd elf32ltsmip elf32btsmip elf32ltsmipn32 elf32btsmipn32 elf64ltsmip elf64btsmip"
- 			targ_extra_libpath=$targ_extra_emuls ;;
- mips*el-*-freebsd* | mips*el-*-kfreebsd*-gnu)
- 			targ_emul=elf32ltsmip_fbsd
+ #ifdef BFD64
++  s390x-*-freebsd*)
++    targ_defvec=s390_elf64_vec
++    targ_selvecs=s390_elf32_vec
++    want64=true
++    ;;
+   s390x-*-linux*)
+     targ_defvec=s390_elf64_vec
+     targ_selvecs=s390_elf32_vec
+--- ld/configure.tgt.orig	2020-11-25 16:03:32 UTC
++++ ld/configure.tgt
+@@ -776,6 +776,10 @@ rx-*-*)			targ_emul=elf32rx
+ s12z-*-*)		targ_emul=m9s12zelf
+ 			targ_extra_ofiles=ldelfgen.o
+ 			;;
++s390x-*-freebsd*)	targ_emul=elf64_s390
++			targ_extra_emuls=elf_s390
++			targ_extra_libpath=$targ_extra_emuls
++			tdir_elf_s390=`echo ${targ_alias} | sed -e 's/s390x/s390/'` ;;
+ s390x-*-linux*)		targ_emul=elf64_s390
+ 			targ_extra_emuls=elf_s390
+ 			targ_extra_libpath=$targ_extra_emuls
