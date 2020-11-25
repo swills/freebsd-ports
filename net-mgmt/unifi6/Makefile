@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	unifi6
-PORTVERSION=	6.0.28
+PORTVERSION=	6.0.36
 CATEGORIES=	net-mgmt java
 MASTER_SITES=	http://dl.ubnt.com/unifi/%SUBDIR%/:unifi \
 		https://repo1.maven.org/maven2/%SUBDIR%/:jax
