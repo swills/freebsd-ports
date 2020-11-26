@@ -1,0 +1,10 @@
+--- bin/flow-log2rrd.orig	2020-11-11 19:37:41.210787000 +0200
++++ bin/flow-log2rrd	2020-11-11 19:37:55.603659000 +0200
+@@ -4,7 +4,6 @@
+ import os
+ import rrdtool
+ import sys
+-import string
+ 
+ #
+ # process syslog output from flow-capture and flow-fanout into a rrd
