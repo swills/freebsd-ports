@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	goland
-PORTVERSION=	2020.2.3
+PORTVERSION=	2020.2.4
 CATEGORIES=	devel java
 MASTER_SITES=	https://download-cf.jetbrains.com/go/
 PKGNAMEPREFIX=	jetbrains-
