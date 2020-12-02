@@ -2,14 +2,13 @@
 # $FreeBSD$
 
 PORTNAME=	ecasound
-PORTVERSION=	2.9.1
-PORTREVISION=	7
+PORTVERSION=	2.9.3
 CATEGORIES=	audio
 MASTER_SITES=	http://ecasound.seul.org/download/ \
 		http://nosignal.fi/download/ \
 		http://ecawave.sourceforge.net/download/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	Multitrack audio processing software
 
 LICENSE=	GPLv2 LGPL21
