@@ -2,10 +2,10 @@
 # $FreeBSD$
 
 PORTNAME=	gtk-youtube-viewer
-PORTVERSION=	3.5.9
+PORTVERSION=	3.8.0
 CATEGORIES=	multimedia perl5
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	neel@neelc.org
 COMMENT=	GTK Search and play YouTube videos streaming in MPlayer
 
 LICENSE=	ART10 GPLv3
