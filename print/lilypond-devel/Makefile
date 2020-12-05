@@ -3,6 +3,7 @@
 
 PORTNAME=	lilypond
 DISTVERSION=	2.21.81
+PORTREVISION=	1
 CATEGORIES=	print audio
 MASTER_SITES=	http://lilypond.org/download/source/v${DISTVERSION:R}/
 PKGNAMESUFFIX=	-devel
@@ -39,8 +40,7 @@ USE_PERL5=	build
 USE_TEX=	latex texmf
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-texgyre-dir=${LOCALBASE}/${TEXMFDISTDIR}/fonts/opentype/public/tex-gyre \
-			--without-urwotf-dir
+CONFIGURE_ARGS+=	--with-texgyre-dir=${LOCALBASE}/${TEXMFDISTDIR}/fonts/opentype/public/tex-gyre
 CONFIGURE_ENV+=		ac_cv_prog_MAKEINFO="${LOCALBASE}/bin/makeinfo" \
 			FLEX=${FLEX} \
 			HOME=${WRKDIR} \
@@ -65,8 +65,15 @@ INFO=		internals \
 				music-glossary
 PLIST_SUB=	DISTVERSION=${DISTVERSION}
 
-OPTIONS_DEFINE=	NLS
+OPTIONS_DEFINE=	URW NLS
 OPTIONS_SUB=	yes
+
+URW_DESC=	Use bundled URW fonts
+
+URW_CONFIGURE_WITH=	urwotf-dir=${LOCALBASE}/share/fonts/urw-core35-fonts
+
+URW_BUILD_DEPENDS=	urw-core35-fonts>0:x11-fonts/urw-core35-fonts
+URW_RUN_DEPENDS_OFF=	urw-core35-fonts>0:x11-fonts/urw-core35-fonts
 
 NLS_USES=	gettext
 
