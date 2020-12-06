@@ -1,6 +1,6 @@
---- dialects/freebsd/dproc.c.orig	2019-05-08 07:32:25 UTC
-+++ dialects/freebsd/dproc.c
-@@ -37,6 +37,14 @@ static char *rcsid = "$Id: dproc.c,v 1.20 2018/02/14 1
+--- dialects/freebsd/dproc.c.orig	2019-05-08 00:32:25.000000000 -0700
++++ dialects/freebsd/dproc.c	2020-11-19 21:13:28.847708000 -0800
+@@ -37,6 +37,14 @@
  
  #include "lsof.h"
  
@@ -15,7 +15,7 @@
  
  _PROTOTYPE(static void enter_vn_text,(KA_T va, int *n));
  _PROTOTYPE(static void get_kernel_access,(void));
-@@ -132,6 +140,15 @@ gather_proc_info()
+@@ -132,6 +140,15 @@
  	KA_T fa;
  #endif	/* defined(HAS_FDESCENTTBL) */
  
@@ -31,7 +31,7 @@
  	static ofb_t *ofb = NULL;
  	static int ofbb = 0;
  	int pgid, pid;
-@@ -305,13 +322,29 @@ gather_proc_info()
+@@ -305,13 +322,33 @@
  	    if (!fd.fd_files
  	    ||  kread((KA_T)fd.fd_files, (char *)&fdt, sizeof(fdt)))
  		continue;
@@ -45,7 +45,11 @@
  
 +#if	defined(HAS_PWD)
 +	    cdir = rdir = jdir = NULL;
++#if	defined(PWDDESC_KVM_LOAD_PWD)
++	    pwd_addr = (KA_T)PWDDESC_KVM_LOAD_PWD(&fd);
++#else
 +	    pwd_addr = (KA_T)FILEDESC_KVM_LOAD_PWD(&fd);
++#endif
 +	    if (pwd_addr != 0) {
 +		    if (!kread(pwd_addr, (char *)&pwd, sizeof(pwd))) {
 +			    cdir = pwd.pwd_cdir;
@@ -62,7 +66,7 @@
  	/*
  	 * Allocate a local process structure.
  	 */
-@@ -347,20 +380,20 @@ gather_proc_info()
+@@ -347,20 +384,20 @@
  	/*
  	 * Save current working directory information.
  	 */
@@ -87,7 +91,7 @@
  		if (Lf->sf)
  		    link_lfile();
  	    }
-@@ -369,10 +402,10 @@ gather_proc_info()
+@@ -369,10 +406,10 @@
  	/*
  	 * Save jail directory information.
  	 */
@@ -100,7 +104,7 @@
  		if (Lf->sf)
  		    link_lfile();
  	    }
-@@ -655,7 +688,29 @@ kread(addr, buf, len)
+@@ -655,7 +692,29 @@
  	return((br == len) ? 0 : 1);
  }
  
@@ -130,7 +134,7 @@
  /*
   * process_text() - process text information
   */
-@@ -682,20 +737,15 @@ process_text(vm)
+@@ -682,20 +741,15 @@
  /*
   * Read the vm_map structure.  Search its vm_map_entry structure list.
   */
