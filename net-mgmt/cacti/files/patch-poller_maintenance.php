@@ -1,6 +1,6 @@
---- poller_maintenance.php.orig	2019-01-03 02:14:26 UTC
+--- poller_maintenance.php.orig	2020-11-30 18:19:51 UTC
 +++ poller_maintenance.php
-@@ -227,7 +227,7 @@ function logrotate_rotatenow() {
+@@ -248,7 +248,7 @@ function logrotate_rotatenow() {
  	$logs = array();
  	$log = read_config_option('path_cactilog');
  	if (empty($log)) {

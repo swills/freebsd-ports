@@ -1,6 +1,6 @@
---- lib/installer.php.orig	2019-09-29 18:36:29 UTC
+--- lib/installer.php.orig	2020-11-30 18:19:50 UTC
 +++ lib/installer.php
-@@ -3226,7 +3226,7 @@ class Installer implements JsonSerializable {
+@@ -3402,7 +3402,7 @@ class Installer implements JsonSerializable {
  		global $config;
  
  		$page_nr = 1;

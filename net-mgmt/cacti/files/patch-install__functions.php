@@ -1,6 +1,6 @@
---- install/functions.php.orig	2019-07-15 19:23:30 UTC
+--- install/functions.php.orig	2020-11-30 18:19:50 UTC
 +++ install/functions.php
-@@ -538,7 +538,7 @@ function install_file_paths() {
+@@ -690,7 +690,7 @@ function install_file_paths() {
  	}
  
  	if (empty($input['path_cactilog']['default'])) {
