@@ -1,6 +1,6 @@
-TIMESTAMP = 1607293013
-SHA256 (future-architect-vuls-v0.9.0-92-g101c44c_GH0.tar.gz) = 2c3472b4bbd38888f73191480b71653ec1bae41570c70ddee8318f8db8a4c9ff
-SIZE (future-architect-vuls-v0.9.0-92-g101c44c_GH0.tar.gz) = 983192
+TIMESTAMP = 1607440390
+SHA256 (future-architect-vuls-v0.13.7_GH0.tar.gz) = 59756b8500532fcb39f9c8c90a1f57f7c4f67707b4b6328babd5d1a36a96cc9f
+SIZE (future-architect-vuls-v0.13.7_GH0.tar.gz) = 983683
 SHA256 (Azure-azure-sdk-for-go-v43.3.0_GH0.tar.gz) = bf5e030b3ebb0a0ac0388ab2cee1b4e4ce2c65d8541f3b176ed64b918f2e00e3
 SIZE (Azure-azure-sdk-for-go-v43.3.0_GH0.tar.gz) = 25693638
 SHA256 (Azure-go-autorest-5bd9621f41a0_GH0.tar.gz) = 1cd0fa3f623475cd94daf16fff33e873d6a8191de89b1306008744fbf78f892b
