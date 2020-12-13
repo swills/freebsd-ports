@@ -1,3 +1,4 @@
+bin/ncls
 bin/ncneofetch
 bin/notcurses-demo
 bin/notcurses-input
@@ -15,6 +16,7 @@ include/ncpp/NCKey.hh
 include/ncpp/NCLogLevel.hh
 include/ncpp/NotCurses.hh
 include/ncpp/Palette256.hh
+include/ncpp/Pile.hh
 include/ncpp/Plane.hh
 include/ncpp/Plot.hh
 include/ncpp/Reader.hh
@@ -36,6 +38,8 @@ include/notcurses/direct.h
 include/notcurses/nckeys.h
 include/notcurses/notcurses.h
 include/notcurses/version.h
+lib/cmake/Notcurses++/Notcurses++Config.cmake
+lib/cmake/Notcurses++/Notcurses++ConfigVersion.cmake
 lib/cmake/Notcurses/NotcursesConfig.cmake
 lib/cmake/Notcurses/NotcursesConfigVersion.cmake
 lib/libnotcurses++.a
@@ -48,6 +52,7 @@ lib/libnotcurses.so.%%ABI_VER%%
 lib/libnotcurses.so.%%REL_VER%%
 libdata/pkgconfig/notcurses++.pc
 libdata/pkgconfig/notcurses.pc
+%%DOCS%%share/man/man1/ncls.1.gz
 %%DOCS%%share/man/man1/ncneofetch.1.gz
 %%DOCS%%share/man/man1/notcurses-demo.1.gz
 %%DOCS%%share/man/man1/notcurses-input.1.gz
@@ -56,7 +61,6 @@ libdata/pkgconfig/notcurses.pc
 %%DOCS%%share/man/man1/notcurses-view.1.gz
 %%DOCS%%share/man/man3/notcurses.3.gz
 %%DOCS%%share/man/man3/notcurses_capabilities.3.gz
-%%DOCS%%share/man/man3/notcurses_cell.3.gz
 %%DOCS%%share/man/man3/notcurses_channels.3.gz
 %%DOCS%%share/man/man3/notcurses_directmode.3.gz
 %%DOCS%%share/man/man3/notcurses_fade.3.gz
@@ -67,6 +71,7 @@ libdata/pkgconfig/notcurses.pc
 %%DOCS%%share/man/man3/notcurses_menu.3.gz
 %%DOCS%%share/man/man3/notcurses_metric.3.gz
 %%DOCS%%share/man/man3/notcurses_multiselector.3.gz
+%%DOCS%%share/man/man3/notcurses_nccell.3.gz
 %%DOCS%%share/man/man3/notcurses_output.3.gz
 %%DOCS%%share/man/man3/notcurses_palette.3.gz
 %%DOCS%%share/man/man3/notcurses_plane.3.gz
