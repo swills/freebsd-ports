@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	calcurse
-PORTVERSION=	4.5.1
+PORTVERSION=	4.7.0
 CATEGORIES=	deskutils
 MASTER_SITES=	https://calcurse.org/files/
 
@@ -12,15 +12,16 @@ COMMENT=	Text-based calendar and scheduling application
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-OPTIONS_DEFINE=	CALDAV DOCS NLS
-OPTIONS_DEFAULT=CALDAV
-OPTIONS_SUB=	yes
-
 USES=		gmake ncurses shebangfix
 SHEBANG_FILES=	contrib/caldav/calcurse-caldav \
 		contrib/caldav/calcurse-caldav.py \
 		contrib/vdir/calcurse-vdir \
 		contrib/vdir/calcurse-vdir.py
+
+OPTIONS_DEFINE=	CALDAV DOCS NLS
+OPTIONS_DEFAULT=CALDAV
+OPTIONS_SUB=	yes
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-asciidoc
 
