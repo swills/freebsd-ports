@@ -2,20 +2,20 @@
 # $FreeBSD$
 
 PORTNAME=	mosquitto
-PORTVERSION=	1.6.7
+PORTVERSION=	2.0.4
 CATEGORIES=	net
 MASTER_SITES=	http://mosquitto.org/files/source/
-
-PATCH_SITES=	https://github.com/eclipse/mosquitto/commit/
-PATCHFILES=	8a4ae28fa926589e9891674ca4424dc703ad2d88.patch:-p1
 
 MAINTAINER=	joe@thrallingpenguin.com
 COMMENT=	Open source MQTT broker
 
 LICENSE=	EPL
 
-LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
+LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid \
+		libcjson.so.1:devel/libcjson
 RUN_DEPENDS=	${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
+BUILD_DEPENDS=	xsltproc:textproc/libxslt \
+		docbook-xsl>0:textproc/docbook-xsl
 
 USES=		cmake ssl
 USE_RC_SUBR=	mosquitto
