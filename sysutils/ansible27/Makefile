@@ -1,18 +1,18 @@
 # $FreeBSD$
 
-PORTVERSION=	2.7.17
-PORTREVISION=	1
+PORTVERSION=	2.7.18
 PKGNAMESUFFIX=	27
 
-CONFLICTS=	ansible-* \
-		ansible1-* \
-		ansible23-* \
-		ansible24-* \
-		ansible25-* \
-		ansible26-* \
-		ansible28-*
+CONFLICTS=	*ansible-2* \
+		*ansible1-* \
+		*ansible23-* \
+		*ansible24-* \
+		*ansible25-* \
+		*ansible26-* \
+		*ansible28-* \
+		*ansible29-* \
 
-MASTERDIR=	${.CURDIR}/../ansible
+MASTERDIR=	${.CURDIR}/../ansible29
 DISTINFO_FILE=	${.CURDIR}/distinfo
 
 USES=		cpe python
