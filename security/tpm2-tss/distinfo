@@ -1,3 +1,3 @@
-TIMESTAMP = 1596754584
-SHA256 (tpm2-tss-2.4.2.tar.gz) = b037fbfaf3dc97d049e9956c96efa079b27c04d743a39a8b0660a7ab66b46aaa
-SIZE (tpm2-tss-2.4.2.tar.gz) = 1461987
+TIMESTAMP = 1609221448
+SHA256 (tpm2-tss-3.0.3.tar.gz) = 78392be7309baf47f51b122f566ac915fd4d1760ea78571cba2e1484f9b5be17
+SIZE (tpm2-tss-3.0.3.tar.gz) = 1489136
