@@ -1,5 +1,6 @@
-include/tss2/tss2-tcti-tabrmd.h
 etc/dbus-1/system.d/tpm2-abrmd.conf
+etc/rc.d/tpm2-abrmd
+include/tss2/tss2-tcti-tabrmd.h
 lib/libtss2-tcti-tabrmd.a
 lib/libtss2-tcti-tabrmd.so
 lib/libtss2-tcti-tabrmd.so.0

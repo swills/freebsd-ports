@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	tpm2-abrmd
-DISTVERSION=	2.3.2
+DISTVERSION=	2.3.3
 CATEGORIES=	security
 MASTER_SITES=	https://github.com/tpm2-software/tpm2-abrmd/releases/download/${DISTVERSION}/
 
