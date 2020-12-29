@@ -1,3 +1,3 @@
-TIMESTAMP = 1596754825
-SHA256 (tpm2-tools-4.2.1.tar.gz) = 1ba32a5824e40bee18637c0b323943deff2fb085b07a4edffd0e045a520809c0
-SIZE (tpm2-tools-4.2.1.tar.gz) = 879294
+TIMESTAMP = 1609222153
+SHA256 (tpm2-tools-5.0.tar.gz) = e1b907fe29877628052e08ad84eebc6c3f7646d29505ed4862e96162a8c91ba1
+SIZE (tpm2-tools-5.0.tar.gz) = 990855
