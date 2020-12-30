@@ -87,6 +87,7 @@ libdata/pkgconfig/notcurses.pc
 %%MANPAGES%%share/man/man3/notcurses_visual.3.gz
 %%DATADIR%%/PurpleDrank.jpg
 %%DATADIR%%/aidsrobots.jpeg
+%%DATADIR%%/atma.png
 %%DATADIR%%/changes.jpg
 %%DATADIR%%/chunli01.png
 %%DATADIR%%/chunli02.png
