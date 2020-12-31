@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gxkb
-PORTVERSION=	0.8.2
+PORTVERSION=	0.9.0
 CATEGORIES=	x11
 MASTER_SITES=	SF/${PORTNAME}
 
@@ -16,7 +16,7 @@ LIB_DEPENDS=	libxklavier.so:x11/libxklavier \
 
 USES=		gnome pkgconfig
 GNU_CONFIGURE=	yes
-USE_GNOME=	gdkpixbuf2 glib20 gtk20
+USE_GNOME=	gdkpixbuf2 glib20 gtk30 libwnck3
 
 PORTDOCS=	AUTHORS NEWS
 
