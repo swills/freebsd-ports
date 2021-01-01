@@ -3,7 +3,7 @@ include/gtk-vnc-2.0/gtk-vnc.h
 include/gtk-vnc-2.0/vncdisplay.h
 include/gtk-vnc-2.0/vncdisplayenums.h
 include/gtk-vnc-2.0/vncgrabsequence.h
-include/gtk-vnc-2.0/vncimageframebuffer.h
+include/gtk-vnc-2.0/vnccairoframebuffer.h
 include/gvnc-1.0/gvnc.h
 include/gvnc-1.0/vncaudio.h
 include/gvnc-1.0/vncaudioformat.h
