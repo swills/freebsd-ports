@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	xine
-PORTVERSION=	1.2.9
-PORTREVISION=	13
+PORTVERSION=	1.2.11
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-lib/${PORTVERSION}
 PKGNAMEPREFIX=	lib
@@ -67,31 +66,50 @@ CFLAGS_i386=			-fomit-frame-pointer
 DOCSDIR=	${PREFIX}/share/doc/xine-lib
 # Please sync with XINE_PLUGINSDIR in multimedia/xine
 # and multimedia/vdr-plugin-xineliboutput
-PLUGINSDIR=	lib/xine/plugins/2.7
+PLUGINSDIR=	lib/xine/plugins/2.9
 PLIST_SUB=	PLUGINSDIR="${PLUGINSDIR}"
 
-OPTIONS_DEFINE=		DOCS NLS CACA DVB DMX_IMAGE IPV6 IMAGEMAGICK JACK \
-			GNOMEVFS2 PIXBUF PULSEAUDIO XVMC SMB SNDIO AALIB WAVPACK \
-			VAAPI LIBBLURAY
+OPTIONS_DEFINE=		AALIB AOM CACA DAV1D DOCS DMX_IMAGE DVB GNOMEVFS2 IPV6 \
+			JACK LIBBLURAY NFS NLS \
+			PIXBUF PULSEAUDIO SFTP SMB SNDIO TLS VAAPI WAVPACK \
+			XVMC
 OPTIONS_DEFAULT=	DVB PIXBUF VAAPI
 OPTIONS_DEFINE_i386=	W32DLL
 OPTIONS_DEFAULT_i386=	W32DLL
+OPTIONS_RADIO=		IMAGEMAGICK
+OPTIONS_RADIO_IMAGEMAGICK=IMAGEMAGICK6 IMAGEMAGICK7
 OPTIONS_SUB=		yes
 
+AOM_DESC=		Enable libaom AV1 decoder support
+DAV1D_DESC=		Enable dav1d AV1 decoder support
 DMX_IMAGE_DESC=		DMX image plugin
 DVB_DESC=		DVB plugin
+IMAGEMAGICK6_DESC=	${IMAGEMAGICK_DESC} version 6.x
+IMAGEMAGICK7_DESC=	${IMAGEMAGICK_DESC} version 7.x
+NFS_DESC=		Enable NFS support using libnfs
+SFTP_DESC=		Enable SFTP support using libssh2
+TLS_DESC=		Enable TLS support for https and ftps using gnutls
 W32DLL_DESC=		Win32 codec support
 
 AALIB_LIB_DEPENDS=		libaa.so:graphics/aalib
 AALIB_CONFIGURE_ENABLE=		aalib
+AOM_LIB_DEPENDS=		libaom.so:multimedia/aom
+AOM_CONFIGURE_WITH=		libaom
 CACA_LIB_DEPENDS=		libcaca.so:graphics/libcaca
 CACA_CONFIGURE_WITH=		caca
+DAV1D_LIB_DEPENDS=		libdav1d.so:multimedia/dav1d
+DAV1D_CONFIGURE_WITH=		dav1d
 DVB_CONFIGURE_ENABLE=		dvb
 GNOMEVFS2_USE=			GNOME=glib20,gconf2,gnomevfs2
 GNOMEVFS2_CONFIGURE_ENABLE=	gnomevfs
-IMAGEMAGICK_CONFIGURE_WITH=	imagemagick
-IMAGEMAGICK_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
+IMAGEMAGICK_CONFIGURE_ON=	--with-imagemagick
 IMAGEMAGICK_IMPLIES=		DMX_IMAGE
+IMAGEMAGICK6_LIB_DEPENDS=	libMagickWand-6.so:graphics/ImageMagick6
+IMAGEMAGICK6_CONFIGURE_ON=	${IMAGEMAGICK_CONFIGURE_ON}
+IMAGEMAGICK6_IMPLIES=		${IMAGEMAGICK_IMPLIES}
+IMAGEMAGICK7_LIB_DEPENDS=	libMagickWand-7.so:graphics/ImageMagick7
+IMAGEMAGICK7_CONFIGURE_ON=	${IMAGEMAGICK_CONFIGURE_ON}
+IMAGEMAGICK7_IMPLIES=		${IMAGEMAGICK_IMPLIES}
 IPV6_CONFIGURE_ENABLE=		ipv6
 JACK_LIB_DEPENDS=		libjack.so:audio/jack
 JACK_CONFIGURE_WITH=		jack
@@ -99,17 +117,23 @@ LIBBLURAY_LIB_DEPENDS=		libbluray.so:multimedia/libbluray
 LIBBLURAY_CONFIGURE_ENABLE=	bluray
 NLS_USES=			gettext
 NLS_CONFIGURE_ENABLE=		nls
+NFS_LIB_DEPENDS=		libnfs.so:net/libnfs
+NFS_CONFIGURE_ENABLE=		nfs
 PIXBUF_CONFIGURE_ENABLE=	gdkpixbuf
 PIXBUF_IMPLIES=			DMX_IMAGE
 PIXBUF_USE=			GNOME=gdkpixbuf2,glib20
 PULSEAUDIO_LIB_DEPENDS=		libpulse.so:audio/pulseaudio
 PULSEAUDIO_CONFIGURE_WITH=	pulseaudio
+SFTP_LIB_DEPENDS=		libssh2.so:security/libssh2
+SFTP_CONFIGURE_ENABLE=		sftp
 SMB_USES=			samba:lib
 SMB_CONFIGURE_ENV=		LIBSMBCLIENT_LIBS="-L${SAMBALIBS} -lsmbclient" \
 				LIBSMBCLIENT_CFLAGS="-I${SAMBAINCLUDES}"
 SMB_CONFIGURE_ENABLE=		samba
-SNDIO_CONFIGURE_ENABLE=		sndio
 SNDIO_LIB_DEPENDS=		libsndio.so:audio/sndio
+SNDIO_CONFIGURE_ENABLE=		sndio
+TLS_LIB_DEPENDS=		libgnutls.so:security/gnutls
+TLS_CONFIGURE_ENABLE=		tls
 VAAPI_LIB_DEPENDS=		libva.so:multimedia/libva \
 				libva-glx.so:multimedia/libva-glx
 VAAPI_CONFIGURE_ENABLE=		vaapi
@@ -134,16 +158,19 @@ XVMC_CONFIGURE_ENABLE=		xvmc
 BUILD_DEPENDS+=	as:devel/binutils
 .endif
 
+.if ${PORT_OPTIONS:MIMAGEMAGICK6} || ${PORT_OPTIONS:MIMAGEMAGICK7}
+PLIST_SUB+=		IMAGEMAGICK=""
+.else
+CONFIGURE_ARGS+=	--without-imagemagick
+PLIST_SUB+=		IMAGEMAGICK="@comment "
+.endif
+
 post-patch:
 .if ${COMPILER_TYPE} == "clang"
 	@${REINPLACE_CMD} -e 's|-fno-rename-registers||' \
-		${WRKSRC}/src/libw32dll/wine/Makefile.in
+		${WRKSRC}/src/libw32dll/Makefile.in
 .endif
-	@${REINPLACE_CMD} -e 's|-ldl||' \
-		${WRKSRC}/src/video_out/Makefile.in
-	@${REINPLACE_CMD} -e "s|#define _ATOM QT_ATOM('', '', '', '')||" \
-		${WRKSRC}/src/demuxers/demux_qt.c \
-		${WRKSRC}/configure
+
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/*.so
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/${PLUGINSDIR}/*.so
