@@ -2,8 +2,8 @@
 
 PORTNAME=	lolcat
 DISTVERSIONPREFIX=	v
-DISTVERSION=		1.0-12
-DISTVERSIONSUFFIX=	-g5b97d04
+DISTVERSION=		1.1-0
+DISTVERSIONSUFFIX=	-ga1dfac8
 CATEGORIES=	games
 
 MAINTAINER=	gbe@FreeBSD.org
@@ -12,6 +12,7 @@ COMMENT=	High performance implementation of the famous lolcat
 LICENSE=		WTFPL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+CFLAGS+=	-lm
 USES=		gmake
 USE_CSTD=	c99
 
