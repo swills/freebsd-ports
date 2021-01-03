@@ -2,10 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	zstd
-PORTVERSION=	1.4.5
-PORTREVISION=	1
+DISTVERSION=	1.4.8
 CATEGORIES=	archivers
-MASTER_SITES=	https://github.com/facebook/zstd/releases/download/v${PORTVERSION}/
+MASTER_SITES=	https://github.com/facebook/zstd/releases/download/v${DISTVERSION}/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Fast real-time compression algorithm
