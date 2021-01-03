@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	raylib
-DISTVERSION=	3.0.0
-PORTREVISION=	2
+DISTVERSION=	3.5.0
 CATEGORIES=	devel education
 
 MAINTAINER=	freebsd@sysctl.cz
@@ -31,7 +30,7 @@ PLIST_FILES=	include/physac.h \
 		lib/cmake/raylib/raylib-config.cmake \
 		lib/libraylib.so \
 		lib/libraylib.so.${DISTVERSION} \
-		lib/libraylib.so.301 \
+		lib/libraylib.so.351 \
 		libdata/pkgconfig/raylib.pc
 
 post-extract:
