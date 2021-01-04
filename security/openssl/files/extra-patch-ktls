@@ -888,7 +888,7 @@ index 0000000000..3baa63f781
 +
 +    ret = sendfile(fd, s, off, size, NULL, &sbytes, flags);
 +    if (ret == -1) {
-+	    if (errno == EAGAIN && sbytes != 0)
++	    if ((errno == EAGAIN || errno == EBUSY) && sbytes != 0)
 +		    return sbytes;
 +	    return -1;
 +    }
