@@ -20,7 +20,11 @@ CONFIGURE_ARGS=	--enable-nasm --enable-mp3rtp --disable-gtktest
 
 DOC_FILES=	API LICENSE README TODO USAGE
 
-OPTIONS_DEFINE=	DOCS
+OPTIONS_DEFINE=	DOCS SNDFILE
+
+SNDFILE_CONFIGURE_ON=	--with-fileio=sndfile
+SNDFILE_CONFIGURE_OFF=	--with-fileio=lame
+SNDFILE_LIB_DEPENDS=	libsndfile.so:audio/libsndfile 
 
 .include <bsd.port.pre.mk>
 
