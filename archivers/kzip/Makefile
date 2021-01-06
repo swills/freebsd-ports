@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	kzip
-DISTVERSION=	20150319
+DISTVERSION=	20200115
 CATEGORIES=	archivers linux
 MASTER_SITES=	http://static.jonof.id.au/dl/kenutils/
 DISTNAME=	kzipmix-${DISTVERSION}-linux-static
