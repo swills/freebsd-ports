@@ -1,8 +1,8 @@
-# Created by: Felix Hanley
+# Created by: Felix Hanley <felix@userspace.com.au>
 # $FreeBSD$
 
 PORTNAME=	nuster
-PORTVERSION=	5.0.4.21
+PORTVERSION=	5.3.0.23
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net www
 
@@ -50,6 +50,11 @@ PORTDOCS=	*
 PORTEXAMPLES=	*
 
 .include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
+MAKE_ARGS+=	ARCH=i586
+USE_GCC=	9+
+.endif
 
 .if ${ARCH} == "amd64" || ${ARCH} == "i386"
 MAKE_ARGS+=	USE_REGPARM=1
