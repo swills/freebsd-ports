@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	jackett
-PORTVERSION=	0.16.2142
+PORTVERSION=	0.17.197
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/Jackett/Jackett/releases/download/
 DISTNAME=	v${PORTVERSION}/Jackett.Binaries.Mono
