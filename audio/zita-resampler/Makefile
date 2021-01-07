@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	zita-resampler
-PORTVERSION=	1.6.2
-PORTREVISION=	2
+PORTVERSION=	1.8.0
 CATEGORIES=	audio
 MASTER_SITES=	http://kokkinizita.linuxaudio.org/linuxaudio/downloads/
 
