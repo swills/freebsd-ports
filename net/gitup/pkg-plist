@@ -1,4 +1,3 @@
 bin/gitup
-man/man1/gitup.1.gz
-man/man5/gitup.conf.5.gz
-@sample etc/gitup.conf.sample
+share/man/man1/gitup.1.gz
+share/man/man5/gitup.conf.5.gz
