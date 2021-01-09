@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libc6-shim
-DISTVERSION=	20201024
+DISTVERSION=	20210109
 CATEGORIES=	emulators
 
 MAINTAINER=	iwtcex@gmail.com
@@ -18,7 +18,6 @@ USE_RUBY=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	shkhln
 GH_PROJECT=	libc6-shim
-GH_TAGNAME=	6b6fa76812f7cb9625e24f12af99fcb9c46a0719
 
 post-patch:
 	${REINPLACE_CMD} -e 's|../icds|../${DATADIR_REL}/icds|' ${WRKSRC}/bin/nv-sglrun
