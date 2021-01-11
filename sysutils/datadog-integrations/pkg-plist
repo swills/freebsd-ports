@@ -149,6 +149,7 @@
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/__pycache__/tailfile.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/__pycache__/time.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/__pycache__/timeout.cpython-37.pyc
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/__pycache__/tls.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/__pycache__/tracing.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/agent/__init__.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/agent/__pycache__/__init__.cpython-37.pyc
@@ -171,10 +172,14 @@
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/__init__.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/core.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/query.cpython-37.pyc
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/sql.cpython-37.pyc
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/statement_metrics.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/transform.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/__pycache__/utils.cpython-37.pyc
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/core.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/query.py
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/sql.py
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/statement_metrics.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/transform.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/db/utils.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/headers.py
@@ -204,6 +209,7 @@
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/tailfile.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/time.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/timeout.py
+%%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/tls.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/base/utils/tracing.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/checks/__init__.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/checks/__pycache__/__init__.cpython-37.pyc
@@ -452,11 +458,11 @@
 %%PYTHON_SITELIBDIR%%/datadog_checks/utils/tailfile.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/utils/timeout.py
 %%PYTHON_SITELIBDIR%%/datadog_checks/utils/tracing.py
-%%PYTHON_SITELIBDIR%%/datadog_checks_base-14.0.1-py%%PYTHON_VER%%.egg-info/PKG-INFO
-%%PYTHON_SITELIBDIR%%/datadog_checks_base-14.0.1-py%%PYTHON_VER%%.egg-info/SOURCES.txt
-%%PYTHON_SITELIBDIR%%/datadog_checks_base-14.0.1-py%%PYTHON_VER%%.egg-info/dependency_links.txt
-%%PYTHON_SITELIBDIR%%/datadog_checks_base-14.0.1-py%%PYTHON_VER%%.egg-info/requires.txt
-%%PYTHON_SITELIBDIR%%/datadog_checks_base-14.0.1-py%%PYTHON_VER%%.egg-info/top_level.txt
+%%PYTHON_SITELIBDIR%%/datadog_checks_base-15.6.1-py%%PYTHON_VER%%.egg-info/PKG-INFO
+%%PYTHON_SITELIBDIR%%/datadog_checks_base-15.6.1-py%%PYTHON_VER%%.egg-info/SOURCES.txt
+%%PYTHON_SITELIBDIR%%/datadog_checks_base-15.6.1-py%%PYTHON_VER%%.egg-info/dependency_links.txt
+%%PYTHON_SITELIBDIR%%/datadog_checks_base-15.6.1-py%%PYTHON_VER%%.egg-info/requires.txt
+%%PYTHON_SITELIBDIR%%/datadog_checks_base-15.6.1-py%%PYTHON_VER%%.egg-info/top_level.txt
 %%CONSUL%%%%PYTHON_SITELIBDIR%%/datadog_consul-1.16.0-py%%PYTHON_VER%%.egg-info/PKG-INFO
 %%CONSUL%%%%PYTHON_SITELIBDIR%%/datadog_consul-1.16.0-py%%PYTHON_VER%%.egg-info/SOURCES.txt
 %%CONSUL%%%%PYTHON_SITELIBDIR%%/datadog_consul-1.16.0-py%%PYTHON_VER%%.egg-info/dependency_links.txt

@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	datadog-integrations
-DISTVERSION=	7.23.0
+DISTVERSION=	7.24.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	uros@gruber.si
@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${PY_FLAVOR}
 
-RUN_DEPENDS=	datadog-agent>=${DISTVERSION}:sysutils/datadog-agent \
+RUN_DEPENDS=	datadog-agent>=7.24.1:sysutils/datadog-agent \
 		${PYTHON_PKGNAMEPREFIX}botocore>0:devel/py-botocore@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cryptography>0:security/py-cryptography@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pysocks>0:net/py-pysocks@${PY_FLAVOR} \
