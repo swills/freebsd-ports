@@ -19,6 +19,7 @@ LIB_DEPENDS=	libpcre.so:devel/pcre \
 		libenchant.so:textproc/enchant \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
+		libgnuregex.so.6:devel/libgnuregex \
 		libgmime-2.6.so:mail/gmime26
 
 USES=		compiler:c++11-lang desktop-file-utils gettext-tools:build \
