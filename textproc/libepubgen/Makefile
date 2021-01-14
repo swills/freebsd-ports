@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libepubgen
-PORTVERSION=	0.1.0
-PORTREVISION=	9
+PORTVERSION=	0.1.1
 CATEGORIES=	textproc
 MASTER_SITES=	SF/${PORTNAME}/${PORTNAME}-${PORTVERSION}
 
@@ -41,5 +40,8 @@ PORTDOCS=		*
 DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen
 DOXYGEN_CONFIGURE_OFF=	--without-docs
 DOXYGEN_IMPLIES=	DOCS
+
+SO_VER=		1.0.1
+PLIST_SUB+=	SO_VER="${SO_VER}"
 
 .include <bsd.port.mk>
