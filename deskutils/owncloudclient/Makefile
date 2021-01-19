@@ -2,11 +2,12 @@
 # $FreeBSD$
 
 PORTNAME=	owncloudclient
-DISTVERSION=	2.6.0
-DISTVERSIONSUFFIX=	.13018
+DISTVERSION=	2.7.4
+DISTVERSIONSUFFIX=	.2934
+DISTNAME=	ownCloud-${DISTVERSION}${DISTVERSIONSUFFIX}
 CATEGORIES=	deskutils
-MASTER_SITES=	https://download.owncloud.com/desktop/stable/
-# owncloudclient-2.6.0.13018.tar.xz
+MASTER_SITES=	https://download.owncloud.com/desktop/ownCloud/stable/${DISTVERSION}${DISTVERSIONSUFFIX}/source/
+# owncloudclient-2.7.4.2934.tar.xz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	OwnCloud Desktop Syncing Client
@@ -25,7 +26,8 @@ USE_KDE=	completion config coreaddons jobwidgets kio service widgetsaddons
 CMAKE_ARGS=	-DBUILD_WITH_QT4:BOOL=OFF \
 		-DCMAKE_INSTALL_MANDIR:STRING=man \
 		-DWITH_DOC:BOOL=OFF \
-		-DWITH_STACK_PROTECTOR:BOOL=OFF
+		-DWITH_STACK_PROTECTOR:BOOL=OFF \
+		-DSYSCONF_INSTALL_DIR="${PREFIX}/etc"
 USE_LDCONFIG=	yes
 
 OPTIONS_DEFINE=		DEBUG
