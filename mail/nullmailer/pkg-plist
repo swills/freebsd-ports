@@ -19,7 +19,7 @@ man/man8/nullmailer-send.8.gz
 @dir(%%NULLMAIL_USER%%,%%NULLMAIL_USER%%,700) %%LOCALSTATEDIR%%/spool/nullmailer/queue
 @dir(%%NULLMAIL_USER%%,%%NULLMAIL_USER%%,700) %%LOCALSTATEDIR%%/spool/nullmailer/tmp
 @dir %%LOCALSTATEDIR%%/spool/nullmailer
-@preexec mkfifo %%LOCALSTATEDIR%%/spool/nullmailer/trigger
-@preexec chmod 600 %%LOCALSTATEDIR%%/spool/nullmailer/trigger
-@preexec chown %%NULLMAIL_USER%%:%%NULLMAIL_USER%% %%LOCALSTATEDIR%%/spool/nullmailer/trigger
-@postunexec rm -f %%LOCALSTATEDIR%%/spool/nullmailer/trigger
+@postexec mkfifo %%LOCALSTATEDIR%%/spool/nullmailer/trigger
+@postexec chmod 600 %%LOCALSTATEDIR%%/spool/nullmailer/trigger
+@postexec chown %%NULLMAIL_USER%%:%%NULLMAIL_USER%% %%LOCALSTATEDIR%%/spool/nullmailer/trigger
+@rmtry %%LOCALSTATEDIR%%/spool/nullmailer/trigger

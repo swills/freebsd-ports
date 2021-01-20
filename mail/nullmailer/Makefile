@@ -3,6 +3,7 @@
 
 PORTNAME=	nullmailer
 PORTVERSION=	2.2
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/nullmailer/ \
