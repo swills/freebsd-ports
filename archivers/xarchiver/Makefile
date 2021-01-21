@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	xarchiver
-PORTVERSION=	0.5.4.15
-PORTREVISION=	1
+PORTVERSION=	0.5.4.16
 CATEGORIES=	archivers
 
 MAINTAINER=	danilo@FreeBSD.org
