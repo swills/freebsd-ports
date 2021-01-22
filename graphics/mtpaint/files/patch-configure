@@ -1,19 +1,19 @@
---- configure.bak	2011-12-30 03:08:17.000000000 +0900
-+++ configure	2012-01-06 05:25:11.000000000 +0900
-@@ -68,6 +68,7 @@
+--- configure.orig	2020-12-31 15:02:20 UTC
++++ configure
+@@ -71,6 +71,7 @@ do
  	"tiff" )	NTIFF=YES;;
  	"notiff" )	NTIFF=NO;;
  	"statictiff" )	STATIC_TIFF=TIFF;;
 +	"ft" )		NFT=YES;;
- 	"noft" )	NFT=NO;;
- 	"staticft" )	STATIC_FT=FreeType;;
- 	"lcms" )	NCMS=LittleCMS;;
-@@ -471,7 +472,7 @@
- 	MARCH=
- 	# And leave CFLAGS alone
- fi
--[ "$OPTS" != DEBUG ] && LDFLAGS="-s $LDFLAGS" # Strip debug info
-+# [ "$OPTS" != DEBUG ] && LDFLAGS="-s $LDFLAGS" # Strip debug info
- # Set Windows-specific flags
- if [ "$OS" != "${OS#MinGW/}" ]
- then
+ 	"webp" )	NWEBP=YES;;
+ 	"nowebp" )	NWEBP=NO;;
+ 	"staticwebp" )	STATIC_WEBP=WebP;;
+@@ -856,7 +857,7 @@ General
+ -------
+ 
+     Version             $MT_V
+-    System              $OS
++    System              $OSTYPE
+     Toolkit             GTK+$GTK${GTK2VERSION:+.$GTK2VERSION}
+     Lists               GTK+$MT_LISTS
+     File Picker         $MT_FPICK
