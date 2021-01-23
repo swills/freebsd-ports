@@ -4,7 +4,7 @@
 # Based on the java/intellij port
 
 PORTNAME=	intellij-ultimate
-PORTVERSION=	2020.1
+PORTVERSION=	2020.3.1
 CATEGORIES=	java devel
 MASTER_SITES=	https://download-cf.jetbrains.com/idea/
 DISTNAME=	ideaIU-${PORTVERSION}-no-jbr
@@ -23,7 +23,7 @@ RUN_DEPENDS=	intellij-fsnotifier>0:java/intellij-fsnotifier
 USES=		python:run shebangfix
 
 USE_JAVA=	yes
-JAVA_VERSION=	8+
+JAVA_VERSION=	11+
 
 SHEBANG_FILES=	bin/printenv.py bin/restart.py \
 		plugins/spy-js/server/node_modules/node-uuid/benchmark/bench.sh \
@@ -34,7 +34,7 @@ NO_ARCH=	yes
 NO_ARCH_IGNORE=	libjansi.so
 NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}/idea-IU-201.6668.121
+WRKSRC=		${WRKDIR}/idea-IU-203.6682.168
 
 SUB_FILES=	idea idea.desktop pkg-message
 CONFLICTS=	intellij-20*
