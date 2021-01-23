@@ -16,7 +16,7 @@ ONLY_FOR_ARCHS_REASON=	only tested on x86
 
 BUILD_DEPENDS=	llvm${LLVM_VERSION}>=0:devel/llvm${LLVM_VERSION} \
 				opencl>=2.2:devel/opencl
-LIB_DEPENDS=	libhwloc.so:devel/hwloc \
+LIB_DEPENDS=	libhwloc.so.15:devel/hwloc2 \
 				libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
