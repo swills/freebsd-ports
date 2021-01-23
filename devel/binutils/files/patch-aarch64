@@ -1,0 +1,138 @@
+--- bfd/elfnn-aarch64.c.orig	2019-09-09 15:19:43.000000000 +0200
++++ bfd/elfnn-aarch64.c	2020-12-18 16:03:57.671589000 +0100
+@@ -10239,5 +10249,24 @@ const struct elf_size_info elfNN_aarch64_size_info =
+ 
+ #undef	elfNN_bed
+ #define	elfNN_bed		elfNN_aarch64_cloudabi_bed
++
++#include "elfNN-target.h"
++
++/* FreeBSD support.  */
++
++#undef  TARGET_LITTLE_SYM
++#define TARGET_LITTLE_SYM	aarch64_elfNN_le_fbsd_vec
++#undef  TARGET_LITTLE_NAME
++#define TARGET_LITTLE_NAME	"elfNN-littleaarch64-freebsd"
++#undef	TARGET_BIG_SYM
++#define	TARGET_BIG_SYM		aarch64_elfNN_be_fbsd_vec
++#undef	TARGET_BIG_NAME
++#define	TARGET_BIG_NAME		"elfNN-bigaarch64-freebsd"
++
++#undef	ELF_OSABI
++#define	ELF_OSABI		ELFOSABI_FREEBSD
++
++#undef  elfNN_bed
++#define elfNN_bed	elfNN_aarch64_fbsd_bed
+ 
+ #include "elfNN-target.h"
+--- bfd/targets.c.orig	2019-09-09 15:19:43.000000000 +0200
++++ bfd/targets.c	2020-12-19 18:24:32.062738000 +0100
+@@ -590,8 +590,10 @@ extern const bfd_target aarch64_elf32_be_vec;
+ extern const bfd_target aarch64_elf32_le_vec;
+ extern const bfd_target aarch64_elf64_be_vec;
+ extern const bfd_target aarch64_elf64_be_cloudabi_vec;
++extern const bfd_target aarch64_elf64_be_fbsd_vec;
+ extern const bfd_target aarch64_elf64_le_vec;
+ extern const bfd_target aarch64_elf64_le_cloudabi_vec;
++extern const bfd_target aarch64_elf64_le_fbsd_vec;
+ extern const bfd_target aarch64_mach_o_vec;
+ extern const bfd_target alpha_ecoff_le_vec;
+ extern const bfd_target alpha_elf64_vec;
+@@ -909,8 +912,10 @@ static const bfd_target * const _bfd_target_vector[] =
+ 	&aarch64_elf32_le_vec,
+ 	&aarch64_elf64_be_vec,
+ 	&aarch64_elf64_be_cloudabi_vec,
++	&aarch64_elf64_be_fbsd_vec,
+ 	&aarch64_elf64_le_vec,
+ 	&aarch64_elf64_le_cloudabi_vec,
++	&aarch64_elf64_le_fbsd_vec,
+ 	&aarch64_mach_o_vec,
+ #endif
+ 
+--- bfd/config.bfd.orig	2020-12-19 18:58:50.168529000 +0100
++++ bfd/config.bfd	2020-12-19 19:00:44.467871000 +0100
+@@ -237,8 +237,8 @@ case "${targ}" in
+     want64=true
+     ;;
+   aarch64-*-freebsd*)
+-    targ_defvec=aarch64_elf64_le_vec
+-    targ_selvecs="aarch64_elf64_be_vec arm_elf32_le_vec arm_elf32_be_vec"
++    targ_defvec=aarch64_elf64_le_fbsd_vec
++    targ_selvecs=aarch64_elf64_be_fbsd_vec
+     want64=true
+     ;;
+   aarch64-*-fuchsia*)
+--- bfd/configure.ac.orig	2019-09-09 15:19:43.000000000 +0200
++++ bfd/configure.ac	2020-12-19 18:30:20.246079000 +0100
+@@ -421,8 +421,10 @@ do
+     aarch64_elf32_le_vec)	 tb="$tb elf32-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf32.lo $elf"; target_size=64 ;;
+     aarch64_elf64_be_vec)	   tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_be_cloudabi_vec) tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
++    aarch64_elf64_be_fbsd_vec)  tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_le_vec)	   tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_le_cloudabi_vec) tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
++    aarch64_elf64_le_fbsd_vec)  tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_mach_o_vec)		 tb="$tb mach-o-aarch64.lo"; target_size=64 ;;
+     alpha_ecoff_le_vec)		 tb="$tb coff-alpha.lo ecoff.lo $ecoff"; target_size=64 ;;
+     alpha_elf64_vec)		 tb="$tb elf64-alpha.lo elf64.lo $elf"; target_size=64 ;;
+--- bfd/configure.orig       2019-09-09 15:19:43.000000000 +0200
++++ bfd/configure    2020-12-19 18:30:20.246079000 +0100
+@@ -14685,8 +14685,10 @@ do
+     aarch64_elf32_le_vec)	 tb="$tb elf32-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf32.lo $elf"; target_size=64 ;;
+     aarch64_elf64_be_vec)	   tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_be_cloudabi_vec) tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
++    aarch64_elf64_be_fbsd_vec)  tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_le_vec)	   tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_elf64_le_cloudabi_vec) tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
++    aarch64_elf64_le_fbsd_vec)  tb="$tb elf64-aarch64.lo elfxx-aarch64.lo elf-ifunc.lo elf64.lo $elf"; target_size=64 ;;
+     aarch64_mach_o_vec)		 tb="$tb mach-o-aarch64.lo"; target_size=64 ;;
+     alpha_ecoff_le_vec)		 tb="$tb coff-alpha.lo ecoff.lo $ecoff"; target_size=64 ;;
+     alpha_elf64_vec)		 tb="$tb elf64-alpha.lo elf64.lo $elf"; target_size=64 ;;
+--- gas/config/tc-aarch64.c.orig	2020-12-20 15:18:20 UTC
++++ gas/config/tc-aarch64.c
+@@ -8419,6 +8419,11 @@ elf64_aarch64_target_format (void)
+     return "elf64-bigaarch64-cloudabi";
+   else
+     return "elf64-littleaarch64-cloudabi";
++#elif defined (TE_FreeBSD)
++  if (target_big_endian)
++    return "elf64-bigaarch64-freebsd";
++  else
++    return "elf64-littleaarch64-freebsd";
+ #else
+   if (target_big_endian)
+     return ilp32_p ? "elf32-bigaarch64" : "elf64-bigaarch64";
+--- ld/emulparams/aarch64fbsd.sh.orig	2019-09-09 15:19:44.000000000 +0200
++++ ld/emulparams/aarch64fbsd.sh	2020-12-20 15:56:05.180761000 +0100
+@@ -1,12 +1,14 @@
++source_sh ${srcdir}/emulparams/elf_fbsd.sh
++
+ ARCH=aarch64
+ MACHINE=
+ NOP=0x1f2003d5
+ 
+ SCRIPT_NAME=elf
+ ELFSIZE=64
+-OUTPUT_FORMAT="elf64-littleaarch64"
+-BIG_OUTPUT_FORMAT="elf64-bigaarch64"
+-LITTLE_OUTPUT_FORMAT="elf64-littleaarch64"
++OUTPUT_FORMAT="elf64-littleaarch64-freebsd"
++BIG_OUTPUT_FORMAT="elf64-bigaarch64-freebsd"
++LITTLE_OUTPUT_FORMAT="elf64-littleaarch64-freebsd"
+ NO_REL_RELOCS=yes
+ 
+ TEMPLATE_NAME=elf32
+--- gold/configure.tgt.orig	2020-12-20 16:10:09.852086000 +0100
++++ gold/configure.tgt	2020-12-20 16:09:53.738509000 +0100
+@@ -152,6 +152,11 @@ aarch64*-*)
+  targ_extra_size=32
+  targ_big_endian=false
+  targ_extra_big_endian=true
++ case "$targ" in
++ aarch64-*-freebsd*)
++   targ_osabi=ELFOSABI_FREEBSD
++   ;;
++ esac
+  ;;
+ mips*el*-*-*|mips*le*-*-*)
+  targ_obj=mips
