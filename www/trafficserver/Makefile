@@ -15,7 +15,7 @@ LICENSE=	APACHE20
 ONLY_FOR_ARCHS=	amd64 powerpc64 powerpc64le
 
 LIB_DEPENDS=	libcurl.so:ftp/curl \
-		libhwloc.so:devel/hwloc \
+		libhwloc.so.15:devel/hwloc2 \
 		libpcre.so:devel/pcre \
 		libxml2.so:textproc/libxml2 \
 		libbrotlienc.so:archivers/brotli \
