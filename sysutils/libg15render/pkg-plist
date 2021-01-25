@@ -1,6 +1,12 @@
+/you/have/to/check/what/makeplist/gives/you
 include/libg15render.h
 lib/libg15render.a
 lib/libg15render.so
 lib/libg15render.so.1
 lib/libg15render.so.1.1.0
 man/man3/libg15render.3.gz
+%%PORTDOCS%%%%DOCSDIR%%-1.2/AUTHORS
+%%PORTDOCS%%%%DOCSDIR%%-1.2/COPYING
+%%PORTDOCS%%%%DOCSDIR%%-1.2/ChangeLog
+%%PORTDOCS%%%%DOCSDIR%%-1.2/NEWS
+%%PORTDOCS%%%%DOCSDIR%%-1.2/README
