@@ -13,6 +13,8 @@ COMMENT=	IDE for the .NET platform
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN=		outdated, depends on deprecated library www/gtkhtml3
+
 BUILD_DEPENDS=	msbuild:devel/msbuild \
 		fsharpc:lang/fsharp \
 		cmake:devel/cmake
