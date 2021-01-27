@@ -14,6 +14,10 @@ COMMENT=	Personal note taking system for the GNOME desktop
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+DEPRECATED=	Unmaintained and dead upstream, depends on deprecated libraries \
+		such as www/gtkhtml3. Upstream project is now called tomboy-ng.
+EXPIRATION_DATE=2021-02-12
+
 LIB_DEPENDS=	libgtkspell.so:textproc/gtkspell
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/dbus-sharp-glib-2.0.pc:devel/dbus-sharp-glib \
 		itstool:textproc/itstool \
