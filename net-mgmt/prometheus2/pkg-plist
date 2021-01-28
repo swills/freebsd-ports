@@ -32,5 +32,3 @@ bin/promtool
 %%PORTDOCS%%%%DOCSDIR%%/stability.md
 %%PORTDOCS%%%%DOCSDIR%%/storage.md
 @sample etc/prometheus.yml.sample
-@dir(prometheus,prometheus) %%PROMETHEUS_DB_DIR%%
-@dir(root,root) %%PROMETHEUS_LOG_DIR%%
