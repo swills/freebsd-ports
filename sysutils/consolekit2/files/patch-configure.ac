@@ -1,0 +1,10 @@
+--- configure.ac.orig	2020-12-07 11:27:30 UTC
++++ configure.ac
+@@ -553,7 +553,6 @@ doc/Makefile
+ doc/console-kit-daemon.1m
+ doc/dbus/ConsoleKit.xml
+ doc/dbus/Makefile
+-doc/libconsolekit/Makefile
+ libconsolekit/Makefile
+ libconsolekit/libconsolekit.pc
+ libck-connector/Makefile
