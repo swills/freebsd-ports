@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mutter
-PORTVERSION=	3.36.6
+PORTVERSION=	3.36.8
 CATEGORIES=	x11-wm
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -29,19 +29,17 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libdrm.so:graphics/libdrm \
-		libpipewire-0.3.so:multimedia/pipewire \
 		libgraphene-1.0.so:graphics/graphene
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity \
 		xkeyboard-config>=0:x11/xkeyboard-config \
-		gsettings-desktop-schemas>=3.4.0:devel/gsettings-desktop-schemas \
-		gnome-settings-daemon>0:sysutils/gnome-settings-daemon
+		gsettings-desktop-schemas>=3.4.0:devel/gsettings-desktop-schemas
 
 PORTSCOUT=	limitw:1,even
 
 USES=		compiler:c++0x gettext gl gnome localbase meson \
 		pkgconfig tar:xz xorg
 USE_GL=		egl gbm
-USE_GNOME=	cairo gdkpixbuf2 gnomedesktop3 introspection
+USE_GNOME=	atk cairo gdkpixbuf2 gnomedesktop3 introspection
 USE_XORG=	ice sm x11 xcb xcomposite xcursor xdamage xext xfixes \
 		xi xinerama xrandr xrender xtst
 USE_LDCONFIG=	yes
