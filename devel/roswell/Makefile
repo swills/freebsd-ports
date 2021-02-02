@@ -2,10 +2,10 @@
 
 PORTNAME=	roswell
 DISTVERSIONPREFIX=	v
-DISTVERSION=	20.06.14.107
+DISTVERSION=	21.01.14.108
 CATEGORIES=	devel lisp
 
-MAINTAINER=	cda@rootkey.co.uk
+MAINTAINER=	ciaranainsworth@outlook.com
 COMMENT=	Common Lisp installer and launcher
 
 LICENSE=	MIT
