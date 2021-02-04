@@ -15,7 +15,7 @@ SRCS=   args.c blok.c builtin.c cmd.c ctype.c error.c expand.c \
 
 CWARNFLAGS?=	-ansi -Wbad-function-cast
 WARNS?=	6
-NO_WERROR=1
+MK_WERROR=no
 WFORMAT=0
 
 .include <bsd.prog.mk>
