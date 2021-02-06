@@ -2,9 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	undernet-ircu
-PORTVERSION=	2.10.12.18
+PORTVERSION=	2.10.12.19
 CATEGORIES=	irc net
-MASTER_SITES=	SF/${PORTNAME}/ircu/ircu${PORTVERSION} \
+MASTER_SITES=	https://github.com/UndernetIRC/ircu2/releases/download/u${PORTVERSION}/ \
 		ftp://ftpmirror.uk/freebsd-ports/undernet-ircu/
 DISTNAME=	ircu${PORTVERSION}
 
@@ -23,6 +23,7 @@ USERS=		undernet
 GROUPS=		${USERS}
 
 GNU_CONFIGURE=	yes
+USE_GCC=	any
 USE_RC_SUBR=	undernet
 SUB_FILES=	pkg-message
 PORTDOCS=	*
