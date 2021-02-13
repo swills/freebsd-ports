@@ -1,5 +1,9 @@
 bin/ociobakelut
 bin/ociocheck
+bin/ociochecklut
 bin/ocioconvert
 bin/ociodisplay
 bin/ociolutimage
+bin/ociomakeclf
+bin/ocioperf
+bin/ociowrite

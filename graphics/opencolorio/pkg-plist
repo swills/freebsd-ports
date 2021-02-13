@@ -1,13 +1,9 @@
 include/OpenColorIO/OpenColorABI.h
+include/OpenColorIO/OpenColorAppHelpers.h
 include/OpenColorIO/OpenColorIO.h
 include/OpenColorIO/OpenColorTransforms.h
 include/OpenColorIO/OpenColorTypes.h
-include/PyOpenColorIO/PyOpenColorIO.h
 lib/libOpenColorIO.so
-lib/libOpenColorIO.so.1
+lib/libOpenColorIO.so.2.0
 lib/libOpenColorIO.so.%%LIBVERS%%
 libdata/pkgconfig/OpenColorIO.pc
-share/cmake/Modules/OpenColorIOConfig.cmake
-share/cmake/Modules/OpenColorIO-release.cmake
-share/cmake/Modules/OpenColorIO.cmake
-share/ocio/setup_ocio.sh

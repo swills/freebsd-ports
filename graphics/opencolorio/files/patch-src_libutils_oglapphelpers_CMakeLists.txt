@@ -1,0 +1,18 @@
+--- src/libutils/oglapphelpers/CMakeLists.txt.orig	2021-02-13 21:14:14 UTC
++++ src/libutils/oglapphelpers/CMakeLists.txt
+@@ -49,7 +49,6 @@ if(${OCIO_USE_GLVND})
+         target_link_libraries(oglapphelpers
+             PRIVATE
+                 OpenColorIO
+-                OpenGL::OpenGL
+                 OpenGL::GLU
+                 ${GLEW_LIBRARIES}
+                 ${GLUT_LIBRARIES}
+@@ -59,7 +58,6 @@ if(${OCIO_USE_GLVND})
+         target_link_libraries(oglapphelpers
+             PRIVATE
+                 OpenColorIO
+-                OpenGL::OpenGL
+                 OpenGL::GLU
+                 ${GLEW_LIBRARIES}
+                 ${GLUT_LIBRARIES}
