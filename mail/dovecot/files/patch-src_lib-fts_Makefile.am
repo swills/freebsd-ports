@@ -1,0 +1,11 @@
+--- src/lib-fts/Makefile.am.orig	2021-01-30 09:21:54 UTC
++++ src/lib-fts/Makefile.am
+@@ -55,7 +55,7 @@ $(srcdir)/word-break-data.c: $(srcdir)/word-properties
+ 
+ 
+ if BUILD_FTS_STEMMER
+-STEMMER_LIBS = -lstemmer
++STEMMER_LIBS = -lclucene-contribs-lib
+ endif
+ 
+ if BUILD_FTS_EXTTEXTCAT

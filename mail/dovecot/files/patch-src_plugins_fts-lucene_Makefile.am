@@ -1,0 +1,11 @@
+--- src/plugins/fts-lucene/Makefile.am.orig	2021-01-30 09:20:40 UTC
++++ src/plugins/fts-lucene/Makefile.am
+@@ -20,7 +20,7 @@ module_LTLIBRARIES = \
+ 	lib21_fts_lucene_plugin.la
+ 
+ if BUILD_FTS_STEMMER
+-STEMMER_LIBS = -lstemmer
++STEMMER_LIBS = -lclucene-contribs-lib
+ SHOWBALL_SOURCES = Snowball.cc
+ endif
+ 

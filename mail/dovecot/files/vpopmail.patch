@@ -1,0 +1,695 @@
+diff -ruN ../dovecot-2.3.13.orig/configure.ac ./configure.ac
+--- ../dovecot-2.3.13.orig/configure.ac	2020-12-22 14:26:52.000000000 +0100
++++ ./configure.ac	2021-01-29 14:26:35.068783000 +0100
+@@ -91,6 +91,22 @@
+   TEST_WITH(libunwind, $withval),
+   want_libunwind=auto)
+ 
++AC_ARG_WITH(vpopmail,
++AS_HELP_STRING([--with-vpopmail], [Build with vpopmail support (auto)]),
++	if test x$withval = xno; then
++		want_vpopmail=no
++	else
++		if test x$withval = xyes || test x$withval = xauto; then
++			vpopmail_home="`echo ~vpopmail`"
++			want_vpopmail=$withval
++		else
++			vpopmail_home="$withval"
++			want_vpopmail=yes
++		fi
++	fi, [
++		want_vpopmail=no
++	])
++
+ # Berkeley DB support is more or less broken. Disabled for now.
+ #AC_ARG_WITH(db,
+ #AS_HELP_STRING([--with-db], [Build with Berkeley DB support]),
+@@ -548,6 +564,7 @@
+ DOVECOT_WANT_SODIUM
+ DOVECOT_WANT_SQLITE
+ DOVECOT_WANT_CASSANDRA
++DOVECOT_WANT_VPOPMAIL
+ 
+ DOVECOT_SQL
+ 
+diff -ruN ../dovecot-2.3.13.orig/doc/example-config/conf.d/10-auth.conf ./doc/example-config/conf.d/10-auth.conf
+--- ../dovecot-2.3.13.orig/doc/example-config/conf.d/10-auth.conf	2020-12-22 14:26:52.000000000 +0100
++++ ./doc/example-config/conf.d/10-auth.conf	2021-01-29 13:21:19.267469000 +0100
+@@ -10,7 +10,7 @@
+ #disable_plaintext_auth = yes
+ 
+ # Authentication cache size (e.g. 10M). 0 means it's disabled. Note that
+-# bsdauth and PAM require cache_key to be set for caching to be used.
++# bsdauth, PAM and vpopmail require cache_key to be set for caching to be used.
+ #auth_cache_size = 0
+ # Time to live for cached data. After TTL expires the cached record is no
+ # longer used, *except* if the main database lookup returns internal failure.
+@@ -124,4 +124,5 @@
+ #!include auth-ldap.conf.ext
+ #!include auth-passwdfile.conf.ext
+ #!include auth-checkpassword.conf.ext
++#!include auth-vpopmail.conf.ext
+ #!include auth-static.conf.ext
+diff -ruN ../dovecot-2.3.13.orig/doc/example-config/conf.d/Makefile.am ./doc/example-config/conf.d/Makefile.am
+--- ../dovecot-2.3.13.orig/doc/example-config/conf.d/Makefile.am	2020-12-22 14:26:52.000000000 +0100
++++ ./doc/example-config/conf.d/Makefile.am	2021-01-29 13:21:19.268070000 +0100
+@@ -11,6 +11,7 @@
+ 	auth-sql.conf.ext \
+ 	auth-static.conf.ext \
+ 	auth-system.conf.ext \
++	auth-vpopmail.conf.ext \
+ 	10-auth.conf \
+ 	10-director.conf \
+ 	10-logging.conf \
+diff -ruN ../dovecot-2.3.13.orig/doc/example-config/conf.d/auth-vpopmail.conf.ext ./doc/example-config/conf.d/auth-vpopmail.conf.ext
+--- ../dovecot-2.3.13.orig/doc/example-config/conf.d/auth-vpopmail.conf.ext	1970-01-01 01:00:00.000000000 +0100
++++ ./doc/example-config/conf.d/auth-vpopmail.conf.ext	2021-01-29 13:24:12.341999000 +0100
+@@ -0,0 +1,17 @@
++# Authentication for vpopmail users. Included from 10-auth.conf.
++#
++# <doc/wiki/AuthDatabase.VPopMail.txt>
++
++passdb {
++  driver = vpopmail
++
++  # [cache_key=<key>] [webmail=<ip>]
++  args =
++}
++
++userdb {
++  driver = vpopmail
++
++  # [quota_template=<template>] - %q expands to Maildir++ quota
++  args = quota_template=quota_rule=*:backend=%q
++}
+diff -ruN ../dovecot-2.3.13.orig/m4/want_vpopmail.m4 ./m4/want_vpopmail.m4
+--- ../dovecot-2.3.13.orig/m4/want_vpopmail.m4	1970-01-01 01:00:00.000000000 +0100
++++ ./m4/want_vpopmail.m4	2021-01-29 13:24:40.287852000 +0100
+@@ -0,0 +1,33 @@
++AC_DEFUN([DOVECOT_WANT_VPOPMAIL], [
++  have_vpopmail=no
++  if test $want_vpopmail != no; then
++          vpop_etc="$vpopmail_home/etc"
++          AC_MSG_CHECKING([for vpopmail configuration at $vpop_etc/lib_deps])
++          if ! test -f $vpop_etc/lib_deps; then
++                  AC_MSG_RESULT(not found)
++                  vpop_etc="$vpopmail_home"
++                  AC_MSG_CHECKING([for vpopmail configuration at $vpop_etc/lib_deps])
++          fi
++          if test -f $vpop_etc/lib_deps; then
++                  AUTH_CFLAGS="$AUTH_CFLAGS `cat $vpop_etc/inc_deps` $CFLAGS"
++                  AUTH_LIBS="$AUTH_LIBS `cat $vpop_etc/lib_deps`"
++                  AC_DEFINE(USERDB_VPOPMAIL,, [Build with vpopmail support])
++                  AC_DEFINE(PASSDB_VPOPMAIL,, [Build with vpopmail support])
++                  AC_MSG_RESULT(found)
++                  have_vpopmail=yes
++          else
++                  AC_MSG_RESULT(not found)
++                  if test $want_vpopmail = yes; then
++                    AC_ERROR([Can't build with vpopmail support: $vpop_etc/lib_deps not found])
++                  fi
++          fi
++  fi
++  
++  if test $have_vpopmail = no; then
++    not_passdb="$not_passdb vpopmail"
++    not_userdb="$not_userdb vpopmail"
++  else
++    userdb="$userdb vpopmail"
++    passdb="$passdb vpopmail"
++  fi
++])
+diff -ruN ../dovecot-2.3.13.orig/src/auth/Makefile.am ./src/auth/Makefile.am
+--- ../dovecot-2.3.13.orig/src/auth/Makefile.am	2020-12-22 14:26:52.000000000 +0100
++++ ./src/auth/Makefile.am	2021-01-29 13:21:19.270313000 +0100
+@@ -134,6 +134,7 @@
+ 	passdb-passwd-file.c \
+ 	passdb-pam.c \
+ 	passdb-shadow.c \
++	passdb-vpopmail.c \
+ 	passdb-sql.c \
+ 	passdb-static.c \
+ 	passdb-template.c \
+@@ -145,6 +146,7 @@
+ 	userdb-passwd-file.c \
+ 	userdb-prefetch.c \
+ 	userdb-static.c \
++	userdb-vpopmail.c \
+ 	userdb-sql.c \
+ 	userdb-template.c \
+ 	$(ldap_sources) \
+@@ -188,7 +190,8 @@
+ 	password-scheme.h \
+ 	userdb.h \
+ 	userdb-blocking.h \
+-	userdb-template.h
++	userdb-template.h \
++	userdb-vpopmail.h
+ 
+ if GSSAPI_PLUGIN
+ libmech_gssapi_la_LDFLAGS = -module -avoid-version
+diff -ruN ../dovecot-2.3.13.orig/src/auth/db-checkpassword.c ./src/auth/db-checkpassword.c
+--- ../dovecot-2.3.13.orig/src/auth/db-checkpassword.c	2020-12-22 14:26:52.000000000 +0100
++++ ./src/auth/db-checkpassword.c	2021-01-29 13:21:19.271324000 +0100
+@@ -116,8 +116,20 @@
+ checkpassword_request_finish_auth(struct chkpw_auth_request *request)
+ {
+ 	switch (request->exit_status) {
++	/* vpopmail exit codes: */
++	case 3:		/* password fail / vpopmail user not found */
++	case 12: 	/* null user name given */
++	case 13:	/* null password given */
++	case 15:	/* user has no password */
++	case 20:	/* invalid user/domain characters */
++	case 21:	/* system user not found */
++	case 22:	/* system user shadow entry not found */
++	case 23:	/* system password fail */
++
+ 	/* standard checkpassword exit codes: */
+ 	case 1:
++		/* (1 is additionally defined in vpopmail for
++		   "pop/smtp/webmail/ imap/access denied") */
+ 		e_info(authdb_event(request->request),
+ 		       "Login failed (status=%d)",
+ 		       request->exit_status);
+diff -ruN ../dovecot-2.3.13.orig/src/auth/passdb-vpopmail.c ./src/auth/passdb-vpopmail.c
+--- ../dovecot-2.3.13.orig/src/auth/passdb-vpopmail.c	1970-01-01 01:00:00.000000000 +0100
++++ ./src/auth/passdb-vpopmail.c	2021-01-29 13:23:23.979572000 +0100
+@@ -0,0 +1,229 @@
++/* Copyright (c) 2002-2018 Dovecot authors, see the included COPYING file */
++
++/* Thanks to Courier-IMAP for showing how the vpopmail API should be used */
++
++#include "auth-common.h"
++#include "passdb.h"
++
++#ifdef PASSDB_VPOPMAIL
++
++#include "safe-memset.h"
++#include "password-scheme.h"
++#include "auth-cache.h"
++
++#include "userdb-vpopmail.h"
++
++
++#define VPOPMAIL_DEFAULT_PASS_SCHEME "CRYPT"
++
++/* pw_flags was added in vpopmail 5.4, olders use pw_gid field */
++#ifndef VQPASSWD_HAS_PW_FLAGS
++#  define pw_flags pw_gid
++#endif
++
++struct vpopmail_passdb_module {
++	struct passdb_module module;
++
++	struct ip_addr webmail_ip;
++};
++
++static bool vpopmail_is_disabled(struct auth_request *request,
++				 const struct vqpasswd *vpw)
++{
++        struct passdb_module *_module = request->passdb->passdb;
++	struct vpopmail_passdb_module *module =
++		(struct vpopmail_passdb_module *)_module;
++
++	if (strcasecmp(request->fields.service, "IMAP") == 0) {
++		if ((vpw->pw_flags & NO_IMAP) != 0) {
++			/* IMAP from webmail IP may still be allowed */
++			if (!net_ip_compare(&module->webmail_ip,
++					    &request->fields.remote_ip))
++				return TRUE;
++		}
++		if ((vpw->pw_flags & NO_WEBMAIL) != 0) {
++			if (net_ip_compare(&module->webmail_ip,
++					   &request->fields.remote_ip))
++				return TRUE;
++		}
++	}
++	if ((vpw->pw_flags & NO_POP) != 0 &&
++	    strcasecmp(request->fields.service, "POP3") == 0)
++		return TRUE;
++	if ((vpw->pw_flags & NO_SMTP) != 0 &&
++	    strcasecmp(request->fields.service, "SMTP") == 0)
++		return TRUE;
++	return FALSE;
++}
++
++static char *
++vpopmail_password_lookup(struct auth_request *auth_request, bool *cleartext,
++			 enum passdb_result *result_r)
++{
++	char vpop_user[VPOPMAIL_LIMIT], vpop_domain[VPOPMAIL_LIMIT];
++	struct vqpasswd *vpw;
++	char *password;
++
++	vpw = vpopmail_lookup_vqp(auth_request, vpop_user, vpop_domain);
++	if (vpw == NULL) {
++		*result_r = PASSDB_RESULT_USER_UNKNOWN;
++		return NULL;
++	}
++
++	if (vpopmail_is_disabled(auth_request, vpw)) {
++		e_info(authdb_event(auth_request),
++		       "%s disabled in vpopmail for this user",
++		       auth_request->fields.service);
++		password = NULL;
++		*result_r = PASSDB_RESULT_USER_DISABLED;
++	} else {
++		if (vpw->pw_clear_passwd != NULL &&
++		    *vpw->pw_clear_passwd != '\0') {
++			password = t_strdup_noconst(vpw->pw_clear_passwd);
++			*cleartext = TRUE;
++		} else if (!*cleartext)
++			password = t_strdup_noconst(vpw->pw_passwd);
++		else
++			password = NULL;
++		*result_r = password != NULL ? PASSDB_RESULT_OK :
++			PASSDB_RESULT_SCHEME_NOT_AVAILABLE;
++	}
++
++	safe_memset(vpw->pw_passwd, 0, strlen(vpw->pw_passwd));
++	if (vpw->pw_clear_passwd != NULL) {
++		safe_memset(vpw->pw_clear_passwd, 0,
++			    strlen(vpw->pw_clear_passwd));
++	}
++
++	return password;
++}
++
++static void vpopmail_lookup_credentials(struct auth_request *request,
++					lookup_credentials_callback_t *callback)
++{
++	enum passdb_result result;
++	char *password;
++	bool cleartext = TRUE;
++
++	password = vpopmail_password_lookup(request, &cleartext, &result);
++	if (password == NULL) {
++		callback(result, NULL, 0, request);
++		return;
++	}
++	
++	passdb_handle_credentials(PASSDB_RESULT_OK, password, "CLEARTEXT",
++				  callback, request);
++	safe_memset(password, 0, strlen(password));
++}
++
++static void
++vpopmail_verify_plain(struct auth_request *request, const char *password,
++		      verify_plain_callback_t *callback)
++{
++	enum passdb_result result;
++	const char *scheme, *tmp_pass;
++	char *crypted_pass;
++	bool cleartext = FALSE;
++	int ret;
++
++	crypted_pass = vpopmail_password_lookup(request, &cleartext, &result);
++	if (crypted_pass == NULL) {
++		callback(result, request);
++		return;
++	}
++	tmp_pass = crypted_pass;
++
++	if (cleartext)
++		scheme = "CLEARTEXT";
++	else {
++		scheme = password_get_scheme(&tmp_pass);
++		if (scheme == NULL)
++			scheme = request->passdb->passdb->default_pass_scheme;
++	}
++
++	ret = auth_request_password_verify(request, password, tmp_pass,
++					   scheme, AUTH_SUBSYS_DB);
++	safe_memset(crypted_pass, 0, strlen(crypted_pass));
++
++	if (ret <= 0) {
++		callback(PASSDB_RESULT_PASSWORD_MISMATCH, request);
++		return;
++	}
++
++#ifdef POP_AUTH_OPEN_RELAY
++	if (strcasecmp(request->fields.service, "POP3") == 0 ||
++	    strcasecmp(request->fields.service, "IMAP") == 0) {
++		const char *host = net_ip2addr(&request->fields.remote_ip);
++		/* vpopmail 5.4 does not understand IPv6 */
++		if (host[0] != '\0' && IPADDR_IS_V4(&request->fields.remote_ip)) {
++			/* use putenv() directly rather than env_put() which
++			   would leak memory every time we got here. use a
++			   static buffer for putenv() as SUSv2 requirements
++			   would otherwise corrupt our environment later. */
++			static char ip_env[256];
++
++			i_snprintf(ip_env, sizeof(ip_env),
++				   "TCPREMOTEIP=%s", host);
++			putenv(ip_env);
++			open_smtp_relay();
++		}
++	}
++#endif
++
++	callback(PASSDB_RESULT_OK, request);
++}
++
++static struct passdb_module *
++vpopmail_preinit(pool_t pool, const char *args)
++{
++	static bool vauth_load_initialized = FALSE;
++	struct vpopmail_passdb_module *module;
++	const char *const *tmp;
++
++	module = p_new(pool, struct vpopmail_passdb_module, 1);
++	module->module.default_pass_scheme = VPOPMAIL_DEFAULT_PASS_SCHEME;
++	module->module.blocking = TRUE;
++
++	tmp = t_strsplit_spaces(args, " ");
++	for (; *tmp != NULL; tmp++) {
++		if (str_begins(*tmp, "cache_key=")) {
++			module->module.default_cache_key =
++				auth_cache_parse_key(pool, *tmp + 10);
++		} else if (str_begins(*tmp, "webmail=")) {
++			if (net_addr2ip(*tmp + 8, &module->webmail_ip) < 0)
++				i_fatal("vpopmail: Invalid webmail IP address");
++		} else if (strcmp(*tmp, "blocking=no") == 0) {
++			module->module.blocking = FALSE;
++		} else {
++			i_fatal("passdb vpopmail: Unknown setting: %s", *tmp);
++		}
++	}
++	if (!vauth_load_initialized) {
++		vauth_load_initialized = TRUE;
++		if (vauth_open(0) != 0)
++			i_fatal("vpopmail: vauth_open() failed");
++	}
++	return &module->module;
++}
++
++static void vpopmail_deinit(struct passdb_module *module ATTR_UNUSED)
++{
++	vclose();
++}
++
++struct passdb_module_interface passdb_vpopmail = {
++	"vpopmail",
++
++	vpopmail_preinit,
++	NULL,
++	vpopmail_deinit,
++
++	vpopmail_verify_plain,
++	vpopmail_lookup_credentials,
++	NULL
++};
++#else
++struct passdb_module_interface passdb_vpopmail = {
++	.name = "vpopmail"
++};
++#endif
+diff -ruN ../dovecot-2.3.13.orig/src/auth/passdb.c ./src/auth/passdb.c
+--- ../dovecot-2.3.13.orig/src/auth/passdb.c	2020-12-22 14:26:52.000000000 +0100
++++ ./src/auth/passdb.c	2021-01-29 13:21:19.273185000 +0100
+@@ -321,6 +321,7 @@
+ extern struct passdb_module_interface passdb_passwd_file;
+ extern struct passdb_module_interface passdb_pam;
+ extern struct passdb_module_interface passdb_checkpassword;
++extern struct passdb_module_interface passdb_vpopmail;
+ extern struct passdb_module_interface passdb_ldap;
+ extern struct passdb_module_interface passdb_sql;
+ extern struct passdb_module_interface passdb_static;
+@@ -340,6 +341,7 @@
+ 	passdb_register_module(&passdb_pam);
+ 	passdb_register_module(&passdb_checkpassword);
+ 	passdb_register_module(&passdb_shadow);
++	passdb_register_module(&passdb_vpopmail);
+ 	passdb_register_module(&passdb_ldap);
+ 	passdb_register_module(&passdb_sql);
+ 	passdb_register_module(&passdb_static);
+diff -ruN ../dovecot-2.3.13.orig/src/auth/userdb-vpopmail.c ./src/auth/userdb-vpopmail.c
+--- ../dovecot-2.3.13.orig/src/auth/userdb-vpopmail.c	1970-01-01 01:00:00.000000000 +0100
++++ ./src/auth/userdb-vpopmail.c	2021-01-29 13:22:54.910947000 +0100
+@@ -0,0 +1,202 @@
++/* Copyright (c) 2002-2018 Dovecot authors, see the included COPYING file */
++
++/* Thanks to Courier-IMAP for showing how the vpopmail API should be used */
++
++#include "auth-common.h"
++#include "userdb.h"
++
++#if defined(PASSDB_VPOPMAIL) || defined(USERDB_VPOPMAIL)
++#include "str.h"
++#include "var-expand.h"
++#include "userdb-vpopmail.h"
++
++struct vpopmail_userdb_module {
++	struct userdb_module module;
++
++	const char *quota_template_key;
++	const char *quota_template_value;
++};
++
++struct vqpasswd *vpopmail_lookup_vqp(struct auth_request *request,
++				     char vpop_user[VPOPMAIL_LIMIT],
++				     char vpop_domain[VPOPMAIL_LIMIT])
++{
++	struct vqpasswd *vpw;
++
++	/* vpop_user must be zero-filled or parse_email() leaves an
++	   extra character after the user name. we'll fill vpop_domain
++	   as well just to be sure... */
++	memset(vpop_user, '\0', VPOPMAIL_LIMIT);
++	memset(vpop_domain, '\0', VPOPMAIL_LIMIT);
++
++	if (parse_email(request->fields.user, vpop_user, vpop_domain,
++			VPOPMAIL_LIMIT-1) < 0) {
++		e_info(authdb_event(request),
++		       "parse_email() failed");
++		return NULL;
++	}
++
++	e_debug(authdb_event(request),
++		"lookup user=%s domain=%s",
++		vpop_user, vpop_domain);
++
++	vpw = vauth_getpw(vpop_user, vpop_domain);
++	if (vpw == NULL) {
++		auth_request_log_unknown_user(request, AUTH_SUBSYS_DB);
++		return NULL;
++	}
++
++	return vpw;
++}
++#endif
++
++#ifdef USERDB_VPOPMAIL
++static int
++userdb_vpopmail_get_quota(const char *template, const char *vpop_str,
++			  const char **quota_r, const char **error_r)
++{
++	struct var_expand_table *tab;
++	string_t *quota;
++
++	if (template == NULL || *vpop_str == '\0' ||
++	    strcmp(vpop_str, "NOQUOTA") == 0) {
++		*quota_r = "";
++		return 0;
++	}
++
++	tab = t_new(struct var_expand_table, 2);
++	tab[0].key = 'q';
++	tab[0].value = format_maildirquota(vpop_str);
++
++	quota = t_str_new(128);
++	if (var_expand(quota, template, tab, error_r) < 0)
++		return -1;
++
++	*quota_r = str_c(quota);
++	return 0;
++}
++
++static void vpopmail_lookup(struct auth_request *auth_request,
++			    userdb_callback_t *callback)
++{
++	struct userdb_module *_module = auth_request->userdb->userdb;
++	struct vpopmail_userdb_module *module =
++		(struct vpopmail_userdb_module *)_module;
++	char vpop_user[VPOPMAIL_LIMIT], vpop_domain[VPOPMAIL_LIMIT];
++	struct vqpasswd *vpw;
++	const char *quota, *error;
++	uid_t uid;
++	gid_t gid;
++
++	vpw = vpopmail_lookup_vqp(auth_request, vpop_user, vpop_domain);
++	if (vpw == NULL) {
++		callback(USERDB_RESULT_USER_UNKNOWN, auth_request);
++		return;
++	}
++
++	/* we have to get uid/gid separately, because the gid field in
++	   struct vqpasswd isn't really gid at all but just some flags... */
++	if (vget_assign(vpop_domain, NULL, 0, &uid, &gid) == NULL) {
++		e_info(authdb_event(auth_request),
++		       "vget_assign(%s) failed", vpop_domain);
++		callback(USERDB_RESULT_INTERNAL_FAILURE, auth_request);
++		return;
++	}
++
++	if (auth_request->fields.successful) {
++		/* update the last login only when we're really  */
++		vset_lastauth(vpop_user, vpop_domain,
++			      t_strdup_noconst(auth_request->fields.service));
++	}
++
++	if (vpw->pw_dir == NULL || vpw->pw_dir[0] == '\0') {
++		/* user's homedir doesn't exist yet, create it */
++		e_info(authdb_event(auth_request),
++		       "pw_dir isn't set, creating");
++
++		if (make_user_dir(vpop_user, vpop_domain, uid, gid) == NULL) {
++			e_error(authdb_event(auth_request),
++				"make_user_dir(%s, %s) failed",
++				vpop_user, vpop_domain);
++			callback(USERDB_RESULT_INTERNAL_FAILURE, auth_request);
++			return;
++		}
++
++		/* get the user again so pw_dir is visible */
++		vpw = vauth_getpw(vpop_user, vpop_domain);
++		if (vpw == NULL) {
++			callback(USERDB_RESULT_INTERNAL_FAILURE, auth_request);
++			return;
++		}
++	}
++
++	if (userdb_vpopmail_get_quota(module->quota_template_value,
++				      vpw->pw_shell, &quota, &error) < 0) {
++		e_error(authdb_event(auth_request),
++			"userdb_vpopmail_get_quota(%s, %s) failed: %s",
++			module->quota_template_value,
++			vpw->pw_shell, error);
++		callback(USERDB_RESULT_INTERNAL_FAILURE, auth_request);
++		return;
++	}
++
++	auth_request_set_userdb_field(auth_request, "uid", dec2str(uid));
++	auth_request_set_userdb_field(auth_request, "gid", dec2str(gid));
++	auth_request_set_userdb_field(auth_request, "home", vpw->pw_dir);
++
++	if (*quota != '\0') {
++		auth_request_set_userdb_field(auth_request,
++					      module->quota_template_key,
++					      quota);
++	}
++	callback(USERDB_RESULT_OK, auth_request);
++}
++
++static struct userdb_module *
++vpopmail_preinit(pool_t pool, const char *args)
++{
++	struct vpopmail_userdb_module *module;
++	const char *const *tmp, *p;
++
++	module = p_new(pool, struct vpopmail_userdb_module, 1);
++	module->module.blocking = TRUE;
++
++	for (tmp = t_strsplit(args, " "); *tmp != NULL; tmp++) {
++		if (str_begins(*tmp, "cache_key="))
++			module->module.default_cache_key =
++				p_strdup(pool, *tmp + 10);
++		else if (str_begins(*tmp, "quota_template=")) {
++			p = strchr(*tmp + 15, '=');
++			if (p == NULL) {
++				i_fatal("vpopmail userdb: "
++					"quota_template missing '='");
++			}
++			module->quota_template_key =
++				p_strdup_until(pool, *tmp + 15, p);
++			module->quota_template_value = p_strdup(pool, p + 1);
++		} else if (strcmp(*tmp, "blocking=no") == 0) {
++			module->module.blocking = FALSE;
++		} else
++			i_fatal("userdb vpopmail: Unknown setting: %s", *tmp);
++	}
++	return &module->module;
++}
++
++struct userdb_module_interface userdb_vpopmail = {
++	"vpopmail",
++
++	vpopmail_preinit,
++	NULL,
++	NULL,
++
++	vpopmail_lookup,
++
++	NULL,
++	NULL,
++	NULL
++};
++#else
++struct userdb_module_interface userdb_vpopmail = {
++	.name = "vpopmail"
++};
++#endif
+diff -ruN ../dovecot-2.3.13.orig/src/auth/userdb-vpopmail.h ./src/auth/userdb-vpopmail.h
+--- ../dovecot-2.3.13.orig/src/auth/userdb-vpopmail.h	1970-01-01 01:00:00.000000000 +0100
++++ ./src/auth/userdb-vpopmail.h	2021-01-29 13:23:51.526326000 +0100
+@@ -0,0 +1,17 @@
++#ifndef USERDB_VPOPMAIL_H
++#define USERDB_VPOPMAIL_H
++
++#include <stdio.h>
++#include <vpopmail.h>
++#include <vauth.h>
++
++/* Limit user and domain to 80 chars each (+1 for \0). I wouldn't recommend
++   raising this limit at least much, vpopmail is full of potential buffer
++   overflows. */
++#define VPOPMAIL_LIMIT 81
++
++struct vqpasswd *vpopmail_lookup_vqp(struct auth_request *request,
++				     char vpop_user[VPOPMAIL_LIMIT],
++				     char vpop_domain[VPOPMAIL_LIMIT]);
++
++#endif
+diff -ruN ../dovecot-2.3.13.orig/src/auth/userdb.c ./src/auth/userdb.c
+--- ../dovecot-2.3.13.orig/src/auth/userdb.c	2020-12-22 14:26:52.000000000 +0100
++++ ./src/auth/userdb.c	2021-01-29 13:21:19.275688000 +0100
+@@ -228,6 +228,7 @@
+ extern struct userdb_module_interface userdb_static;
+ extern struct userdb_module_interface userdb_passwd;
+ extern struct userdb_module_interface userdb_passwd_file;
++extern struct userdb_module_interface userdb_vpopmail;
+ extern struct userdb_module_interface userdb_ldap;
+ extern struct userdb_module_interface userdb_sql;
+ extern struct userdb_module_interface userdb_checkpassword;
+@@ -244,6 +245,7 @@
+ 	userdb_register_module(&userdb_passwd_file);
+ 	userdb_register_module(&userdb_prefetch);
+ 	userdb_register_module(&userdb_static);
++	userdb_register_module(&userdb_vpopmail);
+ 	userdb_register_module(&userdb_ldap);
+ 	userdb_register_module(&userdb_sql);
+ 	userdb_register_module(&userdb_checkpassword);
+diff -ruN ../dovecot-2.3.13.orig/src/master/main.c ./src/master/main.c
+--- ../dovecot-2.3.13.orig/src/master/main.c	2020-12-22 14:26:52.000000000 +0100
++++ ./src/master/main.c	2021-01-29 13:21:19.276733000 +0100
+@@ -706,6 +706,9 @@
+ #ifdef PASSDB_SQL 
+ 		" sql"
+ #endif
++#ifdef PASSDB_VPOPMAIL
++		" vpopmail"
++#endif
+ 	"\nUserdb:"
+ #ifdef USERDB_CHECKPASSWORD
+ 		" checkpassword"
+@@ -733,6 +736,9 @@
+ #endif
+ #ifdef USERDB_STATIC 
+ 		" static"
++#endif
++#ifdef USERDB_VPOPMAIL
++		" vpopmail"
+ #endif
+ 	"\n", IO_BLOCK_SIZE);
+ }

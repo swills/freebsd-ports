@@ -21,6 +21,7 @@ LICENSE_COMB=	dual
 LIB_DEPENDS=	libzstd.so:archivers/zstd
 
 USES=		cpe iconv libtool pkgconfig ssl
+USES+=		autoreconf gettext-tools
 USE_RC_SUBR=	dovecot
 
 GNU_CONFIGURE=	yes
@@ -36,7 +37,7 @@ INSTALL_TARGET=	install-strip
 USERS=		dovecot dovenull
 GROUPS=		${USERS}
 
-OPTIONS_DEFINE=	LIBSODIUM LIBWRAP LUA LZ4 DOCS EXAMPLES
+OPTIONS_DEFINE=	LIBSODIUM LIBWRAP LUA LZ4 VPOPMAIL DOCS EXAMPLES
 OPTIONS_DEFAULT=GSSAPI_NONE LIBWRAP
 OPTIONS_SUB=	yes
 
@@ -48,6 +49,7 @@ OPTIONS_SINGLE=		GSSAPI
 OPTIONS_SINGLE_GSSAPI=	GSSAPI_NONE GSSAPI_BASE GSSAPI_HEIMDAL GSSAPI_MIT
 
 LZ4_DESC=	LZ4 compression support
+VPOPMAIL_DESC=	vpopmail support (deprecated)
 
 DB_DESC=	Database support
 CDB_DESC=	CDB database support
@@ -75,6 +77,10 @@ LUA_USES=		lua
 
 LZ4_CONFIGURE_WITH=	lz4
 LZ4_LIB_DEPENDS=	liblz4.so:archivers/liblz4
+
+VPOPMAIL_BUILD_DEPENDS=	vpopmail>=0:mail/vpopmail
+VPOPMAIL_CONFIGURE_WITH=vpopmail
+VPOPMAIL_EXTRA_PATCHES=	${FILESDIR}/vpopmail.patch
 
 # Databases
 CDB_CONFIGURE_WITH=	cdb
@@ -135,16 +141,14 @@ post-patch:
 		s,sysconfdir=/etc,sysconfdir=${PREFIX}/etc,g' \
 		${WRKSRC}/doc/example-config/*.conf ${WRKSRC}/doc/example-config/conf.d/* \
 		${WRKSRC}/doc/example-config/*.conf.ext
-	@${REINPLACE_CMD} -e '/^LIBS =/s/$$/ @LTLIBICONV@/' \
-		${WRKSRC}/src/lib-mail/Makefile.in
 # Install the sample config files into ETCDIR/example-config/
 	@${REINPLACE_CMD} -e '/^exampledir =/s|\$$(docdir)|${ETCDIR}|' \
-		${WRKSRC}/doc/example-config/Makefile.in \
-		${WRKSRC}/doc/example-config/conf.d/Makefile.in
+		${WRKSRC}/doc/example-config/Makefile.am \
+		${WRKSRC}/doc/example-config/conf.d/Makefile.am
 
 post-patch-LUA-on:
 	@${REINPLACE_CMD} -e '/^libdovecot_lua_la_DEPENDENCIES =/ s|LUA_LIBS|true|' \
-		${WRKSRC}/src/lib-lua/Makefile.in
+		${WRKSRC}/src/lib-lua/Makefile.am
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}

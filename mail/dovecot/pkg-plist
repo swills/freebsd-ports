@@ -37,6 +37,7 @@
 %%ETCDIR%%/example-config/conf.d/auth-sql.conf.ext
 %%ETCDIR%%/example-config/conf.d/auth-static.conf.ext
 %%ETCDIR%%/example-config/conf.d/auth-system.conf.ext
+%%VPOPMAIL%%%%ETCDIR%%/example-config/conf.d/auth-vpopmail.conf.ext
 %%ETCDIR%%/example-config/dovecot-dict-auth.conf.ext
 %%ETCDIR%%/example-config/dovecot-dict-sql.conf.ext
 %%ETCDIR%%/example-config/dovecot-ldap.conf.ext
@@ -648,6 +649,7 @@ include/dovecot/unlink-old-files.h
 include/dovecot/uri-util.h
 include/dovecot/userdb-blocking.h
 include/dovecot/userdb-template.h
+%%VPOPMAIL%%include/dovecot/userdb-vpopmail.h
 include/dovecot/userdb.h
 include/dovecot/utc-mktime.h
 include/dovecot/utc-offset.h
