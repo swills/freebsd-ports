@@ -1,0 +1,11 @@
+--- CMakeLists.txt.orig	2021-02-15 08:41:34 UTC
++++ CMakeLists.txt
+@@ -75,7 +75,7 @@ if (${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_SOURC
+ 		FRAMEWORK     DESTINATION ${CROSSGUID_FRAMEWORK_INSTALL_DIR})
+ 
+ 	# Install headers
+-	install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/"
++	install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/crossguid/"
+ 		DESTINATION ${CROSSGUID_INC_INSTALL_DIR})
+ 
+ 	# Make cmake config files for all targets

@@ -1,8 +1,10 @@
 # $FreeBSD$
 
 PORTNAME=	libcrossguid
-PORTVERSION=	20150803
-PORTREVISION=	6
+DISTVERSIONPREFIX=	v
+DISTVERSION=	0.2.2-52
+DISTVERSIONSUFFIX=	-gca1bf4b
+PORTEPOCH=	1
 CATEGORIES=	devel
 
 MAINTAINER=	mickael.maillot@gmail.com
@@ -16,33 +18,10 @@ LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 USE_GITHUB=	yes
 GH_ACCOUNT=	graeme-hill
 GH_PROJECT=	crossguid
-GH_TAGNAME=	8f399e8
 
-USES=		compiler:c++11-lang pkgconfig
-USE_CXXSTD=	c++11
-CXXFLAGS+=	`pkg-config --cflags uuid`
+USES=		cmake compiler:c++11-lang pkgconfig
 USE_LDCONFIG=	yes
 
-PLIST_FILES=	include/guid.h \
-		lib/libcrossguid.so \
-		lib/libcrossguid.so.0 \
-		libdata/pkgconfig/libcrossguid.pc
-
-post-patch:
-	@${SED} -e 's|%PREFIX%|${PREFIX}|' -e 's|%VERSION%|${PORTVERSION}|' \
-		${FILESDIR}/libcrossguid.pc.in > ${WRKDIR}/libcrossguid.pc
-
-do-build:
-	cd ${WRKSRC} && ${CXX} ${CXXFLAGS} -shared -fPIC \
-		-Wl,-soname,libcrossguid.so.0 \
-		-DGUID_LIBUUID -L${LOCALBASE}/lib guid.cpp \
-		-o libcrossguid.so.0 -luuid
-
-do-install:
-	${INSTALL_DATA} ${WRKSRC}/guid.h ${STAGEDIR}${PREFIX}/include
-	${INSTALL_LIB} ${WRKSRC}/libcrossguid.so.0 ${STAGEDIR}${PREFIX}/lib
-	${INSTALL_DATA} ${WRKDIR}/libcrossguid.pc \
-		${STAGEDIR}${PREFIX}/libdata/pkgconfig
-	${LN} -sf libcrossguid.so.0 ${STAGEDIR}${PREFIX}/lib/libcrossguid.so
+CMAKE_ON=	BUILD_SHARED_LIBS
 
 .include <bsd.port.mk>
