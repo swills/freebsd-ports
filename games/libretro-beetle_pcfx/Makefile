@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libretro-beetle_pcfx
-PORTVERSION=	0.20200504
+PORTVERSION=	0.20210131
 CATEGORIES=	games
 
 MAINTAINER=	menelkir@itroll.org
@@ -15,7 +15,7 @@ USE_LDCONFIG=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	libretro
 GH_PROJECT=	beetle-pcfx-libretro
-GH_TAGNAME=	7bba669
+GH_TAGNAME=	f5a9ccb
 
 PLIST_FILES=	lib/libretro/mednafen_pcfx_libretro.so
 
