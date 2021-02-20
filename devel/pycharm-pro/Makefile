@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	pycharm-pro
-PORTVERSION=	2020.2.3
+PORTVERSION=	2020.3.3
 CATEGORIES=	devel java python
 MASTER_SITES=	https://download.jetbrains.com/python/ \
 		http://download.jetbrains.com/python/
@@ -16,7 +16,7 @@ LICENSE_TEXT=	See: https://www.jetbrains.com/store/license.html
 LICENSE_PERMS=	no-dist-mirror no-dist-sell pkg-mirror no-pkg-sell auto-accept
 
 RUN_DEPENDS=	intellij-fsnotifier>0:java/intellij-fsnotifier \
-		intellij-pty4j>0:java/intellij-pty4j
+		intellij-pty4j>0:java/intellij-pty4j openjfx14>0:java/openjfx14
 
 USES=		python:run shebangfix
 
@@ -49,11 +49,12 @@ do-install:
 	@${RM} ${STAGEDIR}${DATADIR}/lib/pty4j-0.5.jar
 	${INSTALL_SCRIPT} ${WRKDIR}/pycharm ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}.desktop ${STAGEDIR}${PREFIX}/share/applications/
-	#cd ${WRKSRC}/lib && ${JAVA_HOME}/bin/jar xf icons.jar
-# TODO: Remove and enable fsnotifier when devel/libinotify is fixed
-# Disable filewatcher warning message on IDEA startup
-	${ECHO} "idea.filewatcher.disabled=true" >> ${STAGEDIR}${DATADIR}/bin/idea.properties
 # Use fsnotifier replacement provided by java/intellij-fsnotifier
 	${ECHO} "idea.filewatcher.executable.path=${IDEA_HOME}/bin/fsnotifier" >> ${STAGEDIR}${DATADIR}/bin/idea.properties
+# Fix "Typeahead timeout is exceeded" error
+	${ECHO} "action.aware.typeAhead=false" >> ${STAGEDIR}${DATADIR}/bin/idea.properties
+# Fix slow render
+	${ECHO} "-Dsun.java2d.xrender=false" >> ${STAGEDIR}${DATADIR}/bin/idea.vmoptions
+	${ECHO} "-Dsun.java2d.xrender=false" >> ${STAGEDIR}${DATADIR}/bin/idea64.vmoptions
 
 .include <bsd.port.mk>
