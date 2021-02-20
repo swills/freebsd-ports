@@ -12,13 +12,13 @@ COMMENT=	Graphical front-end to the FreeBSD pkg-ng package manager
 LICENSE=	LGPL20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		qmake compiler:c++11-lib qt:5
+USES=		compiler:c++17-lang qt:5
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	aarnt
 
-USE_QT=		core concurrent declarative gui linguist network xml widgets \
-		buildtools_build
+USE_QT=		core gui widgets network xml buildtools_build qmake_build
+USE_GL=		gl
 
 PLIST_FILES=	bin/${PORTNAME} \
 		lib/${PORTNAME}/${PORTNAME}-doas \
