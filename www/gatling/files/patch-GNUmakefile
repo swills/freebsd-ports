@@ -1,8 +1,10 @@
---- /tmp/GNUmakefile	2017-02-13 11:43:57.882750000 -0800
-+++ GNUmakefile	2017-02-13 11:56:19.109139000 -0800
-@@ -1,24 +1,22 @@
--#DEBUG=1
--ZLIB=1
+diff --git GNUmakefile GNUmakefile
+index 6af7b35..c2002de 100644
+--- GNUmakefile
++++ GNUmakefile
+@@ -1,13 +1,19 @@
+ #DEBUG=1
+ ZLIB=1
 -prefix=/opt/diet
 +prefix=${PREFIX}
  BINDIR=${prefix}/bin
@@ -10,7 +12,7 @@
  man1dir=$(MANDIR)/man1
  
 -TARGETS=gatling httpbench bindbench dl ioerr bench tlsgatling_nofail \
--pthreadbench cgi ptlsgatling_nofail
+-pthreadbench cgi ptlsgatling_nofail tlsdl_nofail ptlsdl_nofail
 -TARGETS2=mktestdata mmapbench manymapbench forkbench forksbench
 +TARGETS=gatling dl cgi
 +TARGETS2=
@@ -24,18 +26,22 @@
  ALLTARGETS=$(TARGETS) acc hcat referrer hitprofile matchiprange getlinks \
  rellink $(TARGETS2)
  
- all: $(ALLTARGETS)
- 
--CROSS=
--#CROSS=i686-mingw32-
--CC=$(CROSS)gcc
--CFLAGS=-pipe -Wall
--LDFLAGS=
--
- #CFLAGS+=-DSTATE_DEBUG -DMOREDEBUG -DDEBUG_EVENTS -DSMDEBUG
+@@ -18,14 +24,6 @@ CROSS=
  
  path = $(subst :, ,$(PATH))
-@@ -36,15 +34,11 @@
+ gcc_path = $(foreach dir,$(path),$(wildcard $(dir)/$(CROSS)gcc))
+-ifeq ($(strip $(gcc_path)),)
+-CC=$(CROSS)clang
+-else
+-CC=$(CROSS)gcc
+-endif
+-
+-CFLAGS=-pipe -Wall
+-LDFLAGS=
+ 
+ #CFLAGS+=-DSTATE_DEBUG -DMOREDEBUG -DDEBUG_EVENTS -DSMDEBUG
+ 
+@@ -43,15 +41,11 @@ endif
  # to build without diet libc support, use $ make DIET=
  # see http://www.fefe.de/dietlibc/ for details about the diet libc
  
@@ -53,7 +59,7 @@
  endif
  
  LDLIBS=-lowfat
-@@ -136,11 +130,13 @@
+@@ -159,11 +153,13 @@ libsocket: trysocket.c
  	rm -f trysocket
  
  libiconv: tryiconv.c

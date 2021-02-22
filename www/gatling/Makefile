@@ -2,10 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	gatling
-PORTVERSION=	0.15
-PORTREVISION=	2
+PORTVERSION=	0.16
 CATEGORIES=	www benchmarks ftp
-MASTER_SITES=	http://www.fefe.de/gatling/
+MASTER_SITES=	https://www.fefe.de/gatling/
 
 MAINTAINER=	coco@executive-computing.de
 COMMENT=	High performance webserver with scalability benchmark tools
@@ -15,15 +14,19 @@ LICENSE=	GPLv2
 BROKEN_mips=		fails to compile: dirfd.c: error: expected ';', ',' or ')' before 'key'
 BROKEN_mips64=		fails to compile: dirfd.c: error: expected ';', ',' or ')' before 'key'
 
-BUILD_DEPENDS=	libowfat>=0.31:devel/libowfat
+BUILD_DEPENDS=	libowfat>=0.32:devel/libowfat
 
 USES=		compiler:c++11-lang gmake ssl tar:xz
 USE_RC_SUBR=	gatling
 
-CFLAGS+=	-I${LOCALBASE}/include/libowfat -I${OPENSSLINC} -I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -L${OPENSSLLIB}
-
 MAKEFILE=	GNUmakefile
+
+CFLAGS+=	-I${LOCALBASE}/include/libowfat -I${OPENSSLINC} -I${LOCALBASE}/include
+# Make alloca() prototype visible
+CFLAGS+=	-D__BSD_VISIBLE
+# Make crypt() prototype visible
+CFLAGS+=	-D__XSI_VISIBLE
+LDFLAGS+=	-L${LOCALBASE}/lib -L${OPENSSLLIB}
 
 bin=		dl
 sbin=		gatling
@@ -36,10 +39,11 @@ PORTDOCS=	CHANGES README README.antidos README.cgi README.ftp \
 PORTEXAMPLES=	run-gatling cgi acc getlinks hcat hitprofile matchiprange \
 		referrer
 
-OPTIONS_DEFINE=	BENCHMARKS SMB TLS ZLIB OPTIMIZED_CFLAGS DOCS EXAMPLES DEBUG
-OPTIONS_SUB=	yes
+OPTIONS_DEFINE=	BENCHMARKS BROKEN_ITOJUN_V6 SMB TLS ZLIB OPTIMIZED_CFLAGS DOCS EXAMPLES DEBUG
 OPTIONS_DEFAULT=	BENCHMARKS SMB TLS ZLIB OPTIMIZED_CFLAGS
+OPTIONS_SUB=	yes
 BENCHMARKS_DESC=	Install some benchmark programs
+BROKEN_ITOJUN_V6_DESC=	Works around problems binding to IPv4 addresses
 TLS_DESC=		Build and install tlsgatling
 ZLIB_DESC=		Compress outgoing data
 
@@ -56,6 +60,11 @@ PLIST_FILES+=	man/man1/bench.1.gz
 MAKE_ENV+=	BENCHMARKS=1
 .endif
 
+.if ${PORT_OPTIONS:MBROKEN_ITOJUN_V6}
+# Causes a warning about "KAME madness" but works around
+# gatling failing to bind to IPv4 addresses.
+CFLAGS+=	-D__broken_itojun_v6__
+.endif
 .if ${PORT_OPTIONS:MOPTIMIZED_CFLAGS} && !defined(WITH_DEBUG)
 CFLAGS+=	-O2 -fomit-frame-pointer
 .endif
@@ -69,6 +78,10 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-disable_smb
 .endif
 
 .if ${PORT_OPTIONS:MTLS}
+.if ${OPSYS} == FreeBSD && ${OSVERSION} < 1200085 && ${SSL_DEFAULT} == base
+# XXX: It's conceivable that it works with LibreSSL as well ...
+BROKEN=	gatling requires OpenSSL 1.1.0 or later, add DEFAULT_VERSIONS+=ssl=openssl to /etc/make.conf
+.endif
 MAKE_ENV+=	TLSGATLING=1
 sbin+=		tlsgatling
 PORTDOCS+=	README.tls
