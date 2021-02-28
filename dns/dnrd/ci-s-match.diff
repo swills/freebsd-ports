@@ -1,0 +1,11 @@
+--- src/domnode.c	2004-10-19 13:45:21.000000000 +0000
++++ src/domnode.c	2019-06-11 18:58:34.736213000 +0000
+@@ -157,7 +157,7 @@
+        will be encoded as "\3yes\3org" while hayes.org will be encoded
+        as "\5hayes\3org"
+     */
+-    if ((strncmp(d->domain, p, maxlen - (p - name)) == 0) && (h > maxfound)) {
++    if ((strncasecmp(d->domain, p, maxlen - (p - name)) == 0) && (h > maxfound)) {
+       maxfound = h; /* max length found */
+       curr = d;
+     }
