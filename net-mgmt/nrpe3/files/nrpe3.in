@@ -25,7 +25,7 @@ load_rc_config "${name}"
 required_files="${nrpe3_configfile}"
 
 command="%%PREFIX%%/sbin/nrpe3"
-command_args="-c ${nrpe3_configfile} -d"
+command_args="-c ${nrpe3_configfile} -d ${nrpe3_flags}"
 extra_commands=reload
 sig_reload=HUP
 
