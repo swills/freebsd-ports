@@ -3,11 +3,11 @@
 
 PORTNAME=	upnp
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	1.14.0
+DISTVERSION=	1.14.2
 PORTEPOCH=	1
 CATEGORIES=	devel
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	driesm.michiels@gmail.com
 COMMENT=	Universal Plug and Play Software Development Kit
 
 LICENSE=	BSD3CLAUSE
@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		autoreconf cpe libtool pathfix pkgconfig
 USE_GITHUB=	yes
-GH_ACCOUNT=	mrjimenez
+GH_ACCOUNT=	pupnp
 GH_PROJECT=	pupnp
 USE_LDCONFIG=	yes
 
