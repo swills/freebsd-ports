@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	moc
-PORTVERSION=	2.5.2
-PORTREVISION=	5
+DISTVERSION=	2.5.2
+PORTREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://ftp.daper.net/pub/soft/moc/stable/
 
@@ -15,17 +15,17 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl
 
-USES=		bdb gmake libtool ncurses pkgconfig tar:bzip2
+USES=		bdb gmake libtool localbase:ldflags ncurses pkgconfig tar:bzip2
 USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 
-CPPFLAGS+=	-I${LOCALBASE}/include -I${BDB_INCLUDE_DIR}
-LDFLAGS+=	-L${LOCALBASE}/lib -L${BDB_LIB_DIR}
+CPPFLAGS+=	-I${BDB_INCLUDE_DIR}
+LDFLAGS+=	-L${BDB_LIB_DIR}
 
 OPTIONS_DEFINE=	AAC CURL DEBUG FFMPEG FLAC JACK MODPLUG MP3 MUSEPACK RCC \
 		SAMPLERATE SIDPLAY2 SNDFILE SPEEX VORBIS WAVPACK
-OPTIONS_DEFAULT=	MP3 VORBIS FLAC CURL
+OPTIONS_DEFAULT=	CURL FFMPEG VORBIS
 CURL_DESC=	curl support (Internet streams)
 RCC_DESC=	RCC support
 SIDPLAY2_DESC=	libsidplay2 support
