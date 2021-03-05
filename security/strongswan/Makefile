@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	strongswan
-DISTVERSION=	5.9.1
+DISTVERSION=	5.9.2
 CATEGORIES=	security net-vpn
 MASTER_SITES=	http://download.strongswan.org/ \
 		http://download2.strongswan.org/
@@ -33,6 +33,7 @@ CONFIGURE_ARGS=	--enable-kernel-pfkey \
 		--enable-eap-mschapv2 \
 		--enable-eap-peap \
 		--enable-eap-ttls \
+		--enable-farp \
 		--enable-md4 \
 		--enable-blowfish \
 		--enable-addrblock \
