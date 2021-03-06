@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	ibus
-PORTVERSION=	1.5.23
-PORTREVISION=	2
+PORTVERSION=	1.5.24
 CATEGORIES=	textproc
 
 MAINTAINER=	henry.hu.sh@gmail.com
@@ -38,9 +37,10 @@ OPTIONS_SUB=	yes
 INSTALL_TARGET=	install-strip
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc	\
 		--with-ucd-dir=${LOCALBASE}/share/unicode/ucd \
-		--disable-python2 --disable-python-library
+		--disable-python2 --disable-python-library \
+		--disable-gtk4
 
-OPTIONS_DEFINE=	NLS GTK2 GTK3 VALA GINTRO DOCS XIM ENGINE EMOJI
+OPTIONS_DEFINE=	NLS GTK2 GTK3 VALA GINTRO DOCS XIM ENGINE EMOJI WAYLAND
 OPTIONS_RADIO=	CONFIG
 OPTIONS_RADIO_CONFIG=	GCONF DCONF
 OPTIONS_DEFAULT=	GTK2 GTK3 VALA GINTRO DCONF XIM ENGINE EMOJI
@@ -54,6 +54,7 @@ DCONF_DESC=	Use dconf for configuration
 XIM_DESC=	Install XIM server
 ENGINE_DESC=	Install ibus simple engine
 EMOJI_DESC=	Install emoji dictionary
+WAYLAND_DESC=	Enable Wayland support
 CPE_VENDOR=	ibus_project
 
 NLS_USES=		gettext
@@ -102,6 +103,11 @@ EMOJI_CONFIGURE_ENABLE=	emoji-dict
 EMOJI_BUILD_DEPENDS=	json-glib>=0:devel/json-glib \
 			unicode-emoji>0:misc/unicode-emoji \
 			cldr-emoji-annotation>0:misc/cldr-emoji-annotation
+
+WAYLAND_CONFIGURE_ENABLE=	wayland
+WAYLAND_BUILD_DEPENDS=	wayland>1.14:graphics/wayland
+WAYLAND_LIB_DEPENDS=	libwayland-client.so:graphics/wayland \
+			libxkbcommon.so:x11/libxkbcommon
 
 .include <bsd.port.pre.mk>
 
