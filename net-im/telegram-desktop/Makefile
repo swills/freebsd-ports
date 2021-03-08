@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	telegram-desktop
-DISTVERSION=	2.5.8
+DISTVERSION=	2.6.1
 CATEGORIES=	net-im
 MASTER_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/v${DISTVERSION}/
 DISTNAME=	tdesktop-${DISTVERSION}-full
@@ -87,7 +87,7 @@ GTK_DESC=	Gtk integration (Use Gtk dialogs, etc.)
 ALSA_LIB_DEPENDS=	libasound.so:audio/alsa-lib
 PULSEAUDIO_LIB_DEPENDS=	libpulse.so:audio/pulseaudio
 
-GTK_CMAKE_BOOL_OFF=	TDESKTOP_DISABLE_GTK_INTEGRATION
+GTK_CMAKE_BOOL_OFF=	DESKTOP_APP_DISABLE_GTK_INTEGRATION
 
 INSTALLS_ICONS=	yes
 
