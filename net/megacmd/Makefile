@@ -1,8 +1,8 @@
 # $FreeBSD$
 
 PORTNAME=	megacmd
-DISTVERSION=	1.0.0
-PORTREVISION=	1
+DISTVERSION=	1.4.0
+DISTVERSIONSUFFIX=	_Linux
 CATEGORIES=	net
 
 MAINTAINER=	menelkir@itroll.org
@@ -20,7 +20,7 @@ USES=		autoreconf libtool sqlite:3 readline shebangfix ssl
 USE_GITHUB=	yes
 GH_ACCOUNT=	meganz
 GH_PROJECT=	MEGAcmd sdk:sdk
-GH_TAGNAME=	v3.4.1:sdk
+GH_TAGNAME=	v3.7.3c:sdk
 GH_SUBDIR=	sdk:sdk
 
 GNU_CONFIGURE=	yes
@@ -36,6 +36,8 @@ CONFIGURE_ARGS=	--disable-examples \
 		--with-zlib --with-readline=${LOCALBASE}
 CXXFLAGS+=	`pkgconf --cflags-only-other libcryptopp`
 USE_LDCONFIG=	yes
+
+INSTALL_TARGET=	install-strip
 
 SHEBANG_FILES=	src/client/mega-lpwd \
 		src/client/mega-permissions \
@@ -89,6 +91,11 @@ SHEBANG_FILES=	src/client/mega-lpwd \
 		src/client/mega-killsession \
 		src/client/mega-sync \
 		src/client/mega-users \
-		src/client/mega-export
+		src/client/mega-export \
+		src/client/mega-cat \
+		src/client/mega-mediainfo \
+		src/client/mega-proxy \
+		src/client/mega-df \
+		src/client/mega-tree
 
 .include <bsd.port.mk>
