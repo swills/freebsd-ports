@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	metacity
-PORTVERSION=	3.36.1
+PORTVERSION=	3.38.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
@@ -21,10 +21,11 @@ LIB_DEPENDS=	libstartup-notification-1.so:x11/startup-notification \
 RUN_DEPENDS=	zenity>=3.0.0:x11/zenity \
 		gsettings-desktop-schemas>=3.3.0:devel/gsettings-desktop-schemas
 
-PORTSCOUT=	limitw:1,even
-
 USES=		compiler:c11 gettext gmake gnome libtool \
 		localbase pathfix pkgconfig tar:xz xorg
+
+PORTSCOUT=	limitw:1,even
+
 GNU_CONFIGURE=	yes
 USE_XORG=	x11 xcomposite xdamage xrender xcursor xinerama xext xrandr
 USE_GNOME=	gnomeprefix gtk30 intlhack libxml2:build
