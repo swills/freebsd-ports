@@ -2,19 +2,21 @@
 # $FreeBSD$
 
 PORTNAME=	homura
-PORTVERSION=	5.3
+PORTVERSION=	5.4
 CATEGORIES=	games
 MASTER_SITES=	https://codeberg.org/Alexander88207/Homura/archive/
 DISTNAME=	${PORTVERSION}
 
 MAINTAINER=	Alexander88207@protonmail.com
-COMMENT=	Windows Games Launcher for FreeBSD
+COMMENT=	Wine-based Game Launcher for FreeBSD
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 ONLY_FOR_ARCHS=	amd64 i386
 ONLY_FOR_ARCHS_REASON=	Wine only runs on x86 architecture
+BROKEN_FreeBSD_13=	i386-wine-(devel) is in a bad condition for 13 and newer builds segfaults
+BROKEN_FreeBSD_14=	i386-wine-(devel) segfaults on 14
 
 RUN_DEPENDS=	zenity:x11/zenity \
 		xdg-open:devel/xdg-utils \
