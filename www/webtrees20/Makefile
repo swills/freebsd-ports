@@ -2,13 +2,13 @@
 # $FreeBSD$
 
 PORTNAME=	webtrees20
-PORTVERSION=	2.0.12
+PORTVERSION=	2.0.13
 CATEGORIES=	www
 MASTER_SITES=	http://github.com/fisharebest/webtrees/releases/download/${PORTVERSION}/ \
 		https://freebsd.ark-ict.nl/ports/
 DISTNAME=	webtrees-${PORTVERSION}
 
-MAINTAINER=	andre@ark-ict.nl
+MAINTAINER=	freebsd-ports@misc.ark-ict.nl
 COMMENT=	Online genealogy viewer
 
 LICENSE=	LGPL3
