@@ -3,8 +3,7 @@
 
 PORTNAME=	searx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.16.0
-PORTREVISION=	3
+DISTVERSION=	0.18.0
 CATEGORIES=	www python
 
 MAINTAINER=	loic.blot@unix-experience.fr
@@ -28,7 +27,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${PY_FLAVOR} \
 
 USES=		python:3.6+
 USE_GITHUB=	yes
-GH_ACCOUNT=	asciimoo
 USE_PYTHON=	distutils autoplist noflavors
 USE_RC_SUBR=	searx
 
@@ -41,9 +39,6 @@ post-patch: # expect dependencies to be backwards-compatible, otherwise it is di
 	@${REINPLACE_CMD} -e 's|==|>=|' ${WRKSRC}/requirements.txt
 
 post-install:
-	# workaround for https://github.com/asciimoo/searx/issues/1208
-	@${RM} -r ${STAGEDIR}${PYTHON_SITELIBDIR}/tests
-	@${REINPLACE_CMD} -e 's|.*/tests/.*||' ${_PYTHONPKGLIST}
 	# move settings to etc/ /usr/local/lib/python2.7/site-packages/searx/settings.yml
 	@${MV} ${STAGEDIR}${PYTHON_SITELIBDIR}/searx/settings.yml ${STAGEDIR}${PREFIX}/etc/${PORTNAME}-settings.yml.sample
 	@${LN} -s ${PREFIX}/etc/${PORTNAME}-settings.yml ${STAGEDIR}${PYTHON_SITELIBDIR}/searx/settings.yml
