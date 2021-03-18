@@ -2,6 +2,7 @@
 
 PORTNAME=	lidarr
 PORTVERSION=	0.7.2.1878
+PORTREVISION=	1
 CATEGORIES=	net-p2p
 MASTER_SITES=	https://github.com/lidarr/Lidarr/releases/download/v${PORTVERSION}/
 DISTNAME=	Lidarr.master.${PORTVERSION}.linux
@@ -11,11 +12,12 @@ COMMENT=	Music collection manager for Usenet and BitTorrent users
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	mono>0:lang/mono \
-		mediainfo>0:multimedia/mediainfo \
+LIB_DEPENDS=	libcurl.so:ftp/curl
+RUN_DEPENDS=	mediainfo>0:multimedia/mediainfo \
 		sqlite3>0:databases/sqlite3 \
 		chromaprint>0:audio/chromaprint
-LIB_DEPENDS=	libcurl.so:ftp/curl
+
+USES=		mono
 
 USE_RC_SUBR=	lidarr
 
