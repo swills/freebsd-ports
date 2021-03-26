@@ -1,0 +1,8 @@
+--- usr/lib/byobu/users.orig	2019-06-01 20:40:30 UTC
++++ usr/lib/byobu/users
+@@ -40,5 +40,3 @@ __users() {
+ 		rm -f "$BYOBU_RUN_DIR/status.$BYOBU_BACKEND/users"*
+ 	fi
+ }
+-
+-# vi: syntax=sh ts=4 noexpandtab

@@ -1,0 +1,16 @@
+--- usr/lib/byobu/load_average.orig	2016-04-07 22:05:52 UTC
++++ usr/lib/byobu/load_average
+@@ -26,11 +26,11 @@ __load_average_detail() {
+ __load_average() {
+ 	if [ -r "/proc/loadavg" ]; then
+ 		read one five fifteen other < /proc/loadavg
++	elif [ $(uname) = "FreeBSD" ]; then
++		one=$(uptime | sed -En 's:.*averages\: ([[:digit:]]+\.[[:digit:]]+),.*:\1:p')
+ 	else
+ 		one=$(uptime | sed -e "s/.*://" | awk '{print $1}')
+ 	fi
+ 	[ -n "$one" ] || return
+ 	color Y k; printf "$one"; color --
+ }
+-
+-# vi: syntax=sh ts=4 noexpandtab
