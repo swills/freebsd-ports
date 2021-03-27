@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	vimgolf
-PORTVERSION=	0.4.8
+PORTVERSION=	0.4.9
 CATEGORIES=	games rubygems
 MASTER_SITES=	RG
 
@@ -10,13 +10,13 @@ COMMENT=	CLI client for vimgolf.com
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	rubygem-thor>=0.14.6:devel/rubygem-thor \
-		rubygem-json_pure>=0:devel/rubygem-json_pure \
-		rubygem-highline>=0:devel/rubygem-highline
+RUN_DEPENDS=	rubygem-highline>=2.0.3:devel/rubygem-highline \
+		rubygem-json_pure>=2.3.1:devel/rubygem-json_pure \
+		rubygem-thor>=1.0.1:devel/rubygem-thor
 
-NO_ARCH=	yes
-USE_RUBY=	yes
 USES=		gem
+USE_RUBY=	yes
+NO_ARCH=	yes
 PLIST_FILES=	bin/vimgolf
 
 .include <bsd.port.mk>
