@@ -2,8 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	audacity
-PORTVERSION=	2.4.2
-PORTREVISION=	3
+PORTVERSION=	3.0.0
 DISTVERSIONPREFIX=	Audacity-
 CATEGORIES=	audio
 
@@ -17,9 +16,10 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libexpat.so:textproc/expat2 \
 		libportaudio.so:audio/portaudio \
 		libsndfile.so:audio/libsndfile \
-		libsoxr.so:audio/libsoxr
+		libsoxr.so:audio/libsoxr \
+		libsqlite3.so:databases/sqlite3
 
-USES=		cmake compiler:c++11-lang cpe desktop-file-utils gettext \
+USES=		cmake compiler:c++14-lang cpe desktop-file-utils gettext \
 		gnome libtool python:build pkgconfig shared-mime-info
 USE_GITHUB=	yes
 USE_GNOME=	cairo gtk30
@@ -134,10 +134,6 @@ CMAKE_ARGS+=	-DHAVE_MMX:BOOL=OFF \
 		-DHAVE_SSE:BOOL=OFF \
 		-DHAVE_SSE2:BOOL=OFF
 .endif
-
-post-patch:
-	@${REINPLACE_CMD} -e 's,Python2,Python${PYTHON_MAJOR_VER}, ; \
-		/CMAKE_CXX_STANDARD/s,14,11,' ${WRKSRC}/CMakeLists.txt
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

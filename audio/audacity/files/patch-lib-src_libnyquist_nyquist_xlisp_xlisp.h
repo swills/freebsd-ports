@@ -1,6 +1,6 @@
---- lib-src/libnyquist/nyquist/xlisp/xlisp.h.orig	2016-07-26 13:34:06 UTC
-+++ lib-src/libnyquist/nyquist/xlisp/xlisp.h
-@@ -161,6 +161,15 @@ extern long ptrtoabs();
+--- lib-src/libnyquist/nyquist/xlisp/xlisp.h.orig	2021-03-17 17:23:49.169659000 -0700
++++ lib-src/libnyquist/nyquist/xlisp/xlisp.h	2021-03-17 17:24:27.385843000 -0700
+@@ -172,6 +172,15 @@
  #endif
  #endif
  
@@ -13,6 +13,6 @@
 +#endif
 +#endif
 +
- /* Apple CC */
+ /* Apple CC (xcode, macOS, macintosh) */
  #ifdef __APPLE__
  #define NNODES 2000
