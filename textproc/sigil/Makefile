@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	sigil
-PORTVERSION=	1.4.3
+PORTVERSION=	1.5.1
 CATEGORIES=	textproc
 
 MAINTAINER=	jonc@chen.org.nz
