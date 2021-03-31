@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	irsim
-DISTVERSION=	9.7.108
+DISTVERSION=	9.7.110
 CATEGORIES=	cad
 MASTER_SITES=	http://opencircuitdesign.com/irsim/archive/
 
@@ -50,5 +50,8 @@ post-patch:
 		 s|wish |${WISH:T} | ; \
 		 s|"-fpic"|"-fPIC"| ; \
 		 /-l\/usr\/X11R6\/include/d' ${CONFIGURE_WRKSRC}/configure
+
+post-install:
+	cd ${STAGEDIR}${PREFIX} && ${STRIP_CMD} bin/gentbl bin/genspktbl
 
 .include <bsd.port.mk>
