@@ -1,5 +1,14 @@
---- meson.build.orig	2020-09-28 15:41:47 UTC
+--- meson.build.orig	2021-01-14 13:29:01 UTC
 +++ meson.build
+@@ -38,7 +38,7 @@ libwacom_req = '>= 0.13'
+ atk_req = '>= 2.5.3'
+ 
+ # optional version requirements
+-udev_req = '>= 228'
++udev_req = '>= 199'
+ gudev_req = '>= 232'
+ 
+ # wayland version requirements
 @@ -320,22 +320,6 @@ if buildtype != 'plain'
      '-Wmissing-include-dirs',
      '-Wlogical-op',
