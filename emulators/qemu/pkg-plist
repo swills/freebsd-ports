@@ -1,4 +1,4 @@
-bin/elf2dmp
+%%CURL%%bin/elf2dmp
 bin/qemu-edid
 bin/qemu-ga
 bin/qemu-i386
@@ -30,7 +30,7 @@ bin/qemu-system-i386
 %%NO_X86_TARGETS%%bin/qemu-system-ppc64
 %%NO_X86_TARGETS%%bin/qemu-system-riscv32
 %%NO_X86_TARGETS%%bin/qemu-system-riscv64
-bin/qemu-system-rx
+%%NO_X86_TARGETS%%bin/qemu-system-rx
 %%NO_X86_TARGETS%%bin/qemu-system-s390x
 %%NO_X86_TARGETS%%bin/qemu-system-sh4
 %%NO_X86_TARGETS%%bin/qemu-system-sh4eb
@@ -42,14 +42,14 @@ bin/qemu-system-x86_64
 %%NO_X86_TARGETS%%bin/qemu-system-xtensa
 %%NO_X86_TARGETS%%bin/qemu-system-xtensaeb
 bin/qemu-x86_64
-man/man1/qemu.1.gz
-man/man1/qemu-img.1.gz
-man/man7/qemu-block-drivers.7.gz
-man/man7/qemu-cpu-models.7.gz
-man/man7/qemu-ga-ref.7.gz
-man/man7/qemu-qmp-ref.7.gz
-man/man8/qemu-ga.8.gz
-man/man8/qemu-nbd.8.gz
+%%DOCS%%man/man/g1/qemu.1.gz
+%%DOCS%%man/man/g1/qemu-img.1.gz
+%%DOCS%%man/man/g7/qemu-block-drivers.7.gz
+%%DOCS%%man/man/g7/qemu-cpu-models.7.gz
+%%DOCS%%man/man/g7/qemu-ga-ref.7.gz
+%%DOCS%%man/man/g7/qemu-qmp-ref.7.gz
+%%DOCS%%man/man/g8/qemu-ga.8.gz
+%%DOCS%%man/man/g8/qemu-nbd.8.gz
 @sample etc/qemu-ifup.sample
 @sample etc/qemu-ifdown.sample
 %%DATADIR%%/QEMU,tcx.bin

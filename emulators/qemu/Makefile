@@ -14,7 +14,6 @@ COMMENT?=	QEMU CPU Emulator
 
 LICENSE=	GPLv2
 
-BUILD_DEPENDS=	sphinx-build:textproc/py-sphinx
 LIB_DEPENDS?=	libnettle.so:security/nettle \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
@@ -113,6 +112,7 @@ X11_USES=	sdl
 X86_TARGETS_USE_OFF=	XORG=pixman,x11
 X86_TARGETS_USES_OFF=	xorg
 INSTALLS_ICONS=		yes
+X86_TARGETS_CONFIGURE_ON=	--target-list='i386-softmmu i386-bsd-user x86_64-softmmu x86_64-bsd-user'
 .endif
 
 PORTDOCS?=	docs index.html interop/.buildinfo interop/* qemu-ga-ref.html qemu-ga-ref.txt \
