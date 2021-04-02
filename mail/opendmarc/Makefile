@@ -2,11 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	opendmarc
-PORTVERSION=	1.3.2
-PORTREVISION=	2
+PORTVERSION=	1.4.0
 CATEGORIES=	mail security
-MASTER_SITES=	SF/${PORTNAME} \
-		SF/${PORTNAME}/Previous%20Releases
 
 MAINTAINER=	freebsd@gushi.org
 COMMENT=	DMARC library and milter implementation
@@ -24,9 +21,19 @@ LICENSE_GROUPS_SENDMAIL=	FSF OSI
 LICENSE_NAME_SENDMAIL=	Sendmail Open Source License
 LICENSE_PERMS_SENDMAIL=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-USES=		libtool perl5 shebangfix
+USES=		autoreconf perl5 shebangfix
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	opendmarc
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	trusteddomainproject
+GH_PROJECT=	OpenDMARC
+GH_TAGNAME=	rel-${PORTNAME}-${DISTVERSION:S/./-/g}
+
+PATCH_SITES=    https://github.com/${GH_ACCOUNT}/${PORTNAME}/commit/
+PATCHFILES=     a46c89a96ad73adc704a50242b35c4fa4737600f.patch:-p1 \
+		c27bc3a028b7ac4d9f82a246943b1adf55891307.patch:-p1 \
+		478b3be5ced071c436f7b09e70652b0c490edb0f.patch:-p1
 
 GNU_CONFIGURE=	yes
 

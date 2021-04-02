@@ -1,3 +1,9 @@
-TIMESTAMP = 1500636334
-SHA256 (opendmarc-1.3.2.tar.gz) = 213c4b01a9ff5dcdf331f7bd1dd6a382077abbf8ee9111852f2101ec917c2ffb
-SIZE (opendmarc-1.3.2.tar.gz) = 593448
+TIMESTAMP = 1617335533
+SHA256 (trusteddomainproject-OpenDMARC-1.4.0-rel-opendmarc-1-4-0_GH0.tar.gz) = 7795550583e5a35bf0ee72c538beaea96584a637642890faf6e871b843c9ea9d
+SIZE (trusteddomainproject-OpenDMARC-1.4.0-rel-opendmarc-1-4-0_GH0.tar.gz) = 409376
+SHA256 (a46c89a96ad73adc704a50242b35c4fa4737600f.patch) = 66a76b01f2ec27b73ca29dbe8fa8159e796a8a5d6519fac7627f465cea2be3b7
+SIZE (a46c89a96ad73adc704a50242b35c4fa4737600f.patch) = 1601
+SHA256 (c27bc3a028b7ac4d9f82a246943b1adf55891307.patch) = 41f71fdd513808027ff79cb32e2d54c163976e59ce0f5e704cf789cd703bad5e
+SIZE (c27bc3a028b7ac4d9f82a246943b1adf55891307.patch) = 574
+SHA256 (478b3be5ced071c436f7b09e70652b0c490edb0f.patch) = d5ae6240ada608afd743f06d0bb6bafbb123e1545bd3311da68c390ba69392cc
+SIZE (478b3be5ced071c436f7b09e70652b0c490edb0f.patch) = 777
