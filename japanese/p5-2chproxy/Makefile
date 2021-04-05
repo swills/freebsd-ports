@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	2chproxy
-PORTVERSION=	1.0.1
+PORTVERSION=	1.2.2
 DISTVERSIONPREFIX=	v
 CATEGORIES=	japanese perl5 www
 PKGNAMEPREFIX=	ja-p5-
@@ -13,7 +13,9 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	p5-HTTP-Daemon>0:www/p5-HTTP-Daemon \
 		p5-IO-Compress>0:archivers/p5-IO-Compress \
+		p5-LWP-Protocol-https>0:www/p5-LWP-Protocol-https \
 		p5-URI>0:net/p5-URI \
+		p5-YAML-Tiny>0:textproc/p5-YAML-Tiny \
 		p5-libwww>0:www/p5-libwww
 
 USES=		perl5 shebangfix
