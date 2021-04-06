@@ -3,7 +3,7 @@
 
 PORTNAME=	fpc
 PORTVERSION=	3.2.0
-PORTREVISION?=	1
+PORTREVISION?=	2
 CATEGORIES?=	lang
 MASTER_SITES=	ftp://ftp.freepascal.org/pub/fpc/dist/${PORTVERSION}/source/:source \
 		ftp://planetmirror.com/pub/fpc/dist/${PORTVERSION}/source/:source \
