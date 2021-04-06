@@ -2,12 +2,15 @@
 # $FreeBSD$
 
 PORTNAME=	qmail-autoresponder
-PORTVERSION=	0.98
+PORTVERSION=	2.0
 CATEGORIES=	mail
 MASTER_SITES=	http://untroubled.org/${PORTNAME}/archive/
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Rate-limited autoresponder for qmail
+
+LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libbg.so:devel/bglibs
 
